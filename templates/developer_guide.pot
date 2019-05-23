@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,599 +17,599 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/developer_guide.rst:10
-# 3bdac3fc6393455b9439f9237ae934b8
+# e30582a797f14809b6c7ca2e05566255
 msgid "Developer Guide"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:12
-# 5f70074083cb4248a0ec33af62d5e93c
+# 4b488f652e4343769a0b03115b005264
 msgid "This guide is intended for people who want to work on Spack itself. If you just want to develop packages, see the :ref:`packaging-guide`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:15
-# c36e14d4068f4a8883dfefb6e2dfffcc
+# 1a40279130454b4895e60f2506543844
 msgid "It is assumed that you've read the :ref:`basic-usage` and :ref:`packaging-guide` sections, and that you're familiar with the concepts discussed there.  If you're not, we recommend reading those first."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:22
-# 629ee232433245f28fa310fdf8c5d977
+# b49fd96e09c54b64ba0a7169d3ddbd03
 msgid "Overview"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:24
-# e4c1c2be10954e89804e4419f3e998bf
+# 58dd3c6f96e34155b6442ca139ba9497
 msgid "Spack is designed with three separate roles in mind:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:26
-# 1ae303df304443f0ab5c17eea6f132c1
+# f3e1d8e6d7824250a94aeeff47062b9d
 msgid "**Users**, who need to install software *without* knowing all the details about how it is built."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:28
-# d2754a55ecf045549cee08d8ef7c88bc
+# 6f0b357f5d8f4409baa0a6901bbfb0f9
 msgid "**Packagers** who know how a particular software package is built and encode this information in package files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:30
-# 04da11824a2646c4a1b08bff3a61ee04
+# 3012e59287dc4cf7b13a2c1eeb9419d6
 msgid "**Developers** who work on Spack, add new features, and try to make the jobs of packagers and users easier."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:33
-# ecf1d25eaa754e368b08a85b99f2fd6e
+# a80813db8e264a5ab26947335c057a80
 msgid "Users could be end users installing software in their home directory, or administrators installing software to a shared directory on a shared machine.  Packagers could be administrators who want to automate software builds, or application developers who want to make their software more accessible to users."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:39
-# c8beaa7172714ce7a579dbdce511cc71
+# 0efd8cd995b2420cacf1557d66550518
 msgid "As you might expect, there are many types of users with different levels of sophistication, and Spack is designed to accommodate both simple and complex use cases for packages.  A user who only knows that he needs a certain package should be able to type something simple, like ``spack install <package name>``, and get the package that he wants.  If a user wants to ask for a specific version, use particular compilers, or build several versions with different configurations, then that should be possible with a minimal amount of additional specification."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:49
-# 1533d685c7bb42fd952238d81a25b461
+# e424acd44b1541719194dc0c60caa25c
 msgid "This gets us to the two key concepts in Spack's software design:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:51
-# 64c5b891658148f5b5e964b176776d89
+# ef4bbf5654534fd5a89ee9423843195f
 msgid "**Specs**: expressions for describing builds of software, and"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:52
-# 1a03471e2eb44845a37bf407e187e6e9
+# bdc3b02eff2a4b16834d203fa9ab73f4
 msgid "**Packages**: Python modules that build software according to a spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:55
-# f8736e493e9f4ae78eca2bd7df89f973
+# b953e0f54bec4071a5a6e2c5353364fd
 msgid "A package is a template for building particular software, and a spec as a descriptor for one or more instances of that template.  Users express the configuration they want using a spec, and a package turns the spec into a complete build."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:60
-# 4bb4c36fe6d34167b9c6cbc280d92541
+# cf8e2f3724ed47e9949c935900bed136
 msgid "The obvious difficulty with this design is that users under-specify what they want.  To build a software package, the package object needs a *complete* specification.  In Spack, if a spec describes only one instance of a package, then we say it is **concrete**.  If a spec could describes many instances, (i.e. it is under-specified in one way or another), then we say it is **abstract**."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:67
-# 0f659677aa1c4965b4d65d3657032f76
+# 62e725b185b54c38a64a167f64fe4a5a
 msgid "Spack's job is to take an *abstract* spec from the user, find a *concrete* spec that satisfies the constraints, and hand the task of building the software off to the package object.  The rest of this document describes all the pieces that come together to make that happen."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:75
-# 6508274bb25d4d50b6d0e683586b09df
+# 946a3a617e584687ab480350c6d2d35f
 msgid "Directory Structure"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:77
-# 0cbc5171413f4a658efdcbf3277ed981
+# bdd21a6b80774406847ec89687e31175
 msgid "So that you can familiarize yourself with the project, we'll start with a high level view of Spack's directory structure:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:115
-# 55241e6f9ffd49d593624c7465e5cd9f
+# 6922b59ab92548fcb6be8adfd13eb50f
 msgid "Spack is designed so that it could live within a `standard UNIX directory hierarchy <http://linux.die.net/man/7/hier>`_, so ``lib``, ``var``, and ``opt`` all contain a ``spack`` subdirectory in case Spack is installed alongside other software.  Most of the interesting parts of Spack live in ``lib/spack``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:121
-# 4dda7ae269c64d528309d5623cbb4cd7
+# 20e5048dabec465abdcaadbfe38bc881
 msgid "Spack has *one* directory layout and there is no install process. Most Python programs don't look like this (they use distutils, ``setup.py``, etc.) but we wanted to make Spack *very* easy to use.  The simple layout spares users from the need to install Spack into a Python environment. Many users don't have write access to a Python installation, and installing an entire new instance of Python to bootstrap Spack would be very complicated. Users should not have to install a big, complicated package to use the thing that's supposed to spare them from the details of big, complicated packages.  The end result is that Spack works out of the box: clone it and add ``bin`` to your PATH and you're ready to go."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:134
-# cc3f3a538d214c24abba4530885a84fa
+# feca20cee90e4f30978a7228c42ebe7e
 msgid "Code Structure"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:136
-# cdd57d67c3964338a762cce1d42b946f
+# 902d866a499b4cbdb3fc91a9c5e03400
 msgid "This section gives an overview of the various Python modules in Spack, grouped by functionality."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:141
-# 1b19e00aa28e401b86b5984739cf825c
+# 8991917e968041a6adda43f66d14a1f2
 msgid "Package-related modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:147
-# a3133f3aea694b81b3aeba58ea87ee85
+# dd41b99ee4fc4e838fd5bd4ce44e9afa
 msgid ":mod:`spack.package`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:144
-# bf699be1872946588fe0511e96a7801c
+# 809a531fb9784ff991995bb140bdb8c2
 msgid "Contains the :class:`Package <spack.package.Package>` class, which is the superclass for all packages in Spack.  Methods on ``Package`` implement all phases of the :ref:`package lifecycle <package-lifecycle>` and manage the build process."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:155
-# adf9db5c1b984ff9ad0eb2a5e746f26d
+# 275236ac981249ce96f2c76393395065
 msgid ":mod:`spack.packages`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:150
-# f8bd2315d79642b8b7b2ae0e886aaf45
+# 2c33b7a8807846c48d884d16bd8d18d3
 msgid "Contains all of the packages in Spack and methods for managing them. Functions like :func:`packages.get <spack.packages.get>` and :func:`class_name_for_package_name <packages.class_name_for_package_name>` handle mapping package module names to class names and dynamically instantiating packages by name from module files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:161
-# 5d3a8290a89d4e8c8d4c48b93ca7c86c
+# a7c8d35165f84bfc8ef62878c5ed6093
 msgid ":mod:`spack.relations`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:158
-# bee9b2f62dee4a0b80c9e34592e27fdd
+# 5b50d54813784cb4a5815d32da7fbe2d
 msgid "*Relations* are relationships between packages, like :func:`depends_on <spack.relations.depends_on>` and :func:`provides <spack.relations.provides>`.  See :ref:`dependencies` and :ref:`virtual-dependencies`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:166
-# 7b1cba529b0642f89933aa504cfd08bb
+# 7fec51f86c1041bb92b549e9c0959c3c
 msgid ":mod:`spack.multimethod`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:164
-# 06e1f190ed704c8fbc707176df44128a
+# 28d64804cda34736a8044702010f5e4b
 msgid "Implementation of the :func:`@when <spack.multimethod.when>` decorator, which allows :ref:`multimethods <multimethods>` in packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:170
-# 33fdbd0c8ae842358db568698b618821
+# 58d7c0fcfe60445299610058f50e9296
 msgid "Spec-related modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:175
-# 79db70c2cb9b4655bbd167f86572119e
+# 6a966a15a60e4291ac64544c759da7e0
 msgid ":mod:`spack.spec`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:173
-# 4188854334444e5a97f8a1cd0492f172
+# 1accd0a6990245ebb5fc6ac34f142965
 msgid "Contains :class:`Spec <spack.spec.Spec>` and :class:`SpecParser <spack.spec.SpecParser>`. Also implements most of the logic for normalization and concretization of specs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:181
-# a8a4572f66554cf8911a20d9de6bee4d
+# c3d5e195b2e345c8aa0af1031846637b
 msgid ":mod:`spack.parse`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:178
-# 4b8f08936c6c42a9850fccb22d6b4881
+# ec0b80fde12b4d71b439a56cc00cccc5
 msgid "Contains some base classes for implementing simple recursive descent parsers: :class:`Parser <spack.parse.Parser>` and :class:`Lexer <spack.parse.Lexer>`.  Used by :class:`SpecParser <spack.spec.SpecParser>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:186
-# 4c08b5b01b7f496a92f99192508ec598
+# 21ee6f2985e546ab9d6676abc1955054
 msgid ":mod:`spack.concretize`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:184
-# 8b6cdbec48b24b74a925f43a5eb14918
+# 134b013148184a4b85aad92cdc8f7952
 msgid "Contains :class:`DefaultConcretizer <spack.concretize.DefaultConcretizer>` implementation, which allows site administrators to change Spack's :ref:`concretization-policies`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:197
-# 4e168296e8f14b75837a5b60b2de9550
+# 61cc42058ac24b119e63c78860e84d74
 msgid ":mod:`spack.version`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:189
-# 8ddd9f8a6ed9497ab75da8e2f39f0500
+# 9865ae2d887a4d8f88f0d69cea5ccd16
 msgid "Implements a simple :class:`Version <spack.version.Version>` class with simple comparison semantics.  Also implements :class:`VersionRange <spack.version.VersionRange>` and :class:`VersionList <spack.version.VersionList>`.  All three are comparable with each other and offer union and intersection operations.  Spack uses these classes to compare versions and to manage version constraints on specs.  Comparison semantics are similar to the ``LooseVersion`` class in ``distutils`` and to the way RPM compares version strings."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:207
-# 3b124a36ec35416390f692e80a05e823
+# fc0c73b5a4f44ea582f727b5da1f0b7c
 msgid ":mod:`spack.compilers`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:200
-# 4cdabfaa73c242908126ce7abc6aaeea
+# 6eb88616c6204a0b91cad9cd53814619
 msgid "Submodules contains descriptors for all valid compilers in Spack. This is used by the build system to set up the build environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:205
-# 678e16e6ae9a4272b086ca194950b897
+# d2f4d5ac46854360bb4561731b9b158b
 msgid "Not yet implemented.  Currently has two compiler descriptions, but compilers aren't fully integrated with the build process yet."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:216
-# e35d0f97cefe4a5fa61389f0a272fdf5
+# 313ef1bdbe634fc4b30491dd2258b3d7
 msgid ":mod:`spack.architecture`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:210
-# 1725ae4d7ff34518992e557bb12390c9
+# 35a4a5f4bf5e4b37a52d2aa35ea3b97f
 msgid ":func:`architecture.sys_type <spack.architecture.sys_type>` is used to determine the host architecture while building."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:215
-# fe85ac8de1de4fb68d3b65fb8a264cae
+# d62c821eb14444ceadfd38a612af2c91
 msgid "Not yet implemented.  Should eventually have architecture descriptions for cross-compiling."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:220
-# 4847be3a409e4e7d94c936b7a6310e6f
+# 3f7fb91089db4fd7bbfd9fcc425f940e
 msgid "Build environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:223
-# 861d8ca8f4dd40dd8f14608fcbbad8f6
+# a8745ddc7eba40799bd206f407f04a36
 msgid ":mod:`spack.stage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:223
-# 0edccea584c542739efec980eaa57403
+# b65dcf9c78c04694b7337da62ef46bbe
 msgid "Handles creating temporary directories for builds."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:227
-# 25c57a0eacf74e4d8c0d742d721842ad
+# 239d5a0ea5ab49da954d66d0690b1c55
 msgid ":mod:`spack.compilation`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:226
-# b3a677da0ffd41d796938a176c0a7ae1
+# 5bdcca2aada34a109a3851a4b3463128
 msgid "This contains utility functions used by the compiler wrapper script, ``cc``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:232
-# eebc6349a7164240856aef23b0c5a276
+# ea7f9bb99d004cb79421685cbe732c08
 msgid ":mod:`spack.directory_layout`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:230
-# 7e3c454c32cf443787c72cbfbd7bdbed
+# bb4da05de84140f5b2d27858b2649427
 msgid "Classes that control the way an installation directory is laid out. Create more implementations of this to change the hierarchy and naming scheme in ``$spack_prefix/opt``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:236
-# 3bad9ef0a9d9468eb77d0b3812491048
+# 757233db70164c56bda99d9ce30b92f5
 msgid "Spack Subcommands"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:240
-# ffafc32944274318bb19cd67d2463db2
+# e16b018b60594dd5852647c2c86fa10d
 msgid ":mod:`spack.cmd`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:239
-# e9429cdb87f8494ca463c5b17166611b
+# 0ea29656700a4f168be6d7975fb4f2cb
 msgid "Each module in this package implements a Spack subcommand.  See :ref:`writing commands <writing-commands>` for details."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:244
 #: ../spack/lib/spack/docs/developer_guide.rst:350
-# a440af03abf64cecb3c72800ac48632b
-# 8fa716b5e31f48febf4573617e92177e
+# bfeb3eb1abe7491a9b3b7e3a8f1520d4
+# 13e1e2d18d884a1084c21bda6cdbbbce
 msgid "Unit tests"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:248
-# 929c2619805d4471adc5659d1e58ab94
+# da10c470bdc2406bb5d58bf1bef29217
 msgid ":mod:`spack.test`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:247
-# 6ebfb87a5a814c20a92fc0baab689fcc
+# 61ce5738b3cc498b95f656145c7c5faf
 msgid "Implements Spack's test suite.  Add a module and put its name in the test suite in ``__init__.py`` to add more unit tests."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:252
-# a02c2a511fa4493f8482f202aba64d1f
+# 131940c386724c99ad1c800d46a38a39
 msgid ":mod:`spack.test.mock_packages`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:251
-# a4ce52f1e0df43bc9280dda064e8099a
+# a1d620c4816749b282cbbdf96fee8ab2
 msgid "This is a fake package hierarchy used to mock up packages for Spack's test suite."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:256
-# 2bc6b97275c446a1803cd6a15f68ad38
+# e578bd5efc0c43bca97e7ec9843384d2
 msgid "Other Modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:260
-# 5da4c7864a6e4073a71c5c6b71088471
+# b86e6a25b7074024971d8e6d4acecb53
 msgid ":mod:`spack.url`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:259
-# 69d83fbdc14243d58efa9ed86b76cd0d
+# d6f7b3a3a6d647beb71c43c51c41066b
 msgid "URL parsing, for deducing names and versions of packages from tarball URLs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:264
-# 18e7d2ac8cd344a0a41c31c2f3516ae3
+# d66bba66741a4c92b2ba5b67f717e04e
 msgid ":mod:`spack.error`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:263
-# 0b052632f14f49aa95daf7f78e652908
+# c2c1c7a68cd84374963fc79dce3d695d
 msgid ":class:`SpackError <spack.error.SpackError>`, the base class for Spack's exception hierarchy."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:268
-# 29e4424785f248889b5f8969247cabb6
+# 9402e99d37f74d4faa67569b16377078
 msgid ":mod:`llnl.util.tty`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:267
-# 8a8f103db28b480695a3af4c2b2b017c
+# 013d52bb31ec496a8d5c0f43207c07ff
 msgid "Basic output functions for all of the messages Spack writes to the terminal."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:271
-# bc824600310b4bbd85a68a976c8f9f0d
+# e8de4ced31054d9981d83c63592628bd
 msgid ":mod:`llnl.util.tty.color`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:271
-# 1f32a9ddfa6a4a098f525df3c00faa89
+# 0e2d7a6f838a4e1ba25e10f27a64edb1
 msgid "Implements a color formatting syntax used by ``spack.tty``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:275
-# 4996586e7d2e40c3ac710648ee2f2a53
+# 8ebd005c67a94a56bd14a179d3cb0f85
 msgid ":mod:`llnl.util`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:274
-# cd933fe3effb4098b08a952b21efbe41
+# 10f3201d3b1e4f329ca1da52ece2fb8e
 msgid "In this package are a number of utility modules for the rest of Spack."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:279
-# 37f4f9f6ad15438c93ae81514db0948a
+# 2f991080cba847a0a1d9a0720c986de2
 msgid "Spec objects"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:283
-# 2994cbcfdea54474b0f5c7b6ab82a652
+# e7fbed3e064242f9ab939814565a3c77
 msgid "Package objects"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:285
-# c44bd49b1d1147e687c96d3ff1506fed
+# b43ab9e470e34ea9abe46c246687e551
 msgid "Most spack commands look something like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:287
-# 3b91fed6ad5a4788be72ec871b49c9c3
+# 625bb7e3461f4600a00cc549adf663eb
 msgid "Parse an abstract spec (or specs) from the command line,"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:288
-# fc3e4579dac249938f510d565d012a81
+# c8557c2d633a42e9a6c6a0fd72c9e4cb
 msgid "*Normalize* the spec based on information in package files,"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:289
-# 7ed99079dd214ba1aac4bcf674125240
+# bb80e522f0cd4987943aefc305c3bf8b
 msgid "*Concretize* the spec according to some customizable policies,"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:290
-# 4986fc065b294e4ebec8b7ac13dc520f
+# 820f87edcfd3429e84dfd3bad8f3da70
 msgid "Instantiate a package based on the spec, and"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:291
-# 34b7488a9db040cb8f2eef87b83f4f06
+# 1a98985ab0e34819a17954c2cc8020c0
 msgid "Call methods (e.g., ``install()``) on the package object."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:293
-# 5800dfcbcc6e4bbd882954cf1385be2b
+# b0fbe86bbc054a739ae3834b7d4189f0
 msgid "The information in Package files is used at all stages in this process."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:296
-# 0df7b9b5f1f9401bb9dbf1273a1e4111
+# 95dedd7cfb514041a04330aa49459005
 msgid "Conceptually, packages are overloaded.  They contain:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:300
-# 9d737f08baf14ff9be62753fbcf43e25
+# a7658a2c4abf4676956975d9374a4afc
 msgid "Stage objects"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:306
-# 13694b40fcb642bfaba3df27123fa6bd
+# 181173128b7848e88508863943651d52
 msgid "Writing commands"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:308
-# 910a94aad2f0434f988166c401bff939
+# c5063c7b5ffb4a5da63d0f4efb24aed5
 msgid "Adding a new command to Spack is easy. Simply add a ``<name>.py`` file to ``lib/spack/spack/cmd/``, where ``<name>`` is the name of the subcommand. At the bare minimum, two functions are required in this file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:314
-# d1708f89a684465d9a22141132f79235
+# dcbe56ebf45143a392c852688fbc993a
 msgid "``setup_parser()``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:316
-# fc63d33331384a73b7efb7b1338405f0
+# ee94d34cc6a44780a28c06a32c01bee8
 msgid "Unless your command doesn't accept any arguments, a ``setup_parser()`` function is required to define what arguments and flags your command takes. See the `Argparse documentation <https://docs.python.org/2.7/library/argparse.html>`_ for more details on how to add arguments."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:321
-# 3174a0331965472f99a88c8fe16b81f1
+# 9114c9694646452ebc1151133ce122e3
 msgid "Some commands have a set of subcommands, like ``spack compiler find`` or ``spack module lmod refresh``. You can add subparsers to your parser to handle this. Check out ``spack edit --command compiler`` for an example of this."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:325
-# d4b9deddc89c4e08b6726953316c22b9
+# a892e70303cd48d2ba526b63d1e31c6c
 msgid "A lot of commands take the same arguments and flags. These arguments should be defined in ``lib/spack/spack/cmd/common/arguments.py`` so that they don't need to be redefined in multiple commands."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:331
-# 125fecd2d72f43558821e0a88ab05fbc
+# da1213eb081440aa8a627dae1dc5ec20
 msgid "``<name>()``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:333
-# ef313e1508584c1fbde7da91041b19e2
+# 23a8476521fc4b4daabfb1b251a23bdb
 msgid "In order to run your command, Spack searches for a function with the same name as your command in ``<name>.py``. This is the main method for your command, and can call other helper methods to handle common tasks."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:337
-# edc6e85533e148aca6b25e9fd5d4f298
+# f98245b71e2d477e88eb1db9d969e611
 msgid "Remember, before adding a new command, think to yourself whether or not this new command is actually necessary. Sometimes, the functionality you desire can be added to an existing command. Also remember to add unit tests for your command. If it isn't used very frequently, changes to the rest of Spack can cause your command to break without sufficient unit tests to prevent this from happening."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:344
-# 61bf9008bd7b410c8691d365b75c8f2a
+# 2f10fb6b3653438fa839f635c1818a8f
 msgid "Whenever you add/remove/rename a command or flags for an existing command, make sure to update Spack's `Bash tab completion script <https://github.com/adamjstewart/spack/blob/develop/share/spack/spack-completion.bash>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:354
-# 3832581568f140cfa21ff33ea7d80c89
+# 75bfb590c9db48388167f82f9cdb81c2
 msgid "Unit testing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:358
-# 57c995e28f48431bb5bef988ad0f9868
+# a95de39a55934caf975a41fac1c410e1
 msgid "Developer commands"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:364
-# 30f234f2fcac4ef6aa6d2bfb82f9ed74
+# 7e7a4c05b424438fa5b5564b1610ca66
 msgid "``spack doc``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:370
-# e54e4cf0aa5a4b89b5d671ba2ba77150
+# a6a841168277496ca00826987f2e0d21
 msgid "``spack test``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:376
-# 24487319dfbe4453a53d5b57460745d3
+# 4c880cd8cd794495ba9a9f539335f967
 msgid "``spack python``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:378
-# 7fd215d7a6974e8781ae5ac7c132cc19
+# 96f5352f87b64674ba2376c0d428a7f8
 msgid "``spack python`` is a command that lets you import and debug things as if you were in a Spack interactive shell. Without any arguments, it is similar to a normal interactive Python shell, except you can import spack and any other Spack modules:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:398
-# ebfc5adef8974c71825e3b10baab3ebd
+# f2cde4974d3646c09efc4bcc67804af3
 msgid "You can also run a single command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:405
-# 9db59e63b01e4c3191f7b669fbd3c302
+# f4088350bbf84d489e6e5f9138a6e9b4
 msgid "or a file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:411
-# a66af019080f485cba4903711fa53f45
+# 43f94433ff0d4b04b794732903458d3e
 msgid "just like you would with the normal ``python`` command."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:417
-# d709f51f41cc44e3919eadb0cddddf9e
+# 5ddf5597a9354bfbbfa6d2624c3fdbad
 msgid "``spack url``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:419
-# 5ecf6875010841cea548daa3c869873a
+# cf33ce7714194370af00aa4dfb2b489d
 msgid "A package containing a single URL can be used to download several different versions of the package. If you've ever wondered how this works, all of the magic is in :mod:`spack.url`. This module contains methods for extracting the name and version of a package from its URL. The name is used by ``spack create`` to guess the name of the package. By determining the version from the URL, Spack can replace it with other versions to determine where to download them from."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:427
-# a2ccca3f1b714182a86ad98431696456
+# 2c4113aec0234771b81cc007e872a16f
 msgid "The regular expressions in ``parse_name_offset`` and ``parse_version_offset`` are used to extract the name and version, but they aren't perfect. In order to debug Spack's URL parsing support, the ``spack url`` command can be used."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:433
-# 6965c9f84bff4a9faa793ca9adbf6559
+# 04e6589ae9504c92ac4c7780cf3929eb
 msgid "``spack url parse``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:435
-# 09fff792a4e645bc9206248649e64fd0
+# cc23879766c64a6384f7b4e091bd42fd
 msgid "If you need to debug a single URL, you can use the following command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:439
-# e0458fb423bb49b4a5d89020abad2234
+# 9bcf5d6f9d614f158d9ad524afd3ac26
 msgid "You'll notice that the name and version of this URL are correctly detected, and you can even see which regular expressions it was matched to. However, you'll notice that when it substitutes the version number in, it doesn't replace the ``2.2`` with ``9.9`` where we would expect ``9.9.9b`` to live. This particular package may require a ``list_url`` or ``url_for_version`` function."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:446
-# 76ec29fdbd3f4049b6f6e50336cb335f
+# 573a18e3c7a14c23ad2d30de5210e181
 msgid "This command also accepts a ``--spider`` flag. If provided, Spack searches for other versions of the package and prints the matching URLs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:451
-# fbe4ad52d9724ad291482c3c52074b4a
+# 042fb0631dda49d7b9e9a11345e61ada
 msgid "``spack url list``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:453
-# 8d3b204aeec34838873dd2bd95d543ee
+# 4d0ee1010fc5497484455cea47945fe8
 msgid "This command lists every URL in every package in Spack. If given the ``--color`` and ``--extrapolation`` flags, it also colors the part of the string that it detected to be the name and version. The ``--incorrect-name`` and ``--incorrect-version`` flags can be used to print URLs that were not being parsed correctly."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:461
-# c5b4029be80146f8be3e7afd48163c1a
+# 5e3d00eeacd5459aba251777bdc04fb1
 msgid "``spack url summary``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:463
-# 068e9e80923149b2a865c9bca1ef3283
+# e0046920c257401e94c28ccaf4cee7f0
 msgid "This command attempts to parse every URL for every package in Spack and prints a summary of how many of them are being correctly parsed. It also prints a histogram showing which regular expressions are being matched and how frequently:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:470
-# 3a5b0672595c49f1a82139548000ce3a
+# fc5bee0350d94ea1b8ece2526fb3acce
 msgid "This command is essential for anyone adding or changing the regular expressions that parse names and versions. By running this command before and after the change, you can make sure that your regular expression fixes more packages than it breaks."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:477
-# 7c5dedd90cd94f30b32e2deae7910ab2
+# 7931dffba49749628c7e62e306cb7952
 msgid "Profiling"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:479
-# 6e17a3b516034462bbdfcbb6cb12bb1a
+# c6df8b3c95c8478d86634c02f0829d5c
 msgid "Spack has some limited built-in support for profiling, and can report statistics using standard Python timing tools.  To use this feature, supply ``--profile`` to Spack on the command line, before any subcommands."
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:487
-# c3c39fba370645b58ad904706eb2c0e2
+# 018e805b88344b1a96f4e547fdaa8788
 msgid "``spack --profile``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:489
-# 37d8b72c32b34bbabb395534341541f4
+# 97ae872090624f1f8fb087b9090a741c
 msgid "``spack --profile`` output looks like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/developer_guide.rst:494
-# 17c9923443a84cc58c664db487dbcb5c
+# ad745374fa3e4b0a83fabeb07e722977
 msgid "The bottom of the output shows the top most time consuming functions, slowest on top.  The profiling support is from Python's built-in tool, `cProfile <https://docs.python.org/2/library/profile.html#module-cProfile>`_."
 msgstr ""
 

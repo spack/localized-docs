@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,92 +17,92 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/tutorial.rst:10
-# 5922be26cc6b4d92b8eda956f9eeaea2
+# ba927d07e01e4815aeaa25b4ee800c82
 msgid "Tutorial: Spack 101"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:12
-# 7c2bf6fe37ae41d0811041b64640609f
+# f1a5dce96945436281a9f30ecc1d2d2f
 msgid "This is a full-day introduction to Spack with lectures and live demos. It was presented as a tutorial for staff at the `RIKEN Center for Computational Science (R-CCS) <http://www.riken.jp/en/research/labs/r-ccs/>`_.  You can use these materials to teach a course on Spack at your own site, or you can just skip ahead and read the live demo scripts to see how Spack is used in practice."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:23
-# 64a4dea46158494aa4286e3433d96153
+# 919bc8fd10534806af65e3c78e7789ad
 msgid "Slides"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:30
-# c3c9b2e099fc4caa871b0caab47d7d8f
+# 47fe82820ebc42e997b6c03ac4badf87
 msgid "`Download Slides <https://spack.io/slides/Spack-RIKEN19-Tutorial.pdf>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:32
-# fbc77a8611f84d84b4522a365a05df5e
+# e06331dcebf0414cb75439dd8eaa86ff
 msgid "**Full citation:** Todd Gamblin, Gregory Becker, and Peter Scheibel. Managing HPC Software Complexity with Spack.  Tutorial presented at RIKEN Center for Computational Science. April 23, 2019.  Kobe, Japan."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:39
-# 40b2b55a21a1404f9ac369b1aa03528b
+# 0351aa5c1d364e0fb03edacd0db5e07b
 msgid "Live Demos"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:40
-# e9aceae6158f43fb92fedb703201b486
+# b8e4d0bc734e49d481ab80c60a7be3c4
 msgid "We provide scripts that take you step-by-step through basic Spack tasks. They correspond to sections in the slides above. You can use one of the following methods to run through the scripts:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:44
-# 8abb5a47a09c41d7937e8f000807564c
+# e4c727c95029477090523be8120da476
 msgid "We provide the `spack/tutorial <https://hub.docker.com/r/spack/tutorial>`_ container image on Docker Hub that you can use to do the tutorial on your local machine.  You can invoke ``docker run -it spack/tutorial`` to start using the container."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:50
-# 37e30acdef9d4133a7c097d3da78da63
+# eaf1d541bc0d42c5b48833a4357d6764
 msgid "When we host the tutorial, we also provision VM instances in `AWS <https://aws.amazon.com/>`_, so that users who are unfamiliar with Docker can simply log into a VPM to do the demo exercises."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:54
-# 01a1cbbea667402a994618d49f510117
+# 8cdcb25d1f7f4144898cbb89078d0f34
 msgid "You should now be ready to run through our demo scripts:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:56
-# 0a19bc25c955460a812f605aefd034fc
+# 5a799f906ce6469582037e6509b3c54d
 msgid ":ref:`basics-tutorial`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:57
-# f477f114e7ac499883866642cd577aef
+# 4ce2a58554884b03aa0af1ca608b85f6
 msgid ":ref:`configs-tutorial`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:58
-# 47decb6cbb5042229378fc6828413d32
+# 34bb9dd8f62e4ec5a50ce76778cf2b38
 msgid ":ref:`packaging-tutorial`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:59
-# 213b4da6690b403f9576456a4b19a1a0
+# cdd3352270794f53842da4107ede541a
 msgid ":ref:`environments-tutorial`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:60
-# fbc2dbfea34d44c094b8f0abb776321e
+# c5bfa5f5204b4b3d8c3d83de7ff5d290
 msgid ":ref:`modules-tutorial`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:61
-# 25a920696bf546debf5a10a016f9e443
+# 1b630f7b641b4a999f005f3f85838217
 msgid ":ref:`build-systems-tutorial`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:62
-# d961daa1bc88402083ffba7be975a984
+# bd35bb1170824b6f84e35fd2a3989cb9
 msgid ":ref:`advanced-packaging-tutorial`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial.rst:64
-# a28167810f5d4059b8f21fedd10c51a2
+# cecf1601235a48e9bf6fdda537d4137e
 msgid "Full contents:"
 msgstr ""
 

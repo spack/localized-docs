@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,1932 +17,1932 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:2
-# 487d747ebc9c4465b954a7689625379c
+# 8bd71d55f2bc483f98f35a1f86d57d83
 msgid "spack.build\\_systems package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:5
-# 75611851df66412fbb81ee3ed3ea902a
+# 7559a35b71f34ac29f770a55e9b0bb11
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:8
-# 56e6fbffc9d44e8c8372ef99df264652
+# 6e22fd87a8b2417dbf6c80d14f8c25b5
 msgid "spack.build\\_systems.aspell\\_dict module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage:1
-# 059b67b625e343699686008e2baaaf12
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage:1
+# 8fd0c9d2ee0f40148b2893d8c3777f05
 msgid "Bases: :class:`spack.build_systems.autotools.AutotoolsPackage`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage:1
-# dec8e4db62c141528b17b5ace9c47b56
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage:1
+# ee64ebef41c64e748013f001f57ac9c9
 msgid "Specialized class for building aspell dictionairies."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage.configure:1
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure:1
-# f49411df8123457e8fe7434069015490
-# 4d8faa93750c48f6829ec3f2d65cb334
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage.configure:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure:1
+# 10fca8f5987144829977c7f27a1a912c
+# 583733639fca4a9e9e6de1851a1b6fcf
 msgid "Runs configure with the arguments specified in :py:meth:`~.AutotoolsPackage.configure_args` and an appropriately set prefix."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage.view_destination:1
-# 42e4d7f06d3b4800a2d782566acb71cd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage.view_destination:1
+# f977be872e4f4b388d4c08ce7e649e40
 msgid "The target root directory: each file is added relative to this directory."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage.view_source:1
-# fdc5f74a26444453bfbbb2650c2e042a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/aspell_dict.py:docstring of spack.build_systems.aspell_dict.AspellDictPackage.view_source:1
+# 0700380a318d400c8a393b338e198bea
 msgid "The source root directory that will be added to the view: files are added such that their path relative to the view destination matches their path relative to the view source."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:16
-# 48b739f580094c00b1044a8424c2c022
+# ee39eb45542d409a8d53831c4fe90a8a
 msgid "spack.build\\_systems.autotools module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:1
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:1
-#: ../spack/lib/spack/spack/build_systems/cuda.py:docstring of spack.build_systems.cuda.CudaPackage:1
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:1
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:1
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:1
-#: ../spack/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage:1
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:1
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:1
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:1
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:1
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:1
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:1
-# 6a0df461738e4d489a1c27fdff58ec41
-# 803bcd01fd714afaab267e6ce6ed2990
-# 9ffa89334382414099d610b113000f18
-# d457c0cfd0c34c7490b5803d25661bb7
-# e0315cfdd0404fa3bc96dd4d0c04f625
-# 674bfd6d78294e7cbe327c6cede18e41
-# 1f494f59e44348d8bdaa88b68311b32e
-# 66217778ae3b42f4b92183d46c7beb04
-# ac2ef10937dc4aa38234bf085fcec2bb
-# c14c36285e5a4e0e91feb346d0683f81
-# 2373cf54625c4cc7ac00ba66ebd72719
-# 60c62f34b0ba4b08b8a81880ab53bca0
-# 27a2611d637040758c71a0e84324f061
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cuda.py:docstring of spack.build_systems.cuda.CudaPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:1
+# da66ae62bce44d1e91cd4e3678c84791
+# bee686380d384fd6a8e66ea439dc5f71
+# cee2d7897ab0458b93daec437c49af4e
+# 55a986b3e3f949b384219d9baec7d4bc
+# f7fa28dc65634997a7bbc35ecc2a8ce8
+# 360c24a7d5434f9590626eb6ca7c081f
+# 3a3503cef99148d3b171e7277b5bed36
+# e066730255334e5f96fdc673414e6a4f
+# 21db73e17c914e83809c86a77fa1c06b
+# 8927e0afd39045d29f518a47018e97fb
+# 0614e863f666468bbb450b66d24dbc7b
+# 812065b3d06f44139b575e4f9dd2d004
+# 066f14e538024f8cb44c3b66e30522b5
 msgid "Bases: :class:`spack.package.PackageBase`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:1
-# 3acc51ef9f164e349585d903558c91d3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:1
+# 901559d1736e4797973a441419d0a5f5
 msgid "Specialized class for packages built using GNU Autotools."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:3
-# e6f555134f2f43799136bdededbe1dfa
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:3
+# edcd569b8c06476595b2bdfd991eb01f
 msgid "This class provides four phases that can be overridden:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:5
-# f595a3e473be4ba79a09da09ce83368e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:5
+# 56bd6234c5764325b80677bf94a25b59
 msgid ":py:meth:`~.AutotoolsPackage.autoreconf`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:6
-# 0da410f75f60440a95ca319146ec6694
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:6
+# cd672e09034743a4833c90532e0efa3f
 msgid ":py:meth:`~.AutotoolsPackage.configure`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:7
-# 06863153f864480592e02e4bfe8b219b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:7
+# 57b82120a3d147778231f841a4efccb7
 msgid ":py:meth:`~.AutotoolsPackage.build`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:8
-# 38340d4238bc4f9cbf795fbd14e78fc7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:8
+# 540116c2653048fda20b91f320a51f67
 msgid ":py:meth:`~.AutotoolsPackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:10
-# cba172cd6d85476480daded82f10aa32
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:10
+# f33c4ea807c4477a818aa7feb947944e
 msgid "They all have sensible defaults and for many packages the only thing necessary will be to override the helper method :py:meth:`~.AutotoolsPackage.configure_args`. For a finer tuning you may also override:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:16
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:17
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:15
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:17
-# 021836a6420740e695074a21d56fb5f2
-# bddac30a59444f579d724c22071cb6f9
-# 3f364684f5024f88bae9bbd80fde4103
-# 2f0000be4be7419f8c8178eeb458732d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:16
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:17
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:15
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:17
+# 243f78aa454f4ce9a10ccd1825e6bb6b
+# c180d0c2e84a49c69553dbfc32d593ba
+# 5b021c1ce45345c887d0f6fe6ce4a44e
+# 98c816631c10402382d576e1ddc2123d
 msgid "**Method**"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:16
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:17
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:15
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:17
-# 9445e3a8530a4c42aef51cc92bdd6980
-# 367e9c8d54ce4b34b0b3e2b19ab3e482
-# 597db40450164717b058955402c4292a
-# dd7cc3c42df34d5587e5ca5ae336184d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:16
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:17
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:15
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:17
+# 0964913d08244338b8ee38128e204eef
+# 8e4506fe0ee146d78dfd14e2570ca172
+# 240aff59225c453eaf8105090a9d235b
+# 15b1419a471e460fb2044d981b4ce544
 msgid "**Purpose**"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:18
-# d57fb9334dcf4e9aa3333d96a36d9d1f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:18
+# c744477d5b7241cbaa747315246a42b3
 msgid ":py:attr:`~.AutotoolsPackage.build_targets`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:18
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:17
-# f301640aaa4b485c88312526d6ad745b
-# 79d5e45630e348d18816d66fe3181b15
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:18
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:17
+# 54f16d24ef284b7c97549346a6667f37
+# c716c0b9610e42758c568b7ac99d8d06
 msgid "Specify ``make`` targets for the build phase"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:22
-# 6e30988db9034f8a976fbf8570981d80
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:22
+# d648dbdc8ac942bb9590b3ba20cdfac3
 msgid ":py:attr:`~.AutotoolsPackage.install_targets`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:22
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:21
-# 22a571fbd76a46a0b01ab99e184b4c1a
-# c52824606372488e9be97684b3428142
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:22
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:21
+# 91c1a794c2ab411d928adb3323f6d35d
+# 90c56349f9154bf0868bba9c3c4aaa3e
 msgid "Specify ``make`` targets for the install phase"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:26
-# e081bd9a10634a0b8f030480ac0c5019
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:26
+# 94e0730cc6c2449ca748ab16dbe391fe
 msgid ":py:meth:`~.AutotoolsPackage.check`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:26
-# 017616df93974a57b0c1b865c819ebc4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage:26
+# 62db8aeca6a74eef9c854a5bbdc2b7d8
 msgid "Run  build time tests if required"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.archive_files:1
-# bac4dc563f4a42f9bf97501ff1e233d4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.archive_files:1
+# 4f03cf9b9be3451e8c846033affbdb72
 msgid "Files to archive for packages based on autotools"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.autoreconf:1
-# 475d8f37f7514da395d5ed98d8a64fe0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.autoreconf:1
+# b9db90f7ae534a03a54a6530139ff83b
 msgid "Not needed usually, configure should be already there"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.autoreconf_extra_args:1
-# b4e583b422ca4f7b866491fb93d87abf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.autoreconf_extra_args:1
+# 39c593a6ffc14ff19fec1d9b13bfc77a
 msgid "Options to be passed to autoreconf when using the default implementation"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build:1
-# a5554d6bb3c1404d9825f188099f59ab
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build:1
+# 12a8acb7db8443c38e8a98bb18f7bf6d
 msgid "Makes the build targets specified by :py:attr:``~.AutotoolsPackage.build_targets``"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build_directory:1
-# 714b22ae64794979b3bcaebb83f58a5c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build_directory:1
+# c06a7f1d3aac4e54b6a461f44b375664
 msgid "Override to provide another place to build the package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build_system_class:1
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build_system_class:1
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.build_system_class:1
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_system_class:1
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build_system_class:1
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.build_system_class:1
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.build_system_class:1
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage.build_system_class:1
-# 42ab693f2c47435c8c0515bac43eca10
-# 76691b67e5a14a54892f6c044a22aba6
-# 87bfad757cfc4265ad8897a288d13de6
-# eb6a8bf66f4845a68958cffbf73f7448
-# 7fd2956c4c7149ceb5dd1d4efb73cc8b
-# 1060d30a76034e48a1c06887d7f71e45
-# d7ead23793b04fd1b4d061fa5047149c
-# b962746de1ec4ad8baf6055b1cf6cc6d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build_system_class:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build_system_class:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.build_system_class:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_system_class:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build_system_class:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.build_system_class:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.build_system_class:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage.build_system_class:1
+# 93d954f2bafc4af9bac9a58508b65f3d
+# c2cb5230a7ad4c29a11fc48e372e222c
+# a549e17467df4d58a29ff7f188426430
+# acde78c33a144a449d73999996b8078e
+# dc250d41d3714b79b76bcf6e44273397
+# 30de30baebc44115a0863b3a3cb99727
+# 9c1d14ae88a34c75b1a0feb5f919915f
+# f05d25a433e14402bfe63184215b2074
 msgid "This attribute is used in UI queries that need to know the build system base class"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build_targets:1
-# d1e7decc25044de3a3cccd76f5732282
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build_targets:1
+# 7dec8f05b8b246bab97651f8961688e1
 msgid "Targets for ``make`` during the :py:meth:`~.AutotoolsPackage.build` phase"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build_time_test_callbacks:1
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_time_test_callbacks:1
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.build_time_test_callbacks:1
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_time_test_callbacks:1
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.build_time_test_callbacks:1
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.build_time_test_callbacks:1
-# b9f75a15c6d3421fb198e6314d0edfb8
-# 12b2fe83d01f43e3aa794cf28de81886
-# b8d8f811975b47df8dede0a3e9568a6d
-# 7d85eb4c5e4646f388082f0371850fc9
-# d483845650b34dd4bfda6a28fecb642b
-# c2fd477c8b8c48e2b20ee0c48f13f75c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.build_time_test_callbacks:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_time_test_callbacks:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.build_time_test_callbacks:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_time_test_callbacks:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.build_time_test_callbacks:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.build_time_test_callbacks:1
+# 0e831d5cf54e4772878c75460d3779f5
+# 06667c1a4da74ff99ce24caf16bba066
+# 131c3cdf76154a63aaff32399bb050fc
+# 808dc887c88844e89d9ef70446511f67
+# fa3bee0ccb3b4b49996f3e6afba14152
+# 819e287390a1485da50253ae6d838407
 msgid "Callback names for build-time test"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.check:1
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.check:1
-# 1d88daf5361344b4a7f8c0f3965fd6a2
-# bc4b414eaebd49d196fd454157479200
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.check:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.check:1
+# b90263db900848e5964177023a4dd50e
+# a67e2c0d111843cebfd77c73c97c5db8
 msgid "Searches the Makefile for targets ``test`` and ``check`` and runs them if found."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_args:1
-# c4cb685a8457401ba4f1faec6447722f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_args:1
+# 6f55ef96299f495c8c23f6e244546f8c
 msgid "Produces a list containing all the arguments that must be passed to configure, except ``--prefix`` which will be pre-pended to the list."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_args:0
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_directory:0
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:0
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:0
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build_directory:0
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:0
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.root_cmakelists_dir:0
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.std_cmake_args:0
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_directory:0
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build_directory:0
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:0
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.root_mesonlists_dir:0
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.std_meson_args:0
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure_args:0
-# 53deeca5067a4c9a98fe673a546fb035
-# 3731722a512a450a800719399b441fe0
-# 07e354c228c94a90aba1abb881531f22
-# d53ea9a07ec64a7bb006e9a9c635de4b
-# c3bffc446f554c789f80966b2fd80ea6
-# b6a3aa4601b84bda8e47ebab744abaec
-# c4e8e5fcf1c64231885395014a1a7ccf
-# 995f1cf6868d4c98aa861c4aabfccfb2
-# fb82ce24a4b1411fa7ac9327e8c2229a
-# 795e9d1056724055988a78126a2c6310
-# 670dad739c67497a9ec8d579518feee5
-# 02c6b923f4b9450fb1a6c3d68ba4e230
-# e243ea05ba704529a08679afb89ea630
-# 05002b73c84c4772bd8b7f09a2108a55
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_args:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_directory:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build_directory:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.root_cmakelists_dir:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.std_cmake_args:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_directory:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build_directory:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.root_mesonlists_dir:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.std_meson_args:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure_args:0
+# 247e305e5c6345489179f4eceba1d2ac
+# 0140d08c0d1849aebfc1e05427da03f4
+# 6d7bdc80b5134fc7bbae566a6089aa2f
+# 648c4e094e524d52b2e50de5605aa3ce
+# 07749def6f234dce888d0ad3f7e2db05
+# 9aa43aefd49747c989a7f191361b0cfc
+# f02ddbbfa55a4e58960b1d04c83bc3bf
+# 95b0477d67da41b9bb3ebb10ab23282a
+# 851bc917451844368ac0dfeb6b631cde
+# e48366bfb7f7419cb332d389ad4c2165
+# 4edf73fe71ce4004a4de708a4daf987c
+# ee309790f66945be9a1eafd77b0570d5
+# c296162ba85443b3add1d7703e324ac3
+# 26e43b027a134633a6625c8aa0251e68
 msgid "Returns"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_args:4
-# cd0de75e8a034f02bdf70b2f5652bd6a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_args:4
+# 9ae2fd702ec748219c99c05fb43c5071
 msgid "list of arguments for configure"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_directory:1
-# b2ae7e99f08a4baa9f8498e1d59dac04
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_directory:1
+# c1d5f22009de493bbf62720d45d37bd2
 msgid "Returns the directory where 'configure' resides."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_directory:3
-# 02dcf304e6f940b9a8c8b0fbb0b5c49f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.configure_directory:3
+# 8d8d19391226426abb5b48c4ab789038
 msgid "directory where to find configure"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:1
-# 82b139deb68c4f15ad95fd67c048fecf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:1
+# 2fa5b6a346a446c5a4bd4fb38dcf1c6c
 msgid "Same as :py:meth:`~.AutotoolsPackage.with_or_without` but substitute ``with`` with ``enable`` and ``without`` with ``disable``."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:0
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:0
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_setup_dependent_environment:0
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:0
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:0
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:0
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:0
-# e18e03b8d4044016ac3f7cf5c06e7e9b
-# a118aaed33594fc6a71f569da216c66b
-# 1a3537780e6441b0bfcd466baa2f7e0c
-# a3efdef5c27e429687eb4f53676563c5
-# 935f3388b3c7417398969c184ee102b9
-# b6432ae93d344c01be3778e23e3bf6e0
-# 7ac07bb6323f4998b37861a168366b66
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_setup_dependent_environment:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:0
+# 5f6324ab26a14ba09d52c9ce1b7fc9bd
+# 1f5cfadbf1604fe887966f6a848d16e4
+# 6ab6129e97b1402abdc2b686e171a6c3
+# 1487efcb13d04f9792f94bc628b8224c
+# 71684655e0814a14b2997dd63494a8fb
+# 1430fd8ae45b4d6c9b77f9804625c2c2
+# cf3b359b214b4f4db291879d538324ae
 msgid "Parameters"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:4
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:14
-# b77a7ef92b124c24a6d5b36ef0609aae
-# 55a5a26ca5fe4937a1b3941dbd66f096
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:14
+# 2fd035182eb845de88309ac086334619
+# d5488afddcfa483c8271267fbb003127
 msgid "name of a valid multi-valued variant"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:6
-# 934eb23770ae4f97923c08ab7b0f9d58
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:6
+# d5b58e239aa74db9a5938e341f027afa
 msgid "if present accepts a single value and returns the parameter to be used leading to an entry of the type ``--enable-{name}={parameter}``  The special value 'prefix' can also be assigned and will return ``spec[name].prefix`` as activation parameter."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:6
-# a9df2769ee06466db406416e1f1b1ff2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:6
+# 57094db493aa4e8aa1ac1f5624e7f122
 msgid "if present accepts a single value and returns the parameter to be used leading to an entry of the type ``--enable-{name}={parameter}``"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:10
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:20
-# c7691c83c80b4a20a3a512a33303661b
-# de39153b50b34070be718c342eb246db
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:10
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:20
+# 4ec92ecacbca45ec91fe30aad8eb3d59
+# 35bde1cd009540f59d705ca24c4337fb
 msgid "The special value 'prefix' can also be assigned and will return ``spec[name].prefix`` as activation parameter."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:14
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:24
-# 499280a3bd844ce4a28aca7a64687f6d
-# 32e3e03921e34768b70625868a5a9bfe
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.enable_or_disable:14
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:24
+# 560ed037e456413688c71391485fd6d1
+# 805adb4e46384eb6849311bb1bda4b3b
 msgid "list of arguments to configure"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.flags_to_build_system_args:1
-# 91cfc4852d13461fac0b7c4293fdcfcf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.flags_to_build_system_args:1
+# 2a171237e1274d4d8195c7c13c8bbd32
 msgid "Produces a list of all command line arguments to pass specified compiler flags to configure."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.force_autoreconf:1
-# dd9c636f35c04a329bef98c6660036d4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.force_autoreconf:1
+# 6252c54325a64c1d9f599036c6db8f47
 msgid "Set to true to force the autoreconf step even if configure is present"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.install:1
-# e153a2247c194766a22ea648a9eb2d38
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.install:1
+# 609e2376d7094570ab7e53f90e81028b
 msgid "Makes the install targets specified by :py:attr:``~.AutotoolsPackage.install_targets``"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.install_targets:1
-# e439a40737584b6ca5f8fc5b2c268ef6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.install_targets:1
+# 4f5dc3c3bab34de4868868ae1ce1b329
 msgid "Targets for ``make`` during the :py:meth:`~.AutotoolsPackage.install` phase"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.install_time_test_callbacks:1
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.install_time_test_callbacks:1
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_time_test_callbacks:1
-# 9277fd9b9b2c47a1b16fb8e574bb4b23
-# ee36e0bd9d594dc5ac1673d84f48b88f
-# b4834f22b65740988876787a51df23ad
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.install_time_test_callbacks:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.install_time_test_callbacks:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_time_test_callbacks:1
+# 0fbfe7b843c648c7a6a33c1991bd7573
+# 8d97600edbd645ce98df005fd060aa0b
+# e811be0887c34190bd7ae5e89bc23fc1
 msgid "Callback names for install-time test"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.installcheck:1
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.installcheck:1
-# c9d6f92808884d5c8487c38d7e9b2e10
-# a562d8064ed6431ca79bce955e9db42c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.installcheck:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.installcheck:1
+# 1a896e5cd2464d358c0a736cc33c64af
+# a6a49736937f41919fc259a8b62fbf69
 msgid "Searches the Makefile for an ``installcheck`` target and runs it if found."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.patch_config_guess:1
-# 74fcb221b9ea491aade7854918efd139
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.patch_config_guess:1
+# 13a9ef181aad4bf69697d8b105d7fbe3
 msgid "Whether or not to update ``config.guess`` on old architectures"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.phases:1
-# 69e4d87c737941adb338864c4c49a3bd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.phases:1
+# d868db8c299845c5aa90c25a105970da
 msgid "Phases of a GNU Autotools package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.set_configure_or_die:1
-# 79f6b55149964dbba83a0e8caf261759
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.set_configure_or_die:1
+# b0a1fb06d17f44c1aef70321b1271287
 msgid "Checks the presence of a ``configure`` file after the autoreconf phase. If it is found sets a module attribute appropriately, otherwise raises an error."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.set_configure_or_die:0
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure:0
-# 17b87974d8344b498794f2e760050076
-# 7633c2262d214a96b89c30478016fb2e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.set_configure_or_die:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure:0
+# 21f164b809a848e498b64a9b62a38269
+# a0fc1fabd4e14df5b67fedfc00439f96
 msgid "Raises"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.set_configure_or_die:5
-# 0074ddbb9b9c48fb9b5894f5644d61b7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.set_configure_or_die:5
+# 2541efb4cb664450ad53e0b652a89e46
 msgid "if a configure script is not found in :py:meth:`~AutotoolsPackage.configure_directory`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:1
-# 5d91e499fa184ea49091348342a6307f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:1
+# 001366bf9fcb4250bf30d3dea4434fd1
 msgid "Inspects a variant and returns the arguments that activate or deactivate the selected feature(s) for the configure options."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:4
-# 576160245960456c8bcc4c06c6572390
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:4
+# d484866894b2499494be248ff0220f06
 msgid "This function works on all type of variants. For bool-valued variants it will return by default ``--with-{name}`` or ``--without-{name}``. For other kinds of variants it will cycle over the allowed values and return either ``--with-{value}`` or ``--without-{value}``."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:9
-# bb72d4a0313c4e87b127c1e45ad11108
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:9
+# 20db7fa9ce8d491ca22c202c45ab40be
 msgid "If activation_value is given, then for each possible value of the variant, the option ``--with-{value}=activation_value(value)`` or ``--without-{value}`` will be added depending on whether or not ``variant=value`` is in the spec."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:16
-# 7916d0ce648f483f812bf7542cfe2766
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:16
+# 29fb40ec600c477ebe41c5f959d15368
 msgid "callable that accepts a single value and returns the parameter to be used leading to an entry of the type ``--with-{name}={parameter}``.  The special value 'prefix' can also be assigned and will return ``spec[name].prefix`` as activation parameter."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:16
-# 25e84ed84f054a03b0a579277a5f7f26
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/autotools.py:docstring of spack.build_systems.autotools.AutotoolsPackage.with_or_without:16
+# 1864d5fef9cd47e0bd53e2d22a47e3cb
 msgid "callable that accepts a single value and returns the parameter to be used leading to an entry of the type ``--with-{name}={parameter}``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:24
-# 93c68b4356a94a5595165cb6c6fbeb70
+# e7691bf7650f49f88c6511e2e1f8cf76
 msgid "spack.build\\_systems.cmake module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:1
-# ec56037204bb479cac2fc1178ac2e8a2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:1
+# d4e3585a5dae4c25a25ef4e3da352869
 msgid "Specialized class for packages built using CMake"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:3
-# 3d896d6f71ee4c75a1e74f4a302b670b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:3
+# fd2a92e0ed7d4bc281b3ca141a70e3e3
 msgid "For more information on the CMake build system, see: https://cmake.org/cmake/help/latest/"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:6
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:3
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:6
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:6
-# c0af3d928ed547cab10560d69e9c2047
-# 8bf7296bc181446990012c1138ff296a
-# a12dd9399b4349f0a051810a85a840b5
-# e6e2a48fe4a6466898ffcef8ee711bbd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:6
+# 240279d547104b4fae5c3a033f4aeecd
+# c8ccd710b15c43e9bc0e376bfa0ff3cd
+# 5f6f7961c09548bfab8cf2fe8ac74155
+# 87273df305ad4c25b4cf739f73906b1f
 msgid "This class provides three phases that can be overridden:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:8
-# ce3017417cb24fbe8d7d3218061285b9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:8
+# a7b0b1e7b09949edb272361603ecafb7
 msgid ":py:meth:`~.CMakePackage.cmake`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:9
-# bac4037e85b64d0cbb12e8ea04020f24
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:9
+# bc0568c99f37434484d8cd4aa61f8a7d
 msgid ":py:meth:`~.CMakePackage.build`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:10
-# 49d3283dbcee464d97b0365680acc822
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:10
+# 10ec3822ed504d1bbe124c26387fa86f
 msgid ":py:meth:`~.CMakePackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:12
-# 105cb0238d0044d3963609467cd5da2d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:12
+# 78cfc977dcda47af8a1f1e7feb5ff7c6
 msgid "They all have sensible defaults and for many packages the only thing necessary will be to override :py:meth:`~.CMakePackage.cmake_args`. For a finer tuning you may also override:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:19
-# 3097ef7fc08d4251817de7bb4d01ad44
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:19
+# a002a734b1244c9695a1241e7f2a99fb
 msgid ":py:meth:`~.CMakePackage.root_cmakelists_dir`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:19
-# dcce44dc0daa49079dc95f6dec0bb5f0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:19
+# a1e1efe7f6d745c6bfbc38bc9867539b
 msgid "Location of the root CMakeLists.txt"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:22
-# 3487d3a0e19642ddbcdf35454a1766f1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:22
+# d8a34bdc59ff42bd949c1476bb63ecd2
 msgid ":py:meth:`~.CMakePackage.build_directory`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:22
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:22
-# 1c59b022971f45729761c0b4122e9cf4
-# bc308f18a54548d8a542b5ea83fda0e7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:22
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:22
+# 8cbe70de5f9e4b16b6ab43409ccfaf08
+# 0c5d2d3abffa4f518b483546bee09c6f
 msgid "Directory where to build the package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:27
-# 459315e743bf40bb83b50d97cfb9dd02
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage:27
+# b973a8a21aab4340bb3ea5312fe55867
 msgid "The generator used by CMake can be specified by providing the generator attribute. Per https://cmake.org/cmake/help/git-master/manual/cmake-generators.7.html, the format is: [<secondary-generator> - ]<primary_generator>. The full list of primary and secondary generators supported by CMake may be found in the documentation for the version of CMake used; however, at this time Spack supports only the primary generators \"Unix Makefiles\" and \"Ninja.\" Spack's CMake support is agnostic with respect to primary generators. Spack will generate a runtime error if the generator string does not follow the prescribed format, or if the primary generator is not supported."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.archive_files:1
-# 306fd0d5268a48489cf356e08971b0e6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.archive_files:1
+# efa54b9a08fa4c6e8abb30da8aaa7909
 msgid "Files to archive for packages based on CMake"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build:1
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build:1
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.build:1
-# 558f6a82a7fb48c9b61a7d1fff186aef
-# 7f81d7f5f81642239c35dfd6df7610dd
-# 8c7bb2f486a1407d87e334d159ed298d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.build:1
+# 37031524474b4bb08af740348e6fb96f
+# eef3045477274e55963d2ce0ae9a3065
+# f9fab60963054c859c641078e2d12977
 msgid "Make the build targets"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build_directory:1
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build_directory:1
-# d1b1e9286fd147deb9c068b2b3d5e6d0
-# a4c8f8163cea4001b96f3e80480a59e9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build_directory:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build_directory:1
+# 0d25be412eaa44e085c77216ef380c53
+# bbb4ef5a73c14d529640802b34e5aec7
 msgid "Returns the directory to use when building the package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build_directory:3
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build_directory:3
-# 6e31307b68e742949f48bf7b8352b04b
-# 16ea93852444492791feb34a7a7211cb
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.build_directory:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.build_directory:3
+# 28b88d8fc717486088c5436f02d84164
+# e25c0aa0b9df4731aa18d68cdad78792
 msgid "directory where to build the package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.check:1
-# 18d96791283b4c918f557fe969dc990e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.check:1
+# b39e799199a84002a7bd8719af38ce06
 msgid "Searches the CMake-generated Makefile for the target ``test`` and runs it if found."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake:1
-# 6e1b1c46a7d74271b2e377940fae79d0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake:1
+# d3b23866cbb747beb9d4539eaa42d08d
 msgid "Runs ``cmake`` in the build directory"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:1
-# 2ac04ce8214540d8aee66b4b7c20b3bf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:1
+# 6d0c3fab42a541fc8c71fbf441b61650
 msgid "Produces a list containing all the arguments that must be passed to cmake, except:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:4
-# 2eb0ef01f217484f8912e2caf2903f2a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:4
+# 42b7a806099443bb8b79a343687af457
 msgid "CMAKE_INSTALL_PREFIX"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:5
-# 8c4f8e14bdf94f9e83056a4771b7cbff
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:5
+# 114893d067b34c9ca5795d12b2d78360
 msgid "CMAKE_BUILD_TYPE"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:7
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:9
-# e796ed7e4b1f4737a1441406ff789a72
-# cf1ccd0033874cc0bdb786d9910a1444
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:9
+# 9ecac100451647459067ebedc8e36d3d
+# 1cde760cd38640c4bb639d67862056c7
 msgid "which will be set automatically."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:9
-# 048429ef2910480aba37bd647ca77274
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.cmake_args:9
+# 98c09d653b97404aaa1cf64f4da3691d
 msgid "list of arguments for cmake"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.flags_to_build_system_args:1
-# 77202cfcaad64988a46deee375ed8d46
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.flags_to_build_system_args:1
+# e4b31d8377f8401ab4f438cc706e26cc
 msgid "Produces a list of all command line arguments to pass the specified compiler flags to cmake. Note CMAKE does not have a cppflags option, so cppflags will be added to cflags, cxxflags, and fflags to mimic the behavior in other tools."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.generator:1
-# 1f46c2dd18c241ef84cdfd1064f48381
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.generator:1
+# e427a2bca37d43d6b7b469a362063415
 msgid "The build system generator to use."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.generator:3
-# 50aee8acdb3b4d17a052efb7522e991a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.generator:3
+# f16ca482470c42318d460d26ddff17f3
 msgid "See ``cmake --help`` for a list of valid generators. Currently, \"Unix Makefiles\" and \"Ninja\" are the only generators that Spack supports. Defaults to \"Unix Makefiles\"."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.generator:7
-# a74993204c324b6689fc97c808e990de
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.generator:7
+# 1d02a158ced748878d583bd8c9352895
 msgid "See https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html for more information."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.install:1
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.install:1
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.install:1
-# a3027929257f45b28b7a6250619af771
-# 3737f22339804d7285d36f6c85ee3faa
-# ff717fbb6d49456d85a0e4b33faf563f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.install:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.install:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.install:1
+# 091dabfee202437fb69977bee55d5cbb
+# 5721fc565c014d73a2f94f809a65a325
+# 702fd66aba854827a178f93dabe3e236
 msgid "Make the install targets"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.phases:1
-# 2686840d7adc4d9a904ec58a64322f00
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.phases:1
+# 35585923761049d497b26125cfd72da6
 msgid "Phases of a CMake package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.root_cmakelists_dir:1
-# 600a46aefbd1463db23b1df59221f642
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.root_cmakelists_dir:1
+# 1d671e33aebc4511a16fd2c75d908408
 msgid "The relative path to the directory containing CMakeLists.txt"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.root_cmakelists_dir:3
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.root_mesonlists_dir:3
-# a7644f4168b14dc1b1cd714a8588acf5
-# 71d53ac0ffb64abf934e8465c1405d88
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.root_cmakelists_dir:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.root_mesonlists_dir:3
+# 5d49bb9feafb44d5a4a87817565ab87f
+# 1584f4fe0d62416eaea3e1c583c5d686
 msgid "This path is relative to the root of the extracted tarball, not to the ``build_directory``. Defaults to the current directory."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.root_cmakelists_dir:6
-# d2ebd5ef693641c592b2617092a0a711
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.root_cmakelists_dir:6
+# f9e8776c658d4e77b5e04fbef43f9090
 msgid "directory containing CMakeLists.txt"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.std_cmake_args:1
-# 2672cd95efa845d480e85cd9be0f375d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.std_cmake_args:1
+# d8890174f20a41d684b155c7c67aeea7
 msgid "Standard cmake arguments provided as a property for convenience of package writers"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.std_cmake_args:4
-# f26d6fcb5ef0459db53b7ca8d086b940
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cmake.py:docstring of spack.build_systems.cmake.CMakePackage.std_cmake_args:4
+# c2a2fa4dd496450ea8ea490f1e22f31a
 msgid "standard cmake arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:32
-# 34650a6d6afa49c1ae135c0f1f0a53ef
+# 835fb1f52476493b8184e226d2fca358
 msgid "spack.build\\_systems.cuda module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/cuda.py:docstring of spack.build_systems.cuda.CudaPackage:1
-# e3a54e5e8b574886b754b469921b0998
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/cuda.py:docstring of spack.build_systems.cuda.CudaPackage:1
+# 9f077f172a6046c596c0ae4fef95bb4d
 msgid "Auxiliary class which contains CUDA variant, dependencies and conflicts and is meant to unify and facilitate its usage."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:40
-# d16a08843adc450da4d8a89cabff5bc0
+# 15a60eb29e3c4634aeadea0d3e2a7b17
 msgid "spack.build\\_systems.intel module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:1
-# 3c985eeca6614fe3a7a3f6054dff58cc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:1
+# 7498d993d4bb4bb8b951c3a2a7dc045a
 msgid "Specialized class for licensed Intel software."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:3
-# 3a5bbbc738724fa688a4d0a140ba63a5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:3
+# 459cc8c867214090b9e52aa5c9df25bf
 msgid "This class provides two phases that can be overridden:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:5
-# 75051b004f3d44f5a69e93f30fb01a00
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:5
+# c15377663d9a404abcf4f27f2eb90ee9
 msgid ":py:meth:`~.IntelPackage.configure`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:6
-# 4a62c9d109524ce6a8f7bd866adeffd3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:6
+# 91b6144578e444dea8febdf3ba0bcfa4
 msgid ":py:meth:`~.IntelPackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:8
-# 7fbebd7c753c4058abed855024b15647
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage:8
+# 5dd6e78f6fb44e178eb9767748d2c5d6
 msgid "They both have sensible defaults and for many packages the only thing necessary will be to override setup_environment to set the appropriate environment variables."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.component_lib_dir:1
-# 7251a94babe745218267e3d0b47a1798
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.component_lib_dir:1
+# e92bf9ba345246e3b8665075e90602c6
 msgid "Provide directory suitable for find_libraries() and SPACK_COMPILER_EXTRA_RPATHS."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.configure:1
-# dd098de17c4e4a67bdddd5112e1dba10
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.configure:1
+# 2efdd6f6c9f446328e6df2207c11666e
 msgid "Generates the silent.cfg file to pass to installer.sh."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.configure:3
-# 4303589fede24b1980bd6091b473e74c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.configure:3
+# d0db88520426431081eba266d10a7fab
 msgid "See https://software.intel.com/en-us/articles/configuration-file-format"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.file_to_source:1
-# ccf9f83dbff14baf901c39239fc720b0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.file_to_source:1
+# f5b8757bb0a64d6ab6f6db3ae4461eb3
 msgid "Full path of file to source for initializing an Intel package. A client package could override as follows: `    @property` `    def file_to_source(self):` `        return self.normalize_path(\"apsvars.sh\", \"vtune_amplifier\")`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.global_license_file:1
-# 4b54a57fc79c490e8f4c1020172d120f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.global_license_file:1
+# 42c49f2c0b0f4d80bda1530b3b2762ba
 msgid "Returns the path where a Spack-global license file should be stored."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.global_license_file:3
-# c06ba27b934f4ff7b824510f37147b19
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.global_license_file:3
+# cfbf69ae41704c4b951da17ab99a3a65
 msgid "All Intel software shares the same license, so we store it in a common 'intel' directory."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.install:1
-# 68ac2a14df9d4dd6844ded9f27a250a9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.install:1
+# 3fd665a63c0d4a39ae4596ca0b539ff2
 msgid "Runs Intel's install.sh installation script. Afterwards, save the installer config and logs to <prefix>/.spack"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.intel64_int_suffix:1
-# 2469776ad9e94638861823669772cde7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.intel64_int_suffix:1
+# 21a43ad4ada34b679ab52a55e3478f67
 msgid "Provide the suffix for Intel library names to match a client application's desired int size, conveyed by the active spec variant. The possible suffixes and their meanings are:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.intel64_int_suffix:5
-# 7cccb6b4c0a940bca0f84e423f5d2ea6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.intel64_int_suffix:5
+# e7f9e602d41b42f881bee0a942326955
 msgid "``ilp64``  all of int, long, and pointer are 64 bit, `` lp64``  only long and pointer are 64 bit; int will be 32bit."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_comment:1
-# 8f15a6b48743403a96bf9274c7f9db86
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_comment:1
+# be1a60b13fe14aea81df8645ee7a9b21
 msgid "Comment symbol used in the license.lic file"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_files:1
-# 753e50d48c36469797e869f557b8c978
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_files:1
+# 1106974cfb1f42db843a48d281a55269
 msgid "Built-in mutable sequence."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_files:3
-# 07acdeec6b2c409c9a9898b32d670ed5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_files:3
+# 3b38289e348b40648c835d8e1f344db5
 msgid "If no argument is given, the constructor creates a new empty list. The argument must be an iterable if specified."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_required:1
-# d82f177fed1e49ee8db93530229c302e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_required:1
+# b049a7a8783f44948a3adc029760bb5c
 msgid "bool(x) -> bool"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_required:3
-# 0ae58cce1a594bfda273ad714ef4f856
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_required:3
+# 45794f66bbdc4fc98977a961c9473bff
 msgid "Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_url:1
-# cefe009b7da442019d930d2b72b6a03d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_url:1
+# 88d9f3ae51f94cc0968ad7e53b0860bf
 msgid "URL providing information on how to acquire a license key"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_vars:1
-# 7ad96c6a540640ccb06bbbbdc0e8544e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_vars:1
+# e85a5a2afe00470e84633886bb9a9bde
 msgid "Environment variables that Intel searches for a license file"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_compiler_wrappers:1
-# 252ab82c424f4d4da467f708bb18b8dc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_compiler_wrappers:1
+# 3e6c2f9963de40198db61ae0608ca257
 msgid "Return paths to compiler wrappers as a dict of env-like names"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_setup_dependent_environment:1
-# 73da7cff85724c5f949b34164f2ed713
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_setup_dependent_environment:1
+# 88fba176086849a9abf3f929d616ebe2
 msgid "Unified back-end for setup_dependent_environment() of Intel packages that provide 'mpi'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_setup_dependent_environment:4
-# a707cb305f8d4121a820222969d9da44
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_setup_dependent_environment:4
+# 3aa1117a8ba24c6b83ae8952897ae224
 msgid "same as in setup_dependent_environment()."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_setup_dependent_environment:6
-# e5ac0683082d4903b6647942ad991fea
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.mpi_setup_dependent_environment:6
+# 8b0f3e2699b14287949cdb4e352f35df
 msgid "Conveys spack_cc, spack_cxx, etc., from the scope of dependent packages; constructed in caller."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:1
-# 5d1ecb947d8343c68c39b2f182311f51
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:1
+# 02da6a18b7654d5e9fbd2054d950edc5
 msgid "Returns the absolute or relative path to a component or file under a component suite directory."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:4
-# 77aec42c229f4605ab8e3d6d1c25142f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:4
+# 24b26b764e1447f5ba9a0799039728be
 msgid "Intel's product names, scope, and directory layout changed over the years.  This function provides a unified interface to their directory names."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:8
-# 0e8f67416ae04e37b8ddb3778244db6e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:8
+# 83bca850a3db4e13b36e36e6ab017c83
 msgid "a component name like 'mkl', or 'mpi', or a deeper relative path."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:11
-# dddac60cad31417f8ee39caf60e27686
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:11
+# fd5fd7d421794f6ea9a3969aec1faa09
 msgid "_Unversioned_ name of the expected parent directory of component_path.  When absent or `None`, an appropriate default will be used.  A present but empty string `\"\"` requests that `component_path` refer to `self.prefix` directly.  Typical values: `compilers_and_libraries`, `composer_xe`, `parallel_studio_xe`.  Also supported: `advisor`, `inspector`, `vtune`. The actual directory name for these suites varies by release year. The name will be corrected as needed for use in the return value."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:11
-# f65767801531485898e2ebfd2d7a0dd7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:11
+# 67df3d2ffb434505b4a51b6b7186985d
 msgid "_Unversioned_ name of the expected parent directory of component_path.  When absent or `None`, an appropriate default will be used.  A present but empty string `\"\"` requests that `component_path` refer to `self.prefix` directly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:17
-# d77b6d393f364f149dd773d3ba4a7ec7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:17
+# 4f97563b0a4f42639d51db1652dc872a
 msgid "Typical values: `compilers_and_libraries`, `composer_xe`, `parallel_studio_xe`."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:20
-# 6e80213312a148e186a13643690e1c7e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:20
+# 894c7fd383f74738accb1d8d4bbaffad
 msgid "Also supported: `advisor`, `inspector`, `vtune`. The actual directory name for these suites varies by release year. The name will be corrected as needed for use in the return value."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:24
-# 129e5186616a4940902d66bb9404536b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_path:24
+# 9c179580135a4ad392a3850a6bab88ca
 msgid "When True, return path relative to self.prefix, otherwise, return an absolute path (the default)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:1
-# 1b4fd5d420ea4b35b2a7010da8abda02
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:1
+# ef7df45e1ba24ef99703a22811318256
 msgid "Returns the version-specific and absolute path to the directory of an Intel product or a suite of product components."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:4
-# 81b767339f7844d4b29573490166e2b1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:4
+# cd38a1f079ce41259597a539a5063db0
 msgid "Name of the product directory, without numeric version.  - Examples::      composer_xe, parallel_studio_xe, compilers_and_libraries  The following will work as well, even though they are not directly targets for Spack installation::      advisor_xe, inspector_xe, vtune_amplifier_xe,     performance_snapshots (new name for vtune as of 2018)  These are single-component products without subordinate components and are normally made available to users by a toplevel psxevars.sh or equivalent file to source (and thus by the modulefiles that Spack produces)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:4
-# 28b5dc3cb8354551ba7a90361613f831
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:4
+# 4cb857edc3844742829aced21b516525
 msgid "Name of the product directory, without numeric version."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:6
-# 25d689513fe84b388a9d2ece2efbc251
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:6
+# 4baa65e5511c496298aa6c27c044226e
 msgid "Examples::"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:10
-# 31e0bc543c0e4c9687f8a3b5e993b15d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:10
+# 0e5563c5b42744e0b5b416c64e8eceb0
 msgid "The following will work as well, even though they are not directly targets for Spack installation::"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:16
-# 3a850319f0964364955fae3d80cd83a0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:16
+# 0f3933337f2049ba81f12b6020bcb60c
 msgid "These are single-component products without subordinate components and are normally made available to users by a toplevel psxevars.sh or equivalent file to source (and thus by the modulefiles that Spack produces)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:21
-# f8f51aea87874b89969e5dd1dbf08bec
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.normalize_suite_dir:21
+# 39536deaf3484c4e8f911b78034a0ea4
 msgid "Suffix glob patterns (most specific first) expected to qualify suite_dir_name to its fully version-specific install directory (as opposed to a compatibility directory or symlink)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.openmp_libs:1
-# 4874789e3f8b4acca4cfb0710c218a24
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.openmp_libs:1
+# fbb322d28caf4c04b0869cd8ee0ca8f8
 msgid "Supply LibraryList for linking OpenMP"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.phases:1
-# 8b81e741160d4d2f89bcdf82f75b4224
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.phases:1
+# 9a24624ea7ca4c51bfb0b2170a3d9a03
 msgid "Phases of an Intel package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:1
-# 617d17f39505435aae64dca49f78d93c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:1
+# b78213a0370f4b5faf610b9982c07c9a
 msgid "Set up the environment of packages that depend on this one."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:3
-# 272b4d63a2064b28a9c0b067419eaf5e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:3
+# 7f35ce64d45541b9a0ceb27bdbbb6051
 msgid "This is similar to ``setup_environment``, but it is used to modify the compile and runtime environments of packages that *depend* on this one. This gives packages like Python and others that follow the extension model a way to implement common environment or compile-time settings for dependencies."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:9
-# 06747ce63f074332b3378569b5048d91
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:9
+# 104baa3a28af4bb0bfcaa8cd8acecb9a
 msgid "This is useful if there are some common steps to installing all extensions for a certain package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:12
-# f7f16fde5fca4f55a79c77032da1a64d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:12
+# 758fbbd79b3c41cfa39a77880f4dab9f
 msgid "Example:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:14
-# b5c1e2566b51475e8f9deea1e251319f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:14
+# d3b58c37d55e4cd890c7559d010d4a88
 msgid "Installing python modules generally requires ``PYTHONPATH`` to point to the ``lib/pythonX.Y/site-packages`` directory in the module's install prefix. This method could be used to set that variable."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:18
-# 802b39cdff694c318aa586d5f62c9fb1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:18
+# fe1d04ae6db7410e9123bf7ea53c949e
 msgid "List of environment modifications to be applied when the dependent package is built within Spack."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:22
-# 4c5a43f13cff435ba07161cd456df3da
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:22
+# 3ea0c06ef54f4121bef48fca3e5e1e44
 msgid "List of environment modifications to be applied when the dependent package is run outside of Spack. These are added to the resulting module file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:27
-# 2c2dfdb0cb364ea0a5469c344ad3117c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_environment:27
+# 8eb922fb92fb4207ab826d3e25c887ed
 msgid "The spec of the dependent package about to be built. This allows the extendee (self) to query the dependent's state. Note that *this* package's spec is available as ``self.spec``."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:1
-# 16be5717264746bfb88a12e82595ab8f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:1
+# f4117ea295224b76ba2bbb44a4e6c489
 msgid "Set up Python module-scope variables for dependent packages."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:3
-# a4dfc237d1bb4f20946d5ae10438f44f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:3
+# 8b90805e51ca4e199414f0e4061d5e38
 msgid "Called before the install() method of dependents."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:5
-# e553003cc3fe45508121caf43ada94db
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:5
+# 3b70c09e3025483db8dd59992f3ec31e
 msgid "Default implementation does nothing, but this can be overridden by an extendable package to set up the module of its extensions. This is useful if there are some common steps to installing all extensions for a certain package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:10
-# ab8776cd3eb24a16aafa889e43739afe
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:10
+# bff26d466ed2476f9f5557ed4e96b872
 msgid "Examples:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:12
-# f3db0d570df14632bc259270393ca266
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:12
+# c04824608d81450fbf36af84875d22c6
 msgid "Extensions often need to invoke the ``python`` interpreter from the Python installation being extended. This routine can put a ``python()`` Executable object in the module scope for the extension package to simplify extension installs."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:17
-# eb796535883140218ba6839bfa22b21e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:17
+# f33afa5703fe4ce084a60667a85d9103
 msgid "MPI compilers could set some variables in the dependent's scope that point to ``mpicc``, ``mpicxx``, etc., allowing them to be called by common name regardless of which MPI is used."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:21
-# 10f1b477b2c4456487568a3e3e756029
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:21
+# 3b6a5d9733734f0599b7bdf88d019f6c
 msgid "BLAS/LAPACK implementations can set some variables indicating the path to their libraries, since these paths differ by BLAS/LAPACK implementation."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:25
-# 1758ff11b91e4089ba9c3fe76463e193
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:25
+# 5135f8899e3f4967ae5bd4c0a1356862
 msgid "The Python ``module`` object of the dependent package. Packages can use this to set module-scope variables for the dependent to use."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:29
-# 8184c590f699484e894d0ad7eedbf0b2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_dependent_package:29
+# 2e0650b82cb24812b829dc302b684571
 msgid "The spec of the dependent package about to be built. This allows the extendee (self) to query the dependent's state.  Note that *this* package's spec is available as ``self.spec``."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_environment:1
-# 12dc08a0b24849459ebf96396d961619
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_environment:1
+# eb1fa3aa773f46f1bf8e8e1a4371c4f4
 msgid "Adds environment variables to the generated module file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_environment:3
-# f1bd1dc3591f41af8762887b6e5096b2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.setup_environment:3
+# d9f12fd37fbb43e2a13666ae877e3ceb
 msgid "These environment variables come from running:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.tbb_libs:1
-# 6ba42c68c0a941cea8941d15d1406724
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.tbb_libs:1
+# a3e20a3a70d448dba91c7d6860c6e165
 msgid "Supply LibraryList for linking TBB"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.version_yearlike:1
-# a8b7b4ca84de486bae7707fee8ed1fdf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.version_yearlike:1
+# b96b8aee35ee443aa4e3efc6b911d2cb
 msgid "Return the version in a unified style, suitable for Version class conditionals."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.debug_print:1
-# a4fd8dc62fae4c76915f1d7bca811d5e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.debug_print:1
+# fe433c15bad444e8b0724ff4d16b8a44
 msgid "Prints a message (usu. a variable) and the callers' names for a couple of stack frames."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.raise_lib_error:1
-# 12023e8bbe484728be739ad9b95c53af
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.raise_lib_error:1
+# 159aa0f4e79a43399a204909e2a5d200
 msgid "Bails out with an error message. Shows args after the first as one per line, tab-indented, useful for long paths to line up and stand out."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:48
-# 8346f8ebe0a04c3aaef4979c0c05af19
+# 16d79eb86bd94741a29dbdc60757a37f
 msgid "spack.build\\_systems.makefile module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:1
-# bd59f613330046df9054b6e40e05cc84
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:1
+# 5bb2bec1b64d4657804fa0a56edaf59d
 msgid "Specialized class for packages that are built using editable Makefiles"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:5
-# 64eade6855bf4debbf9c59497112b06b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:5
+# b95d1749fbc24354ab5c76d952bd3830
 msgid ":py:meth:`~.MakefilePackage.edit`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:6
-# a38954b3ce9245afb07a629c40de3417
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:6
+# 274fb32da18c44ccb24585e6f353ba24
 msgid ":py:meth:`~.MakefilePackage.build`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:7
-# c61141d2aab74f8ea2b3d7131a6874bd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:7
+# 03e06d4c547c4b8e911f85d5163ac721
 msgid ":py:meth:`~.MakefilePackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:9
-# 2d0837555a2b429e9112749d2e74cae9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:9
+# d49c1c616f754917b3beccb478394c8a
 msgid "It is usually necessary to override the :py:meth:`~.MakefilePackage.edit` phase, while :py:meth:`~.MakefilePackage.build` and :py:meth:`~.MakefilePackage.install` have sensible defaults. For a finer tuning you may override:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:17
-# 6cd191e734344c06b12e18b2739c87de
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:17
+# 88bcdcd0e4864e93be649d65a443b6fc
 msgid ":py:attr:`~.MakefilePackage.build_targets`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:21
-# ca30d4f97a274cb990b1c53ab61a1565
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:21
+# d2d01d68d64d4f24911e86ce7c971f0a
 msgid ":py:attr:`~.MakefilePackage.install_targets`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:25
-# dfea3596704b47288d50674c43bcbd60
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:25
+# 24863fce158d45c29cac7d9e5d39bc6f
 msgid ":py:meth:`~.MakefilePackage.build_directory`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:25
-# 3b8e2b240b554d48839287a087f89c8b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage:25
+# 8c42da06e8dd4fa98b327234b05e430c
 msgid "Directory where the Makefile is located"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build:1
-# 54372f15170943a6890ed0dca452a83f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build:1
+# 3dab8dd1ccf045199793634c9a87ca81
 msgid "Calls make, passing :py:attr:`~.MakefilePackage.build_targets` as targets."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_directory:1
-# 238b49b16b8c489db943ae88376d918a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_directory:1
+# 89894e7761cd48e88764fc0ae7d50970
 msgid "Returns the directory containing the main Makefile"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_directory:3
-# 563c85621d1943289f2d19b1919165de
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_directory:3
+# cdb61315bc6340518b63342a722860df
 msgid "build directory"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_targets:1
-# f65b239655af41ee954f2052fe299aed
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.build_targets:1
+# 7571b8c28ba849789f1349ca06b92f85
 msgid "Targets for ``make`` during the :py:meth:`~.MakefilePackage.build` phase"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.edit:1
-# b40562651e254f41917d16cb12fc9f82
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.edit:1
+# 6cf2ab028b724468966f06be3d2f7b5b
 msgid "Edits the Makefile before calling make. This phase cannot be defaulted."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.install:1
-# c1133aa4ea3940d08719a24b4e3ebb01
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.install:1
+# 37b69129e2a640d0869c0b140feab187
 msgid "Calls make, passing :py:attr:`~.MakefilePackage.install_targets` as targets."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.install_targets:1
-# 4e789f037346416baa1fea6f74a29642
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.install_targets:1
+# e0de960d6f464b67a4d7122440737982
 msgid "Targets for ``make`` during the :py:meth:`~.MakefilePackage.install` phase"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.phases:1
-# 6c08b691b7944318a2711deaa426f264
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/makefile.py:docstring of spack.build_systems.makefile.MakefilePackage.phases:1
+# 434b862465c34c5d9703ccac721a787e
 msgid "Phases of a package that is built with an hand-written Makefile"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:56
-# 023d02dce589449fb3af2d89d0e884da
+# b14afbbb924942588966b116fc9c4768
 msgid "spack.build\\_systems.meson module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:1
-# 035ac305319249da94a607c07c65b63c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:1
+# c1e40e6098eb4d46ae7fdee5b0b2ee43
 msgid "Specialized class for packages built using Meson"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:3
-# 2380b32d2e9b4dcd9114c767582a1dc3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:3
+# 927c61258fc94856aa920ae124a3c948
 msgid "For more information on the Meson build system, see: https://mesonbuild.com/"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:8
-# c70b7b12422c41c8a3f039d3ae9261ec
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:8
+# 616b21a708464fd5bbd83b721d457c10
 msgid ":py:meth:`~.MesonPackage.meson`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:9
-# fb128febbf05428e88ca3c7f7f6b61bb
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:9
+# ee906c97f3c643da825455ea0f1d53a8
 msgid ":py:meth:`~.MesonPackage.build`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:10
-# 5582e8c538f049c1a411ea3b87c96777
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:10
+# ac285c2aa05c4eb3a140e6c6f850f40e
 msgid ":py:meth:`~.MesonPackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:12
-# 0d9796442b4744388663c1f43f0339ab
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:12
+# fe2793e8bf28471fa92aca01a54186ef
 msgid "They all have sensible defaults and for many packages the only thing necessary will be to override :py:meth:`~.MesonPackage.meson_args`. For a finer tuning you may also override:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:19
-# ba6034bceb6f4f0d8165bf1bff136ee7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:19
+# 7b5913c3f1e84f84b9f1d3b00f03d4c4
 msgid ":py:meth:`~.MesonPackage.root_mesonlists_dir`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:19
-# f62c853797e34916a9a96d02d85502f5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:19
+# c7718b035adc4ed9853b4cab48a2c89c
 msgid "Location of the root MesonLists.txt"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:22
-# 372bd691ec97402f974b267e844b8a8f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage:22
+# 8f8d11ac4f0d4a6b9744a22a8f3d96c6
 msgid ":py:meth:`~.MesonPackage.build_directory`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.archive_files:1
-# e2f8c8e32fe54b84b1e82bddc11f21bd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.archive_files:1
+# 602fcd699c7a413ea48f14d098b0f1a3
 msgid "Files to archive for packages based on Meson"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.check:1
-# d57f1d3dd7ba4544bd5e7898b0cde8be
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.check:1
+# fcb3e96e2a58494ab05a3bca806fc9f1
 msgid "Searches the Meson-generated file for the target ``test`` and runs it if found."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.flags_to_build_system_args:1
-# 3eb0ad68aa1b4795abc97695e53de99f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.flags_to_build_system_args:1
+# 93e0ab5abeff4e26bb1b8e3370f99055
 msgid "Produces a list of all command line arguments to pass the specified compiler flags to meson."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson:1
-# 6ff0bbabd4b448cc960dbe08de16679e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson:1
+# 676e1c5d964145308c9ee4da01b87671
 msgid "Runs ``meson`` in the build directory"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:1
-# 01e43bfe0c0441dc92f3878f2cf9e79a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:1
+# e67743995ce64ce484ef97f74f0d956b
 msgid "Produces a list containing all the arguments that must be passed to meson, except:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:4
-# 143b3506f4464476ad7c422846fd1ef4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:4
+# 337a34e49a294181937010317b2ef6b1
 msgid "``--prefix``"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:5
-# f5a48b4b079a4ec8924f603bd56498b4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:5
+# cbb661bf6a4e4770896bf9072a06373a
 msgid "``--libdir``"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:6
-# 471ca7f04ab74c6686e6a7b728db644e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:6
+# 4444405adf434c268006a108d4edef7a
 msgid "``--buildtype``"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:7
-# 0e9441e321d9436597564492b81f403a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:7
+# a0fe76ac22f8482da02a3a97790e7de5
 msgid "``--strip``"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:11
-# 15c85066c6d64aa3bc4c23fe777fe938
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.meson_args:11
+# b586f27fc6174fd9a80959d8fca1b14e
 msgid "list of arguments for meson"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.phases:1
-# 7c412e0302ce4ce595a4e8cd7124f0ba
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.phases:1
+# d97cc24de3df4eab82a5d10086dfa086
 msgid "Phases of a Meson package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.root_mesonlists_dir:1
-# 95db99d9f493483bacd555456f685f09
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.root_mesonlists_dir:1
+# 975f69d8e0f14b50adc87b9b8c85703b
 msgid "The relative path to the directory containing meson.build"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.root_mesonlists_dir:6
-# 5d4b1e2320584f7aa5f711b40df8b073
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.root_mesonlists_dir:6
+# e772c77b87dd4941bdb9d1276e00fa6d
 msgid "directory containing meson.build"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.std_meson_args:1
-# 0a81d6f0b2f94dd3b7ae0c54490171c0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.std_meson_args:1
+# 5ef924ff51c74c73933587078c1556b7
 msgid "Standard meson arguments provided as a property for convenience of package writers"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.std_meson_args:4
-# a9c13e5624e34af1a6d8b6c4bb751f72
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/meson.py:docstring of spack.build_systems.meson.MesonPackage.std_meson_args:4
+# f04e50e26f974c5a91bc40f71afd28ec
 msgid "standard meson arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:64
-# 304d9f7adad44afa99ddd93bef17c787
+# 2d4d02bc48a34555b5c8987336d44c70
 msgid "spack.build\\_systems.octave module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage:1
-# 390b7c94457143148a875cb3b4f8626d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage:1
+# e2d502b33dce41848956b180b5a10cd5
 msgid "Specialized class for Octave packages. See https://www.gnu.org/software/octave/doc/v4.2.0/Installing-and-Removing-Packages.html for more information."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage:5
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:4
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:5
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:4
-# 6e5eafd2eabc4b638e97c065e5f87c72
-# 76cd2c77a9e94c068ab9898731dfae58
-# f444f928ccc9406b8e32607b2126e74e
-# d78ab2b0d8c54d41949884f4e8b95fce
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:4
+# a81d63c545ca41579d89fec7d2fc2104
+# 3aa510e914f44d71be34c5b8780fb212
+# 6743a5cae72e4022b0b675a3e72c6cb7
+# fd14c13ae02941a78f64f58ece637f34
 msgid "This class provides the following phases that can be overridden:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage:7
-# ac04f65a2bad4112a91a4fe985aff804
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage:7
+# 61be509c37cd4a28a8193e053e7c89b6
 msgid ":py:meth:`~.OctavePackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage.install:1
-# 4a7c6b96de834c5a9bdac4972d45d36c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage.install:1
+# 6b151678500d495a85ab4fd68e75c790
 msgid "Install the package from the archive file"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage.setup_environment:1
-# 6cb413416eb8415d93e9f0155031e7f8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/octave.py:docstring of spack.build_systems.octave.OctavePackage.setup_environment:1
+# 7e6cd57110c24a3cacb2ccde7fa4f27d
 msgid "Set up the compile and runtime environments for a package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:72
-# 320e084656794803bfec364e6b8f9047
+# f2e18a68543f45388e90d87a535ebd71
 msgid "spack.build\\_systems.perl module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:1
-# 9b89651a063d4053a61d7f920eae16cf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:1
+# 904f3196b7ef4e9ead83348b492c08c5
 msgid "Specialized class for packages that are built using Perl."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:3
-# 543e679664704e27bfc3a6461e14e217
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:3
+# f1d2c01f7a8f48abaadcaab07396daba
 msgid "This class provides four phases that can be overridden if required:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:5
-# efb3499cb6884893888bd73bcb4b784c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:5
+# e07e5829bd264667841a4601c8e415c5
 msgid ":py:meth:`~.PerlPackage.configure`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:6
-# 87fb7cdd4e654b3da63ff78c90136f0b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:6
+# 135d2c59066649e1823da3b97872b45c
 msgid ":py:meth:`~.PerlPackage.build`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:7
-# 9dad558dc9f2487c977a4587c8cf1024
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:7
+# 8ae815f180af4985bbab07fca04abea8
 msgid ":py:meth:`~.PerlPackage.check`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:8
-# 90e343c41d8c4700b7e11ba3e2f8d2d2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:8
+# 58ead18257144482a365c82a6c371a95
 msgid ":py:meth:`~.PerlPackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:12
-# 43cb0eae19f648638f60ef65b7d6e862
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:12
+# 94f6e04515aa47728ff6409e7e18ac55
 msgid "The default methods use, in order of preference:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:11
-# 4c7cf332057b47bd84c949deec2e9f63
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:11
+# d7f75494b9ab489cb2c92e0437b15492
 msgid "Makefile.PL,"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:12
-# 9db8b0655e8247ebbfb376c40ae8bb34
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:12
+# a6fe117b9a974121af161548794d65fe
 msgid "Build.PL."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:14
-# e6b55dd17b2f4020a70f190f7b8fcb35
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage:14
+# 50c43181a6834aac85bc4cc3317858b0
 msgid "Some packages may need to override :py:meth:`~.PerlPackage.configure_args`, which produces a list of arguments for :py:meth:`~.PerlPackage.configure`. Arguments should not include the installation base directory."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.build:1
-# e15dcbd978cb4e4295b7818ed31ef4ab
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.build:1
+# 467e3a9817754ca2a9355f20034babc0
 msgid "Builds a Perl package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.check:1
-# 0915f9e1934f4568929ed7403bd09019
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.check:1
+# f93c86598cbf4cea85d23680519d7cad
 msgid "Runs built-in tests of a Perl package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure:1
-# 22ec7a33df3046258baadeef80cf284d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure:1
+# 546f260380344ed0b5b994240e743979
 msgid "Runs Makefile.PL or Build.PL with arguments consisting of an appropriate installation base directory followed by the list returned by :py:meth:`~.PerlPackage.configure_args`."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure:5
-# 03d5ce4f630a4fb8aa46410d2511d8e1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure:5
+# 21fe6dd3cf9e45b588f4db1abbacf2d0
 msgid "if neither Makefile.PL or Build.PL exist"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure_args:1
-# 5a8d58d9e2864c9f8a9afe35e7ebfb9b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure_args:1
+# 6bc84b05569b4be6ba2fb91a9b7ccb4e
 msgid "Produces a list containing the arguments that must be passed to :py:meth:`~.PerlPackage.configure`. Arguments should not include the installation base directory, which is prepended automatically."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure_args:5
-# 5347edc9202a43d8b8dfaf99da23a1c5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.configure_args:5
+# afaabce002064fba90bf39b0c1e7b385
 msgid "list of arguments for Makefile.PL or Build.PL"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.install:1
-# bf36e4bc0e5f49719e8278a0d8f2b98b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.install:1
+# c26be6d6645448acbb657a11e1457502
 msgid "Installs a Perl package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.phases:1
-# 545b9a96de374b629d948de8c21e1965
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring of spack.build_systems.perl.PerlPackage.phases:1
+# a2c72649b4a54aac84e991f0f737d724
 msgid "Phases of a Perl package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:80
-# b321c64b2b4f40fd913b1bb9fe2217de
+# aa794305628c4592b0c491571914ac89
 msgid "spack.build\\_systems.python module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:1
-# e8a5552f572040bfb52515477e9956d8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:1
+# 404fdf412ede4a8ead1c9d932cf71dfd
 msgid "Specialized class for packages that are built using Python setup.py files"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:6
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:7
-# 10b98bc93d7d47d09fb21f4e0639f9ee
-# 72e6624bc20049aaa7379fcc3d3b0257
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:7
+# 1d39b89f618244a9830ca4371ae25850
+# 87840b6f71d740f9a671f34cb4c6b4ef
 msgid "build"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:7
-# 1dee02f501be41ebab0f6ea699021598
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:7
+# 89208d3623c1448780724c454768e4d8
 msgid "build_py"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:8
-# f23616eb8e20413ab1de486d1410d877
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:8
+# 64b84efce94843c4b30e696d97fdf69c
 msgid "build_ext"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:9
-# bd8e43ab18d6403c9e6f1358c5b0c24c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:9
+# 532162494b8a4932b519b3cc6f7a04a5
 msgid "build_clib"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:10
-# 84e7ba7c15a849ec91025d40f124f9ed
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:10
+# 09d4a47d05b542f0b6ac2daa3d7db68c
 msgid "build_scripts"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:11
-# cb7a177ce16344fc87e693a6c7e423b2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:11
+# fae0485916b54881837e1bff30af2159
 msgid "clean"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:12
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:8
-# 1c15811ba33a4f4ea265f6638e838248
-# 7e9ab9d1352247bdb599639686bed2f8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:12
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:8
+# 69cc13767ec04cdc89d1bbe8d1838f53
+# ee95a50f21724aecbfb3f29d4de9b9e2
 msgid "install"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:13
-# 4baa2ba9a8c54c4bb769b0bf0483cef9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:13
+# ce3c6ceaf7794eee8cdc3609747a7d69
 msgid "install_lib"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:14
-# 16003be2a26c4b8288a3e20435442b04
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:14
+# 9bb7ebab5559412999211ff9f15a2c52
 msgid "install_headers"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:15
-# 43aae90929cf48209bb1b7149219c444
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:15
+# 6b18d3c42dcd40cca0d0cf87de184626
 msgid "install_scripts"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:16
-# 5cc787b2c8254be48ec32a4d6b6be2be
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:16
+# 4bfeae51e78d47f9a0901f6d148e7669
 msgid "install_data"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:17
-# 423ba747b41e42ce92d4eade07616a63
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:17
+# f22c162f909849428c2fb0897472ee51
 msgid "sdist"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:18
-# 87e1fb8c1985476a9e45e7b20ae7094d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:18
+# 815fc4c0bb25407eb34df24f0173d854
 msgid "register"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:19
-# 02d9ada5c9614c3ea1b911655e27061e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:19
+# 67ce6a0a6013493a8787e25630b533ff
 msgid "bdist"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:20
-# aa28e91d932a474e96649cf06842592c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:20
+# ae76f0b7954042f2bf48ab454b5283d0
 msgid "bdist_dumb"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:21
-# d88ca86def514452a084cec1271d9fd3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:21
+# 0388391d23ea4fb197406a3543296ad9
 msgid "bdist_rpm"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:22
-# a9efb8a96fbd438ab437dc29cddb7859
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:22
+# b39483b08af248e8987cdd7fccc80d48
 msgid "bdist_wininst"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:23
-# cf7b9a04153a430da1d92d035c929b51
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:23
+# 1d061b5cb093470e99ba16850f2af8ce
 msgid "upload"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:24
-# 151cf8f4c4b5445e91db70e03a8c6ac5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:24
+# 35a588d762214159b18f96c7ebc436de
 msgid "check"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:26
-# 49ad1c53a5a5486ab419d66f098cac33
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:26
+# f7c72c082958406aa2ef53e07abb3975
 msgid "These are all standard setup.py commands and can be found by running:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:32
-# 9d06575e3f914cf3ad6d2ea294fb9c20
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:32
+# ae55d1e277f14882bc0773ab1b9efeac
 msgid "By default, only the 'build' and 'install' phases are run, but if you need to run more phases, simply modify your ``phases`` list like so:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:39
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:16
-# 45472cb69a3b42fdbe94fbef61d2b2b8
-# 1854a0b86fd34866a3655160c66bb511
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:39
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:16
+# 6a73841afe5048b8b9b38b6d97559ba5
+# c9efd72b57b046e9bb8b2eea33ee9479
 msgid "Each phase provides a function <phase> that runs:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:45
-# f7f603373f4c491eb7da1c1ce4f9cd42
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:45
+# dd6ef29ca31642839728afb442185384
 msgid "Each phase also has a <phase_args> function that can pass arguments to this call. All of these functions are empty except for the ``install_args`` function, which passes ``--prefix=/path/to/installation/directory``."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:49
-# 800d5d1fd59c45cfa7b17cfb69c2400c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage:49
+# 5ceeec8b4bc14126b01f1f01472bc5a9
 msgid "If you need to run a phase which is not a standard setup.py command, you'll need to define a function for it like so:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.add_files_to_view:1
-# 0157a74c821e4e74b36954a0c1972e08
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.add_files_to_view:1
+# 31a4c172a1384478916b880a70cfdee8
 msgid "Given a map of package files to destination paths in the view, add the files to the view. By default this adds all files. Alternative implementations may skip some files, for example if other packages linked into the view already include the file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist:1
-# 95b20a55d8fa433ea18b2c401d9227c1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist:1
+# c36d77aad6c348f1acba54439d9fe155
 msgid "Create a built (binary) distribution."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_args:1
-# 7f8897c565684380b31f4b0f4b6b11c7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_args:1
+# d37de9dfbdd14a09b37b3702d242ce8d
 msgid "Arguments to pass to bdist."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_dumb:1
-# 129cfca4e3df442ba9c8cd5fa2419855
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_dumb:1
+# 9a53b042fafa489fa7681e7aa684fae2
 msgid "Create a \"dumb\" built distribution."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_dumb_args:1
-# 35085e8fa18c4a22bc5c18c0935c8553
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_dumb_args:1
+# 6a44a918b6ee4fae9f43b5de138807ff
 msgid "Arguments to pass to bdist_dumb."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_rpm:1
-# 4c832c8ac2f943fc95506a589a9cb916
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_rpm:1
+# 2a6feb8d3d4f4bb0bef81e1a07e50540
 msgid "Create an RPM distribution."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_rpm_args:1
-# 25271bba4c1b422b8a04b0ba7decb686
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_rpm_args:1
+# 14c48bc9569c4b3a85143ea6ad428e56
 msgid "Arguments to pass to bdist_rpm."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_wininst:1
-# ebef3d7cbd024fb5be8b5aa8237ec9d3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_wininst:1
+# d02d56c69dc44748bb0b3615a5d34411
 msgid "Create an executable installer for MS Windows."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_wininst_args:1
-# 6567ec0d77e549d8acbf673cbe3c100e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.bdist_wininst_args:1
+# cb6de77bcff84d8f8a485879a209be52
 msgid "Arguments to pass to bdist_wininst."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build:1
-# 90dae53b96c04e92906ee71087ed5237
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build:1
+# 93b1474024b649d7aee1cd813b919c94
 msgid "Build everything needed to install."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_args:1
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.build_args:1
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.build_args:1
-# bb299695458c4432bff75c7b7e29639a
-# d6d62714bd08442ca3af360247e5398c
-# c08d98dc41de40a2b85dd050fbc1d7b1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_args:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.build_args:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.build_args:1
+# 0d0f5595da044c8488fb3b04018de0b1
+# c19ad0ba4e7146ea8abb1a03eb7fc6f8
+# 03e71e6d3ed548d0bec9d8776adb9681
 msgid "Arguments to pass to build."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_clib:1
-# 69331547f21646868193390322944693
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_clib:1
+# 6a9da64fe9c545b7a37f4b075b568d85
 msgid "Build C/C++ libraries used by Python extensions."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_clib_args:1
-# 9cac20b00fff48bdbf67365e33bac2c8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_clib_args:1
+# 9a0669187db6429aa0d9882af41e2fc3
 msgid "Arguments to pass to build_clib."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_directory:1
-# b53e4e1562484ef8a5c4fbc515b63997
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_directory:1
+# 9aaead8363514ce7875c5f7dbbd980d9
 msgid "The directory containing the ``setup.py`` file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_ext:1
-# 8f219e889a2b4fe4acd1e1fc6ae780d7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_ext:1
+# 10cc5a0cb2374e12bc7aa99f9b0b11a8
 msgid "Build C/C++ extensions (compile/link to build directory)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_ext_args:1
-# 748d7723e9d04189991ec3ddc15bd244
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_ext_args:1
+# db1ac7e06dcd40e19156bf166ea6961a
 msgid "Arguments to pass to build_ext."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_py:1
-# fa3d707216c1442b9925799da9af6145
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_py:1
+# 0347c5ad28a54c1b9e2d1269d86ee0ca
 msgid "\"Build\" pure Python modules (copy to build directory)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_py_args:1
-# 1affcd948bc142bdba17cd0f34971800
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_py_args:1
+# bf130afcf5084ed29e709627ec5badd8
 msgid "Arguments to pass to build_py."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_scripts:1
-# 501d6d9d20d14224af5b65bfe1c3317e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.build_scripts:1
+# 097392b273614a0d8b7944661286b1ec
 msgid "\"Build\" scripts (copy and fixup #! line)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.check:1
-# 722a4589c37c4d6e8dbd6524a89d86c7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.check:1
+# 72da7fa1aae74703b5676b4235d852fc
 msgid "Perform some checks on the package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.check_args:1
-# d7b6cc2806c14ca18911ff0a272d47b3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.check_args:1
+# e759ce6ec02145128083f44b6eb03e85
 msgid "Arguments to pass to check."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.clean:1
-# 2e82b14437c34dbba27e28588226bad4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.clean:1
+# 0d0f34a7ed9d4aad94407d4e5ebad53b
 msgid "Clean up temporary files from 'build' command."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.clean_args:1
-# eef5ea93f8ad4eb89091fb1cd47601b3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.clean_args:1
+# 4d7fb1e1ce3346968665981c21cb094e
 msgid "Arguments to pass to clean."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.import_module_test:1
-# f4e8252e3e0649c4b30c9e71b1cb146e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.import_module_test:1
+# 04072a1832844916b5db2c2102ec98ae
 msgid "Attempts to import the module that was just installed."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.import_module_test:3
-# 615a585309244393a9faf490d4c08d47
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.import_module_test:3
+# e459b352b9b44940b7a4431fd06bd377
 msgid "This test is only run if the package overrides :py:attr:`import_modules` with a list of module names."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install:1
-# 6d82cb0f74804edc8fe371bb31f8b76f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install:1
+# fe9f8368ae7e440c93598e0fc44b1540
 msgid "Install everything from build directory."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_args:1
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.install_args:1
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.install_args:1
-# ccc37397f906495a9a7ee1499d5bf9ab
-# e58683b8e1594b81887e87b5c1a9ce1d
-# 28a9ace798ea4d6b866511d0a2860563
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_args:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.install_args:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.install_args:1
+# 3e388e5179744f37adb88ab168248f62
+# 5dddce8c02fd424babf3f8bb54c32181
+# 6d819a287c544af7b450c9731eda7006
 msgid "Arguments to pass to install."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_data:1
-# 03c0ef9a94684d33a2b88c64460557c8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_data:1
+# c0578638e4e349f5b710697a3c6f3fca
 msgid "Install data files."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_data_args:1
-# 3de56a67aa33430ab623b02e51182661
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_data_args:1
+# 1085060aacee49f6a76eb300f56781e1
 msgid "Arguments to pass to install_data."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_headers:1
-# 05c0d848b0294bfc8fae7390c260e216
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_headers:1
+# 5f75d6041f654f67963b5e1624f98e73
 msgid "Install C/C++ header files."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_headers_args:1
-# 6800021b11d747adb4407e21b8bb43af
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_headers_args:1
+# 5fc69cb98edb41c883d2cdf3c71609c1
 msgid "Arguments to pass to install_headers."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_lib:1
-# e1650d40c01b4770aef48dcfecc3422c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_lib:1
+# c20e0ab51c4c4bbea4f8439d377886dd
 msgid "Install all Python modules (extensions and pure Python)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_lib_args:1
-# 6a06dbacb23a4f4ebcc2d7649701454a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_lib_args:1
+# 8a65169531304a8e8159924e7d15da2b
 msgid "Arguments to pass to install_lib."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_scripts:1
-# fba76f193c164041a82db70236d14b9f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_scripts:1
+# 47112889a5ea4b029812c57001ed6b71
 msgid "Install scripts (Python or otherwise)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_scripts_args:1
-# 37c3fc8580ad4358867827b507190e52
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.install_scripts_args:1
+# d5c391db15644b91a2eeb26fcf63addf
 msgid "Arguments to pass to install_scripts."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.register:1
-# f044d315603941d79c44c1e49eb73370
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.register:1
+# 85b04461e4884044b67a77b0707362c1
 msgid "Register the distribution with the Python package index."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.register_args:1
-# c9edc18b1f634a49be6eac774400223f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.register_args:1
+# d70ab3ffea5b47d092aa16699b43d194
 msgid "Arguments to pass to register."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.remove_files_from_view:1
-# ec8e38c89509458eb6c0c19811cd928f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.remove_files_from_view:1
+# 045c77ec8a8242b280819dd5dd93f6b2
 msgid "Given a map of package files to files currently linked in the view, remove the files from the view. The default implementation removes all files. Alternative implementations may not remove all files. For example if two packages include the same file, it should only be removed when both packages are removed."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.sdist:1
-# e77838905a1f4f53b8f623a27cb1785c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.sdist:1
+# 3cf9c1764d0a45ae955d027e8e03c7bf
 msgid "Create a source distribution (tarball, zip file, etc.)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.sdist_args:1
-# cd9d9e551ab14f1c86ce9b9305b565e2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.sdist_args:1
+# 9a661dfd72394292a16ca4b682900973
 msgid "Arguments to pass to sdist."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.setup_file:1
-# 8c76d35cc1f74149bcf5a7fe9a4cf5dd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.setup_file:1
+# 7dd23b4d3cf54f00983f6217ac743aca
 msgid "Returns the name of the setup file to use."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.test:1
-# 25967c22903341b487a18a1467ef47aa
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.test:1
+# 119e610da08f49a8ba2a5f5eb12bf2f4
 msgid "Run unit tests after in-place build."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.test:3
-# 5296e68b5ebe4298a147e26e31f09623
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.test:3
+# ee0220010c944298a5d67298878215c1
 msgid "These tests are only run if the package actually has a 'test' command."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.test_args:1
-# 1782793f69464fa9a40de55898800517
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.test_args:1
+# dc57504c81364d83a50724d367215d4e
 msgid "Arguments to pass to test."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.upload:1
-# 6536c3569125404aacdff1ed0868df94
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.upload:1
+# 7364c38661e04e129aee486545da63f0
 msgid "Upload binary package to PyPI."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.upload_args:1
-# 6e6954ac83704c95a80bfeb73e175717
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.upload_args:1
+# 9774aaadec4e4cbb9c26c80d1cc9bc2b
 msgid "Arguments to pass to upload."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.view_file_conflicts:1
-# f2a993df9b5b4c8fb1e6856ab95b96c8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/python.py:docstring of spack.build_systems.python.PythonPackage.view_file_conflicts:1
+# 39ad2a15e8f44e06ae139408c8a91eeb
 msgid "Report all file conflicts, excepting special cases for python. Specifically, this does not report errors for duplicate __init__.py files for packages in the same namespace."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:88
-# a62095c3341741c8ae505e1fc1c241d4
+# 24f3f7a60719461398f2bdb5464fdbc9
 msgid "spack.build\\_systems.qmake module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:1
-# 674a4909d8da4ea8a462d836dc3b09fe
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:1
+# e442dd79264d4955a3b4c85a15eb19af
 msgid "Specialized class for packages built using qmake."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:3
-# e984643d391442178f765534cb1d87cf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:3
+# 0516dabc4cb8461398dfdf479d8a292e
 msgid "For more information on the qmake build system, see: http://doc.qt.io/qt-5/qmake-manual.html"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:8
-# 9df06ce6fd5c449b83cb0c5da460fdf8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:8
+# c068b489f72a4d158cd100b3f8172d36
 msgid ":py:meth:`~.QMakePackage.qmake`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:9
-# 206067fc0b7c4aee9ce8934111b34e86
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:9
+# fe23e9cefc4c47338393681f3bdae8a7
 msgid ":py:meth:`~.QMakePackage.build`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:10
-# 17721a8860284fc08d9f8a6b3dfb7971
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:10
+# 6365e114b7154315b02ef383dd574a39
 msgid ":py:meth:`~.QMakePackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:12
-# 9fb90313ae6e471d83d9b562c43b5a34
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage:12
+# 69dbf8532aaf4220a3ab398792f20ba9
 msgid "They all have sensible defaults and for many packages the only thing necessary will be to override :py:meth:`~.QMakePackage.qmake_args`."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.check:1
-# 1d8cd41ce14645b08a960a58cb4052d3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.check:1
+# 777e6c5b62984950aafa88297ed5a9fe
 msgid "Searches the Makefile for a ``check:`` target and runs it if found."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.phases:1
-# 186ed6885e154aa0bafd7f0ed24a8530
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.phases:1
+# 10b41c68b3984077b54522990a9f3855
 msgid "Phases of a qmake package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.qmake:1
-# ca735967d4a24e27b604b8a061654f9f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.qmake:1
+# 9a9d74613b2b4d4a9e7081e81d2976fa
 msgid "Run ``qmake`` to configure the project and generate a Makefile."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.qmake_args:1
-# a72607b8ffdc4b2e94fa35c29960b2f3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/qmake.py:docstring of spack.build_systems.qmake.QMakePackage.qmake_args:1
+# b08d8af78f934ae9904e021ebb2584d0
 msgid "Produces a list containing all the arguments that must be passed to qmake"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:96
-# d5daa6c6998c4465ab3d0484b8d6852a
+# 5e8f2384bef14403966a2f9c1f8ebb6c
 msgid "spack.build\\_systems.r module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:1
-# 000d92a53c9a4312ac1b659e8257cc01
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:1
+# c54c670644b04383a21211c70b520bbd
 msgid "Specialized class for packages that are built using R."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:3
-# a5e14cecde4540aab4c28a7df22dd47d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:3
+# 48c011ef2a9a453897ece733d4d513e1
 msgid "For more information on the R build system, see: https://stat.ethz.ch/R-manual/R-devel/library/utils/html/INSTALL.html"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:6
-# e28cba7ac67747d6a006a24ae5668486
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:6
+# 662cf071ba1340f5a09f99bb1d5edb30
 msgid "This class provides a single phase that can be overridden:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:8
-# afd3f426ff784186becfbaa698bec10f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:8
+# 867d26791bd041ddb83fb6daab26f92a
 msgid ":py:meth:`~.RPackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:10
-# 9eb37cce79984b7584212acf0440d964
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage:10
+# b4cc30a58eef4a3b8f75398f5ba7570f
 msgid "It has sensible defaults, and for many packages the only thing necessary will be to add dependencies"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage.configure_args:1
-# de12b850aa794811b304dca97dca1522
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage.configure_args:1
+# b2da8de975c741f78e0201626c50be2d
 msgid "Arguments to pass to install via ``--configure-args``."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage.configure_vars:1
-# 9251ff291b9b4ca29bcbe7ce4f8311b4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage.configure_vars:1
+# 9a65213f2dc5430686a6ac923ab9b470
 msgid "Arguments to pass to install via ``--configure-vars``."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage.install:1
-# ebf96b76bed3474288f66de1bb4c64d4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/r.py:docstring of spack.build_systems.r.RPackage.install:1
+# 6ebd027709ae47f5b5a6fa83a045c51b
 msgid "Installs an R package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:104
-# 808f1b70ac5d43a3bd4f43484011edf2
+# 12f30d9ac35443ad80b2bc7675e16158
 msgid "spack.build\\_systems.scons module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:1
-# 8ea3b0b54ab442e2a70dcb6f9468ac13
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:1
+# 99cf03998c4d42eea65019dd31801362
 msgid "Specialized class for packages built using SCons."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:3
-# 2c321e713ebe4907827ee55571d19936
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:3
+# 6e0f093fae8c45c194f17bd434c4c5bb
 msgid "See http://scons.org/documentation.html for more information."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:7
-# 4b64fb57f06b4989879a5c4591c51791
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:7
+# 36d72103890f44698e8374d9d67df2dc
 msgid ":py:meth:`~.SConsPackage.build`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:8
-# ba86b547ef3743ffb4117253541503e5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:8
+# 7e1010d8f1fd4554be04245ca4a764f1
 msgid ":py:meth:`~.SConsPackage.install`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:10
-# 66cab23168344de5866a3e30f7f9cba2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage:10
+# fe8146359cd943c19225d31260bbcc04
 msgid "Packages that use SCons as a build system are less uniform than packages that use other build systems. Developers can add custom subcommands or variables that control the build. You will likely need to override :py:meth:`~.SConsPackage.build_args` to pass the appropriate variables."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.build:1
-# 8f767b6f841b4467a18c8b6a6c8a2abf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.build:1
+# 67e125d382134e5e88011c468b55e653
 msgid "Build the package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.build_system_class:1
-# 1e4610a24f1445c2aab29e125e2d0660
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.build_system_class:1
+# 363dfdf158324d59b236ab287e6b1156
 msgid "To be used in UI queries that require to know which build-system class we are using"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.install:1
-# 9aa8367b065f4c628a4de6cd4e7e0a98
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.install:1
+# 0fd2fee748b340c2b2a122dd4c22ddec
 msgid "Install the package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.phases:1
-# c50430f7a27346b0a219c7f28f972388
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.phases:1
+# f2a70db916714f1a98c72be193325d9f
 msgid "Phases of a SCons package"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.test:1
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.test:1
-# d5dc010c54e4407e84c8f67fe6ae9f13
-# b10848bfdb1e4ba1be1b1bc27d33dcfb
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.test:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.test:1
+# f0a6f6edd37646cbb252aeda03b0dad1
+# 72b70df0e23348558c25c6a5f52a9354
 msgid "Run unit tests after build."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.test:3
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.installtest:3
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.test:3
-# 420fad9d26f847cda2f397161f0b9ccf
-# f8d83dacb2c6466f9943212b1945a091
-# 01878127cb11411ead8ecee3841a7912
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/scons.py:docstring of spack.build_systems.scons.SConsPackage.test:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.installtest:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.test:3
+# 79c1ffe321e84626a59df7072f71c0ba
+# 17b7de3ad2a347edac40ce8fd450f843
+# 89c7960503914da58f470c8fc5e076e8
 msgid "By default, does nothing. Override this if you want to add package-specific tests."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:112
-# 73a6e33c4bbe4bda8c840cc88206a9e5
+# e57ac4669551474b872fa405894724bd
 msgid "spack.build\\_systems.waf module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:1
-# 323418b865bf467c842c41281a5319bd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:1
+# c12cb7c5699444738a6dee23f34f8a2d
 msgid "Specialized class for packages that are built using the Waf build system. See https://waf.io/book/ for more information."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:6
-# bc14cf651b514af990a4acf972f12e33
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:6
+# a28de73f1ece4553be02c42d221d6e9b
 msgid "configure"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:10
-# 3959c541be344b7fba3cab8454f24348
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:10
+# 5f80e0558c67480cabacb89b89e856d4
 msgid "These are all standard Waf commands and can be found by running:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:22
-# e2d37030fc63445484e80f51b37f0996
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage:22
+# 016b1b1189d54a67ae637a286a4608af
 msgid "where <jobs> is the number of parallel jobs to build with. Each phase also has a <phase_args> function that can pass arguments to this call. All of these functions are empty except for the ``configure_args`` function, which passes ``--prefix=/path/to/installation/prefix``."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.build:1
-# 8c9514353aba4ec2b0c6e4d125fdbb93
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.build:1
+# 2f4d3f021dcd40feb6596e50da2d99a7
 msgid "Executes the build."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.build_directory:1
-# 8eb31f9e95dc4e80a6efd3a0f7cbc66f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.build_directory:1
+# 5b87c56bd0994ae1b0ebaffe54d9ba53
 msgid "The directory containing the ``waf`` file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.configure:1
-# 3ffdc69ef06441edb743c4be36604a64
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.configure:1
+# 7dd1c2de2e1346f6927d4d58f6400a26
 msgid "Configures the project."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.configure_args:1
-# 641cfbd7398945c2929bc31b35e82897
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.configure_args:1
+# 9a85051fdb83487c84fc6c09e065c29f
 msgid "Arguments to pass to configure."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.install:1
-# 0ca2c8c7ddea4101a5300fba6563efe6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.install:1
+# 626aa455b85d4cecbc4fa529c3b5398d
 msgid "Installs the targets on the system."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.installtest:1
-# 48b070bd3ceb490c9a27acb3861439b2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.installtest:1
+# dcb01eec073a475cb84771ec663ebe25
 msgid "Run unit tests after install."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.python:1
-# 890c9945ad0a4356a7c3e9a4b2e05317
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.python:1
+# cf0f0b8958514a708012fb16d9217f00
 msgid "The python ``Executable``."
 msgstr ""
 
-#: ../spack/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.waf:1
-# b3c4e077b6624d85a17e672f2dc7a29e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/waf.py:docstring of spack.build_systems.waf.WafPackage.waf:1
+# 284d3a80c30943989c9912cbd42a147a
 msgid "Runs the waf ``Executable``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.build_systems.rst:121
-# b92db7d7216a4140ac8c20d75020ca7f
+# 2865adb813b347189a51bd250c71eea6
 msgid "Module contents"
 msgstr ""
 

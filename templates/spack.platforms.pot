@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,73 +17,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/spack.platforms.rst:2
-# ef59c39fbe52425f837c62d6e34ce4f4
+# fb0430020fa84e5d85389dcda65e78ca
 msgid "spack.platforms package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.platforms.rst:5
-# 8bdb64dd7a6d4903804b7b6790cc8e95
+# a40258768a5c4b82b08753d9ef841466
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.platforms.rst:8
-# a0cbde03c7d546b3bcafa0bb5f04d461
+# d8f7f7f72e804162ac2f4d3daf51a23b
 msgid "spack.platforms.bgq module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/platforms/bgq.py:docstring of spack.platforms.bgq.Bgq:1
-#: ../spack/lib/spack/spack/platforms/cray.py:docstring of spack.platforms.cray.Cray:1
-#: ../spack/lib/spack/spack/platforms/darwin.py:docstring of spack.platforms.darwin.Darwin:1
-#: ../spack/lib/spack/spack/platforms/linux.py:docstring of spack.platforms.linux.Linux:1
-#: ../spack/lib/spack/spack/platforms/test.py:docstring of spack.platforms.test.Test:1
-# 4c12c786f3d04152b00ceb854be61d89
-# c50deccff7d2400993da28746eba2da6
-# 76678676acf042c19f13f80afc54dbeb
-# 5b589ed7195c48eeaf35012b4a3df76f
-# 70d3d7c75be54296a9c3cb0a1176496b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/bgq.py:docstring of spack.platforms.bgq.Bgq:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/cray.py:docstring of spack.platforms.cray.Cray:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/darwin.py:docstring of spack.platforms.darwin.Darwin:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/linux.py:docstring of spack.platforms.linux.Linux:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/test.py:docstring of spack.platforms.test.Test:1
+# 68ba0e9100b44aa7b190113f9c211d44
+# 13366a61435645c7bbcb0f24baf7ebb6
+# e0c7c506048c4baa8a22171da656c882
+# cd37fca0026c4490883fb45c08fff690
+# ec0d5260974b45698ab3abd94e1c95f4
 msgid "Bases: :class:`spack.architecture.Platform`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/platforms/bgq.py:docstring of spack.platforms.bgq.Bgq.detect:1
-#: ../spack/lib/spack/spack/platforms/cray.py:docstring of spack.platforms.cray.Cray.detect:1
-#: ../spack/lib/spack/spack/platforms/darwin.py:docstring of spack.platforms.darwin.Darwin.detect:1
-#: ../spack/lib/spack/spack/platforms/linux.py:docstring of spack.platforms.linux.Linux.detect:1
-#: ../spack/lib/spack/spack/platforms/test.py:docstring of spack.platforms.test.Test.detect:1
-# ec70a2c3942842b686aba3cce4eccc7d
-# 2098ad67725945a191297bf2e7582451
-# fdfaf3c640fe4f14a9d9dd0b4b7dccb5
-# 11cab16b693c45e388e7fd800f1b3a46
-# a86bd09177af4a36a316d5bb60442c52
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/bgq.py:docstring of spack.platforms.bgq.Bgq.detect:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/cray.py:docstring of spack.platforms.cray.Cray.detect:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/darwin.py:docstring of spack.platforms.darwin.Darwin.detect:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/linux.py:docstring of spack.platforms.linux.Linux.detect:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/test.py:docstring of spack.platforms.test.Test.detect:1
+# 39b13fc6b15c41ada785025b72a22558
+# b7c73e3f18c9418d9ce5e1dbbe2863c4
+# a5838abb875c4b30af798b998da02e59
+# 4ee69044e9c945d5a4ae088a061c696c
+# 99b2627b7a8f435ea38bd49f1150e552
 msgid "Subclass is responsible for implementing this method. Returns True if the Platform class detects that it is the current platform and False if it's not."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.platforms.rst:16
-# 75aefc5dced3495aa70b35469727df2a
+# af07eba12359439da7ead70f2ab95e85
 msgid "spack.platforms.cray module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/platforms/cray.py:docstring of spack.platforms.cray.Cray.setup_platform_environment:1
-# f1e48efa81f8437686cc324f6a26e2ca
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/platforms/cray.py:docstring of spack.platforms.cray.Cray.setup_platform_environment:1
+# 7cbfa35f16ba439bb19d7d2ef44f69fe
 msgid "Change the linker to default dynamic to be more similar to linux/standard linker behavior"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.platforms.rst:24
-# 35b95555e4f8439385439fd500f9c922
+# a3f692730aa14f34b9c208b90911b98c
 msgid "spack.platforms.darwin module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.platforms.rst:32
-# 151ea3696ec644539ac5ee8c676a4873
+# 7fda005da9044f6587e6cf4c31c94f89
 msgid "spack.platforms.linux module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.platforms.rst:40
-# a57ef76468fb4672912f08b17adb7bf1
+# 7dddb47965114d49a4f650ff056812b1
 msgid "spack.platforms.test module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.platforms.rst:49
-# ddbeb986a6df420fb6272589ac85aa29
+# f2e0258cf03c4488a484a7c53733a64e
 msgid "Module contents"
 msgstr ""
 

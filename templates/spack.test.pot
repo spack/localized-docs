@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,1760 +17,1760 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/spack.test.rst:2
-# b72ca2e2e6d64f4e8c6b134fa46d7e88
+# ec3c40cb68a34a43aaf4bd6ab7673fba
 msgid "spack.test package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:5
-# b518191bd8984957aad595e41f085453
+# a0165a174b7a402cb05ad39e204b0701
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:8
-# 5ed289c95f294c2a937184cf9f43c4c0
+# 1804c0405db946cf9631849d47dcc277
 msgid "spack.test.architecture module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/architecture.py:docstring of spack.test.architecture:1
-# 7b738d7d5a9a49cabc5c18640c974fd8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/architecture.py:docstring of spack.test.architecture:1
+# fd7bf3df86344ba589be42f8ab5fad16
 msgid "Test checks if the architecture class is created correctly and also that the functions are looking for the correct architecture name"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/architecture.py:docstring of spack.test.architecture.test_user_back_end_input:1
-# 3bf42b207d6140f3a9c85aa1572995ed
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/architecture.py:docstring of spack.test.architecture.test_user_back_end_input:1
+# 87322e6ca2eb418da29c7f965f1ca120
 msgid "Test when user inputs backend that both the backend target and backend operating system match"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/architecture.py:docstring of spack.test.architecture.test_user_front_end_input:1
-# 97b4109b09b84716afe9b8af4dd2c0cf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/architecture.py:docstring of spack.test.architecture.test_user_front_end_input:1
+# 1302e5712d9d4137848730651f25eb7c
 msgid "Test when user inputs just frontend that both the frontend target and frontend operating system match"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:16
-# fc9fcc38dc394783b4b4d9cdb042c13b
+# f19e6ae378ba48278a549c56e3ce99cf
 msgid "spack.test.build\\_environment module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/build_environment.py:docstring of spack.test.build_environment.test_set_build_environment_variables:1
-# cc52b32975bb4521874ed672d8be143a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/build_environment.py:docstring of spack.test.build_environment.test_set_build_environment_variables:1
+# be323f81273a492a824692fc9b49a223
 msgid "Check that build_environment supplies the needed library/include directories via the SPACK_LINK_DIRS and SPACK_INCLUDE_DIRS environment variables."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:24
-# 554d9c7520694ea6b6cba417588155d8
+# d35b597eacd0451a829b967b2ecacf5d
 msgid "spack.test.build\\_system\\_guess module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/build_system_guess.py:docstring of spack.test.build_system_guess.url_and_build_system:1
-# 6a81f29191c04fbb8b20bc2b8fdaec51
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/build_system_guess.py:docstring of spack.test.build_system_guess.url_and_build_system:1
+# 6ae771d108c44fb3a14b2951a14c1758
 msgid "Sets up the resources to be pulled by the stage with the appropriate file name and returns their url along with the correct build-system guess"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:32
-# 1298ffcaa61943a9bfd01a8591c42926
+# 9c4f7f32d9bc46aea33d1432e15a2657
 msgid "spack.test.build\\_systems module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.TestAutotoolsPackage:1
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize:1
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences:1
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.MockLayout:1
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.MockPackage:1
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.MockPackageMultiRepo:1
-#: ../spack/lib/spack/spack/test/flag_handlers.py:docstring of spack.test.flag_handlers.TestFlagHandlers:1
-#: ../spack/lib/spack/spack/test/install.py:docstring of spack.test.install.MockStage:1
-#: ../spack/lib/spack/spack/test/install.py:docstring of spack.test.install.RemovePrefixChecker:1
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.TestPackage:1
-#: ../spack/lib/spack/spack/test/sbang.py:docstring of spack.test.sbang.ScriptDirectory:1
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag:1
-#: ../spack/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics:1
-#: ../spack/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax:1
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage.TestStage:1
-#: ../spack/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext:1
-#: ../spack/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestTengineEnvironment:1
-#: ../spack/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestBoolValuedVariant:1
-#: ../spack/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestMultiValuedVariant:1
-#: ../spack/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestSingleValuedVariant:1
-#: ../spack/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestVariant:1
-#: ../spack/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestVariantMapTest:1
-# 61fa5eea3a5147178aa3a97ad794fed2
-# ade36ac83ced407c80d4757f0d12683f
-# 5af2f1db2f634d36a4b26b77678e8f26
-# c609985573a24e6d95e2aaaa9f5a9eb9
-# 216a85f432284693a20ff6827a682bf9
-# 2b64f16ad08f492a8aa3180778cce9e7
-# 6aac03118a684405a9a449e471c1f870
-# 57509e18a5654d46b26102ed1f4093aa
-# d779021b18da43119b23f7bf92aac210
-# 93748295a5f84bdbbe68d7abe4851cf2
-# efa756e4d65640c299787e73d8c8094a
-# 91a1c213dc6b46dda4d91a1c32ab4fc8
-# 0b81bb57923b446386d3dce871e7b302
-# 74eb02ac32bd4cee8163e2a05827df46
-# 53d1d8bdd5754fd9973408cd01bfd630
-# d2a73289d7284316b67520db662faafb
-# 5a6632803057492094693f4beac2417d
-# 401b29424979499fb7a8ce1fab4d3d77
-# 52744ffaa5ca4359b4f838182c0b33f1
-# 28f464c3326a48eaa2ab78481d5c637d
-# c8686ee9a7d84eaeb728890a689b3118
-# ca2cd7f4fef84e9a846fcc8e3fd1d689
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.TestAutotoolsPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.MockLayout:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.MockPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.MockPackageMultiRepo:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/flag_handlers.py:docstring of spack.test.flag_handlers.TestFlagHandlers:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/install.py:docstring of spack.test.install.MockStage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/install.py:docstring of spack.test.install.RemovePrefixChecker:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.TestPackage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/sbang.py:docstring of spack.test.sbang.ScriptDirectory:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage.TestStage:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestTengineEnvironment:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestBoolValuedVariant:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestMultiValuedVariant:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestSingleValuedVariant:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestVariant:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/variant.py:docstring of spack.test.variant.TestVariantMapTest:1
+# cccd137a4cae4268a1253490e5114bf5
+# b8cd7069a20f40e5a86c4ed613775abb
+# 25336c6d6e5b4c889456fe6d63a2ef49
+# 95b69cb59eba4c13915ce5ce73bdcbed
+# 7c8ae74ccb2e41169d2de5c3fb56f395
+# b3b65d5823eb40cda46fd7ecf33c93ba
+# 3e31b99b27b749329fe0cdf1bfbf94ce
+# b6e584ea609546868630cf6a77c1952f
+# 71c9e570648141bd8bbdd8b6531b6f34
+# 1b25dde7f06246d4822da227e06f24ed
+# a622a6f5716c411c866ece94bc481ac5
+# a33ca3dd851344b18c58ca3b6b7818af
+# 960ce1dfa97a4687ba053b05bbcf7f0c
+# 4dfea9c3e8704fb98e757b245fa3c3a7
+# 1587f352b2604c42b085ee0441c585d2
+# 4d761b33dbfc46d9a89ea3dcbe6c7235
+# af0bc95f09df4994aaace75bb7bf9dc6
+# 8d37b60506864079984b461a9a060f28
+# 86ee417490a14fd8b151dbb0767d3442
+# 48a016c49f444d8180ea985285e8add8
+# 95765de0b9f04b668b06ce6c4ed2a7ad
+# 23bd193ef65b4e4cb025bcfac7a26be7
 msgid "Bases: :class:`object`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.test_affirmative_make_check:1
-# be8757b155a24b62aece0307dbaaf716
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.test_affirmative_make_check:1
+# de0fe793c49c41a481dd8221b4c573d1
 msgid "Tests that Spack correctly detects targets in a Makefile."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.test_affirmative_ninja_check:1
-# baf5f7e23c5d40d1947ad84f384525bc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.test_affirmative_ninja_check:1
+# e45c12c8e5314cbc94af47e93426da3d
 msgid "Tests that Spack correctly detects targets in a Ninja build script."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.test_negative_make_check:1
-# 7e9c284c775649aebdfd132547b30711
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.test_negative_make_check:1
+# 6394cf68a52741a19794a127f5bceff4
 msgid "Tests that Spack correctly ignores false positives in a Makefile."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.test_negative_ninja_check:1
-# 47e100cc3f7b4902bdf6b8a94661f5be
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/build_systems.py:docstring of spack.test.build_systems.test_negative_ninja_check:1
+# 76d446870d3f45d78fb2368c9d7a5a4d
 msgid "Tests that Spack correctly ignores false positives in a Ninja build script."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:40
-# ae425cc667834a1ab5bcbf4c46ae6cdc
+# 13c9537ad92240cabb9409aa59dc50d9
 msgid "spack.test.cc module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc:1
-# 68868ac92bbb4e938683a64d67c2c75c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc:1
+# e5b62f81e62d4eb78d11454d673e3d86
 msgid "This test checks that the Spack cc compiler wrapper is parsing arguments correctly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.check_args:1
-# 368da4c62cc2406bb2dd7a946d3c149b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.check_args:1
+# 841a62ef13f64a92a859bc50c2c14644
 msgid "Check output arguments that cc produces when called with args."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.check_args:3
-# b44b8943be2f4d49979e9c00bf16f884
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.check_args:3
+# f97f9e90841c42509ff29acfbe61b236
 msgid "This assumes that cc will print debug command output with one element per line, so that we see whether arguments that should (or shouldn't) contain spaces are parsed correctly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.dump_mode:1
-# a2a8f8ddd3f74446b1c763e0c8e40770
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.dump_mode:1
+# c4c589503234460db0f80ba85c2c8912
 msgid "Make cc dump the mode it detects, and return it."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.pkg_prefix:1
-# aee51d92dcbf46ceb260ae2d811982d4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.pkg_prefix:1
+# 3c257a3f406a48099343704da50f8675
 msgid "The prefix of the package being mock installed"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.real_cc:1
-# 6858fef34cf945f4809534e5c0f6ff41
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.real_cc:1
+# 88e0438df8184a31988e64850e9b4096
 msgid "the \"real\" compiler the wrapper is expected to invoke"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_cc_deps:1
-# 8370463e2fd44b1bb5ee8eed0b43d769
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_cc_deps:1
+# 024d9accd69f47ee972eb9eff2457e36
 msgid "Ensure -L and RPATHs are not added in cc mode."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ccld_deps:1
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ccld_with_system_dirs:1
-# 6a540c4240a44431ae066e0fb3110bb5
-# 4f6f4ee7e3ce46f4b2ab414116a43bb0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ccld_deps:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ccld_with_system_dirs:1
+# 5a06e66a5023409a8e55bcbbc54b910f
+# 7a39a84d3b244d27aa82b4bddf31bba0
 msgid "Ensure all flags are added in ccld mode."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_include:1
-# a0d950353e734a6b8756a68a45541286
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_include:1
+# dcc57b59ab874dc7be9999ab10208399
 msgid "Ensure a single dependency include directory is added."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_lib:1
-# f7529b845f07469281ff24686211bfe5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_lib:1
+# 0c9acc24968041619033d92ccf587626
 msgid "Ensure a single dependency RPATH is added."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_lib_no_lib:1
-# ed51aee8b43f44259bad820b0a6ce5bc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_lib_no_lib:1
+# cd48ba935af645d1819fda8f4e19e502
 msgid "Ensure a single dependency RPATH is added with no -L."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_lib_no_rpath:1
-# 523c11f0fd5e45c7a52a02d0bf04b26b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_lib_no_rpath:1
+# a98dbb51f3df4e84b0e022fd4d3fdf8b
 msgid "Ensure a single dependency link flag is added with no dep RPATH."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_rpath:1
-# 854d446e87f64535b0e8dd01272a5940
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_dep_rpath:1
+# 7b2132a5bd654df08c5a74ae3e6a8f99
 msgid "Ensure RPATHs for root package are added."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ld_deps:1
-# e916aae2d61746e2bc4cbbadc7a17bd2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ld_deps:1
+# 329e191b5a934a0487463553deeb9703
 msgid "Ensure no (extra) -I args or -Wl, are passed in ld mode."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ld_deps_no_link:1
-# a01091945d9e48b18d70c14acdc3dbf6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ld_deps_no_link:1
+# 20775b1e380a44e7b7fae7c8b6790044
 msgid "Ensure SPACK_RPATH_DEPS controls -rpath for ld."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ld_deps_no_rpath:1
-# c595d8efd7e54a33be6daa863bf9f488
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ld_deps_no_rpath:1
+# b527fdd6c234472b8e9e0baed696338d
 msgid "Ensure SPACK_LINK_DEPS controls -L for ld."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ld_deps_partial:1
-# d621f01c31ad40c283ed681796a5d02e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cc.py:docstring of spack.test.cc.test_ld_deps_partial:1
+# ef59db0a2b814b2faf5d332cab4af454
 msgid "Make sure ld -r (partial link) is handled correctly on OS's where it doesn't accept rpaths."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:48
-# 4688655a0e2441dea043ef91f856ed9f
+# 08b2e2e24ebf46e49f5b390c89c386a2
 msgid "spack.test.cmd\\_extensions module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cmd_extensions.py:docstring of spack.test.cmd_extensions.hello_world_cmd:1
-# 0a05a4918ae146a2b1d70b8bd6273dcd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cmd_extensions.py:docstring of spack.test.cmd_extensions.hello_world_cmd:1
+# e958678dde0b49e8bd381838b6acab93
 msgid "Simple extension command with code contained in a single file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/cmd_extensions.py:docstring of spack.test.cmd_extensions.hello_world_with_module_in_root:1
-# 29aa8c4cbbaa42b5b079aec2619b947b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/cmd_extensions.py:docstring of spack.test.cmd_extensions.hello_world_with_module_in_root:1
+# 928d02d4b0bf490a802509534d3913b2
 msgid "Extension command with additional code in the root folder."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:56
-# ba63604664d1446cbb67fc897ff95bb6
+# 021aad28ec5444bb97fe1a84011259ea
 msgid "spack.test.compilers module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/compilers.py:docstring of spack.test.compilers.MockCompiler:1
-# 5e94c10ca5c045e2a141502640abde8e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/compilers.py:docstring of spack.test.compilers.MockCompiler:1
+# 2dde09d7dfef408da28c12be67ef2c6c
 msgid "Bases: :class:`spack.compiler.Compiler`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:64
-# 7454a079e31648abb458f9b743a11fc3
+# 12adbe2ef9854fb2a51116e87890b8f2
 msgid "spack.test.concretize module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.concretize_difficult_packages:1
-# a0963531e57d4e34bb809d573ffda545
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.concretize_difficult_packages:1
+# 2ba2ce7d7d6e4e76a2ed4b99a4f36f48
 msgid "Test a couple of large packages that are often broken due to current limitations in the concretizer"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_architecture_deep_inheritance:1
-# 4e34382bbd4247208b9b9830103c914b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_architecture_deep_inheritance:1
+# 9e75b1db8c3545ecb8a8f3d401c5876b
 msgid "Make sure that indirect dependencies receive architecture information from the root even when partial architecture information is provided by an intermediate dependency."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_architecture_inheritance:1
-# f4c578ff31cb44e4b02e1836ea85792d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_architecture_inheritance:1
+# 49776628bfa64a13a05d2810897e381a
 msgid "test_architecture_inheritance is likely to fail with an UnavailableCompilerVersionError if the architecture is concretized incorrectly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals:1
-# 7e7865d6c59e4dd4a886622d0f2314b0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals:1
+# 5ca4539cb7f140e386d379262d343f8b
 msgid "Test a package with multiple virtual dependencies."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals_with_dual_provider:1
-# 986249c6eb7d4f4ea8a0330ec9941f3a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals_with_dual_provider:1
+# 2b67e58878474541852eed66f34f360a
 msgid "Test a package with multiple virtual dependencies and force a provider that provides both."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals_with_dual_provider_and_a_conflict:1
-# 08013afadbb04cebac1dd32cf7361efe
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals_with_dual_provider_and_a_conflict:1
+# aa37d0db44794e78b0900ebcf00e1915
 msgid "Test a package with multiple virtual dependencies and force a provider that provides both, and another conflicting package that provides one."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals_with_one_bound:1
-# 40c29e1b67414517bab787edbd3c3fbf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals_with_one_bound:1
+# ef2a8fb030414836b85271c4db593084
 msgid "Test a package with multiple virtual dependencies and one preset."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals_with_two_bound:1
-# ca75cb438f3b4bce90f2b117501d154e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_two_virtuals_with_two_bound:1
+# addbdd5dba7247bab00b037a7a01e44b
 msgid "Test a package with multiple virtual deps and two of them preset."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_with_provides_when:1
-# 946af18d4f664274aa45a3c9ee48ee99
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_concretize_with_provides_when:1
+# 9c1eec98455640e09211a80775075e65
 msgid "Make sure insufficient versions of MPI are not in providers list when we ask for some advanced version."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_find_spec_parents:1
-# 9e7ab94620a64a12ac0ef6251d218b03
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.TestConcretize.test_find_spec_parents:1
+# 2e4bd00d78624fa591416bbd59741c0a
 msgid "Tests the spec finding logic used by concretization."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.spec:1
-# b5db8a2581b2462789e2af04def72f73
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring of spack.test.concretize.spec:1
+# 4c25b718a11c4886a75162c266e6836d
 msgid "Spec to be concretized"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:72
-# 5116384a408f4436acef351d48d60258
+# e6f171f845fb4d8a9c25f0cdde2cc8c9
 msgid "spack.test.concretize\\_preferences module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_all_is_not_a_virtual:1
-# 2b0212d3e6d34da4be03170018c7071a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_all_is_not_a_virtual:1
+# d56143f6a7c44875bd8f192011e12781
 msgid "Verify that `all` is allowed in packages.yaml."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_develop:1
-# 2b66355515224e3b900e3ef0a98a7191
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_develop:1
+# 036fedbf8dd04025a5be8f7168681545
 msgid "Test concretization with develop-like versions"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_no_virtuals_in_packages_yaml:1
-# 64f2fe2a63a54b1b8acd45d9bd51829f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_no_virtuals_in_packages_yaml:1
+# cb506b886e004c808c1c4e3cf5d51918
 msgid "Verify that virtuals are not allowed in packages.yaml."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred:1
-# d40c51c7c01a46f1929cedb226cfa75f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred:1
+# 07961491e1ba4c31b43eabd98140e07b
 msgid "\"Test packages with some version marked as preferred=True"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred_compilers:1
-# 608cbe092e7440c9b60a44236e16e586
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred_compilers:1
+# 69aaed76565d44b98b6c6cff0523b425
 msgid "Test preferred compilers are applied correctly"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred_providers:1
-# 6dba1b0a614f428b8427a3ddf14654af
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred_providers:1
+# 1c90cbc90d674b39b3b7c2376855b441
 msgid "Test preferred providers of virtual packages are applied correctly"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred_variants:1
-# c48a472b35ba4c31a190aa0d2642fc1e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred_variants:1
+# f4db8346cd2e4cf08eb3b6502de9d46e
 msgid "Test preferred variants are applied correctly"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred_versions:1
-# ca5a7c9c4d394209b816bff6660e3b91
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.TestConcretizePreferences.test_preferred_versions:1
+# 87b458084b9846c5bd96b0878213e69e
 msgid "Test preferred package versions are applied correctly"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.concretize_scope:1
-# 0a2b679881274ea399554b93f4ccf6f6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.concretize_scope:1
+# e444cbefa7ae48d6b7706ea3c697a32f
 msgid "Adds a scope for concretization preferences"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.update_packages:1
-# 416d88ddf949450dbe932c7c3e63e359
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize_preferences.py:docstring of spack.test.concretize_preferences.update_packages:1
+# 95ccccefe9bd4527aa3b29a3978ddcc2
 msgid "Update config and reread package list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:80
-# df97c0df8ab049398c6832d48cd1f86f
+# 542b00c0d57a4f5d98844447e6ac8dc2
 msgid "spack.test.config module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.check_compiler_config:1
-# e95aa18aec794ab28ea20bf8fc018e58
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.check_compiler_config:1
+# 3a5b26f6ab394ebfb5b08b3d255d0de1
 msgid "Check that named compilers in comps match Spack's config."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.check_schema:1
-# 79d54d4a39ce4814a71229d901a60125
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.check_schema:1
+# 2db3923d526140869d38012019831e75
 msgid "Check a Spack YAML schema against some data"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.compiler_specs:1
-# 3cad0b1e3bf5409194024eeb8dc56eb7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.compiler_specs:1
+# 65cf7e8d403742c0a5b0b23cf9f0b74d
 msgid "Returns a couple of compiler specs needed for the tests"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.get_config_error:1
-# 9a3cf270853d494cb8bcd5a58f0a45da
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.get_config_error:1
+# 625aac103d7645e2ba2a724299a5e005
 msgid "Parse a YAML string and return the resulting ConfigFormatError."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.get_config_error:3
-# 43b1a9e43fac406298f455b5a00b9f4b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.get_config_error:3
+# 70726a1ee4874148958a4d360cb48713
 msgid "Fail if there is no ConfigFormatError"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.test_bad_config_section:1
-# e89a3a39442b40bd8f16dfeadbe4a083
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.test_bad_config_section:1
+# 13b554ebc005442c9233e7708be40f37
 msgid "Test that getting or setting a bad section gives an error."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.test_config_format_error:1
-# 183a786e4edb47e5b3c55cd90dfa89a4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.test_config_format_error:1
+# a742d25c25b4435bb87ebc30c2d2eeec
 msgid "This is raised when we try to write a bad configuration."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.test_keys_are_ordered:1
-# 0f0171e60e3c408886da4cb99f0ca26b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.test_keys_are_ordered:1
+# fb04a64f3ef24bdcb88ca98d379dc160
 msgid "Test that keys in Spack YAML files retain their order from the file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.test_merge_with_defaults:1
-# c1a44c300aec46679a94de9658f56a0c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.test_merge_with_defaults:1
+# 3a8dc93aacbc4ae0819967f1f03dc7d9
 msgid "This ensures that specified preferences merge with defaults as expected. Originally all defaults were initialized with the exact same object, which led to aliasing problems. Therefore the test configs used here leave 'version' blank for multiple packages in 'packages_merge_low'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/config.py:docstring of spack.test.config.write_config_file:1
-# bbb3a005758f490c8122af9d564ffe1e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/config.py:docstring of spack.test.config.write_config_file:1
+# 83d545d5ccd84266919efd67aad10a3b
 msgid "Returns a function that writes a config file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:88
-# 1dc44a88762049c1805cac2ab7ea720b
+# 41060e94bd8e4a788a24eaceff775402
 msgid "spack.test.conftest module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.check_for_leftover_stage_files:1
-# ce3597f7d95148309a108d2cad2207fb
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.check_for_leftover_stage_files:1
+# ab5bb6a2a296453b8e5aa315aecd5c3a
 msgid "Ensure that each test leaves a clean stage when done."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.check_for_leftover_stage_files:3
-# 634d25c242d64c40a3619c6ce2b99f1a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.check_for_leftover_stage_files:3
+# 4e1bea5020204c9c819a44dba49441fd
 msgid "This can be disabled for tests that are expected to dirty the stage by adding::"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.check_for_leftover_stage_files:8
-# 2214cb9badb14a678bbb6859d5a99107
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.check_for_leftover_stage_files:8
+# 4a9c8b2364734f68bdbd108513408900
 msgid "to tests that need it."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.config:1
-# 6b472f3c6d4e4d88bc1e47be26a485b1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.config:1
+# 25089ba5a8644cf198d0c3962c0da45f
 msgid "Hooks the mock configuration files into spack.config"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.configuration_dir:1
-# 48f45e424ead4e65a1152df6d3dd6280
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.configuration_dir:1
+# e5d26f11c58042ff8224b90a8824bc58
 msgid "Copies mock configuration files in a temporary directory. Returns the directory path."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.conflict_spec:1
-# 715d9ccffb464b919881ab6b10efaa08
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.conflict_spec:1
+# 6b6b17f56983457cb9fe8428dd174517
 msgid "Specs which violate constraints specified with the \"conflicts\" directive in the \"conflict\" package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.database:1
-# 252802b38d354fb695625e1f1f2edf33
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.database:1
+# 10bf0e532ecf4e95be69f9c5a4927c93
 msgid "Creates a mock database with some packages installed note that the ref count for dyninst here will be 3, as it's recycled across each install."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.ignore_stage_files:1
-# b0b9c7761e6449e8bc3a3fbeadc321c5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.ignore_stage_files:1
+# 6559c6872fa84a789cad5878b60981dc
 msgid "Session-scoped helper for check_for_leftover_stage_files."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.ignore_stage_files:3
-# ea118b9dbf73475eaa057f3fd61b0881
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.ignore_stage_files:3
+# b6949312e52f4d50bad5b1e187d1e8fb
 msgid "Used to track which leftover files in the stage have been seen."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.install_mockery:1
-# 8c5e2bdbba5b4df6a75c321f2f74f9fb
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.install_mockery:1
+# 047d25f54bf04c87af1febb1e952a248
 msgid "Hooks a fake install directory, DB, and stage directory into Spack."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.installation_dir_with_headers:1
-# ffbce5dbebb24ed1b6f7cbca8def5383
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.installation_dir_with_headers:1
+# 616c4af4c3414edc80bc4b2d6f1bc7c4
 msgid "Mock installation tree with a few headers placed in different subdirectories. Shouldn't be modified by tests as it is session scoped."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.invalid_spec:1
-# 1481a2cc79eb4fc0bba680f0a85c40fd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.invalid_spec:1
+# d794b068cd2a48cd9f77801b9217b8f1
 msgid "Specs that do not parse cleanly due to invalid formatting."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.linux_os:1
-# cb16208395dc462799e53358ad72b78c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.linux_os:1
+# 98fd9aa6596e480ea9165a57f096323e
 msgid "Returns a named tuple with attributes 'name' and 'version' representing the OS."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_archive:1
-# a33bf5fdf79b470fa2a62961188b6ae6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_archive:1
+# 4c6cdaf8b21b4f998cdb136da798e547
 msgid "Creates a very simple archive directory with a configure script and a makefile that installs to a prefix. Tars it up into an archive."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_config:1
-# 5d0ebc9f7f2549f89e29863b60eef51d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_config:1
+# 7679cdbf4183411d8bd0b4d8fd11ea11
 msgid "Mocks two configuration scopes: 'low' and 'high'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_fetch:1
-#: ../spack/lib/spack/spack/test/packaging.py:docstring of spack.test.packaging.fake_fetchify:1
-# 66a8a3b92bd445a5a25b4bc992dda286
-# 708ee65219a04186b52f6241b7bcbb95
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_fetch:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packaging.py:docstring of spack.test.packaging.fake_fetchify:1
+# ca7330b26f6d4f2885275fb7e0aa3cb0
+# 8cc05c883b974050aa99483636e2e542
 msgid "Fake the URL for a package so it downloads from a file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_fetch_cache:1
-# b440939adf8e4d06a0b2cacabd7ccc61
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_fetch_cache:1
+# da33d6ac6bcf4972b139d0660684d76d
 msgid "Substitutes spack.paths.fetch_cache with a mock object that does nothing and raises on fetch."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_git_repository:1
-# c8846e1daf924475b066448e72e17bcb
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_git_repository:1
+# bd0c2873b06249ff97d1286dc48b6a1c
 msgid "Creates a very simple git repository with two branches and two commits."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_hg_repository:1
-# d3586de4cf0b428db9fc5fde85561f1b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_hg_repository:1
+# 4fdbab0400cf4d32a348508c26f72c4a
 msgid "Creates a very simple hg repository with two commits."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_packages:1
-# 66c7e66632eb458facea6ec8bbe9937c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_packages:1
+# e416b52680e14212b9dcf47037eda905
 msgid "Use the 'builtin.mock' repository instead of 'builtin'"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_stage:1
-# 88c207b4853648f6add382c900c9d9b5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_stage:1
+# 0e4db57b1962443699ba216ea80eb975
 msgid "Mocks up a fake stage directory for use by tests."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_svn_repository:1
-# c63e8be4726c4a2aad3ec4b68310cb66
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mock_svn_repository:1
+# 3846a23ec7004e09bbdcd4fd96b22211
 msgid "Creates a very simple svn repository with two commits."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.module_configuration:1
-# 82977a2d66b04203acdf6d260af5d130
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.module_configuration:1
+# b089c315c38e4fd09dc294352dbeaafb
 msgid "Reads the module configuration file from the mock ones prepared for tests and monkeypatches the right classes to hook it in."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mutable_config:1
-# e86030cd9b9a4d05baa9d596e9a99724
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mutable_config:1
+# 7073d25c3aa141a09f8f7ab5dc3f3d74
 msgid "Like config, but tests can modify the configuration."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mutable_database:1
-# 1f40966bb6d643739c324a9641348e2e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mutable_database:1
+# e4fd6ccaffbc40ca908483def8954d30
 msgid "For tests that need to modify the database instance."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mutable_mock_env_path:1
-# cd720b9f310943548ea2d3f3ca430e86
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mutable_mock_env_path:1
+# b328014789254f7fa981ab0f61c8667a
 msgid "Fixture for mocking the internal spack environments directory."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mutable_mock_packages:1
-# 6e1731af7f7f498a90d2dab3a40025f1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.mutable_mock_packages:1
+# 8b57dc5dce7f4f37b6bf7683d7ad0a44
 msgid "Function-scoped mock packages, for tests that need to modify them."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.no_chdir:1
-# 4b7ccd5c846744cfb03545738c525ad5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.no_chdir:1
+# 30bc2e6040794c11a4c50081a750fba7
 msgid "Ensure that no test changes Spack's working dirctory."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.no_chdir:3
-# 67a63f4b6da44d9199e41208ad2a4af7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.no_chdir:3
+# 180eedaf86f140b4813d6b2cf722ee24
 msgid "This prevents Spack tests (and therefore Spack commands) from changing the working directory and causing other tests to fail mysteriously. Tests should use ``working_dir`` or ``py.path``'s ``.as_cwd()`` instead of ``os.chdir`` to avoid failing this check."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.no_chdir:8
-# 9b26f2283599423482598f1a0b68bc4a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.no_chdir:8
+# 1777e7884a0748f6b34a31d13087347b
 msgid "We assert that the working directory hasn't changed, unless the original wd somehow ceased to exist."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.remove_whatever_it_is:1
-# 11c88e502e2d4a2fa7b6debb5f87c160
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.remove_whatever_it_is:1
+# e5752885d04044e7b8a737bc3f1717d1
 msgid "Type-agnostic remove."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.repo_path:1
-# 0eed4114f82a40009843dbd0e7ef26cc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/conftest.py:docstring of spack.test.conftest.repo_path:1
+# 65d50a27f3eb4496a0cd1b1c8c00d933
 msgid "Session scoped RepoPath object pointing to the mock repository"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:96
-# ec4fa5379fb04191b6d72564506f06be
+# 9917fb660f2e4ab5ac844771d6ab819d
 msgid "spack.test.database module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/database.py:docstring of spack.test.database:1
-# ce64ccc6fb4246c4aee31d46491b97b8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/database.py:docstring of spack.test.database:1
+# 54c5563a463d4680bcd43a9ae2f5a4c1
 msgid "These tests check the database is functioning properly, both in memory and in its file"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/database.py:docstring of spack.test.database.test_005_db_exists:1
-# 9187291154794e4394d714fc549c028c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/database.py:docstring of spack.test.database.test_005_db_exists:1
+# 046640ecf7754f168c33df3473dd9954
 msgid "Make sure db cache file exists after creating."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/database.py:docstring of spack.test.database.test_010_all_install_sanity:1
-# 8672dd2cfd9c48fe8ec75ed5c6e3d3b9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/database.py:docstring of spack.test.database.test_010_all_install_sanity:1
+# fc69f5660bd84ba59aceefb704359a87
 msgid "Ensure that the install layout reflects what we think it does."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/database.py:docstring of spack.test.database.test_020_db_sanity:1
-# 62444301ac464f3ca2633b262fdd9141
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/database.py:docstring of spack.test.database.test_020_db_sanity:1
+# e99f4d1c000b41ccbabc45499ba2c4d0
 msgid "Make sure query() returns what's actually in the db."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/database.py:docstring of spack.test.database.test_025_reindex:1
-# b16e52545b084b5dab89e7599dcb154b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/database.py:docstring of spack.test.database.test_025_reindex:1
+# 18f9f9655497410686ffab1e9ae4711d
 msgid "Make sure reindex works and ref counts are valid."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/database.py:docstring of spack.test.database.test_040_ref_counts:1
-# bad56fa5081743e18c70c3ccf3833485
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/database.py:docstring of spack.test.database.test_040_ref_counts:1
+# cdfb431b5f8e469eaf81dac3cbcd1a76
 msgid "Ensure that we got ref counts right when we read the DB."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/database.py:docstring of spack.test.database.test_050_basic_query:1
-# 015c0cca1b1c477daf529300e2efa876
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/database.py:docstring of spack.test.database.test_050_basic_query:1
+# c8917a2b3b6948e39750d1f700a090b1
 msgid "Ensure querying database is consistent with what is installed."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/database.py:docstring of spack.test.database.test_add_to_upstream_after_downstream:1
-# ff8b9c94b7fa4372822d0d1f163a0bab
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/database.py:docstring of spack.test.database.test_add_to_upstream_after_downstream:1
+# 7ef79b37101c41d4bbca9f81d22595f2
 msgid "An upstream DB can add a package after it is installed in the downstream DB. When a package is recorded as installed in both, the results should refer to the downstream DB."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/database.py:docstring of spack.test.database.usr_folder_exists:1
-# c0c3d3b13e114882b62bddb90ee2624d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/database.py:docstring of spack.test.database.usr_folder_exists:1
+# 3b99d79905fa44899da4474302768960
 msgid "The ``/usr`` folder is assumed to be existing in some tests. This fixture makes it such that its existence is mocked, so we have no requirements on the system running tests."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:104
-# f0a4a91b02204efa9bd8d71082fe978a
+# de450ae584a24928b9e1c5e265079010
 msgid "spack.test.directory\\_layout module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout:1
-# c27989bb09534046826b70d94988a1bf
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout:1
+# 0ae48942d6f6485884f9d53db854f54c
 msgid "This test verifies that the Spack directory layout works properly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.layout_and_dir:1
-# f1df63c7d8fa40ba89559d27c8dbff01
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.layout_and_dir:1
+# 3c42e483902d487bae3e9dccb9e8789d
 msgid "Returns a directory layout and the corresponding directory."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_find:1
-# 2f593b5e57844621a400857485d3936f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_find:1
+# 95b6697962f44910b9bd2487b36ce6e6
 msgid "Test that finding specs within an install layout works."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_handle_unknown_package:1
-# 5c7393ee77a1424382eace3bbe558c52
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_handle_unknown_package:1
+# 381749c6291542fdb07309d4bbbc8400
 msgid "This test ensures that spack can at least do *some* operations with packages that are installed but that it does not know about.  This is actually not such an uncommon scenario with spack; it can happen when you switch from a git branch where you're working on a new package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_handle_unknown_package:7
-# 8ca65329cdeb437f8229100d9162c7f2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_handle_unknown_package:7
+# cd334e4ad7c74017950a517ad1920e35
 msgid "This test ensures that the directory layout stores enough information about installed packages' specs to uninstall or query them again if the package goes away."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_read_and_write_spec:1
-# ebb0b18d892940ef8b6c04184600f6a6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_read_and_write_spec:1
+# 12a33d344adc4c9998385748041d7e5b
 msgid "This goes through each package in spack and creates a directory for it.  It then ensures that the spec for the directory's installed package can be read back in consistently, and finally that the directory can be removed by the directory layout."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_yaml_directory_layout_parameters:1
-# d4849c135fec4cd4869f7c178479cd73
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/directory_layout.py:docstring of spack.test.directory_layout.test_yaml_directory_layout_parameters:1
+# 3a93b3d508624e6b99cc8e4f4852763d
 msgid "This tests the various parameters that can be used to configure the install location"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:112
-# c086060489f94248bed6cd714bd91fc7
+# acce452d80f843bbadb671ccaf32b586
 msgid "spack.test.environment\\_modifications module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.env:1
-# 0581a3fec5ac4c15889f77eaccc6cd56
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.env:1
+# 8d198eb8d87545728d270520091ea197
 msgid "Returns an empty EnvironmentModifications object."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.files_to_be_sourced:1
-# 979d5fc7c31f485992a132422c1357f2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.files_to_be_sourced:1
+# 878e6f86a93348e4a203e8fdd91549fd
 msgid "Returns a list of files to be sourced"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.miscellaneous_paths:1
-# 0b1d3e2135c04cacb4dc00f39a252104
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.miscellaneous_paths:1
+# 4153a88a66774953a9672e6e2876ea71
 msgid "Returns a list of paths, including system ones."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.prepare_environment_for_tests:1
-# 4428b43ff0f44fb683e47ed08a2fc3e6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.prepare_environment_for_tests:1
+# 0c8b6ca4eeeb414ca3fc1273f3720161
 msgid "Sets a few dummy variables in the current environment, that will be useful for the tests below."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_append_flags:1
-# 6709833a56824bcdb087fd4c210b4189
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_append_flags:1
+# 83d93efdb7a74f758163d027f4b38c1a
 msgid "Tests appending to a value in the environment."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_extend:1
-# 7ff757d8c287431093cde034d1f47bc7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_extend:1
+# f9fcf2625cf74050a6876f09b65cb483
 msgid "Tests that we can construct a list of environment modifications starting from another list."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_extra_arguments:1
-# c77df066aa714ccd89094bdae4e3f372
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_extra_arguments:1
+# 792bee68b7294bc89063a4409c00eece
 msgid "Tests that we can attach extra arguments to any command."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_filter_system_paths:1
-# fde3c0438e3c44c0a441575a5d5519e7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_filter_system_paths:1
+# 15b2eb10c62440b694df9a537fcbf5ce
 msgid "Tests that the filtering of system paths works as expected."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_path_manipulation:1
-# 999dfcbabeae49809592c85c6ff486ff
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_path_manipulation:1
+# 2c8b190f2b914ec7832362906af71b4b
 msgid "Tests manipulating list of paths in the environment."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_set:1
-# 01e08c5a62004c9ea1f8a44e563321b1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_set:1
+# 7ef30ea95bf248b9a3136eb9100f4bc2
 msgid "Tests setting values in the environment."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_set_path:1
-# 8a2c4d599a2d4deabef5a758e5a0e20e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_set_path:1
+# c5c9410f4e444135b6d202145cae06b7
 msgid "Tests setting paths in an environment variable."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_source_files:1
-# fd57c77ce66445fb91496908250e893b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_source_files:1
+# 2aa3c9a26103429586331702df598d29
 msgid "Tests the construction of a list of environment modifications that are the result of sourcing a file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_unset:1
-# 7356a0379057427dac05c809319c0f90
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/environment_modifications.py:docstring of spack.test.environment_modifications.test_unset:1
+# 5e711e16d878475cbd8fe0430477e6ac
 msgid "Tests unsetting values in the environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:120
-# fddb7f7890f447e992705f99f66a0f83
+# 85ac9cdfb27e40afba3759a851957ee5
 msgid "spack.test.flag\\_handlers module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:128
-# 4b8de51f516f4d83b349de2385e17dcc
+# ef0f52a450ad412381913916cda45db7
 msgid "spack.test.git\\_fetch module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.git_version:1
-# abb99c2c2bb44425ab8c045c8e1363d5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.git_version:1
+# d05596e1500f49eba07a3e489de21434
 msgid "Tests GitFetchStrategy behavior for different git versions."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.git_version:3
-# f4cfa0321d394490990fd506e4d80645
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.git_version:3
+# a1999811302d4316bce020b4502d828b
 msgid "GitFetchStrategy tries to optimize using features of newer git versions, but needs to work with older git versions.  To ensure code paths for old versions still work, we fake it out here and make it use the backward-compatibility code paths with newer git versions."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:1
-#: ../spack/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:1
-#: ../spack/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:1
-# 90589c3fd9ef40de8576c4047dda4b9c
-# 010da890364949ccafe862f739a7d157
-# 0064b98514d14a42a4e92c160a1cd0d5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:1
+# 6b46410ba3dc41148e1418ef93fd2a52
+# 002915009bab43a4bd9f2c3c0cf86c19
+# 8b70a2d3d64941bb88debb1ade58e84f
 msgid "Tries to:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:3
-#: ../spack/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:3
-#: ../spack/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:3
-# 45b0bd14418d4c1aa1b5cf44549e090b
-# 9ced2a849a454985aad1bc9e227b6815
-# 7f9a54dd058647b4b4f4b518b6d5f2dc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:3
+# a5d95c5cb3e04e5ca6b66d123dfa6262
+# 27251e1be99c44e98788f83a0b17bf1f
+# a3297cee1c7e4931a964ac2e2c0c58f4
 msgid "Fetch the repo using a fetch strategy constructed with supplied args (they depend on type_of_test)."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:5
-#: ../spack/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:5
-#: ../spack/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:5
-# 4c0424cbe59d4004b9cf727b7bef8594
-# 826b0ad8ffaa42339982ceb389851d32
-# f6e965453de04be5bb11b2a0b27f2161
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:5
+# e46171aea7e64c4f87d442e9703d8061
+# 44eb17fa9dfa4bf28d12ffcb8938bfae
+# e7194a8f311443a48e6803e5f93548e2
 msgid "Check if the test_file is in the checked out repository."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:6
-#: ../spack/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:6
-#: ../spack/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:6
-# e32a719de55f41feaaa54eec8672d0d3
-# f82ba768bd394ef3b503f814f185d9f0
-# bf6559dea59c4faba1cd6240b47f6492
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:6
+# 5800e626c16e46dda7b2ac9169e5e6f0
+# d2114a86b0f34d709b449d5ac46e510c
+# 8965ef0525f64e688dc771f2ed7c0a3e
 msgid "Assert that the repository is at the revision supplied."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:7
-#: ../spack/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:7
-#: ../spack/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:7
-# b9183fa61ba047938d663a347fafe16d
-# d333bc8af11e4ca29745e590cec42279
-# 06255dfa4f484498afc18cbbc04fbcb2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/git_fetch.py:docstring of spack.test.git_fetch.test_fetch:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/hg_fetch.py:docstring of spack.test.hg_fetch.test_fetch:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/svn_fetch.py:docstring of spack.test.svn_fetch.test_fetch:7
+# ba9d2238ca3b4cf5ac05f13c30e2a66d
+# c6bb039fd065460eafc998a267a57d45
+# 4720aa85924948a9918c5294377cce22
 msgid "Add and remove some files, then reset the repo, and ensure it's all there again."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:136
-# 941d225d90404bff971ef4b88d85545b
+# 974caedce21541fd8655ab3f3f3d3972
 msgid "spack.test.graph module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/graph.py:docstring of spack.test.graph.test_ascii_graph_mpileaks:1
-#: ../spack/lib/spack/spack/test/graph.py:docstring of spack.test.graph.test_dynamic_dot_graph_mpileaks:1
-# 335776593cbe4caaba4f721410ec439d
-# 0d1bc3e4a78842dd9d5355582a0af0a0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/graph.py:docstring of spack.test.graph.test_ascii_graph_mpileaks:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/graph.py:docstring of spack.test.graph.test_dynamic_dot_graph_mpileaks:1
+# a3cec2908f014a19aa60ab7a6cbd06c7
+# e530a2624cf942be9d07c47111c54ab1
 msgid "Test dynamically graphing the mpileaks package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/graph.py:docstring of spack.test.graph.test_static_graph_mpileaks:1
-# 5b5b8914fcfc46159ab9b97a94aaf2f7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/graph.py:docstring of spack.test.graph.test_static_graph_mpileaks:1
+# 167e7693391445beb7024009e4f79c2b
 msgid "Test a static spack graph for a simple package."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/graph.py:docstring of spack.test.graph.test_topo_sort:1
-# 3fc235be65834be3ba3d9adeeff6b835
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/graph.py:docstring of spack.test.graph.test_topo_sort:1
+# 6dc9538953bf4b688c92cea980986f1b
 msgid "Test topo sort gives correct order."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:144
-# 4951fbf48ddf423b9d881a251d23b407
+# 7f6358920fea4cd49551add3b32ea771
 msgid "spack.test.hg\\_fetch module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:152
-# 8162d20a69574de390c78e40ebf35613
+# 59e8f41ac16a49a5a9e3e2a6e3a7ccb5
 msgid "spack.test.install module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/install.py:docstring of spack.test.install.MockInstallError:1
-# 477278f5a2864b80b52f324678a12a5e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/install.py:docstring of spack.test.install.MockInstallError:1
+# bb9933f80976495da3467a7b321a38f5
 msgid "Bases: :class:`spack.error.SpackError`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/install.py:docstring of spack.test.install.test_installed_upstream:1
-#: ../spack/lib/spack/spack/test/install.py:docstring of spack.test.install.test_installed_upstream_external:1
-# b1c6bd58b3b842b2a98624f75c0b0977
-# 2b8284a2be974b029b09a727f32f989e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/install.py:docstring of spack.test.install.test_installed_upstream:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/install.py:docstring of spack.test.install.test_installed_upstream_external:1
+# e9ffa9597eda42f38dfd43a9650050ec
+# 6a6dffc2b35540ddb8e44edba22f672f
 msgid "Check that when a dependency package is recorded as installed in an upstream database that it is not reinstalled."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:160
-# ae848b9aeb154d61b97a5e0b62e18b20
+# 36ab91e5c15441848ec355df90f2cf5e
 msgid "spack.test.make\\_executable module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable:1
-# 90ffac0902e74c84ad0274d74a81093a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable:1
+# d036dabd42fa4ea28acc39173b38d761
 msgid "Tests for Spack's built-in parallel make support."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable:3
-# eafde0f32ad34b16913c9a52d53ea126
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable:3
+# 995696ee2c62403ebc957f961660a832
 msgid "This just tests whether the right args are getting passed to make."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable.MakeExecutableTest:1
-# f9311eaf18084576b478dd704595f6e1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable.MakeExecutableTest:1
+# 8b87c6a4f8ba42c4ae26f82b263726cc
 msgid "Bases: :class:`unittest.case.TestCase`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable.MakeExecutableTest.setUp:1
-# 47a4d291849643b6a76c0fb1ce13e8b2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable.MakeExecutableTest.setUp:1
+# b17bdd05e05a44019e672de2b4880705
 msgid "Hook method for setting up the test fixture before exercising it."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable.MakeExecutableTest.tearDown:1
-# d3afa0577a084013bfefdee536bc7ba2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/make_executable.py:docstring of spack.test.make_executable.MakeExecutableTest.tearDown:1
+# fb21426df079400d923fba8b39781066
 msgid "Hook method for deconstructing the test fixture after testing it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:168
-# 1eaa67995c1a422f8dffd3a5c5cde916
+# 3c9d649082314891a26b3edbf3d7af5a
 msgid "spack.test.mirror module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/mirror.py:docstring of spack.test.mirror.set_up_package:1
-# 644ebc4b5d0046e3ac43aae85357b368
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/mirror.py:docstring of spack.test.mirror.set_up_package:1
+# ff792ca17b7c417fbb1a3f0d312cf316
 msgid "Set up a mock package to be mirrored. Each package needs us to:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/mirror.py:docstring of spack.test.mirror.set_up_package:4
-# dd4180f9ce1c405fa3655120303cca99
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/mirror.py:docstring of spack.test.mirror.set_up_package:4
+# 90cce22f8f6948729f5926af2af05df1
 msgid "Set up a mock repo/archive to fetch from."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/mirror.py:docstring of spack.test.mirror.set_up_package:5
-# fad6eb67abc24da6b71ea161d7bcb14d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/mirror.py:docstring of spack.test.mirror.set_up_package:5
+# 4f4168d397bc487298d338af4e154434
 msgid "Point the package's version args at that repo."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:176
-# 706b02abb8764336bcaab756519ec535
+# e7ffd438f225430fa2935bc0c43c3acf
 msgid "spack.test.module\\_parsing module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:184
-# 6f35a442cf1f43dfb41d2ccb1c968af1
+# 50c1ef5aaa36410fb85d86dd8a604941
 msgid "spack.test.multimethod module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/multimethod.py:docstring of spack.test.multimethod:1
-# 75c86125580d44788d4f78d8c65632fd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/multimethod.py:docstring of spack.test.multimethod:1
+# db2509e5e4774da495f96ee8305ed2ec
 msgid "Test for multi_method dispatch."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/multimethod.py:docstring of spack.test.multimethod.pkg_name:1
-# 076957d6f39145599d6b9a79583145ae
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/multimethod.py:docstring of spack.test.multimethod.pkg_name:1
+# 166a9a1727544295844cf352c4da8381
 msgid "Make tests run on both multimethod and multimethod-inheritor."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/multimethod.py:docstring of spack.test.multimethod.pkg_name:3
-# a64cb570b28e4e009f98ebf744002091
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/multimethod.py:docstring of spack.test.multimethod.pkg_name:3
+# 6b92bcbb4a264eecb736be709bfb730c
 msgid "This means we test all of our @when methods on a class that uses them directly, AND on a class that inherits them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:192
-# c0754e1bef8449dda006fc581f1487f4
+# d4ba05ece5f3479fa76551875afcd2ad
 msgid "spack.test.namespace\\_trie module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:200
-# f747103138e5477795da2ee758fe50bf
+# 46cac30aa23d42f7b3d3bd2fe6f1f0e5
 msgid "spack.test.optional\\_deps module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/optional_deps.py:docstring of spack.test.optional_deps.spec_and_expected:1
-# 781be32196af48119b776cc3c0267cfc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/optional_deps.py:docstring of spack.test.optional_deps.spec_and_expected:1
+# 4f279126a27745a895202d2b67c2c477
 msgid "Parameters for the normalization test."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:208
-# fe0e8df4c9254c058aa40e46ae12818a
+# 482fcde9ef9041e2addca9e1bc8c52f2
 msgid "spack.test.package\\_hash module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_hash.py:docstring of spack.test.package_hash.test_all_same_but_archive_hash:1
-# 407e978fda424bed9625180b9b410eee
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_hash.py:docstring of spack.test.package_hash.test_all_same_but_archive_hash:1
+# d198dcbfc4db43c4b4e81919a01b24f4
 msgid "Archive hash is not intended to be reflected in Package hash."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:216
-# a197b93084c04174b9243741feb116cc
+# 1eedcacb9a83440291b97f4f830de249
 msgid "spack.test.package\\_sanity module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity:1
-# b7ecff833a8d4729b5092c633d4cb6a1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity:1
+# 5f80a980bebb4a4a9612ca0ee1c1b1da
 msgid "This test does sanity checks on Spack's builtin package database."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.check_repo:1
-# 3e88476a19f64052aabbd031c8e5fad7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.check_repo:1
+# 0233c99adf0a4a988d5868c05f89caca
 msgid "Get all packages in the builtin repo to make sure they work."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_all_versions_are_lowercase:1
-# 0ed057a3e07e40519a997f5bcdbec7b3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_all_versions_are_lowercase:1
+# 51776c1ff9bd469692510996317e74f2
 msgid "Spack package names must be lowercase, and use `-` instead of `_`."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_all_virtual_packages_have_default_providers:1
-# 38dacbec67ee4770b45edbb5aacab470
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_all_virtual_packages_have_default_providers:1
+# 0592bd65ef01418cb59af5dc5d6d13ae
 msgid "All virtual packages must have a default provider explicitly set."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_docstring:1
-# bc19e2fc1637463eae4622192a63540c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_docstring:1
+# 777548c22747406da0655429fd82a6b4
 msgid "Ensure that every package has a docstring."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_get_all_mock_packages:1
-# 03d2423c6de542f3b70c42b9010a4012
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_get_all_mock_packages:1
+# d4a5462107ab4b94a45472282c953853
 msgid "Get the mock packages once each too."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_get_all_packages:1
-# 6dd4c691528a4a278b6c8e100b4c4695
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_get_all_packages:1
+# 1e856c2e59c94fd687d42f36c59da5e9
 msgid "Get all packages once and make sure that works."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_no_fixme:1
-# 58da6abaa037423d99b1e76f694f9046
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_no_fixme:1
+# bad930134d3a4781900b24f4e01d50c9
 msgid "Packages should not contain any boilerplate such as FIXME or example.com."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_package_version_consistency:1
-# 498c4b021429460a9838c67f16c5df56
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/package_sanity.py:docstring of spack.test.package_sanity.test_package_version_consistency:1
+# 29c9a793c3a74f07a8136af985187535
 msgid "Make sure all versions on builtin packages can produce a fetcher."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:224
-# 44c2215738a04a8ab475ab0cf1d4282e
+# dd343bdc0776475bbd250a19469fc8c5
 msgid "spack.test.packages module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_git_top_level:1
-# 1439e7bb74284d1097bb298df827139e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_git_top_level:1
+# 438e0f0f6d2d4086b94ced0202058a0b
 msgid "Ensure that top-level git attribute can be used as a default."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_git_url_top_level_conflicts:1
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_git_url_top_level_git_versions:1
-# f731c700ff8243a0a66f1e3a3ba2965f
-# 88326fe21996488384daf3e89b9db777
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_git_url_top_level_conflicts:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_git_url_top_level_git_versions:1
+# 8b408c04fe84434ea393a55c8bf81092
+# faa50dcf38394effab2e5e96cda51e07
 msgid "Test git fetch strategy inference when url is specified with git."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_git_url_top_level_url_versions:1
-# 9b79604f8096490484789d38c40415a9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_git_url_top_level_url_versions:1
+# cecba775d3e040cfa5ff7f5e64d0723f
 msgid "Test URL fetch strategy inference when url is specified with git."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_hg_top_level:1
-# c1eb5058625142b19830ab4cbd45f766
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_hg_top_level:1
+# 1d30c7e9e434463c9ece65990483a958
 msgid "Ensure that top-level hg attribute can be used as a default."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_no_extrapolate_without_url:1
-# f45e4ca4b917402692953d4cf92f1f0c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_no_extrapolate_without_url:1
+# 192435c092dd4bdca7d1c163f2dbd461
 msgid "Verify that we can't extrapolate versions for non-URL packages."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_svn_top_level:1
-# 67e6f6decb164b3aad356b1f4dc42946
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_svn_top_level:1
+# 63ab8dedcd964542acbde536557a4de1
 msgid "Ensure that top-level svn attribute can be used as a default."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_two_vcs_fetchers_top_level:1
-# 743d769275374a8aab8e060adc852517
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_two_vcs_fetchers_top_level:1
+# f3746d09a1d34f3892e4174d2627c564
 msgid "Verify conflict when two VCS strategies are specified together."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_urls_for_versions:1
-# 5d02b3184d114efe901c1b1b74b32c96
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packages.py:docstring of spack.test.packages.test_urls_for_versions:1
+# 4d193029912b4b6eae750d8beae50f9a
 msgid "Version directive without a 'url' argument should use default url."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:232
-# ef4e1bc4424945f4bc1e15e58cd3b1c6
+# 5d8b7f643e044472a030cd91b94fef8a
 msgid "spack.test.packaging module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/packaging.py:docstring of spack.test.packaging:1
-# 502d8e958a0644dd9ef68a22b10c38d3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/packaging.py:docstring of spack.test.packaging:1
+# 4efc7f569ae147cfb3db859ff65ab494
 msgid "This test checks the binary packaging infrastructure"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:240
-# 35d95fb3580946308b7e9e6e7e69a8d5
+# cb3de22bc90e4f9587b4e872c612b462
 msgid "spack.test.patch module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/patch.py:docstring of spack.test.patch.check_multi_dependency_patch_specs:1
-# de4909473b3a480baecd26f5883f9ed7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/patch.py:docstring of spack.test.patch.check_multi_dependency_patch_specs:1
+# a7fa8b7baafd4680a406248f47abb844
 msgid "Validate patches on dependencies of patch-several-dependencies."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_conditional_patched_dependencies:1
-# e8c646c1202343c6957571f9ccec64cb
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_conditional_patched_dependencies:1
+# 12ab64f33e174e00939fbb846789239f
 msgid "Test whether conditional patched dependencies work."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_conditional_patched_deps_with_conditions:1
-# fd430e87b36a4f45b636f0aab2617048
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_conditional_patched_deps_with_conditions:1
+# 3497073027ed4b94812761cbf5c1a093
 msgid "Test whether conditional patched dependencies with conditions work."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_multiple_patched_dependencies:1
-# bc9e844c9ba24a658acb82ae85fce002
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_multiple_patched_dependencies:1
+# bd1f6a1e85db40778705868384ea813e
 msgid "Test whether multiple patched dependencies work."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_nested_directives:1
-# 979d15c1b8db4743bfa62ec9f132b99d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_nested_directives:1
+# 36688e3683d5484fb8cbc02d89f2ff15
 msgid "Ensure pkg data structures are set up properly by nested directives."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_patch_in_spec:1
-# 8891016b08d048a6822e5a15eec3ef4e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_patch_in_spec:1
+# 44466c41d1214f5ea0cbae791be509d2
 msgid "Test whether patches in a package appear in the spec."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_patched_dependency:1
-# 521443242c2c4fb98b63890bd8b2d28d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_patched_dependency:1
+# 9c3eb972da8045fa9a40d0dc875fed74
 msgid "Test whether patched dependencies work."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_write_and_read_sub_dags_with_patched_deps:1
-# 8cce294fd374443792c359cbc41f6532
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/patch.py:docstring of spack.test.patch.test_write_and_read_sub_dags_with_patched_deps:1
+# 475954f67d60437c8ec02c6d18d770f1
 msgid "Test whether patched dependencies are still correct after writing and reading a sub-DAG of a concretized Spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:248
-# 310ab704f39a4708878bb5f8e73f0354
+# bb3b9a5641a34fe595743c24ad6d5f0b
 msgid "spack.test.pattern module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/pattern.py:docstring of spack.test.pattern.composite:1
-# ac5b7104e159401a8fe0e9de0f652dba
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/pattern.py:docstring of spack.test.pattern.composite:1
+# 306ff71adf1646239b1c493ad4e15f2e
 msgid "Returns a composite that contains an instance of `implementation(1)` and one of `implementation(2)`."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/pattern.py:docstring of spack.test.pattern.implementation:1
-# feed19a265c94a77b446715c87dc21ff
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/pattern.py:docstring of spack.test.pattern.implementation:1
+# fe098afbbeb74c3eb1cbb0fc6f50ddc2
 msgid "Returns an implementation of the interface"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/pattern.py:docstring of spack.test.pattern.interface:1
-# 336715f0b6c8434d9cb6e4e9040fc7dc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/pattern.py:docstring of spack.test.pattern.interface:1
+# 1e437fe711a540b1a9223c66f29f0f64
 msgid "Returns the interface class for the composite."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:256
-# 95df2ab9b9484c9494bbbee871766c44
+# d320f526aced490092d6a0ee7bb4496a
 msgid "spack.test.permissions module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:264
-# 3569d55815e14efda37507a9e1de7cc5
+# d6619b0764cf405a806a35fc5da0464e
 msgid "spack.test.provider\\_index module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/provider_index.py:docstring of spack.test.provider_index:1
-# f4b62d4975514119a778fa2077180820
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/provider_index.py:docstring of spack.test.provider_index:1
+# fc8c9ae5b75847ce8dbde1326fa93a24
 msgid "Tests for provider index cache files."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/provider_index.py:docstring of spack.test.provider_index:3
-# 2c991c376ce748be90ba03a27640583a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/provider_index.py:docstring of spack.test.provider_index:3
+# f35d10e2b5e4401fbbc6b728e56b4fb8
 msgid "Tests assume that mock packages provide this::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:272
-# 0a8079f647904f68b038d14c06ca69d8
+# f3f2b64cf2564d38bec4cb29a169c16e
 msgid "spack.test.python\\_version module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version:1
-# f07139aba23948a3a5fe6d3a0c0879d4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version:1
+# abf1aff745e346a4b51a31bb40a2a724
 msgid "Check that Spack complies with minimum supported python versions."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version:3
-# aa5255444def48679709dfff39658b3d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version:3
+# 6b00faf23fe5430d8f56e5000d347d76
 msgid "We ensure that all Spack files work with Python2 >= 2.6 and Python3 >= 3.0."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version:5
-# e92dddd3a559472a9c9361bbbba7984f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version:5
+# a54705a95b0849ea8b2caa3d5e0742d7
 msgid "We'd like to drop 2.6 support at some point, but there are still many HPC systems that ship with RHEL6/CentOS 6, which have Python 2.6 as the default version.  Once those go away, we can likely drop 2.6 and increase the minimum supported Python 3 version, as well."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.check_python_versions:1
-# 4ac9f67614f0473b9b6448cfcf8b4c6e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.check_python_versions:1
+# b136d21d54fc42e4b140ca0ad316df4d
 msgid "Check that a set of Python files works with supported Ptyhon versions"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:1
-# b385882f1f4e47168743846ea1303940
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:1
+# ab2d1c6d60aa421a8404058eeea5aa1b
 msgid "Generator that yields all the python files in the search paths."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:0
-#: ../spack/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:0
-# 47d8db6050b6496c988b6e805aff6ad5
-# 4a1916487bf94469a4c7b0f2b018026b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:0
+# 14acc4315b0941288310df79d3731c9d
+# 387cbe24095f4a2092cc1ba3ff8d7cd9
 msgid "Parameters"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:3
-# f5e423152a84472482be2887b58e745b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:3
+# 1d5373c757484db9ba680d5c29aba767
 msgid "list of paths to search for python files"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:5
-# b7c32995947a4858b9c528238261198a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:5
+# c472b1bc8e1a4d25a22b9d6c2f7777bc
 msgid "file paths to exclude from search"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:0
-# d5288909d92c471082c67aab79da662d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:0
+# 6f8a1c29f2a24d6a9fe7602668155fb3
 msgid "Yields"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:8
-# 84ddba65e58c4899821ea18e23ba9540
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.pyfiles:8
+# 339cf0e1f7744bb48b34bdca6fe84601
 msgid "python files in the search path."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.test_core_module_compatibility:1
-# efe0e55c30db40559431b5db2bc8ba0c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.test_core_module_compatibility:1
+# 1f4967dad79741bd94cf4c9b82701c8a
 msgid "Test that all core spack modules work with supported Python versions."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.test_package_module_compatibility:1
-# 719f025ee26f4e71b0640dd17c568740
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/python_version.py:docstring of spack.test.python_version.test_package_module_compatibility:1
+# 263ae742f4324b9ea8289d83c423091f
 msgid "Test that all spack packages work with supported Python versions."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:280
-# d947bbc7b44f403b8811202bdc0cf61f
+# e400d5c55dd24375a74c064cff02eb55
 msgid "spack.test.relocate module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/relocate.py:docstring of spack.test.relocate.source_file:1
-# 373dbce4067f48e9ae17692f28cb9ea4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/relocate.py:docstring of spack.test.relocate.source_file:1
+# 2562725709f248ae82f1c5fc85a492e5
 msgid "Returns the path to a source file of a relocatable executable."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:288
-# c9fd3b23040e4bf8b9ebc8564839ac8e
+# 8acf1d01e0bf44a1b930aa46eef3aaf5
 msgid "spack.test.repo module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:296
-# 3f67cae8698a4ed2810ae97a21983700
+# 49d3e6c16d314ba5b15f0abb93841cea
 msgid "spack.test.sbang module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/sbang.py:docstring of spack.test.sbang:1
-# 242f1dd6f85f4affac3fd3f3db1ff025
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/sbang.py:docstring of spack.test.sbang:1
+# b965311f41ab425cbebb6cc7312e1719
 msgid "Test that Spack's shebang filtering works correctly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/sbang.py:docstring of spack.test.sbang.ScriptDirectory:1
-# 5540299938f84029b42ee12e639ec62c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/sbang.py:docstring of spack.test.sbang.ScriptDirectory:1
+# db37de6195db4c57accc292e7fcd1483
 msgid "Directory full of test scripts to run sbang instrumentation on."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:304
-# a6df053349d24311b8f86d6f69a120c0
+# aa1f3414bd21472a8fed4e989f4baf67
 msgid "spack.test.schema module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:312
-# 4222cb46ff054ca6806589efb723bffa
+# 66a345a8b81148f49330b0e4e2a619d7
 msgid "spack.test.spack\\_yaml module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spack_yaml.py:docstring of spack.test.spack_yaml:1
-# 9698b30d46064815b2e08542621ae647
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spack_yaml.py:docstring of spack.test.spack_yaml:1
+# a903718fa93a4f839121e1ae853bab35
 msgid "Test Spack's custom YAML format."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spack_yaml.py:docstring of spack.test.spack_yaml.data:1
-# 2aeee9097ae043eb9d787644485fab98
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spack_yaml.py:docstring of spack.test.spack_yaml.data:1
+# 5d9f2e0efd9f4e7db974d99a4b1dd282
 msgid "Returns the data loaded from a test file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:320
-# 284d1ba7db004a0ea2b7e5100ce58dfe
+# 363fb325556049389dd1fb45224f61d3
 msgid "spack.test.spec\\_dag module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag:1
-# 559b92bd1e094328880c3108f4aaf3d2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag:1
+# d6fbd055caa345b2a5ca0a41446604a7
 msgid "These tests check Spec DAG operations using dummy packages."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.check_diamond_deptypes:1
-# 673436f71ac443ceb98591d23ee52d32
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.check_diamond_deptypes:1
+# 7a336315c6714f2d8abbaece2f386931
 msgid "Validate deptypes in dt-diamond spec."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.check_diamond_deptypes:3
-# bef2e8e3f15f4509974dff551b1b4d76
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.check_diamond_deptypes:3
+# 1694fd1ce5a34662a513858f3efedd8d
 msgid "This ensures that concretization works properly when two packages depend on the same dependency in different ways."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_concretize_deptypes:1
-# d815bc48ee0a456a8dd747d1855cd7ae
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_concretize_deptypes:1
+# 863591bab9bc486e90520891ccb785bc
 msgid "Ensure that dependency types are preserved after concretization."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_construct_spec_with_deptypes:1
-# 432b9816f5754fc58f605af6b9783edc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_construct_spec_with_deptypes:1
+# 8521e81b19324dd8afa49d1ff362ea56
 msgid "Ensure that it is possible to construct a spec with explicit dependency types."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_copy_deptypes:1
-# 6029dacb65c74063a4b50555a4a70c98
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_copy_deptypes:1
+# d49fdc80f0a846c4a8830a94e1c099b4
 msgid "Ensure that dependency types are preserved by spec copy."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_edge_traversals:1
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_traversal_directions:1
-# 370f6a4d175a4a0db9320da11d506a1e
-# 2e39a23828974adabd015abefd61499d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_edge_traversals:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_traversal_directions:1
+# 4ea7615c957e425fbfc3ebda2ba218aa
+# 29a49ed8d91b4a66ba6cd32b6502123c
 msgid "Make sure child and parent traversals of specs work."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_hash_bits:1
-# 7ed4eabac3f747c0baf216762b38f853
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_hash_bits:1
+# 2c26d6a8c3fc47f59ed2ed1d1228bcd8
 msgid "Ensure getting first n bits of a base32-encoded DAG hash works."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_normalize_diamond_deptypes:1
-# 4d0af52f200d49568d26ea1e51434969
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_normalize_diamond_deptypes:1
+# f86689a2346f466486fda4edc9a1fb62
 msgid "Ensure that dependency types are preserved even if the same thing is depended on in two different ways."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_normalize_twice:1
-# 788f52e4b4de45459980b742c1c6d145
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.TestSpecDag.test_normalize_twice:1
+# 23f5e4fe688446249a809bd8a00441c5
 msgid "Make sure normalize can be run twice on the same spec, and that it is idempotent."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.saved_deps:1
-# 203658cb5c2642d5b332b5478e321f68
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.saved_deps:1
+# efe73a3d9274472a94c8d7698508761e
 msgid "Returns a dictionary to save the dependencies."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.set_dependency:1
-# b44bc6604fe841629493981bc49b32c4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.set_dependency:1
+# 323d5ada37a1479b9071a47b4b531165
 msgid "Returns a function that alters the dependency information for a package in the ``saved_deps`` fixture."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.test_conditional_dep_with_user_constraints:1
-# 82ff8a9e9170480392c3c16a0c3e6803
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.test_conditional_dep_with_user_constraints:1
+# c4ea3512de364e4b977f62c818f31bce
 msgid "This sets up packages X->Y such that X depends on Y conditionally. It then constructs a Spec with X but with no constraints on X, so that the initial normalization pass cannot determine whether the constraints are met to add the dependency; this checks whether a user-specified constraint on Y is applied properly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.test_test_deptype:1
-# d36b7c97d0694835abdd34febd312e45
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.test_test_deptype:1
+# 7ec43f9dbce04eddba0ae9d36a30db97
 msgid "Ensure that test-only dependencies are only included for specified packages in the following spec DAG::"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.test_test_deptype:10
-# 15158d99880d4d839e58b3919c140c5a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_dag.py:docstring of spack.test.spec_dag.test_test_deptype:10
+# 6c251f7c71fe4c558b9fb1bbc17ef0cd
 msgid "w->y deptypes are (link, build), w->x and y->z deptypes are (test)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:328
-# a02c2521ce5c4db8b2ed019689ae834d
+# 8f1752e3d5bc4147bd8bf7bb858039bd
 msgid "spack.test.spec\\_semantics module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics:1
-# a5cf0230d4024061ae82c58812a6807f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics:1
+# 62a8ac170c6941c689c3f75c6683aee0
 msgid "This tests satisfies(), constrain() and other semantic operations on specs."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics.test_satisfies_namespaced_dep:1
-# cc62915600094deb8e342ac2db71aad3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics.test_satisfies_namespaced_dep:1
+# a6b9c5f47f5342d0b6471c65aab4ef3f
 msgid "Ensure spec from same or unspecified namespace satisfies namespace constraint."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics.test_satisfies_same_spec_with_different_hash:1
-# e4cda166c27043dcbfb18443cfd914d5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics.test_satisfies_same_spec_with_different_hash:1
+# 6680207ee01848099ed2a3f7a37b367d
 msgid "Ensure that concrete specs are matched *exactly* by hash."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics.test_satisfies_single_valued_variant:1
-# 077b950dff7247e0b4c4e2fc0ab2dfce
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics.test_satisfies_single_valued_variant:1
+# f6640428ce4149e99bf6282d9524048c
 msgid "Tests that the case reported in https://github.com/spack/spack/pull/2386#issuecomment-282147639 is handled correctly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics.test_satisfies_virtual_dep_with_virtual_constraint:1
-# 3c5158e52b2a474bb51edd07720caa47
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_semantics.py:docstring of spack.test.spec_semantics.TestSpecSematics.test_satisfies_virtual_dep_with_virtual_constraint:1
+# 85424d6becc34336858a9fe825b04750
 msgid "Ensure we can satisfy virtual constraints when there are multiple vdep providers in the specs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:336
-# 9c3d81f2b9bb4943b257dd9ecf9fedbb
+# d53a9f9e1b5247709239d7db5dccbb40
 msgid "spack.test.spec\\_set module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_basic:1
-# db678986fbfd45c1bd155dda5f4a2deb
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_basic:1
+# 78ed756394e04f76996a2c70f6e973e3
 msgid "The \"include\" isn't required, but if it is present, we should only see specs mentioned there.  Also, if we include cdash and project properties, those should be captured and stored on the resulting CombinatorialSpecSet as attributes."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_exclude:1
-# 8f852b68b252488a919763aa3d88fd94
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_exclude:1
+# 9508381d609945c7bdb4b082f6af3e92
 msgid "The exclude property isn't required, but if it appears, any specs mentioned there should not appear in the output specs"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_get_cdash_array:1
-# 3f2bb5841a764c1d855589cbc2193207
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_get_cdash_array:1
+# 7e1a7b1ccea64885a0b918e4ff383efa
 msgid "Make sure we can handle multiple cdash sites in a list"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_include_exclude_conflict:1
-# 10ec8cad71244afca94ed66891809971
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_include_exclude_conflict:1
+# b8b622dbe6ae4459a97608592a48cfae
 msgid "Exclude should override include"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_include_limited_packages:1
-# fbe3e8a92d3a45bb929bc65761bbbdb4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_include_limited_packages:1
+# b82f00b33fb447859032d88278b80ed6
 msgid "If we see the include key, it is a filter and only the specs mentioned there should actually be included."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_no_include:1
-# 2e7ad6f220214b14b5a7cea1546930be
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_no_include:1
+# 7cdbdf454616443d9e0dcb3b56b5154c
 msgid "Make sure that without any exclude or include, we get the full cross- product of specs/versions."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_packages_no_matrix:1
-# b52e1af7781a448f8302bdc4b60515d5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_packages_no_matrix:1
+# beb82b0d1e184941a6d00a3fb847fdab
 msgid "The matrix property is required, make sure we error out if it is missing"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_simple_spec_list:1
-# 0768f30cf0d7437f9ac36c6e905758cd
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_simple_spec_list:1
+# 9d6ce699f5c94165929e4abc1b4a2c45
 msgid "Make sure we can handle the slightly more concise syntax where we include the package name/version together and skip the extra keys in the dictionary."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_with_specs:1
-# 0d3e6fcee92e4fe5b9bb07dc75f2d27e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_set.py:docstring of spack.test.spec_set.test_spec_set_with_specs:1
+# e0c395c4dbb54b098fa9e422bd891fc3
 msgid "Make sure we only see the specs mentioned in the include"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:344
-# 8b3785321cc04d74900b16447f42621c
+# c2a6961c95c64b75b4edb511ed1ba495
 msgid "spack.test.spec\\_syntax module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.check_lex:1
-# 4bf97e3765b44365af8c93134449df57
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.check_lex:1
+# 6b1a39e1bfc64256b974f835060f1548
 msgid "Check that the provided spec parses to the provided token list."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.check_parse:1
-# 8336d795e2b34f9cbf99ee4397169068
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.check_parse:1
+# 17af742e924a4d6e8726854983268a8d
 msgid "Assert that the provided spec is able to be parsed."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.check_parse:3
-# 992253d0e2ab4ca99b66332b84992e4f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.check_parse:3
+# dad60426f2e7446f9621ecd881e437c6
 msgid "If this is called with one argument, it assumes that the string is canonical (i.e., no spaces and ~ instead of - for variants) and that it will convert back to the string it came from."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.check_parse:8
-# ef26fc90298049a9b5e259d4802b90c2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.check_parse:8
+# 2ade60682af74f15b5ca1ae8468b14ee
 msgid "If this is called with two arguments, the first argument is the expected canonical form and the second is a non-canonical input to be parsed."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.test_nonexistent_hash:1
-# 1865ae925ed5404b9e642540d9afa34d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.test_nonexistent_hash:1
+# 4217802f9943418ab43a5a8da9942d7c
 msgid "Ensure we get errors for nonexistant hashes."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.test_redundant_spec:1
-# eeb863861a7a43c8bab6d7ebdb3cc971
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.test_redundant_spec:1
+# 6f4e46bac1944acd84bc083026dff0bf
 msgid "Check that redundant spec constraints raise errors."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.test_redundant_spec:3
-# 286e667700804bae94eb2965d983049a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_syntax.py:docstring of spack.test.spec_syntax.TestSpecSyntax.test_redundant_spec:3
+# 232e382c0d9344a8bbc1628c0757a519
 msgid "TODO (TG): does this need to be an error? Or should concrete specs only raise errors if constraints cause a contradiction?"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:352
-# 5d8c1c4416354d308849a37fbf254f4b
+# 4fed6bcbaf714210a7c59412e1438091
 msgid "spack.test.spec\\_yaml module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml:1
-# 1d2d54080b9443f79ea06e501127c448
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml:1
+# f33b8072746a4e5d8dffdaa0fc59d9a1
 msgid "Test YAML serialization for specs."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml:3
-# 1fdd716dc2e14991a5cb6428b1e54850
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml:3
+# 10c36a35253a4151937bdab43f777346
 msgid "YAML format preserves DAG information in the spec."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.reverse_all_dicts:1
-# a8d3911f86d24562af75027a4ccba621
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.reverse_all_dicts:1
+# d88e55e801e148faa163da094481c860
 msgid "Descend into data and reverse all the dictionaries"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.test_ordered_read_not_required_for_consistent_dag_hash:1
-# 4c8e03cd31c941f0885c7d5f3d888f21
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.test_ordered_read_not_required_for_consistent_dag_hash:1
+# 3348888456164670856de08b5822177b
 msgid "Make sure ordered serialization isn't required to preserve hashes."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.test_ordered_read_not_required_for_consistent_dag_hash:3
-# 67dd52980ffd438395034661264f52f8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.test_ordered_read_not_required_for_consistent_dag_hash:3
+# 346fb22665d64c1a80dcf1eaa396820f
 msgid "For consistent hashes, we require that YAML and json documents have their keys serialized in a deterministic order. However, we don't want to require them to be serialized in order. This ensures that is not required."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.test_using_ordered_dict:1
-# 17b156589960413f895520bed9b63cf6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.test_using_ordered_dict:1
+# c799911625674ea1b78231aeac969ea3
 msgid "Checks that dicts are ordered"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.test_using_ordered_dict:3
-# 0b6608055e144df39ea9389b47fe82ea
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/spec_yaml.py:docstring of spack.test.spec_yaml.test_using_ordered_dict:3
+# d08b9b2075034199a24d6b41a2026b03
 msgid "Necessary to make sure that dag_hash is stable across python versions and processes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:360
-# 23077a0d3abc4b1cb4619400d3f975c7
+# 3e30a6b8e09448ca9c068e82579b6af2
 msgid "spack.test.stage module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage:1
-# dd1a1f210da144d2bdcd1cbb04177a53
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage:1
+# dc0af085be2a488a8995cc908a34e746
 msgid "Test that the Stage class works correctly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage.check_destroy:1
-# ae06467b45e54cf2a015c4737b46d07d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage.check_destroy:1
+# 606f381c4de24b16858cd15e735b9e59
 msgid "Figure out whether a stage was destroyed correctly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage.check_setup:1
-# a6d566b7a14a42a6abd8b9fbacadb542
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage.check_setup:1
+# 962274df05c04aa6a686d05222907f7b
 msgid "Figure out whether a stage was set up correctly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage.failing_fetch_strategy:1
-# 2123a873e091481a85b84c9fb465e476
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage.failing_fetch_strategy:1
+# 1ddd6ec5462c4ed987618e2085dd6f4e
 msgid "Returns a fetch strategy that fails."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage.failing_search_fn:1
-# 98de0571a71144afb9dba44e6c91a16b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage.failing_search_fn:1
+# 727d70eddea844febc0147f199965468
 msgid "Returns a search function that fails! Always!"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage.get_stage_path:1
-# 8303210dd06646d98d64f17010e7b035
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage.get_stage_path:1
+# dd76b9ea75dc45dfbf36fec899d256c2
 msgid "Figure out where a stage should be living. This depends on whether it's named."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage.mock_archive:1
-# 1470ab597e3043ed9683670ef58b4488
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage.mock_archive:1
+# 5c254b6621a54f61add2c0c07d5bb8cd
 msgid "Creates a mock archive with the structure expected by the tests"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage.search_fn:1
-# 742b94e574224fea96b254404d241dcc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage.search_fn:1
+# 4dae3d63e7ae47febcd9fedf9bef30fb
 msgid "Returns a search function that always succeeds."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/stage.py:docstring of spack.test.stage.tmpdir_for_stage:1
-# 61dc296d22b04122a8c0e104650b0c90
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring of spack.test.stage.tmpdir_for_stage:1
+# 6ae7f0b9dd27492783470826734f6606
 msgid "Uses a temporary directory for staging"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:368
-# 594e7b6119244671a5d4f8afa480ae09
+# 326129d9517248aa90a87662029f0751
 msgid "spack.test.svn\\_fetch module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:376
-# 51b5a04c79db441198bcc231444b94ac
+# eee85e8fc22843088729c4e389f780a3
 msgid "spack.test.tengine module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext.A:1
-#: ../spack/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext.B:1
-# fe8b6ed36a774821931215a3f6c206f6
-# d75dc293d2b3410daec68749bc754306
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext.A:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext.B:1
+# eb2047a5f9fe42e28060b286168c801a
+# 875d499bc73c40689e4b159bfa3f5af9
 msgid "Bases: :class:`spack.tengine.Context`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext.C:1
-# 6573df8f231d446584f13da12a967d8c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext.C:1
+# 0bba684166184bdd82d9f8746a3a4a0b
 msgid "Bases: :class:`spack.test.tengine.A`, :class:`spack.test.tengine.B`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext.test_to_dict:1
-# 13dc8195f3754e05bca30943c1e1df4a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestContext.test_to_dict:1
+# 395b006be85248ec9835b2e783fffe18
 msgid "Tests that all the context properties in a hierarchy are considered when building the context dictionary."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestTengineEnvironment.test_template_retrieval:1
-# dfae457e940f4692a11f7eff3822c661
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/tengine.py:docstring of spack.test.tengine.TestTengineEnvironment.test_template_retrieval:1
+# 1b38042f6ba74536883c413b9e2195f3
 msgid "Tests the template retrieval mechanism hooked into config files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:384
-# 6e8cbec8fd3947e28fa2488b1555ae18
+# 0c4433553e9947a6bf555367aa75465a
 msgid "spack.test.test\\_activations module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/test_activations.py:docstring of spack.test.test_activations.test_python_ignore_namespace_init_conflict:1
-# 46de1ee288614975bd54c3004c8b1201
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/test_activations.py:docstring of spack.test.test_activations.test_python_ignore_namespace_init_conflict:1
+# 19fc9975326f46b78487be87f653ddc0
 msgid "Test the view update logic in PythonPackage ignores conflicting instances of __init__ for packages which are in the same namespace."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/test_activations.py:docstring of spack.test.test_activations.test_python_keep_namespace_init:1
-# 3248d0c488f44f6098bd9317b937d852
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/test_activations.py:docstring of spack.test.test_activations.test_python_keep_namespace_init:1
+# efa4e04105fd4a13b718be937156d925
 msgid "Test the view update logic in PythonPackage keeps the namespace __init__ file as long as one package in the namespace still exists."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/test_activations.py:docstring of spack.test.test_activations.test_python_namespace_conflict:1
-# 9d78489b62244330b0e8665bf9029ac4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/test_activations.py:docstring of spack.test.test_activations.test_python_namespace_conflict:1
+# db099a18a27448b2b4b53641d678548f
 msgid "Test the view update logic in PythonPackage reports an error when two python extensions with different namespaces have a conflicting __init__ file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:392
-# 46701cb08e3248e9926693954845c5db
+# 12c25f07dcc44a3f828ea47d09279bb1
 msgid "spack.test.url\\_fetch module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/url_fetch.py:docstring of spack.test.url_fetch.test_fetch:1
-# 9eff2ecc9acc4eeeb2f00b40c5a53799
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_fetch.py:docstring of spack.test.url_fetch.test_fetch:1
+# d8d1702163e446c2b9de7dfcc2f083c1
 msgid "Fetch an archive and make sure we can checksum it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:400
-# 071a1219a2ba400681b17e85aa12563b
+# c1e2f095ebe04206afa596955f507c1e
 msgid "spack.test.url\\_parse module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse:1
-# 8e22cbb5fd5c4b8f8b4cdfdb5f1d2168
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse:1
+# bd9b8407980b4651803cd7eafa85c0f4
 msgid "Tests Spack's ability to parse the name and version of a package based on its URL."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:1
-# d670a6b90ed64c5fa4d6fe3c1d889b37
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:1
+# 83e12ee13e6a47ec86b726bf22cf1c72
 msgid "Tests that the name, version and offsets are computed correctly."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:3
-# eca71d3abfef4676af39154c7fecec31
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:3
+# 3c0d754fadc9417ea8a648e9e092115c
 msgid "expected name"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:5
-# 699a43d577f24dac81d23730123b5478
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:5
+# cfa779fa9b3b496591dd97c15ac0c1af
 msgid "name offset"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:7
-# 1b51e234b37b4d079d74e8599f870e0e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:7
+# 2f4ade6aab9c4d15a547e09d1e4f8631
 msgid "expected version"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:9
-# 71fe3147136a401287cadb4fec3b6df6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:9
+# 8c874b4989a0480e83fef68aded23440
 msgid "version offset"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:11
-# 1b837506a47547c98719307ea81dd9db
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_parse.py:docstring of spack.test.url_parse.test_url_parse_offset:11
+# afff997aaefd4f81a0f133adf4a6f2a9
 msgid "url to be parsed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:408
-# bd6b5b4ee75f4d9f9e68229ef2911f7e
+# fe303109fd2a4eb1ad2d92f3d9d2663e
 msgid "spack.test.url\\_substitution module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/url_substitution.py:docstring of spack.test.url_substitution:1
-# 7737b25a583e4337a68008d359feb470
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/url_substitution.py:docstring of spack.test.url_substitution:1
+# 5f5fdc583ff345048c053860fc5950c0
 msgid "Tests Spack's ability to substitute a different version into a URL."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:416
-# 50158e87406c44de806986e01d98497f
+# 6aaa5f381d3d4a09a36c08d52f223937
 msgid "spack.test.variant module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:424
-# 11268900ef0c4af8be4414df12d5cd2f
+# 2cc227bed8894ff19594cb3432cef681
 msgid "spack.test.versions module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions:1
-# b3d0524e67264d91925f54244c5ee4c6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions:1
+# c6c4ff6a265a4bf0ac9c338501ceeb53
 msgid "These version tests were taken from the RPM source code. We try to maintain compatibility with RPM's version semantics where it makes sense."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_canonical:1
-# 8525841d77394f6cb70973c80bdda57a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_canonical:1
+# 02dea64021414da7b4fe32df3c151cf1
 msgid "Asserts that a redundant list is reduced to canonical form."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_does_not_satisfy:1
-# 346d2a61f80f4db88211931cf15325fc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_does_not_satisfy:1
+# ff103b85870b41518d23be9b288afefa
 msgid "Asserts that 'v1' does not satisfy 'v2'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_in:1
-# c078fb8e12ec4e15841cf23224545d56
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_in:1
+# 4ceecdf54b134985b89eba074d0700dd
 msgid "Asserts that 'needle' is in 'haystack'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_no_overlap:1
-# 1a9aa74289ef4f9ca48d15f1cced632c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_no_overlap:1
+# 85a38002444e4214aeb760cf251ae412
 msgid "Asserts that two version ranges do not overlap."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_not_in:1
-# e906471766f84179840c8cfbe13fdbe8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_not_in:1
+# 8fa09d0bd90a4cd5b5f7610c2ce2aa4e
 msgid "Asserts that 'needle' is not in 'haystack'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_overlaps:1
-# bc9e94bda5fe456c8414323962c013ca
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_overlaps:1
+# 00e4ca8cbf30473ea1b625e4a2350b6c
 msgid "Asserts that two version ranges overlaps."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_satisfies:1
-# ff5d758d6be145128c797325d24826ce
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_satisfies:1
+# 433c4b1e97ea4700bdf62fa6e7d97b9d
 msgid "Asserts that 'v1' satisfies 'v2'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_ver_eq:1
-# f8a8607a61ab44588625cd880c1627aa
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_ver_eq:1
+# bf9f7ae199a64494aaa2330ed5fac2dd
 msgid "Asserts the results of comparisons when 'a' is equal to 'b'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_ver_gt:1
-# eabf29225d50464f91ef1676bc975ee7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_ver_gt:1
+# 4230a4e8799e49739a2b7714f7f97da1
 msgid "Asserts the results of comparisons when 'a' is greater than 'b'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_ver_lt:1
-# 6a45041a5913451285d2d51cd4b6cdeb
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.assert_ver_lt:1
+# bddecbb36e464130a7be897d16d48a5d
 msgid "Asserts the results of comparisons when 'a' is less than 'b'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.check_intersection:1
-# 94e9fa9fca2d4bf18156402e3f842c69
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.check_intersection:1
+# 40e363ec07e94ef4b4bdf39d0debac52
 msgid "Asserts that 'a' intersect 'b' == 'expected'."
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/versions.py:docstring of spack.test.versions.check_union:1
-# 06d4e321769b4a6487b11c4d3aaeae43
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/versions.py:docstring of spack.test.versions.check_union:1
+# 7072cff48fba4c0aac435d93005d09ac
 msgid "Asserts that 'a' union 'b' == 'expected'."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:432
-# b34e9eb025e04c1ea37f42edcab2f0e4
+# 6e6f57d6ac6a4479b35db5ec39d5d27c
 msgid "spack.test.views module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/views.py:docstring of spack.test.views.test_global_activation:1
-# f6dcb7c205794d1dabb00ecfc5fec04e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/views.py:docstring of spack.test.views.test_global_activation:1
+# 46d1e760cd7e499ea4a474c3e5545c4d
 msgid "This test ensures that views which are maintained inside of an extendee package's prefix are maintained as expected and are compatible with global activations prior to #7152."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:440
-# 78a52e7deec94b58bb667bf186186f22
+# 3ac9c2150cab4103acb21cac7250778b
 msgid "spack.test.web module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/test/web.py:docstring of spack.test.web:1
-# 05954e67c32145dda0451c8b55e6e7af
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/web.py:docstring of spack.test.web:1
+# 2080c1f6555a4fba8f4af973a03a3968
 msgid "Tests for web.py."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.test.rst:449
-# 5d2bd611b2fb4ef48acc4cb5b1c26e3b
+# b159a6c1c31e4ecba5f47362daebe01c
 msgid "Module contents"
 msgstr ""
 

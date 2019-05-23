@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,397 +17,397 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/repositories.rst:10
-# 9eb283ce243d436fa51bd130f196ec33
+# c468232c675e453b8b91dc94107c5175
 msgid "Package Repositories"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:12
-# 5b4bb1e84dfa41d5beda0ec048eceda4
+# 123dc23d4eee4e9d8206aab8df1ab69f
 msgid "Spack comes with over 1,000 built-in package recipes in ``var/spack/repos/builtin/``.  This is a **package repository** -- a directory that Spack searches when it needs to find a package by name. You may need to maintain packages for restricted, proprietary or experimental software separately from the built-in repository. Spack allows you to configure local repositories using either the ``repos.yaml`` or the ``spack repo`` command."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:20
-# 4ec8c9cdcaaf44ef8783698d8f18e59b
+# f7a5740c730943119444073b375b49dc
 msgid "A package repository a directory structured like this::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:34
-# 2b5eafc41c5d4a1a9c6cae78a2917c71
+# d61e378f7f1542469f1db8906414ec9b
 msgid "The top-level ``repo.yaml`` file contains configuration metadata for the repository, and the ``packages`` directory contains subdirectories for each package in the repository.  Each package directory contains a ``package.py`` file and any patches or other files needed to build the package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:40
-# 43c15bf7a6f945a4a571cce04cba85aa
+# 4e1b1e8a06d242d4816e12591bc24dd1
 msgid "Package repositories allow you to:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:42
-# 365e8ed9bc2145a8bc548d005dedfd37
+# cf45467be5794164993ba477c52c7023
 msgid "Maintain your own packages separately from Spack;"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:44
-# 5509cb94bf9744ff86e6150858dcb647
+# 41b5f1dbf76242de85f5df301bd013c9
 msgid "Share your packages (e.g., by hosting them in a shared file system), without committing them to the built-in Spack package repository; and"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:47
-# 5678be0de42a4de4b31fc293a6aa2366
+# 3a5a25961e354b9a83093502ba10fe70
 msgid "Override built-in Spack packages with your own implementation."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:49
-# 7355cff516604f60abd3c552fff1dc90
+# f6e4fc977345403da76a1f18d4bb1003
 msgid "Packages in a separate repository can also *depend on* built-in Spack packages.  So, you can leverage existing recipes without re-implementing them in your own repository."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:55
-# b005ae9537cb495698a57d102d25c4b0
+# 3808a15b24794844ac9b218af98c7ca6
 msgid "``repos.yaml``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:57
-# 126fc6d92c2f4f3393079de6dcf928e1
+# 5c202f2a4ad24791aedbd95b989db367
 msgid "Spack uses the ``repos.yaml`` file in ``~/.spack`` (and :ref:`elsewhere <configuration>`) to find repositories. Note that the ``repos.yaml`` configuration file is distinct from the ``repo.yaml`` file in each repository.  For more on the YAML format, and on how configuration file precedence works in Spack, see :ref:`configuration <configuration>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:63
-# 6b3fe2df9b174236a0e14d73ebdc0419
+# 9d5529865d4f441b9cf4fcfbaa2e1908
 msgid "The default ``etc/spack/defaults/repos.yaml`` file looks like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:70
-# 5fe7340dcab74d67a4e65f4f580a1fc3
+# 05ec80b9aeb7400aaf901954d846e90a
 msgid "The file starts with ``repos:`` and contains a single ordered list of paths to repositories. Each path is on a separate line starting with ``-``.  You can add a repository by inserting another path into the list:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:80
-# ad2218f7b5ca4a608b5e9fdccc5d0b53
+# ef4a7df973bc4eaf890a2b224e22c295
 msgid "When Spack interprets a spec, e.g., ``mpich`` in ``spack install mpich``, it searches these repositories in order (first to last) to resolve each package name.  In this example, Spack will look for the following packages and use the first valid file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:85
-# 434ea0f499b546068c3fd9407191dff1
+# 36f8398ebe0d43c8b459ea4b67be5a1d
 msgid "``/opt/local-repo/packages/mpich/package.py``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:86
-# a41dc3e11cff496ea4cb9c8d936651c8
+# 31e2f809b1d24a169401209238e647b5
 msgid "``$spack/var/spack/repos/builtin/packages/mpich/package.py``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:90
-# bb3a0ff3005e4203b9ee950cfe78026d
+# 1a06f35d7539467da81afb9f2655dd83
 msgid "Currently, Spack can only use repositories in the file system. We plan to eventually support URLs in ``repos.yaml``, so that you can easily point to remote package repositories, but that is not yet implemented."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:96
-# c278730f708c4a0cb46cc81365592116
+# 4e5390d840474fc6b68ebf0a4377c357
 msgid "Namespaces"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:98
-# fd72994f85324914b52a3c816c849305
+# 08acf1dd9c374cdb83a4ad7ca1201fa5
 msgid "Every repository in Spack has an associated **namespace** defined in its top-level ``repo.yaml`` file.  If you look at ``var/spack/repos/builtin/repo.yaml`` in the built-in repository, you'll see that its namespace is ``builtin``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:109
-# e833ca5284424e04a10f4d27bfe0ea55
+# 33ea9770e6d941a29c68a6a67eaad1c0
 msgid "Spack records the repository namespace of each installed package.  For example, if you install the ``mpich`` package from the ``builtin`` repo, Spack records its fully qualified name as ``builtin.mpich``.  This accomplishes two things:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:114
-# ddde6d26e28d4c23a5be31fbf617b01d
+# d88ef307876f4d5db02155d68d7a3f56
 msgid "You can have packages with the same name from different namespaces installed at once."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:117
-# 06624ce4d1f34498b2e5912e0c4c3d0e
+# 101bbb2c01894442800d59d605c70f0f
 msgid "You can easily determine which repository a package came from after it is installed (more :ref:`below <namespace-example>`)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:122
-# b8d9e6882b77437f8e3c9ed37b810ec6
+# 61b9697f569f4a1baa9dd975e2bba729
 msgid "It may seem redundant for a repository to have both a namespace and a path, but repository *paths* may change over time, or, as mentioned above, a locally hosted repository path may eventually be hosted at some remote URL."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:127
-# ebe0c96c75474202a48da3a65ff6278d
+# 036ab960971e457cb1a6b9bc9d9c23dd
 msgid "Namespaces are designed to allow *package authors* to associate a unique identifier with their packages, so that the package can be identified even if the repository moves. This is why the namespace is determined by the ``repo.yaml`` file in the repository rather than the local ``repos.yaml`` configuration: the *repository maintainer* sets the name."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:136
-# 01dcd600297b4d09834e89b7b4e09853
+# 45a5a1f8ea094fd89c2c0eb592a78085
 msgid "Uniqueness"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:138
-# 2db40c8f5b9b414191b3f3b771b82512
+# 2541655d224c47649ef81304ffb81d66
 msgid "You should choose a namespace that uniquely identifies your package repository.  For example, if you make a repository for packages written by your organization, you could use your organization's name.  You can also nest namespaces using periods, so you could identify a repository by a sub-organization.  For example, LLNL might use a namespace for its internal repositories like ``llnl``. Packages from the Physical & Life Sciences directorate (PLS) might use the ``llnl.pls`` namespace, and packages created by the Computation directorate might use ``llnl.comp``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:147
-# 41894aec57c5464abdff92dfcc95ea58
+# 17eb027aaa9f4a2a8d6787ca3c8edd2d
 msgid "Spack cannot ensure that every repository is named uniquely, but it will prevent you from registering two repositories with the same namespace at the same time.  If you try to add a repository that has the same name as an existing one, e.g., ``builtin``, Spack will print a warning message."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:156
-# 6ad5a80d7d074b63bc1a5011672fc04e
+# bdeb06eb7ad54ef89ec9eb1768ceffd3
 msgid "Namespace example"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:158
-# 7151c5fe02db47718cc032d3f2ac0d9d
+# 7cd2bbc6ad9f46448967baf7d2d68b3d
 msgid "Suppose that LLNL maintains its own version of ``mpich``, separate from Spack's built-in ``mpich`` package, and suppose you've installed both LLNL's and Spack's ``mpich`` packages.  If you just use ``spack find``, you won't see a difference between these two packages:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:170
-# a05c83540b984d7f9932852b06b0baf4
+# b103d6b05fe141ba97d041b8aa360a3e
 msgid "However, if you use ``spack find -N``, Spack will display the packages with their namespaces:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:180
-# 3e13f7930ea7478a8dda716f6b3dcb31
+# c6058e6fef5a4de489ed1a8cd7675df1
 msgid "Now you know which one is LLNL's special version, and which one is the built-in Spack package.  As you might guess, packages that are identical except for their namespace will still have different hashes:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:191
-# a75584347ae84d9aa1c35eb40a638d80
+# 9ba7f152aa2848b6b8988edd4ddd6749
 msgid "All Spack commands that take a package :ref:`spec <sec-specs>` can also accept a fully qualified spec with a namespace.  This means you can use the namespace to be more specific when designating, e.g., which package you want to uninstall:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:202
-# 85c919c026584b0f88b18345615b960c
+# 0d40b1c64c284b7da2f6d33d63875816
 msgid "Overriding built-in packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:204
-# b79359a908c544559dd3f37d00b01b1d
+# 0e117d9d40d94808b6b64a13f4f37c82
 msgid "Spack's search semantics mean that you can make your own implementation of a built-in Spack package (like ``mpich``), put it in a repository, and use it to override the built-in package.  As long as the repository containing your ``mpich`` is earlier any other in ``repos.yaml``, any built-in package that depends on ``mpich`` will be use the one in your repository."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:211
-# 199172b0ce424cd38c8a101d46d83d76
+# 141878a9f5564c08880295e6d6fd813a
 msgid "Suppose you have three repositories: the builtin Spack repo (``builtin``), a shared repo for your institution (e.g., ``llnl``), and a repo containing your own prototype packages (``proto``).  Suppose they contain packages as follows:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:217
-# b0f1f1ea241945aaabd5f44f61654b4e
+# 2518b2c6643f4768a531bc822968736f
 msgid "Namespace"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:217
-# 348c2143e23c4b3fb9d1e1f666c00517
+# b4ce974aab08489e9ecb7eec46834634
 msgid "Path to repo"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:217
-# 3cf939d214224fa5a75d5270ae4ce304
+# 8fd44590c2fa47a7bdfa78253b050b39
 msgid "Packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:219
-# 130675348a194be9a027d5c3a7052837
+# 0960b7a4ecab4b1ab40553d250989852
 msgid "``proto``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:219
-# a061c8c3b5ee4009b2bfda1cb5e00a38
+# e5cc1e7f70cd4418ab58a994bbf2ccdf
 msgid "``~/proto``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:219
-# cc535f7bf8e94fdab47a2f3b8c072ff5
+# 2dc5f0f274804a5cb47b2a6832d15193
 msgid "``mpich``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:221
-# a5908144815a40f5a5504a3d20231af0
+# 3736049ee5194116977b555b795b0644
 msgid "``llnl``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:221
-# 4b3908b3f1a94261bbc808575b23e1ce
+# e9f2ba8bac484edfa1cdd82bb736e487
 msgid "``/usr/local/llnl``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:221
-# ce0c0ac1ce7d4bc9b3f14a1622c881bd
+# 7e6cc047d4dd446dbe79966fc5e24dd3
 msgid "``hdf5``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:223
-# 51ce0698b0774d83a5f702690ee68dc0
+# 1fa6a97587c9400bba1b4a5e1c2c53a3
 msgid "``builtin``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:223
-# c934973ebafd404790097d98c933f775
+# 784458bb80d24d7caf39e22739a52c98
 msgid "``$spack/var/spack/repos/builtin``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:223
-# 7498e1298ac9402495a8355f36008458
+# b65de3c088fa46fbaf4fcdf58e2d5d66
 msgid "``mpich``, ``hdf5``, others"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:226
-# e4f015530aa044edb723b6f31631f7d5
+# c341e57d001a4e5387f0db05c601854c
 msgid "Suppose that ``hdf5`` depends on ``mpich``.  You can override the built-in ``hdf5`` by adding the ``llnl`` repo to ``repos.yaml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:235
-# 96cac2e2f8754499b6d6b8de282c8915
+# 365fb8175e5e4709be13ee3632f20320
 msgid "``spack install hdf5`` will install ``llnl.hdf5 ^builtin.mpich``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:237
-# 35fa874b74d84c56b8a36612491f4d59
+# 995ab264d8be46e3873cd3f953f43d53
 msgid "If, instead, ``repos.yaml`` looks like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:246
-# a19939bbae7d4af59eb36ba58959ec8d
+# a440981dc04d48bb8e9874415ba5d48f
 msgid "``spack install hdf5`` will install ``llnl.hdf5 ^proto.mpich``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:248
-# 95b39df547e840b38f84ea0e3a1706b5
+# 20af8f7f6cdf40b3994fec55a1959ccc
 msgid "Any unqualified package name will be resolved by searching ``repos.yaml`` from the first entry to the last.  You can force a particular repository's package by using a fully qualified name.  For example, if your ``repos.yaml`` is as above, and you want ``builtin.mpich`` instead of ``proto.mpich``, you can write::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:256
-# b4ef013cd3b847b79baf5afcb0d88098
+# 9f206407cac24876ae11be61dda15215
 msgid "which will install ``llnl.hdf5 ^builtin.mpich``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:258
-# 546a195403934d12984988fad6049f71
+# 68f79cf887e945338fa3a072d20ef920
 msgid "Similarly, you can force the ``builtin.hdf5`` like this::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:262
-# 8bc524ce2bcb40f79083889cdd291ca8
+# 8d9662142a8a489292cbf17f960c5e35
 msgid "This will not search ``repos.yaml`` at all, as the ``builtin`` repo is specified in both cases.  It will install ``builtin.hdf5 ^builtin.mpich``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:266
-# 9bf48041db774281856d3e60087db939
+# 158fa440eaf1453cb0437ab3097d0a26
 msgid "If you want to see which repositories will be used in a build *before* you install it, you can use ``spack spec -N``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:296
-# 3c5edcf6362341ff8afc2f83cc606085
+# 87f7a2f62b2346f7b9ba22525aa8c1ef
 msgid "You *can* use a fully qualified package name in a ``depends_on`` directive in a ``package.py`` file, like so::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:301
-# f1bc22a52eba4697a16c012e43267f37
+# 3423dd86a1f946f191b764674168f0ef
 msgid "This is *not* recommended, as it makes it very difficult for multiple repos to be composed and shared.  A ``package.py`` like this will fail if the ``proto`` repository is not registered in ``repos.yaml``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:310
-# 34d1cf8174f5484dbc35343ea939e489
+# 442294a2e30d4d6c8f43325dbbe5e86f
 msgid "``spack repo``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:312
-# 8d4391ba882f4a278e6e58049dcd5afb
+# eebf823aa2b04d2dbfeb1300d6be9a8d
 msgid "Spack's :ref:`configuration system <configuration>` allows repository settings to come from ``repos.yaml`` files in many locations.  If you want to see the repositories registered as a result of all configuration files, use ``spack repo list``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:319
-# 4bb28907e56a4260a202b11caec84730
+# 779e42610d2d4832b11337556ba41bf0
 msgid "``spack repo list``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:328
-# 7e51568187a649f5a3190e1b2225dc39
+# c8232efa3ded49889cebbeb2a2817610
 msgid "Each repository is listed with its associated namespace.  To get the raw, merged YAML from all configuration files, use ``spack config get repos``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:338
-# 900978ae2dd243adad4488b7af7b6d43
+# e7cec4bcce69404ea3338557f78efa45
 msgid "mNote that, unlike ``spack repo list``, this does not include the namespace, which is read from each repo's ``repo.yaml``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:343
-# 604d02d3b6f64d55bc57afb3637508da
+# 25063c0a1694433798b74154f4ea29e6
 msgid "``spack repo create``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:345
-# 1a25d953b50c43a48da1ed429b91f070
+# 6070d4f64d3a433d9900be68f2c33edc
 msgid "To make your own repository, you don't need to construct a directory yourself; you can use the ``spack repo create`` command."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:362
-# 5ebef0231d4d40ebb0e4a7df96367c07
+# 9a2d0f89d3094ddf8d95df4111265c07
 msgid "By default, the namespace of a new repo matches its directory's name. You can supply a custom namespace with a second argument, e.g.:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:378
-# 7fc0a68d4d4542aebbcb0ee284212de7
+# 1bb8cfa55aac41ab8c5949aa7d2de2ca
 msgid "``spack repo add``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:380
-# d29c4311063047179e2da4568e701c80
+# 2691391d75674229a2b834ee20591944
 msgid "Once your repository is created, you can register it with Spack with ``spack repo add``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:393
-# fe37c01096da4259b6f7bc67d5ce6ca8
+# 31a168e7352845b4beb28a44a3bbc405
 msgid "This simply adds the repo to your ``repos.yaml`` file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:395
-# 484da03b10b542619d3591aa8a082abc
+# ff757e203b5b40d2964f7e11a4e3cc05
 msgid "Once a repository is registered like this, you should be able to see its packages' names in the output of ``spack list``, and you should be able to build them using ``spack install <name>`` as you would with any built-in package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:402
-# e39a97b4dc3345398b966ef82b29c3b5
+# 62565772504945c68ca80c5515012e68
 msgid "``spack repo remove``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:404
-# 22203e31fd3443cabc3b9aa2752db155
+# f6e465029b4549b4a0a0fc68cfb9ab87
 msgid "You can remove an already-registered repository with ``spack repo rm``. This will work whether you pass the repository's namespace *or* its path."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:408
-# 7f4c0fd1ab0f46b8b91ad705addfe835
+# 59cfc8688ffd4392961575add926df9c
 msgid "By namespace:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:419
-# 8b33d7c358f04916a09326fc1955aad3
+# d0c08f957b9b467081923e124cf55748
 msgid "By path:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:432
-# ab42fcbc38644baba9331b263975c3c2
+# 6499a78712bd47c89135ee30fbf7b070
 msgid "Repo namespaces and Python"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:434
-# 0643e729e15d40c089162f2b02e01862
+# f5c01372254d49bdba6852dece218572
 msgid "You may have noticed that namespace notation for repositories is similar to the notation for namespaces in Python.  As it turns out, you *can* treat Spack repositories like Python packages; this is how they are implemented."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:439
-# 2ec8595cbe5a44e697839af8352f2cd3
+# 0270e074142a4d9fba5ce1d1609f9d58
 msgid "You could, for example, extend a ``builtin`` package in your own repository:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:449
-# 9e4f08eb6a324f1288b1f9f725665b79
+# 108daee991104f6eae45f68d842f67b7
 msgid "Spack repo namespaces are actually Python namespaces tacked on under ``spack.pkg``.  The search semantics of ``repos.yaml`` are actually implemented using Python's built-in `sys.path <https://docs.python.org/2/library/sys.html#sys.path>`_ search.  The :py:mod:`spack.repo` module implements a custom `Python importer <https://docs.python.org/2/library/imp.html>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/repositories.rst:458
-# 0f78ecbeb0c74916b256da9a39792ff3
+# e2caba0c223a47f4a76c82fc4448ac37
 msgid "The mechanism for extending packages is not yet extensively tested, and extending packages across repositories imposes inter-repo dependencies, which may be hard to manage.  Use this feature at your own risk, but let us know if you have a use case for it."
 msgstr ""
 

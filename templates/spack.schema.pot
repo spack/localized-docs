@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,207 +17,207 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/spack.schema.rst:2
-# a23564ae79bd4198890e2fe95ed44621
+# 6fcff501a8ed4033bb0e881d0eea8567
 msgid "spack.schema package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:5
-# e605c4fb7c1a45c7aafb0d4d37172265
+# 577b18c338714bdab26315b5959707e5
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:8
-# 560b458783d04020a5de840484a46292
+# 00fb9aa3eaff43d7a3331d6be9cea0da
 msgid "spack.schema.compilers module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/compilers.py:docstring of spack.schema.compilers:1
-# fc110d33f5eb4c40b4df3fbdf2397319
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/compilers.py:docstring of spack.schema.compilers:1
+# 5c7ea38ec1444734a2e3d5839c897d10
 msgid "Schema for compilers.yaml configuration file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/compilers.py:docstring of spack.schema.compilers.properties:1
-#: ../spack/lib/spack/spack/schema/config.py:docstring of spack.schema.config.properties:1
-#: ../spack/lib/spack/spack/schema/merged.py:docstring of spack.schema.merged.properties:1
-#: ../spack/lib/spack/spack/schema/mirrors.py:docstring of spack.schema.mirrors.properties:1
-#: ../spack/lib/spack/spack/schema/packages.py:docstring of spack.schema.packages.properties:1
-#: ../spack/lib/spack/spack/schema/projections.py:docstring of spack.schema.projections.properties:1
-#: ../spack/lib/spack/spack/schema/repos.py:docstring of spack.schema.repos.properties:1
-#: ../spack/lib/spack/spack/schema/upstreams.py:docstring of spack.schema.upstreams.properties:1
-# bfd068e3c3dd4774ba17e0a01b72cbd4
-# 59f62ca24e9847408519a180fbe509a8
-# 14bb163320bf45e6b6802763b825967e
-# fdbb0b6a7f154880b2e9aa0a843e80f7
-# e7063f35ae3b454890b96e3fc8ec023f
-# d0b97e75121146729e8bdd40145b5ae3
-# 6c2022dffb98480a8f0dc353fdb7aaa4
-# 25592e39cc72487ba66b2d0f40b1b01f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/compilers.py:docstring of spack.schema.compilers.properties:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/config.py:docstring of spack.schema.config.properties:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/merged.py:docstring of spack.schema.merged.properties:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/mirrors.py:docstring of spack.schema.mirrors.properties:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/packages.py:docstring of spack.schema.packages.properties:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/projections.py:docstring of spack.schema.projections.properties:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/repos.py:docstring of spack.schema.repos.properties:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/upstreams.py:docstring of spack.schema.upstreams.properties:1
+# a6c33a60bbe74316a70511adc5c9f979
+# 93642904a7af43a0b741bcf019787f56
+# 8415529eaeb44a3a85b98b236e3d168e
+# 05acd651e3ca4312a2e4931058b79945
+# b048780ed20247ccaad7d904e60c097d
+# 5dbab961db1f4be48595436c4120e0b9
+# edceefe63182416d8b3205550e2abb18
+# 172a655457ed4fc8a0b57d28354bb01b
 msgid "Properties for inclusion in other schemas"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/compilers.py:docstring of spack.schema.compilers.schema:1
-#: ../spack/lib/spack/spack/schema/config.py:docstring of spack.schema.config.schema:1
-#: ../spack/lib/spack/spack/schema/merged.py:docstring of spack.schema.merged.schema:1
-#: ../spack/lib/spack/spack/schema/mirrors.py:docstring of spack.schema.mirrors.schema:1
-#: ../spack/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.schema:1
-#: ../spack/lib/spack/spack/schema/packages.py:docstring of spack.schema.packages.schema:1
-#: ../spack/lib/spack/spack/schema/projections.py:docstring of spack.schema.projections.schema:1
-#: ../spack/lib/spack/spack/schema/repos.py:docstring of spack.schema.repos.schema:1
-#: ../spack/lib/spack/spack/schema/upstreams.py:docstring of spack.schema.upstreams.schema:1
-# 85ddff3ca96f48a58c489d643ac41c99
-# 50264b63555d436fa6765f9d288ce541
-# 19529a2f0944495fb129903e01b2214d
-# 676e1a47bee2459ea51e5776bffc2adb
-# 2adccd390efb499f865edf987a492c05
-# 827e9096a0dc4475913a3aca6bc986d7
-# d822e03be89844c897af7c2300547705
-# 5a4e4f9a1aa44af28709c0d44e8c41a3
-# cc24428d1025415798902c89503a5fe6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/compilers.py:docstring of spack.schema.compilers.schema:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/config.py:docstring of spack.schema.config.schema:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/merged.py:docstring of spack.schema.merged.schema:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/mirrors.py:docstring of spack.schema.mirrors.schema:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.schema:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/packages.py:docstring of spack.schema.packages.schema:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/projections.py:docstring of spack.schema.projections.schema:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/repos.py:docstring of spack.schema.repos.schema:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/upstreams.py:docstring of spack.schema.upstreams.schema:1
+# bc281384376446e993d8dc160520900a
+# 686235d8edb347cd81ed5399404369f4
+# cf253abd8a1a43e69cbf2fba4059a2b3
+# 7138b51b89114ede93c6cdbc3941e9e3
+# 3018bccaa8124fc29e520226c1cc4f7f
+# 33bd9e2465b443a4b538a882d33bc063
+# a67e29f1ccf54dbab0682d59b5581090
+# 25277eeb841e49619608135f24b0f5a0
+# 11d767bfcd45441983e1f30d3c56511c
 msgid "Full schema with metadata"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:16
-# d07dca356a274b46879a8d020eed0b5e
+# d4764eb6875c4c3c972ac43c7c042ddb
 msgid "spack.schema.config module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/config.py:docstring of spack.schema.config:1
-# f026b0fb0a2449f88629b4362c76bba9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/config.py:docstring of spack.schema.config:1
+# 8a3b12f89c704925960d01c1804c3483
 msgid "Schema for config.yaml configuration file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:24
-# 5d8cb5f17aae468e9820f01bf5d12c59
+# c5cbe948c438441ba52847deeda3ddb0
 msgid "spack.schema.env module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/env.py:docstring of spack.schema.env:1
-# 0f10508a35f8456ca49e77821a187591
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/env.py:docstring of spack.schema.env:1
+# a9267a2585544b8a90f5903bd121bbf6
 msgid "Schema for env.yaml configuration file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:32
-# e3abf1da644f4d798a11aa0b61e20b37
+# ab9b7701e59846eab81bb4b99a852b0d
 msgid "spack.schema.merged module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/merged.py:docstring of spack.schema.merged:1
-# afa261f4de734a42a753cc9860fea0d9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/merged.py:docstring of spack.schema.merged:1
+# 4aba528855144a0b9c99ef0e1f15fc31
 msgid "Schema for configuration merged into one file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:40
-# 459f736e9e994c3094d257c1707fe814
+# f5350c1954dc4a0d9acc442b645aad45
 msgid "spack.schema.mirrors module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/mirrors.py:docstring of spack.schema.mirrors:1
-# 0fc6b1209f9e4dbfb6640695a89191ff
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/mirrors.py:docstring of spack.schema.mirrors:1
+# 3a9afe6d6e834338b544350a6cbaefeb
 msgid "Schema for mirrors.yaml configuration file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:48
-# 13442124f3e1485583acb75b671535f8
+# c3366a7debf846dfb2ff377745a1e204
 msgid "spack.schema.modules module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules:1
-# 0c11b3876f3a4598bbbe56cd591f5d35
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules:1
+# d9a92053f2cf4c83a799d08c1bcf276c
 msgid "Schema for modules.yaml configuration file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.anonymous_spec_regex:1
-# b8a27e42be614b7d8cc84c75f1709b1e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.anonymous_spec_regex:1
+# 68a9d0d32b3441f797a98805687fc6da
 msgid "Matches an anonymous spec, i.e. a spec without a root name"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.array_of_strings:1
-# a530c4c534ee4dca98bf3aec049fe335
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.array_of_strings:1
+# 4d54e4becf8b4892a77be3b383dda190
 msgid "Definitions for parts of module schema"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.spec_regex:1
-# 93b18f62ee8a43d2abb3f3598f27da87
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.spec_regex:1
+# 6ccdb1867b3941218137b0d4cc9d6109
 msgid "Matches a spec or a multi-valued variant but not another valid keyword."
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.spec_regex:4
-# 82b430b1d9eb425fb3f7c3864191d257
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/modules.py:docstring of spack.schema.modules.spec_regex:4
+# d004a0f8e11244259c28c4b94b60ed90
 msgid "THIS NEEDS TO BE UPDATED FOR EVERY NEW KEYWORD THAT IS ADDED IMMEDIATELY BELOW THE MODULE TYPE ATTRIBUTE"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:56
-# 07442633ade240c5a9a0de32234ea005
+# 3859548eda944825bbfce12006b6be3d
 msgid "spack.schema.os\\_container\\_mapping module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/os_container_mapping.py:docstring of spack.schema.os_container_mapping:1
-# 1ca3a7055e6841e8adc0d95556ec7eab
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/os_container_mapping.py:docstring of spack.schema.os_container_mapping:1
+# ca5b917345cd4202b29407ad6d6f0972
 msgid "Schema for os-container-mapping.yaml configuration file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:64
-# 4c51d45599f645788a1b657d12bbf2ea
+# d33348b2c1674b46a53f5b0f12e3de9b
 msgid "spack.schema.packages module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/packages.py:docstring of spack.schema.packages:1
-# a7b24513da7748719f974e93128a1076
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/packages.py:docstring of spack.schema.packages:1
+# 6a1f57097c614569a91077a2e457f7ae
 msgid "Schema for packages.yaml configuration files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:72
-# b5cfb4684195401093b87e40dc95bb1b
+# ab369e3213f24af1947d7e2b2031ee5c
 msgid "spack.schema.projections module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/projections.py:docstring of spack.schema.projections:1
-# 9bf1c59894044022aa23be7fcf12e989
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/projections.py:docstring of spack.schema.projections:1
+# 0a664d6555e84922a8e6930d907c6e73
 msgid "Schema for projections.yaml configuration file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:80
-# 4736e29cd6bb40d3b03a7788106035ff
+# 11d8ef2db8bd490fbccfdcb9c35c4065
 msgid "spack.schema.repos module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/repos.py:docstring of spack.schema.repos:1
-# fb39801ad9654f7dbb54aa74b5159b4c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/repos.py:docstring of spack.schema.repos:1
+# 95eb92aa1fb64fcab2b611c996e292c8
 msgid "Schema for repos.yaml configuration file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:88
-# 508738015de14da7b77cb3124624fdd4
+# f9d39106a5fa4bb19936dfc9be91326c
 msgid "spack.schema.spec\\_set module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/spec_set.py:docstring of spack.schema.spec_set:1
-# 4feadf35700744148a3100f3e4a24d8a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/spec_set.py:docstring of spack.schema.spec_set:1
+# 90dd71f6676c41d082b47f3e95ff0cd9
 msgid "Schema for Spack spec-set configuration file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:96
-# e73567a97f514fe08f8edcfdbd58e171
+# eabcb8a5574f4a99879443ab2fbf1778
 msgid "spack.schema.specs\\_deps module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/specs_deps.py:docstring of spack.schema.specs_deps:1
-# aa0dae6b76544050a274eadd66e8b930
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/specs_deps.py:docstring of spack.schema.specs_deps:1
+# 1c212bfed50d486c8f04f31eac06cb43
 msgid "Schema for expressing dependencies of a set of specs in a JSON file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:104
-# 46bd7b80d01b4f0cad25c6d451f22227
+# 633ea96aae1a44cc974dafcfb1d13c7f
 msgid "spack.schema.upstreams module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.schema.rst:113
-# a46baebbc4564d9e8d89cd3674f54fa1
+# 5e25a78ebd3b4382b036e2e2cc5a9f04
 msgid "Module contents"
 msgstr ""
 
-#: ../spack/lib/spack/spack/schema/__init__.py:docstring of spack.schema:1
-# f5823eba5fe345cca9cadc3d445a8791
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/schema/__init__.py:docstring of spack.schema:1
+# 7b3dac1fff4740388bb08050ddcec980
 msgid "This module contains jsonschema files for all of Spack's YAML formats."
 msgstr ""
 

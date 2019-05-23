@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,1042 +17,1042 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/getting_started.rst:10
-# d1110237db69488c9a5709d2d1c09bdd
+# 1ed1a38dd4354392ac8aef20fefd372e
 msgid "Getting Started"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:14
-# ef8bc8d9f7c94153bf91d5e8181dcb88
+# 6238a08f6e584bf591dd36be88fea08c
 msgid "Prerequisites"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:16
-# 770d0ae8e76a4087850892f9ffe4f693
+# f13b2d25fcfa4e20af0dc423b87cb4dd
 msgid "Spack has the following minimum requirements, which must be installed before Spack is run:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:19
-# f9c7126818114a3eaac620e3ad94c2af
+# c7dcf398c7344976be9f3fbc3676a418
 msgid "Python 2 (2.6 or 2.7) or 3 (3.4 - 3.7) to run Spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:20
-# 6da8ba572572436e982be1ddf40eec13
+# 3a0ca5817632458d9b32c9e4e24aab08
 msgid "A C/C++ compiler for building"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:21
-# 22221f7410ba41a68f7c4a7bfa248917
+# 9cde741796ed44e8bb4c78685d2c013a
 msgid "The ``make`` executable for building"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:22
-# 876c5a0d0b5d4312805dbfd21ac406a7
+# 22dcdb920fbd4b209a717f57fc4d83b0
 msgid "The ``git`` and ``curl`` commands for fetching"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:23
-# 56e2b8d90bad40ce8c0641ea2540af50
+# ff8df7ba65ab4285adb36915fc88fbde
 msgid "If using the ``gpg`` subcommand, ``gnupg2`` is required"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:25
-# 4929561528a54fad80cd117437007511
+# b57219775b3b45dda3b4fdb17e52864f
 msgid "These requirements can be easily installed on most modern Linux systems; on Macintosh, XCode is required.  Spack is designed to run on HPC platforms like Cray and BlueGene/Q.  Not all packages should be expected to work on all platforms.  A build matrix showing which packages are working on which systems is planned but not yet available."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:33
-# 48539a8a08c14c958ce2fa31916c1541
+# 56f1eff359f34303b1a60c5dc5ada5a8
 msgid "Installation"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:35
-# 6cd49e36d6744c53be81994b559c0b5a
+# bf238b9c6fa94b4ea3d63422ad6a667e
 msgid "Getting Spack is easy.  You can clone it from the `github repository <https://github.com/spack/spack>`_ using this command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:42
-# 5711e4abc82c4f4fb8f8e98e64752506
+# ebc56223e2954a07993ea85e71e3d0bd
 msgid "This will create a directory called ``spack``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:46
-# e32ce02a3d984ba196eb7285cfecf7ec
+# e42caca44838473381487946252a6337
 msgid "Add Spack to the Shell"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:48
-# fe3be753a52a4cdfacd14ce11a11bd67
+# 7412ccb0b5b14b87a27d0e4199296f62
 msgid "We'll assume that the full path to your downloaded Spack directory is in the ``SPACK_ROOT`` environment variable.  Add ``$SPACK_ROOT/bin`` to your path and you're ready to go:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:57
-# 0123cd35c930483c8524f3db51a8e63b
+# ba954735bb0545188ac27d9b90640298
 msgid "For a richer experience, use Spack's shell support:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:70
-# 87e717eaae4543778ab5eab2a0ae11d6
+# 213e96b83e19456180aaac4c075172b6
 msgid "This automatically adds Spack to your ``PATH`` and allows the ``spack`` command to be used to execute spack :ref:`commands <shell-support>` and :ref:`useful packaging commands <packaging-shell-support>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:74
-# dcf24e5fda9445da955c25d788c5d99e
+# 85adecc42ef347bea1094f7d92c2d426
 msgid "If :ref:`environment-modules or dotkit <InstallEnvironmentModules>` is installed and available, the ``spack`` command can also load and unload :ref:`modules <modules>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:80
-# 962dff5b725141e086336b97002e327d
+# 8fb0a983077e4913a28f9f454d47b3bd
 msgid "Clean Environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:82
-# 51db1bcd207341d1b63f27593e4491d9
+# 5c574e4683534ff28950df8fc694754b
 msgid "Many packages' installs can be broken by changing environment variables.  For example, a package might pick up the wrong build-time dependencies (most of them not specified) depending on the setting of ``PATH``.  ``GCC`` seems to be particularly vulnerable to these issues."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:87
-# b6dbd5a83f38409882a4585ba52293b4
+# 131246fc357e4048b188305bc755d17c
 msgid "Therefore, it is recommended that Spack users run with a *clean environment*, especially for ``PATH``.  Only software that comes with the system, or that you know you wish to use with Spack, should be included.  This procedure will avoid many strange build errors."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:95
-# 6083083016e94e2b9f9fa9157062d2c1
+# 2b4c3605124d4fa3975923b1827e0f10
 msgid "Check Installation"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:97
-# 958c83b24613409cbb1b6b7ed5ed164c
+# 7a9bc56f04634e03804db11673668997
 msgid "With Spack installed, you should be able to run some basic Spack commands.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:105
-# c8110738ebda41a1810e56ba63b1cc92
+# c2dd7f33b8ed4e02901de244dbd75bf0
 msgid "Optional: Alternate Prefix"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:107
-# ddc90628cafa4f198911fc9d38a6c425
+# c2576d1ef29f4f73838c14589d9eb404
 msgid "You may want to run Spack out of a prefix other than the git repository you cloned.  The ``spack clone`` command provides this functionality.  To install spack in a new directory, simply type:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:115
-# 47f5393de05a401c81452972555e22e7
+# adaa357bd00a4fb68c99dabe1342550b
 msgid "This will install a new spack script in ``/my/favorite/prefix/bin``, which you can use just like you would the regular spack script.  Each copy of spack installs packages into its own ``$PREFIX/opt`` directory."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:123
-# 9fcefc20f09a411992be39eb36b5d154
+# 3e6f465de5bf425fa5c7b2a69f192693
 msgid "Next Steps"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:125
-# 47057da758e64dcaa05f66d58336fcd4
+# 46de745b60384c5aae22e1bc36b68cd0
 msgid "In theory, Spack doesn't need any additional installation; just download and run!  But in real life, additional steps are usually required before Spack can work in a practical sense.  Read on..."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:134
-# 1d902e474aed46f7966409bc563b2635
+# af3bff44e6584a46b7142927b3a67e5e
 msgid "Compiler configuration"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:136
-# 7f9ae75c1bd64ad184a975826c3af78d
+# 8ab1f751792443daba297adb21324327
 msgid "Spack has the ability to build packages with multiple compilers and compiler versions. Spack searches for compilers on your machine automatically the first time it is run. It does this by inspecting your ``PATH``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:145
-# 0b88a42907794c2ea9a864f0961f6643
+# 222c274bde8641f2a8a1ae4157dcf4c8
 msgid "``spack compilers``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:147
-# 9bb1f348e86d41518fbdc35d980f9679
+# ea8551c1a5214bbb8f4ae6060dd1a086
 msgid "You can see which compilers spack has found by running ``spack compilers`` or ``spack compiler list``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:169
-# a29573ea1ffa4ff6b23a57d587997bae
+# 84e6ed9e0d9e4a59a8bd2aa4a55fb2fe
 msgid "Any of these compilers can be used to build Spack packages.  More on how this is done is in :ref:`sec-specs`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:176
-# c123999422a64f6ba53e83cc92b43fbc
+# 6d48ab331781419e9bc8fcad9ad103c8
 msgid "``spack compiler add``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:178
-# 9b49fe67275d411c98d5f7919b3c56ff
+# 3f48bef6bd5a428681cba21e6671c294
 msgid "An alias for ``spack compiler find``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:184
-# 241e63d4af3e4cda9208dad2a15f5932
+# 4ba909991a8c4fbeb7a90892f10fc377
 msgid "``spack compiler find``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:186
-# 7cb32619a68749a3a4e6e73925c4fe6f
+# 90b36f6b178b4c9cbacbe944a3da4e7a
 msgid "If you do not see a compiler in this list, but you want to use it with Spack, you can simply run ``spack compiler find`` with the path to where the compiler is installed.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:196
-# 63bf4318d15c489b96316be119fa13f7
+# c69489c802774ddaaf32b1a6122a0260
 msgid "Or you can run ``spack compiler find`` with no arguments to force auto-detection.  This is useful if you do not know where compilers are installed, but you know that new compilers have been added to your ``PATH``.  For example, you might load a module, like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:208
-# 7809903ac28c46b8b5ed00b14cbc2205
+# 720db217e07a43d7aa79c7e0f408a152
 msgid "This loads the environment module for gcc-4.9.0 to add it to ``PATH``, and then it adds the compiler to Spack."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:213
-# 347122a969df43658582b11d8a6c0281
+# fd399d870a5b44da8943a613a839cfdd
 msgid "By default, spack does not fill in the ``modules:`` field in the ``compilers.yaml`` file.  If you are using a compiler from a module, then you should add this field manually. See the section on :ref:`compilers-requiring-modules`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:222
-# 6ddd476655c64a7dac63eb8bff1a3bcc
+# 7052d889bb2c4b3c9e13ed3ed6d95df6
 msgid "``spack compiler info``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:224
-# 9bc9acb35a9c46a197fcaa7829e3b6e8
+# 8d24b6836fb34b0198c8f7898a898f42
 msgid "If you want to see specifics on a particular compiler, you can run ``spack compiler info`` on it:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:240
-# df5c2a3a254b4133a45967f9e55f230e
+# 33139792d27846b396efc30cb2a24bc5
 msgid "This shows which C, C++, and Fortran compilers were detected by Spack. Notice also that we didn't have to be too specific about the version. We just said ``intel@15``, and information about the only matching Intel compiler was displayed."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:247
-# 4c314b09eceb471681b5a15345505155
+# 07d2ed3085d94d7ea082cd7bc1d8014c
 msgid "Manual compiler configuration"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:249
-# ea34b7349b2f4429aec1c176df1112f1
+# 9ab5c01b7f854a41a213eefaf00a468d
 msgid "If auto-detection fails, you can manually configure a compiler by editing your ``~/.spack/compilers.yaml`` file.  You can do this by running ``spack config edit compilers``, which will open the file in your ``$EDITOR``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:253
-# ba2f2e9269f4498fb72d2b3d4c0ef9ca
+# 18ba1fad0afd438088895e40b89888a6
 msgid "Each compiler configuration in the file looks like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:268
-# 854088d1c19941a7ba4900103cd5c797
+# 4ab208c78def48c596c8b6e709fb5556
 msgid "For compilers that do not support Fortran (like ``clang``), put ``None`` for ``f77`` and ``fc``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:284
-# 68d07b1fad9f4e35b601f39ff24d0060
+# 456ff2dc577e484d9d02609c55aab0ba
 msgid "Once you save the file, the configured compilers will show up in the list displayed by ``spack compilers``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:287
-# 47e6be8bb6614bc4be519b450a0b7355
+# f11545d5e4aa427488f58871a3071c7a
 msgid "You can also add compiler flags to manually configured compilers. These flags should be specified in the ``flags`` section of the compiler specification. The valid flags are ``cflags``, ``cxxflags``, ``fflags``, ``cppflags``, ``ldflags``, and ``ldlibs``. For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:309
-# b80612baf2c146909a6d8058c057c8aa
+# 5391904caabb429182344c48be6b28e7
 msgid "These flags will be treated by spack as if they were entered from the command line each time this compiler is used. The compiler wrappers then inject those flags into the compiler command. Compiler flags entered from the command line will be discussed in more detail in the following section."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:317
-# 0850de303c7d4a1aaa48185455417034
+# 851f32e17d754ffeb47f3aacb304f216
 msgid "Build Your Own Compiler"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:319
-# 3cb08e10a09e4687b67d706745a59799
+# 3a4a624dd0904fd69fba40e054b3763b
 msgid "If you are particular about which compiler/version you use, you might wish to have Spack build it for you.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:326
-# 7517ffd3c68a4245b13423f792d5c7f8
+# 04647f03ffae48458e6f9b93482004e2
 msgid "Once that has finished, you will need to add it to your ``compilers.yaml`` file.  You can then set Spack to use it by default by adding the following to your ``packages.yaml`` file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:340
-# 3caf90348f85450a8749638e14524ba6
+# 06ac16ccb47c4bcdaaf45d673e5c9e1c
 msgid "Compilers Requiring Modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:342
-# 6d72e58523944da192a052f9efd94902
+# 28ffc063b4354aef8bc00c06464212b7
 msgid "Many installed compilers will work regardless of the environment they are called with.  However, some installed compilers require ``$LD_LIBRARY_PATH`` or other environment variables to be set in order to run; this is typical for Intel and other proprietary compilers."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:347
-# 2abe0be8d55a45ba9364b758a718ece6
+# f2c1035d90a44185b1ba96c5ef3d15fb
 msgid "In such a case, you should tell Spack which module(s) to load in order to run the chosen compiler (If the compiler does not come with a module file, you might consider making one by hand).  Spack will load this module into the environment ONLY when the compiler is run, and NOT in general for a package's ``install()`` method.  See, for example, this ``compilers.yaml`` file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:367
-# 6686d225d8b044d2a78125dd43e8725b
+# 38cb3c84b76d4cef9c4cc5e7562646bd
 msgid "Some compilers require special environment settings to be loaded not just to run, but also to execute the code they build, breaking packages that need to execute code they just compiled.  If it's not possible or practical to use a better compiler, you'll need to ensure that environment settings are preserved for compilers like this (i.e., you'll need to load the module or source the compiler's shell script)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:374
-# da981db2460841cf8b3791bd8b5a5bf3
+# 44bebe5b76454a958b456aecbe889a73
 msgid "By default, Spack tries to ensure that builds are reproducible by cleaning the environment before building.  If this interferes with your compiler settings, you CAN use ``spack install --dirty`` as a workaround. Note that this MAY interfere with package builds."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:383
-# 5ade8f1f491d447381a278cfe1e62cb6
+# 0bbaabf8b3944018bb3e5174bbd04235
 msgid "Licensed Compilers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:385
-# 2cef0753d1a14d2c8db825ba8c2782d5
+# 35805933ba954facab23b2b0b424b67f
 msgid "Some proprietary compilers require licensing to use.  If you need to use a licensed compiler (eg, PGI), the process is similar to a mix of build your own, plus modules:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:389
-# 1651fd3221d347fdb7dcddd7d131e5ab
+# df4feb55c18b4b589ce45a1c5d5877a3
 msgid "Create a Spack package (if it doesn't exist already) to install your compiler.  Follow instructions on installing :ref:`license`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:392
-# 457b9664c5764a03bade890fe4feea0c
+# b6d223f18ad643debfca4a05682a2c41
 msgid "Once the compiler is installed, you should be able to test it by using Spack to load the module it just created, and running simple builds (eg: ``cc helloWorld.c && ./a.out``)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:396
-# 6da9827e1a914651af9ab3b788f16b1e
+# 567e57cdc004496aba527780f06133fa
 msgid "Add the newly-installed compiler to ``compilers.yaml`` as shown above."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:403
-# f8703c34e1a948a1a75f8eb2e787a88e
+# 174e3e94460046a19734da956c818eac
 msgid "Mixed Toolchains"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:405
-# 99c2285e840047fca5b0392e0fd5ad39
+# 9838ea3fc59f4f53880a42e7fbb0f350
 msgid "Modern compilers typically come with related compilers for C, C++ and Fortran bundled together.  When possible, results are best if the same compiler is used for all languages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:409
-# 63c968f777e54764ac6eeb7304d2810c
+# 5c14b350f6514e0096130af39d487e5e
 msgid "In some cases, this is not possible.  For example, starting with macOS El Capitan (10.11), many packages no longer build with GCC, but XCode provides no Fortran compilers.  The user is therefore forced to use a mixed toolchain: XCode-provided Clang for C/C++ and GNU ``gfortran`` for Fortran."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:415
-# a3a32c7344c74f38ab958b670264cd7f
+# 5eff402eff774154a3bd81c6de0bd3eb
 msgid "You need to make sure that Xcode is installed. Run the following command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:422
-# e088fa767a7d4b8fad9d209664ec868e
+# 41bde548dc6d4e8e917b2bc21af2311d
 msgid "If the Xcode command-line tools are already installed, you will see an error message:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:430
-# 6cc9c5ed9d224a349574bd8da85d0678
+# 4516064845db48fa8b8dc2f04073e8c0
 msgid "For most packages, the Xcode command-line tools are sufficient. However, some packages like ``qt`` require the full Xcode suite. You can check to see which you have installed by running:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:439
-# 0cfe55d3ee0a4c708eb425eb34ab862b
+# 7e4000c8d83d4160a80758c9de4c90c3
 msgid "If the output is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:446
-# 4eb3a719b2ca457394964b86461e3c42
+# 9e96924b1b084e2182bc0c12e6c2dc56
 msgid "you already have the full Xcode suite installed. If the output is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:453
-# 9e95b8742a3646e6929631c36aee76d0
+# b1698984022347d9a9e02fb868dfaabc
 msgid "you only have the command-line tools installed. The full Xcode suite can be installed through the App Store. Make sure you launch the Xcode application and accept the license agreement before using Spack. It may ask you to install additional components. Alternatively, the license can be accepted through the command line:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:464
-# 495dd22476a24ea3ba1aff5e1bfc415f
+# f8b546363997423da4d5eadd7e02a491
 msgid "Note: the flag is ``-license``, not ``--license``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:466
-# 33ce65e934a7486a8534598d50a22e9f
+# 9f89568f3d944bffaa7927ec92f3e631
 msgid "Run ``spack compiler find`` to locate Clang."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:468
-# ed08d8f479b542128c0a6f1c8b13d362
+# f5dae1f58b854a62b2217ba23e07055f
 msgid "There are different ways to get ``gfortran`` on macOS. For example, you can install GCC with Spack (``spack install gcc``) or with Homebrew (``brew install gcc``)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:472
-# a54b7f88843b47bfb89cd9fe7dfdbfb3
+# 53d4a50dddb94fcc8949bc81912a90cc
 msgid "The only thing left to do is to edit ``~/.spack/compilers.yaml`` to provide the path to ``gfortran``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:485
-# db3deda93a3a4fa5b6b62cdecb0abb90
+# 3a842e1f4a614ac98db9a57bcb61b48b
 msgid "If you used Spack to install GCC, you can get the installation prefix by ``spack location -i gcc`` (this will only work if you have a single version of GCC installed). Whereas for Homebrew, GCC is installed in ``/usr/local/Cellar/gcc/x.y.z``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:492
-# 472c64e0b5174297a4e95461787df5ec
+# 534f070bb8204d7bbc5ae23f7bbdf6a9
 msgid "Compiler Verification"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:494
-# 866fe6936cf4477faf206de1f2b1377b
+# 4459851310214ec2b13c20c728c2b036
 msgid "You can verify that your compilers are configured properly by installing a simple package.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:506
-# b225a0d268634a3cac507d482f76d49c
+# 648956251ae44b629241303d1433854e
 msgid "Vendor-Specific Compiler Configuration"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:508
-# e3f7a25e93af483cb2463f32d548d6f3
+# 99c431641ed14e57afe358de8394fd38
 msgid "With Spack, things usually \"just work\" with GCC.  Not so for other compilers.  This section provides details on how to get specific compilers working."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:514
-# 19a79d959b1e4ee280a7fb1c2f2e7802
+# ef88b38798d440ee8fd7766777925078
 msgid "Intel Compilers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:516
-# c14e18646a6b46c3818f3949cab1bcd6
+# 51519922ca954739a373e44b238d3a21
 msgid "Intel compilers are unusual because a single Intel compiler version can emulate multiple GCC versions.  In order to provide this functionality, the Intel compiler needs GCC to be installed. Therefore, the following steps are necessary to successfully use Intel compilers:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:522
-# b03fd0a0738f4290b662e4dc941f3116
+# 9c9392bc36824ebdba0d9621e085507a
 msgid "Install a version of GCC that implements the desired language features (``spack install gcc``)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:525
-# 135e7d64a70b4f8395c22643e8b2ce39
+# 47863340509541958c0e29665b865243
 msgid "Tell the Intel compiler how to find that desired GCC.  This may be done in one of two ways:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:528
-# f96cd0ff1ad245c6b15f818b8b8e5d7a
+# 8db63d68d3274511b6f50e4cfa47c71c
 msgid "\"By default, the compiler determines which version of ``gcc`` or ``g++`` you have installed from the ``PATH`` environment variable."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:531
-# 7ce94d4327384c7bb18ee9b5f361d399
+# d6de326b57f94619ad7ec3c5a04a326b
 msgid "If you want use a version of ``gcc`` or ``g++`` other than the default version on your system, you need to use either the ``-gcc-name`` or ``-gxx-name`` compiler option to specify the path to the version of ``gcc`` or ``g++`` that you want to use.\""
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:538
-# 64f86240243442299ec831b1be1a55b7
+# a2a363e5c3544421af9b09662f7e73af
 msgid "Intel compilers may therefore be configured in one of two ways with Spack: using modules, or using compiler flags."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:543
-# 20ae3f104604452196e084ce91555db3
+# e9a3e1e007b941e787836d95769e8173
 msgid "Configuration with Modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:545
-# 74ec4549415441e8814a7c358bc66559
+# 50a56a2870c54800abcfbc0c99f4daa8
 msgid "One can control which GCC is seen by the Intel compiler with modules. A module must be loaded both for the Intel Compiler (so it will run) and GCC (so the compiler can find the intended GCC).  The following configuration in ``compilers.yaml`` illustrates this technique:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:566
-# f4d059e9d74b4b26bbec9d3ef5167d8b
+# a11ed2385651486385e29582846a9b10
 msgid "The version number on the Intel compiler is a combination of the \"native\" Intel version number and the GNU compiler it is targeting."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:572
-# ec5228ec07a74476ab8318a289143324
+# 7a396be2686342aab1dd99a37c2e1ba6
 msgid "Command Line Configuration"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:574
-# d5d766c97bbb48d68faa817ea3ce52bc
+# e66c8b90054945f29d60454b2b467e3c
 msgid "One can also control which GCC is seen by the Intel compiler by adding flags to the ``icc`` command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:577
-# f7b85868705a4c64a6885eb929b56c1a
+# f1869e09edb942f4beb7143d87983086
 msgid "Identify the location of the compiler you just installed:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:584
-# da827c47181b4ee0a69ab2256ffe5ddc
+# 0660f3c61cb24867b62fed4c6a62dd0f
 msgid "Set up ``compilers.yaml``, for example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:605
-# 2d96016b54da4ef8a98e38db22b0a443
+# c40fa530962e4e7db770496b200cb960
 msgid "PGI"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:607
-# 7c97440bc1a24bbb8233951c7cdbaaf8
+# b1bc88d2ca5f4a0991142a64c9ff10b6
 msgid "PGI comes with two sets of compilers for C++ and Fortran, distinguishable by their names.  \"Old\" compilers:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:617
-# 2fb8b3310cb044a2ae6fff9df9860841
+# d5dfbd1714194a99ad3b505fe062d068
 msgid "\"New\" compilers:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:626
-# c6748eba4f9e4d5390570e7c9ecf9b72
+# 87df18733ba94bb496def518935bdd4e
 msgid "Older installations of PGI contains just the old compilers; whereas newer installations contain the old and the new.  The new compiler is considered preferable, as some packages (``hdf``) will not build with the old compiler."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:631
-# 5c919a23d0d741e7b1a03b45f145228a
+# 835da4782f6445c486223cef5c118927
 msgid "When auto-detecting a PGI compiler, there are cases where Spack will find the old compilers, when you really want it to find the new compilers.  It is best to check this ``compilers.yaml``; and if the old compilers are being used, change ``pgf77`` and ``pgf90`` to ``pgfortran``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:637
-# 58482dc040f548c9a04a8898385f4dcc
+# 2cf38138e2c048d89c584e73a0ceace0
 msgid "Other issues:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:639
-# 93cb0cc8aa3e469689f2581ed03d161f
+# d6572213e2e541eca57d8b2d7fe1b429
 msgid "There are reports that some packages will not build with PGI, including ``libpciaccess`` and ``openssl``.  A workaround is to build these packages with another compiler and then use them as dependencies for PGI-build packages.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:649
-# 42b7a72e3b374091b7f568835d618b92
+# 799a5fc481864314840d188be44de0ea
 msgid "PGI requires a license to use; see :ref:`licensed-compilers` for more information on installation."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:654
-# e5dc9ee46f744322a4433bf7ad8c79f0
+# 2536ebced1854bc09d436286c421adce
 msgid "It is believed the problem with HDF 4 is that everything is compiled with the ``F77`` compiler, but at some point some Fortran 90 code slipped in there. So compilers that can handle both FORTRAN 77 and Fortran 90 (``gfortran``, ``pgfortran``, etc) are fine.  But compilers specific to one or the other (``pgf77``, ``pgf90``) won't work."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:664
-# 720ac90144a94f7cb0c5bc0f86291ff1
+# be4115964f27479ea822c24131422f23
 msgid "NAG"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:666
-# b99365ec4a89497e807e664d60617371
+# 8917ecd7ad7147cf82c97a2f4b474bda
 msgid "The Numerical Algorithms Group provides a licensed Fortran compiler. Like Clang, this requires you to set up a :ref:`mixed-toolchains`. It is recommended to use GCC for your C/C++ compilers."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:670
-# 2cb7759d88c14a75b9f3ea5a4519ad85
+# a286396b924f41db85fad2f648feeeed
 msgid "The NAG Fortran compilers are a bit more strict than other compilers, and many packages will fail to install with error messages like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:677
-# 5d9da75d694349258470bb6d3ec1178c
+# 31a92adaa37740ecb5a19a9fd0613821
 msgid "In order to convince the NAG compiler not to be too picky about calling conventions, you can use ``FFLAGS=-mismatch`` and ``FCFLAGS=-mismatch``. This can be done through the command line:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:685
-# 2f56192122994d4abfa442832798af42
+# 8944c91d9aa84df3b5b7cd86fdb21965
 msgid "Or it can be set permanently in your ``compilers.yaml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:704
-# ebfd076adc7745329e4445162ad77ffb
+# bbd8ec46c44845d0af600a5ee12e52e6
 msgid "System Packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:706
-# 16debe4f59374a46aa7eeb699824b38f
+# 854938b35d854ec38326b24788fa71bb
 msgid "Once compilers are configured, one needs to determine which pre-installed system packages, if any, to use in builds.  This is configured in the file ``~/.spack/packages.yaml``.  For example, to use an OpenMPI installed in /opt/local, one would use:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:719
-# 3e68a536bddf4fd885b7519a807e5c7f
+# de90286458384066979fd22674550783
 msgid "In general, Spack is easier to use and more reliable if it builds all of its own dependencies.  However, there are two packages for which one commonly needs to use system versions:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:725
-# 015eef511b96437586bbec5a99b603e5
+# 68c58c821f114441b17cdb9545049b00
 msgid "MPI"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:727
-# 2e8cdbc9a6064c37ba85ad78612efba0
+# 7ce3798c006344c0bbf84f2ddb6ef07a
 msgid "On supercomputers, sysadmins have already built MPI versions that take into account the specifics of that computer's hardware.  Unless you know how they were built and can choose the correct Spack variants, you are unlikely to get a working MPI from Spack.  Instead, use an appropriate pre-installed MPI."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:733
-# e41cdc3886dc41a8a978b540dec60ce5
+# c515eea4eff64a329c3940a59cde8a31
 msgid "If you choose a pre-installed MPI, you should consider using the pre-installed compiler used to build that MPI; see above on ``compilers.yaml``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:739
-# a88c9d57f7c54627955b2269a5eed461
+# fc8ed6177e0c4037b59ec3b19116b01e
 msgid "OpenSSL"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:741
-# 14bae44fa6d441769c487671f51db2d5
+# 6d4a68fece6b41fd91eda9ac83eaa77f
 msgid "The ``openssl`` package underlies much of modern security in a modern OS; an attacker can easily \"pwn\" any computer on which they can modify SSL. Therefore, any ``openssl`` used on a system should be created in a \"trusted environment\" --- for example, that of the OS vendor."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:746
-# ed1782c3e5ef4f3191437e08974fedcb
+# eaf431d073e14db5850efb4fe9b6a371
 msgid "OpenSSL is also updated by the OS vendor from time to time, in response to security problems discovered in the wider community.  It is in everyone's best interest to use any newly updated versions as soon as they come out.  Modern Linux installations have standard procedures for security updates without user involvement."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:752
-# 1ed7dd1196184c52808987436a65deb4
+# eb951be7fba240ef8a67c3e627d0406f
 msgid "Spack running at user-level is not a trusted environment, nor do Spack users generally keep up-to-date on the latest security holes in SSL.  For these reasons, a Spack-installed OpenSSL should likely not be trusted."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:756
-# 95c73f3d180d477d835f33b67f45a700
+# 47959a1fc72f45d9b77347999d6399d5
 msgid "As long as the system-provided SSL works, you can use it instead.  One can check if it works by trying to download an ``https://``.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:764
-# d03a2650a9c94bf19f48c6f20eb461ca
+# c29ff332582545a8b74ddfbf59c4d175
 msgid "To tell Spack to use the system-supplied OpenSSL, first determine what version you have:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:772
-# fae2b093756a44629021a59c2002f673
+# b2453f722c0f4706a3da66f23f573048
 msgid "Then add the following to ``~/.spack/packages.yaml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:785
-# cd1d0b9f9495466ead5a689da0569f4c
+# bf59342cff994f8e92d187a4526311fc
 msgid "BLAS / LAPACK"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:787
-# 473117b301cf4796a27d38d7d5ad1728
+# cf759360c589492e9768bdccd2852e79
 msgid "The recommended way to use system-supplied BLAS / LAPACK packages is to add the following to ``packages.yaml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:804
-# f555686b9c884f05bbe0219ba9eb0fa0
+# fa5ccff214ed4f7e82182a3c16c3d908
 msgid "Above we pretend that the system-provided BLAS / LAPACK is ``netlib-lapack`` only because it is the only BLAS / LAPACK provider which use standard names for libraries (as opposed to, for example, ``libopenblas.so``)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:808
-# 5754c7413ecf4e658abbf29283bce239
+# 52dd05665b714bcf9bdaceb205dd0344
 msgid "Although we specify external package in ``/usr``, Spack is smart enough not to add ``/usr/lib`` to RPATHs, where it could cause unrelated system libraries to be used instead of their Spack equivalents. ``usr/bin`` will be present in PATH, however it will have lower precedence compared to paths from other dependencies. This ensures that binaries in Spack dependencies are preferred over system binaries."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:817
-# dc45bc8e238846568bec811db69bf2e0
+# 1e15245fb9d74100b2b6d9a67ea8ca42
 msgid "Git"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:819
-# d0fe14e792b2412b881b08e51c6a4aa0
+# e262c71968cb4aad83d2ca5d400de498
 msgid "Some Spack packages use ``git`` to download, which might not work on some computers.  For example, the following error was encountered on a Macintosh during ``spack install julia-master``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:832
-# 416f72a6b7a24ec78f0a869a61a545ea
+# efa2e9f393584f2e9b191a2e68f7ad4d
 msgid "This problem is related to OpenSSL, and in some cases might be solved by installing a new version of ``git`` and ``openssl``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:835
-# 8556de32e4aa47468936409b7017a150
+# 30519f59add64f559b078f046ba3ae38
 msgid "Run ``spack install git``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:836
-# 0c45f9dc21dd4c859f45153cd0b376b2
+# 583ae54d5aaf47daa51ae035eb7f5319
 msgid "Add the output of ``spack module tcl loads git`` to your ``.bashrc``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:838
-# 2bfc5897730a4ed0b3445425def4fb9b
+# 38de4300a1c343e293ae164e16259fd3
 msgid "If this doesn't work, it is also possible to disable checking of SSL certificates by using:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:845
-# 6db894e0b8e748f5a04c18d60d788050
+# 8ae7dd308b45408b9944b55f5bf51f75
 msgid "Using ``--insecure`` makes Spack disable SSL checking when fetching from websites and from git."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:850
-# 7425bc09e53746749a68f268cd701eab
+# d4ed17fea8ff4895bff7717c077f09b0
 msgid "This workaround should be used ONLY as a last resort!  Wihout SSL certificate verification, spack and git will download from sites you wouldn't normally trust.  The code you download and run may then be compromised!  While this is not a major issue for archives that will be checksummed, it is especially problematic when downloading from name Git branches or tags, which relies entirely on trusting a certificate for security (no verification)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:856
-# a019f966ecd44da782ca16bf418c3407
+# fee1085ae66d4487a5eadbdfe1413b28
 msgid "certificate for security (no verification)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:860
-# 97215a04805e456a8473738839509625
+# 4ecfcb1dd1244b69bdd85b06bd6d595c
 msgid "Utilities Configuration"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:862
-# 2b0c8b5cfdcc41908ae96e5d928a8ee9
+# 86e64a6372d249d6afadf041a616ce04
 msgid "Although Spack does not need installation *per se*, it does rely on other packages to be available on its host system.  If those packages are out of date or missing, then Spack will not work.  Sometimes, an appeal to the system's package manager can fix such problems.  If not, the solution is have Spack install the required packages, and then have Spack use them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:869
-# ed271310879c41d2bfaa16ef561b024f
+# a455e26c77134491838d8bca7fc5eb7f
 msgid "For example, if ``curl`` doesn't work, one could use the following steps to provide Spack a working ``curl``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:877
-# b4ab5ea6d85449328069679d25f7c8b9
+# dd199d1e04f64a46b8bad1b4ad6b41fa
 msgid "or alternately:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:883
-# 52a1997e7b974413935fea57736638a9
+# dcc50a5def96406199b8e4b0681d0c8f
 msgid "or if environment modules don't work:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:890
-# cc5f7914a75444808ccd4cb07fee66e1
+# 7d781c0d7b5942ebb51b4772aa9349fa
 msgid "External commands are used by Spack in two places: within core Spack, and in the package recipes. The bootstrapping procedure for these two cases is somewhat different, and is treated separately below."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:896
-# 937b105bd8524283803c5b01fd80d1c8
+# 9ac43b1384534fc4a822a6015bcbd985
 msgid "Core Spack Utilities"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:898
-# 13fc3ae772d54118b757b4996176244a
+# 178d9224a26d431d8008032c47b83caa
 msgid "Core Spack uses the following packages, mainly to download and unpack source code, and to load generated environment modules: ``curl``, ``env``, ``git``, ``go``, ``hg``, ``svn``, ``tar``, ``unzip``, ``patch``, ``environment-modules``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:903
-# 6b5ce21c189d4933bdaaf5b6066c203b
+# 80c16ac6c4b1435e90bf61151a4d0ff4
 msgid "As long as the user's environment is set up to successfully run these programs from outside of Spack, they should work inside of Spack as well.  They can generally be activated as in the ``curl`` example above; or some systems might already have an appropriate hand-built environment module that may be loaded.  Either way works."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:909
-# 758e5329a8f34156bd595a976250695b
+# 7cfa2b3f80284211811667f2fd8762ff
 msgid "If you find that you are missing some of these programs, ``spack`` can build some of them for you with ``spack bootstrap``. Currently supported programs are ``environment-modules``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:913
-# 301f4d69670a4bad91cf12c6163e63d4
+# 666ea19c177d44249c534dc73db2c7ce
 msgid "A few notes on specific programs in this list:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:917
-# ece501c34bf54ec1868e9fe415c8a344
+# f0c533cf2ec84564ad529becc542c9ea
 msgid "cURL, git, Mercurial, etc."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:919
-# a5b82637c4d0420b98e1e9de5329ceda
+# e7f6486dc6a04187833aff3e8b716036
 msgid "Spack depends on cURL to download tarballs, the format that most Spack-installed packages come in.  Your system's cURL should always be able to download unencrypted ``http://``.  However, the cURL on some systems has problems with SSL-enabled ``https://`` URLs, due to outdated / insecure versions of OpenSSL on those systems.  This will prevent Spack from installing any software requiring ``https://`` until a new cURL has been installed, using the technique above."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:929
-# 9b71b70c5acf49b7a6d9b0caa63db4aa
+# d0f55545a8b3465f9971f6d6ef4f5133
 msgid "remember that if you install ``curl`` via Spack that it may rely on a user-space OpenSSL that is not upgraded regularly.  It may fall out of date faster than your system OpenSSL."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:933
-# a1f13c0d869b43708c3f3ee773d520de
+# 96bae6c0f9844f1689a8fe14822b8a66
 msgid "Some packages use source code control systems as their download method: ``git``, ``hg``, ``svn`` and occasionally ``go``.  If you had to install a new ``curl``, then chances are the system-supplied version of these other programs will also not work, because they also rely on OpenSSL. Once ``curl`` has been installed, you can similarly install the others."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:944
-# c29fc34461884329a52b3b6f11659f04
+# 5fe77d60325c4715a255f1a9361953ca
 msgid "Environment Modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:946
-# 8b0638755d1b43e6aba4afe1d72cefe8
+# 7bcf7566b7d4471380d730a0f8f69d6f
 msgid "In order to use Spack's generated module files, you must have installed ``environment-modules`` or ``lmod``. The simplest way to get the latest version of either of these tools is installing it as part of Spack's bootstrap procedure:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:956
-# 542e02fd2ce04692b8fa7eb3e70f0b37
+# 593a447cd134473882019b04a26623f3
 msgid "At the moment ``spack bootstrap`` is only able to install ``environment-modules``. Extending its capabilities to prefer ``lmod`` where possible is in the roadmap, and likely to happen before the next release."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:960
-# 3ff7990b952d4434aa4c606383acc42a
+# ff01f62e64ca44deba8f3579b9f40772
 msgid "Alternatively, on many Linux distributions, you can install a pre-built binary from the vendor's repository. On Fedora/RHEL/CentOS, for example, this can be done with the command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:968
-# 24b1f770ca0a4768bc954b70dbbf9790
+# 0fdd94b3978d432e9c31c4d389eb4ce0
 msgid "Once you have the tool installed and available in your path, you can source Spack's setup file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:975
-# 64cb78b6071e44839cafd20518312f56
+# 91ef076bdb5446538abb689abe708ae1
 msgid "This activates :ref:`shell support <shell-support>` and makes commands like ``spack load`` available for use."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:981
-# 80e071fc640046a4b4f4cfba87b7510d
+# 4a09a3bb584044dcaeef631826cc4615
 msgid "Package Utilities"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:983
-# 65efe27cd75842799f18eed50e064ad8
+# f50b28bfa4a845249d7f2f0b1239da31
 msgid "Spack may also encounter bootstrapping problems inside a package's ``install()`` method.  In this case, Spack will normally be running inside a *sanitized build environment*.  This includes all of the package's dependencies, but none of the environment Spack inherited from the user: if you load a module or modify ``$PATH`` before launching Spack, it will have no effect."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:990
-# 282d6b306a82476da3986f7cd8f90714
+# 8c7d5b4d888040baab4f2cfde394972e
 msgid "In this case, you will likely need to use the ``--dirty`` flag when running ``spack install``, causing Spack to **not** sanitize the build environment.  You are now responsible for making sure that environment does not do strange things to Spack or its installs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:995
-# 43fc5e0f3a814ab08c1889ab179518f2
+# a195b71a39f846f78b70488398400425
 msgid "Another way to get Spack to use its own version of something is to add that something to a package that needs it.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1002
-# 6271952a03ca4a9da31d3510aede1152
+# 93f74082db0544f38cba9fc5a3372ef9
 msgid "This is considered best practice for some common build dependencies, such as ``autotools`` (if the ``autoreconf`` command is needed) and ``cmake`` --- ``cmake`` especially, because different packages require a different version of CMake."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1009
-# 71f3c03806144adaa3a587356398e19b
+# 9e170a416b36477394aca93dc026a650
 msgid "binutils"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1013
-# 7dc8e9be82414e6196adb4a1f4d87a75
+# ace3609329934492a89e948e813057fb
 msgid "Sometimes, strange error messages can happen while building a package. For example, ``ld`` might crash.  Or one receives a message like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1021
-# 709e4e7c94ec4585b0e8176075470751
+# d3b09c4ed14440c6871f111b81b68c5a
 msgid "or:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1027
-# 8667905a20144882a6b85d714aa0f1ed
+# 9f8749869cbc494cb8a37e21749c19fb
 msgid "These problems are often caused by an outdated ``binutils`` on your system.  Unlike CMake or Autotools, adding ``depends_on('binutils')`` to every package is not considered a best practice because every package written in C/C++/Fortran would need it.  A potential workaround is to load a recent ``binutils`` into your environment and use the ``--dirty`` flag."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1036
-# a83879b09f584d52a115cc43d5dc1e15
+# ca320841803c41459e5cf2772fca3104
 msgid "GPG Signing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1042
-# dac5ed55301c479d869811d7d4dfe482
+# 1f0b8ceedb364d7a815842d1fde6fb53
 msgid "``spack gpg``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1044
-# 7ef8a9b597884659905e0da4259242a0
+# 5b6d2f1d8761431d95283299f4dcc91a
 msgid "Spack has support for signing and verifying packages using GPG keys. A separate keyring is used for Spack, so any keys available in the user's home directory are not used."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1050
-# f560c7eec692408da1a7d7f980aebbfe
+# 27e94ccab97f408b88950e07a2d09a92
 msgid "``spack gpg init``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1052
-# 33b0a9241cc642f3a72f0ea6e3d615b4
+# 81a7083e39904f04a28eee42fa3a57e5
 msgid "When Spack is first installed, its keyring is empty. Keys stored in :file:`var/spack/gpg` are the default keys for a Spack installation. These keys may be imported by running ``spack gpg init``. This will import the default keys into the keyring as trusted keys."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1059
-# 097e578275c1406c899fca890fb7c38a
+# 33a919d8ff294de9a8cf3686be6e5be6
 msgid "Trusting keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1061
-# bb8781a59f3b423da1df3db6570274f9
+# 225548fcc0e6462c912d89551217a934
 msgid "Additional keys may be added to the keyring using ``spack gpg trust <keyfile>``. Once a key is trusted, packages signed by the owner of they key may be installed."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1067
-# 9abecf13cae649d7b4f36b57744d3e6f
+# c148fe8e763b46a7831ea38b0ed7a6b5
 msgid "Creating keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1069
-# ec7a686648294860981586de600166f4
+# cea0e2418b1b42f284d5125303e104cd
 msgid "You may also create your own key so that you may sign your own packages using ``spack gpg create <name> <email>``. By default, the key has no expiration, but it may be set with the ``--expires <date>`` flag (see the ``gnupg2`` documentation for accepted date formats). It is also recommended to add a comment as to the use of the key using the ``--comment <comment>`` flag. The public half of the key can also be exported for sharing with others so that they may use packages you have signed using the ``--export <keyfile>`` flag. Secret keys may also be later exported using the ``spack gpg export <location> [<key>...]`` command."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1107
-# 90ef357e43514cc0a71ec604809a1f00
+# b4865b6b0e4e4aa99930e7e13f8f2221
 msgid "Key creation speed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1082
-# b5737b7ec50f465aa06ba0c862099977
+# e7e28d69b56c4df5a1f5b9d9d78c9afd
 msgid "The creation of a new GPG key requires generating a lot of random numbers. Depending on the entropy produced on your system, the entire process may take a long time (*even appearing to hang*). Virtual machines and cloud instances are particularly likely to display this behavior."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1087
-# c6e8e501d25144a49fbea649af13a79f
+# 4370554f5d4e46c1ab5b61c75312fa8a
 msgid "To speed it up you may install tools like ``rngd``, which is usually available as a package in the host OS.  On e.g. an Ubuntu machine you need to give the following commands:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1096
-# 6ad74acfacbc4f12990320bf7e72a5cc
+# f91a01cf33be4c2094b0fec0cfa7ff8c
 msgid "before generating the keys."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1098
-# a191e766d00f45ad8c265e58265d1fce
+# cdf6e57f33be499fbe3d996688f7779e
 msgid "Another alternative is ``haveged``, which can be installed on RHEL/CentOS machines as follows:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1106
-# a796ad953ef343a99e07bce5cdc1d20f
+# e8ac81a8b5f941309b962ee7b679996d
 msgid "`This Digital Ocean tutorial <https://www.digitalocean.com/community/tutorials/how-to-setup-additional-entropy-for-cloud-servers-using-haveged>`_ provides a good overview of sources of randomness."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1112
-# 23dd3d0cee55494db5b445b050792487
+# b49593001fa44847b2e0b8a8dcac693e
 msgid "Listing keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1114
-# 37338be64fd84c599612b655f3038a63
+# 50aca031a1604bdcb80f38c45f0ac695
 msgid "In order to list the keys available in the keyring, the ``spack gpg list`` command will list trusted keys with the ``--trusted`` flag and keys available for signing using ``--signing``. If you would like to remove keys from your keyring, ``spack gpg untrust <keyid>``. Key IDs can be email addresses, names, or (best) fingerprints."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1122
-# b94815f0a7f24a19a068e52b77c5de78
+# 02f0a45aa7cb489185332110b2db47ff
 msgid "Signing and Verifying Packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1124
-# ae63051110d946edb0f69262fcc193a8
+# 975ced75e1244d83b12f95e2d08d97cf
 msgid "In order to sign a package, ``spack gpg sign <file>`` should be used. By default, the signature will be written to ``<file>.asc``, but that may be changed by using the ``--output <file>`` flag. If there is only one signing key available, it will be used, but if there is more than one, the key to use must be specified using the ``--key <keyid>`` flag. The ``--clearsign`` flag may also be used to create a signed file which contains the contents, but it is not recommended. Signed packages may be verified by using ``spack gpg verify <file>``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1137
-# ca3d363283d842c5962d2dab60be2bad
+# 98a58b56dd094e50ba35438967bd858b
 msgid "Spack on Cray"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1139
-# 11b50a715f3e45a48b53fa17e92abf44
+# bdd283bc34b0486b946d6c0790b36cae
 msgid "Spack differs slightly when used on a Cray system. The architecture spec can differentiate between the front-end and back-end processor and operating system. For example, on Edison at NERSC, the back-end target processor is \"Ivy Bridge\", so you can specify to use the back-end this way:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1148
-# 7876bd83fe7a44ffa02f72c4a6ffc6a4
+# 0edc2877a24c4396b58fdbbff11657cc
 msgid "You can also use the operating system to build against the back-end:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1154
-# faddc9d976e4413aa700eafae742c0e4
+# b5dcf74c101a45e08e47a3d262f259f0
 msgid "Notice that the name includes both the operating system name and the major version number concatenated together."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1157
-# 87787693efd245f2a2619926b9a87479
+# d228c7926cff49c4960fffb753e687b2
 msgid "Alternatively, if you want to build something for the front-end, you can specify the front-end target processor. The processor for a login node on Edison is \"Sandy bridge\" so we specify on the command line like so:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1165
-# 621f0abe624346b8afa7905f0ad5eaef
+# 744ecafa015c45e0bd896f5cb7b46847
 msgid "And the front-end operating system is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1173
-# 950b5c54305b4bbbaabe6f8c4a80ada8
+# d12224a071d34a6db05e8a3e9227c55b
 msgid "Cray compiler detection"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1175
-# fd3074b8a44e4acab129e68f3746e9bf
+# 335e073c75344440b9ad69968d819589
 msgid "Spack can detect compilers using two methods. For the front-end, we treat everything the same. The difference lies in back-end compiler detection. Back-end compiler detection is made via the Tcl module avail command. Once it detects the compiler it writes the appropriate PrgEnv and compiler module name to compilers.yaml and sets the paths to each compiler with Cray\\'s compiler wrapper names (i.e. cc, CC, ftn). During build time, Spack will load the correct PrgEnv and compiler module and will call appropriate wrapper."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1183
-# 8a45d96e7b2c4868a4e8a7b00a8bafbd
+# b9a6e92250a64cc68bb310f31560d61b
 msgid "The compilers.yaml config file will also differ. There is a modules section that is filled with the compiler's Programming Environment and module name. On other systems, this field is empty []:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1194
-# 7b1cb366542743a19138578f66cc9720
+# ef201855d341430dad88f46f3623598a
 msgid "As mentioned earlier, the compiler paths will look different on a Cray system. Since most compilers are invoked using cc, CC and ftn, the paths for each compiler are replaced with their respective Cray compiler wrapper names:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1206
-# 08f3ccd478574c31ab9e027af316092b
+# 29efca10351e4086a0376e564026a0c7
 msgid "As opposed to an explicit path to the compiler executable. This allows Spack to call the Cray compiler wrappers during build time."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1209
-# b3fe580fb151424db0a08edeb0b94367
+# 2bb2a3bac7d244edad603e329344a141
 msgid "For more on compiler configuration, check out :ref:`compiler-config`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1211
-# c844d78550434b2f9f2a7300c6da23b8
+# ce05a6f7552643fe80d126e313e17ea8
 msgid "Spack sets the default Cray link type to dynamic, to better match other other platforms. Individual packages can enable static linking (which is the default outside of Spack on cray systems) using the ``-static`` flag."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1217
-# 61c779bbbb4544fea867c51c0924655c
+# 26c9a803aa224002a4db93be77001fb1
 msgid "Setting defaults and using Cray modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1219
-# f3edd7775e24403eaaf174242670b16c
+# e3f6a1842fd648c1b5ffe1d2cecae3b9
 msgid "If you want to use default compilers for each PrgEnv and also be able to load cray external modules, you will need to set up a ``packages.yaml``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1222
-# 711f9d00355a468686c4a84baf1f21ad
+# c93ac79ae62e41879f66b03d7ba61ca9
 msgid "Here's an example of an external configuration for cray modules:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1235
-# c31ad51e97c444d3a7636a24fda82afd
+# b7a9300d0d724a08bc9219c7dcf217fe
 msgid "This tells Spack that for whatever package that depends on mpi, load the cray-mpich module into the environment. You can then be able to use whatever environment variables, libraries, etc, that are brought into the environment via module load."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1242
-# 6703115e9cce459db9961defc14c893f
+# 4dc691da65ff428e981a11e9af6e3265
 msgid "For Cray-provided packages, it is best to use ``modules:`` instead of ``paths:`` in ``packages.yaml``, because the Cray Programming Environment heavily relies on modules (e.g., loading the ``cray-mpich`` module adds MPI libraries to the compiler wrapper link line)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1247
-# 51a4f6a05edd4c27b69a862ee37ff27e
+# 2726df77e3694c9c897a417369b0c58a
 msgid "You can set the default compiler that Spack can use for each compiler type. If you want to use the Cray defaults, then set them under ``all:`` in packages.yaml. In the compiler field, set the compiler specs in your order of preference. Whenever you build with that compiler type, Spack will concretize to that version."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1252
-# c202903188804ce887f207eed60bd64e
+# 549da5142ceb4b498e383ac9429fdce6
 msgid "Here is an example of a full packages.yaml used at NERSC"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1277
-# ff4c98954f40408191934cf457aeeacc
+# c7490e1bc5d4478d8cda5b5535c4463c
 msgid "Here we tell spack that whenever we want to build with gcc use version 5.2.0 or if we want to build with intel compilers, use version 16.0.0.109. We add a spec for each compiler type for each cray modules. This ensures that for each compiler on our system we can use that external module."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1282
-# db1db3862c5b460fbe2f17ce773484f5
+# 77a609b0f830480f80dc2dbc55e27712
 msgid "For more on external packages check out the section :ref:`sec-external-packages`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1286
-# 134743b8d5884b11a8c25fa2ff435702
+# 1784274253cf4ca4bd8339abe51ec087
 msgid "Using Linux containers on Cray machines"
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1288
-# 10a318dc860c4681b9e1c0a4e8550c74
+# 34a0bcb4bdf54cb88a46cb529b437967
 msgid "Spack uses environment variables particular to the Cray programming environment to determine which systems are Cray platforms. These environment variables may be propagated into containers that are not using the Cray programming environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/getting_started.rst:1293
-# 1ab3e4c863024f3fbfe8678de6d16f13
+# 0beb574250f44f97a6ff379410dd6bb8
 msgid "To ensure that Spack does not autodetect the Cray programming environment, unset the environment variable ``CRAYPE_VERSION``. This will cause Spack to treat a linux container on a Cray system as a base linux distro."
 msgstr ""
 

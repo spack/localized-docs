@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,54 +17,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/spack.reporters.rst:2
-# 33cef07c103146e096911f3e6903afe0
+# ce3889518abe465e9b4a23b738f76e8f
 msgid "spack.reporters package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.reporters.rst:5
-# bd858d2f85c9457db2d78750ddec8073
+# d73e1cd649d841e1ac6cd4563f209ebf
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.reporters.rst:8
-# 4bc8dbb3187b48a48999d83d2d49d204
+# c631ab3811934e8db3d6b9d76c740ce4
 msgid "spack.reporters.cdash module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/reporters/cdash.py:docstring of spack.reporters.cdash.CDash:1
-#: ../spack/lib/spack/spack/reporters/junit.py:docstring of spack.reporters.junit.JUnit:1
-# a70f59bfd882435ca1b5b83554b7e464
-# c389fceaed4c42cbbcd49c40df76e381
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/reporters/cdash.py:docstring of spack.reporters.cdash.CDash:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/reporters/junit.py:docstring of spack.reporters.junit.JUnit:1
+# d56d15405b114702ac56043017d73973
+# 3590cd3f23614a3ea6feb1e8c3cc2f3f
 msgid "Bases: :class:`spack.reporter.Reporter`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/reporters/cdash.py:docstring of spack.reporters.cdash.CDash:1
-# 374bcf72b63249168f06912d580ecfe4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/reporters/cdash.py:docstring of spack.reporters.cdash.CDash:1
+# 5c9580358d2f4d59aa1df0801acff8e9
 msgid "Generate reports of spec installations for CDash."
 msgstr ""
 
-#: ../spack/lib/spack/spack/reporters/cdash.py:docstring of spack.reporters.cdash.CDash:3
-# 55a922836ad64026ac4625aee551a1b6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/reporters/cdash.py:docstring of spack.reporters.cdash.CDash:3
+# f1c2400c12e243be93b90ccc5e48a10b
 msgid "To use this reporter, pass the ``--cdash-upload-url`` argument to ``spack install``::"
 msgstr ""
 
-#: ../spack/lib/spack/spack/reporters/cdash.py:docstring of spack.reporters.cdash.CDash:9
-# 2e45a06a12d54ec8b6d7ece56ca03fe1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/reporters/cdash.py:docstring of spack.reporters.cdash.CDash:9
+# 4af71c2244bc4a4799c8ef0d9e2902e1
 msgid "In this example, results will be uploaded to the *Spack* project on the CDash instance hosted at https://mydomain.com/cdash."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.reporters.rst:16
-# e0ba8530f78a41779e51bad4e16b96d1
+# df29bd6e7f0b43758ca2363761889916
 msgid "spack.reporters.junit module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/reporters/junit.py:docstring of spack.reporters.junit.JUnit:1
-# abc558eacc8d402d9826b79b6312c080
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/reporters/junit.py:docstring of spack.reporters.junit.JUnit:1
+# 0d20d518eeba49218c06840371a94377
 msgid "Generate reports of spec installations for JUnit."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.reporters.rst:25
-# ad1398ea07a44ebbbd6ef4ed2ddfb6cb
+# 2de2d9c97f09455db42ea041eb8fee3c
 msgid "Module contents"
 msgstr ""
 

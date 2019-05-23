@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,282 +17,282 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:10
-# 0a5c5075db66453fa69b626991d4dab8
+# 30e075d9a84348e7bad5a77a24da2f61
 msgid "Advanced Topics in Packaging"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:12
-# fbb2f3fc045d4198bb8bae9404c6d83c
+# 304f14866d8f48f9aa270617d3f31047
 msgid "Spack tries to automatically configure packages with information from dependencies such that all you need to do is to list the dependencies (i.e., with the ``depends_on`` directive) and the build system (for example by deriving from :code:`CmakePackage`)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:17
-# 9206444da7bf4443a1a34a06576a227c
+# 2850bcc90c354bc49f575ecec2669475
 msgid "However, there are many special cases. Often you need to retrieve details about dependencies to set package-specific configuration options, or to define package-specific environment variables used by the package's build system. This tutorial covers how to retrieve build information from dependencies, and how you can automatically provide important information to dependents in your package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:26
-# bb8c25d805da4fa1b7b0e8ddc7f1db0b
+# dd6a4143c55740fc9b40c30e8ffb6bf8
 msgid "Setup for the tutorial"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:30
-# f32783b946c7445dbf11a0fa3f129e28
+# 692d0d490f1241f6865d78957bad0e31
 msgid "We do not recommend doing this section of the tutorial in a production Spack instance."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:33
-# a6e27955686848eaaef6de7c7884de38
+# 463bcba61f874427825fb9fc2a5eab02
 msgid "The tutorial uses custom package definitions with missing sections that will be filled in during the tutorial. These package definitions are stored in a separate package repository, which can be enabled with:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:41
-# ddd553dbcf9347239eba18aaa4cbe324
+# c396cd05dde2477ca1dc0b89f3bc70e1
 msgid "This section of the tutorial may also require a newer version of gcc. If you have not already installed gcc@7.2.0 and added it to your configuration, you can do so with:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:50
-# 917fd95f01b4441d8ed2bc92eadb3c7c
+# f2ceec409b524473b15a7d4533112379
 msgid "If you are using the tutorial docker image, all dependency packages will have been installed. Otherwise, to install these packages you can use the following commands:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:60
-# 58f97df0a10e45a2bceaf0f1ea4b00e2
+# 78f17657348f489086aaf93f4051f287
 msgid "Now, you are ready to set your preferred ``EDITOR`` and continue with the rest of the tutorial."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:65
-# fb6113a3de464846931e63854c776dec
+# 081ef7d47a7f49b595a341d880620bf6
 msgid "Several of these packages depend on an MPI implementation. You can use OpenMPI if you install it from scratch, but this is slow (>10 min.). A binary cache of MPICH may be provided, in which case you can force the package to use it and install quickly. All tutorial examples with packages that depend on MPICH include the spec syntax for building with it"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:75
-# 93adfa3547e24b78a04fb891cee2a96b
+# 94c4fbdf36634358b35eaa6c06f70ef4
 msgid "Modifying a package's build environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:77
-# 9354f73409014c90ba6a59f2f170612b
+# f13b626798434673839f3f7199898020
 msgid "Spack sets up several environment variables like ``PATH`` by default to aid in building a package, but many packages make use of environment variables which convey specific information about their dependencies (e.g., ``MPICC``). This section covers how to update your Spack packages so that package-specific environment variables are defined at build-time."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:85
-# bd4176d724c242c1b8d93422d1885627
+# 266af31f64bf44c18d7c2231bc786143
 msgid "Set environment variables in dependent packages at build-time"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:87
-# 4fa7fec9695847a79b3decc37339ec16
+# a557684c9cdd41cfa070ccbdae897703
 msgid "Dependencies can set environment variables that are required when their dependents build. For example, when a package depends on a python extension like py-numpy, Spack's ``python`` package will add it to ``PYTHONPATH`` so it is available at build time; this is required because the default setup that spack does is not sufficient for python to import modules."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:93
-# 10c7ee209aac4809a82ae43f14ff8763
+# dbe48420565f459d9c971a343d71b44e
 msgid "To provide environment setup for a dependent, a package can implement the :py:func:`setup_dependent_environment <spack.package.PackageBase.setup_dependent_environment>` function. This function takes as a parameter a :py:class:`EnvironmentModifications <spack.util.environment.EnvironmentModifications>` object which includes convenience methods to update the environment. For example, an MPI implementation can set ``MPICC`` for packages that depend on it:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:104
-# 5044a58ebb914d428f210774996cb397
+# 28d9a6dfae1048d8b5a1f36c90c90710
 msgid "In this case packages that depend on ``mpi`` will have ``MPICC`` defined in their environment when they build. This section is focused on modifying the build-time environment represented by ``spack_env``, but it's worth noting that modifications to ``run_env`` are included in Spack's automatically-generated module files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:110
-# d977d6c5ae38484da5a05a7cbcc517ce
+# 74fc105f7fdb4395a5aad83ac9973ed0
 msgid "We can practice by editing the ``mpich`` package to set the ``MPICC`` environment variable in the build-time environment of dependent packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:117
-# b004e38d4f2945098de1534ad06a09ca
+# 850a48f147d24a23bd9b1310f022be18
 msgid "Once you're finished, the method should look like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:133
-# 5a7739b573be41d19b97ca6a745ea69c
+# 5ca2950011d04424ba348115b840b947
 msgid "At this point we can, for instance, install ``netlib-scalapack`` with ``mpich``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:151
-# ad90a538fac646ca851d7e9d02437f8d
+# 19fe02ed12f64dd3b005e9d04806aed3
 msgid "and double check the environment logs to verify that every variable was set to the correct value."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:156
-# 84cf21d3947244819d5479092e91bfc5
+# 03cd9f610c1a498795786785381ff926
 msgid "Set environment variables in your own package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:158
-# 6a5465204a754eb28ddfc550b1a5ea73
+# 01457ab568c9430ebd29ba9ae55d8494
 msgid "Packages can modify their own build-time environment by implementing the :py:func:`setup_environment <spack.package.PackageBase.setup_environment>` function. For ``qt`` this looks like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:168
-# bc30d496a459489fbdc417e0175c13a1
+# 021f883e3259452196d080097d6e78a9
 msgid "When ``qt`` builds, ``MAKEFLAGS`` will be defined in the environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:170
-# 7d3dd1a12cbb4726b2a75c664052d48e
+# de9aa37ae88b4151bdcf035b491e4b9f
 msgid "To contrast with ``qt``'s :py:func:`setup_dependent_environment <spack.package.PackageBase.setup_dependent_environment>` function:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:178
-# 5039d3484919474a978344941f369d59
+# 60492b2ce9124c91bb791db53628d6e4
 msgid "Let's see how it works by completing the ``elpa`` package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:184
-# 3c715a2a4db94da6a62e0b258fad66d8
+# d3a5726517ad48fd8151231262c5752f
 msgid "In the end your method should look like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:199
-# 35bedbd42c844ec9b84eb3cb61e2fbe3
+# 6723bba646c544638ad86da856a26c36
 msgid "At this point it's possible to proceed with the installation of ``elpa ^mpich``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:203
-# 4891c3d6aeae42b4858b44047a8924ef
+# c791c58b4da648d6b90a5d77d278a4d9
 msgid "Retrieving library information"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:205
-# 7233d4598c5a489bb9605dff28ca1da9
+# cff6bc8fcfcb45b49e5fe288f9dc628d
 msgid "Although Spack attempts to help packages locate their dependency libraries automatically (e.g. by setting ``PKG_CONFIG_PATH`` and ``CMAKE_PREFIX_PATH``), a package may have unique configuration options that are required to locate libraries. When a package needs information about dependency libraries, the general approach in Spack is to query the dependencies for the locations of their libraries and set configuration options accordingly. By default most Spack packages know how to automatically locate their libraries. This section covers how to retrieve library information from dependencies and how to locate libraries when the default logic doesn't work."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:217
-# f3416076e05443648d59f0767930d072
+# 5f897746e9064bfaab52ed4f3becfbc4
 msgid "Accessing dependency libraries"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:219
-# 09ca0316c40e44c9837bcfadd92def0b
+# 6a8667bfbaed4c33b7c8a68f262a2874
 msgid "If you need to access the libraries of a dependency, you can do so via the ``libs`` property of the spec, for example in the ``arpack-ng`` package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:234
-# b34d9ffebc734f959de72fe84d09d642
+# 56fdce4658c84bed8fd2fb75ab1e1010
 msgid "Note that ``arpack-ng`` is querying virtual dependencies, which Spack automatically resolves to the installed implementation (e.g. ``openblas`` for ``blas``)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:238
-# e7a9ca93bda444d5a7b7cc5b99891021
+# 4f51bca04bbe42eda81c74bbd02ad842
 msgid "We've started work on a package for ``armadillo``. You should open it, read through the comment that starts with ``# TUTORIAL:`` and complete the ``cmake_args`` section:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:246
-# 65b729acbd5c4faf863eefbdce82d26f
+# 82249384da08496cac420bee07dd7718
 msgid "If you followed the instructions in the package, when you are finished your ``cmake_args`` method should look like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:268
-# 69abfaebf6574b4fa92ffa1c7b3e7019
+# 97f7ede32ecf412bbf10957a9ef85922
 msgid "As you can see, getting the list of libraries that your dependencies provide is as easy as accessing the their ``libs`` attribute. Furthermore, the interface remains the same whether you are querying regular or virtual dependencies."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:272
-# b350d2202bf74afd9fcf8c5dd88af5cc
+# bfd5cfe2478a4270840b8e47bd524004
 msgid "At this point you can complete the installation of ``armadillo`` using ``openblas`` as a LAPACK provider (``armadillo ^openblas ^mpich``):"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:294
-# 64ef9bb8236f4600aaf6a0cc76cf213f
+# 0f72618168ca4c55915460092e2dcc9a
 msgid "Hopefully the installation went fine and the code we added expanded to the right list of semicolon separated libraries (you are encouraged to open ``armadillo``'s build logs to double check)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:300
-# 683d7f06b55d4e53938dd27fe2547650
+# 67859a716261438e9279f9b0619b3c93
 msgid "Providing libraries to dependents"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:302
-# 06c2275946c74ecdbd381d75b26e9feb
+# 27ca97d250ba4d5197a8845be01b6545
 msgid "Spack provides a default implementation for ``libs`` which often works out of the box. A user can write a package definition without having to implement a ``libs`` property and dependents can retrieve its libraries as shown in the above section. However, the default implementation assumes that libraries follow the naming scheme ``lib<package name>.so`` (or e.g. ``lib<package name>.a`` for static libraries). Packages which don't follow this naming scheme must implement this function themselves, e.g. ``opencv``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:320
-# bdb5c04fbb3749809fbaa7e1b7a67864
+# c115c2374567409da937eaf42026631b
 msgid "This issue is common for packages which implement an interface (i.e. virtual package providers in Spack). If we try to build another version of ``armadillo`` tied to ``netlib-lapack`` (``armadillo ^netlib-lapack ^mpich``) we'll notice that this time the installation won't complete:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:352
-# 4557686446104eb8a2387c289ded5b2d
+# af6bc152ffee4277be16d6a01dc03d6c
 msgid "Unlike ``openblas`` which provides a library named ``libopenblas.so``, ``netlib-lapack`` provides ``liblapack.so``, so it needs to implement customized library search logic. Let's edit it:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:360
-# 8c4946524b424ac8b8055373ad0935ed
+# 68d5d9244b594e3da2475418011590ce
 msgid "and follow the instructions in the ``# TUTORIAL:`` comment as before. What we need to implement is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:372
-# 3fb1a1f0f8cc46bb802f01fcc1b51db8
+# 2eec7b6901d64c9aa70e02bdccba59a7
 msgid "i.e., a property that returns the correct list of libraries for the LAPACK interface."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:374
-# b573f13de1c143fea3c5ae8b90fdcb72
+# b9fa2d762fa9494ca4050486eecc74c2
 msgid "We use the name ``lapack_libs`` rather than ``libs`` because ``netlib-lapack`` can also provide ``blas``, and when it does it is provided as a separate library file. Using this name ensures that when dependents ask for ``lapack`` libraries, ``netlib-lapack`` will retrieve only the libraries associated with the ``lapack`` interface. Now we can finally install ``armadillo ^netlib-lapack ^mpich``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:394
-# 2b32ae13f7ef41ce946b860fc1df8997
+# 06c1afcd537f45ceb00effdc0bb64d71
 msgid "Since each implementation of a virtual package is responsible for locating the libraries associated with the interfaces it provides, dependents do not need to include special-case logic for different implementations and for example need only ask for :code:`spec['blas'].libs`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:401
-# b213584207354ad79879e34710f2539d
+# dd6da295215f4a048fa4656a9dc5eed9
 msgid "Other Packaging Topics"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:405
-# ff34f406de254c33a64a9f21fd1db493
+# 675fab6e73464bf89172015f8ae372cd
 msgid "Attach attributes to other packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:407
-# 6add4bf481cb41aaa96a5c6ff7429279
+# e8fdccfafd144b249fce4b815cc758f6
 msgid "Build tools usually also provide a set of executables that can be used when another package is being installed. Spack gives you the opportunity to monkey-patch dependent modules and attach attributes to them. This helps make the packager experience as similar as possible to what would have been the manual installation of the same package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:413
-# b3b25300d10d490b86f476a400bd133c
+# 5df370cdbe7a4c11b9e02fbf5b9963e0
 msgid "An example here is the ``automake`` package, which overrides :py:func:`setup_dependent_package <spack.package.PackageBase.setup_dependent_package>`:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:425
-# 3845bd158a454701b25662a64b9be8e4
+# b3626404bc184fb096a086867bbdb69c
 msgid "so that every other package that depends on it can use directly ``aclocal`` and ``automake`` with the usual function call syntax of :py:class:`Executable <spack.util.executable.Executable>`:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:434
-# 15c3ff54eabe4b52aaa6fa404e748386
+# ac2b766b44d0433abffc17a80c968405
 msgid "Extra query parameters"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:436
-# dfc4fbcf29364248adf044c13e84392c
+# 3cc452550b2a4a77bcaf738ff6a20bf0
 msgid "An advanced feature of the Spec's build-interface protocol is the support for extra parameters after the subscript key. In fact, any of the keys used in the query can be followed by a comma-separated list of extra parameters which can be inspected by the package receiving the request to fine-tune a response."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:441
-# 0a5c706db1984056b071b9831ad9a35f
+# 63f578cf0726432487169feb6147948f
 msgid "Let's look at an example and try to install ``netcdf ^mpich``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:464
-# 8d7dadc945be44409bf574c78afa7cfb
+# 090ce40f01b64b3b83176224f51ed629
 msgid "We can see from the error that ``netcdf`` needs to know how to link the *high-level interface* of ``hdf5``, and thus passes the extra parameter ``hl`` after the request to retrieve it. Clearly the implementation in the ``hdf5`` package is not complete, and we need to fix it:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:472
-# d0ca73e587be4204bb2779a6115e7a72
+# f86e469633474aa8a36865de2263a753
 msgid "If you followed the instructions correctly, the code added to the ``lib`` property should be similar to:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_advanced_packaging.rst:486
-# d2bc20e6b4f14ff0b2d995a1d96d2953
+# b0fdd0aa0255480f9e84ada395a12eff
 msgid "where we highlighted the line retrieving the extra parameters. Now we can successfully complete the installation of ``netcdf ^mpich``:"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,47 +17,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/extensions.rst:10
-# 6d0447e185984518b6eedb8c0dd504f1
+# 5ff8dfde27454a328f6b1fa782276fe4
 msgid "Custom Extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/extensions.rst:14
-# e4525e2f9dd44c18974d2f6dffc4853d
+# 4218df0d7bdc442b8b4e21f01590619d
 msgid "The support for extending Spack with custom commands is still experimental. Users should expect APIs or prescribed directory structures to change at any time."
 msgstr ""
 
 #: ../spack/lib/spack/docs/extensions.rst:18
-# 54a7f087be60409e9e227d6371177391
+# 912e556210354a42938ed0d2bdf6a389
 msgid "*Spack extensions* permit you to extend Spack capabilities by deploying your own custom commands or logic in an arbitrary location on your filesystem. This might be extremely useful e.g. to develop and maintain a command whose purpose is too specific to be considered for reintegration into the mainline or to evolve a command through its early stages before starting a discussion to merge it upstream. From Spack's point of view an extension is any path in your filesystem which respects a prescribed naming and layout for files:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/extensions.rst:39
-# 6ac1d83ba7e941eab36bbb8372f78bfe
+# 07499c1062be4115a282afdefc608522
 msgid "In the example above the extension named *scripting* adds an additional command (``filter``) and unit tests to verify its behavior. The code for this example can be obtained by cloning the corresponding git repository:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/extensions.rst:57
-# bd34bc3663cf4650806abc2b8f9033bf
+# 44f87dab95724cba9d399e4f0ebb6eba
 msgid "As you can see by inspecting the sources, Python modules that are part of the extension can import any core Spack module."
 msgstr ""
 
 #: ../spack/lib/spack/docs/extensions.rst:62
-# e25422d169754c948481bb8793c35941
+# 0ffaa8706c2e4bb396140de7e8e60cd1
 msgid "Configure Spack to Use Extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/extensions.rst:64
-# d258b2908a734378ad2e1e9c9216c277
+# d3717e65d0764fd4a67b1bf7aae826d4
 msgid "To make your current Spack instance aware of extensions you should add their root paths to ``config.yaml``. In the case of our example this means ensuring that:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/extensions.rst:73
-# 7a02af71a956419bb66061e2061bf2c2
+# 19828b835aad41cd9d617e741cd46059
 msgid "is part of your configuration file. Once this is setup any command that the extension provides will be available from the command line:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/extensions.rst:96
-# e54d3f4287084a1e95b89292a42ce70c
+# 7f94e7d3273f4c71a02e007122869594
 msgid "The corresponding unit tests can be run giving the appropriate options to ``spack test``:"
 msgstr ""
 

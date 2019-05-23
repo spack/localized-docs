@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,32 +17,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/docker_for_developers.rst:10
-# 60f49d5780f944d7b7508a156945e49c
+# e9125e5c4cdd404e9a022b3b3f408b93
 msgid "Docker for Developers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/docker_for_developers.rst:12
-# 1f1c96078da3412eb04fc738868a9062
+# a33b28aca7004fbb84e5e1fdf3d22867
 msgid "This guide is intended for people who want to use our prepared docker environments to work on developing Spack or working on spack packages. It is meant to serve as the companion documentation for the :ref:`packaging-guide`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/docker_for_developers.rst:18
-# 2a776cb63c99448f8fbd84f13d47b9b3
+# fe1ae493f4da4cafa524eb97be5af746
 msgid "Overview"
 msgstr ""
 
 #: ../spack/lib/spack/docs/docker_for_developers.rst:20
-# 7fb6c926184d43a79d039cc0362398f1
+# df11874442c347bea75aec515a53a96a
 msgid "To get started, all you need is the latest version of ``docker``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/docker_for_developers.rst:28
-# 418f46c05f4a49069467e87eefdda44f
+# e0b5ac2687fb404da07c3021a4167c51
 msgid "This command should drop you into an interactive shell where you can run spack within an isolated docker container running ubuntu.  The copy of spack being used should be tied to the working copy of your cloned git repo, so any changes you make should be immediately reflected in the running docker container.  Feel free to add or modify any packages or to hack on spack, itself.  Your contained copy of spack should immediately reflect all changes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/docker_for_developers.rst:35
-# 80516695500b4024a963cd3c65ea1371
+# ee800b34f11949ec979604e94306fcb4
 msgid "To work within a container running a different linux distro, source one of the other environment files under ``config``."
 msgstr ""
 

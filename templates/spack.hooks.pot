@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,182 +17,182 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/spack.hooks.rst:2
-# fa297f4bb4ed45c99ac047ef78885443
+# aded9e0663ee4857bbc4d39dedcc885b
 msgid "spack.hooks package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.hooks.rst:5
-# efc8eb75f3f048ac8a3ab06a856f3a7d
+# 2ba20a3d1fcd4c77afc4669b01787f7f
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.hooks.rst:8
-# dbde5b8082cb472a9e3d3bd4d8a51c29
+# c885fe7354e848bb89a66ef6384c1cec
 msgid "spack.hooks.extensions module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.hooks.rst:16
-# e09a6f5314764cb7acad56de8b5c5167
+# a378e45fdd264247934f6e6494c08aa0
 msgid "spack.hooks.licensing module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.post_install:1
-# 6d7f07b9420f426c99b52f6a6e6e3ea1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.post_install:1
+# 3411c96482994d8093d379d232d3feea
 msgid "This hook symlinks local licenses to the global license for licensed software."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.pre_install:1
-# 046d77023b2843399046e1ce535885aa
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.pre_install:1
+# bc9cb4b4b5cc4db6ba086a56829c0558
 msgid "This hook handles global license setup for licensed software."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.set_up_license:1
-# 9040d3b2f4a044c0b6bb31c517179f3e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.set_up_license:1
+# 4af5f20e96cb4a129754692d0bc29abe
 msgid "Prompt the user, letting them know that a license is required."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.set_up_license:3
-# 7ee425ca18aa4b6daf451e3a69a04f1e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.set_up_license:3
+# ece69b947b694a37af48f1d5d5731981
 msgid "For packages that rely on license files, a global license file is created and opened for editing."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.set_up_license:6
-# 526a3435d4c24a619386ce1e304a01fa
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.set_up_license:6
+# c66866b54a7b476f9100c0fbe83683c7
 msgid "For packages that rely on environment variables to point to a license, a warning message is printed."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.set_up_license:9
-# 96fc65335f144489bfba02db2a347c1e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.set_up_license:9
+# b441bb551ec14c99a9043fbfb27146fa
 msgid "For all other packages, documentation on how to set up a license is printed."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.symlink_license:1
-# 5bb7470e31c14057986efab8ecf11174
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.symlink_license:1
+# cb1cb512577a4bfd96409c4c5d78b755
 msgid "Create local symlinks that point to the global license file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.write_license_file:1
-# ddcd90ec2ee548e7b989a78716af09ca
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.write_license_file:1
+# 6d6c78ebfc124e77b779d9b1c91ac340
 msgid "Writes empty license file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.write_license_file:3
-# da9484a50aad447dacabc044421cc68e
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/licensing.py:docstring of spack.hooks.licensing.write_license_file:3
+# b78534bb9f934142acc2f61b8da80fcf
 msgid "Comments give suggestions on alternative methods of installing a license."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.hooks.rst:24
-# 67ecaaacabc44de0ace42fb53e068f65
+# 845492559e70456590fd4076d0e1d90f
 msgid "spack.hooks.module\\_file\\_generation module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.hooks.rst:32
-# 6611d0ab215d4094bcd540001e1a0b86
+# 8a2caf3b73cb4c5796b7c946b0a4cfdc
 msgid "spack.hooks.permissions\\_setters module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/permissions_setters.py:docstring of spack.hooks.permissions_setters.InvalidPermissionsError:1
-# bcf61f29a4f248279e1532915e83c92d
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/permissions_setters.py:docstring of spack.hooks.permissions_setters.InvalidPermissionsError:1
+# d6c1eb6805b545bda8dbac0314c46a17
 msgid "Bases: :class:`spack.error.SpackError`"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/permissions_setters.py:docstring of spack.hooks.permissions_setters.InvalidPermissionsError:1
-# 86770eeed5814838b580d8722bd9680a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/permissions_setters.py:docstring of spack.hooks.permissions_setters.InvalidPermissionsError:1
+# 30cad67935bd4d7193893bcb6abfcf76
 msgid "Error class for invalid permission setters"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/permissions_setters.py:docstring of spack.hooks.permissions_setters.forall_files:1
-# 2074787fd3b6406ca83f1f48d1d1774c
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/permissions_setters.py:docstring of spack.hooks.permissions_setters.forall_files:1
+# dff1fc665cd24334a5ed9f6096aad6aa
 msgid "Apply function to all files in directory, with file as first arg."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/permissions_setters.py:docstring of spack.hooks.permissions_setters.forall_files:3
-# 417226439b624120b7eb128154588d56
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/permissions_setters.py:docstring of spack.hooks.permissions_setters.forall_files:3
+# 5dad08445c81460abdc4fb4935cd975e
 msgid "Does not apply to the root dir. Does not apply to links"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.hooks.rst:40
-# 7c051bc4a93341a8ac6ac44d4e24f72d
+# 4a5ec1f3c9d14d1cbd18476cae45dbcb
 msgid "spack.hooks.sbang module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/sbang.py:docstring of spack.hooks.sbang.filter_shebang:1
-# 1144eb8a2d6346118949f2b57dc682a3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/sbang.py:docstring of spack.hooks.sbang.filter_shebang:1
+# 56d700e9a6b54ed79473b3ba356097ad
 msgid "Adds a second shebang line, using sbang, at the beginning of a file."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/sbang.py:docstring of spack.hooks.sbang.post_install:1
-# 37471b68e80841999eced4c56e992a7b
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/sbang.py:docstring of spack.hooks.sbang.post_install:1
+# abfbd0035e5c46d28ed83ed7de5848a0
 msgid "This hook edits scripts so that they call /bin/bash $spack_prefix/bin/sbang instead of something longer than the shebang limit."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/sbang.py:docstring of spack.hooks.sbang.shebang_too_long:1
-# 35c398922b4f4be5b922f5307978b9db
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/sbang.py:docstring of spack.hooks.sbang.shebang_too_long:1
+# a1ef9e2562d94c8f893249ab72ec57b7
 msgid "Detects whether a file has a shebang line that is too long."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.hooks.rst:48
-# 982e9dc0ba094fe3bd2dfe5cedd89c1b
+# b763b09995e44fb397f68134e5876a6e
 msgid "spack.hooks.yaml\\_version\\_check module"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/yaml_version_check.py:docstring of spack.hooks.yaml_version_check:1
-# 203fa0a2e19c4e548b81ad4de76e85cc
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/yaml_version_check.py:docstring of spack.hooks.yaml_version_check:1
+# 6dea5668b7ed46e494dbe2ed2d3be49b
 msgid "Yaml Version Check is a module for ensuring that config file formats are compatible with the current version of Spack."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.hooks.rst:57
-# d981f10d8d5845598d7b60e3309c6737
+# d279d52811f141a3956f571ccc6051ba
 msgid "Module contents"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:1
-# 5f3483dc5cac4a8a86378e4b7136cab8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:1
+# 636f953b1c64457ca346135b80955dad
 msgid "This package contains modules with hooks for various stages in the Spack install process.  You can add modules here and they'll be executed by package at various times during the package lifecycle."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:5
-# d154fc97aa2e4a07a158257a0bea17f2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:5
+# 01270af3b0b249bfa986d9a603fe4a1e
 msgid "Each hook is just a function that takes a package as a parameter. Hooks are not executed in any particular order."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:8
-# 09fb3701ece24c10ae540e8d25bb615a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:8
+# f3a5167e27b24067b3cb6c020e7b1e8d
 msgid "Currently the following hooks are supported:"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:10
-# 74bc5044d6e746e8af2e9ddccf115015
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:10
+# b54e03d0019a47f4b2be0ef2dade35a3
 msgid "pre_run()"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:11
-# adbca4bf72834dc9890ec64c73db4b33
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:11
+# 4dd365a55b4c4b1d967bbd2b09a101aa
 msgid "pre_install(spec)"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:12
-# b33000872a4b417396674fa68226cd7f
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:12
+# ac131f6bc1b145a7bb8c67b65c2fe7b5
 msgid "post_install(spec)"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:13
-# 37170f8cce2442a0a625e4ee405238d2
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:13
+# 1ad6b464225941efa585e919a3f0437c
 msgid "pre_uninstall(spec)"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:14
-# 1dd88f20d7a540739521a3c8c96ace72
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:14
+# c6424d2be10940f199fac2484693e3ca
 msgid "post_uninstall(spec)"
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:16
-# 6597a33a9d6d444f8c830d1743b99413
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks:16
+# 1f8ba7aaab084b9ebbeb970350b35eb1
 msgid "This can be used to implement support for things like module systems (e.g. modules, dotkit, etc.) or to add other custom features."
 msgstr ""
 
-#: ../spack/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks.HookRunner:1
-# af0199b234d24ed68938ad8f6a30375a
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/hooks/__init__.py:docstring of spack.hooks.HookRunner:1
+# e3f748541cee4f61adba892d46ab7d21
 msgid "Bases: :class:`object`"
 msgstr ""
 

@@ -11,13 +11,17 @@ import llnl.util.tty as tty
 import llnl.util.filesystem as fs
 from llnl.util.link_tree import LinkTree
 
+# We need these files to be copied, not linked, so that ReadTheDocs works
+# properly. They are checked before submodules are cloned, or need to be
+# modified independently for each doc tree.
+copy_files = [
+    'conf.py',
+    'requirements.txt'
+]
+
 
 def link(src, dest):
     abs_src = os.path.abspath(src)
-    print("src: ", src)
-    print("abs_src: ", abs_src)
-    print("dest: ", dest)
-
     conf_py = os.path.join(abs_src, 'conf.py')
     if not os.path.exists(conf_py):
         tty.die("Not a Sphinx docs directory: %s" % src)
@@ -25,13 +29,13 @@ def link(src, dest):
     fs.mkdirp(dest)
     with fs.working_dir(dest):
         rel_src = os.path.relpath(abs_src)
-        print("LINK: %s -> %s" % (os.path.abspath(rel_src), dest))
 
         lt = LinkTree(rel_src)
         lt.merge('.', relative=True, ignore=lambda f: '_spack_root' in f)
 
-        os.remove('conf.py')
-        shutil.copy(os.path.join(abs_src, 'conf.py'), 'conf.py')
+        for f in copy_files:
+            os.remove(f)
+            shutil.copy(os.path.join(abs_src, f), f)
 
 def main():
     parser = argparse.ArgumentParser(

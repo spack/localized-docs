@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"POT-Creation-Date: 2019-05-23 08:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,585 +17,585 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:10
-# 4a846049d8384cd6a8c71ce9cc3e92ee
+# 2493c739b3764194b96f30060c743f8f
 msgid "Spack Package Build Systems"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:12
-# 86ec5eff194847889f69cfb7a5e609dd
+# df6a8503b02a4fbfa9f63c46b463713b
 msgid "You may begin to notice after writing a couple of package template files a pattern emerge for some packages. For example, you may find yourself writing an :code:`install()` method that invokes: :code:`configure`, :code:`cmake`, :code:`make`, :code:`make install`. You may also find yourself writing :code:`\"prefix=\" + prefix` as an argument to :code:`configure` or :code:`cmake`. Rather than having you repeat these lines for all packages, Spack has classes that can take care of these patterns. In addition, these package files allow for finer grained control of these build systems. In this section, we will describe each build system and give examples on how these can be manipulated to install a package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:25
-# dfee6e4c816a438a9140a24554cf74f7
+# 4996f08e01024286b4a1a2f497b7981b
 msgid "Package Class Hierarchy"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:45
-# 7f712f9d71f9467c907580166df01d26
+# 4f29e1bdd1d6448aa898e33217c93dfd
 msgid "The above diagram gives a high level view of the class hierarchy and how each package relates. Each subclass inherits from the :code:`PackageBaseClass` super class. The bulk of the work is done in this super class which includes fetching, extracting to a staging directory and installing. Each subclass then adds additional build-system-specific functionality. In the following sections, we will go over examples of how to utilize each subclass and to see how powerful these abstractions are when packaging."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:55
-# 32d1f8cb8e214947b933fc873a7d6091
+# 241ae17a935848b2b95222edcc635925
 msgid "Package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:57
-# 25505381410d40bdab7b8221d9a042d3
+# b64fb194b2624dcabd9a5fd59097ebce
 msgid "We've already seen examples of a :code:`Package` class in our walkthrough for writing package files, so we won't be spending much time with them here. Briefly, the Package class allows for abitrary control over the build process, whereas subclasses rely on certain patterns (e.g. :code:`configure` :code:`make` :code:`make install`) to be useful. :code:`Package` classes are particularly useful for packages that have a non-conventional way of being built since the packager can utilize some of Spack's helper functions to customize the building and installing of a package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:68
-# d3442e75bab345938cf8fa7c61fa702e
+# e35e4fe5b66343229695313bee3af44b
 msgid "Autotools"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:70
-# 22a182a5803f444694ecb35353e9aafa
+# 8a4afa6f8677443fbe8f00ba14be3815
 msgid "As we have seen earlier, packages using :code:`Autotools` use :code:`configure`, :code:`make` and :code:`make install` commands to execute the build and install process. In our :code:`Package` class, your typical build incantation will consist of the following:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:82
-# 878d572c22e84caeb3d2b9cda205c34b
+# 6d629e7a2b5940b48c138e5654607843
 msgid "You'll see that this looks similar to what we wrote in our packaging tutorial."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:84
-# e7bb129d512c47b2a14987e180215556
+# c9f3715a36b94930a5dd3afaf4be37a2
 msgid "The :code:`Autotools` subclass aims to simplify writing package files and provides convenience methods to manipulate each of the different phases for a :code:`Autotools` build system."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:88
-# 559210a43ce64f4ea9fb49f9d534e1cd
+# 1a790db576cb4abfb6204b13acb4afa4
 msgid ":code:`Autotools` packages consist of four phases:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:90
-# ca1f3411728a4cfdae7b46ad87c42565
+# 12b5d25e2c324dbc849760cb15bd7db2
 msgid ":code:`autoreconf()`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:91
-# 72cc6eb55bba4ee5a9022b9b36a199f2
+# 809a0ffa823c4df3b79bcc481ff83d15
 msgid ":code:`configure()`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:92
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:195
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:485
-# fb90e781664e4f2c94581026a5b8621a
-# bed6c1d0897b4325bf4bd5d6a4c381b8
-# 7a24f1caf5de4cfa87091cc9837521e0
+# 50f59b90fff14258919c00cfd88a7fc5
+# a6b3dc8307c143399f540af62523dc0b
+# 6c049195a3c947dfb0a13378b6c6d709
 msgid ":code:`build()`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:93
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:196
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:486
-# e2d3d7be0a8b49a784e843b46c19e2bb
-# 5a0f302f558241598225cda3be308af2
-# 765a704480754013829c1fdbc1085f0d
+# 6fca004fd1724b99a7318bf24d7133c3
+# 7fdf3a22b826408b8600d1df63da90f2
+# 92d124653a5140d796817e1c37290fb3
 msgid ":code:`install()`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:96
-# c36f68ecfe6e4216b3a2f5341ca46356
+# 8e54b18a45844f95adbd5e56c6b6aaa8
 msgid "Each of these phases have sensible defaults. Let's take a quick look at some the internals of the :code:`Autotools` class:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:104
-# 2164bdb600fe4dcf8a5b509e2d89db60
+# 8c3e5c9901504515a3b7c8a334b988f3
 msgid "This will open the :code:`AutotoolsPackage` file in your text editor."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:107
-# fe23c6f4a5c44d4e8921a39a5934a18d
+# 136c83056dd448a6be7f4f50d8ec2da1
 msgid "The examples showing code for these classes is abridged to avoid having long examples. We only show what is relevant to the packager."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:118
-# 80768f53bf9941f8b8e7f6cb827e4497
+# eee48fcfadf04ea2b80cb75bd374d7a2
 msgid "Important to note are the highlighted lines. These properties allow the packager to set what build targets and install targets they want for their package. If, for example, we wanted to add as our build target :code:`foo` then we can append to our :code:`build_targets` property:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:127
-# ca40f884c5d94730ad56b41b9965ec7e
+# d6495d4ca35c45789e7a4f13249bb777
 msgid "Which is similiar to invoking make in our Package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:133
-# ab51d0c8c2954c689939d1d1eff5d3ee
+# 8dc8d91e056b474c9025c8009847c813
 msgid "This is useful if we have packages that ignore environment variables and need a command-line argument."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:136
-# aad249ea23a8407e95b43af2aad9affc
+# 66e790735f1f4d47b40376dbe395fdc2
 msgid "Another thing to take note of is in the :code:`configure()` method. Here we see that the :code:`prefix` argument is already included since it is a common pattern amongst packages using :code:`Autotools`. We then only have to override :code:`configure_args()`, which will then return it's output to to :code:`configure()`. Then, :code:`configure()` will append the common arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:143
-# f0638737a2064a488713127eb66946b1
+# 9f9540d6b3ab4445a59fda9dee818dc5
 msgid "Packagers also have the option to run :code:`autoreconf` in case a package needs to update the build system and generate a new :code:`configure`. Though, for the most part this will be unnecessary."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:147
-# d567d82a818d401484a5c01baf188c71
+# 3ea8ca559e7c413cb5981fee8c90868d
 msgid "Let's look at the :code:`mpileaks` package.py file that we worked on earlier:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:153
-# aae0d181617d42c39edf8a15d8ef1623
+# 16a85390111b4b40ad2378754f79fc61
 msgid "Notice that mpileaks is a :code:`Package` class but uses the :code:`Autotools` build system. Although this package is acceptable let's make this into an :code:`AutotoolsPackage` class and simplify it further."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:162
-# 52ca2ae0ff3c46ab8fb3ec33e7f18a0e
+# c794e70234c24fceb8f7c2c177494872
 msgid "We first inherit from the :code:`AutotoolsPackage` class."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:165
-# e53a1ea627e8411093dae1df4ff9f287
+# b2a1b443878b415392f602731e16cc94
 msgid "Although we could keep the :code:`install()` method, most of it can be handled by the :code:`AutotoolsPackage` base class. In fact, the only thing that needs to be overridden is :code:`configure_args()`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:174
-# bac6fd91c349428e9e7b0b558eeccca9
+# 22d86553038a48e9a811c4d4bb757b72
 msgid "Since Spack takes care of setting the prefix for us we can exclude that as an argument to :code:`configure`. Our packages look simpler, and the packager does not need to worry about whether they have properly included :code:`configure` and :code:`make`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:179
-# aad72d0582614db9858c887d3205ca62
+# 4a2a3c6054f547e49b3573bd9a847008
 msgid "This version of the :code:`mpileaks` package installs the same as the previous, but the :code:`AutotoolsPackage` class lets us do it with a cleaner looking package file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:185
-# 45327bbc59d445c38997add7ebf60d79
+# 669d90e63b674dccbbe6268fd03ea90e
 msgid "Makefile"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:187
-# 6811371efa474244b90ba68650d403cc
+# a00be8ca58b94bee87253746daadf79a
 msgid "Packages that utilize :code:`Make` or a :code:`Makefile` usually require you to edit a :code:`Makefile` to set up platform and compiler specific variables. These packages are handled by the :code:`Makefile` subclass which provides convenience methods to help write these types of packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:192
-# 80dde90e1fd04ed5ad9883757844d78f
+# 215e581e54bf447f981cd0ce22d7ee44
 msgid "A :code:`MakefilePackage` class has three phases that can be overridden. These include:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:194
-# 2dc85d3fef5d4767966a45f9a1c3141c
+# 7b726a17ae294f7090d07ddf2a16e46a
 msgid ":code:`edit()`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:198
-# 368f5db21c0146679643c6e0506013c8
+# 2c7433d9999147d39f8c53a5f9ce22d5
 msgid "Packagers then have the ability to control how a :code:`Makefile` is edited, and what targets to include for the build phase or install phase."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:201
-# 87c95060c5314e8aaa3dc9c7cac7fc46
+# 3ddc77e503e940acadb965cb6c19bf34
 msgid "Let's also take a look inside the :code:`MakefilePackage` class:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:207
-# 3452d7923f6d46fb8a748bc804edca47
+# 20f63944f4b2446db16d2f056efff42b
 msgid "Take note of the following:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:216
-# c68dee76a2e34cdf92d8e7f899ebd48b
+# 43eb47771dca4bfda734d34e332aa5c5
 msgid "Similar to :code:`Autotools`, :code:`MakefilePackage` class has properties that can be set by the packager. We can also override the different methods highlighted."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:221
-# 00e389652b5648e4acd2078fc60db1c3
+# 17c185f9a7774744bc36906936491a68
 msgid "Let's try to recreate the Bowtie_ package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:243
-# fa542502ee0f4f5d8b19b4e28ee46b38
+# ad425e73883a49908304b5a7af7d9f3a
 msgid "Once the fetching is completed, Spack will open up your text editor in the usual fashion and create a template of a :code:`MakefilePackage` package.py."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:250
-# 81f58574d31546deb5255ddf465d9b72
+# 45bb9b1eb4c14216a48640dd588d79d2
 msgid "Spack was successfully able to detect that :code:`Bowtie` uses :code:`Make`. Let's add in the rest of our details for our package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:258
-# 017a1a71d6b440df9f806bb78003f62a
+# c948d8b0eded44cdbd05d5f44c269781
 msgid "As we mentioned earlier, most packages using a :code:`Makefile` have hard-coded variables that must be edited. These variables are fine if you happen to not care about setup or types of compilers used but Spack is designed to work with any compiler. The :code:`MakefilePackage` subclass makes it easy to edit these :code:`Makefiles` by having an :code:`edit()` method that can be overridden."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:265
-# 41b58cbfbd394591b67d60ea69bfa865
+# 774b4bbf68aa4c79a46e2ae34248d0e7
 msgid "Let's take a look at the default :code:`Makefile` that :code:`Bowtie` provides. If we look inside, we see that :code:`CC` and :code:`CXX` point to our GNU compiler:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:274
-# 82416266e919441a9eb3c5aef5d26dd9
+# 54da2962377a4a82b04a0eeb0791f0df
 msgid "As usual make sure you have shell support activated with spack:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:275
-# 7002e8ee92224622a834e800d7b2903e
+# b213e136387948f59e472e410ed54ff4
 msgid ":code:`source /path/to/spack_root/spack/share/spack/setup-env.sh`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:292
-# 5eb2f68387734ee79fe1f53dd9c2fc00
+# ef167c5d9ce84e998b4c275630c60e82
 msgid "To fix this, we need to use the :code:`edit()` method to write our custom :code:`Makefile`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:300
-# 5159c5beeb10480b9445fdeefd393ed0
+# 2a4156699c6b455db89ba8a561c85eb8
 msgid "Here we use a :code:`FileFilter` object to edit our :code:`Makefile`. It takes in a regular expression and then replaces :code:`CC` and :code:`CXX` to whatever Spack sets :code:`CC` and :code:`CXX` environment variables to. This allows us to build :code:`Bowtie` with whatever compiler we specify through Spack's :code:`spec` syntax."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:306
-# d25fc717a52649b69de89efa4777d57b
+# 231a91e4f0a340a090761eb6045388ab
 msgid "Let's change the build and install phases of our package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:313
-# 0e33a6de8b824f06ae0dbce8089c7ce8
+# def37f17fa034767a8cfd0bebbac5507
 msgid "Here demonstrate another strategy that we can use to manipulate our package We can provide command-line arguments to :code:`make()`. Since :code:`Bowtie` can use :code:`tbb` we can either add :code:`NO_TBB=1` as a argument to prevent :code:`tbb` support or we can just invoke :code:`make` with no arguments."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:318
-# e45f4b89011c42c59d0dda82d1d91f13
+# 2002f6c1cb19439fa4e02750d88c626f
 msgid ":code:`Bowtie` requires our :code:`install_target` to provide a path to the install directory. We can do this by providing :code:`prefix=` as a command line argument to :code:`make()`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:322
-# 93397e2bb98b4f5e8756dac576a57dce
+# 9ef8cebce83a42c199fbbb0457222cc4
 msgid "Let's look at a couple of other examples and go through them:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:328
-# ca570f3524d9448aa0b382405d87010e
+# 14bba1c293c2416188f6f2dba5978b96
 msgid "Some packages allow environment variables to be set and will honor them. Packages that use :code:`?=` for assignment in their :code:`Makefile` can be set using environment variables. In our :code:`esmf` example we set two environment variables in our :code:`edit()` method:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:357
-# 0fd615193e574aa7bf3ec71f08e3279f
+# 383027937dfd403cb9b0b3909536714f
 msgid "As you may have noticed, we didn't really write anything to the :code:`Makefile` but rather we set environment variables that will override variables set in the :code:`Makefile`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:361
-# ca414af9123a4b1fb1fe588206352790
+# dceca79291b34b2ba971d4bc77657158
 msgid "Some packages include a configuration file that sets certain compiler variables, platform specific variables, and the location of dependencies or libraries. If the file is simple and only requires a couple of changes, we can overwrite those entries with our :code:`FileFilter` object. If the configuration involves complex changes, we can write a new configuration file from scratch."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:367
-# 838e3fe33cf64ce6a148cfb1e309c28d
+# ee0d4b61e2b34247829f851dd269b583
 msgid "Let's look at an example of this in the :code:`elk` package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:455
-# 1b6d3411bbf546988cdd4c6f8cf2eade
+# e1131fa9e239404ea92ee7e7ca7bfba2
 msgid ":code:`config` is just a dictionary that we can add key-value pairs to. By the end of the :code:`edit()` method we write the contents of our dictionary to :code:`make.inc`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:461
-# 32d7bf8e16be456893199863726e2b4b
+# f04c79c42ac24df787ed6f8933cee57d
 msgid "CMake"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:463
-# 1416d0130bc8452ab3ee4bdbe6a211df
+# 51b41e53bf244d0f8ba7c523f763f267
 msgid "CMake_ is another common build system that has been gaining popularity. It works in a similar manner to :code:`Autotools` but with differences in variable names, the number of configuration options available, and the handling of shared libraries. Typical build incantations look like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:477
-# a9f3916941314424bb32938099e0af08
+# 84c956b2bf7247c3b8e4645ea252e76e
 msgid "As you can see from the example above, it's very similar to invoking :code:`configure` and :code:`make` in an :code:`Autotools` build system. However, the variable names and options differ. Most options in CMake are prefixed with a :code:`'-D'` flag to indicate a configuration setting."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:482
-# 2a4e666179ad439192f0f9bf973f8e6b
+# 97b258f0b08441a98f91606ea2f356ba
 msgid "In the :code:`CMakePackage` class we can override the following phases:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:484
-# 2fbb5874f6ca4b1abe673b6cfcda7a60
+# 8e5d22b70a7841abb1d313b2315c50c7
 msgid ":code:`cmake()`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:488
-# c9d3247393204dc28d2d9ea7fbb223e6
+# ef826535efc1454186b7bb975afe9283
 msgid "The :code:`CMakePackage` class also provides sensible defaults so we only need to override :code:`cmake_args()`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:491
-# fdfe97aec85740a8b856c7ef12dbf4c7
+# 3946b3817ec348b1b02c445d93459ba6
 msgid "Let's look at these defaults in the :code:`CMakePackage` class in the :code:`_std_args()` method:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:503
-# b604dcd518134278830234d8988f5b20
+# 3883a70d0e0e42df8c293ea8af2ceae8
 msgid "Some :code:`CMake` packages use different generators. Spack is able to support Unix-Makefile_ generators as well as Ninja_ generators."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:509
-# 3344ada88a204b7f9b5905bfe86634ad
+# 96b293ebc9694a66a4dd7fb492582bf0
 msgid "If no generator is specified Spack will default to :code:`Unix Makefiles`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:511
-# 9c07b373f28b4693b50f85d932d6e1c8
+# b372559e434b4e6c94e31329caa1c35a
 msgid "Next we setup the build type. In :code:`CMake` you can specify the build type that you want. Options include:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:514
-# 28383721b7a14f608c82c117ee718b71
+# 7394492bb8b04b71b5e0fcb76ccd7a5f
 msgid ":code:`empty`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:515
-# 8e61f93917494737b6b61ca4c7a2d5c1
+# 8098d6393fae4ff7be23a32c85044653
 msgid ":code:`Debug`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:516
-# 3f98ea60a8fc455289ce0be69cd1de19
+# 6ae87266455847e98599abf2caf375bd
 msgid ":code:`Release`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:517
-# 135fb5d0c37e4494bc03517d7b89000c
+# dd12541fb5474454ad1d6241c38b60e2
 msgid ":code:`RelWithDebInfo`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:518
-# f869faf9cbb64b6e9b6309d12faff2a3
+# 1548d5bae8324597a801199337d11100
 msgid ":code:`MinSizeRel`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:520
-# 916dca6c753245288b70d443fdeca503
+# 61481132abe14755b3e03ce9013378f4
 msgid "With these options you can specify whether you want your executable to have the debug version only, release version or the release with debug information. Release executables tend to be more optimized than Debug. In Spack, we set the default as RelWithDebInfo unless otherwise specified through a variant."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:525
-# d88b684a171c4c189961273918989d79
+# b7d22649855e44a492453c6e6c82873e
 msgid "Spack then automatically sets up the :code:`-DCMAKE_INSTALL_PREFIX` path, appends the build type (:code:`RelWithDebInfo` default), and then specifies a verbose :code:`Makefile`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:529
-# 4480ac25df4d4816a0905dcbafce5822
+# 83ab67b47b37409e9e520cbfcef9caec
 msgid "Next we add the :code:`rpaths` to :code:`-DCMAKE_INSTALL_RPATH:STRING`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:532
-# e49a09de61fc4c98988ef653af9338a6
+# 25486d64776c4cdf8b41205bd2546f36
 msgid "Finally we add to :code:`-DCMAKE_PREFIX_PATH:STRING` the locations of all our dependencies so that :code:`CMake` can find them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:535
-# 0672f66a0c594f938ed38f74e7f8fcc6
+# 1c7bef10c4b846e19075e456c025620a
 msgid "In the end our :code:`cmake` line will look like this (example is :code:`xrootd`):"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:541
-# df3ef2b34fd645d98978f2e516d447b1
+# 41cadd5f22ff4c4b888345a7f578fcb6
 msgid "We can see now how :code:`CMake` takes care of a lot of the boilerplate code that would have to be otherwise typed in."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:544
-# b699de48b07241c8a975051ea8c51f1a
+# ee0c271a8de549feb9067e59ba0daf05
 msgid "Let's try to recreate callpath_:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:569
-# 4e18e8df702b4b9b872467f20eb5ad10
+# 0ecfd88909404c04a9689a6f71be4c65
 msgid "which then produces the following template:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:575
-# 517cd3d573334ec196a0be6c4f72e99d
+# ae0a1b9ce53f43c8944aa39168e11666
 msgid "Again we fill in the details:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:582
-# b3de8618d07f48d5b65978f90be44943
+# e5f66a0292f14edeb00c19b3a54385f5
 msgid "As mentioned earlier, Spack will use sensible defaults to prevent repeated code and to make writing :code:`CMake` package files simpler."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:585
-# 180ead8cde2d417294923afb3802f0e8
+# 0392b8a98c9c4b5a881c964580d4e741
 msgid "In callpath, we want to add options to :code:`CALLPATH_WALKER` as well as add compiler flags. We add the following options like so:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:593
-# 0c630eccd59b479b9141800bf2af7446
+# d7448131e33144138dbf7ef28feb5f9e
 msgid "Now we can control our build options using :code:`cmake_args()`. If defaults are sufficient enough for the package, we can leave this method out."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:596
-# 31623146f83545dbb947cd2c2946850c
+# 623f5610b20646429b8ed1bffb3ad165
 msgid ":code:`CMakePackage` classes allow for control of other features in the build system. For example, you can specify the path to the \"out of source\" build directory and also point to the root of the :code:`CMakeLists.txt` file if it is placed in a non-standard location."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:601
-# 0a943205ec514abc870524e7a1d976c8
+# df264204b0e44d0b863a15513ade133b
 msgid "A good example of a package that has its :code:`CMakeLists.txt` file located at a different location is found in :code:`spades`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:612
-# 4eb676e77b784fbeb48ee6438fe0e3a7
+# 861a194b15ad454b966a9b1f472c9d12
 msgid "Here :code:`root_cmakelists_dir` will tell Spack where to find the location of :code:`CMakeLists.txt`. In this example, it is located a directory level below in the :code:`src` directory."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:616
-# bc7ea58b6ee647588cc35fbc9cc8420c
+# e8a73341efed4eaaaf3b7d209c595c22
 msgid "Some :code:`CMake` packages also require the :code:`install` phase to be overridden. For example, let's take a look at :code:`sniffles`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:623
-# 867d59132a9e4b3a85b1ecf18cbfc6a6
+# cfc2de735d354567a4d2b63f542c3fbd
 msgid "In the :code:`install()` method, we have to manually install our targets so we override the :code:`install()` method to do it for us:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:639
-# efbe28001358416182c0cd79caa41553
+# c158851bfc344b9c8900eb01a08d879f
 msgid "PythonPackage"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:641
-# 97b41b4fb8134e088aab9392fb65fda6
+# aa056fbdff8c45ccad7c1d542bd43e2d
 msgid "Python extensions and modules are built differently from source than most applications. Python uses a :code:`setup.py` script to install Python modules. The script consists of a call to :code:`setup()` which provides the information required to build a module to Distutils. If you're familiar with pip or easy_install, setup.py does the same thing."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:647
-# af03fc3997284ceb973ebe809464ee17
+# 8ff660a66aaf442fa9c228080c1e57c9
 msgid "These modules are usually installed using the following line:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:653
-# 5660e6f702de4292ac37d525c046c8d1
+# e2d6c25017d04ed4bc30609b1cee20bc
 msgid "There are also a list of commands and phases that you can call. To see the full list you can run:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:681
-# 2a9530ee3c354f26bf84d36b76c81377
+# 7bc44702c7cf4e31aa28764d8e9d382a
 msgid "We can write package files for Python packages using the :code:`Package` class, but the class brings with it a lot of methods that are useless for Python packages. Instead, Spack has a :code:`PythonPackage` subclass that allows packagers of Python modules to be able to invoke :code:`setup.py` and use :code:`Distutils`, which is much more familiar to a typical python user."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:687
-# 88409974d3ee4cb8a9a8d62233e59dde
+# 7e74d8e09026410e995818912d6b4714
 msgid "To see the defaults that Spack has for each a methods, we will take a look at the :code:`PythonPackage` class:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:694
-# 2fea61662ec142bd8d824a60f78cead2
+# 123e4e7fdc714776a230c6fe939a7199
 msgid "We see the following:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:702
-# 9f182ff1f2d44ed384db65f9a7e0a2d2
+# 6d2e0b2bffc14c0e9c67bff594280e67
 msgid "Each of these methods have sensible defaults or they can be overridden."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:704
-# 87d84e3dd4c64201bd4ce07256fc3ce4
+# 2c24a5efc2dd4009ae295e833c4a0982
 msgid "We will write a package file for Pandas_:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:727
-# 4abbbe83adce4afa8eb210b3bc4d608b
+# 0617de6314b64136946cbcdf1bb35f0a
 msgid "And we are left with the following template:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:733
-# 958a83912e614adb9dba133ec8131f78
+# 262d8c09f4114c06b3392d46fdb358a4
 msgid "As you can see this is not any different than any package template that we have written. We have the choice of providing build options or using the sensible defaults"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:737
-# e33b50906a61496fb5d18542a10b892d
+# e138c9cf54ef44de944b8b5eddb7796d
 msgid "Luckily for us, there is no need to provide build args."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:739
-# 90d7490c2e8344e4bb685c640b850f80
+# b11c74ca7b904d899047da47b3c5337a
 msgid "Next we need to find the dependencies of a package. Dependencies are usually listed in :code:`setup.py`. You can find the dependencies by searching for :code:`install_requires` keyword in that file. Here it is for :code:`Pandas`:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:761
-# ff128724977648c191f807b51d7d1472
+# 3b2001495ded4360a6a593bc9b3dbf25
 msgid "You can find a more comprehensive list at the Pandas documentation_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:766
-# d79249c2315f466d9b13033791a33982
+# 2126a6fb2530496fb23c35094e89335e
 msgid "By reading the documentation and :code:`setup.py` we found that :code:`Pandas` depends on :code:`python-dateutil`, :code:`pytz`, and :code:`numpy`, :code:`numexpr`, and finally :code:`bottleneck`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:770
-# a9fb3f7f00d746d288e890b091f1aab3
+# defca001bd9e4e95bb41c4de4df96323
 msgid "Here is the completed :code:`Pandas` script:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:776
-# 9af4f6cf1e0d4d3c9beb2ffa14b7df33
+# dfab919873e34f9990c0fd9714b7fbf0
 msgid "It is quite important to declare all the dependencies of a Python package. Spack can \"activate\" Python packages to prevent the user from having to load each dependency module explictly. If a dependency is missed, Spack will be unable to properly activate the package and it will cause an issue. To learn more about extensions go to :ref:`cmd-spack-extensions`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:782
-# 7ac8335c09894e469337c09422f579d6
+# 2a911b1a50b0414a8858a9f8f049f8f3
 msgid "From this example, you can see that building Python modules is made easy through the :code:`PythonPackage` class."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:787
-# 19118507475b43e8a5d3ddee3909d0d8
+# 722f83bab8654ceebe820e5f4ec7f2ec
 msgid "Other Build Systems"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:789
-# 3178e1ad6d874d9aaa7d2052685cd2b2
+# 1c6a21ffab304e3e9b469d4eb1c26a9d
 msgid "Although we won't get in depth with any of the other build systems that Spack supports, it is worth mentioning that Spack does provide subclasses for the following build systems:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:793
-# 4027b71a747e43c2a6f150a4c04f0af9
+# a7d2c90e8f7044069088150839986fa9
 msgid ":code:`IntelPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:794
-# 8346d539a71c4b85b426b52350a042af
+# c8aac19193c94240b4df0b281dab17c6
 msgid ":code:`SconsPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:795
-# 45c1dbd221c7423ba08a51a217a9ddef
+# d3c55fb510c144d886dbf97ef7a7a99d
 msgid ":code:`WafPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:796
-# e4defcf4a2724526ae85cc8ae6ef21f8
+# ae386c51960b4cf7937aaeaa268cc0f8
 msgid ":code:`RPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:797
-# 074e7922c9da4b65b0f90da5f0d44ea4
+# 8cd675db7b2b40c091a39f7bdb715d6a
 msgid ":code:`PerlPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:798
-# 0c99f4c274f74ccebbfa71dfea66b84d
+# 74af075e4c3b438eb4c171c1ba919a3c
 msgid ":code:`QMakePackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:801
-# 71980820640b488d9bf8de4909e6939f
+# d1abdf650a6a43aeb65caeb276552c1f
 msgid "Each of these classes have their own abstractions to help assist in writing package files. For whatever doesn't fit nicely into the other build-systems, you can use the :code:`Package` class."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_buildsystems.rst:805
-# 5e60896bf7704a1fb1d6b77829166409
+# 20222ace8944401783b55f6222c58bfd
 msgid "Hopefully by now you can see how we aim to make packaging simple and robust through these classes. If you want to learn more about these build systems, check out :ref:`installation_procedure` in the Packaging Guide."
 msgstr ""
 
