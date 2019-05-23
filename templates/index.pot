@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/index.rst:13
+# f0d5785b94044b8ba4fcbfa58e87d41f
+msgid "Spack"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:17
+# 82a703673e6740758d5957283f3f6caf
+msgid "`These are docs for the Spack package manager. For sphere packing, see` `pyspack <https://pyspack.readthedocs.io>`_."
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:19
+# 420137d8208f4364aa47c64e56a3a9de
+msgid "Spack is a package management tool designed to support multiple versions and configurations of software on a wide variety of platforms and environments.  It was designed for large supercomputing centers, where many users and application teams share common installations of software on clusters with exotic architectures, using libraries that do not have a standard ABI.  Spack is non-destructive: installing a new version does not break existing installations, so many configurations can coexist on the same system."
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:28
+# af8af1ae2c724ac08842e4c5452b724b
+msgid "Most importantly, Spack is *simple*.  It offers a simple *spec* syntax so that users can specify versions and configuration options concisely.  Spack is also simple for package authors: package files are written in pure Python, and specs allow package authors to maintain a single file for many different builds of the same package."
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:34
+# 80b75a772cd64b82a403bb30571adad9
+msgid "See the :doc:`features` for examples and highlights."
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:36
+# a3ceb3932a9d4323b3bf19fa10c9ee69
+msgid "Get spack from the `github repository <https://github.com/spack/spack>`_ and install your first package:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:46
+# 75a45cc07e6c44a1a3b8b60814207b88
+msgid "If you're new to spack and want to start using it, see :doc:`getting_started`, or refer to the full manual below."
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:50
+# fe488fed9c63499f947527b93d52dd00
+msgid "Basics"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:61
+# 95940833415c4df5aec680fc5189bb5e
+msgid "Reference"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:77
+# 1ee3a29a2a4e4f59ab6e43c6660881e0
+msgid "Contributing"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:87
+# 007d4088e7f1464ab5db7c4ecd163532
+msgid "API Docs"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:96
+# 63c36fb9286645b5a0cc4712c506b7ea
+msgid "Indices and tables"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:98
+# b9122881851a4e58aecf9b805982b92b
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:99
+# 67021bc2238f40b793d995c52ec789a9
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:100
+# bfee9247113741098edb35835fbda2e0
+msgid ":ref:`search`"
+msgstr ""
+

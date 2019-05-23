@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/spack.cmd.modules.rst:2
+# f3cd505462794a94806a80b71ec2fd3c
+msgid "spack.cmd.modules package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.cmd.modules.rst:5
+# e683fd48ab7c4afb8cd7dc0d3661707d
+msgid "Submodules"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.cmd.modules.rst:8
+# 2c0938167bb740609143f8d625e90ed6
+msgid "spack.cmd.modules.dotkit module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.cmd.modules.rst:16
+# 41cc7bbe2bc240098b338478b479d650
+msgid "spack.cmd.modules.lmod module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/lmod.py:docstring of spack.cmd.modules.lmod.setdefault:1
+# 6bd7871393bf4828b5047bed6a1d48f8
+msgid "Set the default module file, when multiple are present"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.cmd.modules.rst:24
+# 8a17fe3226bb4c8fb62e5d11ffbb0011
+msgid "spack.cmd.modules.tcl module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.cmd.modules.rst:33
+# 959b2ce1a56040c79619fb799a09fb00
+msgid "Module contents"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules:1
+# 935787e5c666431fad1a13b2060e2fb3
+msgid "Implementation details of the ``spack module`` command."
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.MultipleSpecsMatch:1
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.NoSpecMatches:1
+# c22d7855272544ab83875be605aef957
+# d23413495585486da82124a2d70b0a1a
+msgid "Bases: :class:`Exception`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.MultipleSpecsMatch:1
+# 475c6cfe81334d9d80dd612154f6f196
+msgid "Raised when multiple specs match a constraint, in a context where this is not allowed."
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.NoSpecMatches:1
+# 8444e203b70941d59cce04126324005f
+msgid "Raised when no spec matches a constraint, in a context where this is not allowed."
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.callbacks:1
+# 8db53f2bc47640a69a2c165b5ac278ab
+msgid "Dictionary populated with the list of sub-commands. Each sub-command must be callable and accept 3 arguments:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.callbacks:4
+# b1a9c9b3d90347489b720c700cd308f9
+msgid "module_type: the type of module it refers to"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.callbacks:5
+# 2d9a9527a16442f9b9e1791f885683f5
+msgid "specs : the list of specs to be processed"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.callbacks:6
+# e1deed3641124a688a868debf70e59aa
+msgid "args : namespace containing the parsed command line arguments"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.find:1
+# 58bee028cad84f25a596797d32c7ed7d
+msgid "Returns the module file \"use\" name if there's a single match. Raises error messages otherwise."
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.loads:1
+# 70e26aa9fe1f4bad9a2dc471aa547836
+msgid "Prompt the list of modules associated with a list of specs"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.one_spec_or_raise:1
+# cf255c8ebb6f48ec9e2576c4814a0376
+msgid "Ensures exactly one spec has been selected, or raises the appropriate exception."
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.refresh:1
+# 1da2496bba594689ace622f426a52091
+msgid "Regenerates the module files for every spec in specs and every module type in module types."
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/modules/__init__.py:docstring of spack.cmd.modules.rm:1
+# ff3b82883420421291c28e1bd019b2b1
+msgid "Deletes the module files associated with every spec in specs, for every module type in module types."
+msgstr ""
+

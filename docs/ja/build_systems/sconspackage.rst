@@ -1,0 +1,1 @@
+../../../spack/lib/spack/docs/build_systems/sconspackage.rst

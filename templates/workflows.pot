@@ -1,0 +1,1083 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/workflows.rst:8
+# 4ef958c50e824f87a1252853b8376d44
+msgid "Workflows"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:10
+# ffc80b061f444564b6a9d770aba7e3fa
+msgid "The process of using Spack involves building packages, running binaries from those packages, and developing software that depends on those packages.  For example, one might use Spack to build the ``netcdf`` package, use ``spack load`` to run the ``ncdump`` binary, and finally, write a small C program to read/write a particular NetCDF file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:16
+# 285f4e3940dd4a27a286cd9772c889dc
+msgid "Spack supports a variety of workflows to suit a variety of situations and user preferences, there is no single way to do all these things. This chapter demonstrates different workflows that have been developed, pointing out the pros and cons of them."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:23
+# b4cc66fce7eb4c85be4e768f54a1095d
+msgid "Definitions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:25
+# 1aeb64eb032948239506d09b053eef58
+msgid "First some basic definitions."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:29
+# e593a812936b46f489bb78222251a94b
+msgid "Package, Concrete Spec, Installed Package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:31
+# 7984cd52ce414c54ad3b232fd1181aa5
+msgid "In Spack, a package is an abstract recipe to build one piece of software. Spack packages may be used to build, in principle, any version of that software with any set of variants.  Examples of packages include ``curl`` and ``zlib``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:36
+# 93729e0c4cc243c3800f4d4fcde6338f
+msgid "A package may be *instantiated* to produce a concrete spec; one possible realization of a particular package, out of combinatorially many other realizations.  For example, here is a concrete spec instantiated from ``curl``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:43
+# baf638534b46441ea58de22f80134a27
+msgid "Spack's core concretization algorithm generates concrete specs by instantiating packages from its repo, based on a set of \"hints\", including user input and the ``packages.yaml`` file.  This algorithm may be accessed at any time with the ``spack spec`` command."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:48
+# 2785d3b7394c4f7d9d87928221a178bf
+msgid "Every time Spack installs a package, that installation corresponds to a concrete spec.  Only a vanishingly small fraction of possible concrete specs will be installed at any one Spack site."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:54
+# 0016fb21588347fc964039025cf86fdc
+msgid "Consistent Sets"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:56
+# 9d0d9943ac2c4cebb8a1eb2bc6d39d05
+msgid "A set of Spack specs is said to be *consistent* if each package is only instantiated one way within it --- that is, if two specs in the set have the same package, then they must also have the same version, variant, compiler, etc.  For example, the following set is consistent:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:68
+# e1b4bba106b94b03bd79526b60e24b80
+msgid "The following set is not consistent:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:77
+# fb62c2ca3144482d9e88f0f90f81ffd1
+msgid "The compatibility of a set of installed packages determines what may be done with it.  It is always possible to ``spack load`` any set of installed packages, whether or not they are consistent, and run their binaries from the command line.  However, a set of installed packages can only be linked together in one binary if it is consistent."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:83
+# a9e3f8e5b7314246a22f5baeab9b9be5
+msgid "If the user produces a series of ``spack spec`` or ``spack load`` commands, in general there is no guarantee of consistency between them.  Spack's concretization procedure guarantees that the results of any *single* ``spack spec`` call will be consistent.  Therefore, the best way to ensure a consistent set of specs is to create a Spack package with dependencies, and then instantiate that package.  We will use this technique below."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:93
+# 40cba3299d6c4e92a704bbd369981e19
+msgid "Building Packages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:95
+# 8d2bfa22b61642609310e794633a4e21
+msgid "Suppose you are tasked with installing a set of software packages on a system in order to support one application -- both a core application program, plus software to prepare input and analyze output.  The required software might be summed up as a series of ``spack install`` commands placed in a script.  If needed, this script can always be run again in the future.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:112
+# cf550623c13346debcbd17921537e51e
+msgid "In most cases, this script will not correctly install software according to your specific needs: choices need to be made for variants, versions and virtual dependency choices may be needed.  It *is* possible to specify these choices by extending specs on the command line; however, the same choices must be specified repeatedly. For example, if you wish to use ``openmpi`` to satisfy the ``mpi`` dependency, then ``^openmpi`` will have to appear on *every* ``spack install`` line that uses MPI.  It can get repetitive fast."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:121
+# 26f1c1ed1d794876ad563e7b805f6eae
+msgid "Customizing Spack installation options is easier to do in the ``~/.spack/packages.yaml`` file.  In this file, you can specify preferred versions and variants to use for packages.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:148
+# a85da9865f224346a1f1810712bc028c
+msgid "This approach will work as long as you are building packages for just one application."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:153
+# 0225415f098c471cbdbf981e526b4e17
+msgid "Multiple Applications"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:155
+# 43a28eacc05d4d628a656736df69bbc6
+msgid "Suppose instead you're building multiple inconsistent applications. For example, users want package A to be built with ``openmpi`` and package B with ``mpich`` --- but still share many other lower-level dependencies.  In this case, a single ``packages.yaml`` file will not work.  Plans are to implement *per-project* ``packages.yaml`` files. In the meantime, one could write shell scripts to switch ``packages.yaml`` between multiple versions as needed, using symlinks."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:165
+# a81d4afdc4a744819bed94d2f9f07d5a
+msgid "Combinatorial Sets of Installs"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:167
+# 6bdb0a8cfe404a1fb0bd2d63879a2b7c
+msgid "Suppose that you are now tasked with systematically building many incompatible versions of packages.  For example, you need to build ``petsc`` 9 times for 3 different MPI implementations on 3 different compilers, in order to support user needs.  In this case, you will need to either create 9 different ``packages.yaml`` files; or more likely, create 9 different ``spack install`` command lines with the correct options in the spec.  Here is a real-life example of this kind of usage:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:215
+# 048c50ad58eb4b278b3675e4aee27719
+msgid "Running Binaries from Packages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:217
+# ae66f51b301b4c8dbeb15ee0b27a4f53
+msgid "Once Spack packages have been built, the next step is to use them.  As with building packages, there are many ways to use them, depending on the use case."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:223
+# ba6a9a3874514f66bc2eabbed761cb2b
+msgid "Find and Run"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:225
+# c5e960897355433eaab371d3f19e102e
+msgid "The simplest way to run a Spack binary is to find it and run it! In many cases, nothing more is needed because Spack builds binaries with RPATHs.  Spack installation directories may be found with ``spack location --install-dir`` commands.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:235
+# 6577fb0c00064a0386a6735d447e4922
+msgid "This gives the root of the Spack package; relevant binaries may be found within it.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:243
+# b24bc4dd116749d08b8a528a6735c788
+msgid "Standard UNIX tools can find binaries as well.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:250
+# b621cfb1463d488683256e7a7fb809b3
+msgid "These methods are suitable, for example, for setting up build processes or GUIs that need to know the location of particular tools. However, other more powerful methods are generally preferred for user environments."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:258
+# 31db5c10bb7a45eb88f595d7ddf40cbe
+msgid "Spack-Generated Modules"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:260
+# 0ba0930e0f294849924c1c18dbe43bd6
+msgid "Suppose that Spack has been used to install a set of command-line programs, which users now wish to use.  One can in principle put a number of ``spack load`` commands into ``.bashrc``, for example, to load a set of Spack-generated modules:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:273
+# 961338344c2e48dbb86499566c1efb21
+msgid "Although simple load scripts like this are useful in many cases, they have some drawbacks:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:276
+# db3b31a1ecf24442895b29adf41fae6d
+msgid "The set of modules loaded by them will in general not be consistent.  They are a decent way to load commands to be called from command shells.  See below for better ways to assemble a consistent set of packages for building application programs."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:281
+# f4671875e4b845c3a237528c73e3942f
+msgid "The ``spack spec`` and ``spack install`` commands use a sophisticated concretization algorithm that chooses the \"best\" among several options, taking into account ``packages.yaml`` file. The ``spack load`` and ``spack module tcl loads`` commands, on the other hand, are not very smart: if the user-supplied spec matches more than one installed package, then ``spack module tcl loads`` will fail. This may change in the future.  For now, the workaround is to be more specific on any ``spack module tcl loads`` lines that fail."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:293
+# b3fa1db255024e96b40b27734ddead72
+msgid "Generated Load Scripts"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:295
+# 86abb1ae01544f7898da6f1fdfa355d6
+msgid "Another problem with using `spack load` is, it is slow; a typical user environment could take several seconds to load, and would not be appropriate to put into ``.bashrc`` directly.  It is preferable to use a series of ``spack module tcl loads`` commands to pre-compute which modules to load.  These can be put in a script that is run whenever installed Spack packages change.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:318
+# 5a45f6edd2de438b8fb4d0c9c12a067f
+msgid "The output of this file is written in ``~/env/spackenv``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:347
+# f5bca7ce09fa479badbc3523530ae872
+msgid "Users may now put ``source ~/env/spackenv`` into ``.bashrc``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:351
+# de9bb99bd5ef4cf0a32afc367cd1701c
+msgid "Some module systems put a prefix on the names of modules created by Spack.  For example, that prefix is ``linux-SuSE11-x86_64/`` in the above case.  If a prefix is not needed, you may omit the ``--prefix`` flag from ``spack module tcl loads``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:359
+# 878204bd3f92481a9e1512a57115a0a4
+msgid "Transitive Dependencies"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:361
+# e9f9f746cbe340278c444cb697ec6a97
+msgid "In the script above, each ``spack module tcl loads`` command generates a *single* ``module load`` line.  Transitive dependencies do not usually need to be loaded, only modules the user needs in ``$PATH``.  This is because Spack builds binaries with RPATH.  Spack's RPATH policy has some nice features:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:367
+# e0a3659e33d54a2da498e6427d614826
+msgid "Modules for multiple inconsistent applications may be loaded simultaneously.  In the above example (Multiple Applications), package A and package B can coexist together in the user's $PATH, even though they use different MPIs."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:372
+# c54cd77893f1486090780dcc38324bed
+msgid "RPATH eliminates a whole class of strange errors that can happen in non-RPATH binaries when the wrong ``LD_LIBRARY_PATH`` is loaded."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:376
+# 63bb693cc93d422fad6fc1db5f4dcd1c
+msgid "Recursive module systems such as LMod are not necessary."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:378
+# 646c050ce4534ed0ab42421534a26222
+msgid "Modules are not needed at all to execute binaries.  If a path to a binary is known, it may be executed.  For example, the path for a Spack-built compiler can be given to an IDE without requiring the IDE to load that compiler's module."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:383
+# cf4036ad4d424f0d94eaaa895bc136cf
+msgid "Unfortunately, Spack's RPATH support does not work in all case.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:385
+# 17b381982a514c8a99d6a6633691a409
+msgid "Software comes in many forms --- not just compiled ELF binaries, but also as interpreted code in Python, R, JVM bytecode, etc. Those systems almost universally use an environment variable analogous to ``LD_LIBRARY_PATH`` to dynamically load libraries."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:390
+# 72adc1888e554a0b9159090058d85726
+msgid "Although Spack generally builds binaries with RPATH, it does not currently do so for compiled Python extensions (for example, ``py-numpy``).  Any libraries that these extensions depend on (``blas`` in this case, for example) must be specified in the ``LD_LIBRARY_PATH``.`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:396
+# 466025401d1c43c1951a8fbfa5cd18b5
+msgid "In some cases, Spack-generated binaries end up without a functional RPATH for no discernible reason."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:399
+# 6ea0902b117247b3ad1c8a6ee789a0a0
+msgid "In cases where RPATH support doesn't make things \"just work,\" it can be necessary to load a module's dependencies as well as the module itself.  This is done by adding the ``--dependencies`` flag to the ``spack module tcl loads`` command.  For example, the following line, added to the script above, would be used to load SciPy, along with Numpy, core Python, BLAS/LAPACK and anything else needed:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:412
+# 39ce6320e8dd4482bc9029b4866be751
+msgid "Dummy Packages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:414
+# 972c813ffbd841c39bf21ad37c7a370a
+msgid "As an alternative to a series of ``module load`` commands, one might consider dummy packages as a way to create a *consistent* set of packages that may be loaded as one unit.  The idea here is pretty simple:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:419
+# 7a1799faceb14086adf741cfe76ad34f
+msgid "Create a package (say, ``mydummy``) with no URL and no ``install()`` method, just dependencies."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:422
+# 1449136d7db642d1b8e39726f8d31dc7
+msgid "Run ``spack install mydummy`` to install."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:424
+# 154f244810824d7b9f61d5e5f5917000
+msgid "An advantage of this method is the set of packages produced will be consistent.  This means that you can reliably build software against it.  A disadvantage is the set of packages will be consistent; this means you cannot load up two applications this way if they are not consistent with each other."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:434
+# be31c8b45da3451189da317dc5d6d094
+msgid "Filesystem Views"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:436
+# ce5b5286c4c64c5c938a299031bbe0d9
+msgid "Filesystem views offer an alternative to environment modules, another way to assemble packages in a useful way and load them into a user's environment."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:440
+# 94f0c2b5d85f4cfea3b4d00b10720c06
+msgid "A single-prefix filesystem view is a single directory tree that is the union of the directory hierarchies of a number of installed packages; it is similar to the directory hiearchy that might exist under ``/usr/local``.  The files of the view's installed packages are brought into the view by symbolic or hard links, referencing the original Spack installation."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:447
+# 9641e3dd66e845cc9c143b8e0620e397
+msgid "A combinatorial filesystem view can contain more software than a single-prefix view. Combinatorial filesystem views are created by defining a projection for each spec or set of specs. The syntax for this will be discussed in the section for the ``spack view`` command under `adding_projections_to_views`_."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:453
+# 7f9c8f7d79e54fdd8c5b4909a3bd8fb3
+msgid "The projection for a spec or set of specs specifies the naming scheme for the directory structure under the root of the view into which the package will be linked. For example, the spec ``zlib@1.2.8%gcc@4.4.7`` could be projected to ``MYVIEW/zlib-1.2.8-gcc``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:458
+# 6c969a06344d478bbb654d971a5f2c7e
+msgid "When software is built and installed, absolute paths are frequently \"baked into\" the software, making it non-relocatable.  This happens not just in RPATHs, but also in shebangs, configuration files, and assorted other locations."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:463
+# ba10e3f51c674c33a837d1e3934755e4
+msgid "Therefore, programs run out of a Spack view will typically still look in the original Spack-installed location for shared libraries and other resources.  This behavior is not easily changed; in general, there is no way to know where absolute paths might be written into an installed package, and how to relocate it.  Therefore, the original Spack tree must be kept in place for a filesystem view to work, even if the view is built with hardlinks."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:477
+# 6743f67b660f4f21a34caa51a4589047
+msgid "``spack view``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:479
+# f5c99d6c0bd147548c77b770998e7dd2
+msgid "A filesystem view is created, and packages are linked in, by the ``spack view`` command's ``symlink`` and ``hardlink`` sub-commands.  The ``spack view remove`` command can be used to unlink some or all of the filesystem view."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:484
+# 0092afb6ca8c4380863b5a3799cfa5df
+msgid "The following example creates a filesystem view based on an installed ``cmake`` package and then removes from the view the files in the ``cmake`` package while retaining its dependencies."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:512
+# 66359609978b446c9a0d54928570f6ea
+msgid "If the set of packages being included in a view is inconsistent, then it is possible that two packages will provide the same file.  Any conflicts of this type are handled on a first-come-first-served basis, and a warning is printed."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:519
+# 1998ea76fd3b4fe186d931daf2894ed0
+msgid "When packages are removed from a view, empty directories are purged."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:526
+# d650d2b4e2e7440980cee2948d008c85
+msgid "Controlling View Projections"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:528
+# 5a40fd5a48fd4d18a2b4f8a94b116965
+msgid "The default projection into a view is to link every package into the root of the view. This can be changed by adding a ``projections.yaml`` configuration file to the view. The projection configuration file for a view located at ``/my/view`` is stored in ``/my/view/.spack/projections.yaml``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:534
+# 175a3ba2a13e43df9b2fb7e57ccb159a
+msgid "When creating a view, the projection configuration file can also be specified from the command line using the ``--projection-file`` option to the ``spack view`` command."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:538
+# 1627bfb2a5734e5f989ef21b46bc6985
+msgid "The projections configuration file is a mapping of partial specs to spec format strings, as shown in the example below."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:548
+# d44f7e526f50478091233ebd67d980fb
+msgid "The entries in the projections configuration file must all be either specs or the keyword ``all``. For each spec, the projection used will be the first non-``all`` entry that the spec satisfies, or ``all`` if there is an entry for ``all`` and no other entry is satisfied by the spec. Where the keyword ``all`` appears in the file does not matter. Given the example above, any spec satisfying ``zlib@1.2.8`` will be linked into ``/my/view/zlib-1.2.8/``, any spec satisfying ``hdf5@1.8.10+mpi %gcc@4.9.3 ^mvapich2@2.2`` will be linked into ``/my/view/hdf5-1.8.10/mvapich2-2.2-gcc-4.9.3``, and any spec satisfying ``hdf5@1.8.10~mpi %gcc@4.9.3`` will be linked into ``/my/view/hdf5-1.8.10/gcc-4.9.3``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:560
+# 36c6485c3d6248708ad96291c8d9acc6
+msgid "If the keyword ``all`` does not appear in the projections configuration file, any spec that does not satisfy any entry in the file will be linked into the root of the view as in a single-prefix view. Any entries that appear below the keyword ``all`` in the projections configuration file will not be used, as all specs will use the projection under ``all`` before reaching those entries."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:569
+# 358e616ffab7441b80ec114e368cf727
+msgid "Fine-Grain Control"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:571
+# fec77170b7ee413bb6cca3d5de6f1f34
+msgid "The ``--exclude`` and ``--dependencies`` option flags allow for fine-grained control over which packages and dependencies do or not get included in a view.  For example, suppose you are developing the ``appsy`` package.  You wish to build against a view of all ``appsy`` dependencies, but not ``appsy`` itself:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:581
+# 706d7c803f704d1abef5ddea09bc8dbb
+msgid "Alternately, you wish to create a view whose purpose is to provide binary executables to end users.  You only need to include applications they might want, and not those applications' dependencies.  In this case, you might use:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:593
+# 87378480c0e14f11b8027dec4e64ad54
+msgid "Hybrid Filesystem Views"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:595
+# 5eb0996754a34bff8f95d7f021e3d87d
+msgid "Although filesystem views are usually created by Spack, users are free to add to them by other means.  For example, imagine a filesystem view, created by Spack, that looks something like:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:604
+# 5082847a7e6a4dc4abc9d2b681f2fde5
+msgid "Now, the user may add to this view by non-Spack means; for example, by running a classic install script.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:615
+# df8439f3bb7843ad9728b731f943b592
+msgid "The result is a hybrid view:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:624
+# 80205781636e4170ada517d56b506eb5
+msgid "In this case, real files coexist, interleaved with the \"view\" symlinks.  At any time one can delete ``/path/to/MYVIEW`` or use ``spack view`` to manage it surgically.  None of this will affect the real Spack install area."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:631
+# 2f2d2341c216462382e8b9a6313568ef
+msgid "Global Activations"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:633
+# 4abd55c239f5488ba2d45268869a2ec0
+msgid ":ref:`cmd-spack-activate` may be used as an alternative to loading Python (and similar systems) packages directly or creating a view. If extensions are globally activated, then ``spack load python`` will also load all the extensions activated for the given ``python``. This reduces the need for users to load a large number of modules."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:639
+# de30506768da4ebdb09876508f55b708
+msgid "However, Spack global activations have two potential drawbacks:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:641
+# f86db3a05ed7496c97c2f875e44f0d15
+msgid "Activated packages that involve compiled C extensions may still need their dependencies to be loaded manually.  For example, ``spack load openblas`` might be required to make ``py-numpy`` work."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:646
+# 7f99f963aee34a91a3248ed2dfa96ec3
+msgid "Global activations \"break\" a core feature of Spack, which is that multiple versions of a package can co-exist side-by-side.  For example, suppose you wish to run a Python package in two different environments but the same basic Python --- one with ``py-numpy@1.7`` and one with ``py-numpy@1.8``.  Spack extensions will not support this potential debugging use case."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:655
+# 11e63852a3f64fdc91c1c4317db74654
+msgid "Discussion: Running Binaries"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:657
+# 5224fafb810141a098b1278286e5ed3c
+msgid "Modules, extension packages and filesystem views are all ways to assemble sets of Spack packages into a useful environment.  They are all semantically similar, in that conflicting installed packages cannot simultaneously be loaded, activated or included in a view."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:662
+# 1e661df6d72046d884912398bd276fb1
+msgid "With all of these approaches, there is no guarantee that the environment created will be consistent.  It is possible, for example, to simultaneously load application A that uses OpenMPI and application B that uses MPICH.  Both applications will run just fine in this inconsistent environment because they rely on RPATHs, not the environment, to find their dependencies."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:669
+# 9e04c2918c0f4980a655996d64b57ed1
+msgid "In general, environments set up using modules vs. views will work similarly.  Both can be used to set up ephemeral or long-lived testing/development environments.  Operational differences between the two approaches can make one or the other preferable in certain environments:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:675
+# 93c3c544bf3b488fa5f22b0ad35c4d4c
+msgid "Filesystem views do not require environment module infrastructure. Although Spack can install ``environment-modules``, users might be hostile to its use.  Filesystem views offer a good solution for sysadmins serving users who just \"want all the stuff I need in one place\" and don't want to hear about Spack."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:681
+# a9e0db02a742475baf9683746249d6a0
+msgid "Although modern build systems will find dependencies wherever they might be, some applications with hand-built make files expect their dependencies to be in one place.  One common problem is makefiles that assume that ``netcdf`` and ``netcdf-fortran`` are installed in the same tree.  Or, one might use an IDE that requires tedious configuration of dependency paths; and it's easier to automate that administration in a view-building script than in the IDE itself. For all these cases, a view will be preferable to other ways to assemble an environment."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:691
+# 6efb823de57b449394b60c9f2dac2dff
+msgid "On systems with I-node quotas, modules might be preferable to views and extension packages."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:694
+# 88fe11c911b342fd9b38b58c5814f264
+msgid "Views and activated extensions maintain state that is semantically equivalent to the information in a ``spack module tcl loads`` script. Administrators might find things easier to maintain without the added \"heavyweight\" state of a view."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:701
+# 710175774d814fcab13b85815004659d
+msgid "Developing Software with Spack"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:703
+# 85bc97fa2c444efcb80496c8041df5c6
+msgid "For any project, one needs to assemble an environment of that application's dependencies.  You might consider loading a series of modules or creating a filesystem view.  This approach, while obvious, has some serious drawbacks:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:708
+# 19fafc11b8bd4409b5de0fc092369c99
+msgid "There is no guarantee that an environment created this way will be consistent.  Your application could end up with dependency A expecting one version of MPI, and dependency B expecting another. The linker will not be happy..."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:713
+# 63c365c5c7334a89b6c4a76397163dbc
+msgid "Suppose you need to debug a package deep within your software DAG. If you build that package with a manual environment, then it becomes difficult to have Spack auto-build things that depend on it.  That could be a serious problem, depending on how deep the package in question is in your dependency DAG."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:719
+# c48d3d29a47b488cbf37f4ed11a32e5f
+msgid "At its core, Spack is a sophisticated concretization algorithm that matches up packages with appropriate dependencies and creates a *consistent* environment for the package it's building.  Writing a list of ``spack load`` commands for your dependencies is at least as hard as writing the same list of ``depends_on()`` declarations in a Spack package.  But it makes no use of Spack concretization and is more error-prone."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:727
+# 6c4104359c044c3a92423676009abe32
+msgid "Spack provides an automated, systematic way not just to find a packages's dependencies --- but also to build other packages on top.  Any Spack package can become a dependency for another Spack package, offering a powerful vision of software re-use.  If you build your package A outside of Spack, then your ability to use it as a building block for other packages in an automated way is diminished: other packages depending on package A will not be able to use Spack to fulfill that dependency."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:736
+# f824fb0eda3e464194f6cfe5855c5026
+msgid "If you are reading this manual, you probably love Spack.  You're probably going to write a Spack package for your software so prospective users can install it with the least amount of pain. Why should you go to additional work to find dependencies in your development environment?  Shouldn't Spack be able to help you build your software based on the package you've already written?"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:743
+# 64466a04f2ac42f2988705cf489e13a9
+msgid "In this section, we show how Spack can be used in the software development process to greatest effect, and how development packages can be seamlessly integrated into the Spack ecosystem.  We will show how this process works by example, assuming the software you are creating is called ``mylib``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:751
+# f45e289fd2034cfeadd65d8f902e8995
+msgid "Write the CMake Build"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:753
+# a501bacb9c4b44dbb322aa7df69c43e0
+msgid "For now, the techniques in this section only work for CMake-based projects, although they could be easily extended to other build systems in the future.  We will therefore assume you are using CMake to build your project."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:758
+# d68fb61073444bf6a7dc6557b2424da7
+msgid "The ``CMakeLists.txt`` file should be written as normal.  A few caveats:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:760
+# 990a819c508b4e5a9dd88c4cca9de793
+msgid "Your project should produce binaries with RPATHs.  This will ensure that they work the same whether built manually or automatically by Spack.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:792
+# cb7c3e87568a4ca7b6c64ad3f1cdc2a8
+msgid "Spack provides a CMake variable called ``SPACK_TRANSITIVE_INCLUDE_PATH``, which contains the ``include/`` directory for all of your project's transitive dependencies.  It can be useful if your project ``#include``s files from package B, which ``#include`` files from package C, but your project only lists project B as a dependency.  This works in traditional single-tree build environments, in which B and C's include files live in the same place.  In order to make it work with Spack as well, you must add the following to ``CMakeLists.txt``.  It will have no effect when building without Spack:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:811
+# 63880d75a646432284ab97aa5960fce2
+msgid "Note that this feature is controversial and could break with future versions of GNU ld.  The best practice is to make sure anything you ``#include`` is listed as a dependency in your CMakeLists.txt (and Spack package)."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:820
+# 3f4ac7566ab4491dbe7e28599b4e97b6
+msgid "Write the Spack Package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:822
+# 4bcc3c27f8764ffd9be29e6ceedc5fad
+msgid "The Spack package also needs to be written, in tandem with setting up the build (for example, CMake).  The most important part of this task is declaring dependencies.  Here is an example of the Spack package for the ``mylib`` package (ellipses for brevity):"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:861
+# 730d9593a9104f569461d67e7e8d23a4
+msgid "This is a standard Spack package that can be used to install ``mylib`` in a production environment.  The list of dependencies in the Spack package will generally be a repeat of the list of CMake dependencies.  This package also has some features that allow it to be used for development:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:867
+# db6dbe26c0844b018e7f9020d7c15c1f
+msgid "It subclasses ``CMakePackage`` instead of ``Package``.  This eliminates the need to write an ``install()`` method, which is defined in the superclass.  Instead, one just needs to write the ``configure_args()`` method.  That method should return the arguments needed for the ``cmake`` command (beyond the standard CMake arguments, which Spack will include already).  These arguments are typically used to turn features on/off in the build."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:875
+# d436fa2daea9438b8ebd494c82ea6929
+msgid "It specifies a non-checksummed version ``develop``.  Running ``spack install mylib@develop`` the ``@develop`` version will install the latest version off the develop branch.  This method of download is useful for the developer of a project while it is in active development; however, it should only be used by developers who control and trust the repository in question!"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:882
+# b47bfd8df6434e10bea48fdb599c3cb1
+msgid "The ``url``, ``url_for_version()`` and ``homepage`` attributes are not used in development.  Don't worry if you don't have any, or if they are behind a firewall."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:888
+# 7e487dbd70b14adcabcde08b9b1e2d99
+msgid "Build with Spack"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:890
+# d29f451ef6794d8fa1ec04713c48b5bc
+msgid "Now that you have a Spack package, you can use Spack to find its dependencies automatically.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:898
+# ff7ee97e422f4b0c99bd538457e5f744
+msgid "The result will be a file ``spconfig.py`` in the top-level ``mylib/`` directory.  It is a short script that calls CMake with the dependencies and options determined by Spack --- similar to what happens in ``spack install``, but now written out in script form. From a developer's point of view, you can think of ``spconfig.py`` as a stand-in for the ``cmake`` command."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:907
+# 88170abd2d674a7e9550f71250dc3fc7
+msgid "You can invent any \"version\" you like for the ``spack setup`` command."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:912
+# 41a0ea42dfb847ff9c963835691762f2
+msgid "Although ``spack setup`` does not build your package, it does create and install a module file, and mark in the database that your package has been installed.  This can lead to errors, of course, if you don't subsequently install your package. Also... you will need to ``spack uninstall`` before you run ``spack setup`` again."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:920
+# 796975da90fc410081d64fdd9b18473f
+msgid "You can now build your project as usual with CMake:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:929
+# c04e89fb60784a9da22d190de107a6f7
+msgid "Once your ``make install`` command is complete, your package will be installed, just as if you'd run ``spack install``.  Except you can now edit, re-build and re-install as often as needed, without checking into Git or downloading tarballs."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:936
+# c70d66050b5b4044bfb5c5828d45ba4b
+msgid "The build you get this way will be *almost* the same as the build from ``spack install``.  The only difference is, you will not be using Spack's compiler wrappers.  This difference has not caused problems in our experience, as long as your project sets RPATHs as shown above.  You DO use RPATHs, right?"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:944
+# f3ad43952bd345d08f621a5a5bd12220
+msgid "Build Other Software"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:946
+# b8d58aa38bde44639da672f0cbbcec4f
+msgid "Now that you've built ``mylib`` with Spack, you might want to build another package that depends on it --- for example, ``myapp``.  This is accomplished easily enough:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:954
+# d3d4b6eaecfe4caf8ccf7e8e5b903b4d
+msgid "Note that auto-built software has now been installed *on top of* manually-built software, without breaking Spack's \"web.\"  This property is useful if you need to debug a package deep in the dependency hierarchy of your application.  It is a *big* advantage of using ``spack setup`` to build your package's environment."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:960
+# b949337350994fc2a7d1ee76fea7f7ad
+msgid "If you feel your software is stable, you might wish to install it with ``spack install`` and skip the source directory.  You can just use, for example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:972
+# a03847a1f40d4ef4a114cb0a1331a915
+msgid "Release Your Software"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:974
+# 0fe4a8e94d684764a8098c59d597ba3c
+msgid "You are now ready to release your software as a tarball with a numbered version, and a Spack package that can build it.  If you're hosted on GitHub, this process will be a bit easier."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:978
+# e78a29c8f635424daad391d944829287
+msgid "Put tag(s) on the version(s) in your GitHub repo you want to be release versions.  For example, a tag ``v0.1.0`` for version 0.1.0."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:981
+# a26895098e3349e3b94c4274d96053c0
+msgid "Set the ``url`` in your ``package.py`` to download a tarball for the appropriate version.  GitHub will give you a tarball for any commit in the repo, if you tickle it the right way.  For example:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:989
+# a6a51efe8528410eaf89390d3d08c177
+msgid "Use Spack to determine your version's hash, and cut'n'paste it into your ``package.py``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1005
+# 7186cdf1c05e4793b5d203d4fe92813d
+msgid "You should now be able to install released version 0.1.2 of your package with:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1011
+# 95f1003c6cd34681abda573bf1245d07
+msgid "There is no need to remove the `develop` version from your package. Spack concretization will always prefer numbered version to non-numeric versions.  Users will only get it if they ask for it."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1017
+# da55291b94614370b2af304a6b16c108
+msgid "Distribute Your Software"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1019
+# 32d76340dcb14918bf19fe9b5c26e113
+msgid "Once you've released your software, other people will want to build it; and you will need to tell them how.  In the past, that has meant a few paragraphs of prose explaining which dependencies to install.  But now you use Spack, and those instructions are written in executable Python code.  But your software has many dependencies, and you know Spack is the best way to install it:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1026
+# 835b64d54f194bcfb0e19c595937ff4b
+msgid "First, you will want to fork Spack's ``develop`` branch.  Your aim is to provide a stable version of Spack that you KNOW will install your software.  If you make changes to Spack in the process, you will want to submit pull requests to Spack core."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1031
+# 4171ed7f698a45ee8b553c17af12c941
+msgid "Add your software's ``package.py`` to that fork.  You should submit a pull request for this as well, unless you don't want the public to know about your software."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1035
+# 6ab4409f5079485788e20995f86853a7
+msgid "Prepare instructions that read approximately as follows:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1037
+# 11874e620e6c439c8ba194ec4b93face
+msgid "Download Spack from your forked repo."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1039
+# 08aa0564b8084ae09be4328b01ae20ea
+msgid "Install Spack; see :ref:`getting_started`."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1041
+# f6c5e8bb5ade4bcaae1b490d9ab95b1e
+msgid "Set up an appropriate ``packages.yaml`` file.  You should tell your users to include in this file whatever versions/variants are needed to make your software work correctly (assuming those are not already in your ``packages.yaml``)."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1046
+# 6cb17d7476e8482b9e2a4e1a1fa02ec5
+msgid "Run ``spack install mylib``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1048
+# ed4103083a1d4067bf8ed0c3f23a1fa3
+msgid "Run this script to generate the ``module load`` commands or filesystem view needed to use this software."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1051
+# 50f3a262725c4e46aad232cc75a122da
+msgid "Be aware that your users might encounter unexpected bootstrapping issues on their machines, especially if they are running on older systems.  The :ref:`getting_started` section should cover this, but there could always be issues."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1058
+# e2ba2e109cb54e39a76b2a01d67d906c
+msgid "Other Build Systems"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1060
+# 3cacf9653fc04289935f46922d1072b9
+msgid "``spack setup`` currently only supports CMake-based builds, in packages that subclass ``CMakePackage``.  The intent is that this mechanism should support a wider range of build systems; for example, GNU Autotools.  Someone well-versed in Autotools is needed to develop this patch and test it out."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1066
+# 410a09e738cb4f7e85b58a949661f084
+msgid "Python Distutils is another popular build system that should get ``spack setup`` support.  For non-compiled languages like Python, ``spack diy`` may be used.  Even better is to put the source directory directly in the user's ``PYTHONPATH``.  Then, edits in source files are immediately available to run without any install process at all!"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1074
+# 00ae309c3222480aaf04a6059fb739ae
+msgid "Conclusion"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1076
+# 040a79e81a184c188b77fb0f8978a88c
+msgid "The ``spack setup`` development workflow provides better automation, flexibility and safety than workflows relying on environment modules or filesystem views.  However, it has some drawbacks:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1080
+# 7a26726f825c4e7cb328dde388f9a7aa
+msgid "It currently works only with projects that use the CMake build system.  Support for other build systems is not hard to build, but will require a small amount of effort for each build system to be supported.  It might not work well with some IDEs."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1085
+# 2b14a3833dbe462f856ae0b8925ba2f5
+msgid "It only works with packages that sub-class ``StagedPackage``. Currently, most Spack packages do not.  Converting them is not hard; but must be done on a package-by-package basis."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1089
+# 5a343dffa9c942a897163a8d94d7bded
+msgid "It requires that users are comfortable with Spack, as they integrate Spack explicitly in their workflow.  Not all users are willing to do this."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1095
+# 83d35de55d3a48069b7a34dcbfc2e2ab
+msgid "Using Spack on Travis-CI"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1097
+# 1080036846114c9dbc690c68982136a2
+msgid "Spack can be deployed as a provider for userland software in `Travis-CI <https://http://travis-ci.org>`_."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1100
+# 3e22e6c065014579b3178ee28dd1ab8b
+msgid "A starting-point for a ``.travis.yml`` file can look as follows. It uses `caching <https://docs.travis-ci.com/user/caching/>`_ for already built environments, so make sure to clean the Travis cache if you run into problems."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1105
+# 09e7053d50b147a3b1e10dac12735bd8
+msgid "The main points that are implemented below:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1107
+# bde3155ed9f6496da18a22f45fd3dd5c
+msgid "Travis is detected as having up to 34 cores available, but only 2 are actually allocated for the user. We limit the parallelism of the spack builds in the config. (The Travis yaml parser is a bit buggy on the echo command.)"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1112
+# 7421d343eb0a49c0bccf4aa9203bc3db
+msgid "Builds over 10 minutes need to be prefixed with ``travis_wait``. Alternatively, generate output once with ``spack install -v``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1115
+# cce4324bae27443f9c4dd0a7b02849c7
+msgid "Travis builds are non-interactive. This prevents using bash aliases and functions for modules. We fix that by sourcing ``/etc/profile`` first (or running everything in a subshell with ``bash -l -c '...'``)."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1175
+# ed99d4368ff44163a36a4fd5151c722b
+msgid "Using Spack to Create Docker Images"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1177
+# 17da5f720a6f42feac2fd6cb2ff0ed8a
+msgid "Spack can be the ideal tool to set up images for Docker (and Singularity)."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1179
+# 68e06552e6b14e00a7d7de9b9079597c
+msgid "An example ``Dockerfile`` is given below, downloading the latest spack version."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1182
+# 78ae8f2c23c548799fa55e474229bc20
+msgid "The following functionality is prepared:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1184
+# a5014e6fdab749c38d369d83ed8a30d8
+msgid "Base image: the example starts from a minimal ubuntu."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1186
+# 29084cdc9cd148c188a3b6a762f6449c
+msgid "Installing as root: docker images are usually set up as root. Since some autotools scripts might complain about this being unsafe, we set ``FORCE_UNSAFE_CONFIGURE=1`` to avoid configure errors."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1190
+# 7f89ab73c6b2480792d5106a46903e83
+msgid "Pre-install the spack dependencies, including modules from the packages. This avoids needing to build those from scratch via ``spack bootstrap``. Package installs are followed by a clean-up of the system package index, to avoid outdated information and it saves space."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1195
+# b77aafe1c24449259f4d41e5d66fc7e7
+msgid "Install spack in ``/usr/local``. Add ``setup-env.sh`` to profile scripts, so commands in *login* shells can use the whole spack functionality, including modules."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1199
+# 21fa8344a353494f96a0818c8cb61c66
+msgid "Install an example package (``tar``). As with system package managers above, ``spack install`` commands should be concatenated with a ``&& spack clean -a`` in order to keep image sizes small."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1203
+# f30c5707cf2140b8b4507159bc8ec2a6
+msgid "Add a startup hook to an *interactive login shell* so spack modules will be usable."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1206
+# fb538371adb74e40b0707f1c200e4a35
+msgid "In order to build and run the image, execute:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1267
+# 8ac3eda9b5a7461287e27de049c46fbb
+msgid "Best Practices"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1271
+# 4f9e670c9f374f58b26c6c9bfd0e6765
+msgid "MPI"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1272
+# fb1f0c0f7ea348259e007d8f1a4442a6
+msgid "Due to the dependency on Fortran for OpenMPI, which is the spack default implementation, consider adding ``gfortran`` to the ``apt-get install`` list."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1275
+# 3c1e8a2cc2704453833c18004266aceb
+msgid "Recent versions of OpenMPI will require you to pass ``--allow-run-as-root`` to your ``mpirun`` calls if started as root user inside Docker."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1278
+# f8ac2890c098463681d2fe1389ebe872
+msgid "For execution on HPC clusters, it can be helpful to import the docker image into Singularity in order to start a program with an *external* MPI. Otherwise, also add ``openssh-server`` to the ``apt-get install`` list."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1284
+# 83acb47d75714976b6501db70d09f8b5
+msgid "CUDA"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1285
+# 3b11676b40a049a195027fe4478cf092
+msgid "Starting from CUDA 9.0, Nvidia provides minimal CUDA images based on Ubuntu. Please see `their instructions <https://hub.docker.com/r/nvidia/cuda/>`_. Avoid double-installing CUDA by adding, e.g."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1298
+# 795ea9e7162449b2b52e4dc342a54788
+msgid "to your ``packages.yaml``. Then ``COPY`` in that file into the image as in the example above."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1301
+# e294e85a2cb64fac9d66aaa087732ac5
+msgid "Users will either need ``nvidia-docker`` or e.g. Singularity to *execute* device kernels."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1306
+# c2257d9f6e8441c88d534b5e5e375c9f
+msgid "Singularity"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1307
+# 7eec5e7ad6854e06af0e7ad9cdff32cc
+msgid "Importing and running the image created above into `Singularity <http://singularity.lbl.gov/>`_ works like a charm. Just use the `docker bootstraping mechanism <http://singularity.lbl.gov/quickstart#bootstrap-recipes>`_:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1321
+# ceba6ef46a66494c9a87876d543eb19e
+msgid "Docker for Development"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1323
+# 9e45e78113114476a77043c0d44a667d
+msgid "For examples of how we use docker in development, see :ref:`docker_for_developers`."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1328
+# 96fa2f986e8e48ef971cd5ddb7ca6c91
+msgid "Docker on Windows and OSX"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1330
+# 9488f2c747de4f2ab257175739791037
+msgid "On Mac OS and Windows, docker runs on a hypervisor that is not allocated much memory by default, and some spack packages may fail to build due to lack of memory. To work around this issue, consider configuring your docker installation to use more of your host memory. In some cases, you can also ease the memory pressure on parallel builds by limiting the parallelism in your config.yaml."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1343
+# 6f4ba0c4f58f42c08153f91a41687276
+msgid "Upstream Bug Fixes"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1345
+# 5d40021671a547d783a7250aaf36388b
+msgid "It is not uncommon to discover a bug in an upstream project while trying to build with Spack.  Typically, the bug is in a package that serves a dependency to something else.  This section describes procedure to work around and ultimately resolve these bugs, while not delaying the Spack user's main goal."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1353
+# b5e828df046a495db11f0e5f789767d6
+msgid "Buggy New Version"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1355
+# db49b4e6358b4dd49a4356daf53e20c1
+msgid "Sometimes, the old version of a package works fine, but a new version is buggy.  For example, it was once found that `Adios did not build with hdf5@1.10 <https://github.com/spack/spack/issues/1683>`_.  If the old version of ``hdf5`` will work with ``adios``, the suggested procedure is:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1361
+# 6bebdc51e6214712b9ae3feb045e65ee
+msgid "Revert ``adios`` to the old version of ``hdf5``.  Put in its ``adios/package.py``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1370
+# 98056e9b5954400a88f05b95af534707
+msgid "Determine whether the problem is with ``hdf5`` or ``adios``, and report the problem to the appropriate upstream project.  In this case, the problem was with ``adios``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1374
+# 3cf365c5ea8346728c5ecfc23ae1e8f4
+msgid "Once a new version of ``adios`` comes out with the bugfix, modify ``adios/package.py`` to reflect it:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1386
+# 31084b007f7f47bc89cb987b1ded43a1
+msgid "No Version Works"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1388
+# 53b34112aed04f20aa4c60df384c3a2a
+msgid "Sometimes, *no* existing versions of a dependency work for a build. This typically happens when developing a new project: only then does the developer notice that existing versions of a dependency are all buggy, or the non-buggy versions are all missing a critical feature."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1393
+# b77651d08b8f4c5b8e73af504a58173b
+msgid "In the long run, the upstream project will hopefully fix the bug and release a new version.  But that could take a while, even if a bugfix has already been pushed to the project's repository.  In the meantime, the Spack user needs things to work."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1398
+# 18df0b6319574ed5b29e27af34bdd1cf
+msgid "The solution is to create an unofficial Spack release of the project, as soon as the bug is fixed in *some* repository.  A study of the `Git history <https://github.com/citibeth/spack/commits/efischer/develop/var/spack/repos/builtin/packages/py-proj/package.py>`_ of ``py-proj/package.py`` is instructive here:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1403
+# e3978b49c0fe479ab042716bb601febb
+msgid "On `April 1 <https://github.com/citibeth/spack/commit/44a1d6a96706affe6ef0a11c3a780b91d21d105a>`_, an initial bugfix was identified for the PyProj project and a pull request submitted to PyProj.  Because the upstream authors had not yet fixed the bug, the ``py-proj`` Spack package downloads from a forked repository, set up by the package's author. A non-numeric version number is used to make it easy to upgrade the package without recomputing checksums; however, this is an untrusted download method and should not be distributed.  The package author has now become, temporarily, a maintainer of the upstream project:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1422
+# 4cf12c142be6421fa4dc5b9a1cdb6ce2
+msgid "By May 14, the upstream project had accepted a pull request with the required bugfix.  At this point, the forked repository was deleted.  However, the upstream project still had not released a new version with a bugfix.  Therefore, a Spack-only release was created by specifying the desired hash in the main project repository.  The version number ``@1.9.5.1.1`` was chosen for this \"release\" because it's a descendent of the officially released version ``@1.9.5.1``.  This is a trusted download method, and can be released to the Spack community:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1441
+# 7b705b400fbb4c068ae63348430f2bb7
+msgid "It would have been simpler to use Spack's Git download method, which is also a trusted download in this case:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1454
+# 33feab11bb9f4669a4f2fb8084d87a3f
+msgid "In this case, the upstream project fixed the bug in its repository in a relatively timely manner.  If that had not been the case, the numbered version in this step could have been released from the forked repository."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1460
+# 166306b09fe64cd9976d717bb80e6033
+msgid "The author of the Spack package has now become an unofficial release engineer for the upstream project.  Depending on the situation, it may be advisable to put ``preferred=True`` on the latest *officially released* version."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1465
+# bc6f206117584be7bbddeda39e4ec986
+msgid "As of August 31, the upstream project still had not made a new release with the bugfix.  In the meantime, Spack-built ``py-proj`` provides the bugfix needed by packages depending on it.  As long as this works, there is no particular need for the upstream project to make a new official release."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1471
+# 0233641533684525a4554a1d3eb7779b
+msgid "If the upstream project releases a new official version with the bugfix, then the unofficial ``version()`` line should be removed from the Spack package."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1477
+# fe7c7c303064459d8821dcf7e088ed24
+msgid "Patches"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1479
+# cea577929857426aaf5479fd783f1c44
+msgid "Spack's source patching mechanism provides another way to fix bugs in upstream projects.  This has advantages and disadvantages compared to the procedures above."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1482
+# 527a9f175ce04c0091b9024ae0ec693e
+msgid "Advantages:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1484
+# cb1b6945abd244ab8301e3d64502fdf2
+msgid "It can fix bugs in existing released versions, and (probably) future releases as well."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1487
+# 5c52076162a54ac49aa3042f4b3a6d26
+msgid "It is lightweight, does not require a new fork to be set up."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1489
+# 6c44bbc891a140ee9e881f3edb2225d0
+msgid "Disadvantages:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1491
+# e32adc326c8142d68b57056c67c25458
+msgid "It is harder to develop and debug a patch, vs. a branch in a repository.  The user loses the automation provided by version control systems."
+msgstr ""
+
+#: ../spack/lib/spack/docs/workflows.rst:1495
+# f95b88db4aa74c8fb6f23f1a952dd4bc
+msgid "Although patches of a few lines work OK, large patch files can be hard to create and maintain."
+msgstr ""
+

@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/build_settings.rst:10
+# 8dab1c8d91c641e5b58a48306c76ff0f
+msgid "Build Customization"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:12
+# 0c2473e3a175427da89af06ca7c281d1
+msgid "Spack allows you to customize how your software is built through the ``packages.yaml`` file.  Using it, you can make Spack prefer particular implementations of virtual dependencies (e.g., MPI or BLAS/LAPACK), or you can make it prefer to build with particular compilers.  You can also tell Spack to use *external* software installations already present on your system."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:19
+# 8850ecee71034ccf9be49a403745ecef
+msgid "At a high level, the ``packages.yaml`` file is structured like this:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:32
+# cef26a8893ea4e6abeb3202d797c37b3
+msgid "So you can either set build preferences specifically for *one* package, or you can specify that certain settings should apply to *all* packages. The types of settings you can customize are described in detail below."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:36
+# 7ae9ebc6b2ee4974bb4fca311d21d409
+msgid "Spack's build defaults are in the default ``etc/spack/defaults/packages.yaml`` file.  You can override them in ``~/.spack/packages.yaml`` or ``etc/spack/packages.yaml``. For more details on how this works, see :ref:`configuration-scopes`."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:45
+# db1ba2d4d3794528a3a79ac971f0b411
+msgid "External Packages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:47
+# 3445705823b041eeba1986e8bfc999bb
+msgid "Spack can be configured to use externally-installed packages rather than building its own packages. This may be desirable if machines ship with system packages, such as a customized MPI that should be used instead of Spack building its own MPI."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:52
+# ca7c4c8bc4a2452291bfaf3ff456d7f7
+msgid "External packages are configured through the ``packages.yaml`` file found in a Spack installation's ``etc/spack/`` or a user's ``~/.spack/`` directory. Here's an example of an external configuration:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:65
+# 7faafeb989134dc797b974013aa038ee
+msgid "This example lists three installations of OpenMPI, one built with GCC, one built with GCC and debug information, and another built with Intel. If Spack is asked to build a package that uses one of these MPIs as a dependency, it will use the pre-installed OpenMPI in the given directory. ``packages.yaml`` can also be used to specify modules to load instead of the installation prefixes."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:72
+# c96146c73dfa440cac1bb056a67aec08
+msgid "Each ``packages.yaml`` begins with a ``packages:`` token, followed by a list of package names.  To specify externals, add a ``paths`` or ``modules`` token under the package name, which lists externals in a ``spec: /path`` or ``spec: module-name`` format.  Each spec should be as well-defined as reasonably possible.  If a package lacks a spec component, such as missing a compiler or package version, then Spack will guess the missing component based on its most-favored packages, and it may guess incorrectly."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:81
+# 45a4b8c115dd4e8b843fd0087d125056
+msgid "Each package version and compiler listed in an external should have entries in Spack's packages and compiler configuration, even though the package and compiler may not ever be built."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:85
+# 3333a7562f6a4ddeb454121243d78f35
+msgid "The packages configuration can tell Spack to use an external location for certain package versions, but it does not restrict Spack to using external packages.  In the above example, since newer versions of OpenMPI are available, Spack will choose to start building and linking with the latest version rather than continue using the pre-installed OpenMPI versions."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:91
+# a0b59bdedcc64748a5e1853fd435834b
+msgid "To prevent this, the ``packages.yaml`` configuration also allows packages to be flagged as non-buildable.  The previous example could be modified to be:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:105
+# 380d620a466e42a1af77a55853158914
+msgid "The addition of the ``buildable`` flag tells Spack that it should never build its own version of OpenMPI, and it will instead always rely on a pre-built OpenMPI.  Similar to ``paths``, ``buildable`` is specified as a property under a package name."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:110
+# 38af2f4622e74a10b1bfe6be8168ccc1
+msgid "If an external module is specified as not buildable, then Spack will load the external module into the build environment which can be used for linking."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:113
+# c2dc8019277e4bc68e11e1c15495e1cd
+msgid "The ``buildable`` does not need to be paired with external packages. It could also be used alone to forbid packages that may be buggy or otherwise undesirable."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:122
+# e55ccb84cab1467fba7706954e191872
+msgid "Concretization Preferences"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:124
+# 030985a98fa1460591ffc345c5993bb0
+msgid "Spack can be configured to prefer certain compilers, package versions, dependencies, and variants during concretization. The preferred configuration can be controlled via the ``~/.spack/packages.yaml`` file for user configurations, or the ``etc/spack/packages.yaml`` site configuration."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:130
+# 79f6a28e6a3840ae860e19a6a1bce292
+msgid "Here's an example ``packages.yaml`` file that sets preferred packages:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:145
+# 030f79d213d545158bd28cd6fc37df1c
+msgid "At a high level, this example is specifying how packages should be concretized.  The opencv package should prefer using GCC 4.9 and be built with debug options.  The gperftools package should prefer version 2.2 over 2.4.  Every package on the system should prefer mvapich2 for its MPI and GCC 4.4.7 (except for opencv, which overrides this by preferring GCC 4.9). These options are used to fill in implicit defaults.  Any of them can be overwritten on the command line if explicitly requested."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:153
+# b8d2d8f783864bba810267346bc42858
+msgid "Each ``packages.yaml`` file begins with the string ``packages:`` and package names are specified on the next level. The special string ``all`` applies settings to each package. Underneath each package name is one or more components: ``compiler``, ``variants``, ``version``, or ``providers``.  Each component has an ordered list of spec ``constraints``, with earlier entries in the list being preferred over later entries."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:161
+# e271d604e2274b74837c4881a9ac698d
+msgid "Sometimes a package installation may have constraints that forbid the first concretization rule, in which case Spack will use the first legal concretization rule.  Going back to the example, if a user requests gperftools 2.3 or later, then Spack will install version 2.4 as the 2.4 version of gperftools is preferred over 2.3."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:167
+# 4f0cfad4e63f4ca08f341ea51e53d1ed
+msgid "An explicit concretization rule in the preferred section will always take preference over unlisted concretizations.  In the above example, xlc isn't listed in the compiler list.  Every listed compiler from gcc to pgi will thus be preferred over the xlc compiler."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:172
+# fcf40d9fbef842f48a475f00681779cc
+msgid "The syntax for the ``provider`` section differs slightly from other concretization rules.  A provider lists a value that packages may ``depend_on`` (e.g, MPI) and a list of rules for fulfilling that dependency."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:181
+# 62209c7a5483492abb70356a137a8c2b
+msgid "Package Permissions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:183
+# 80abd383e57b40179d8dc3747819dd83
+msgid "Spack can be configured to assign permissions to the files installed by a package."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:186
+# 081537f8f4fb4832ae05e99ba6b2b891
+msgid "In the ``packages.yaml`` file under ``permissions``, the attributes ``read``, ``write``, and ``group`` control the package permissions. These attributes can be set per-package, or for all packages under ``all``. If permissions are set under ``all`` and for a specific package, the package-specific settings take precedence."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:192
+# 20057a328de542f6aa8420b1bcebc823
+msgid "The ``read`` and ``write`` attributes take one of ``user``, ``group``, and ``world``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:207
+# 21d6196d3e344a558c9b1e03a69e6ac8
+msgid "The permissions settings describe the broadest level of access to installations of the specified packages. The execute permissions of the file are set to the same level as read permissions for those files that are executable. The default setting for ``read`` is ``world``, and for ``write`` is ``user``. In the example above, installations of ``my_app`` will be installed with user and group permissions but no world permissions, and owned by the group ``my_team``. All other packages will be installed with user and group write privileges, and world read privileges. Those packages will be owned by the group ``spack``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_settings.rst:218
+# a9d3214c3ba247f08f6fdcd899ffdb7a
+msgid "The ``group`` attribute assigns a Unix-style group to a package. All files installed by the package will be owned by the assigned group, and the sticky group bit will be set on the install prefix and all directories inside the install prefix. This will ensure that even manually placed files within the install prefix are owned by the assigned group. If no group is assigned, Spack will allow the OS default behavior to go as expected."
+msgstr ""
+

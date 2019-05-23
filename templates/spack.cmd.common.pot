@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/spack.cmd.common.rst:2
+# f16af6287dba41ddb6bbd797ecc7e6ee
+msgid "spack.cmd.common package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.cmd.common.rst:5
+# f0b81bf1b43847d1a2c4394d99e369e3
+msgid "Submodules"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.cmd.common.rst:8
+# 62b13bb73dc74df4a56f80bfa2b212dc
+msgid "spack.cmd.common.arguments module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/common/arguments.py:docstring of spack.cmd.common.arguments.add_common_arguments:1
+# 4e621316fd114068897051054ff919e4
+msgid "Extend a parser with extra arguments"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/common/arguments.py:docstring of spack.cmd.common.arguments.add_common_arguments:0
+# 6e47ded1eba841568a2066d9ebc0bdd4
+msgid "Parameters"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/common/arguments.py:docstring of spack.cmd.common.arguments.add_common_arguments:3
+# b66062ede76a436aa873dbc68c7d25b3
+msgid "parser to be extended"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/common/arguments.py:docstring of spack.cmd.common.arguments.add_common_arguments:4
+# dd55e0ffe3f146b5adce30c4afe0a1ef
+msgid "arguments to be added to the parser"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.cmd.common.rst:17
+# 9171d4ec59c54d56b96cf7a744ce4cd9
+msgid "Module contents"
+msgstr ""
+
+#: ../spack/lib/spack/spack/cmd/common/__init__.py:docstring of spack.cmd.common.print_module_placeholder_help:1
+# bdb7c98a886c4efc9ed197e139487012
+msgid "For use by commands to tell user how to activate shell support."
+msgstr ""
+

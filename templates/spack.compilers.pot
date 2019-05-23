@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:2
+# 233224e008db409faa4497dd8c1abe47
+msgid "spack.compilers package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:5
+# 41f290c5047d451f969458dad8b82459
+msgid "Submodules"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:8
+# ad17aafbab1045cbbd21d0cfbfeb1c0f
+msgid "spack.compilers.arm module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/arm.py:docstring of spack.compilers.arm.Arm:1
+#: ../spack/lib/spack/spack/compilers/cce.py:docstring of spack.compilers.cce.Cce:1
+#: ../spack/lib/spack/spack/compilers/clang.py:docstring of spack.compilers.clang.Clang:1
+#: ../spack/lib/spack/spack/compilers/fj.py:docstring of spack.compilers.fj.Fj:1
+#: ../spack/lib/spack/spack/compilers/gcc.py:docstring of spack.compilers.gcc.Gcc:1
+#: ../spack/lib/spack/spack/compilers/intel.py:docstring of spack.compilers.intel.Intel:1
+#: ../spack/lib/spack/spack/compilers/nag.py:docstring of spack.compilers.nag.Nag:1
+#: ../spack/lib/spack/spack/compilers/pgi.py:docstring of spack.compilers.pgi.Pgi:1
+#: ../spack/lib/spack/spack/compilers/xl.py:docstring of spack.compilers.xl.Xl:1
+# f5845ef9465244cab581e42b462631ff
+# 87b225ea96c34e78add021887d315c66
+# 17746bea456c4138a2756bbe386b787e
+# 17712c99e8bc4eb98df300fb2d5a7c46
+# ebf6fe29a5da4595a4b7bab31e0fa878
+# fdc3733794ba40e59a7251ee7cbd192f
+# 5a68ca001f8d433f9ade524c18add84b
+# 4f400c53ccef46759d97c3da2c6d753b
+# 706f849efd5143dfa308272beca8b5aa
+msgid "Bases: :class:`spack.compiler.Compiler`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:16
+# 70a832d8ce324e45a859a8209b3f2d38
+msgid "spack.compilers.cce module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/cce.py:docstring of spack.compilers.cce.Cce:1
+# 08de11324d8a4ec5b67a8196832c9791
+msgid "Cray compiler environment compiler."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:24
+# 607e41ce79104d61ad03a07549bfa185
+msgid "spack.compilers.clang module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/clang.py:docstring of spack.compilers.clang.Clang.default_version:1
+# 5255d7dd474949ccaf4334a81745e6a4
+msgid "The ``--version`` option works for clang compilers. On most platforms, output looks like this::"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/clang.py:docstring of spack.compilers.clang.Clang.default_version:8
+# e3712085d4514cecb2d281b5635d8c51
+msgid "On macOS, it looks like this::"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/clang.py:docstring of spack.compilers.clang.Clang.extract_version_from_output:1
+# ebf8ea9689c74d19b27b6a151f822324
+msgid "Extracts the version from compiler's output."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/clang.py:docstring of spack.compilers.clang.Clang.setup_custom_environment:1
+# 2b6f5711ad9642e79086550d5240ec9e
+msgid "Set the DEVELOPER_DIR environment for the Xcode toolchain."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/clang.py:docstring of spack.compilers.clang.Clang.setup_custom_environment:3
+# d050612873e345bf8fcb77a3669dde8f
+msgid "On macOS, not all buildsystems support querying CC and CXX for the compilers to use and instead query the Xcode toolchain for what compiler to run. This side-steps the spack wrappers. In order to inject spack into this setup, we need to copy (a subset of) Xcode.app and replace the compiler executables with symlinks to the spack wrapper. Currently, the stage is used to store the Xcode.app copies. We then set the 'DEVELOPER_DIR' environment variables to cause the xcrun and related tools to use this Xcode.app."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/clang.py:docstring of spack.compilers.clang.f77_mapping:1
+# 331ab8b564c94b8e94ce6ba990c312cc
+msgid "compiler symlink mappings for mixed f77 compilers"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/clang.py:docstring of spack.compilers.clang.fc_mapping:1
+# fdc61afaf4a140f0965305f417f9780e
+msgid "compiler symlink mappings for mixed f90/fc compilers"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:32
+# a6c40a3c0d9b4d77996c1ff6b2a07257
+msgid "spack.compilers.fj module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:40
+# c42cc4cc3fc64e11b73a1bb5fdd4b0a3
+msgid "spack.compilers.gcc module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/gcc.py:docstring of spack.compilers.gcc.Gcc.default_version:1
+# 5fc51d0663174799bb345500c9eeee3f
+msgid "Older versions of gcc use the ``-dumpversion`` option. Output looks like this::"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/gcc.py:docstring of spack.compilers.gcc.Gcc.default_version:6
+#: ../spack/lib/spack/spack/compilers/gcc.py:docstring of spack.compilers.gcc.Gcc.fc_version:11
+# 2611f1a5b38249b2ac19255a776fbef1
+# 28e6980255e9454a992916dc9081e777
+msgid "In GCC 7, this option was changed to only return the major version of the compiler::"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/gcc.py:docstring of spack.compilers.gcc.Gcc.default_version:11
+#: ../spack/lib/spack/spack/compilers/gcc.py:docstring of spack.compilers.gcc.Gcc.fc_version:16
+# cbe05926e4ab4215bf9f65aa238ee179
+# 4ad26a4cb93645e28983c76ad1873a60
+msgid "A new ``-dumpfullversion`` option was added that gives us what we want::"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/gcc.py:docstring of spack.compilers.gcc.Gcc.fc_version:1
+# d51714e011bc41d8a0f5277562b22366
+msgid "Older versions of gfortran use the ``-dumpversion`` option. Output looks like this::"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/gcc.py:docstring of spack.compilers.gcc.Gcc.fc_version:7
+# df054dbf868443bcb06776c87141bd4a
+msgid "or::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:48
+# 1fa552a39c9947a3a826f0670e5f3785
+msgid "spack.compilers.intel module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:56
+# 5e8f28dc23e4482a924af20f6e667a67
+msgid "spack.compilers.nag module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:64
+# 875744d4a9fc4677835090f608953b0c
+msgid "spack.compilers.pgi module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:72
+# 3f0208f9dabd450da4a8804b40653b6f
+msgid "spack.compilers.xl module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:80
+# 12c477dbb37547818aab016f60951975
+msgid "spack.compilers.xl\\_r module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/xl_r.py:docstring of spack.compilers.xl_r.XlR:1
+# 338796bac32b445ead83243ff38fd5c3
+msgid "Bases: :class:`spack.compilers.xl.Xl`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.compilers.rst:89
+# d22e195a8aac48d1a34ef19fd213adfc
+msgid "Module contents"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers:1
+# dbd8cf7f8d2b4cfca9228c684f8aacec
+msgid "This module contains functions related to finding compilers on the system and configuring Spack to use multiple compilers."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.CompilerDuplicateError:1
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.CompilerSpecInsufficientlySpecificError:1
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.InvalidCompilerConfigurationError:1
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.NoCompilerForSpecError:1
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.NoCompilersError:1
+# b1a4635b22ec403abca5a126037ae74f
+# 0fdd45955d8e44aca1fe03393ac2543c
+# 0ccb15ba832046bd8b7d087cd6723ded
+# e18b292323254a75b8e6e0372d673c6a
+# 8939cd59532c4487b894eeef5b6fc710
+msgid "Bases: :class:`spack.error.SpackError`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.add_compilers_to_config:1
+# b071a0d5f8a34513957913aae9310ca1
+msgid "Add compilers to the config for the specified architecture."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.add_compilers_to_config:0
+# 253b353d57d84f6d8b351b3406a5c89e
+msgid "Parameters"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.add_compilers_to_config:3
+# 30a281293d574a8491e65ee62f193b76
+msgid "a list of Compiler objects."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.add_compilers_to_config:4
+# 6a2002e22ff84695bc5c71c63866e823
+msgid "configuration scope to modify."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.all_compilers_config:1
+# b3420e214f4040df9af672bcaa8a71a3
+msgid "Return a set of specs for all the compiler versions currently available to build with.  These are instances of CompilerSpec."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.all_os_classes:1
+# 4cde3af4416d426caee0aaa3818fdd71
+msgid "Return the list of classes for all operating systems available on this platform"
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.class_for_compiler_name:1
+# 013fbfbeaf234400967e7c3efc5a6977
+msgid "Given a compiler module name, get the corresponding Compiler class."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.find_compilers:1
+# 5a08c07e7810496a85944966abf35c25
+msgid "Return a list of compilers found in the supplied paths. This invokes the find_compilers() method for each operating system associated with the host platform, and appends the compilers detected to a list."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.get_compiler_config:1
+# ce29ecbbaec045f1a929251bd5d4f61c
+msgid "Return the compiler configuration for the specified architecture."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.pkg_spec_for_compiler:1
+# f50855518ff3485aa211f7ca89f41693
+msgid "Return the spec of the package that provides the compiler."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.supported_compilers:1
+# df70d781310e4e8696409a7527a344b2
+msgid "Return a set of names of compilers supported by Spack."
+msgstr ""
+
+#: ../spack/lib/spack/spack/compilers/__init__.py:docstring of spack.compilers.supported_compilers:3
+# 4d10733a4ff24e83a55e7dd9a3d093ea
+msgid "See available_compilers() to get a list of all the available versions of supported compilers."
+msgstr ""
+

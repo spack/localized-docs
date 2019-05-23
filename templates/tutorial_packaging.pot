@@ -1,0 +1,323 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:10
+# b0a6c606c5e94307a1446472b9047731
+msgid "Package Creation Tutorial"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:12
+# 2c3aaab8a69140279f49113492753f13
+msgid "This tutorial will walk you through the steps behind building a simple package installation script.  We'll focus building an mpileaks package, which is a MPI debugging tool.  By creating a package file we're essentially giving Spack a recipe for how to build a particular piece of software.  We're describing some of the software's dependencies, where to find the package, what commands and options are used to build the package from source, and more.  Once we've specified a package's recipe, we can ask Spack to build that package in many different ways."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:21
+# da5343f3715a44c592bd99c2f8b62c46
+msgid "This tutorial assumes you have a basic familiarity with some of the Spack commands, and that you have a working version of Spack installed.  If not, we suggest looking at Spack's *Getting Started* guide.  This tutorial also assumes you have at least a beginner's-level familiarity with Python."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:27
+# 3394c45210824d78ba2c71f291ff5893
+msgid "Also note that this document is a tutorial.  It can help you get started with packaging, but is not intended to be complete.  See Spack's :ref:`packaging-guide` for more complete documentation on this topic."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:33
+# 3bbc66757a104848bb02e12fa0612706
+msgid "Getting Started"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:35
+# b1ff913b16ce43f1847c5d7c02f5feb3
+msgid "A few things before we get started:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:37
+# b50d2afbad8d42e0b6f3c98afbbdbfa3
+msgid "We'll refer to the Spack installation location via the environment variable ``SPACK_ROOT``.  You should point ``SPACK_ROOT`` at wherever you have Spack installed."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:40
+# 6283d3650576454ba32ca1d41a026524
+msgid "Add ``$SPACK_ROOT/bin`` to your ``PATH`` before you start."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:41
+# 291e0f6149ce4049a0a9c1a3ec9ddadd
+msgid "Make sure your ``EDITOR`` environment variable is set to some text editor you like."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:43
+# e54f517a1a634a789c1abf2ac6241073
+msgid "We'll be writing Python code as part of this tutorial.  You can find successive versions of the Python code in ``$SPACK_ROOT/lib/spack/docs/tutorial/examples``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:49
+# a512930ae80348d68b616d571e0a201f
+msgid "Creating the Package File"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:51
+# 01aeec9634ec458c9ad171ae4ae59572
+msgid "We will use a separate package repository for the tutorial. Package repositories allow you to separate sets of packages that take precedence over one another. We will use the tutorial repo that ships with Spack to avoid breaking the builtin Spack packages."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:61
+# 0e8bf114f532462ca66abff19f0dc66a
+msgid "Spack comes with a handy command to create a new package: ``spack create``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:63
+# adac2c2237874023a5e1d18c765b9516
+msgid "This command is given the location of a package's source code, downloads the code, and sets up some basic packaging infrastructure for you.  The mpileaks source code can be found on GitHub, and here's what happens when we run ``spack create`` on it:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:85
+# c1d0d7c5a35549b3bd774a0d51db5cf1
+msgid "And Spack should spawn a text editor with this file:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:90
+# e0abb98459f245b897ba11dcbd7433c0
+msgid "Spack has created this file in ``/home/spack1/spack/var/spack/repos/builtin/packages/mpileaks/package.py``.  Take a moment to look over the file.  There's a few placeholders that Spack has created, which we'll fill in as part of this tutorial:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:95
+# e4f11184d53c472c94a9c49f57e2fb9a
+msgid "We'll document some information about this package in the comments."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:96
+# 81a3d48ebb0a44008fa2930b3d75e0cc
+msgid "We'll fill in the dependency list for this package."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:97
+# dfabbd8a52f545c393eb9d1b1f0dd1db
+msgid "We'll fill in some of the configuration arguments needed to build this package."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:100
+# 82efa4d944ba4871b6632255133dc27a
+msgid "For the moment, exit your editor and let's see what happens when we try to build this package:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:128
+# 332d29f62b954aa582714ea99d5c1c64
+msgid "This obviously didn't work; we need to fill in the package-specific information.  Specifically, Spack didn't try to build any of mpileaks' dependencies, nor did it use the proper configure arguments.  Let's start fixing things"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:135
+# 7c6a80a6a6b542cca5edf280453d4ebc
+msgid "Package Documentation"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:137
+# 5841394a567b4524ae9ab032db934398
+msgid "We can bring the ``package.py`` file back into our ``EDITOR`` with the ``spack edit`` command:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:144
+# 2a8b0aa86f444c87a8befb7f1091e4d1
+msgid "Let's remove some of the ``FIXME`` comments, and add links to the mpileaks homepage and document what mpileaks does.  I'm also going to cut out the Copyright clause at this point to keep this tutorial document shorter, but you shouldn't do that normally.  The results of these changes can be found in ``$SPACK_ROOT/lib/spack/docs/tutorial/examples/1.package.py`` and are below.  Make these changes to your ``package.py``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:155
+# 8688ac2cf30547c996628fcc5ae6e4f6
+msgid "We've filled in the comment that describes what this package does and added a link to the web site.  That won't help us build yet, but it will allow Spack to provide some documentation on this package to other users:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:197
+# 1e7c16a2804944feae9dc768d4abb752
+msgid "As we fill in more information about this package the ``spack info`` command will become more informative.  Now let's start making this package build."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:202
+# a2196b883949464bb93ffb06c11c0b5f
+msgid "Dependencies"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:204
+# 599ab60bbca14c8ab84c56843084e888
+msgid "The mpileaks packages depends on three other package: ``MPI``, ``adept-utils``, and ``callpath``.  Let's add those via the ``depends_on`` command in our ``package.py`` (this version is in ``$SPACK_ROOT/lib/spack/docs/tutorial/examples/2.package.py``):"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:213
+# a29c00946b274981a7a2e5ba7f7c30b5
+msgid "Now when we go to build mpileaks, Spack will fetch and build these dependencies before building mpileaks.  Note that the mpi dependency is a different kind of beast than the adept-utils and callpath dependencies; there is no mpi package available in Spack.  Instead mpi is a virtual dependency.  Spack may satisfy that dependency by installing packages such as ``openmpi`` or ``mvapich``.  See the :ref:`packaging-guide` for more information on virtual dependencies."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:221
+# 15209df7bcfe4dfe94249103be130311
+msgid "Now when we try to install this package a lot more happens:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:261
+# c07d5df849474da68ead7d6eb5ea9824
+msgid "Note that this command may take a while to run and produce more output if you don't have an MPI already installed or configured in Spack."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:264
+# 659dc6f18a714125b230dc1f66ea90d2
+msgid "Now Spack has identified and made sure all of our dependencies have been built.  It found the ``openmpi`` package that will satisfy our ``mpi`` dependency, and the ``callpath`` and ``adept-utils`` package to satisfy our concrete dependencies."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:271
+# fc3dec890fb742a6a61e773b9df63d2c
+msgid "Debugging Package Builds"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:273
+# 75b23465ead740ada6ffb62907cc510c
+msgid "Our ``mpileaks`` package is still not building.  It may be obvious to many of you that we never ran the configure script.  Let's add a call to ``configure()`` to the top of the install routine. The resulting package.py is in ``$SPACK_ROOT/lib/spack/docs/tutorial/examples/3.package.py``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:282
+# f7a7c6efdd974577af1f21be308278dd
+msgid "If we re-run we still get errors:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:324
+# 8458fac114b74023ae1f6a016b55de07
+msgid "Again, the problem may be obvious.  But let's pretend we're not all intelligent developers and use this opportunity spend some time debugging.  We have a few options that can tell us about what's going wrong:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:329
+# f3c185bd94b94f7f85d2375af6cf0534
+msgid "As per the error message, Spack has given us a ``spack-build.out`` debug log:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:361
+# 938d2014464f4fcc9b1b1a692eb63fa9
+msgid "This gives us the output from the build, and mpileaks isn't finding its ``adept-utils`` package.  Spack has automatically added the include and library directories of ``adept-utils`` to the compiler's search path, but some packages like mpileaks can sometimes be picky and still want things spelled out on their command line.  But let's continue to pretend we're not brilliant developers, and explore some other debugging paths:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:369
+# 27b77dd38ffb4cda87c60a3d18e82658
+msgid "We can also enter the build area and try to manually run the build:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:376
+# 686d1454c37d469bb940070a71532914
+msgid "The ``spack env`` command spawned a new shell that contains the same environment that Spack used to build the mpileaks package (you can substitute bash for your favorite shell).  The ``spack cd`` command changed our working dirctory to the last attempted build for mpileaks. From here we can manually re-run the build:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:411
+# 2a844b85112d4baead27e651a8f9a0d0
+msgid "We're seeing the same error, but now we're in a shell where we can run the command ourselves and debug as needed.  We could, for example, run ``./configure --help`` to see what options we can use to specify dependencies."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:416
+# 7ffb1d215b9445e4a3ab85c92e4a4b27
+msgid "We can use the ``exit`` command to leave the shell spawned by ``spack env``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:421
+# 2010df42753b4851bf44b071018c8a16
+msgid "Specifying Configure Arguments"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:423
+# a70f0dfdc91c465fad5ea79b49e014de
+msgid "Let's add the configure arguments to the mpileaks' ``package.py``.  This version can be found in ``$SPACK_ROOT/lib/spack/docs/tutorial/examples/4.package.py``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:431
+# 16b2641b92144aea93e76ce693bb4ec4
+msgid "This is all we need for working mpileaks!  If we install now we'll see:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:451
+# f177c7f83e014379a40056937fa588ef
+msgid "There are some special circumstances in package that are worth highlighting. Normally spack would have automatically detected that mpileaks was an Autotools-based package when we ran ``spack create`` and made it an ``AutoToolsPackage`` class (except we added the ``-t generic`` option to skip this).  Instead of a full install routine we would have just written:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:463
+# fdfe8059e75c4a54af0026617ef20ccd
+msgid "Similarly, if this had been a CMake-based package we would have been filling in a ``cmake_args`` function instead of ``configure_args``.  There are similar default package types for many build environments that will be discussed later in the tutorial."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:470
+# e0dc3956ceab40fda899f33d239d9579
+msgid "Variants"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:472
+# ce555a599f7a44099a1dab308479e7f5
+msgid "We have a successful mpileaks build, but let's take some time to improve it.  ``mpileaks`` has a build-time option to truncate parts of the stack that it walks.  Let's add a variant to allow users to set this when they build in Spack."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:477
+# ed9f19ad9a634d4fae2605d78185b4e2
+msgid "To do this, we'll add a variant to our package, as per the following (see ``$SPACK_ROOT/lib/spack/docs/tutorial/examples/5.package.py``):"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:484
+# f242af05857e4f22b3ed6277ad2940a7
+msgid "We've added the variant ``stackstart``, and given it a default value of ``0``.  If we install now we can see the stackstart variant added to the configure line (output truncated for length):"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:506
+# 730f6d02663e4beb8a1c9c3f7aa75ae5
+msgid "The Spec Object"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:508
+# 7616203e88484b5cbc190b1ec9ed9f3c
+msgid "This tutorial has glossed over a few important features, which weren't too relevant for mpileaks but may be useful for other packages.  There were several places we references the ``self.spec`` object.  This is a powerful class for querying information about what we're building.  For example, you could use the spec to query information about how a package's dependencies were built, or what compiler was being used, or what version of a package is being installed.  Full documentation can be found in the :ref:`packaging-guide`, but here's some quick snippets with common queries:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:518
+# 032c14e3d62a4320b9b84215c0fe0299
+msgid "Am I building ``mpileaks`` version ``1.1`` or greater?"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:525
+# 0f381a9b0cc4426ba1748ea2960967cb
+msgid "Is ``openmpi`` the MPI I'm building with?"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:532
+# e439396be7344bc298b7d6ff0242779d
+msgid "Am I building with ``gcc`` version less than ``5.0.0``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:539
+# 9b5ccfa73c1146eca0b0711e1bbafa9f
+msgid "Am I built with the ``debug`` variant:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:546
+# a424a014b9034cfab1aaa011e9c25c20
+msgid "Is my ``dyninst`` dependency greater than version ``8.0``?"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:553
+# 62c74cb809f549aba0d1931ce8c273b2
+msgid "More examples can be found in the thousands of packages already added to Spack in ``$SPACK_ROOT/var/spack/repos/builtin/packages``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:556
+# 6aadc7f784e3452ba50cfd8de10daf17
+msgid "Good Luck!"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_packaging.rst:558
+# bef8b27b5ac44007a678a643962359ff
+msgid "To ensure that future sections of the tutorial run properly, please uninstall mpileaks and remove the tutorial repo from your configuration."
+msgstr ""
+

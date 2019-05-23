@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/binary_caches.rst:10
+# 72940b1655f24a05a9472cca28954b69
+msgid "Build Caches"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:12
+# 5ebf141ff62c47f0a53b129110341280
+msgid "Some sites may encourage users to set up their own test environments before carrying out central installations, or some users may prefer to set up these environments on their own motivation. To reduce the load of recompiling otherwise identical package specs in different installations, installed packages can be put into build cache tarballs, uploaded to your Spack mirror and then downloaded and installed by others."
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:22
+# c13be2aaef6e4785bc10ecdf8fb8ffe9
+msgid "Creating build cache files"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:24
+# 127458be8890412a8fc1c512146209f2
+msgid "A compressed tarball of an installed package is created. Tarballs are created for all of its link and run dependency packages as well. Compressed tarballs are signed with gpg and signature and tarball and put in a ``.spack`` file. Optionally, the rpaths (and ids and deps on macOS) can be changed to paths relative to the Spack install tree before the tarball is created."
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:30
+# cf9ef406f00e4e36916928bd80fecf8f
+msgid "Build caches are created via:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:39
+# dfcc9cd7042247ccb709a5c0fa0c5338
+msgid "Finding or installing build cache files"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:41
+# 3953f624674b4f8091c63b63042df03e
+msgid "To find build caches or install build caches, a Spack mirror must be configured with:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:48
+# d88fbae4bea14b49b766403382ac50db
+msgid "Build caches are found via:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:54
+# df585606988e4b3fb874d5f6b7bda42c
+msgid "Build caches are installed via:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:63
+# 36bd7f76ebeb4593a042809dc8bd9643
+msgid "Relocation"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:65
+# eed464bebd694cbbaabafaa8ffd4e59c
+msgid "Initial build and later installation do not necessarily happen at the same location. Spack provides a relocation capability and corrects for RPATHs and non-relocatable scripts. However, many packages compile paths into binary artifacts directly. In such cases, the build instructions of this package would need to be adjusted for better re-locatability."
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:75
+# 878b815d8cac4c268097a93eacde083d
+msgid "``spack buildcache``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:79
+# f7a0c7abe9a84db3ba58dfde5011a112
+msgid "``spack buildcache create``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:81
+# bc2a715fa2fe4330a7cf9a841da2b0ab
+msgid "Create tarball of installed Spack package and all dependencies. Tarballs are checksummed and signed if gpg2 is available. Places them in a directory ``build_cache`` that can be copied to a mirror. Commands like ``spack buildcache install`` will search Spack mirrors for build_cache to get the list of build caches."
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:87
+#: ../spack/lib/spack/docs/binary_caches.rst:104
+#: ../spack/lib/spack/docs/binary_caches.rst:119
+#: ../spack/lib/spack/docs/binary_caches.rst:133
+# b881ae8d17c2477c9aa0752f1bc586f0
+# d2c93011c578468c877413e7dac25ecd
+# b192a36cb3ca4189ae2f86e3ae120363
+# d272cc56996d4ceda27da6d3f4524721
+msgid "Arguments"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:87
+#: ../spack/lib/spack/docs/binary_caches.rst:104
+#: ../spack/lib/spack/docs/binary_caches.rst:119
+#: ../spack/lib/spack/docs/binary_caches.rst:133
+# 1acd320ffe2647fdb7f2abec3cbf0cf9
+# 7ab083b31451479197583b717ea744f1
+# 7768711977264dd3aa66b60a1b9f5850
+# ba452a29fa9f4ef0a45dc1818f29eff5
+msgid "Description"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:89
+#: ../spack/lib/spack/docs/binary_caches.rst:106
+#: ../spack/lib/spack/docs/binary_caches.rst:121
+# 8629606117684890a0ba322d94d0c39c
+# f3a510e00c784360a435afccbaa0fa2d
+# f965f5ba499342609ded86c52b6519c1
+msgid "``<specs>``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:89
+# 82c85b923c7e473982c62b7633dcb1fe
+msgid "list of partial specs or hashes with a leading ``/`` to match from installed packages and used for creating build caches"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:90
+# 6638ed20bc6e4621a4efe541ee4a0e6e
+msgid "``-d <path>``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:90
+# 48975b5be2cb478e9b2e7b757133e896
+msgid "directory in which ``build_cache`` directory is created, defaults to ``.``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:91
+#: ../spack/lib/spack/docs/binary_caches.rst:122
+# 22573c387a354278abab3da923b3bc30
+# d8f5e1a3a437467cb4e0bf127424e26d
+msgid "``-f``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:91
+# 7fa6b3c7fb5c4977a9e7d5f35fe52401
+msgid "overwrite ``.spack`` file in ``build_cache`` directory if it exists"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:92
+# 9cd82a7897b143dfb2391516b5885fe6
+msgid "``-k <key>``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:92
+# 7d17db53de0c447d81fc0a0ae8f67e3c
+msgid "the key to sign package with. In the case where multiple keys exist, the package will be unsigned unless ``-k`` is used."
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:93
+# 882b2d8642924538bb6222f472ffce34
+msgid "``-r``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:93
+# 055e13895b18430da153e70cd9fa4aac
+msgid "make paths in binaries relative before creating tarball"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:94
+#: ../spack/lib/spack/docs/binary_caches.rst:123
+#: ../spack/lib/spack/docs/binary_caches.rst:136
+# 13a2a6ebe44141a0a8304134d4d004f6
+# 217e5aaf61dc4d8e97d6d4f1d4e68d21
+# 815c36c061174aa2a7e8a4125e302dd3
+msgid "``-y``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:94
+# f588ff2ccdd24ef2894ac65411f331a2
+msgid "answer yes to all create unsigned ``build_cache`` questions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:99
+# cf3a1eda888c4922b0d3b98eecc27fb0
+msgid "``spack buildcache list``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:101
+# 25c647f242154a87bf44d10c81ae6d9a
+msgid "Retrieves all specs for build caches available on a Spack mirror."
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:106
+# 4ee246ce67ba4ec6a73df2bfb4f4a407
+msgid "list of partial package specs to be matched against specs downloaded for build caches"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:109
+# 0d1c1cfc36f949f5a9da88392051e8cf
+msgid "E.g. ``spack buildcache list gcc`` with print only commands to install ``gcc`` package(s)"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:113
+# d9b46d96336a4737808f7b0d8847237b
+msgid "``spack buildcache install``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:115
+# d06937c6b38b4e5e83950302826b4229
+msgid "Retrieves all specs for build caches available on a Spack mirror and installs build caches with specs matching the specs input."
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:121
+# c99d8160ccc349308d1548c17a788d79
+msgid "list of partial package specs or hashes with a leading ``/`` to be installed from build caches"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:122
+# e833e70a407d46a19eb8cb61036cd135
+msgid "remove install directory if it exists before unpacking tarball"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:123
+# f10f08272d804711b4719a763b6fec34
+msgid "answer yes to all to don't verify package with gpg questions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:128
+# 69c4e2715ed54e9787e1f7b1affbe115
+msgid "``spack buildcache keys``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:130
+# e7ef9422f0e545b594eaf29b81e186ed
+msgid "List public keys available on Spack mirror."
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:135
+# 0264f0eca04d492685b19b0e23a51272
+msgid "``-i``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:135
+# 7feaccf9eef846a3a272039aeed58a21
+msgid "trust the keys downloaded with prompt for each"
+msgstr ""
+
+#: ../spack/lib/spack/docs/binary_caches.rst:136
+# bf701c979e4347dbb5913bc7d730c1c5
+msgid "answer yes to all trust all keys downloaded"
+msgstr ""
+

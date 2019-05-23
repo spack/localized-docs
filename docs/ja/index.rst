@@ -1,0 +1,1 @@
+../../spack/lib/spack/docs/index.rst

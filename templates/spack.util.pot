@@ -1,0 +1,1656 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/spack.util.rst:2
+# d1decbc39f7144c3810d826ce3076d07
+msgid "spack.util package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:5
+# 9203d167c53641e48940ab13e7b55ae3
+msgid "Subpackages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:12
+# 8bc3895f26934232bb8254d5092034aa
+msgid "Submodules"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:15
+# 0cbbadfdc121419d8a726bc133083867
+msgid "spack.util.compression module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/compression.py:docstring of spack.util.compression.decompressor_for:1
+# 2b651f3af7f64d2b9058cce52c352990
+msgid "Get the appropriate decompressor for a path."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/compression.py:docstring of spack.util.compression.extension:1
+# cce0f4191822449598e2a5a3e86ae7e5
+msgid "Get the archive extension for a path."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/compression.py:docstring of spack.util.compression.strip_extension:1
+# 85ddace616f94a8fa84a994dd46c98ba
+msgid "Get the part of a path that does not include its compressed type extension."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:23
+# 7f25e1df4bd3455dbb9f067a5286033d
+msgid "spack.util.crypto module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.Checker:1
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.DeprecatedHash:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.NameModifier:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.NameValueModifier:1
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable:1
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache:1
+#: ../spack/lib/spack/spack/util/gpg.py:docstring of spack.util.gpg.Gpg:1
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.NamespaceTrie:1
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.NamespaceTrie.Element:1
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.Bunch:1
+# 2a191905826b43f993638a9862ccf089
+# 48a0f40483cf44a8a8f1387f26f0d8e0
+# 4776ba79899c464ea04f5978a1d9fa4c
+# 5b8aada59a754a34aa7315f5f993006e
+# 6b1212bdddac4a259fdf232cd5296efe
+# faf3d8e9ce824c769f711afe69ea16c2
+# e6df55d54bdb43168e530a5a306a56d0
+# abc625d97e9b49f9abbf58cc44e5dfa4
+# 979ece5b1ed24299aca00198ac082e75
+# e7a6b1ea2bbf412fb05fee090251eecc
+# 19867caa430f467c9dd455a0bd971aea
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.Checker:1
+# c2808b64e5294d108f9bb71fb69600c1
+msgid "A checker checks files against one particular hex digest. It will automatically determine what hashing algorithm to used based on the length of the digest it's initialized with.  e.g., if the digest is 32 hex characters long this will use md5."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.Checker:7
+# c0b0f5e77ff144329a153ebc45c360a1
+msgid "Example: know your tarball should hash to 'abc123'.  You want to check files against this.  You would use this class like so::"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.Checker:14
+# 5cc586aa969041168d2c6a8fd407b3ed
+msgid "After the call to check, the actual checksum is available in checker.sum, in case it's needed for error output."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.Checker:17
+# 899419d07d9f4e42a62d17e585677edc
+msgid "You can trade read performance and memory usage by adjusting the block_size optional arg.  By default it's a 1MB (2**20 bytes) buffer."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.Checker.check:1
+# 30a9809703db40609d29bb9ca9f9e6d1
+msgid "Read the file with the specified name and check its checksum against self.hexdigest.  Return True if they match, False otherwise.  Actual checksum is stored in self.sum."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.Checker.hash_name:1
+# 36c2f959a9a948958bdc7f68b0c3c07a
+msgid "Get the name of the hash function this Checker is using."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.bit_length:1
+# 45f84dc99ef241aa93b83d5d24bee8b1
+msgid "Number of bits required to represent an integer in binary."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.checksum:1
+# e0618b4ee7fc49168f3306676757e07a
+msgid "Returns a hex digest of the filename generated using an algorithm from hashlib."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.hash_algo_for_digest:1
+# ae04ad557c914443a30d11b5c63205f8
+msgid "Gets name of the hash algorithm for a hex digest."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.hash_fun_for_algo:1
+# 00132c8e01f34eb1aaef21a7cba4eb24
+msgid "Get a function that can perform the specified hash algorithm."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.hash_fun_for_digest:1
+# 89d7454f9ce2462d9d1507efc28928ce
+msgid "Gets a hash function corresponding to a hex digest."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.hashes:1
+# 59b32d34c82e4c9c942bcc14bfc8da18
+msgid "Set of hash algorithms that Spack can use, mapped to digest size in bytes"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/crypto.py:docstring of spack.util.crypto.prefix_bits:1
+# be9aea6c92ad4077980b376dee9d7617
+msgid "Return the first <bits> bits of a byte array as an integer."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:31
+# ceeb2b6a83fb460cabcb8e6df9ad90dc
+msgid "spack.util.debug module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/debug.py:docstring of spack.util.debug:1
+# 92b370e715ea48ae8167a4fdaf55096d
+msgid "Debug signal handler: prints a stack trace and enters interpreter."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/debug.py:docstring of spack.util.debug:3
+# f46fbf723aba4b1baa6e88a9aca9aea2
+msgid "``register_interrupt_handler()`` enables a ctrl-C handler that prints a stack trace and drops the user into an interpreter."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/debug.py:docstring of spack.util.debug.debug_handler:1
+# 03c03153b7c045b48a0a0616115bbefd
+msgid "Interrupt running process, and provide a python prompt for interactive debugging."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/debug.py:docstring of spack.util.debug.register_interrupt_handler:1
+# f392eb44994543b9b3445f31f65f7952
+msgid "Print traceback and enter an interpreter on Ctrl-C"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:39
+# ffe67233760f462884ddf6353666473c
+msgid "spack.util.editor module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor:1
+# 18a3c71bf1d94ad9a3afbebe03135b58
+msgid "Module for finding the user's preferred text editor."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor:3
+# 7942b20be2124c1b9fc4b9f30ae3691f
+msgid "Defines one function, editor(), which invokes the editor defined by the user's VISUAL environment variable if set. We fall back to the editor defined by the EDITOR environment variable if VISUAL is not set or the specified editor fails (e.g. no DISPLAY for a graphical editor). If neither variable is set, we fall back to one of several common editors, raising an EnvironmentError if we are unable to find one."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:1
+# 3f48aeb1cc574051be21da28e0d6b880
+msgid "Invoke the user's editor."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:3
+# afef50ddef844ce9bc754baad1375a92
+msgid "This will try to execute the following, in order:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:5
+# 2c29a3849cae4240b6c40d5aa0ba6d9a
+msgid "$VISUAL <args>    # the \"visual\" editor (per POSIX)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:6
+# 838668c9624445709f873457bebd0416
+msgid "$EDITOR <args>    # the regular editor (per POSIX)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:7
+# 4d900c0b31d94cbfa5cc2bff5072f157
+msgid "some default editor (see ``_default_editors``) with <args>"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:9
+# 274f0297fba24fa6bcf0374629a4d498
+msgid "If an environment variable isn't defined, it is skipped.  If it points to something that can't be executed, we'll print a warning. And if we can't find anything that can be executed after searching the full list above, we'll raise an error."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.append_flags:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.append_path:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.deprioritize_system_paths:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.prepend_path:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.prune_duplicate_paths:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.remove_path:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.set:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.set_path:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.unset:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.concatenate_paths:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.filter_environment_blacklist:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.inspect_path:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.is_system_path:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.preserve_environment:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.validate:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.add_default_env:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:0
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:0
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.make_log_context:0
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.simplify_name:0
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.composite:0
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix.join:0
+#: ../spack/lib/spack/spack/util/string.py:docstring of spack.util.string.plural:0
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.find_versions_of_archive:0
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:0
+# 2b4c865b23384893af9540e45e19e001
+# 1da607090fa24f829ce950543be77198
+# 1d42b1788912434abe5c42978043e345
+# 4dd0da16e5b1485b9c4a51c2e971e427
+# b15a3249651447f5afa5227632c6bb18
+# c76049b27f974fbbb26116aac0f0eb86
+# fa4e9d593c1443159030f9bbccf3b40f
+# a60b8190bee54af5b66db8eb31dc28ec
+# e2da3accada148b7b632b95e70ecbf40
+# f1de5a33e264441d88f921d53249c563
+# 6b7fc2ed6bfa4b998e36de5a432ee065
+# bf5a9efcf65c49efab7f4507f53b84ab
+# 16b80089598c46d9a61e4b3aa734905e
+# e1c68d58db8c4d719d2be8d41c3927e0
+# df1613e5c60a430eab9fae93fa6a719d
+# 20a8236881324857825fffef055ba958
+# 3d5a9f389a1d478c84c859312f028e57
+# 523ad967e87549e8834f39c6b17be770
+# ec1b593fca614ddaaa1b391ba7706d28
+# edf324def71d449f86a0b494a067b580
+# 4ca0810997364d3f842b0e86efec1c26
+# 3580c85442a74bdebbde0a4864409447
+# 279a01bdef66491992efea77d2f64aee
+# e544fc0cd78a4e598a65ad2f88a39039
+# d03aefbc4d2b43c6b21df825470adfac
+# f1f6eacde6dc43b8872854fe308c996f
+# 6ee740e33f5f44ea80772e5cbea9d19a
+msgid "Parameters"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:14
+# 56a58675039c40ca9eaf07e836b7864d
+msgid "args to pass to editor"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:17
+# 838192a19d8f4cc2af59fb2501ff68ec
+msgid "Optional Arguments:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/editor.py:docstring of spack.util.editor.editor:18
+# 6917c0d49aec4b69988edffb22192a4d
+msgid "_exec_func (function): invoke this function instead of ``os.execv()``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:47
+# d5887ca9d10b43c1a02be6c7da232125
+msgid "spack.util.environment module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment:1
+# 916f94653a394a08b70305a40461e323
+msgid "Utilities for setting and modifying environment variables."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.AppendFlagsEnv:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.AppendPath:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.PrependPath:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.RemovePath:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.SetEnv:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.SetPath:1
+# 0007003b2b0f47878001d549302f5c58
+# af562baf196d41228d8085d5bd475d28
+# 64ad816d72a246c89821e4d883938358
+# fa7b4d962fa848dca7d96f2bd1960423
+# b873298f871c4eefa72c50addc2d1762
+# 94524659cb1d44ccadbb23017cad0818
+msgid "Bases: :class:`spack.util.environment.NameValueModifier`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.DeprioritizeSystemPaths:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.PruneDuplicatePaths:1
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.UnsetEnv:1
+# f715c48899a14ba6b08b669382f8c1ae
+# 159484bbe3134df79dacb0721af5aff9
+# 6697d34cd62849b6b13a38a166af2dd9
+msgid "Bases: :class:`spack.util.environment.NameModifier`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications:1
+# deee1f1cc16e4da987ce9b012027d239
+msgid "Keeps track of requests to modify the current environment."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications:3
+# a730613ce6394182963bd6f70220be99
+msgid "Each call to a method to modify the environment stores the extra information on the caller in the request:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications:6
+# 34177dd9c8594681b83e00b4ee44e90c
+msgid "'filename' : filename of the module where the caller is defined"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications:7
+# 6a7167d30cfc4394b57d9274e7df9177
+msgid "'lineno': line number where the request occurred"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications:8
+# 023ff808829e4d8cb8e11483822428f8
+msgid "'context' : line of code that issued the request that failed"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.append_flags:1
+# 424f626fce384331ae14c8bd92a87ebc
+msgid "Stores in the current object a request to append to an env variable"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.append_flags:3
+# 0b0a8ff268af4702a4224b06cb440ba4
+msgid "name of the environment variable to be appended to"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.append_flags:4
+# 471f88f14c9a462cbcdce4da4da3cf06
+msgid "value to append to the environment variable"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.append_flags:6
+# e992d74e4de148fca4ab2ccad58f48e4
+msgid "Appends with spaces separating different additions to the variable"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.append_path:1
+# 34125650769547b9a5619c542e63f3a1
+msgid "Stores a request to append a path to a path list."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.append_path:3
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.prepend_path:3
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.remove_path:3
+# 41c55de1484f48fbb4aad5b96c30461b
+# 7c98b9068b674f96b9fa35430a7099c6
+# 822cfe0d66ea4b6da85ef10eb8ca7a87
+msgid "name of the path list in the environment"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.append_path:4
+# c2241d85b70e42cc9df6c400b03e7791
+msgid "path to be appended"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.apply_modifications:1
+# 1f03f2bbb1114fdb9f0feba8e9e20375
+msgid "Applies the modifications and clears the list."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.clear:1
+# 51d6b33688b444a28653555e643eb8e4
+msgid "Clears the current list of modifications"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.deprioritize_system_paths:1
+# c3b57433349641c4831d2dd7dd3f9d76
+msgid "Stores a request to deprioritize system paths in a path list, otherwise preserving the order."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.deprioritize_system_paths:4
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.prune_duplicate_paths:4
+# f045633a8aae47c5a8075406cfe8a53a
+# aae07394ed3e4e3fa57d09b4cf84b98d
+msgid "name of the path list in the environment."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:1
+# e91b3a35f3084064986fc42342e894d1
+msgid "Returns modifications that would be made by sourcing a file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:3
+# 4d42bbe476964db4bfd40dea392d8164
+msgid "The file to source"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:5
+# d154b11b2c48458293a651045cfa6fc3
+msgid "Arguments to pass on the command line"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:0
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.find_versions_of_archive:0
+# fe0ec5a470b3482d9e44ec2f0f1737b5
+# ac8c39d61a434493ac830c079feda070
+# ffb1eba47c2a4777a3c72573172c99fb
+msgid "Keyword Arguments"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:8
+# 366bc66d89c0478f8adc8cd9c2576e0c
+msgid "The shell to use (default: ``bash``)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:10
+# 9449b05d548848c590b0a234e968bfaf
+msgid "Options passed to the shell (default: ``-c``)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:12
+# e032a016c5b44c95934a5bfc5a7ed1e3
+msgid "The command to run (default: ``source``)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:14
+# 382dc25b17d74b68a02e34c975a2567c
+msgid "Redirect used to suppress output of command (default: ``&> /dev/null``)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:17
+# 9c64a9cf399340bb8a457d3b13294e4a
+msgid "Operator used to execute a command only when the previous command succeeds (default: ``&&``)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:20
+# 46142b3358dd40289f125a586ea1c4a7
+msgid "Ignore any modifications of these variables (default: [])"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:23
+# 7f700e997c854d2fb76f6ca21bc53d69
+msgid "Always respect modifications of these variables (default: []). Has precedence over blacklist."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:26
+# ec12a7748bf748b2a8d6992c8f15057d
+msgid "In addition to removing empty entries, also remove duplicate entries (default: False)."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.group_by_name:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.concatenate_paths:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.filter_environment_blacklist:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.inspect_path:0
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.is_system_path:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.command:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.name:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.path:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:0
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:0
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.make_log_context:0
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.simplify_name:0
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.composite:0
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix.join:0
+#: ../spack/lib/spack/spack/util/string.py:docstring of spack.util.string.plural:0
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:0
+# 2c31c6a088804d7bab6efb29b67a3e8f
+# b3b1e6e9f9af446e974e1f4ac25a1639
+# 732efde5950043cbbc935feefa6d467e
+# 0db70b54be084b08a26d2c7fa1ca2c74
+# 0b8ff1e6d3b44ec1a75693b996dc0a3f
+# 3f2e00b5efa747b8bb58a32db3172673
+# 099b8ff696cf48a1adf871ba3f9cf9c5
+# d6b5128c8d60467f8e8fa1164fafe664
+# 2a29d35ba800483aabb3b78d68ed8bf7
+# f26d74a3cb064b3b9a4f05c3ae6a168a
+# 86f1a5cdf6bc4a4186e81ff6650f096a
+# ff3724e411444e4794cb997c5470e079
+# 8ec90d7ed1764884b06997056a55d58e
+# f627a76074cc409abdc9f89afef40c8d
+# 889ecaa281b043bf8c1d1e843cd998cd
+# 8b55f79637a248319254becd03bf5850
+# 4c071a0c237b4842a6ac8db0e4413980
+msgid "Returns"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:30
+# ca281cf1b8c2421cacc4e4b5739c8b02
+msgid "an object that, if executed, has     the same effect on the environment as sourcing the file"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:32
+# 7ce8896a8eef497f9f4f6269b810b389
+msgid "an object that, if executed, has"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:33
+# 1b6eff15f26145b6befa543f9c4cdaf3
+msgid "the same effect on the environment as sourcing the file"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.from_sourcing_file:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.command:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.name:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.path:0
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:0
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:0
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.make_log_context:0
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.simplify_name:0
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix.join:0
+#: ../spack/lib/spack/spack/util/string.py:docstring of spack.util.string.plural:0
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:0
+# e292d4531e2e46ea958b74c7ce8bcec5
+# a480239e0daf427b8ba91c25ac8c969c
+# 51ed654182fd400891985a8f532b19f5
+# c609a271467c4c98b2343926b00c6a10
+# 32bd4f9950924f5d888251258a70faac
+# c6a617389ea8470aba91e7b17a05b072
+# 891ec368850d4776a4509fa196b4c7d6
+# 64dd270e14bb4aaeae1e977192a05b84
+# b720441d4c174d4689eac01a320fa75e
+# 58175dc049df4e7eab60a089c16edeeb
+# ba3860e5b5e34a4aabca4330023039df
+msgid "Return type"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.group_by_name:1
+# fb7a1aabcb82420890291311fbe8b1ea
+msgid "Returns a dict of the modifications grouped by variable name."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.group_by_name:3
+# 73c17426033c490e89ee8089145a9704
+msgid "dict mapping the environment variable name to the modifications to be done on it"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.prepend_path:1
+# 7ae2f342219449c0a5293378880aa656
+msgid "Same as `append_path`, but the path is pre-pended."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.prepend_path:4
+# 70cdcec6744845928fa51609237c6350
+msgid "path to be pre-pended"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.prune_duplicate_paths:1
+# 2887880a0b1c4ad5b9f6e778931d9406
+msgid "Stores a request to remove duplicates from a path list, otherwise preserving the order."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.remove_path:1
+# 088e80d645b04597872a60859f46846c
+msgid "Stores a request to remove a path from a path list."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.remove_path:4
+# 349fd6b83b0f49438026b0200a78e77e
+msgid "path to be removed"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.set:1
+# 5e7cdb38a14044bc8e971e9bba42b04e
+msgid "Stores a request to set an environment variable."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.set:3
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.unset:3
+# 9430c1b4dc6e4f90b887a1524112b934
+# 1b8bc5547d514d8580670aabb505d66f
+msgid "name of the environment variable to be set"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.set:4
+# 33f95e009ee34ea48ecf7cbc93c5a5ff
+msgid "value of the environment variable"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.set_path:1
+# 0459ffd36e2344618aaa542d6a98a550
+msgid "Stores a request to set a path generated from a list."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.set_path:3
+# ae355e55a2a748a1aa4d8a95a516ea9d
+msgid "name o the environment variable to be set."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.set_path:4
+# 3d6aec3090da4253b45c2c9cbe0c3f27
+msgid "elements of the path to set."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.shell_modifications:1
+# 4df3fbecba864de5b89f5468c26fceb5
+msgid "Return shell code to apply the modifications and clears the list."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.EnvironmentModifications.unset:1
+# c401b13a2f484409b33911edc00d7feb
+msgid "Stores a request to unset an environment variable."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.concatenate_paths:1
+# 4680d2ad879a434aa083237775caaf0b
+msgid "Concatenates an iterable of paths into a string of paths separated by separator, defaulting to colon."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.concatenate_paths:4
+# 23fea33432784d2287954dcc03073d07
+msgid "iterable of paths"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.concatenate_paths:5
+# 502fdd226df54a7491f444bab51680a7
+msgid "the separator to use, default ':'"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.concatenate_paths:7
+# 9877b829c4d8403187b592f9ad2359a1
+msgid "string"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.deprioritize_system_paths:1
+# 33a9bfc3ba054ede8b151108a4ebbc33
+msgid "Put system paths at the end of paths, otherwise preserving order."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.dump_environment:1
+# f65266ce05da4640a86e3bbe17477c44
+msgid "Dump an environment dictionary to a source-able file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.filter_environment_blacklist:1
+# 08de595a26d94a5086ace18c8ae22083
+msgid "Generator that filters out any change to environment variables present in the input list."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.filter_environment_blacklist:4
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.validate:7
+# 2534edb505874f55a4e1553af4f4394e
+# 6b628b392fd347b6bf32c5a33e52a5ff
+msgid "list of environment modifications"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.filter_environment_blacklist:5
+# 2a176802e034409ab491e42f359e1532
+msgid "list of variable names to be filtered"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.filter_environment_blacklist:7
+# 3b8c58dad71f4e8ba92dc73a645658c3
+msgid "items in env if they are not in variables"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.filter_system_paths:1
+# 6dfe403499f74aa2afd3ab00fd0576e0
+msgid "Return only paths that are not system paths."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.inspect_path:1
+# 5b0abe6e6d6d4e6db7d667b18316a2f1
+msgid "Inspects ``root`` to search for the subdirectories in ``inspections``. Adds every path found to a list of prepend-path commands and returns it."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.inspect_path:4
+# 20d74d94f2134e6d80480f3acaef87ec
+msgid "absolute path where to search for subdirectories"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.inspect_path:6
+# 50b7f846b75048f18b39557819c7705d
+msgid "maps relative paths to a list of environment variables that will be modified if the path exists. The modifications are not performed immediately, but stored in a command object that is returned to client"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.inspect_path:11
+# 91d41529374a408b96d84f7472632629
+msgid "optional callable. If present it must accept an absolute path and return True if it should be excluded from the inspection"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.inspect_path:16
+# 450039e3caca4a8b8e2fba2e959de240
+msgid "Examples:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.inspect_path:18
+# 9b6a866991664c6da7fe138b6220fe6f
+msgid "The following lines execute an inspection in ``/usr`` to search for ``/usr/include`` and ``/usr/lib64``. If found we want to prepend ``/usr/include`` to ``CPATH`` and ``/usr/lib64`` to ``MY_LIB64_PATH``."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.inspect_path:36
+# 532c3716aa6e4658889e3ac89f46cc47
+msgid "instance of EnvironmentModifications containing the requested modifications"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.is_system_path:1
+# 21d39bcb418f49839e9462d52c5bbee2
+msgid "Predicate that given a path returns True if it is a system path, False otherwise."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.is_system_path:4
+# 626cef76da434375958693beefcb058f
+msgid "path to a directory"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.is_system_path:7
+# 7e2510d4b043436aa6a20c47cb2fa80c
+msgid "True or False"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.path_put_first:1
+# 14410870651c44288c4a36bd199a69bf
+msgid "Puts the provided directories first in the path, adding them if they're not already there."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.pickle_environment:1
+# fd34150ca8914eb3b5d1b66290df1d78
+msgid "Pickle an environment dictionary to a file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.preserve_environment:1
+# fcf66cf8785140d989e11cbdf19c1829
+msgid "Ensures that the value of the environment variables passed as arguments is the same before entering to the context manager and after exiting it."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.preserve_environment:5
+# 259634f6fe7f46168591be37dde6935d
+msgid "Variables that are unset before entering the context manager will be explicitly unset on exit."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.preserve_environment:8
+# 8b60e077f84a4aa1aefbcfd28d4d3d6c
+msgid "list of environment variables to be preserved"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.prune_duplicate_paths:1
+# 7884fdfbc9c940ff8a60c203b51ee6ba
+msgid "Returns the paths with duplicates removed, order preserved."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.set_env:1
+# 6c5a19587fb2474980a3dcf0571e4262
+msgid "Temporarily sets and restores environment variables."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.set_env:3
+# 2dd5b87eb887415d8b5f4398190adaaf
+msgid "Variables can be set as keyword arguments to this function."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.set_or_unset_not_first:1
+# b9817b4984674762ada8d349bbf8f9cb
+msgid "Check if we are going to set or unset something after other modifications have already been requested."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.validate:1
+# d59be06c05e94356a4a1aeabc32b7de3
+msgid "Validates the environment modifications to check for the presence of suspicious patterns. Prompts a warning for everything that was found."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/environment.py:docstring of spack.util.environment.validate:4
+# 9aac982eac0547aaa4350968a8c8fa85
+msgid "Current checks: - set or unset variables after other changes on the same variable"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:55
+# b25cc7d166b044d6bd1414eccde41576
+msgid "spack.util.executable module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable:1
+# 4e1b7a1d8edb4a6d8ab5d87c29eaaaeb
+msgid "Class representing a program that can be run on the command line."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.add_default_arg:1
+# 7f9ba77a38c048d299a74dba589c43a1
+msgid "Add a default argument to the command."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.add_default_env:1
+# df7e04ca5e2d40c5b6cbeb39c1a72e9a
+msgid "Set an environment variable when the command is run."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.add_default_env:3
+# 7071c86658f940b591b04c631fdcd940
+msgid "The environment variable to set"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.add_default_env:4
+# eccc4ca071b8478fa1bd1fa94c9c70bf
+msgid "The value to set it to"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.command:1
+# 9f992892669c40b38c208c44dc99d3e5
+msgid "The command-line string."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.command:3
+# 32f07098d4564f90ab55da7a76e8c334
+msgid "The executable and default arguments"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.name:1
+# 0479fea448f64d9c9145d14fa2e0c35b
+msgid "The executable name."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.name:3
+# e7df0ea8b86340958861864ecae97768
+msgid "The basename of the executable"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.path:1
+# f9107d6006c34b25be382e9aac92b0c4
+msgid "The path to the executable."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.Executable.path:3
+# 7260abbb919745c191bbcec7e5c7fa11
+msgid "The path to the executable"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:1
+# 5b599893ce5f433a9094ec980a1ac77b
+msgid "Finds an executable in the path like command-line which."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:3
+# f229ed12fbdb4e85a710f49786d9cd08
+msgid "If given multiple executables, returns the first one that is found. If no executables are found, returns None."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:6
+# 03b1c96017bb47adb737d47355797390
+msgid "One or more executables to search for"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:9
+# 0a9c8ee923f4456d91f316c3a6a23848
+msgid "The path to search. Defaults to ``PATH``"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:11
+# c439f8bd85cd42b8a18becd932ce25c9
+msgid "If set to True, raise an error if executable not found"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.which:14
+# 7509f2ea788e49aa9b11afdb6959e685
+msgid "The first executable that is found in the path"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.ProcessError:1
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.CacheError:1
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.PackageHashError:1
+#: ../spack/lib/spack/spack/util/spack_json.py:docstring of spack.util.spack_json.SpackJSONError:1
+#: ../spack/lib/spack/spack/util/spack_yaml.py:docstring of spack.util.spack_yaml.SpackYAMLError:1
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.SpackWebError:1
+# 17c29906883f4a3fa8be4f9a39a9e7e2
+# 28c9639d91754282bd5abf5edb213fca
+# f301bcee9a7f47b89b326921918335d6
+# 4939fd6f733444509e5864629fe7a03c
+# 928eb7a46592425aafc06ab64253c4ab
+# 7539e1fab3d64a2b8a34e78281c090e6
+msgid "Bases: :class:`spack.error.SpackError`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/executable.py:docstring of spack.util.executable.ProcessError:1
+# 33aba66db9db4072956af415cd03776c
+msgid "ProcessErrors are raised when Executables exit with an error code."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:63
+# 8b095b37e17644b5a40173929102ad29
+msgid "spack.util.file\\_cache module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache:1
+# be83cc7584cf41b48a1bc71d91280d5b
+msgid "This class manages cached data in the filesystem."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache:3
+# 33023efd59ed4bb184ff8e78b58873af
+msgid "Cache files are fetched and stored by unique keys.  Keys can be relative paths, so that there can be some hierarchy in the cache."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache:6
+# ea7fd123edad44e2935efa6bfb62d442
+msgid "The FileCache handles locking cache files for reading and writing, so client code need not manage locks for cache entries."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.cache_path:1
+# 6f89a912be194105ada1764a309d4f93
+msgid "Path to the file in the cache for a particular key."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.destroy:1
+# d210c5575b214adcbb89c86e4e6ae061
+msgid "Remove all files under the cache root."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.init_entry:1
+# 5b844645db584e07876b9e7a0a6f0abd
+msgid "Ensure we can access a cache file. Create a lock for it if needed."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.init_entry:3
+# adfeb5c404ca45a78f11d0027675051c
+msgid "Return whether the cache file exists yet or not."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.mtime:1
+# faa03143c5a547229d256f297f726008
+msgid "Return modification time of cache file, or 0 if it does not exist."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.mtime:3
+# 7ee14025a97a4aeca95e89ac143748c4
+msgid "Time is in units returned by os.stat in the mtime field, which is platform-dependent."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.read_transaction:1
+# 9ee3c3c8542f4c58a04552fc43e41547
+msgid "Get a read transaction on a file cache item."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.read_transaction:3
+# 990e656debd94694917fd0f855729f2e
+msgid "Returns a ReadTransaction context manager and opens the cache file for reading.  You can use it like this:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.read_transaction:6
+# 319b186e225a43d5b06d9cc9718845b0
+msgid "with file_cache_object.read_transaction(key) as cache_file:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.read_transaction:7
+# ce373a393b26493d8786b3d9ae5ff9dc
+msgid "cache_file.read()"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.write_transaction:1
+# dbe110209fa94d0a80c5a54f10925210
+msgid "Get a write transaction on a file cache item."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/file_cache.py:docstring of spack.util.file_cache.FileCache.write_transaction:3
+# e6741c41e31647ce95ebb8fcb5e42096
+msgid "Returns a WriteTransaction context manager that opens a temporary file for writing.  Once the context manager finishes, if nothing went wrong, moves the file into place on top of the old file atomically."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:71
+# 89055c38f3114cfbbd2396f7bbfb8854
+msgid "spack.util.gpg module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:79
+# 79c35c60148f4980acddad01222c7780
+msgid "spack.util.lock module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/lock.py:docstring of spack.util.lock:1
+# 99be41ec78684b01b0109840f26d70cb
+msgid "Wrapper for ``llnl.util.lock`` allows locking to be enabled/disabled."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/lock.py:docstring of spack.util.lock.Lock:1
+# 7ba856df5dcf46558f4f4f39c04de793
+msgid "Bases: :class:`llnl.util.lock.Lock`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/lock.py:docstring of spack.util.lock.Lock:1
+# 0964d4c3a82f4e2980ea3dec5cb3f646
+msgid "Lock that can be disabled."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/lock.py:docstring of spack.util.lock.Lock:3
+# 9a31efbe4c114f2381991660dc945148
+msgid "This overrides the ``_lock()`` and ``_unlock()`` methods from ``llnl.util.lock`` so that all the lock API calls will succeed, but the actual locking mechanism can be disabled via ``_enable_locks``."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/lock.py:docstring of spack.util.lock.check_lock_safety:1
+# a485827e703745e7a7c479870814ef6d
+msgid "Do some extra checks to ensure disabling locks is safe."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/lock.py:docstring of spack.util.lock.check_lock_safety:3
+# fe6b6df73a2448b589e5eb091445455a
+msgid "This will raise an error if ``path`` can is group- or world-writable AND the current user can write to the directory (i.e., if this user AND others could write to the path)."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/lock.py:docstring of spack.util.lock.check_lock_safety:7
+# 2385213ef88b4defbc3a6617f60b1293
+msgid "This is intended to run on the Spack prefix, but can be run on any path for testing."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:87
+# 228e5b35cb9b48e2b214e0cbfb2a894d
+msgid "spack.util.log\\_parse module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:1
+# 8de70c11bfbd45a1a7e692b5c5ac83a8
+msgid "Extract interesting events from a log file as a list of LogEvent."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:3
+# 348bd04de8104de4a8746ce7ecf67d00
+msgid "build log name or file object"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:5
+# 91430dc789cf443ea30e37b1457e64c8
+msgid "lines of context to extract around each log event"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:7
+# 67f761602f2a4b499e2d312a418bc736
+msgid "number of jobs to parse with; default ncpus"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:9
+# 79e4403267e64efea58b8d3a58f8c336
+msgid "print out profile information for parsing"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:12
+# c114ab04bf2c4d6dbb7100b46bcd1a8a
+msgid "two lists containig ``BuildError`` and     ``BuildWarning`` objects."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:14
+# f269917695224caf8b45db1f15a84978
+msgid "two lists containig ``BuildError`` and"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:15
+# 5ce3f919010d45129c919ac6e4779cb5
+msgid "``BuildWarning`` objects."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.parse_log_events:18
+# 7d5fd8672dcf4fa1a24f42373d58bf3a
+msgid "This is a wrapper around ``ctest_log_parser.CTestLogParser`` that lazily constructs a single ``CTestLogParser`` object.  This ensures that all the regex compilation is only done once."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.make_log_context:1
+# b4bc33043fb14c908287e4b8d92d5074
+msgid "Get error context from a log file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.make_log_context:3
+# fe4f1d1c08e2445999d1a9f2fbf2c477
+msgid "list of events created by ``ctest_log_parser.parse()``"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.make_log_context:6
+# 6393f85aca4547fda14a1ee960d93c5e
+msgid "wrap width; ``0`` for no limit; ``None`` to auto-size for terminal"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.make_log_context:10
+# 8c7d309af6d3443297f948468ca0f579
+msgid "context from the build log with errors highlighted"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.make_log_context:13
+# 699551f851d84c7ca1ff38dbbe55ddea
+msgid "Parses the log file for lines containing errors, and prints them out with line numbers and context.  Errors are highlighted with '>>' and with red highlighting (if color is enabled)."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/log_parse.py:docstring of spack.util.log_parse.make_log_context:17
+# a02cdcc50d2f470584827e989f15470b
+msgid "Events are sorted by line number before they are displayed."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:95
+# 142ddec5ec974e9aa15590c731feebf3
+msgid "spack.util.module\\_cmd module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/module_cmd.py:docstring of spack.util.module_cmd:1
+# 10943068072144418e34ccc795333de9
+msgid "This module contains routines related to the module command for accessing and parsing environment modules."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/module_cmd.py:docstring of spack.util.module_cmd.get_path_from_module:1
+# 01082c1dd41c44db82696348ede19a80
+msgid "Inspects a TCL module for entries that indicate the absolute path at which the library supported by said module can be found."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/module_cmd.py:docstring of spack.util.module_cmd.load_module:1
+# 81e67ae7195d4fabb66f6c6aa7e234e6
+msgid "Takes a module name and removes modules until it is possible to load that module. It then loads the provided module. Depends on the modulecmd implementation of modules used in cray and lmod."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:103
+# 27b0afcfbeb141caa06feda7334ed718
+msgid "spack.util.naming module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.mod_to_class:1
+# c65fee9728104e2bb445347cb44d5c42
+msgid "Convert a name from module style to class name style.  Spack mostly follows `PEP-8 <http://legacy.python.org/dev/peps/pep-0008/>`_:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.mod_to_class:4
+# 6b15e9c4d5e6403998d39f90f508d673
+msgid "Module and package names use lowercase_with_underscores."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.mod_to_class:5
+# 8c3a238e4d95492891c3424d6f1344b5
+msgid "Class names use the CapWords convention."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.mod_to_class:7
+# 1ef016b0e7ae47f296be7c91d71c253b
+msgid "Regular source code follows these convetions.  Spack is a bit more liberal with its Package names and Compiler names:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.mod_to_class:10
+# 54d11514b7aa402b9fac21b1e6b32af0
+msgid "They can contain '-' as well as '_', but cannot start with '-'."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.mod_to_class:11
+# 35c74f1292b44f8aadcdd508ae857272
+msgid "They can start with numbers, e.g. \"3proxy\"."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.mod_to_class:13
+# 3d42dd84f36d4bc08a1de7b8b05f5350
+msgid "This function converts from the module convention to the class convention by removing _ and - and converting surrounding lowercase text to CapWords.  If mod_name starts with a number, the class name returned will be prepended with '_' to make a valid Python identifier."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.spack_module_to_python_module:1
+# f474489b59c94686bcf6782df4ce15d1
+msgid "Given a Spack module name, returns the name by which it can be imported in Python."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.valid_module_name:1
+# ef793d7f5a194ce08ff35055ebf46bd7
+msgid "Return whether mod_name is valid for use in Spack."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.valid_fully_qualified_module_name:1
+# 122bc73f7d4f46beae57414e8436259e
+msgid "Return whether mod_name is a valid namespaced module name."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.validate_fully_qualified_module_name:1
+# 5f557351d2744cbfa8a1fde6be82561d
+msgid "Raise an exception if mod_name is not a valid namespaced module name."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.validate_module_name:1
+# fac15959c90f40cc9f267a211e19e452
+msgid "Raise an exception if mod_name is not valid."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.possible_spack_module_names:1
+# 022b9891cc1f445ca4d294e2d82878b1
+msgid "Given a Python module name, return a list of all possible spack module names that could correspond to it."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.simplify_name:1
+# 74406037ef3641cf9f50a2be46fbc8c3
+msgid "Simplify package name to only lowercase, digits, and dashes."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.simplify_name:3
+# d28205b6f7cd4164897388719437c3ca
+msgid "Simplifies a name which may include uppercase letters, periods, underscores, and pluses. In general, we want our package names to only contain lowercase letters, digits, and dashes."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.simplify_name:7
+# acf1c3f954bf4996b4e17c6903a98ba8
+msgid "The original name of the package"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.simplify_name:10
+# 7487c48a29e24c1dbbd41f6851512d63
+msgid "The new name of the package"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.NamespaceTrie.has_value:1
+# 8900255836814afbb0c0898f0b0cac6a
+msgid "True if there is a value set for the given namespace."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.NamespaceTrie.is_leaf:1
+# 724898ab1b964597beb5552294eeabc1
+msgid "True if this namespace has no children in the trie."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/naming.py:docstring of spack.util.naming.NamespaceTrie.is_prefix:1
+# bd8adcddf377496f8c5df7e7f9f0c23d
+msgid "True if the namespace has a value, or if it's the prefix of one that does."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:111
+# 5e1da278b91a42e89966c0610615518b
+msgid "spack.util.package\\_hash module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.PackageHashError:1
+# 0d1ae62d157c486f92a170d477a47247
+msgid "Raised for all errors encountered during package hashing."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.RemoveDirectives:1
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.RemoveDocstrings:1
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.ResolveMultiMethods:1
+# e9eb162d842a42faa5c8f61da1e0d4d5
+# 2edbe3f08e2b4f0b994b76ba561c13e5
+# ccd80ab6720844319c0a18f22f7a1ed8
+msgid "Bases: :class:`ast.NodeTransformer`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.RemoveDirectives:1
+# c20f54e52afc4096ab71a5eb13f1288c
+msgid "Remove Spack directives from a package AST."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.RemoveDocstrings:1
+# 02576170b8e94454bfa97ef3cb9b01ab
+msgid "Transformer that removes docstrings from a Python AST."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.ResolveMultiMethods:1
+# e7a1ab70a6a04eefad611ba09e61dce7
+msgid "Remove methods which do not exist if their @when is not satisfied."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.TagMultiMethods:1
+# bbc88de88a4a4f6384c79238c946d922
+msgid "Bases: :class:`ast.NodeVisitor`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/package_hash.py:docstring of spack.util.package_hash.TagMultiMethods:1
+# 5b0f5d7862d94733a6510f5b7858d4b9
+msgid "Tag @when-decorated methods in a spec."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:119
+# 4666413881d8442baa5a6d099beeeef6
+msgid "spack.util.path module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/path.py:docstring of spack.util.path:1
+# b82fbacfd52d4058b309783839d99839
+msgid "Utilities for managing paths in Spack."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/path.py:docstring of spack.util.path:3
+# 14eee5b5250440e3b80ee21258f838a0
+msgid "TODO: this is really part of spack.config. Consolidate it."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/path.py:docstring of spack.util.path.substitute_config_variables:1
+# a6fe4d4bc9e5473bb4f4a556d37b442b
+msgid "Substitute placeholders into paths."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/path.py:docstring of spack.util.path.substitute_config_variables:3
+# a9627f74310349d49d81b5c7ade0c844
+msgid "Spack allows paths in configs to have some placeholders, as follows:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/path.py:docstring of spack.util.path.substitute_config_variables:5
+# 1cf424e4f4b7436fbeebc2ae79ad5c7a
+msgid "$spack     The Spack instance's prefix"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/path.py:docstring of spack.util.path.substitute_config_variables:6
+# 8f7994d046264ce79ea96fb6431a6a35
+msgid "$user      The current user's username"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/path.py:docstring of spack.util.path.substitute_config_variables:7
+# 5da7ea95688e4c608a4618d62858047f
+msgid "$tempdir   Default temporary directory returned by tempfile.gettempdir()"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/path.py:docstring of spack.util.path.substitute_config_variables:9
+# d6855c8bba7544f8ae4ab44c1a2f29c4
+msgid "These are substituted case-insensitively into the path, and users can use either ``$var`` or ``${var}`` syntax for the variables."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/path.py:docstring of spack.util.path.canonicalize_path:1
+# f8ec35f09e214de28ffe20162f366720
+msgid "Substitute config vars, expand environment vars, expand user home, take abspath."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:127
+# 9cb3704de74942829d47980f87b5c9e6
+msgid "spack.util.pattern module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.Args:1
+# 269a704484a7488db0d20dda9921b01d
+msgid "Bases: :class:`spack.util.pattern.Bunch`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.Args:1
+# dcf53e202ae6406b8a2d0f02ef749bab
+msgid "Subclass of Bunch to write argparse args more naturally."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.Bunch:1
+# 73182f5ef47d48708eb383498c4afaa3
+msgid "Carries a bunch of named attributes (from Alex Martelli bunch)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.composite:1
+# 656902ccf9c844baa806e17db8157f8b
+msgid "Decorator implementing the GoF composite pattern."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.composite:3
+# ee7a4a18521d4e569f2c88a780ddd361
+msgid "class exposing the interface to which the composite object must conform. Only non-private and non-special methods will be taken into account"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.composite:7
+# 165164264c744186a2155a96bd6f8a2f
+msgid "names of methods that should be part of the composite"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.composite:10
+# 09698c204e994bc7aca78188d45153bc
+msgid "container for the composite object (default = list).  Must fulfill the MutableSequence contract. The composite class will expose the container API to manage object composition"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/pattern.py:docstring of spack.util.pattern.composite:16
+# d140ceb7dce3412a99bb659514af627b
+msgid "a class decorator that patches a class adding all the methods it needs to be a composite for a given interface."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:135
+# 790e627691fe4273baabb7ad881b1f8f
+msgid "spack.util.prefix module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix:1
+# d81bd6b75dda49bcb9b0850aa5a12cba
+msgid "This file contains utilities for managing the installation prefix of a package."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix:1
+# da2e0701efbc43c99b824703cd1fd3d7
+msgid "Bases: :class:`str`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix:1
+# 93eebc377c4246d5aadd645bd23fe5c6
+msgid "This class represents an installation prefix, but provides useful attributes for referring to directories inside the prefix."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix:4
+# 04e80e8be9234dce97a4402c11e16408
+msgid "Attributes of this object are created on the fly when you request them, so any of the following is valid:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix:19
+# edf025517657491f985936f90d9a3926
+msgid "Prefix objects behave identically to strings. In fact, they subclass ``str``. So operators like ``+`` are legal::"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix:24
+# d93fd5c0f16442d981b1a994b91fec9b
+msgid "This prints ``foobar /usr``. All of this is meant to make custom installs easy."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix.join:1
+# 4bb9fb5725a64cd8b581c9de52359d07
+msgid "Concatenates a string to a prefix."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix.join:3
+# 82299eaa9d61494fa68a57e47b4c2009
+msgid "the string to append to the prefix"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/prefix.py:docstring of spack.util.prefix.Prefix.join:6
+# cb9c36b7f9214915b0b3c6a4ec5f532e
+msgid "the newly created installation prefix"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:143
+# b58d8573c4614cdfb67414e5ebb8e3d5
+msgid "spack.util.spack\\_json module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/spack_json.py:docstring of spack.util.spack_json:1
+# 582595106ab14d8ca37ef3942888c20d
+msgid "Simple wrapper around JSON to guarantee consistent use of load/dump."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/spack_json.py:docstring of spack.util.spack_json.load:1
+# 9db1ec153a8d46a582a9707c3cf156c9
+msgid "Spack JSON needs to be ordered to support specs."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/spack_json.py:docstring of spack.util.spack_json.dump:1
+# 2b4b4f7cd07b45e3b68372923724cb38
+msgid "Dump JSON with a reasonable amount of indentation and separation."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/spack_json.py:docstring of spack.util.spack_json.SpackJSONError:1
+# aa21cc7ff38e43248752f189feab90e2
+msgid "Raised when there are issues with JSON parsing."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:151
+# 8868728ddfc743b88fcc2d052d023216
+msgid "spack.util.spack\\_yaml module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/spack_yaml.py:docstring of spack.util.spack_yaml:1
+# cf5293f536424e70bfdae1ba68b3c4c9
+msgid "Enhanced YAML parsing for Spack."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/spack_yaml.py:docstring of spack.util.spack_yaml:3
+# 53eb8a720d0342e9a8a07775e3ccf73d
+msgid "``load()`` preserves YAML Marks on returned objects -- this allows us to access file and line information later."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/spack_yaml.py:docstring of spack.util.spack_yaml:6
+# 5ad44eb291fd484ca0c8885902449214
+msgid "``Our load methods use ``OrderedDict`` class instead of YAML's default unorderd dict."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/spack_yaml.py:docstring of spack.util.spack_yaml.load:1
+# 8303083909184ede8f5c1b215c763b99
+msgid "Load but modify the loader instance so that it will add __line__ atrributes to the returned object."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/spack_yaml.py:docstring of spack.util.spack_yaml.SpackYAMLError:1
+# 2726bcaae7c04ce78df032eeac57da86
+msgid "Raised when there are issues with YAML parsing."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:159
+# 67cf43156f994d668b35d844d39b3024
+msgid "spack.util.string module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/string.py:docstring of spack.util.string.plural:1
+# d70200f7c2be43a69319f06a2866cc7b
+msgid "Pluralize <singular> word by adding an s if n != 1."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/string.py:docstring of spack.util.string.plural:3
+# 6c43b053ba8e4436b5f3c67cd20ed517
+msgid "number of things there are"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/string.py:docstring of spack.util.string.plural:5
+# 9374de1105634ac38a5f2bb559a5d78c
+msgid "singular form of word"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/string.py:docstring of spack.util.string.plural:7
+# 4b78fa13e9ac404f9ca9bd9074c1d931
+msgid "optional plural form, for when it's not just singular + 's'"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/string.py:docstring of spack.util.string.plural:10
+# c46d043a49ec472185e5d935b3f21f92
+msgid "whether to include n in the result string (default True)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/string.py:docstring of spack.util.string.plural:13
+# 2c98d6ff3a8748d1b03e506ffab83e73
+msgid "\"1 thing\" if n == 1 or \"n things\" if n != 1"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:167
+# 662f3d6062a84fa7b54929314c241a04
+msgid "spack.util.web module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.HTMLParseError:1
+# 75c667968370417b8ae68892f1f1f1e6
+msgid "Bases: :class:`Exception`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.LinkParser:1
+# 59e4f283786e49c4ab6cdf40ecc5d987
+msgid "Bases: :class:`html.parser.HTMLParser`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.LinkParser:1
+# 184591aa1cd44fa7b32428d64569cc26
+msgid "This parser just takes an HTML page and strips out the hrefs on the links.  Good enough for a really simple spider."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.NoNetworkConnectionError:1
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.VersionFetchError:1
+# c250e870aa304621b12819417977d2fc
+# 0a077a4783bb43a1adc7c20b3b7b9943
+msgid "Bases: :class:`spack.util.web.SpackWebError`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.NoNetworkConnectionError:1
+# 25d89f5de6ee4fec8a41160e2b6f2d12
+msgid "Raised when an operation can't get an internet connection."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonContext:1
+# 51f791a3843f4d8f99798fbbbc76b07e
+msgid "Bases: :class:`multiprocessing.context.ForkContext`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonPool:1
+# 921475ecad4845e9b2ce8d16919c8f9e
+msgid "Bases: :class:`multiprocessing.pool.Pool`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonPool:1
+# 793c56b4c1434110b1e35f3225775962
+msgid "Pool that uses non-daemon processes"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonProcess:1
+# ad12983aaf734b0bb8883783b340df2b
+msgid "Bases: :class:`multiprocessing.context.Process`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonProcess:1
+# 76068016d18e4ba69fe464fdfa5ade0e
+msgid "Process tha allows sub-processes, so pools can have sub-pools."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonProcess.daemon:1
+# cf00093e8cdd4c3d9c5c08471fa3d73a
+msgid "Return whether process is a daemon"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.SpackWebError:1
+# 0077f19daef04bbca10205a53d0de4eb
+msgid "Superclass for Spack web spidering errors."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.VersionFetchError:1
+# d01e15a0e7f945ebbff48cd371617863
+msgid "Raised when we can't determine a URL to fetch a package."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.find_versions_of_archive:1
+# c389e01da7ed4ffa82c9f53e6f3342c1
+msgid "Scrape web pages for new versions of a tarball."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.find_versions_of_archive:3
+# aa34e9d9e4da4f59bc641d28edd5132c
+msgid "URL or sequence of URLs for different versions of a package. Typically these are just the tarballs from the package file itself.  By default, this searches the parent directories of archives."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.find_versions_of_archive:8
+# d81e268d64d44e828d3a4e0681cf121c
+msgid "URL for a listing of archives.  Spack wills scrape these pages for download links that look like the archive URL."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.find_versions_of_archive:10
+# 7d086518e61c47589d8986b557981623
+msgid "Max depth to follow links on list_url pages. Default 0."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:1
+# e837400d313f4d6c9307e0960d5492f6
+msgid "Fetches and checksums archives from URLs."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:3
+# 22a8fb28c0554e399d232ebc51ee3f79
+msgid "This function is called by both ``spack checksum`` and ``spack create``.  The ``first_stage_function`` argument allows the caller to inspect the first downloaded archive, e.g., to determine the build system."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:8
+# 3d8b6d6c0490435cb762f65f7f94017e
+msgid "A dictionary of the form: version -> URL"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:10
+# 6230f6cf893f46829c839cb84bcee832
+msgid "The name of the package"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:12
+# 149bb204f29041639e5543fb41df99fd
+msgid "function that takes a Stage and a URL; this is run on the stage of the first URL downloaded"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:15
+# 1147277952f548249d5e0d57a6274b0c
+msgid "whether to keep staging area when command completes"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.get_checksums_for_versions:18
+# 8da49c6cccd749e8b7a3eeafb9b7ecec
+msgid "A multi-line string containing versions and corresponding hashes"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.spider:1
+# 7666272d5e32433f8c673b876b3929ab
+msgid "Gets web pages from a root URL."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.spider:3
+# e14d003c7887411db2ebe9de27c7804a
+msgid "If depth is specified (e.g., depth=2), then this will also follow up to <depth> levels of links from the root."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/web.py:docstring of spack.util.web.spider:6
+# f3d1ad1106f8426e872ea5f308d9ae74
+msgid "This will spawn processes to fetch the children, for much improved performance over a sequential fetch."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.rst:176
+# a00fa2a063944c8bbdf5aa0ddbb09227
+msgid "Module contents"
+msgstr ""
+

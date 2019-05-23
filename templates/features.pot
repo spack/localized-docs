@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/features.rst:8
+# 259e8c7843f4494e938612f201e101ef
+msgid "Feature Overview"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:10
+# c9bbdd9fcacd404a9fbe798cd66c3540
+msgid "This is a high-level overview of features that make Spack different from other `package managers <http://en.wikipedia.org/wiki/Package_management_system>`_ and `port systems <http://en.wikipedia.org/wiki/Ports_collection>`_."
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:17
+# 3875f66eba96439fa33c4da82ffc1e5c
+msgid "Simple package installation"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:19
+# 78edd76ec8044bf4b3f1ff65390f8935
+msgid "Installing the default version of a package is simple. This will install the latest version of the ``mpileaks`` package and all of its dependencies:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:28
+# fe6b1edd2c784312b342f71db7711601
+msgid "Custom versions & configurations"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:30
+# 2a54b22625644994861a958874e57a6b
+msgid "Spack allows installation to be customized.  Users can specify the version, build compiler, compile-time options, and cross-compile platform, all on the command line."
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:54
+# aeb8a3a39442454d8f1034c254c8951e
+msgid "Users can specify as many or few options as they care about. Spack will fill in the unspecified values with sensible defaults. The two listed syntaxes for variants are identical when the value is boolean."
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:60
+# bb3322e828234fa581e04c8f845c030f
+msgid "Customize dependencies"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:62
+# 9f1ebb8b03e542fdb56d4e098a1b7557
+msgid "Spack allows *dependencies* of a particular installation to be customized extensively.  Suppose that ``mpileaks`` depends indirectly on ``libelf`` and ``libdwarf``.  Using ``^``, users can add custom configurations for the dependencies:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:74
+# 87650ac80a5448219110fa0e52cdf565
+msgid "Non-destructive installs"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:76
+# 689e06144ad74277a68d4c3a3f6321b9
+msgid "Spack installs every unique package/dependency configuration into its own prefix, so new installs will not break existing ones."
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:81
+# fffd774067d4402abd92e7008967c9ca
+msgid "Packages can peacefully coexist"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:83
+# 3e4d6130f78e49aca32139d5aab0dce9
+msgid "Spack avoids library misconfiguration by using ``RPATH`` to link dependencies.  When a user links a library or runs a program, it is tied to the dependencies it was built with, so there is no need to manipulate ``LD_LIBRARY_PATH`` at runtime."
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:90
+# ccc6348330da472d8356ca7e99bae115
+msgid "Creating packages is easy"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:92
+# a19e4ec1617d450698325968f3813433
+msgid "To create a new packages, all Spack needs is a URL for the source archive.  The ``spack create`` command will create a boilerplate package file, and the package authors can fill in specific build steps in pure Python."
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:97
+# 44a9d2652d6043e39e7756234832ab92
+msgid "For example, this command:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:103
+# 5a395651d90b4e15b85d312724f8701e
+msgid "creates a simple python file:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:130
+# dbe4489eafbb46b8ab18ec2794ae2eca
+msgid "It doesn't take much python coding to get from there to a working package:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/features.rst:136
+# d01f4e955afd4ed2bbf1d93a0c59bfc8
+msgid "Spack also provides wrapper functions around common commands like ``configure``, ``make``, and ``cmake`` to make writing packages simple."
+msgstr ""
+

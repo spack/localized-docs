@@ -1,0 +1,814 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/spack.modules.rst:2
+# d9314ec731ab419c88f7d0c9c90eefbb
+msgid "spack.modules package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.modules.rst:5
+# 1ea508919b8645d3b979f5ed8ee8f517
+msgid "Submodules"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.modules.rst:8
+# 36dfaf6664f94a6fb84de9ee22a025f7
+msgid "spack.modules.common module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:1
+# b1d2a0de313247b8880e6525db62c4e1
+msgid "Here we consolidate the logic for creating an abstract description of the information that module systems need."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:4
+# e2d932eb87794577be7edd9f954dfc1a
+msgid "This information maps **a single spec** to:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:6
+# 425fd5d912574e8f9aa6c359bf76a818
+msgid "a unique module filename"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:7
+# 8325bbda0c854f168fd4a6b2df4543bc
+msgid "the module file content"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:9
+# 7599705bc7bb486fba1f2360ece313c1
+msgid "and is divided among four classes:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:11
+# a0e229e331e241678c163268167e8120
+msgid "a configuration class that provides a convenient interface to query details about the configuration for the spec under consideration."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:14
+# fc908344a8884884b328094a6c3e95e7
+msgid "a layout class that provides the information associated with module file names and directories"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:17
+# 1b4b7228517f4526a4ba55a925c347ba
+msgid "a context class that provides the dictionary used by the template engine to generate the module file"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:20
+# 418cf4a7939b491080939117ca05218a
+msgid "a writer that collects and uses the information above to either write or remove the module file"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common:23
+# 32588fa6277f437c8e9a652f352cb13e
+msgid "Each of the four classes needs to be sub-classed when implementing a new module type."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration:1
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseFileLayout:1
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseModuleFileWriter:1
+# 6a4baaf92c1a417491ceb2a861cebfc3
+# ba42b3ca222f48a5bbf197994847e375
+# c023b4ee44ac4707a3a82ee9e2a2b7de
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration:1
+# 62b71941b7054c14b19523812d462304
+msgid "Manipulates the information needed to generate a module file to make querying easier. It needs to be sub-classed for specific module types."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.blacklisted:1
+# 9bbd75abb9ad4f7ab4c96da46ecc8490
+msgid "Returns True if the module has been blacklisted, False otherwise."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.env:1
+# bafd242ce2684a99a914016726822d11
+msgid "List of environment modifications that should be done in the module."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.environment_blacklist:1
+# 0dc33df6d00048ca8022c4238ee18259
+msgid "List of variables that should be left unmodified."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.hash:1
+# 036b4c46ece446c38f75291349107ea8
+msgid "Hash tag for the module or None"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.literals_to_load:1
+# c883685ee4b74c708a9cc53447205a66
+msgid "List of literal modules to be loaded."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.naming_scheme:1
+# 508bd889c41044afa277327ea4a5d404
+msgid "Naming scheme suitable for non-hierarchical layouts"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.specs_to_load:1
+# da20beef216b43ebbd5423b0b9c83fc9
+msgid "List of specs that should be loaded in the module file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.specs_to_prereq:1
+# b75b977edabd4abca968e5f8f8e95497
+msgid "List of specs that should be prerequisite of the module file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.suffixes:1
+# 549320a548374281bf101bf811f1d8a3
+msgid "List of suffixes that should be appended to the module file name."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.template:1
+# 2ade5bca30604521a8865c6e5e5d639c
+msgid "Returns the name of the template to use for the module file or None if not specified in the configuration."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseConfiguration.verbose:1
+# d6bcc71e4696435689857dfe42e1c785
+msgid "Returns True if the module file needs to be verbose, False otherwise"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseContext:1
+# a57ac6141d70489b86ae9236cf6f8261
+msgid "Bases: :class:`spack.tengine.Context`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseContext:1
+# 412d71a32cf548719fbdeb2c32cf3833
+msgid "Provides the base context needed for template rendering."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseContext:3
+# 2183b651f69046cdbb878c6367cbcf57
+msgid "This class needs to be sub-classed for specific module types. The following attributes need to be implemented:"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseContext:6
+# 5bc3998652bb48b2aee0a13b9d0c45f9
+msgid "fields"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseContext.autoload:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclContext.prerequisites:1
+# 2a6083a1d6344cbfbfd0a3c8fe77944f
+# 8bae02374f1148e28accac4522f9d993
+msgid "List of modules that needs to be loaded automatically."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseContext.environment_modifications:1
+# ea7401885cdc460fa99dd6664e3f7041
+msgid "List of environment modifications to be processed."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseContext.verbose:1
+# 13214567b0f54b77b0e54ba31eec97c0
+msgid "Verbosity level."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseFileLayout:1
+# d6b5d4ba8f974c7487ece38933d4996e
+msgid "Provides information on the layout of module files. Needs to be sub-classed for specific module types."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseFileLayout.dirname:1
+# f69a6774292e49afb1b357a8ffa64db2
+msgid "Root folder for module files of this type."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseFileLayout.extension:1
+# e6b9f6f74c4845408340dc073113081d
+msgid "This needs to be redefined"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseFileLayout.filename:1
+# 5d028c3955f140cbac3ab77c6cd6f0b5
+msgid "Name of the module file for the current spec."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseFileLayout.spec:1
+# 5b5911bbaad6418cbd1ca67cc28c1348
+msgid "Spec under consideration"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseFileLayout.use_name:1
+# 6ab3705fd7bc4cd9918112f0528f57a8
+msgid "Returns the 'use' name of the module i.e. the name you have to type to console to use it. This implementation fits the needs of most non-hierarchical layouts."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseModuleFileWriter.remove:1
+# 896fe48943e546d9811457bf76607f3d
+msgid "Deletes the module file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseModuleFileWriter.write:1
+# 6080273e81d5491d8707932dba3fc3b0
+msgid "Writes the module file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseModuleFileWriter.write:0
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.dependencies:0
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.merge_config_rules:0
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.root_path:0
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.update_dictionary_extending_lists:0
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.token_to_path:0
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.guess_core_compilers:0
+# 3959f10d9004486081649466f55c7cf7
+# b5847ecc8fdb48a79fd4d5e3f758d7ea
+# 2df5c62f459c46a89646f3fae097965e
+# 69f76d9776db4205984dfebddc1e55c9
+# a506c94d5dca4dda8e245f831e7245e0
+# 9366bbebadfb408f9de6ad423da8c9cb
+# 3fd402a6231a40259c26a2f97b06451a
+msgid "Parameters"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.BaseModuleFileWriter.write:3
+# 3961079087f04c6c9bdaf48b272432bd
+msgid "if True it is fine to overwrite an already existing file. If False the operation is skipped an we print a warning to the user."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.DefaultTemplateNotDefined:1
+# 4b5af895702e483e93db5b7d5fd3c4d1
+msgid "Bases: :class:`AttributeError`, :class:`spack.modules.common.ModulesError`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.DefaultTemplateNotDefined:1
+# 8a771c267a5a4370875dd2a9cd57036d
+msgid "Raised if the attribute 'default_template' has not been specified in the derived classes."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.ModuleIndexEntry:1
+# f42700ef519c4cb3a214438a77a76c45
+msgid "Bases: :class:`tuple`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.ModuleIndexEntry.path:1
+# c16538561d6e4e438e83a3350ad1f5bd
+msgid "Alias for field number 0"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.ModuleIndexEntry.use_name:1
+# 276c395e52204e4389b67a213550b065
+msgid "Alias for field number 1"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.ModulesError:1
+# 1580ac056f0945b19133f2d6dd135db2
+msgid "Bases: :class:`spack.error.SpackError`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.ModulesError:1
+# 6012024d958246b0882a413a5349e1a7
+msgid "Base error for modules."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.ModulesTemplateNotFoundError:1
+# d02eb01ade774d9b87980189ff1c5c92
+msgid "Bases: :class:`spack.modules.common.ModulesError`, :class:`RuntimeError`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.ModulesTemplateNotFoundError:1
+# 91586cad999f46b39641c726e5fe55ca
+msgid "Raised if the template for a module file was not found."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.configuration:1
+# 88e4f57a49dd4c25b871f5b874e798bb
+msgid "config section for this file"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.dependencies:1
+# 38beb3f725924855925668735309b4b5
+msgid "Returns the list of dependent specs for a given spec, according to the request passed as parameter."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.dependencies:4
+# 3aeea3167caa49469c1e81f117d81f8a
+msgid "spec to be analyzed"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.dependencies:5
+# ff196347f0e14f5bba1b42eed32d955c
+msgid "either 'none', 'direct' or 'all'"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.dependencies:0
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.merge_config_rules:0
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.root_path:0
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.token_to_path:0
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.guess_core_compilers:0
+# 14cc6fbfb1614cf397a44111d5930bd7
+# 69e557040f5a418bb090d165e01650a7
+# 930634eb3137436c8f455f8acaf0908a
+# 10912f41e9a04f9187552f023a9fe486
+# c2657beba0224beba1b391eb255eee77
+msgid "Returns"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.dependencies:7
+# 8e7df720b19d4afcaa6c1ff6650a3429
+msgid "list of dependencies  The return list will be empty if request is 'none', will contain the direct dependencies if request is 'direct', or the entire DAG if request is 'all'."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.dependencies:7
+# e98ce6ede9d74a11b4006750067121b6
+msgid "list of dependencies"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.dependencies:9
+# 298d0581313e431ca59ac923cb7d95d1
+msgid "The return list will be empty if request is 'none', will contain the direct dependencies if request is 'direct', or the entire DAG if request is 'all'."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.merge_config_rules:1
+# 154f045234054e10bddb15cc2d0f8512
+msgid "Parses the module specific part of a configuration and returns a dictionary containing the actions to be performed on the spec passed as an argument."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.merge_config_rules:5
+# 77b7661c8c4d4b958329fd5ce147e904
+msgid "module specific configuration (e.g. entries under the top-level 'tcl' key)"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.merge_config_rules:7
+# 1cc0aa286d774096a0b355efb5c00225
+msgid "spec for which we need to generate a module file"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.merge_config_rules:9
+# 05d05b295054407db54a39fd78ad93cd
+msgid "actions to be taken on the spec passed as an argument"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.merge_config_rules:0
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.token_to_path:0
+# cbbb4d2780b64e84b3405b95ac4a06e2
+# 9b611d0236c24c5fb59f5a78752b3b66
+msgid "Return type"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.prefix_inspections:1
+# 3aaac57a7a774b2581aedc2cd7ae0564
+msgid "Inspections that needs to be done on spec prefixes"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.root_path:1
+# fa063a832d9d4641b403074a40d70612
+msgid "Returns the root folder for module file installation."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.root_path:3
+# 9d2dec69b1d64bbda3d15d01d7bd8e30
+msgid "name of the module system t be used (e.g. 'tcl')"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.root_path:5
+# d815615c9161406e83466dde71c92916
+msgid "root folder for module file installation"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.roots:1
+# 321396aba52c43af84fcea781a174b38
+msgid "Root folders where the various module files should be written"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.update_dictionary_extending_lists:1
+# 2304e454c8094fe9bebac7541825a393
+msgid "Updates a dictionary, but extends lists instead of overriding them."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.update_dictionary_extending_lists:3
+# 20b3521097524da0bd6e1a156403b53b
+msgid "dictionary to be updated"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/common.py:docstring of spack.modules.common.update_dictionary_extending_lists:4
+# 26baf7e3a46842d39ba5e9acd14c505e
+msgid "update to be applied"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.modules.rst:16
+# 438d8ba462734f74b9dd2df918182afa
+msgid "spack.modules.dotkit module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit:1
+# 02dd4418b03a418881dd8cfc2c4ede0f
+msgid "This module implements the classes necessary to generate dotkit modules."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.DotkitConfiguration:1
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclConfiguration:1
+# bdccb8920eb145a4bfd10f250a388235
+# 2cd64e82113d4321a7b05e6ec8e79be1
+# 348f2b04eb094df181b8813df0e1db9a
+msgid "Bases: :class:`spack.modules.common.BaseConfiguration`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.DotkitConfiguration:1
+# cd3ef7b002454d45bdf95960ff74ab7b
+msgid "Configuration class for dotkit module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.DotkitContext:1
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclContext:1
+# 14378e14af3e4c3fbaba10813b90c588
+# 493efde17fc34c40b8a04a85f774288e
+# c6248b8c5b414f688b707c2eda14305b
+msgid "Bases: :class:`spack.modules.common.BaseContext`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.DotkitContext:1
+# a8842cfa09f241589e34ca0b148d3906
+msgid "Context class for dotkit module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.DotkitFileLayout:1
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclFileLayout:1
+# 0534c9ba8120459d9f98222a226507ba
+# b58b67a9fc0f497b84d948c49c64f48b
+# 6381950d9ce14880893cd0334de83670
+msgid "Bases: :class:`spack.modules.common.BaseFileLayout`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.DotkitFileLayout:1
+# 5f3b99a7aa49466582e3b721dfbb2046
+msgid "File layout for dotkit module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.DotkitFileLayout.extension:1
+# d147bf51336a453cb1e7fd1d1f4e5954
+msgid "file extension of dotkit module files"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.DotkitModulefileWriter:1
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodModulefileWriter:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclModulefileWriter:1
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.DotkitModulefileWriter:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.TclModulefileWriter:1
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.LmodModulefileWriter:1
+# a9da369f928b44e48333413f8f6f1b5f
+# c96d99b326734c9b9b72f36e65a81d44
+# fd23b9b31cbe45189a5468a2f9227825
+# 810f34aa25eb4650b4cdbc528171d8b8
+# 9ea8306d8b4d4ab28954ffef2e3e10d1
+# bf8f3fb5b3cd4bec81e116934f0aa30f
+msgid "Bases: :class:`spack.modules.common.BaseModuleFileWriter`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.DotkitModulefileWriter:1
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.DotkitModulefileWriter:1
+# 98ba5b34275342b9be27b24725bec14d
+# 236c9c3396514e59b16c49bca10c5c06
+msgid "Writer class for dotkit module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.configuration:1
+# 6b14a041ff4c494a9e9248d9c05018e3
+msgid "Dotkit specific part of the configuration"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.configuration_registry:1
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.configuration_registry:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.configuration_registry:1
+# 047701dc375b4f4fade0dfc5e64cef9a
+# ba01f6c1c9b44f0883967560a59776e1
+# 6e78a8f473d24f7588b9f30464c359c3
+msgid "configuration}"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.configuration_registry:0
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.configuration_registry:0
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.configuration_registry:0
+# b5f835c362d44b78a7c9b04567b4754d
+# 460be7c9d837447595e84cbdc5ea822d
+# 01b64d46dc3f4a44a5dc139a74a232d9
+msgid "type"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.configuration_registry:3
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.configuration_registry:3
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.configuration_registry:3
+# 885cf68a97e6460583fbdcbcf296b7c7
+# 86e01b5919274d6a9e4e07ce7db311ba
+# e42cf52df30448eeb2456162c8616ef3
+msgid "Caches the configuration {spec_hash"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.make_configuration:1
+# b4658c8140c4464e8d452ddea76ce8a9
+msgid "Returns the dotkit configuration for spec"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.make_context:1
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.make_context:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.make_context:1
+# d0e464c08b3a4b07975e91db34b9509a
+# ce99c01e77964c058a46636401e4e1c6
+# 72dc17f8298f40c6951edce40e92c906
+msgid "Returns the context information for spec"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/dotkit.py:docstring of spack.modules.dotkit.make_layout:1
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.make_layout:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.make_layout:1
+# 3da452490f674373928f1a6050335798
+# 09dc4b8496024241b15087974f8af016
+# 7f4e89da4ca74219916e146b5ed0a963
+msgid "Returns the layout information for spec"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.modules.rst:24
+# 7d70dc0e52c04639aa833dd26002ef67
+msgid "spack.modules.lmod module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.CoreCompilersNotFoundError:1
+# e48e01bcb59c45d98b25497ac4de7a85
+msgid "Bases: :class:`spack.error.SpackError`, :class:`KeyError`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.CoreCompilersNotFoundError:1
+# 06cd2344078a49f7a8ea4123a1134f2f
+msgid "Error raised if the key 'core_compilers' has not been specified in the configuration file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration:1
+# a3ec29588a934ac0b11b19d6671b5f58
+msgid "Configuration class for lmod module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration.available:1
+# f08a47738bfa466c8c7cf4b4768ebedc
+msgid "Returns a dictionary of the services that are currently available."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration.core_compilers:1
+# 1617f06f09fa4641b53b0510841a5f82
+msgid "Returns the list of \"Core\" compilers"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration.core_compilers:0
+# 872037f9e3a74121936150efa0265f4e
+msgid "raises"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration.core_compilers:3
+# b86c80c7f50748a48e12c8e41afd6f88
+msgid ":exc:`CoreCompilersNotFoundError` -- if the key was not specified in the configuration file or the sequence is empty"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration.hierarchy_tokens:1
+# bd3ea6edff234ee0902898e0493d308d
+msgid "Returns the list of tokens that are part of the modulefile hierarchy. 'compiler' is always present."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration.missing:1
+# 743c96bed2594de0921957f1bc0dbca4
+msgid "Returns the list of tokens that are not available."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration.provides:1
+# c99e7e147b554b72bbb46b235c823404
+msgid "Returns a dictionary mapping all the services provided by this spec to the spec itself."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodConfiguration.requires:1
+# 74b5ed2e3a11457a974dd5bfa29877b4
+msgid "Returns a dictionary mapping all the requirements of this spec to the actual provider. 'compiler' is always present among the requirements."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext:1
+# 52ab2e5f3360426d84cfa1c854f32bef
+msgid "Context class for lmod module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext.conditionally_unlocked_paths:1
+# f64393c6a3b041148db61682bdb938d1
+msgid "Returns the list of paths that are unlocked conditionally. Each item in the list is a tuple with the structure (condition, path)."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext.has_conditional_modifications:1
+# 10075ab3b1834f8b8702e9f35b1bbcc0
+msgid "True if this module modifies MODULEPATH conditionally to the presence of other services in the environment, False otherwise."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext.has_modulepath_modifications:1
+# d62357e4d6114a27a1a92823cf222f4f
+msgid "True if this module modifies MODULEPATH, False otherwise."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext.missing:1
+# 3764cfb2d9e54b039d7d68e1f3248101
+msgid "Returns a list of missing services."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext.name_part:1
+# 9cfcb0cbabfd49e781b17402a87474d4
+msgid "Name of this provider."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext.provides:1
+# 44c267f9545a4c0c8f52ba4d80e60903
+msgid "Returns the dictionary of provided services."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext.unlocked_paths:1
+# 688558620601417b833621901c894428
+msgid "Returns the list of paths that are unlocked unconditionally."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodContext.version_part:1
+# 8df19a9f7b314dba8f8c3fd8feae0cdc
+msgid "Version of this provider."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout:1
+# 025eaff1b3274a1c932cd8427e42e68c
+msgid "File layout for lmod module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.arch_dirname:1
+# 696eb3359f5d4386a42e8806d36ac46a
+msgid "Returns the root folder for THIS architecture"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.available_path_parts:1
+# 535d24b05af7477fa772cd24f4851a5c
+msgid "List of path parts that are currently available. Needed to construct the file name."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.extension:1
+# 7459b3f2173449dbac786477a801f29f
+msgid "file extension of lua module files"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.filename:1
+# 4955eebf9ef14f6c99165cfbe54f83a4
+msgid "Returns the filename for the current module file"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.token_to_path:1
+# 33b181dea67b4f1390e0b9cfb76cf44a
+msgid "Transforms a hierarchy token into the corresponding path part."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.token_to_path:3
+# b9f7d197da1c4880852c43a43e12636f
+msgid "name of the service in the hierarchy"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.token_to_path:5
+# 7dd0158e4fe04da8b0e7d30f8891acc8
+msgid "actual provider of the service"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.token_to_path:7
+# 90c0f64f59814593aabed04e7ad26f0e
+msgid "part of the path associated with the service"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.unlocked_paths:1
+# cc518f1571d244ac96e5d2d18e450988
+msgid "Returns a dictionary mapping conditions to a list of unlocked paths."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.unlocked_paths:4
+# f80e8750f3a14fa7baf101d9adb264f6
+msgid "The paths that are unconditionally unlocked are under the key 'None'. The other keys represent the list of services you need loaded to unlock the corresponding paths."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodFileLayout.use_name:1
+# 5b2d239bd7424be58436df0360a729e6
+msgid "Returns the 'use' name of the module i.e. the name you have to type to console to use it."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.LmodModulefileWriter:1
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.LmodModulefileWriter:1
+# 3071f3196fb0472db245b490bed9b22e
+# 9b3cc13413d842f198c1c0d8344ae748
+msgid "Writer class for lmod module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.NonVirtualInHierarchyError:1
+# 86f33d4edbb5420e9fb629209111d061
+msgid "Bases: :class:`spack.error.SpackError`, :class:`TypeError`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.NonVirtualInHierarchyError:1
+# 20ae1ec515ed4a8da0671adc4a58495a
+msgid "Error raised if non-virtual specs are used as hierarchy tokens in the lmod section of 'modules.yaml'."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.configuration:1
+# f33703b4b9bc47d5a505b385ce358a41
+msgid "lmod specific part of the configuration"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.guess_core_compilers:1
+# badfbef2313943c2970826f521889e1a
+msgid "Guesses the list of core compilers installed in the system."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.guess_core_compilers:3
+# e41d96e9f9e14c1699cb337649e02230
+msgid "if True writes the core compilers to the modules.yaml configuration file"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.guess_core_compilers:7
+# 117843c4e0354cdf94cd42da40b8c778
+msgid "List of core compilers, if found, or None"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.make_configuration:1
+# c28df2b91bd24603990a571e0aeeb910
+msgid "Returns the lmod configuration for spec"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.modules.rst:32
+# d2889e768a16440897ad959a060424ff
+msgid "spack.modules.tcl module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl:1
+# ed3f3a8d1f1740a0bde8a27dcb0c6a4e
+msgid "This module implements the classes necessary to generate TCL non-hierarchical modules."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclConfiguration:1
+# 5f8465e8b9d44313a6f96e2ccd2c5d01
+msgid "Configuration class for tcl module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclConfiguration.conflicts:1
+# 88f5dc2858724a1bb47faeaf9508d5e0
+msgid "Conflicts for this module file"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclContext:1
+# eb100b8dea384290ac43e7593d03ac1f
+msgid "Context class for tcl module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclContext.conflicts:1
+# 6abb165b2b22430db0a2ebb5dd0e6501
+msgid "List of conflicts for the tcl module file."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclFileLayout:1
+# 4b0423d92340424fbda12a2fc3ab46cb
+msgid "File layout for tcl module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.TclModulefileWriter:1
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.TclModulefileWriter:1
+# bcf33bebc3964c81b2c4c36e026dc10b
+# 0dfdef38baf84197ab4dcad4531a65e9
+msgid "Writer class for tcl module files."
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.configuration:1
+# d8786f9956a14878bc63cf9f557348a6
+msgid "TCL specific part of the configuration"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/tcl.py:docstring of spack.modules.tcl.make_configuration:1
+# c8a07f01ffe745629342e2202c92875e
+msgid "Returns the tcl configuration for spec"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.modules.rst:41
+# e3cf8969dfed4f87a7afd9b1bb904913
+msgid "Module contents"
+msgstr ""
+
+#: ../spack/lib/spack/spack/modules/__init__.py:docstring of spack.modules:1
+# cf599b70848e4c9a8a9b49bdb4e55b08
+msgid "This package contains code for creating environment modules, which can include dotkits, TCL non-hierarchical modules, LUA hierarchical modules, and others."
+msgstr ""
+

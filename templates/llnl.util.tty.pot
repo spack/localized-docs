@@ -1,0 +1,607 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:2
+# c4a7e42fe3e442e2bd918158e6c64823
+msgid "llnl.util.tty package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:5
+# f7f43e86d13c4b0ba77f819b57316724
+msgid "Submodules"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:8
+# 573d74fd32e448389eaf58acd4e91b46
+msgid "llnl.util.tty.colify module"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify:1
+# 45c81ea51263498aa873dce0329ecd0c
+msgid "Routines for printing columnar output.  See ``colify()`` for more information."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.ColumnConfig:1
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.ColorStream:1
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.match_to_ansi:1
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.Unbuffered:1
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.keyboard_input:1
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output:1
+#: ../spack/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.SuppressOutput:1
+# eb6ed5b2ab9645bc969f7b02943b4c49
+# 04810c113b2b4bdca080b2c419adcf75
+# 57587b79c71144dfbcbbb1d14b2478a8
+# d3f315d993df4b4386844204871c85b7
+# 0c48fbc4aabc4ea6af0f00a533c1e9ce
+# 6af72f14fe694575855f643836dbb80b
+# 7fad1ea67a2d46eaae3c9402edd768f4
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colified:1
+# e639b5ff9a904619bc9696d05fa0088a
+msgid "Invokes the ``colify()`` function but returns the result as a string instead of writing it to an output string."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:1
+# fb9b13de9c8649cca5091e0f244c928f
+msgid "Takes a list of elements as input and finds a good columnization of them, similar to how gnu ls does. This supports both uniform-width and variable-width (tighter) columns."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:5
+# 0e81d1520f174ea7af0cf1412e721d55
+msgid "If elts is not a list of strings, each element is first conveted using ``str()``."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:0
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.colorize:0
+#: ../spack/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.hline:0
+# 90a2f8bcd4d0474fb63aee27a832aca4
+# 472522ec2dd64bf1ae2b8bac2c28f341
+# 236339c4542346bbb70f186d73625663
+msgid "Keyword Arguments"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:8
+# a365e1fa562747b89f45a6caf6d4e0f4
+msgid "A file object to write to. Default is ``sys.stdout``"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:10
+# d1ab8adcd2b1495e9a537553eee03c9d
+msgid "Optionally indent all columns by some number of spaces"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:12
+# 53fc62109fe54e029aefe70fa2dadfdb
+msgid "Spaces between columns. Default is 2"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:14
+# ba333e96daa04d88b3ed1ec7fd26fe37
+msgid "Width of the output. Default is 80 if tty not detected"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:16
+# 0be07aa65de64ab8972afcd17e643816
+msgid "Force number of columns. Default is to size to terminal, or single-column if no tty"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:19
+# 414eec04fb234b3bacff0aa9fff56452
+msgid "Whether to attempt to write to a tty. Default is to autodetect a tty. Set to False to force single-column output"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify:23
+# f6cad4391edf452b969f750ca975dedb
+msgid "Method to use to fit columns. Options are variable or uniform. Variable-width columns are tighter, uniform columns are all the same width and fit less data on the screen"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify_table:1
+# e07919023c9c4737a7765ead80161cb9
+msgid "Version of ``colify()`` for data expressed in rows, (list of lists)."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colify_table:3
+# 312085ac98e84f36a8e64a0c7600853b
+msgid "Same as regular colify but takes a list of lists, where each sub-list must be the same length, and each is interpreted as a row in a table.  Regular colify displays a sequential list of values in columns."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.config_uniform_cols:1
+# a4f63fe3c5f64a8982ddd6c7736b4cbc
+msgid "Uniform-width column fitting algorithm."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.config_uniform_cols:3
+# ecd90220a6ab4305ae8602158f30de9d
+msgid "Determines the longest element in the list, and determines how many columns of that width will fit on screen.  Returns a corresponding column config."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.config_variable_cols:1
+# 6b0c1a828f4f4a5e9d9cc071e6c79209
+msgid "Variable-width column fitting algorithm."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.config_variable_cols:3
+# 376adaf7d9904b28b4ab59fd6cb6b819
+msgid "This function determines the most columns that can fit in the screen width.  Unlike uniform fitting, where all columns take the width of the longest element in the list, each column takes the width of its own longest element. This packs elements more efficiently on screen."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.config_variable_cols:9
+# 0f576ce5d1724a37a45da630e1bdc1c4
+msgid "If cols is nonzero, force"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:16
+# 05bc9db1863647c5a9a2cb4b766b36ff
+msgid "llnl.util.tty.color module"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:1
+# 59b9a90276ae4124be623b7c829beec7
+msgid "This file implements an expression syntax, similar to ``printf``, for adding ANSI colors to text."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:4
+# cf354440893d42ca8bcc358b791ffd46
+msgid "See ``colorize()``, ``cwrite()``, and ``cprint()`` for routines that can generate colored output."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:7
+# 4cf13f79b7004340bb58f0b2f455c464
+msgid "``colorize`` will take a string and replace all color expressions with ANSI control codes.  If the ``isatty`` keyword arg is set to False, then the color expressions will be converted to null strings, and the returned string will have no color."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:12
+# e21f42ed619744de8d7485349d5fa2d8
+msgid "``cwrite`` and ``cprint`` are equivalent to ``write()`` and ``print()`` calls in python, but they colorize their output.  If the ``stream`` argument is not supplied, they write to ``sys.stdout``."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:16
+# e38f48280976445ba74313530f4a0b4c
+msgid "Here are some example color expressions:"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:19
+# 9a14ddcfcaa94731b1105ae304e72a67
+msgid "Expression"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:19
+# 2e6217fffd6e4d6c9102ca0c06cbbde8
+msgid "Meaning"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:21
+# a2f0138d9f414792815ee562b4cc1c2c
+msgid "@r"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:21
+# 3b15954652d2406ab6ab62dc4d34e116
+msgid "Turn on red coloring"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:22
+# d85e347b5e8f4d2aa7f8cd28541f3832
+msgid "@R"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:22
+# cf3b7974eb3c4d2388c9422cbd5639dd
+msgid "Turn on bright red coloring"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:23
+# 0928c714fddd4b3bacdd75f5f25621b2
+msgid "@*{foo}"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:23
+# 65452f972bc045f6a6963161b0f64269
+msgid "Bold foo, but don't change text color"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:24
+# 5175a2ee43de49eabf6b4dd10a3b2db8
+msgid "@_{bar}"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:24
+# a7ca0f903e5a49cea21c97bff65540b8
+msgid "Underline bar, but don't change text color"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:25
+# 13bd076d0f814a518f1f0989804faa1d
+msgid "@*b"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:25
+# 22ec7a5d3dc34889a2d4174e556c6c66
+msgid "Turn on bold, blue text"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:26
+# 0402ca273d484e0a814523d85e79a0e9
+msgid "@_B"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:26
+# 04ae5644102a401aa7bfb361051217cc
+msgid "Turn on bright blue text with an underline"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:27
+# 99df0aa09ccb4bcc88779d8f3d146204
+msgid "@."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:27
+# 5f2d9a5f13ee4713bdf334ddf7db0f57
+msgid "Revert to plain formatting"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:28
+# 2cfd6f9db7fc4c939633a3179d4bb9a9
+msgid "@*g{green}"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:28
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:29
+# a2f8345fcabb489eb65ca4dc480d8ff6
+# b2eb3842c9ee4729a2e38d3b72702125
+msgid "Print out 'green' in bold, green text, then reset to plain."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:29
+# d7a31e6199214cd584cf63009ccb4249
+msgid "@*ggreen@."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:32
+# 7b8518f3f63a48c5a7a788936720d37f
+msgid "The syntax consists of:"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:35
+# 4753561c78444a9ebcf2d21f81c16884
+msgid "color-expr"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:35
+# e860eb8cf0984516b7ad6ea7d1aae8a4
+msgid "'@' [style] color-code '{' text '}' | '@.' | '@@'"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:36
+# 94f7b7a5d9704b67a646bb3c3ff03aef
+msgid "style"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:36
+# 2eba33435f064dd8ba0939524c5d8be0
+msgid "'*' | '_'"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:37
+# becaf5eb9c19428eb9b7885c6325fc4b
+msgid "color-code"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:37
+# b1e149c2b9704d7f9200fb66aaa661d1
+msgid "[krgybmcwKRGYBMCW]"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:38
+# 8802e4d71351473796fa51884c602fc9
+msgid "text"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:38
+# e3e3276b3f154f7c8a8db724215949db
+msgid ".*"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:41
+# f0bb1f1aac974dc48865376a57f7db9b
+msgid "'@' indicates the start of a color expression.  It can be followed by an optional * or _ that indicates whether the font should be bold or underlined.  If * or _ is not provided, the text will be plain.  Then an optional color code is supplied.  This can be [krgybmcw] or [KRGYBMCW], where the letters map to  black(k), red(r), green(g), yellow(y), blue(b), magenta(m), cyan(c), and white(w).  Lowercase letters denote normal ANSI colors and capital letters denote bright ANSI colors."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:49
+# 32910a823c6c41cb9d753d564814fca0
+msgid "Finally, the color expression can be followed by text enclosed in {}.  If braces are present, only the text in braces is colored.  If the braces are NOT present, then just the control codes to enable the color will be output. The console can be reset later to plain text with '@.'."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color:54
+# e4a1a9f8c71e4d4c8d3ccefc4b19096b
+msgid "To output an @, use '@@'.  To output a } inside braces, use '}}'."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.ColorParseError:1
+# 9e679a3032d54bd6be8614fed56fabbf
+msgid "Bases: :class:`Exception`"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.ColorParseError:1
+# 1d36f03f71334592add4af9586f0d0f3
+msgid "Raised when a color format fails to parse."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:1
+# bc76d4b017834558bf259cb50646e921
+msgid "Escapes special characters needed for color codes."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:3
+# 66639beb84cd4dedabcd07781cafb380
+msgid "Replaces the following symbols with their equivalent literal forms:"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:6
+# 16d462958a9341478687cf87563d3143
+msgid "``@``"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:6
+# 72b653494d9e441185724298331851d3
+msgid "``@@``"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:7
+# f1c421329fde4577b8b1046822b325d9
+msgid "``}``"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:7
+# b906d45415934db4a3a908e6675c3fdd
+msgid "``}}``"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:0
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.colorize:0
+# 4b385b5ba47944639b4dd07dd45bc7ca
+# 71e6d9706f6c4011a72903d8ce6aa8a1
+msgid "Parameters"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:10
+# 6d921b3ddafd409f841fb923e30c79bb
+msgid "the string to escape"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:0
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.colorize:0
+# bc54430586b0413bb4402d39bef78dd4
+# 8802cf085f854738bb60e523a37c0616
+msgid "Returns"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:13
+# cd8850a6682048c58e5a67b43a2cc8e6
+msgid "the string with color codes escaped"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:0
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.colorize:0
+# be9ed2362b6448ddb5c940e762bba871
+# 3a0b9f9a802e4b06a0953d99c91588f7
+msgid "Return type"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cextra:1
+# 262992505667447f9fba58e66f21d3a2
+msgid "Length of extra color characters in a string"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.clen:1
+# c5f2204d426043b7b86719009bc065f6
+msgid "Return the length of a string, excluding ansi color sequences."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.color_when:1
+# 3b5eabaedda54fd4b7740c2807329a81
+msgid "Context manager to temporarily use a particular color setting."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.colorize:1
+# 033897281002440ca2e0fdedb7768da9
+msgid "Replace all color expressions in a string with ANSI control codes."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.colorize:3
+# b28134ef25ae4a9e9d30c1318fe2d7c2
+msgid "The string to replace"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.colorize:6
+# a98f92ef93864f68b1484c2916293daa
+msgid "The filtered string"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.colorize:9
+# 2d9edb9080a842d9af7acb366cab320c
+msgid "If False, output will be plain text without control codes, for output to non-console devices."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cprint:1
+# 5b5dd66858f043378b9a57553db4c201
+msgid "Same as cwrite, but writes a trailing newline to the stream."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cwrite:1
+# d9707f5482b6478fac13507bb42d3210
+msgid "Replace all color expressions in string with ANSI control codes and write the result to the stream.  If color is False, this will write plain text with no color.  If True, then it will always write colored output.  If not supplied, then it will be set based on stream.isatty()."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.get_color_when:1
+# 5e232fcbd55d45a783e4e97afdc95ab8
+msgid "Return whether commands should print color or not."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.match_to_ansi.escape:1
+# 82642e0545c44804a6a5b775785c2c90
+msgid "Returns a TTY escape sequence for a color"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.set_color_when:1
+# 04c1a3da4f6547d2ac9f4a1e388c7e22
+msgid "Set when color should be applied.  Options are:"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.set_color_when:3
+# e6305248f2664251822f4859c4788ad1
+msgid "True or 'always': always print color"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.set_color_when:4
+# 90499d54cdff4d8ab3b43a4a53a4b341
+msgid "False or 'never': never print color"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.set_color_when:5
+# 77871d6371874db08823d9153d04cd1e
+msgid "None or 'auto': only print color if sys.stdout is a tty."
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:24
+# 7b75aafc1b994f55b9c96f085a30a290
+msgid "llnl.util.tty.log module"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log:1
+# 3f633491a2094b4b858aa38410716f73
+msgid "Utility classes for logging the output of blocks of code."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.Unbuffered:1
+# 177b9bd9714c4db5b3587419055fed40
+msgid "Wrapper for Python streams that forces them to be unbuffered."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.Unbuffered:3
+# 89c479388c8645a39899a352acb4d224
+msgid "This is implemented by forcing a flush after each write."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.keyboard_input:1
+# 763a9eec6cf64e1ba067f17a4dd8e732
+msgid "Context manager to disable line editing and echoing."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.keyboard_input:3
+# eec0ec6371514293b51a894c78858df5
+msgid "Use this with ``sys.stdin`` for keyboard input, e.g.::"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.keyboard_input:9
+# b38ebe59eb03432791c0426cc59a0cc8
+msgid "This disables canonical input so that keypresses are available on the stream immediately. Typically standard input allows line editing, which means keypresses won't be sent until the user hits return."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.keyboard_input:13
+# fbe0dc39d1764a5b975e947d61f4b400
+msgid "It also disables echoing, so that keys pressed aren't printed to the terminal.  So, the user can hit, e.g., 'v', and it's read on the other end of the pipe immediately but not printed."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.keyboard_input:17
+# bd02c467c46041a1bf09e697d324050c
+msgid "When the with block completes, prior TTY settings are restored."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.keyboard_input:19
+# 2ceeacb85ccf47ed9f581bb62e9cf836
+msgid "Note: this depends on termios support.  If termios isn't available, or if the stream isn't a TTY, this context manager has no effect."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output:1
+# 91ca5e95c8784be7a8dff20ca1e6f471
+msgid "Context manager that logs its output to a file."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output:3
+# b29c1b11b5804cab810fdf1f1b20122c
+msgid "In the simplest case, the usage looks like this::"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output:8
+# 8a2e14fcbbd949e1bfa7285101355b95
+msgid "Any output from the with block will be redirected to ``logfile.txt``. If you also want the output to be echoed to ``stdout``, use the ``echo`` parameter::"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output:15
+# 6b5e48f7dfdb4209a47b7f4f5d8ceb67
+msgid "And, if you just want to echo *some* stuff from the parent, use ``force_echo``::"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output:24
+# 53ef6384020c4e4980db28bce8f93023
+msgid "Under the hood, we spawn a daemon and set up a pipe between this process and the daemon.  The daemon writes our output to both the file and to stdout (if echoing).  The parent process can communicate with the daemon to tell it when and when not to echo; this is what force_echo does.  You can also enable/disable echoing by typing 'v'."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output:30
+# 1222f147e21545e9a4b42bd11d37200b
+msgid "We try to use OS-level file descriptors to do the redirection, but if stdout or stderr has been set to some Python-level file object, we use Python-level redirection instead.  This allows the redirection to work within test frameworks like nose and pytest."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output.force_echo:1
+# cc4301b8f3d6486ca47ddb49c220900f
+msgid "Context manager to force local echo, even if echo is off."
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:33
+# 1fec61940a0942a4921a7ab992588423
+msgid "Module contents"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.SuppressOutput:1
+# 8b303ad6dd2640308c61658249016c20
+msgid "Class for disabling output in a scope using 'with' keyword"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.get_timestamp:1
+# 5b2861bcac1a496b832d13a45a5b6127
+msgid "Get a string timestamp"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.hline:1
+# 35b26546581746cfa94f65d9432e24e0
+msgid "Draw a labeled horizontal line."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.hline:3
+# 925c88cbe1e24eaeafdca6dab2153125
+msgid "Char to draw the line with.  Default '-'"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.hline:5
+# 08623db4c4af452eb40f34693ed7b8d5
+msgid "Maximum width of the line.  Default is 64 chars."
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.process_stacktrace:1
+# 7c3e8e8f60e344e8987d72928b4a4eca
+msgid "Gives file and line frame 'countback' frames from the bottom"
+msgstr ""
+
+#: ../spack/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.terminal_size:1
+# 88f2adb0440d4b488fde4dca3a747f55
+msgid "Gets the dimensions of the console: (rows, cols)."
+msgstr ""
+

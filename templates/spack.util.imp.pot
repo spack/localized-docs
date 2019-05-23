@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/spack.util.imp.rst:2
+# 36768b324c20466f9ac1ba94881bcfcc
+msgid "spack.util.imp package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.imp.rst:5
+# 7ff1a43c2c914ad493d915c7bb3ddb6f
+msgid "Submodules"
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.imp.rst:8
+# f6fce97dd95442bc8e6404f7c3f132a4
+msgid "spack.util.imp.imp\\_importer module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer:1
+# f34499770ef54b03aa5696832dba35be
+msgid "Implementation of Spack imports that uses imp underneath."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer:3
+# 30fb200f980b48ef8ff40b6672af0e38
+msgid "``imp`` is deprecated in newer versions of Python, but is the only option in Python 2.6."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:1
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:1
+# cee775d3a8084f3fa5a1bf8b7ec4b511
+# 2757d092e55f402ea1a9e6736b17ae21
+msgid "Import a Python module from source."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:3
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:3
+# 81bdcccffa2e467788ef888c4bc00a39
+# 4472bec73d9d4b6593a969506677553f
+msgid "Load the source file and add it to ``sys.modules``."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:0
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:0
+# 6388e09ac0f045a29d974dd511027eea
+# 642750f4dfa54ad9bee1765819ac0d1b
+msgid "Parameters"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:5
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:5
+# c35775838e614bbaa1af353f3fda3360
+# 59811e1bd3fc4d3f8b701a3e4cb67fef
+msgid "full name of the module to be loaded"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:7
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:7
+# f637484f86dd49d98ab2cd038d9ca968
+# dece2b0568d84f968b21f82615b42113
+msgid "path to the file that should be loaded"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:9
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:9
+# 5bd8614809d64612a2f7e25c1ab338ac
+# 04fe2900fb434ceca6d0f29e214d9ca5
+msgid "some optional code to prepend to the loaded module; e.g., can be used to inject import statements"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:0
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:0
+# 40de64e649014d10813bc9e2cc4c98e3
+# 962039026887492ca9163ae25548d068
+msgid "Returns"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:13
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:13
+# b5a44c461fcc416990f65dd7cd9887ac
+# 1fab2d15878a4014a76823bae8f75a16
+msgid "the loaded module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:0
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:0
+# 74b3fd8d50c44344b6595fbf3afa0083
+# 13483ddad82140ea837b84e9c8817f8b
+msgid "Return type"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.prepend_open:1
+# 6ff25851e5a048739ab13dff360b60b1
+msgid "Open a file for reading, but prepend with some text prepended"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.prepend_open:3
+# 7623a454ad93476e9eeffd88ae1d151a
+msgid "Arguments are same as for ``open()``, with one keyword argument, ``text``, specifying the text to prepend."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.prepend_open:6
+# 769c3b59affa4d32b1476b3ca95a262f
+msgid "We have to write and read a tempfile for the ``imp``-based importer, as the ``file`` argument to ``imp.load_source()`` requires a low-level file handle."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.prepend_open:10
+# f50cd2320e3a42c98d4884a16b7bb774
+msgid "See the ``importlib``-based importer for a faster way to do this in later versions of python."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.imp.rst:16
+# 1c0ff9bbc7f441449d9c03e5723ba5d8
+msgid "spack.util.imp.importlib\\_importer module"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer:1
+# d405755e7d3e4aa5b9e000fcc8837575
+msgid "Implementation of Spack imports that uses importlib underneath."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer:3
+# 3abee7b945ee4a7b8479aed316021f4e
+msgid "``importlib`` is only fully implemented in Python 3."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.PrependFileLoader:1
+# 7855deaee6f0452c9283c36eab757c04
+msgid "Bases: :class:`_frozen_importlib_external.SourceFileLoader`"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.PrependFileLoader.get_data:1
+# e01d38fde648467698c211b4838d814a
+msgid "Return the data from path as raw bytes."
+msgstr ""
+
+#: ../spack/lib/spack/docs/spack.util.imp.rst:25
+# b7877536ebd94029bfa43179a802a000
+msgid "Module contents"
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/__init__.py:docstring of spack.util.imp:1
+# efeca9731255467ca78c8751814bfa60
+msgid "Consolidated module for all imports done by Spack."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/__init__.py:docstring of spack.util.imp:3
+# 6c8ded15109b48118e1bf9de42f11cf7
+msgid "Many parts of Spack have to import Python code. This utility package wraps Spack's interface with Python's import system."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/__init__.py:docstring of spack.util.imp:6
+# 31bf276483e540f2811ebda00e87e1f8
+msgid "We do this because Python's import system is confusing and changes from Python version to Python version, and we should be able to adapt our approach to the underlying implementation."
+msgstr ""
+
+#: ../spack/lib/spack/spack/util/imp/__init__.py:docstring of spack.util.imp:10
+# cf3fcd6703494323a64ccbc9e1a6464c
+msgid "Currently, this uses ``importlib.machinery`` where available and ``imp`` when ``importlib`` is not completely usable."
+msgstr ""
+

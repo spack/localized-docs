@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:10
+# 3ad58dd29c75497da8b20b81c795c4cf
+msgid "Environments, ``spack.yaml``, and ``spack.lock``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:12
+# 464ab9465e0c417a908d639b745a1703
+msgid "We've shown you how to install and remove packages with Spack.  You can use :ref:`cmd-spack-install` to install packages, :ref:`cmd-spack-uninstall` to remove them, and :ref:`cmd-spack-find` to look at and query what is installed.  We've also shown you how to customize Spack's installation with configuration files like :ref:`packages.yaml <build-settings>`."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:19
+# 073a44740acf4a078e6083a09b083f64
+msgid "If you build a lot of software, or if you work on multiple projects, managing everything in one place can be overwhelming. The default ``spack find`` output may contain many packages, but you may want to *just* focus on packages a particular project.  Moreover, you may want to include special configuration with your package groups, e.g., to build all the packages in the same group the same way."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:26
+# 924dd2fafb6049b593b22ae230d4ec69
+msgid "Spack **environments** provide a way to handle these problems."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:30
+# 9716dc011b4e4f2ba27b13179c10a5ee
+msgid "Environment basics"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:32
+# 7851b514410243ffb2e103183642974b
+msgid "Let's look at the output of ``spack find`` at this point in the tutorial."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:64
+# 2d5bf2e6ed064cf3a956dd433fb40917
+msgid "This is a complete, but cluttered view.  There are packages built with both ``openmpi`` and ``mpich``, as well as multiple variants of other packages, like ``zlib``.  The query mechanism we learned about in ``spack find`` can help, but it would be nice if we could start from a clean slate without losing what we've already done."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:73
+# 42cc6f8c884c47718831f6157305027b
+msgid "Creating and activating environments"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:75
+# 7854c9dd8b6740e99128e1c5019b5171
+msgid "The ``spack env`` command can help.  Let's create a new environment:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:82
+# 9e1c4eeec85245189e893441673bac6a
+msgid "An environment is a virtualized ``spack`` instance that you can use for a specific purpose.  You can see the environments we've created so far like this:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:91
+# 0eb0897d3d474de1b6f5c3e83d7dcb53
+msgid "And you can **activate** an environment with ``spack env activate``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:97
+# 92456fadf1fc44aa8d8cc6262ae47647
+msgid "Once you enter an environment, ``spack find`` shows only what is in the current environment.  That's nothing, so far:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:108
+# c0a69b54c226406eb79e448a48af0d12
+msgid "The ``spack find`` output is still *slightly* different.  It tells you that you're in the ``myproject`` environment, so that you don't panic when you see that there is nothing installed.  It also says that there are *no root specs*.  We'll get back to what that means later."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:113
+# 3b0adad79cc842dba9c91578746d51ac
+msgid "If you *only* want to check what environment you are in, you can use ``spack env status``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:121
+# fba70220ac9f41ce9af66f0321ca1ec5
+msgid "And, if you want to leave this environment and go back to normal Spack, you can use ``spack env deactivate``.  We like to use the ``despacktivate`` alias (which Spack sets up automatically) for short:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:141
+# 98864fa144464eefb5c4202b89fbf2d8
+msgid "Installing packages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:143
+# 78a85fc49c224fa9844574062341ed1b
+msgid "Ok, now that we understand how creation and activation work, let's go back to ``myproject`` and *install* a few packages:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:165
+# 589e5875547a411baf41c97a479afa8a
+msgid "We've installed ``tcl`` and ``trilinos`` in our environment, along with all of their dependencies.  We call ``tcl`` and ``trilinos`` the **roots** because we asked for them explicitly.  The other 20 packages listed under \"installed packages\" are present because they were needed as dependencies.  So, these are the roots of the packages' dependency graph."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:171
+# 89080dad627646b59400a791a8ca917c
+msgid "The \"<package> is already installed\" messages above are generated because we already installed these packages in previous steps of the tutorial, and we don't have to rebuild them to put them in an environment."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:175
+# 9f0ec0345c7f4ad189605007ccb98c87
+msgid "Now let's create *another* project.  We'll call this one ``myproject2``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:198
+# e5e0e0c09f5647bea20637f1691e2c3a
+msgid "Now we have two environments: one with ``tcl`` and ``trilinos``, and another with ``hdf5`` and ``trilinos``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:201
+# 3f1262e14e2846f484266710a2a2158b
+msgid "We can uninstall trilinos from ``myproject2`` as you would expect:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:221
+# ea3663c957654dc08d9571a8e7b34548
+msgid "Now there is only one root spec, ``hdf5``, which requires fewer additional dependencies."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:224
+# 5f1eb987fcf94fc7b1524f432908b98f
+msgid "However, we still needed ``trilinos`` for the ``myproject`` environment! What happened to it?  Let's switch back and see."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:244
+# ecef52031f3b44fa847021060111ac02
+msgid "Spack is smart enough to realize that ``trilinos`` is still present in the other environment.  Trilinos won't *actually* be uninstalled unless it is no longer needed by any environments or packages.  If it is still needed, it is only removed from the environment."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:251
+# 35e9080dfc664e64836d8281e54397f4
+msgid "Dealing with many specs at once"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:253
+# b0dd38dc480a4364851d1365421cafba
+msgid "In the above examples, we just used ``install`` and ``uninstall``.  There are other ways to deal with groups of packages, as well."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:258
+# f41cc9c02b4244848ccfb4de0edf4b1c
+msgid "Adding specs"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:260
+# f1c3c6e3ff6148d78e3429dfb314da07
+msgid "Let's go back to our first ``myproject`` environment and *add* a few specs instead of installing them:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:280
+# 3599446731ee4b8bb21fb2ef7a93d99c
+msgid "Let's take a close look at what happened.  The two packages we added, ``hdf5`` and ``gmp``, are present, but they're not installed in the environment yet.  ``spack add`` just adds *roots* to the environment, but it does not automatically install them."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:285
+# 924c87a55a884cda8e8b3d8dc79cdad0
+msgid "We can install *all* the as-yet uninstalled packages in an environment by simply running ``spack install`` with no arguments:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:329
+# e70469eecd1a4ed68c1e99a108db822e
+msgid "Spack will concretize the new roots, and install everything you added to the environment.  Now we can see the installed roots in the output of ``spack find``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:347
+# 3babb62882db4c98bb4db354788a2244
+msgid "We can build whole environments this way, by adding specs and installing all at once, or we can install them with the usual ``install`` and ``uninstall`` portions.  The advantage to doing them all at once is that we don't have to write a script outside of Spack to automate this, and we can kick off a large build of many packages easily."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:355
+# 19e0cda9fd8b4d26b1cc2ad4d90fc21a
+msgid "Configuration"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:357
+# b1879dbdea0d4e909f55a9d92357d503
+msgid "So far, ``myproject`` does not have any special configuration associated with it.  The specs concretize using Spack's defaults:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:390
+# 4a2b6169ed7641a2858033a69f2da8da
+msgid "You may want to add extra configuration to your environment.  You can see how your environment is configured using ``spack config get``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:404
+# 9313d1cda7574f72abf9abd95fa6dbad
+msgid "It turns out that this is a special configuration format where Spack stores the state for the environment. Currently, the file is just a ``spack:`` header and a list of ``specs``.  These are the roots."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:408
+# 55e2a6f0fd5a4066b2d6d71cf27ee615
+msgid "You can edit this file to add your own custom configuration.  Spack provides a shortcut to do that:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:415
+# 17149a8acf48427c888d79c475a19676
+msgid "You should now see the same file, and edit it to look like this:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:432
+# f3af9f5126df4d1fb1669b117146fb82
+msgid "Now if we run ``spack spec`` again in the environment, specs will concretize with ``mpich`` as the MPI implementation:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:459
+# b83d3c644ef64cf59d196f5f7f278b7b
+msgid "In addition to the ``specs`` section, an environment's configuration can contain any of the configuration options from Spack's various config sections. You can add custom repositories, a custom install location, custom compilers, or custom external packages, in addition to the ``package`` preferences we show here."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:465
+# 74eef0ad4a804b24add0ca51289b2118
+msgid "But now we have a problem.  We already installed part of this environment with openmpi, but now we want to install it with ``mpich``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:468
+# 50e9eb6d4d374508af83eb0a5fc6d935
+msgid "You can run ``spack concretize`` inside of an environment to concretize all of its specs.  We can run it here:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:538
+# 9326e7d29b9241f28d9ad15e532dc5af
+msgid "Now, all the specs in the environment are concrete and ready to be installed with ``mpich`` as the MPI implementation."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:541
+# f6835b0270d2415c9f9438d29e9fb044
+msgid "Normally, we could just run ``spack config edit``, edit the environment configuration, ``spack add`` some specs, and ``spack install``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:544
+# e5cb4d5daee84852a225cef428788ba5
+msgid "But, when we already have installed packages in the environment, we have to force everything in the environment to be re-concretized using ``spack concretize -f``.  *Then* we can re-run ``spack install``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:551
+# f47250d643734d888290b5a9a2adfaa0
+msgid "``spack.yaml`` and ``spack.lock``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:553
+# 35cb2c0968a24f0da6954ad742737e6a
+msgid "So far we've shown you how to interact with environments from the command line, but they also have a file-based interface that can be used by developers and admins to manage workflows for projects."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:557
+# aa10577db0ab463cbc74ec7bce340ac4
+msgid "In this section we'll dive a little deeper to see how environments are implemented, and how you could use this in your day-to-day development."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:562
+# 01b60cdc97a8406fa8fe0adb7d3e7ef6
+msgid "``spack.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:564
+# 20a7052ea6f54e748cde8cf40e9e4f54
+msgid "Earlier, we changed an environment's configuration using ``spack config edit``.  We were actually editing a special file called ``spack.yaml``. Let's take a look."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:568
+# 299f46cd743a46edae5907feb8a09b71
+msgid "We can get directly to the current environment's location using ``spack cd``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:578
+# 8df6649f56a44b25aaf98001c66bec79
+msgid "We notice two things here.  First, the environment is just a directory inside of ``var/spack/environments`` within the Spack installation. Second, it contains two important files: ``spack.yaml`` and ``spack.lock``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:583
+# 17b6be764b1c481c8e3e8de796cdfb91
+msgid "``spack.yaml`` is the configuration file for environments that we've already seen, but it does not *have* to live inside Spack.  If you create an environment using ``spack env create``, it is *managed* by Spack in the ``var/spack/environments`` directory, and you can refer to it by name."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:589
+# 401ad9293b0046bdab825b01a0844f95
+msgid "You can actually put a ``spack.yaml`` file *anywhere*, and you can use it to bundle an environment, or a list of dependencies to install, with your project.  Let's make a simple project:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:601
+# 9b020ad93e194ac4a2fe013703dc2aaa
+msgid "Here, we made a new directory called *code*, and we used the ``-d`` option to create an environment in it."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:604
+# 720e0e90dede45f2a79e11d3c4176caa
+msgid "What really happened?"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:619
+# 68038e0b40664109bc86bd4de2b784b0
+msgid "Spack just created a ``spack.yaml`` file in the code directory, with an empty list of root specs.  Now we have a Spack environment, *in a directory*, that we can use to manage dependencies.  Suppose your project depends on ``boost``, ``trilinos``, and ``openmpi``.  You can add these to your spec list:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:638
+# a515afd14ff74e3a97f189fdd0c52923
+msgid "And now *anyone* who uses the *code* repository can use this format to install the project's dependencies.  They need only clone the repository, ``cd`` into it, and type ``spack install``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:711
+# 10f826573c5c472988e5fabcddfca0d5
+msgid "Spack concretizes the specs in the ``spack.yaml`` file and installs them."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:713
+# c944da6c38c74ba99f8a9edb85cd4a81
+msgid "What happened here?  If you ``cd`` into a directory tha has a ``spack.yaml`` file in it, Spack considers this directory's environment to be activated.  The directory does not have to live within Spack; it can be anywhere."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:718
+# 0078a500e040415f90f9fe73144590c6
+msgid "So, from ``~/code``, we can actually manipulate ``spack.yaml`` using ``spack add`` and ``spack remove`` (just like managed environments):"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:755
+# 4db9def6bc8c4d82b736544d47804eb5
+msgid "``spack.lock``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:757
+# 1b167ef6a57f4fc38dbe8d21b0d7d11b
+msgid "Ok, we've covered managed environments, environments in directories, and the last thing we'll cover is ``spack.lock``. You may remember that when we ran ``spack install``, Spack concretized all the specs in the ``spack.yaml`` file and installed them."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:762
+# 515960337f344b0d925578bb3bc66ba0
+msgid "Whenever we concretize Specs in an environment, all concrete specs in the environment are written out to a ``spack.lock`` file *alongside* ``spack.yaml``.  The ``spack.lock`` file is not really human-readable like the ``spack.yaml`` file.  It is a ``json`` format that contains all the information that we need to ``reproduce`` the build of an environment:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:784
+# c06add249648495589c449cd17d07b68
+msgid "``spack.yaml`` and ``spack.lock`` correspond to two fundamental concepts in Spack, but for environments:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:787
+# 9ba27bccd58441eca8e87a6e26d4f9fd
+msgid "``spack.yaml`` is the set of *abstract* specs and configuration that you want to install."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:789
+# 639d9ef2969043b58914f4b064480e0c
+msgid "``spack.lock`` is the set of all fully *concretized* specs generated from concretizing ``spack.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:792
+# 0e5c4669561b4850b7d0bcdfc9106083
+msgid "Using either of these, you can recreate an environment that someone else built.  ``spack env create`` takes an extra optional argument, which can be either a ``spack.yaml`` or a ``spack.lock`` file:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:802
+# 19a7c1d434a3412a8a745e9615fc64e2
+msgid "Both of these create a new environment called ``my-project``, but which one you choose to use depends on your needs:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:805
+# 5c74f0368bc84b72adf547a6a73f20e7
+msgid "copying the yaml file allows someone else to build your *requirements*, potentially a different way."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:808
+# e89a0b0d61be472a87f99d90ad5d3171
+msgid "copying the lock file allows someone else to rebuild your *installation* exactly as you built it."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_environments.rst:811
+# 1750ae4439104284b25e30127d89b11a
+msgid "The first use case can *re-concretize* the same specs on new platforms in order to build, but it will preserve the abstract requirements.  The second use case (currently) requires you to be on the same machine, but it retains all decisions made during concretization and is faithful to a prior install."
+msgstr ""
+

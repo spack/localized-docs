@@ -1,0 +1,1 @@
+../../../../../spack/lib/spack/docs/tutorial/examples/Autotools/0.package.py

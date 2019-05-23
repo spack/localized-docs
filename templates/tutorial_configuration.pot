@@ -1,0 +1,493 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:10
+# dd6a09a60a554dd599e852c57c9e1f49
+msgid "Configuration Tutorial"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:12
+# 2c4d491b9eb34cc39072510be8b0de5e
+msgid "This tutorial will guide you through various configuration options that allow you to customize Spack's behavior with respect to software installation. We will first cover the configuration file hierarchy. Then, we will cover configuration options for compilers, focusing on how they can be used to extend Spack's compiler auto-detection. Next, we will cover the packages configuration file, focusing on how it can be used to override default build options as well as specify external package installations to use. Finally, we will briefly touch on the config configuration file, which manages more high-level Spack configuration options."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:23
+# 62855d02fb124ef9802d725e8a28e918
+msgid "For all of these features we will demonstrate how we build up a full configuration file. For some we will then demonstrate how the configuration affects the install command, and for others we will use the ``spack spec`` command to demonstrate how the configuration changes have affected Spack's concretization algorithm. The provided output is all from a server running Ubuntu version 16.04."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:34
+# 3f64a4e0cd8045519a00cb86d4416c64
+msgid "Configuration Scopes"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:36
+# 2a2410440f1f4a27bb39f6913ca699aa
+msgid "Depending on your use case, you may want to provide configuration settings common to everyone on your team, or you may want to set default behaviors specific to a single user account. Spack provides six configuration *scopes* to handle this customization. These scopes, in order of decreasing priority, are:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:43
+# bfe4f15dfe9445b59ee174419cf78d20
+msgid "Scope"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:43
+# 7cb31a25e51a48fd9b22e3ec0172973c
+msgid "Directory"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:45
+# 8fd18af9e6944e0cb4dd5fbce2d2a3bb
+msgid "Command-line"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:45
+# f4e8ef309ce340ecbcf642b4a2859588
+msgid "N/A"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:46
+# 8b28b98f48344cde80da26cbc1d2b06e
+msgid "Custom"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:46
+# 925c458669f743798df7c8551ee43405
+msgid "Custom directory, specified with ``--config-scope``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:47
+# 6451f26a60c24426b7045b840b935916
+msgid "User"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:47
+# 982bf9fd77c54517b969bc5a232378ac
+msgid "``~/.spack/``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:48
+# 4ad7474311a146dc8f9d55c3bb5b2c51
+msgid "Site"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:48
+# 4377edfecaa7477c83cc1e4bd04f3cf7
+msgid "``$SPACK_ROOT/etc/spack/``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:49
+# de4ffaf8a32145e4801626d396ea2339
+msgid "System"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:49
+# deb2d2e9780547a08025c5720095e84e
+msgid "``/etc/spack/``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:50
+# 537f8c6b8b5349ffbbd1d0a687b539a4
+msgid "Defaults"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:50
+# 247b01da4742400283bd9d9df85ac365
+msgid "``$SPACK_ROOT/etc/spack/defaults/``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:53
+# 00c18d37968142209375b9656ee43793
+msgid "Spack's default configuration settings reside in ``$SPACK_ROOT/etc/spack/defaults``. These are useful for reference, but should never be directly edited. To override these settings, create new configuration files in any of the higher-priority configuration scopes."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:59
+# db92e50eab0449f695cf93f8d30b8e6b
+msgid "A particular cluster may have multiple Spack installations associated with different projects. To provide settings common to all Spack installations, put your configuration files in ``/etc/spack``. To provide settings specific to a particular Spack installation, you can use the ``$SPACK_ROOT/etc/spack`` directory."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:65
+# 41fa3c7c05bd47f8bcd56aca569ec577
+msgid "For settings specific to a particular user, you will want to add configuration files to the ``~/.spack`` directory. When Spack first checked for compilers on your system, you may have noticed that it placed your compiler configuration in this directory."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:70
+# ab0dbadcd5fb4e21bb514fcfb94759bb
+msgid "Configuration settings can also be placed in a custom location, which is then specified on the command line via ``--config-scope``. An example use case is managing two sets of configurations, one for development and another for production preferences."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:75
+# 77a1a61382724da3936cd7d5b9711513
+msgid "Settings specified on the command line have precedence over all other configuration scopes."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:80
+# 12f6583d16154a659be4560dbcadaa63
+msgid "Platform-specific Scopes"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:82
+# 35c418a499b6439e9dc72d9bec3dfa5c
+msgid "Some facilities manage multiple platforms from a single shared file system. In order to handle this, each of the configuration scopes listed above has two *sub-scopes*: platform-specific and platform-independent. For example, compiler settings can be stored in ``compilers.yaml`` configuration files in the following locations:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:88
+# bfb3e7596c9c4d97aa7c21559a860ad4
+msgid "``~/.spack/<platform>/compilers.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:89
+# fd193bef216d4a8aaa2e386e7216f0e1
+msgid "``~/.spack/compilers.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:90
+# e5b322233ccb4d9bb1311ea30f61dbd2
+msgid "``$SPACK_ROOT/etc/spack/<platform>/compilers.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:91
+# 667a416d603a40bc884c270982802714
+msgid "``$SPACK_ROOT/etc/spack/compilers.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:92
+# 4d11a5848f60454f92135029728151e7
+msgid "``/etc/spack/<platform>/compilers.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:93
+# cbf86889d6c34a0ebf5b4eff306a8c34
+msgid "``/etc/spack/compilers.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:94
+# 19da794acbfd482cb81afc5021f3c7f6
+msgid "``$SPACK_ROOT/etc/defaults/<platform>/compilers.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:95
+# 82685e1d0b78490f9906da87ff13bde5
+msgid "``$SPACK_ROOT/etc/defaults/compilers.yaml``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:97
+# ecd1da42661048b2a48d6dbcb4a0b5b2
+msgid "These files are listed in decreasing order of precedence, so files in ``~/.spack/<platform>`` will override settings in ``~/.spack``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:102
+# c20617ee46f44082808abe457a8f1d6b
+msgid "YAML Format"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:104
+# 87f7d2b691184936b98d3a2a99024c25
+msgid "Spack configurations are YAML dictionaries. Every configuration file begins with a top-level dictionary that tells Spack which configuration set it modifies. When Spack checks it's configuration, the configuration scopes are updated as dictionaries in increasing order of precedence, allowing higher precedence files to override lower. YAML dictionaries use a colon \":\" to specify key-value pairs. Spack extends YAML syntax slightly to allow a double-colon \"::\" to specify a key-value pair. When a double-colon is used to specify a key-value pair, instead of adding that section Spack replaces what was in that section with the new value. For example, a user compilers configuration file as follows:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:134
+# aad04171a3e543bdbfef0f58f89c24a1
+msgid "ensures that no other compilers are used, as the user configuration scope is the last scope searched and the ``compilers::`` line replaces all previous configuration files information. If the same configuration file had a single colon instead of the double colon, it would add the GCC version 5.4.0 compiler to whatever other compilers were listed in other configuration files."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:145
+# c3e054b2b9f846da916cd51589bec85f
+msgid "Compiler Configuration"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:147
+# dd315ac9ddc24d46a8eab96bbdda563f
+msgid "For most tasks, we can use Spack with the compilers auto-detected the first time Spack runs on a system. As discussed in the basic installation tutorial, we can also tell Spack where compilers are located using the ``spack compiler add`` command. However, in some circumstances we want even more fine-grained control over the compilers available. This section will teach you how to exercise that control using the compilers configuration file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:155
+# 29de7be620694fdf9c1f3b1db8e3d0bf
+msgid "We will start by opening the compilers configuration file"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:219
+# d6235e2f615a4ae2bffa9d8bdb0c6b3a
+msgid "This specifies two versions of the GCC compiler and two versions of the Clang compiler with no Flang compiler. Now suppose we have a code that we want to compile with the Clang compiler for C/C++ code, but with gfortran for Fortran components. We can do this by adding another entry to the ``compilers.yaml`` file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:242
+# ce67bc37a41a4a4592e0af5724761a23
+msgid "Let's talk about the sections of this compiler entry that we've changed. The biggest change we've made is to the ``paths`` section. This lists the paths to the compilers to use for each language/specification. In this case, we point to the clang compiler for C/C++ and the gfortran compiler for both specifications of Fortran. We've also changed the ``spec`` entry for this compiler. The ``spec`` entry is effectively the name of the compiler for Spack. It consists of a name and a version number, separated by the ``@`` sigil. The name must be one of the supported compiler names in Spack (gcc, intel, pgi, xl, xl_r, clang, nag, cce, arm). The version number can be an arbitrary string of alphanumeric characters, as well as ``-``, ``.``, and ``_``. The ``target`` and ``operating_system`` sections we leave unchanged. These sections specify when Spack can use different compilers, and are primarily useful for configuration files that will be used across multiple systems."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:257
+# 6920bcee60f349ed9ca74aded78ae29d
+msgid "We can verify that our new compiler works by invoking it now:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:265
+# 6a9f376accb5462d84a1fc76287bdae2
+msgid "This new compiler also works on Fortran codes:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:275
+# b95f59ccad8c4708995208e76d89f3f6
+msgid "Compiler Flags"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:277
+# 5c2f9f7e0704442dba96d7713997d0ac
+msgid "Some compilers may require specific compiler flags to work properly in a particular computing environment. Spack provides configuration options for setting compiler flags every time a specific compiler is invoked. These flags become part of the package spec and therefore of the build provenance. As on the command line, the flags are set through the implicit build variables ``cflags``, ``cxxflags``, ``cppflags``, ``fflags``, ``ldflags``, and ``ldlibs``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:285
+# 9f7ee0d38865402d8d74955f0f3e0aac
+msgid "Let's open our compilers configuration file again and add a compiler flag."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:305
+# 2e0637e7069c48bd9d3afa6647add4ad
+msgid "We can test this out using the ``spack spec`` command to show how the spec is concretized."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:325
+# 2f5f51921b2f448182e4ad0e80bec06d
+msgid "We can see that ``cppflags=\"-g\"`` has been added to every node in the DAG."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:329
+# 023fb8e5911c4a4ab1dc91f0b879ecc0
+msgid "Advanced Compiler Configuration"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:331
+# dbf14983d22c422cb668ef72cc3911bf
+msgid "There are three fields of the compiler configuration entry that we have not yet talked about."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:334
+# 57b3722b116f41a5919d8ac41f48bf83
+msgid "The ``modules`` field of the compiler is used primarily on Cray systems, but can be useful on any system that has compilers that are only useful when a particular module is loaded. Any modules in the ``modules`` field of the compiler configuration will be loaded as part of the build environment for packages using that compiler."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:340
+# 500544348aea41769f59f19228317e9a
+msgid "The ``extra_rpaths`` field of the compiler configuration is used for compilers that do not rpath all of their dependencies by default. Since compilers are often installed externally to Spack, Spack is unable to manage compiler dependencies and enforce rpath usage. This can lead to packages not finding link dependencies imposed by the compiler properly. For compilers that impose link dependencies on the resulting executables that are not rpath'ed into the executable automatically, the ``extra_rpaths`` field of the compiler configuration tells Spack which dependencies to rpath into every executable created by that compiler. The executables will then be able to find the link dependencies imposed by the compiler. As an example, this field can be set by"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:362
+# c222983fe3ea412ab415bac74cd33c26
+msgid "The ``environment`` field of the compiler configuration is used for compilers that require environment variables to be set during build time. For example, if your Intel compiler suite requires the ``INTEL_LICENSE_FILE`` environment variable to point to the proper license server, you can set this in ``compilers.yaml`` as follows:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:377
+# 9073cf643d1741e6845bd0751cf60f28
+msgid "In addition to ``set``, ``environment`` also supports ``unset``, ``prepend-path``, and ``append-path``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:384
+# 23c9db30281241ff8c586d40ec50c36b
+msgid "Configuring Package Preferences"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:386
+# 47b6151b640f4001bf0a55a007ead913
+msgid "Package preferences in Spack are managed through the ``packages.yaml`` configuration file. First, we will look at the default ``packages.yaml`` file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:399
+# 0f4d9f589e09453cb43fe49d1d3cf7bb
+msgid "This sets the default preferences for compilers and for providers of virtual packages. To illustrate how this works, suppose we want to change the preferences to prefer the Clang compiler and to prefer MPICH over OpenMPI. Currently, we prefer GCC and OpenMPI."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:434
+# b9c1d933db8c442286e3a6a2bf97c79b
+msgid "Now we will open the packages configuration file and update our preferences."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:451
+# 376e7f1360524a27bbe324267fd749f2
+msgid "Because of the configuration scoping we discussed earlier, this overrides the default settings just for these two items."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:482
+# 6118181acc5b4ae18bbfa1263293369c
+msgid "Variant Preferences"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:484
+# af6298fb61cd4af3a0a32906831012ee
+msgid "The packages configuration file can also set variant preferences for package variants. For example, let's change our preferences to build all packages without shared libraries. We will accomplish this by turning off the ``shared`` variant on all packages that have one."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:499
+# 80c90a5acbc6445a98aa77e1daeffaea
+msgid "We can check the effect of this command with ``spack spec hdf5`` again."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:527
+# c578f33302444abe9d5da89bcc43d8e4
+msgid "So far we have only made global changes to the package preferences. As we've seen throughout this tutorial, hdf5 builds with MPI enabled by default in Spack. If we were working on a project that would routinely need serial hdf5, that might get annoying quickly, having to type ``hdf5~mpi`` all the time. Instead, we'll update our preferences for hdf5."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:546
+# 001ce27f896441b7acf02443a9b77e64
+msgid "Now hdf5 will concretize without an MPI dependency by default."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:561
+# 2d3e30deef064c06a048c74e7995144f
+msgid "In general, every attribute that we can set for all packages we can set separately for an individual package."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:566
+# fe301fbc230d47a9847e94deed13d2e8
+msgid "External Packages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:568
+# 9ad3ba89424c44bebff1dc621f179f65
+msgid "The packages configuration file also controls when Spack will build against an externally installed package. On these systems we have a pre-installed zlib."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:587
+# 8d7c71d5080345d4987547ffe0303e48
+msgid "Here, we've told Spack that zlib 1.2.8 is installed on our system. We've also told it the installation prefix where zlib can be found. We don't know exactly which variants it was built with, but that's okay."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:605
+# 26d411de452e4a4099a480858ee1445d
+msgid "You'll notice that Spack is now using the external zlib installation, but the compiler used to build zlib is now overriding our compiler preference of clang. If we explicitly specify clang:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:622
+# 56dc5182ed704fc691e6ee850073f54c
+msgid "Spack concretizes to both hdf5 and zlib being built with clang. This has a side-effect of rebuilding zlib. If we want to force Spack to use the system zlib, we have two choices. We can either specify it on the command line, or we can tell Spack that it's not allowed to build its own zlib. We'll go with the latter."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:644
+# 85fd20d405af4623adff1e6d60ff2da8
+msgid "Now Spack will be forced to choose the external zlib."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:659
+# d091a9acbbf24439b783215c47245251
+msgid "This gets slightly more complicated with virtual dependencies. Suppose we don't want to build our own MPI, but we now want a parallel version of hdf5? Well, fortunately we have mpich installed on these systems."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:683
+# 9e9f1765a3e742e8876c774adc90c915
+msgid "If we concretize ``hdf5+mpi`` with this configuration file, we will just build with an alternate MPI implementation."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:716
+# 2b12a4ddd1434e9496560a9a443c72f0
+msgid "We have only expressed a preference for mpich over other MPI implementations, and Spack will happily build with one we haven't forbid it from building. We could resolve this by requesting ``hdf5%clang+mpi^mpich`` explicitly, or we can configure Spack not to use any other MPI implementation. Since we're focused on configurations here and the former can get tedious, we'll need to modify our ``packages.yaml`` file again."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:724
+# bc3412cdccc746e88af3082ece14a567
+msgid "While we're at it, we can configure hdf5 to build with MPI by default again."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:761
+# 01976157cce94a0782278a4adbdfad3f
+msgid "Now that we have configured Spack not to build any of the possible providers for MPI we can try again."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:778
+# ef9ccf43da194df7a48c1798744f90ae
+msgid "By configuring most of our package preferences in ``packages.yaml``, we can cut down on the amount of work we need to do when specifying a spec on the command line. In addition to compiler and variant preferences, we can specify version preferences as well. Anything that you can specify on the command line can be specified in ``packages.yaml`` with the exact same spec syntax."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:787
+# 27d148a4ecc94c6f9a0c1f1baf842cb5
+msgid "Installation Permissions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:789
+# 0ff43609d0964ff3b3b6f1efb951c9a6
+msgid "The ``packages.yaml`` file also controls the default permissions to use when installing a package. You'll notice that by default, the installation prefix will be world readable but only user writable."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:793
+# 87311edc989042b39a003c8a365ad45f
+msgid "Let's say we need to install ``converge``, a licensed software package. Since a specific research group, ``fluid_dynamics``, pays for this license, we want to ensure that only members of this group can access the software. We can do this like so:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:807
+# b9a25afeae1e487f8d6d2765a0358e59
+msgid "Now, only members of the ``fluid_dynamics`` group can use any ``converge`` installations."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:812
+# c26e4be1839e43efbe8b344e8ef5b052
+msgid "Make sure to delete or move the ``packages.yaml`` you have been editing up to this point. Otherwise, it will change the hashes of your packages, leading to differences in the output of later tutorial sections."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:820
+# e71796b1b1cc404cb7ee5a0cd7e8dcce
+msgid "High-level Config"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:822
+# a0fbf2c7227a43df92791e19a9927f17
+msgid "In addition to compiler and package settings, Spack allows customization of several high-level settings. These settings are stored in the generic ``config.yaml`` configuration file. You can see the default settings by running:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:836
+# d30693fb19c74b8e8da623791659e365
+msgid "As you can see, many of the directories Spack uses can be customized. For example, you can tell Spack to install packages to a prefix outside of the ``$SPACK_ROOT`` hierarchy. Module files can be written to a central location if you are using multiple Spack instances. If you have a fast scratch file system, you can run builds from this file system with the following ``config.yaml``:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:850
+# a7ac64f31ca0473694463e9ae096ec8f
+msgid "On systems with compilers that absolutely *require* environment variables like ``LD_LIBRARY_PATH``, it is possible to prevent Spack from cleaning the build environment with the ``dirty`` setting:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:860
+# 0811c66c285b4204858c587d9a817e65
+msgid "However, this is strongly discouraged, as it can pull unwanted libraries into the build."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:863
+# bc9c90ee9c344e9897b8fb96b2607cec
+msgid "One last setting that may be of interest to many users is the ability to customize the parallelism of Spack builds. By default, Spack installs all packages in parallel with the number of jobs equal to the number of cores on the node. For example, on a node with 16 cores, this will look like:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:890
+# 7651f10a74164a7abc83d5620f868e2f
+msgid "As you can see, we are building with all 16 cores on the node. If you are on a shared login node, this can slow down the system for other users. If you have a strict ulimit or restriction on the number of available licenses, you may not be able to build at all with this many cores. On nodes with 64+ cores, you may not see a significant speedup of the build anyway. To limit the number of cores our build uses, set ``build_jobs`` like so:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:903
+# 3b3100b330a7482ab90120e918e30437
+msgid "If we uninstall and reinstall zlib, we see that it now uses only 4 cores:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:926
+# 3c3c057e0a1946feba08a842083c8307
+msgid "Obviously, if you want to build everything in serial for whatever reason, you would set ``build_jobs`` to 1."
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:931
+# 153e70b8f87e4ac9b5b05b621b0a4887
+msgid "Examples"
+msgstr ""
+
+#: ../spack/lib/spack/docs/tutorial_configuration.rst:933
+# f5c09d24121d4bf5a5eb23353d259133
+msgid "For examples of how other sites configure Spack, see https://github.com/spack/spack-configs. If you use Spack at your site and want to share your config files, feel free to submit a pull request!"
+msgstr ""
+

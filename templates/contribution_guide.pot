@@ -1,0 +1,530 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2019, Lawrence Livermore National Laboratory.
+# This file is distributed under the same license as the Spack package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Spack 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 00:42-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:10
+# d3ec8657e9b8490396f03931ca553961
+msgid "Contribution Guide"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:12
+# a89280c6fa974ea284bc5a0178046479
+msgid "This guide is intended for developers or administrators who want to contribute a new package, feature, or bugfix to Spack. It assumes that you have at least some familiarity with Git VCS and Github. The guide will show a few examples of contributing workflows and discuss the granularity of pull-requests (PRs). It will also discuss the tests your PR must pass in order to be accepted into Spack."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:19
+# 6d03c3f5e375486ca07af5be81e568d6
+msgid "First, what is a PR? Quoting `Bitbucket's tutorials <https://www.atlassian.com/git/tutorials/making-a-pull-request/>`_:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:21
+# 35277970b1d64a1f9d3520d622f08342
+msgid "Pull requests are a mechanism for a developer to notify team members that they have **completed a feature**. The pull request is more than just a notification—it’s a dedicated forum for discussing the proposed feature."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:25
+# 417e7daced2044ea827aa93da5750f42
+msgid "Important is **completed feature**. The changes one proposes in a PR should correspond to one feature/bugfix/extension/etc. One can create PRs with changes relevant to different ideas, however reviewing such PRs becomes tedious and error prone. If possible, try to follow the **one-PR-one-package/feature** rule."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:30
+# 8c51e37233664a279fb79b099dcf4717
+msgid "Spack uses a rough approximation of the `Git Flow <http://nvie.com/posts/a-successful-git-branching-model/>`_ branching model. The develop branch contains the latest contributions, and master is always tagged and points to the latest stable release. Therefore, when you send your request, make ``develop`` the destination branch on the `Spack repository <https://github.com/spack/spack>`_."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:38
+# d74b6d809fa646d69fccef73e2c52604
+msgid "Continuous Integration"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:40
+# ae6e1c21103e4ea98a86d0f02095c481
+msgid "Spack uses `Travis CI <https://travis-ci.org/spack/spack>`_ for Continuous Integration testing. This means that every time you submit a pull request, a series of tests will be run to make sure you didn't accidentally introduce any bugs into Spack. **Your PR will not be accepted until it passes all of these tests.** While you can certainly wait for the results of these tests after submitting a PR, we recommend that you run them locally to speed up the review process."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:49
+# 4cf197c344fc4bb4b7c6e20538e789e7
+msgid "Oftentimes, Travis will fail for reasons other than a problem with your PR. For example, apt-get, pip, or homebrew will fail to download one of the dependencies for the test suite, or a transient bug will cause the unit tests to timeout. If Travis fails, click the \"Details\" link and click on the test(s) that is failing. If it doesn't look like it is failing for reasons related to your PR, you have two options. If you have write permissions for the Spack repository, you should see a \"Restart job\" button on the right-hand side. If not, you can close and reopen your PR to rerun all of the tests. If the same test keeps failing, there may be a problem with your PR. If you notice that every recent PR is failing with the same error message, it may be that Travis is down or one of Spack's dependencies put out a new release that is causing problems. If this is the case, please file an issue."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:63
+# e1ad98c93b9842cb9e32f9b8c9fce670
+msgid "If you take a look in ``$SPACK_ROOT/.travis.yml``, you'll notice that we test against Python 2.6, 2.7, and 3.4-3.7 on both macOS and Linux. We currently perform 3 types of tests:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:69
+# eaf6a630ce254109bdaa6e5365ff4fa2
+msgid "Unit Tests"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:71
+# 3fc5b564c1b34f26ad944724658ad15a
+msgid "Unit tests ensure that core Spack features like fetching or spec resolution are working as expected. If your PR only adds new packages or modifies existing ones, there's very little chance that your changes could cause the unit tests to fail. However, if you make changes to Spack's core libraries, you should run the unit tests to make sure you didn't break anything."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:77
+# 882ab3c2f2b64d1e802c2a5d879600c3
+msgid "Since they test things like fetching from VCS repos, the unit tests require `git <https://git-scm.com/>`_, `mercurial <https://www.mercurial-scm.org/>`_, and `subversion <https://subversion.apache.org/>`_ to run. Make sure these are installed on your system and can be found in your ``PATH``. All of these can be installed with Spack or with your system package manager."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:83
+# 95c3680745ba4dd08758adfeb3a3dd63
+msgid "To run *all* of the unit tests, use:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:89
+# e33a856ab9b44f0381e143fc4ca4b739
+msgid "These tests may take several minutes to complete. If you know you are only modifying a single Spack feature, you can run a single unit test at a time:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:96
+# 32f0cab229ce443bac7dca697d791e60
+msgid "This allows you to develop iteratively: make a change, test that change, make another change, test that change, etc. To get a list of all available unit tests, run:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:102
+# 3d839e6d73e445cb958a627dd8f9ed21
+msgid "A more detailed list of available unit tests can be found by running ``spack test --long-list``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:105
+# 52230785aa894efc9aba2c82acd2091e
+msgid "By default, ``pytest`` captures the output of all unit tests. If you add print statements to a unit test and want to see the output, simply run:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:112
+# b07d5d705b324ec0b23ba59bfbbbd18f
+msgid "Unit tests are crucial to making sure bugs aren't introduced into Spack. If you are modifying core Spack libraries or adding new functionality, please consider adding new unit tests or strengthening existing tests."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:118
+# 34d620dc069e473687093409c25bb2d0
+msgid "There is also a ``run-unit-tests`` script in ``share/spack/qa`` that runs the unit tests. Afterwards, it reports back to Codecov with the percentage of Spack that is covered by unit tests. This script is designed for Travis CI. If you want to run the unit tests yourself, we suggest you use ``spack test``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:126
+# b3af0da03bb44c64a247ffb7f1929a8d
+msgid "Flake8 Tests"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:128
+# 3e3b839c8e1148df953a6482a443741e
+msgid "Spack uses `Flake8 <http://flake8.pycqa.org/en/latest/>`_ to test for `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_ conformance. PEP 8 is a series of style guides for Python that provide suggestions for everything from variable naming to indentation. In order to limit the number of PRs that were mostly style changes, we decided to enforce PEP 8 conformance. Your PR needs to comply with PEP 8 in order to be accepted."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:135
+# b27d0ca7be58440d9f65d86b68e91a40
+msgid "Testing for PEP 8 compliance is easy. Simply run the ``spack flake8`` command:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:142
+# 0fa3a853c2d34a05a31b5990a7fdece1
+msgid "``spack flake8`` has a couple advantages over running ``flake8`` by hand:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:144
+# af36bbc451484d319c372dbf26ef3b72
+msgid "It only tests files that you have modified since branching off of ``develop``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:147
+# 4d0c99ca69bd46efbb29113d142cc3a2
+msgid "It works regardless of what directory you are in."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:149
+# 8ec597a99a004606be326ab855e784ca
+msgid "It automatically adds approved exemptions from the ``flake8`` checks. For example, URLs are often longer than 80 characters, so we exempt them from line length checks. We also exempt lines that start with \"homepage\", \"url\", \"version\", \"variant\", \"depends_on\", and \"extends\" in ``package.py`` files."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:155
+# 1629a5cae33b4c6f8bb842caf67680f0
+msgid "More approved flake8 exemptions can be found `here <https://github.com/spack/spack/blob/develop/.flake8>`_."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:158
+# 00f931f84732469987a9732d6b555958
+msgid "If all is well, you'll see something like this:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:175
+# f939b297ca3f4bc0a68aa2a800e596b1
+msgid "However, if you aren't compliant with PEP 8, flake8 will complain:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:184
+# e2037a188a854c0299f305fdf7e65afb
+msgid "Most of the error messages are straightforward, but if you don't understand what they mean, just ask questions about them when you submit your PR. The line numbers will change if you add or delete lines, so simply run ``spack flake8`` again to update them."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:191
+# f4489e30fad640be8a7bfe49a19f2ab9
+msgid "Try fixing flake8 errors in reverse order. This eliminates the need for multiple runs of ``spack flake8`` just to re-compute line numbers and makes it much easier to fix errors directly off of the Travis output."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:197
+# 1f97648e06ea4ca1b3b29cf079f2a9a5
+msgid "Flake8 and ``pep8-naming`` require a number of dependencies in order to run.  If you installed ``py-flake8`` and ``py-pep8-naming``, the easiest way to ensure the right packages are on your ``PYTHONPATH`` is to run::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:205
+#: ../spack/lib/spack/docs/contribution_guide.rst:249
+# 9789fabf5f3349059254672d4dd6b492
+# 125f76f99b654746aacbde27dce97904
+msgid "so that all of the dependencies are symlinked to a central location. If you see an error message like:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:215
+# 4b6ec7f59a14428283eb4abba8b5e2db
+msgid "that means Flake8 couldn't find setuptools in your ``PYTHONPATH``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:219
+# 31aea8e339be4b15b3ca46be8aea0794
+msgid "Documentation Tests"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:221
+# 46e89344874c483b8411df122594c823
+msgid "Spack uses `Sphinx <http://www.sphinx-doc.org/en/stable/>`_ to build its documentation. In order to prevent things like broken links and missing imports, we added documentation tests that build the documentation and fail if there are any warning or error messages."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:226
+# cbd99cd397cd4fa2b900cefad9b32c88
+msgid "Building the documentation requires several dependencies, all of which can be installed with Spack:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:229
+# 96d5d84329ee477bbff1467d017b749e
+msgid "sphinx"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:230
+# 1efb8d8c0cdb4cc8aa59311cf00ac945
+msgid "sphinxcontrib-programoutput"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:231
+# 9261438ae170460db785c35a86a1354c
+msgid "sphinx-rtd-theme"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:232
+# 0fcbb07e108b45c4bc4083bcfd6dcbb4
+msgid "graphviz"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:233
+# d131f14873b24e648ae3ad289eae537f
+msgid "git"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:234
+# 603320b8700640718304beca22445667
+msgid "mercurial"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:235
+# aaa3e226efdc4f2b994917b99812a3db
+msgid "subversion"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:239
+# 857fb75e6d9142a1a94d20b5f13b8b32
+msgid "Sphinx has `several required dependencies <https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/py-sphinx/package.py>`_. If you installed ``py-sphinx`` with Spack, make sure to add all of these dependencies to your ``PYTHONPATH``. The easiest way to do this is to run:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:258
+# 4e5f2eb5979a4cf1a3b18c79d3f3ef4b
+msgid "that means Sphinx couldn't find ``py-sphinxcontrib-programoutput`` in your ``PYTHONPATH``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:261
+# f342069bbc99422ab80193ed81b79d4d
+msgid "Once all of the dependencies are installed, you can try building the documentation:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:269
+# 5bc518a4853345dfbbbba9772f1f18bf
+msgid "If you see any warning or error messages, you will have to correct those before your PR is accepted."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:274
+# efa7b56b28234c82b90a3e87ba2d398a
+msgid "There is also a ``run-doc-tests`` script in ``share/spack/qa``. The only difference between running this script and running ``make`` by hand is that the script will exit immediately if it encounters an error or warning. This is necessary for Travis CI. If you made a lot of documentation changes, it is much quicker to run ``make`` by hand so that you can see all of the warnings at once."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:281
+# c0f43303c0e24c6d947f52e326562bfc
+msgid "If you are editing the documentation, you should obviously be running the documentation tests. But even if you are simply adding a new package, your changes could cause the documentation tests to fail:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:289
+# 8d8c3f0bd20147759e0d4b191950886b
+msgid "At first, this error message will mean nothing to you, since you didn't edit that file. Until you look at line 8745 of the file in question:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:299
+# f9cfaefcebb8436b80ce9434338d30b2
+msgid "Our documentation includes :ref:`a list of all Spack packages <package-list>`. If you add a new package, its docstring is added to this page. The problem in this case was that the docstring looked like:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:312
+# eaa22194f6c04eec8571d075f71dca75
+msgid "Docstrings cannot start with a newline character, or else Sphinx will complain. Instead, they should look like:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:322
+# 1c5f41747b634ddeada58f1aa8dfd7d0
+msgid "Documentation changes can result in much more obfuscated warning messages. If you don't understand what they mean, feel free to ask when you submit your PR."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:328
+# 5f8717d53d864538a1e3b9ee81354ce6
+msgid "Coverage"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:330
+# 1e7d889e2a0e4a0980a23eaefb7495ea
+msgid "Spack uses `Codecov <https://codecov.io/>`_ to generate and report unit test coverage. This helps us tell what percentage of lines of code in Spack are covered by unit tests. Although code covered by unit tests can still contain bugs, it is much less error prone than code that is not covered by unit tests."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:335
+# fb7482b4edbd4bf6a431b5cfe375a393
+msgid "Codecov provides `browser extensions <https://github.com/codecov/browser-extension>`_ for Google Chrome, Firefox, and Opera. These extensions integrate with GitHub and allow you to see coverage line-by-line when viewing the Spack repository. If you are new to Spack, a great way to get started is to write unit tests to increase coverage!"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:341
+# be20abe3c89c469d816810ef83a70c17
+msgid "Unlike with Travis, Codecov tests are not required to pass in order for your PR to be merged. If you modify core Spack libraries, we would greatly appreciate unit tests that cover these changed lines. Otherwise, we have no way of knowing whether or not your changes introduce a bug. If you make substantial changes to the core, we may request unit tests to increase coverage."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:349
+# b18595e536e942b3b7abd90592b43f40
+msgid "If the only files you modified are package files, we do not care about coverage on your PR. You may notice that the Codecov tests fail even though you didn't modify any core files. This means that Spack's overall coverage has increased since you branched off of develop. This is a good thing! If you really want to get the Codecov tests to pass, you can rebase off of the latest develop, but again, this is not required."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:359
+# e3e7a90e817642bab1795c6626593af4
+msgid "Git Workflows"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:361
+# 73848424b14b4666aba260796ff8fadd
+msgid "Spack is still in the beta stages of development. Most of our users run off of the develop branch, and fixes and new features are constantly being merged. So how do you keep up-to-date with upstream while maintaining your own local differences and contributing PRs to Spack?"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:368
+# 9b12b618b45a43f3a6a923d1e9ac2dc6
+msgid "Branching"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:370
+# 5458b04f13654014b1430270628e991b
+msgid "The easiest way to contribute a pull request is to make all of your changes on new branches. Make sure your ``develop`` is up-to-date and create a new branch off of it:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:381
+# 60fb8d959ee0452499010ec0406c0a35
+msgid "Here we assume that the local ``develop`` branch tracks the upstream develop branch of Spack. This is not a requirement and you could also do the same with remote branches. But for some it is more convenient to have a local branch that tracks upstream."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:386
+# 004fd29855a44ee48d4b393f1c862a74
+msgid "Normally we prefer that commits pertaining to a package ``<package-name>`` have a message ``<package-name>: descriptive message``. It is important to add descriptive message so that others, who might be looking at your changes later (in a year or maybe two), would understand the rationale behind them."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:391
+# 27c36ca948574c95a6c69ba13301f56b
+msgid "Now, you can make your changes while keeping the ``develop`` branch pure. Edit a few files and commit them by running:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:399
+# d50df977e8d3445d8849de4050fd8ebf
+msgid "Next, push it to your remote fork and create a PR:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:405
+# 3adbc7ff98474d60981867e568f4002f
+msgid "GitHub provides a `tutorial <https://help.github.com/articles/about-pull-requests/>`_ on how to file a pull request. When you send the request, make ``develop`` the destination branch."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:409
+# 91bbac663d74470fb3b0fc95751b9949
+msgid "If you need this change immediately and don't have time to wait for your PR to be merged, you can always work on this branch. But if you have multiple PRs, another option is to maintain a Frankenstein branch that combines all of your other branches:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:421
+# 03c93d17b4da4c6fadd387c1409d6852
+msgid "This can be done with each new PR you submit. Just make sure to keep this local branch up-to-date with upstream ``develop`` too."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:426
+# ed35c71ec8e245f9abee7c46b7b4c06d
+msgid "Cherry-Picking"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:428
+# 87864bd0bde74e5ab70addd9510d5d6a
+msgid "What if you made some changes to your local modified develop branch and already committed them, but later decided to contribute them to Spack? You can use cherry-picking to create a new branch with only these commits."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:432
+# 4d07705c457d44aabf91c18e6e664121
+msgid "First, check out your local modified develop branch:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:438
+# 723cbcbc16524af8972d6be95450e5e4
+msgid "Now, get the hashes of the commits you want from the output of:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:444
+# 3c4945cc7f4146c6a1d70b4b24c20242
+msgid "Next, create a new branch off of upstream ``develop`` and copy the commits that you want in your PR:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:456
+# f5552ff4d80f41cead0df264b7b7305e
+msgid "Now you can create a PR from the web-interface of GitHub. The net result is as follows:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:459
+# 031689b047844c61a088a4af8ff475a8
+msgid "You patched your local version of Spack and can use it further."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:460
+# 0634b5ca6758452aaf8fcd6d2f2abf9d
+msgid "You \"cherry-picked\" these changes in a stand-alone branch and submitted it as a PR upstream."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:463
+# b1cb65594b04488a912a9fab4d8026ef
+msgid "Should you have several commits to contribute, you could follow the same procedure by getting hashes of all of them and cherry-picking to the PR branch."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:468
+# 970ee786f2174c8997579445e5201a07
+msgid "It is important that whenever you change something that might be of importance upstream, create a pull request as soon as possible. Do not wait for weeks/months to do this, because:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:472
+# 8e15fef9761f40e9aa4c0f9105754e54
+msgid "you might forget why you modified certain files"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:473
+# 542abb1afb9d4119a5aa3bd3630ff0e5
+msgid "it could get difficult to isolate this change into a stand-alone clean PR."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:477
+# 7beaff43c8114e9ea70356ffc58abef0
+msgid "Rebasing"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:479
+# 2c36e3996eef4d2cab93a6b470950141
+msgid "Other developers are constantly making contributions to Spack, possibly on the same files that your PR changed. If their PR is merged before yours, it can create a merge conflict. This means that your PR can no longer be automatically merged without a chance of breaking your changes. In this case, you will be asked to rebase on top of the latest upstream ``develop``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:485
+# 1e686268d6414630869b95a2a6b1478a
+msgid "First, make sure your develop branch is up-to-date:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:492
+# 128294591740479a9f3b6112b7c78585
+msgid "Now, we need to switch to the branch you submitted for your PR and rebase it on top of develop:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:500
+# 4e60045199c1426fac7fcd0559a720e2
+msgid "Git will likely ask you to resolve conflicts. Edit the file that it says can't be merged automatically and resolve the conflict. Then, run:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:508
+# 1f42dfbe7c0c4e2dbcb6defb7c2e1959
+msgid "You may have to repeat this process multiple times until all conflicts are resolved. Once this is done, simply force push your rebased branch to your remote fork:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:517
+# bb9eb42d72e1402cad886bbe4cb1ec5a
+msgid "Rebasing with cherry-pick"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:519
+# 7cd6920ddcb744c78fdf29cfce2c2398
+msgid "You can also perform a rebase using ``cherry-pick``. First, create a temporary backup branch:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:527
+# b79cdc1d383341e29829f6273f2e35b2
+msgid "If anything goes wrong, you can always go back to your ``tmp`` branch. Now, look at the logs and save the hashes of any commits you would like to keep:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:534
+# 0315e12f0fb842a3b6a1d869e3f83cf9
+msgid "Next, go back to the original branch and reset it to ``develop``. Before doing so, make sure that you local ``develop`` branch is up-to-date with upstream:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:545
+# 5ec6b201ef9a42fda55361fc8f0df4f1
+msgid "Now you can cherry-pick relevant commits:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:552
+# b2bd02233d9f4d0a92f3399dff2cc458
+msgid "Push the modified branch to your fork:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:558
+# b741dd584ce4494ab4073801d64ebc3a
+msgid "If everything looks good, delete the backup branch:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:566
+# 0d46a68de8a745aba51b69ac1d5e7560
+msgid "Re-writing History"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:568
+# 11369319a3934a19a5c2a6e86b82bdf0
+msgid "Sometimes you may end up on a branch that has diverged so much from develop that it cannot easily be rebased. If the current commits history is more of an experimental nature and only the net result is important, you may rewrite the history."
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:573
+# a648395f646d4a398cde0ad72458cac7
+msgid "First, merge upstream ``develop`` and reset you branch to it. On the branch in question, run:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:581
+# 78deba8306d64f1480e80e970560c8ac
+msgid "At this point your branch will point to the same commit as develop and thereby the two are indistinguishable. However, all the files that were previously modified will stay as such. In other words, you do not lose the changes you made. Changes can be reviewed by looking at diffs:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:591
+# aa819b6b48a8494eb661e400004aa05c
+msgid "The next step is to rewrite the history by adding files and creating commits:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/contribution_guide.rst:598
+# 2c6183723f614dc0bde576eea3bea5fb
+msgid "After all changed files are committed, you can push the branch to your fork and create a PR:"
+msgstr ""
+
