@@ -4,7 +4,7 @@
 # Add a new language here and type "make" to generate new po files to
 # translate.
 # ----------------------------------------------------------------------
-languages = ja de
+languages = ja
 
 # ----------------------------------------------------------------------
 # Important locations in the Spack submodule within this repo
@@ -154,16 +154,17 @@ docs/%: $(sources)
 	sed -i~ 's@spack_root = .*@spack_root = "../../spack"@' $@/conf.py
 	ln -s ../../spack docs/$(lang)/_spack_root
 
-# remove generated files and symlinks
+# remove everything not checked into git
 clean:
 	make -C $(source_dir) clean
-	rm -rf locale html docs templates/.doctrees
+	rm -rf html templates/.doctrees
 
-# remove all generated files, including templates
+# remove all generated files *except* translations, which we want to keep
 clobber: clean
-	rm -rf templates
+	rm -rf templates locale docs
 
-# remove ALL generated files AND the translated po files
+# remove ALL generated files AND the translated .po files
 # WARNING: this resets everything and starts from scratch
+# YOU WILL LOSE YOUR TRANSLATIONS IF YOU RUN THIS
 reset: clobber
 	rm -rf translations
