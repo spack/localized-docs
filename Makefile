@@ -4,7 +4,7 @@
 # Add a new language here and type "make" to generate new po files to
 # translate.
 # ----------------------------------------------------------------------
-languages = ja
+languages = ja de
 
 # ----------------------------------------------------------------------
 # Important locations in the Spack submodule within this repo
@@ -152,7 +152,7 @@ docs/%: $(sources)
 	sed -i~ 's/#language = None/language = "$(lang)"/' $@/conf.py
 	sed -i~ 's@#locale_dirs = \[\]@locale_dirs = \["../../locale"\]@' $@/conf.py
 	sed -i~ 's@spack_root = .*@spack_root = "../../spack"@' $@/conf.py
-	ln -s ../../spack docs/ja/_spack_root
+	ln -s ../../spack docs/$(lang)/_spack_root
 
 # remove generated files and symlinks
 clean:
