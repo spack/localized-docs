@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,47 +17,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/spack.cmd.common.rst:2
-# be575ce410164011a6cb0019341729bb
 msgid "spack.cmd.common package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.common.rst:5
-# 863d12da8a9441c7a1f646bf26cf5178
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.common.rst:8
-# 5f7cceda01e34e41ae7676540d9dacea
 msgid "spack.cmd.common.arguments module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/common/arguments.py:docstring of spack.cmd.common.arguments.add_common_arguments:1
-# 952e2fdcfe9647a1a349f0c4685a3451
 msgid "Extend a parser with extra arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/common/arguments.py:docstring of spack.cmd.common.arguments.add_common_arguments:0
-# 122617e24ddf495b9f82da1deccfb11a
 msgid "Parameters"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/common/arguments.py:docstring of spack.cmd.common.arguments.add_common_arguments:3
-# 55ee30c896e04bfd846218926c44d335
 msgid "parser to be extended"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/common/arguments.py:docstring of spack.cmd.common.arguments.add_common_arguments:4
-# 4d21833a2c2a441c8ae2ff7f822866e6
 msgid "arguments to be added to the parser"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.common.rst:17
-# 1d23c6c006a3434a87640580241c6407
 msgid "Module contents"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/common/__init__.py:docstring of spack.cmd.common.print_module_placeholder_help:1
-# 38dd897d39a24a34b2d1284efedc9470
 msgid "For use by commands to tell user how to activate shell support."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,77 +17,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/index.rst:13
-# f8651acaf3d6494eb3cc74bc37e83705
 msgid "Spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:17
-# 2d5552bec9914c52b6ab16ae2a8156e5
 msgid "`These are docs for the Spack package manager. For sphere packing, see` `pyspack <https://pyspack.readthedocs.io>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:19
-# ba8a580cc1bd4f6588635152c955d963
 msgid "Spack is a package management tool designed to support multiple versions and configurations of software on a wide variety of platforms and environments.  It was designed for large supercomputing centers, where many users and application teams share common installations of software on clusters with exotic architectures, using libraries that do not have a standard ABI.  Spack is non-destructive: installing a new version does not break existing installations, so many configurations can coexist on the same system."
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:28
-# cd7b2416fae747d79165d11fa14d4c1d
 msgid "Most importantly, Spack is *simple*.  It offers a simple *spec* syntax so that users can specify versions and configuration options concisely.  Spack is also simple for package authors: package files are written in pure Python, and specs allow package authors to maintain a single file for many different builds of the same package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:34
-# 435aaab564c3439a84671295880c0dc5
 msgid "See the :doc:`features` for examples and highlights."
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:36
-# 65025eab05e448589a72bf56d5946d10
 msgid "Get spack from the `github repository <https://github.com/spack/spack>`_ and install your first package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:46
-# fc722e9acb904d72b949e69d12e3344b
 msgid "If you're new to spack and want to start using it, see :doc:`getting_started`, or refer to the full manual below."
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:50
-# 49b34590330a40768ffaf5040864d79c
 msgid "Basics"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:61
-# 9dd2376cf4c74d238ccf780607a7141f
 msgid "Reference"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:77
-# 9edd93b9e1644710bb5331faf53f3e9c
 msgid "Contributing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:87
-# 25ac49d343954b97982d10b963870dd6
 msgid "API Docs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:96
-# 2118a08996d744659b06dd0f9d6732dc
 msgid "Indices and tables"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:98
-# 96f1c3f899bb4eeeb772c7af5fd0a280
 msgid ":ref:`genindex`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:99
-# 76b76fa726e9445e921e779f817464dd
 msgid ":ref:`modindex`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:100
-# 2fc4f842a0254561abfa208857270f90
 msgid ":ref:`search`"
 msgstr ""
 

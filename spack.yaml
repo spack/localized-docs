@@ -4,6 +4,7 @@ spack:
   - py-sphinx
   - py-sphinxcontrib-programoutput
   - py-sphinx-rtd-theme
+  - py-python-levenshtein
   mirrors: {}
   modules:
     enable: []

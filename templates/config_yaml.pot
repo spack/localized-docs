@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,202 +17,162 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/config_yaml.rst:10
-# e9b7abef6b7d403f9b915582ad1d51f7
 msgid "Basic Settings"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:12
-# 173bf03a965a4a4b9631c038a3a2a333
 msgid "Spack's basic configuration options are set in ``config.yaml``.  You can see the default settings by looking at ``etc/spack/defaults/config.yaml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:19
-# 6a5f7342068140acabf5d29d336880cd
 msgid "These settings can be overridden in ``etc/spack/config.yaml`` or ``~/.spack/config.yaml``.  See :ref:`configuration-scopes` for details."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:24
-# 4fa7d778e9864dbab4707c66526e9754
 msgid "``install_tree``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:26
-# e787c3f52677466f87107fd6379aad4a
 msgid "The location where Spack will install packages and their dependencies. Default is ``$spack/opt/spack``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:31
-# e493f3d4fd9e4af690a989f992665ead
 msgid "``install_hash_length`` and ``install_path_scheme``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:33
-# 73a1aff0574e4b24a506875e64b4a310
 msgid "The default Spack installation path can be very long and can create problems for scripts with hardcoded shebangs. There are two parameters to help with that. Firstly, the ``install_hash_length`` parameter can set the length of the hash in the installation path from 1 to 32. The default path uses the full 32 characters."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:39
-# b3b5192c4e79405182ab0ac9a2c8e90f
 msgid "Secondly, it is also possible to modify the entire installation scheme. By default Spack uses ``{architecture}/{compiler.name}-{compiler.version}/{name}-{version}-{hash}`` where the tokens that are available for use in this directive are the same as those understood by the ``Spec.format`` method. Using this parameter it is possible to use a different package layout or reduce the depth of the installation paths. For example"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:53
-# 5e0a9952a3a94ae3842f7fe30cc21ed8
 msgid "would install packages into sub-directories using only the package name, version and a hash length of 7 characters."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:56
-# af22e5ba0ec24bcb9af7a9f5844a4d28
 msgid "When using either parameter to set the hash length it only affects the representation of the hash in the installation directory. You should be aware that the smaller the hash length the more likely naming conflicts will occur. These parameters are independent of those used to configure module names."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:62
-# 59a757e0a1304b4198d1c72ffa9f1061
 msgid "Modifying the installation hash length or path scheme after packages have been installed will prevent Spack from being able to find the old installation directories."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:68
-# 092845560e7d4171a7f0c3e84a2a1957
 msgid "``module_roots``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:70
-# c882cea7517b4db69786f9f6ddd2abde
 msgid "Controls where Spack installs generated module files.  You can customize the location for each type of module.  e.g.:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:80
-# 98bf2544fce84ca28442ac69db729e86
 msgid "See :ref:`modules` for details."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:84
-# dbc3cf56b42f40ac8596b158116b6fb3
 msgid "``build_stage``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:86
-# 782d46ea5e2d455ea32e57e0b4e22191
 msgid "Spack is designed to run out of a user home directory, and on many systems the home directory is a (slow) network file system.  On most systems, building in a temporary file system results in faster builds than building in the home directory.  Usually, there is also more space available in the temporary location than in the home directory. So, Spack tries to create build stages in temporary space."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:93
-# 8543f6d7d9bf44739fdf82c516c0b0e6
 msgid "By default, Spack's ``build_stage`` is configured like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:101
-# 1d33d91ff7b747dbb40756dac381f2ee
 msgid "This is an ordered list of paths that Spack should search when trying to find a temporary directory for the build stage.  The list is searched in order, and Spack will use the first directory to which it has write access. See :ref:`config-file-variables` for more on ``$tempdir`` and ``$spack``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:106
-# 6e760c89f6814db58c893a633a424b64
 msgid "When Spack builds a package, it creates a temporary directory within the ``build_stage``, and it creates a symbolic link to that directory in ``$spack/var/spack/stage``. This is used to track the temporary directory.  After the package is successfully installed, Spack deletes the temporary directory it used to build.  Unsuccessful builds are not deleted, but you can manually purge them with :ref:`spack clean --stage <cmd-spack-clean>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:116
-# c2ef2d452b624af5aada2665667ac4ae
 msgid "The last item in the list is ``$spack/var/spack/stage``.  If this is the only writable directory in the ``build_stage`` list, Spack will build *directly* in ``$spack/var/spack/stage`` and will not link to temporary space."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:123
-# 573f8673490d43f7a3831fa82211486f
 msgid "``source_cache``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:125
-# e279d7a30be340328ca088edbaef8302
 msgid "Location to cache downloaded tarballs and repositories.  By default these are stored in ``$spack/var/spack/cache``.  These are stored indefinitely by default. Can be purged with :ref:`spack clean --downloads <cmd-spack-clean>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:132
-# 06fd077a1db5425194b996715b19dc1b
 msgid "``misc_cache``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:134
-# a6b04189aafd4897b4e6158ca1182cc9
 msgid "Temporary directory to store long-lived cache files, such as indices of packages available in repositories.  Defaults to ``~/.spack/cache``.  Can be purged with :ref:`spack clean --misc-cache <cmd-spack-clean>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:140
-# 2ebc005caa4644259908169fb6e1c69a
 msgid "``verify_ssl``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:142
-# a2af0fa59ec1409a9f76aee6d5b15534
 msgid "When set to ``true`` (default) Spack will verify certificates of remote hosts when making ``ssl`` connections.  Set to ``false`` to disable, and tools like ``curl`` will use their ``--insecure`` options.  Disabling this can expose you to attacks.  Use at your own risk."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:149
-# 90b7719f5f0a407c9b97e0d990f2dcba
 msgid "``checksum``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:151
-# 63953de728d34b48826ba3a5d194cf17
 msgid "When set to ``true``, Spack verifies downloaded source code using a checksum, and will refuse to build packages that it cannot verify.  Set to ``false`` to disable these checks.  Disabling this can expose you to attacks.  Use at your own risk."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:158
-# 93045e2a1c3745f6812bf880c717eee2
 msgid "``locks``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:160
-# 0be9f1d451704961ab5f1c5b42999595
 msgid "When set to ``true``, concurrent instances of Spack will use locks to avoid modifying the install tree, database file, etc. If false, Spack will disable all locking, but you must **not** run concurrent instances of Spack.  For file systems that don't support locking, you should set this to ``false`` and run one Spack at a time, but otherwise we recommend enabling locks."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:169
-# 680a59471e7b40c2af16dd8b8bc9cade
 msgid "``dirty``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:171
-# def9adedf1fd459e824bb4ae9a88258b
 msgid "By default, Spack unsets variables in your environment that can change the way packages build. This includes ``LD_LIBRARY_PATH``, ``CPATH``, ``LIBRARY_PATH``, ``DYLD_LIBRARY_PATH``, and others."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:175
-# 68ff755f7f0d41c18eadd73ff32861ba
 msgid "By default, builds are ``clean``, but on some machines, compilers and other tools may need custom ``LD_LIBRARY_PATH`` settings to run.  You can set ``dirty`` to ``true`` to skip the cleaning step and make all builds \"dirty\" by default.  Be aware that this will reduce the reproducibility of builds."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:183
-# 74a57dbb269046939e5cd3680d527f65
 msgid "``build_jobs``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:185
-# 855e810cfbaa4724b89a6f5a6ab1efbd
 msgid "Unless overridden in a package or on the command line, Spack builds all packages in parallel. For a build system that uses Makefiles, this means running ``make -j<build_jobs>``, where ``build_jobs`` is the number of threads to use."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:190
-# 36b60c506da14bb0820a58fd14282f73
 msgid "The default parallelism is equal to the number of cores on your machine. If you work on a shared login node or have a strict ulimit, it may be necessary to set the default to a lower value. By setting ``build_jobs`` to 4, for example, commands like ``spack install`` will run ``make -j4`` instead of hogging every core."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:196
-# 36d74010451149d68c68e8cc0421392f
 msgid "To build all software in serial, set ``build_jobs`` to 1."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:200
-# 070ad982b9a4406cb70fc41fef7cc3cc
 msgid "``ccache``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:202
-# 391864f5788f459295bed30eeeef8195
 msgid "When set to ``true`` Spack will use ccache to cache compiles. This is useful specifically in two cases: (1) when using ``spack setup``, and (2) when building the same package with many different variants. The default is ``false``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/config_yaml.rst:207
-# cd9c7cce338d48db9006f137d967bccb
 msgid "When enabled, Spack will look inside your ``PATH`` for a ``ccache`` executable and stop if it is not found. Some systems come with ``ccache``, but it can also be installed using ``spack install ccache``. ``ccache`` comes with reasonable defaults for cache size and location. (See the *Configuration settings* section of ``man ccache`` to learn more about the default settings and how to change them). Please note that we currently disable ccache's ``hash_dir`` feature to avoid an issue with the stage directory (see https://github.com/LLNL/spack/pull/3761#issuecomment-294352232)."
 msgstr ""
 

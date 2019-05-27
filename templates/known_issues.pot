@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,57 +17,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/known_issues.rst:8
-# 35efff99c23543488b9a70eaf1ed0477
 msgid "Known Issues"
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:10
-# 751ed3a277eb44498a21672e5998c8b7
 msgid "This is a list of known bugs in Spack. It provides ways of getting around these problems if you encounter them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:15
-# f5e468d6b0a2489183415902a987fc6c
 msgid "Variants are not properly forwarded to dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:17
-# cc3baba154cc4fcfb8100e4faf7d7a05
 msgid "**Status:** Expected to be fixed in the next release"
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:19
-# e00ffcc6100640d1bc824c2f69064083
 msgid "Sometimes, a variant of a package can also affect how its dependencies are built. For example, in order to build MPI support for a package, it may require that its dependencies are also built with MPI support. In the ``package.py``, this looks like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:29
-# 6b203aba60394cfc88ffa21eea432225
 msgid "Spack handles this situation properly for *immediate* dependencies, and builds ``hdf5`` with the same variant you used for the package that depends on it. However, for *indirect* dependencies (dependencies of dependencies), Spack does not backtrack up the DAG far enough to handle this. Users commonly run into this situation when trying to build R with X11 support:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:43
-# d0a6fab04bd3471b9b56ba0ccdf0bf90
 msgid "A workaround is to explicitly activate the variants of dependencies as well:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:49
-# c5cd462fe92a48eb819dade1ea341d1d
 msgid "See https://github.com/spack/spack/issues/267 and https://github.com/spack/spack/issues/2546 for further details."
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:55
-# b12a990cd05a48f79e9e902effc49e83
 msgid "``spack setup`` doesn't work"
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:57
-# 6eb186a459ba431ea99032cd20a5b25d
 msgid "**Status:** Work in progress"
 msgstr ""
 
 #: ../spack/lib/spack/docs/known_issues.rst:59
-# fbc5e7649436433fbd36baa254d28200
 msgid "Spack provides a ``setup`` command that is useful for the development of software outside of Spack. Unfortunately, this command no longer works. See https://github.com/spack/spack/issues/2597 and https://github.com/spack/spack/issues/2662 for details. This is expected to be fixed by https://github.com/spack/spack/pull/2664."
 msgstr ""
 

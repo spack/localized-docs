@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/package_list.rst:10
-# 70dd00f1bb77405ba39ac73629659bdf
 msgid "Package List"
 msgstr ""
 
 #: ../spack/lib/spack/docs/package_list.rst:12
-# b1288ac277b24defa3f16bbbba581dfa
 msgid "This is a list of things you can install using Spack.  It is automatically generated based on the packages in the latest Spack release."
 msgstr ""
 

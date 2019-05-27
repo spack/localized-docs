@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: maintainers@spack.io\n"
-"POT-Creation-Date: 2019-05-22 02:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: 2019-05-22 02:25-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -66,40 +66,42 @@ msgid ""
 "can install:"
 msgstr ""
 
-# fb3cfe96cf294ad284fc996f5227a104
-#: ../spack/lib/spack/docs/basic_usage.rst:47
+# 8184917175c0463dbd339e4ab2f561f7
+#: ../spack/lib/spack/docs/basic_usage.rst:48
 msgid ""
-"The packages are listed by name in alphabetical order. A pattern to match "
-"with no wildcards, ``*`` or ``?``, will be treated as though it started and "
-"ended with ``*``, so ``util`` is equivalent to ``*util*``.  All patterns "
-"will be treated as case-insensitive. You can also add the ``-d`` to search "
-"the description of the package in addition to the name.  Some examples:"
+"There are thosands of them, so we've truncated the output above, but you can "
+"find a :ref:`full list here <package-list>`. Packages are listed by name in "
+"alphabetical order. A pattern to match with no wildcards, ``*`` or ``?``, "
+"will be treated as though it started and ended with ``*``, so ``util`` is "
+"equivalent to ``*util*``.  All patterns will be treated as case-insensitive. "
+"You can also add the ``-d`` to search the description of the package in "
+"addition to the name.  Some examples:"
 msgstr ""
 
 # 5c07944fff914fa396d86cc18b189c19
-#: ../spack/lib/spack/docs/basic_usage.rst:54
+#: ../spack/lib/spack/docs/basic_usage.rst:57
 msgid "All packages whose names contain \"sql\":"
 msgstr ""
 
 # bbb52c5e854a41e4a4f84511c001786d
-#: ../spack/lib/spack/docs/basic_usage.rst:58
+#: ../spack/lib/spack/docs/basic_usage.rst:61
 msgid "All packages whose names or descriptions contain documentation:"
 msgstr ""
 
 # 2f252133a4a04774b6bc6c8661edaf9c
-#: ../spack/lib/spack/docs/basic_usage.rst:66
+#: ../spack/lib/spack/docs/basic_usage.rst:69
 msgid "``spack info``"
 msgstr ""
 
 # 947e71c36d1e4cbd8996df7895f5220c
-#: ../spack/lib/spack/docs/basic_usage.rst:68
+#: ../spack/lib/spack/docs/basic_usage.rst:71
 msgid ""
 "To get more information on a particular package from `spack list`, use "
 "`spack info`.  Just supply the name of a package:"
 msgstr ""
 
 # d6a6960312fc42108ebe5c101424abed
-#: ../spack/lib/spack/docs/basic_usage.rst:73
+#: ../spack/lib/spack/docs/basic_usage.rst:76
 msgid ""
 "Most of the information is self-explanatory.  The *safe versions* are "
 "versions that Spack knows the checksum for, and it will use the checksum to "
@@ -107,26 +109,26 @@ msgid ""
 msgstr ""
 
 # f0c9c281fc174a329cde8a267e924caa
-#: ../spack/lib/spack/docs/basic_usage.rst:78
+#: ../spack/lib/spack/docs/basic_usage.rst:81
 msgid ""
 ":ref:`Dependencies <sec-specs>` and :ref:`virtual dependencies <sec-virtual-"
 "dependencies>` are described in more detail later."
 msgstr ""
 
 # 81b489d2d06f443c98c3032c1f713fc7
-#: ../spack/lib/spack/docs/basic_usage.rst:85
+#: ../spack/lib/spack/docs/basic_usage.rst:88
 msgid "``spack versions``"
 msgstr ""
 
 # 82f1a5f63c77468b881e2a459bae1e82
-#: ../spack/lib/spack/docs/basic_usage.rst:87
+#: ../spack/lib/spack/docs/basic_usage.rst:90
 msgid ""
 "To see *more* available versions of a package, run ``spack versions``. For "
 "example:"
 msgstr ""
 
 # 3f6f9b4c30624e9a82606638db55edbe
-#: ../spack/lib/spack/docs/basic_usage.rst:92
+#: ../spack/lib/spack/docs/basic_usage.rst:95
 msgid ""
 "There are two sections in the output.  *Safe versions* are versions for "
 "which Spack has a checksum on file.  It can verify that these versions are "
@@ -134,7 +136,7 @@ msgid ""
 msgstr ""
 
 # 677dcec0688f4f59ae165a66adddba8d
-#: ../spack/lib/spack/docs/basic_usage.rst:96
+#: ../spack/lib/spack/docs/basic_usage.rst:99
 msgid ""
 "In many cases, Spack can also show you what versions are available out on "
 "the web---these are *remote versions*.  Spack gets this information by "
@@ -144,17 +146,17 @@ msgid ""
 msgstr ""
 
 # 74d771d64b65435cb3a0413fcf2e4a9e
-#: ../spack/lib/spack/docs/basic_usage.rst:104
+#: ../spack/lib/spack/docs/basic_usage.rst:107
 msgid "Installing and uninstalling"
 msgstr ""
 
 # 98d8b03fd9f34cd0b15918635cc0e6e5
-#: ../spack/lib/spack/docs/basic_usage.rst:110
+#: ../spack/lib/spack/docs/basic_usage.rst:113
 msgid "``spack install``"
 msgstr ""
 
 # 94e2478a2bd2494bb2b13e2469c57745
-#: ../spack/lib/spack/docs/basic_usage.rst:112
+#: ../spack/lib/spack/docs/basic_usage.rst:115
 msgid ""
 "``spack install`` will install any package shown by ``spack list``. For "
 "example, To install the latest version of the ``mpileaks`` package, you "
@@ -162,7 +164,7 @@ msgid ""
 msgstr ""
 
 # a732ed5e6d3541ea8baeced26c14df3e
-#: ../spack/lib/spack/docs/basic_usage.rst:120
+#: ../spack/lib/spack/docs/basic_usage.rst:123
 msgid ""
 "If ``mpileaks`` depends on other packages, Spack will install the "
 "dependencies first.  It then fetches the ``mpileaks`` tarball, expands it, "
@@ -173,25 +175,25 @@ msgid ""
 msgstr ""
 
 # dbf66b9da07b4ee4a119b404f9ccea81
-#: ../spack/lib/spack/docs/basic_usage.rst:147
+#: ../spack/lib/spack/docs/basic_usage.rst:150
 msgid ""
 "The last line, with the ``[+]``, indicates where the package is installed."
 msgstr ""
 
 # ccbd4b7631b845188e7d05aaa5a3af71
-#: ../spack/lib/spack/docs/basic_usage.rst:152
+#: ../spack/lib/spack/docs/basic_usage.rst:155
 msgid "Building a specific version"
 msgstr ""
 
 # ad8e8a56fab34127b1505fea143387e0
-#: ../spack/lib/spack/docs/basic_usage.rst:154
+#: ../spack/lib/spack/docs/basic_usage.rst:157
 msgid ""
 "Spack can also build *specific versions* of a package.  To do this, just add "
 "``@`` after the package name, followed by a version:"
 msgstr ""
 
 # 04cd2ecf70844a7ca040b2cef889cbed
-#: ../spack/lib/spack/docs/basic_usage.rst:161
+#: ../spack/lib/spack/docs/basic_usage.rst:164
 msgid ""
 "Any number of versions of the same package can be installed at once without "
 "interfering with each other.  This is good for multi-user sites, as "
@@ -200,7 +202,7 @@ msgid ""
 msgstr ""
 
 # d1d15d5a1ea0451ca00b9973e58bc61d
-#: ../spack/lib/spack/docs/basic_usage.rst:166
+#: ../spack/lib/spack/docs/basic_usage.rst:169
 msgid ""
 "In addition to different versions, Spack can customize the compiler, compile-"
 "time options (variants), compiler flags, and platform (for cross compiles) "
@@ -211,7 +213,7 @@ msgid ""
 msgstr ""
 
 # a2e4fd8a01ce4ce48bf33b54ce995587
-#: ../spack/lib/spack/docs/basic_usage.rst:173
+#: ../spack/lib/spack/docs/basic_usage.rst:176
 msgid ""
 "This can all be done on the command line using the *spec* syntax. Spack "
 "calls the descriptor used to refer to a particular package configuration a "
@@ -221,12 +223,12 @@ msgid ""
 msgstr ""
 
 # abe8cdcbf45840adbfad98aaeb8d7faa
-#: ../spack/lib/spack/docs/basic_usage.rst:183
+#: ../spack/lib/spack/docs/basic_usage.rst:186
 msgid "``spack uninstall``"
 msgstr ""
 
 # c77e11180bd248a1ad676627d50831fb
-#: ../spack/lib/spack/docs/basic_usage.rst:185
+#: ../spack/lib/spack/docs/basic_usage.rst:188
 msgid ""
 "To uninstall a package, type ``spack uninstall <package>``.  This will ask "
 "the user for confirmation before completely removing the directory in which "
@@ -234,33 +236,33 @@ msgid ""
 msgstr ""
 
 # 34c60b1db53b4c63b0543dddc6cbcc36
-#: ../spack/lib/spack/docs/basic_usage.rst:193
+#: ../spack/lib/spack/docs/basic_usage.rst:196
 msgid ""
 "If there are still installed packages that depend on the package to be "
 "uninstalled, spack will refuse to uninstall it."
 msgstr ""
 
 # 4dce6e03bfd045058f13704d5fb0d64a
-#: ../spack/lib/spack/docs/basic_usage.rst:196
+#: ../spack/lib/spack/docs/basic_usage.rst:199
 msgid ""
 "To uninstall a package and every package that depends on it, you may give "
 "the ``--dependents`` option."
 msgstr ""
 
 # 4cd099408c9b4651bece9ce694e9d3c8
-#: ../spack/lib/spack/docs/basic_usage.rst:203
+#: ../spack/lib/spack/docs/basic_usage.rst:206
 msgid ""
 "will display a list of all the packages that depend on ``mpich`` and, upon "
 "confirmation, will uninstall them in the right order."
 msgstr ""
 
 # d7fea51604f543dd8cf435073a387272
-#: ../spack/lib/spack/docs/basic_usage.rst:206
+#: ../spack/lib/spack/docs/basic_usage.rst:209
 msgid "A command like"
 msgstr ""
 
 # 0a98101d8e904859986cec09e704ffba
-#: ../spack/lib/spack/docs/basic_usage.rst:212
+#: ../spack/lib/spack/docs/basic_usage.rst:215
 msgid ""
 "may be ambiguous if multiple ``mpich`` configurations are installed. For "
 "example, if both ``mpich@3.0.2`` and ``mpich@3.1`` are installed, ``mpich`` "
@@ -271,12 +273,12 @@ msgid ""
 msgstr ""
 
 # b937bd8736a14fc4af6bed52f2b7194b
-#: ../spack/lib/spack/docs/basic_usage.rst:219
+#: ../spack/lib/spack/docs/basic_usage.rst:222
 msgid "You may force uninstall a package with the ``--force`` option"
 msgstr ""
 
 # 9583051f3cd04b91ae366666456590cd
-#: ../spack/lib/spack/docs/basic_usage.rst:225
+#: ../spack/lib/spack/docs/basic_usage.rst:228
 msgid ""
 "but you risk breaking other installed packages. In general, it is safer to "
 "remove dependent packages *before* removing their dependencies or use the "
@@ -284,80 +286,80 @@ msgid ""
 msgstr ""
 
 # 8dfd4fea7b2046c09fc839a9ad70a772
-#: ../spack/lib/spack/docs/basic_usage.rst:234
+#: ../spack/lib/spack/docs/basic_usage.rst:237
 msgid "Non-Downloadable Tarballs"
 msgstr ""
 
 # 9bfec9f3f9d74af0b8b0c8682d33b4e5
-#: ../spack/lib/spack/docs/basic_usage.rst:236
+#: ../spack/lib/spack/docs/basic_usage.rst:239
 msgid ""
 "The tarballs for some packages cannot be automatically downloaded by Spack.  "
 "This could be for a number of reasons:"
 msgstr ""
 
 # 5973550e88a144849542e6ca551b3d1f
-#: ../spack/lib/spack/docs/basic_usage.rst:239
+#: ../spack/lib/spack/docs/basic_usage.rst:242
 msgid ""
 "The author requires users to manually accept a license agreement before "
 "downloading (``jdk`` and ``galahad``)."
 msgstr ""
 
 # b039d23aa51b475daa13817d8ec89c7f
-#: ../spack/lib/spack/docs/basic_usage.rst:242
+#: ../spack/lib/spack/docs/basic_usage.rst:245
 msgid ""
 "The software is proprietary and cannot be downloaded on the open Internet."
 msgstr ""
 
 # 7d4b2d13efaa422a8f05fa4423ffce51
-#: ../spack/lib/spack/docs/basic_usage.rst:245
+#: ../spack/lib/spack/docs/basic_usage.rst:248
 msgid ""
 "To install these packages, one must create a mirror and manually add the "
 "tarballs in question to it (see :ref:`mirrors`):"
 msgstr ""
 
 # 2613e12f411845e09bf778916f5c31c5
-#: ../spack/lib/spack/docs/basic_usage.rst:248
+#: ../spack/lib/spack/docs/basic_usage.rst:251
 msgid ""
 "Create a directory for the mirror.  You can create this directory anywhere "
 "you like, it does not have to be inside ``~/.spack``:"
 msgstr ""
 
 # d04767d49cdc40439bc846f56ab64c4d
-#: ../spack/lib/spack/docs/basic_usage.rst:255
+#: ../spack/lib/spack/docs/basic_usage.rst:258
 msgid "Register the mirror with Spack by creating ``~/.spack/mirrors.yaml``:"
 msgstr ""
 
 # e9ca709b6ad84ca78fd244ee88f4da78
-#: ../spack/lib/spack/docs/basic_usage.rst:262
+#: ../spack/lib/spack/docs/basic_usage.rst:265
 msgid ""
 "Put your tarballs in it.  Tarballs should be named ``<package>/<package>-"
 "<version>.tar.gz``.  For example:"
 msgstr ""
 
 # 0d84d430021f4093954d0efd6c0eaa9d
-#: ../spack/lib/spack/docs/basic_usage.rst:271
+#: ../spack/lib/spack/docs/basic_usage.rst:274
 msgid "Install as usual:"
 msgstr ""
 
 # d8d0d5c690be4b86a7b115bcb413e9ed
-#: ../spack/lib/spack/docs/basic_usage.rst:279
+#: ../spack/lib/spack/docs/basic_usage.rst:282
 msgid "Seeing installed packages"
 msgstr ""
 
 # d89e599c1b634248a0cfef04f94a9326
-#: ../spack/lib/spack/docs/basic_usage.rst:281
+#: ../spack/lib/spack/docs/basic_usage.rst:284
 msgid ""
 "We know that ``spack list`` shows you the names of available packages, but "
 "how do you figure out which are already installed?"
 msgstr ""
 
 # 23ee76f3c8fd4e67b0691e0718205429
-#: ../spack/lib/spack/docs/basic_usage.rst:288
+#: ../spack/lib/spack/docs/basic_usage.rst:291
 msgid "``spack find``"
 msgstr ""
 
 # baf3e57584fa4bbeafeb96c24e976104
-#: ../spack/lib/spack/docs/basic_usage.rst:290
+#: ../spack/lib/spack/docs/basic_usage.rst:293
 msgid ""
 "``spack find`` shows the *specs* of installed packages.  A spec is like a "
 "name, but it has a version, compiler, architecture, and build options "
@@ -366,12 +368,12 @@ msgid ""
 msgstr ""
 
 # 28ec0e5727ea48cc9048315dc71849e0
-#: ../spack/lib/spack/docs/basic_usage.rst:295
+#: ../spack/lib/spack/docs/basic_usage.rst:298
 msgid "Running ``spack find`` with no arguments lists installed packages:"
 msgstr ""
 
 # c0de82877c3a4de5840bf75d4806100b
-#: ../spack/lib/spack/docs/basic_usage.rst:330
+#: ../spack/lib/spack/docs/basic_usage.rst:333
 msgid ""
 "Packages are divided into groups according to their architecture and "
 "compiler.  Within each group, Spack tries to keep the view simple, and only "
@@ -379,7 +381,7 @@ msgid ""
 msgstr ""
 
 # 61c50d0e3d5b4e2c8e61db868533a5f8
-#: ../spack/lib/spack/docs/basic_usage.rst:334
+#: ../spack/lib/spack/docs/basic_usage.rst:337
 msgid ""
 "``spack find`` can filter the package list based on the package name, spec, "
 "or a number of properties of their installation status.  For example, "
@@ -390,7 +392,7 @@ msgid ""
 msgstr ""
 
 # aeca3122f1db44638e4b6336428a2491
-#: ../spack/lib/spack/docs/basic_usage.rst:341
+#: ../spack/lib/spack/docs/basic_usage.rst:344
 msgid ""
 "In some cases, there may be different configurations of the *same* version "
 "of a package installed.  For example, there are two installations of "
@@ -399,7 +401,7 @@ msgid ""
 msgstr ""
 
 # 3963c008f46146dcab5237543dbb768c
-#: ../spack/lib/spack/docs/basic_usage.rst:357
+#: ../spack/lib/spack/docs/basic_usage.rst:360
 msgid ""
 "Now we see that the two instances of ``libdwarf`` depend on *different* "
 "versions of ``libelf``: 0.8.12 and 0.8.13.  This view can become complicated "
@@ -408,7 +410,7 @@ msgid ""
 msgstr ""
 
 # 84cdf98491bd43d8a78675d2c36db4e8
-#: ../spack/lib/spack/docs/basic_usage.rst:370
+#: ../spack/lib/spack/docs/basic_usage.rst:373
 msgid ""
 "Now the ``libdwarf`` installs have hashes after their names.  These are "
 "hashes over all of the dependencies of each package.  If the hashes are the "
@@ -416,21 +418,21 @@ msgid ""
 msgstr ""
 
 # dba4ebd97a5c470b9c872582235cdaf7
-#: ../spack/lib/spack/docs/basic_usage.rst:374
+#: ../spack/lib/spack/docs/basic_usage.rst:377
 msgid ""
 "If you want to know the path where each package is installed, you can use "
 "``spack find --paths``:"
 msgstr ""
 
 # 5ad8dd91e229474fa769ae07428003a8
-#: ../spack/lib/spack/docs/basic_usage.rst:391
+#: ../spack/lib/spack/docs/basic_usage.rst:394
 msgid ""
 "And, finally, you can restrict your search to a particular package by "
 "supplying its name:"
 msgstr ""
 
 # eb64f02c2570401da848572a3f64b64d
-#: ../spack/lib/spack/docs/basic_usage.rst:402
+#: ../spack/lib/spack/docs/basic_usage.rst:405
 msgid ""
 "``spack find`` actually does a lot more than this.  You can use *specs* to "
 "query for specific configurations and builds of each package. If you want to "
@@ -438,14 +440,14 @@ msgid ""
 msgstr ""
 
 # c865a8325efd433c8e9a0a8177a49ece
-#: ../spack/lib/spack/docs/basic_usage.rst:413
+#: ../spack/lib/spack/docs/basic_usage.rst:416
 msgid ""
 "Finding just the versions of libdwarf built with a particular version of "
 "libelf would look like this:"
 msgstr ""
 
 # 3005aafe0f104034ac10997cdc3369a0
-#: ../spack/lib/spack/docs/basic_usage.rst:423
+#: ../spack/lib/spack/docs/basic_usage.rst:426
 msgid ""
 "We can also search for packages that have a certain attribute. For example, "
 "``spack find libdwarf +debug`` will show only installations of libdwarf with "
@@ -453,17 +455,17 @@ msgid ""
 msgstr ""
 
 # 1d9a8434febd433786d6ef2683e97493
-#: ../spack/lib/spack/docs/basic_usage.rst:427
+#: ../spack/lib/spack/docs/basic_usage.rst:430
 msgid "The full spec syntax is discussed in detail in :ref:`sec-specs`."
 msgstr ""
 
 # 512eb7f2856e4be0891a3797c05f0a83
-#: ../spack/lib/spack/docs/basic_usage.rst:433
+#: ../spack/lib/spack/docs/basic_usage.rst:436
 msgid "Specs & dependencies"
 msgstr ""
 
 # b3d6d32b09614ac69df0c5f0a8ba99f2
-#: ../spack/lib/spack/docs/basic_usage.rst:435
+#: ../spack/lib/spack/docs/basic_usage.rst:438
 msgid ""
 "We know that ``spack install``, ``spack uninstall``, and other commands take "
 "a package name with an optional version specifier.  In Spack, that "
@@ -475,12 +477,12 @@ msgid ""
 msgstr ""
 
 # 554a0be52cde40f788974e07c1dfb4ef
-#: ../spack/lib/spack/docs/basic_usage.rst:444
+#: ../spack/lib/spack/docs/basic_usage.rst:447
 msgid "Here is an example of a much longer spec than we've seen thus far:"
 msgstr ""
 
 # caa48202c6dc4b8a827a22c53ff05b50
-#: ../spack/lib/spack/docs/basic_usage.rst:450
+#: ../spack/lib/spack/docs/basic_usage.rst:453
 msgid ""
 "If provided to ``spack install``, this will install the ``mpileaks`` library "
 "at some version between ``1.2`` and ``1.4`` (inclusive), built using ``gcc`` "
@@ -492,43 +494,43 @@ msgid ""
 msgstr ""
 
 # 2f1517a0d10f44589a5bdb53b445eef8
-#: ../spack/lib/spack/docs/basic_usage.rst:459
+#: ../spack/lib/spack/docs/basic_usage.rst:462
 msgid "More formally, a spec consists of the following pieces:"
 msgstr ""
 
 # 20bd1707a7df4fa0ae0c598832b4e451
-#: ../spack/lib/spack/docs/basic_usage.rst:461
+#: ../spack/lib/spack/docs/basic_usage.rst:464
 msgid "Package name identifier (``mpileaks`` above)"
 msgstr ""
 
 # 75c07bbcca134f23924e56121666a4a3
-#: ../spack/lib/spack/docs/basic_usage.rst:462
+#: ../spack/lib/spack/docs/basic_usage.rst:465
 msgid "``@`` Optional version specifier (``@1.2:1.4``)"
 msgstr ""
 
 # 1373dbfb32e6455c918bdb614d912400
-#: ../spack/lib/spack/docs/basic_usage.rst:463
+#: ../spack/lib/spack/docs/basic_usage.rst:466
 msgid ""
 "``%`` Optional compiler specifier, with an optional compiler version "
 "(``gcc`` or ``gcc@4.7.3``)"
 msgstr ""
 
 # 83b4a1d837b34f67bb30720f86a30d7c
-#: ../spack/lib/spack/docs/basic_usage.rst:465
+#: ../spack/lib/spack/docs/basic_usage.rst:468
 msgid ""
 "``+`` or ``-`` or ``~`` Optional variant specifiers (``+debug``, ``-qt``, or "
 "``~qt``) for boolean variants"
 msgstr ""
 
 # 2a02e6da099c41fbaa5a3f7fefe4f9eb
-#: ../spack/lib/spack/docs/basic_usage.rst:467
+#: ../spack/lib/spack/docs/basic_usage.rst:470
 msgid ""
 "``name=<value>`` Optional variant specifiers that are not restricted to "
 "boolean variants"
 msgstr ""
 
 # 33cbbb7167f64f5386ddd7d890bf67bc
-#: ../spack/lib/spack/docs/basic_usage.rst:469
+#: ../spack/lib/spack/docs/basic_usage.rst:472
 msgid ""
 "``name=<value>`` Optional compiler flag specifiers. Valid flag names are "
 "``cflags``, ``cxxflags``, ``fflags``, ``cppflags``, ``ldflags``, and "
@@ -536,19 +538,19 @@ msgid ""
 msgstr ""
 
 # 8ed8acd9838b4fd4a3f1bba36f500bb8
-#: ../spack/lib/spack/docs/basic_usage.rst:471
+#: ../spack/lib/spack/docs/basic_usage.rst:474
 msgid ""
 "``target=<value> os=<value>`` Optional architecture specifier "
 "(``target=haswell os=CNL10``)"
 msgstr ""
 
 # 43cefc4bddf8461e87a65a0d39f61f6f
-#: ../spack/lib/spack/docs/basic_usage.rst:473
+#: ../spack/lib/spack/docs/basic_usage.rst:476
 msgid "``^`` Dependency specs (``^callpath@1.1``)"
 msgstr ""
 
 # ccb659924b5b4036845c251ac8f765df
-#: ../spack/lib/spack/docs/basic_usage.rst:475
+#: ../spack/lib/spack/docs/basic_usage.rst:478
 msgid ""
 "There are two things to notice here.  The first is that specs are "
 "recursively defined.  That is, each dependency after ``^`` is a spec "
@@ -559,7 +561,7 @@ msgid ""
 msgstr ""
 
 # 9465f23792cb41559b1691b6fa815d3e
-#: ../spack/lib/spack/docs/basic_usage.rst:482
+#: ../spack/lib/spack/docs/basic_usage.rst:485
 msgid ""
 "To really understand what's going on above, we need to think about how "
 "software is structured.  An executable or a library (these are generally the "
@@ -569,7 +571,7 @@ msgid ""
 msgstr ""
 
 # 87fef2ccd7f440c2a69890bf5e0c2f41
-#: ../spack/lib/spack/docs/basic_usage.rst:499
+#: ../spack/lib/spack/docs/basic_usage.rst:502
 msgid ""
 "Each box above is a package and each arrow represents a dependency on some "
 "other package.  For example, we say that the package ``mpileaks`` *depends "
@@ -582,7 +584,7 @@ msgid ""
 msgstr ""
 
 # 7e0f7a64f4ae461ab11e69404794afa1
-#: ../spack/lib/spack/docs/basic_usage.rst:508
+#: ../spack/lib/spack/docs/basic_usage.rst:511
 msgid ""
 "The package name identifier in the spec is the root of some dependency DAG, "
 "and the DAG itself is implicit.  Spack knows the precise dependencies among "
@@ -593,7 +595,7 @@ msgid ""
 msgstr ""
 
 # 908827ae072b4113b89c566e6f4623ca
-#: ../spack/lib/spack/docs/basic_usage.rst:516
+#: ../spack/lib/spack/docs/basic_usage.rst:519
 msgid ""
 "Spack further simplifies things by only allowing one configuration of each "
 "package within any single build.  Above, both ``mpileaks`` and ``callpath`` "
@@ -606,7 +608,7 @@ msgid ""
 msgstr ""
 
 # 3cadcb9213cb40eb9492244fbd5ad880
-#: ../spack/lib/spack/docs/basic_usage.rst:525
+#: ../spack/lib/spack/docs/basic_usage.rst:528
 msgid ""
 "The point of specs is to abstract this full DAG from Spack users.  If a user "
 "does not care about the DAG at all, she can refer to mpileaks by simply "
@@ -618,7 +620,7 @@ msgid ""
 msgstr ""
 
 # 43dd0a6841fc4873aab792ee0e8e1717
-#: ../spack/lib/spack/docs/basic_usage.rst:533
+#: ../spack/lib/spack/docs/basic_usage.rst:536
 msgid ""
 "When spack prints out specs, it sorts package names alphabetically to "
 "normalize the way they are displayed, but users do not need to worry about "
@@ -628,7 +630,7 @@ msgid ""
 msgstr ""
 
 # 088522ff1981484db169d1164110d636
-#: ../spack/lib/spack/docs/basic_usage.rst:545
+#: ../spack/lib/spack/docs/basic_usage.rst:548
 msgid ""
 "You can put all the same modifiers on dependency specs that you would put on "
 "the root spec.  That is, you can specify their versions, compilers, "
@@ -640,7 +642,7 @@ msgid ""
 msgstr ""
 
 # 129af77379334e2585f4bd318c2b9c8e
-#: ../spack/lib/spack/docs/basic_usage.rst:553
+#: ../spack/lib/spack/docs/basic_usage.rst:556
 msgid ""
 "In the diagram above, ``mpileaks`` depends on ``mpich`` with an unspecified "
 "version, but packages can depend on other packages with *constraints* by "
@@ -650,17 +652,17 @@ msgid ""
 msgstr ""
 
 # e6d8b1dd242643c1adf95c82a8053732
-#: ../spack/lib/spack/docs/basic_usage.rst:559
+#: ../spack/lib/spack/docs/basic_usage.rst:562
 msgid "Below are more details about the specifiers that you can add to specs."
 msgstr ""
 
 # 4961bc0406454e4d98c39bc783c5fbd2
-#: ../spack/lib/spack/docs/basic_usage.rst:563
+#: ../spack/lib/spack/docs/basic_usage.rst:566
 msgid "Version specifier"
 msgstr ""
 
 # feb63806de264ee7ba2d46f9315dd703
-#: ../spack/lib/spack/docs/basic_usage.rst:565
+#: ../spack/lib/spack/docs/basic_usage.rst:568
 msgid ""
 "A version specifier comes somewhere after a package name and starts with "
 "``@``.  It can be a single version, e.g. ``@1.0``, ``@3``, or ``@1.2a7``.  "
@@ -675,7 +677,7 @@ msgid ""
 msgstr ""
 
 # 8f31e997221e4ab3a14893a708cfb70d
-#: ../spack/lib/spack/docs/basic_usage.rst:576
+#: ../spack/lib/spack/docs/basic_usage.rst:579
 msgid ""
 "If the version spec is not provided, then Spack will choose one according to "
 "policies set for the particular spack installation.  If the spec is "
@@ -685,19 +687,19 @@ msgid ""
 msgstr ""
 
 # 88a3563877714b1ab599e016b11c438e
-#: ../spack/lib/spack/docs/basic_usage.rst:582
+#: ../spack/lib/spack/docs/basic_usage.rst:585
 msgid ""
 "Details about how versions are compared and how Spack determines if one "
 "version is less than another are discussed in the developer guide."
 msgstr ""
 
 # d53514c951fb4d7ca591252390c3df13
-#: ../spack/lib/spack/docs/basic_usage.rst:587
+#: ../spack/lib/spack/docs/basic_usage.rst:590
 msgid "Compiler specifier"
 msgstr ""
 
 # fe48a255019c4630b992c55d0275390f
-#: ../spack/lib/spack/docs/basic_usage.rst:589
+#: ../spack/lib/spack/docs/basic_usage.rst:592
 msgid ""
 "A compiler specifier comes somewhere after a package name and starts with ``"
 "%``.  It tells Spack what compiler(s) a particular package should be built "
@@ -708,7 +710,7 @@ msgid ""
 msgstr ""
 
 # 8f7201fb4ee1433f914e70659111b855
-#: ../spack/lib/spack/docs/basic_usage.rst:596
+#: ../spack/lib/spack/docs/basic_usage.rst:599
 msgid ""
 "The compiler spec can be followed by an optional *compiler version*. A "
 "compiler version specifier looks exactly like a package version specifier.  "
@@ -717,7 +719,7 @@ msgid ""
 msgstr ""
 
 # 757938cc1c394c0ebd0d0ca95a2e62d6
-#: ../spack/lib/spack/docs/basic_usage.rst:601
+#: ../spack/lib/spack/docs/basic_usage.rst:604
 msgid ""
 "If the compiler spec is omitted, Spack will choose a default compiler based "
 "on site policies."
@@ -729,14 +731,14 @@ msgstr ""
 # b90964941f004e1bb42363a8e62207a7
 # #-#-#-#-#  tutorial_packaging.pot (Spack 0.12)  #-#-#-#-#
 # bc233c57b71b46cb8cae7c428057ec30
-#: ../spack/lib/spack/docs/basic_usage.rst:609
+#: ../spack/lib/spack/docs/basic_usage.rst:612
 #: ../spack/lib/spack/docs/packaging_guide.rst:1084
 #: ../spack/lib/spack/docs/tutorial_packaging.rst:470
 msgid "Variants"
 msgstr ""
 
 # 7ce7b43d5020426c9b062a06ba711df0
-#: ../spack/lib/spack/docs/basic_usage.rst:611
+#: ../spack/lib/spack/docs/basic_usage.rst:614
 msgid ""
 "Variants are named options associated with a particular package. They are "
 "optional, as each package must provide default values for each variant it "
@@ -749,7 +751,7 @@ msgid ""
 msgstr ""
 
 # f2db3fa0e1974a7b89bb78a85fa5e1c9
-#: ../spack/lib/spack/docs/basic_usage.rst:620
+#: ../spack/lib/spack/docs/basic_usage.rst:623
 msgid ""
 "For compatibility with earlier versions, variants which happen to be boolean "
 "in nature can be specified by a syntax that represents turning options on "
@@ -759,7 +761,7 @@ msgid ""
 msgstr ""
 
 # c8398d9dcad2455faa72a656c24787a2
-#: ../spack/lib/spack/docs/basic_usage.rst:626
+#: ../spack/lib/spack/docs/basic_usage.rst:629
 msgid ""
 "Depending on the package a variant may have any default value.  For "
 "``libelf`` here, ``debug`` is ``False`` by default, and we turned it on with "
@@ -768,7 +770,7 @@ msgid ""
 msgstr ""
 
 # e345dd4e51594d9facfb79e1fde7f396
-#: ../spack/lib/spack/docs/basic_usage.rst:631
+#: ../spack/lib/spack/docs/basic_usage.rst:634
 msgid ""
 "There are two syntaxes here because, depending on context, ``~`` and ``-`` "
 "may mean different things.  In most shells, the following will result in the "
@@ -776,7 +778,7 @@ msgid ""
 msgstr ""
 
 # 7784bd1b3d2b46479117a584369faf96
-#: ../spack/lib/spack/docs/basic_usage.rst:640
+#: ../spack/lib/spack/docs/basic_usage.rst:643
 msgid ""
 "If there is a user called ``debug``, the ``~`` will be incorrectly "
 "expanded.  In this situation, you would want to write ``libelf -debug``.  "
@@ -785,7 +787,7 @@ msgid ""
 msgstr ""
 
 # 29754612a803411bbb5f319541fb46b7
-#: ../spack/lib/spack/docs/basic_usage.rst:650
+#: ../spack/lib/spack/docs/basic_usage.rst:653
 msgid ""
 "Spack allows the ``-`` character to be part of package names, so the above "
 "will be interpreted as a request for the ``mpileaks-debug`` package, not a "
@@ -794,7 +796,7 @@ msgid ""
 msgstr ""
 
 # 575b5c84679f4a499e3d88d98bb67a31
-#: ../spack/lib/spack/docs/basic_usage.rst:656
+#: ../spack/lib/spack/docs/basic_usage.rst:659
 msgid ""
 "When spack normalizes specs, it prints them out with no spaces boolean "
 "variants using the backwards compatibility syntax and uses only ``~`` for "
@@ -806,13 +808,13 @@ msgstr ""
 # e993a43f42214fc8b68fc3d3f669178f
 # #-#-#-#-#  tutorial_configuration.pot (Spack 0.12)  #-#-#-#-#
 # 742d28b236134ed4acd473c2eeeb7cf9
-#: ../spack/lib/spack/docs/basic_usage.rst:663
+#: ../spack/lib/spack/docs/basic_usage.rst:666
 #: ../spack/lib/spack/docs/tutorial_configuration.rst:275
 msgid "Compiler Flags"
 msgstr ""
 
 # 079ec45bfc3b4eba9847fa0d3593101c
-#: ../spack/lib/spack/docs/basic_usage.rst:665
+#: ../spack/lib/spack/docs/basic_usage.rst:668
 msgid ""
 "Compiler flags are specified using the same syntax as non-boolean variants, "
 "but fulfill a different purpose. While the function of a variant is set by "
@@ -824,7 +826,7 @@ msgid ""
 msgstr ""
 
 # 0c454d11e8dc4cfaa9dd13d093fda5ac
-#: ../spack/lib/spack/docs/basic_usage.rst:673
+#: ../spack/lib/spack/docs/basic_usage.rst:676
 msgid ""
 "Notice that the value of the compiler flags must be quoted if it contains "
 "any spaces. Any of ``cppflags=-O3``, ``cppflags=\"-O3\"``, ``cppflags='-"
@@ -836,7 +838,7 @@ msgid ""
 msgstr ""
 
 # 2388921f1df64b60b72e36e30e99971f
-#: ../spack/lib/spack/docs/basic_usage.rst:681
+#: ../spack/lib/spack/docs/basic_usage.rst:684
 msgid ""
 "The six compiler flags are injected in the order of implicit make commands "
 "in GNU Autotools. If all flags are set, the order is ``$cppflags $cflags|"
@@ -845,12 +847,12 @@ msgid ""
 msgstr ""
 
 # 1425ddf87a5a4f8da27ed30f1548c6db
-#: ../spack/lib/spack/docs/basic_usage.rst:688
+#: ../spack/lib/spack/docs/basic_usage.rst:691
 msgid "Compiler environment variables and additional RPATHs"
 msgstr ""
 
 # a64f68fcf58f4e1783a7cb43289b47a5
-#: ../spack/lib/spack/docs/basic_usage.rst:690
+#: ../spack/lib/spack/docs/basic_usage.rst:693
 msgid ""
 "In the exceptional case a compiler requires setting special environment "
 "variables, like an explicit library load path. These can bet set in an extra "
@@ -863,7 +865,7 @@ msgid ""
 msgstr ""
 
 # 80bc748f37514ebf89e2ee3037303248
-#: ../spack/lib/spack/docs/basic_usage.rst:726
+#: ../spack/lib/spack/docs/basic_usage.rst:729
 msgid ""
 "The section `environment` is interpreted as an ordered dictionary, which "
 "means two things. First, environment modification are applied in the order "
@@ -874,12 +876,12 @@ msgid ""
 msgstr ""
 
 # d1a02282d9b74f55be664ed35c162ae7
-#: ../spack/lib/spack/docs/basic_usage.rst:735
+#: ../spack/lib/spack/docs/basic_usage.rst:738
 msgid "Architecture specifiers"
 msgstr ""
 
 # 0e4c683b8b1e4150a0d50187c352ef86
-#: ../spack/lib/spack/docs/basic_usage.rst:737
+#: ../spack/lib/spack/docs/basic_usage.rst:740
 msgid ""
 "The architecture can be specified by using the reserved words ``target`` and/"
 "or ``os`` (``target=x86-64 os=debian7``). You can also use the triplet form "
@@ -887,7 +889,7 @@ msgid ""
 msgstr ""
 
 # 6b1c9ac8163d4f8a95dbf2b02caf6c36
-#: ../spack/lib/spack/docs/basic_usage.rst:745
+#: ../spack/lib/spack/docs/basic_usage.rst:748
 msgid ""
 "Users on non-Cray systems won't have to worry about specifying the "
 "architecture. Spack will autodetect what kind of operating system is on your "
@@ -899,13 +901,13 @@ msgstr ""
 # c81588ddf6c14274b07f8b8b59a1d2a0
 # #-#-#-#-#  packaging_guide.pot (Spack 0.12)  #-#-#-#-#
 # a03e753420024dad85c544f111b7cb9c
-#: ../spack/lib/spack/docs/basic_usage.rst:754
+#: ../spack/lib/spack/docs/basic_usage.rst:757
 #: ../spack/lib/spack/docs/packaging_guide.rst:2252
 msgid "Virtual dependencies"
 msgstr ""
 
 # 2e9d6fbf53d049a6b19d0187c98f8c98
-#: ../spack/lib/spack/docs/basic_usage.rst:756
+#: ../spack/lib/spack/docs/basic_usage.rst:759
 msgid ""
 "The dependence graph for ``mpileaks`` we saw above wasn't *quite* accurate.  "
 "``mpileaks`` uses MPI, which is an interface that has many different "
@@ -916,14 +918,14 @@ msgid ""
 msgstr ""
 
 # d073d3206db044478ff55f02010f015a
-#: ../spack/lib/spack/docs/basic_usage.rst:763
+#: ../spack/lib/spack/docs/basic_usage.rst:766
 msgid ""
 "Spack represents interfaces like this using *virtual dependencies*. The real "
 "dependency DAG for ``mpileaks`` looks like this:"
 msgstr ""
 
 # 9bbd6f4333e34c76b045679a72b27458
-#: ../spack/lib/spack/docs/basic_usage.rst:777
+#: ../spack/lib/spack/docs/basic_usage.rst:780
 msgid ""
 "Notice that ``mpich`` has now been replaced with ``mpi``. There is no *real* "
 "MPI package, but some packages *provide* the MPI interface, and these "
@@ -931,14 +933,14 @@ msgid ""
 msgstr ""
 
 # 0cc8f40897fa4f4498bf0e0919bf1c25
-#: ../spack/lib/spack/docs/basic_usage.rst:782
+#: ../spack/lib/spack/docs/basic_usage.rst:785
 msgid ""
 "You can see what virtual packages a particular package provides by getting "
 "info on it:"
 msgstr ""
 
 # f03fd993a4f44cf3ad4589b270fc5774
-#: ../spack/lib/spack/docs/basic_usage.rst:787
+#: ../spack/lib/spack/docs/basic_usage.rst:790
 msgid ""
 "Spack is unique in that its virtual packages can be versioned, just like "
 "regular packages.  A particular version of a package may provide a "
@@ -951,12 +953,12 @@ msgid ""
 msgstr ""
 
 # 65d754cafa084075aafcf84c7218cb5b
-#: ../spack/lib/spack/docs/basic_usage.rst:799
+#: ../spack/lib/spack/docs/basic_usage.rst:802
 msgid "Constraining virtual packages"
 msgstr ""
 
 # 47ca7e3b753d4a95b18e6ac89ce28e83
-#: ../spack/lib/spack/docs/basic_usage.rst:801
+#: ../spack/lib/spack/docs/basic_usage.rst:804
 msgid ""
 "When installing a package that depends on a virtual package, you can opt to "
 "specify the particular provider you want to use, or you can let Spack pick.  "
@@ -964,7 +966,7 @@ msgid ""
 msgstr ""
 
 # ccaf309ae4644dc89efcf37a1a85f0f7
-#: ../spack/lib/spack/docs/basic_usage.rst:809
+#: ../spack/lib/spack/docs/basic_usage.rst:812
 msgid ""
 "Then spack will pick a provider for you according to site policies. If you "
 "really want a particular version, say ``mpich``, then you could run this "
@@ -972,7 +974,7 @@ msgid ""
 msgstr ""
 
 # 6576a878767b493ebfd0275160218fdf
-#: ../spack/lib/spack/docs/basic_usage.rst:817
+#: ../spack/lib/spack/docs/basic_usage.rst:820
 msgid ""
 "This forces spack to use some version of ``mpich`` for its implementation.  "
 "As always, you can be even more specific and require a particular ``mpich`` "
@@ -980,7 +982,7 @@ msgid ""
 msgstr ""
 
 # 29bdb4f5b3564afe91bb24712f868ddc
-#: ../spack/lib/spack/docs/basic_usage.rst:825
+#: ../spack/lib/spack/docs/basic_usage.rst:828
 msgid ""
 "The ``mpileaks`` package in particular only needs MPI-1 commands, so any MPI "
 "implementation will do.  If another package depends on ``mpi@2`` and you try "
@@ -990,12 +992,12 @@ msgid ""
 msgstr ""
 
 # 7d7f6a4a95444ded826e434da7e897c6
-#: ../spack/lib/spack/docs/basic_usage.rst:834
+#: ../spack/lib/spack/docs/basic_usage.rst:837
 msgid "Specifying Specs by Hash"
 msgstr ""
 
 # 06a637aea39a424fa317a7c1defd131c
-#: ../spack/lib/spack/docs/basic_usage.rst:836
+#: ../spack/lib/spack/docs/basic_usage.rst:839
 msgid ""
 "Complicated specs can become cumbersome to enter on the command line, "
 "especially when many of the qualifications are necessary to distinguish "
@@ -1007,7 +1009,7 @@ msgid ""
 msgstr ""
 
 # 350df0a92698435da01a0e1ffc2ad509
-#: ../spack/lib/spack/docs/basic_usage.rst:844
+#: ../spack/lib/spack/docs/basic_usage.rst:847
 msgid ""
 "For example, lets say that you accidentally installed two different "
 "``mvapich2`` installations. If you want to uninstall one of them but don't "
@@ -1015,19 +1017,19 @@ msgid ""
 msgstr ""
 
 # b606743273464303a3cb0ce0422b47c5
-#: ../spack/lib/spack/docs/basic_usage.rst:857
+#: ../spack/lib/spack/docs/basic_usage.rst:860
 msgid "You can then uninstall the latter installation using:"
 msgstr ""
 
 # 5322f574ac71422fb501ccf03bf6e73a
-#: ../spack/lib/spack/docs/basic_usage.rst:864
+#: ../spack/lib/spack/docs/basic_usage.rst:867
 msgid ""
 "Or, if you want to build with a specific installation as a dependency, you "
 "can use:"
 msgstr ""
 
 # 9beb3e82b02847bbb44ca3a539933191
-#: ../spack/lib/spack/docs/basic_usage.rst:872
+#: ../spack/lib/spack/docs/basic_usage.rst:875
 msgid ""
 "If the given spec hash is sufficiently long as to be unique, Spack will "
 "replace the reference with the spec to which it refers. Otherwise, it will "
@@ -1035,19 +1037,19 @@ msgid ""
 msgstr ""
 
 # 4a6d28ff96104e7293bbcc07aaf2f920
-#: ../spack/lib/spack/docs/basic_usage.rst:876
+#: ../spack/lib/spack/docs/basic_usage.rst:879
 msgid ""
 "Note that this will not work to reinstall a dependency uninstalled by "
 "``spack uninstall --force``."
 msgstr ""
 
 # ff6684c5d50d4c7495ff130f7d311c0c
-#: ../spack/lib/spack/docs/basic_usage.rst:883
+#: ../spack/lib/spack/docs/basic_usage.rst:886
 msgid "``spack providers``"
 msgstr ""
 
 # 1d7a8d9e0fe847b39dbde71c01a1cded
-#: ../spack/lib/spack/docs/basic_usage.rst:885
+#: ../spack/lib/spack/docs/basic_usage.rst:888
 msgid ""
 "You can see what packages provide a particular virtual package using ``spack "
 "providers``.  If you wanted to see what packages provide ``mpi``, you would "
@@ -1055,26 +1057,26 @@ msgid ""
 msgstr ""
 
 # a8858afa8c9f40da93d4960d493a8f01
-#: ../spack/lib/spack/docs/basic_usage.rst:891
+#: ../spack/lib/spack/docs/basic_usage.rst:894
 msgid ""
 "And if you *only* wanted to see packages that provide MPI-2, you would add a "
 "version specifier to the spec:"
 msgstr ""
 
 # ec352256b00e40389ca193a0614f0335
-#: ../spack/lib/spack/docs/basic_usage.rst:896
+#: ../spack/lib/spack/docs/basic_usage.rst:899
 msgid ""
 "Notice that the package versions that provide insufficient MPI versions are "
 "now filtered out."
 msgstr ""
 
 # c7d9a2f567a641f0ac8b9f30054bd366
-#: ../spack/lib/spack/docs/basic_usage.rst:901
+#: ../spack/lib/spack/docs/basic_usage.rst:904
 msgid "Extensions & Python support"
 msgstr ""
 
 # 6b95351110ad42bfa9b898b4d2351c54
-#: ../spack/lib/spack/docs/basic_usage.rst:903
+#: ../spack/lib/spack/docs/basic_usage.rst:906
 msgid ""
 "Spack's installation model assumes that each package will live in its own "
 "install prefix.  However, certain packages are typically installed *within* "
@@ -1084,7 +1086,7 @@ msgid ""
 msgstr ""
 
 # 7961b3d0ba1e4b56b181a6d479b4b6b4
-#: ../spack/lib/spack/docs/basic_usage.rst:910
+#: ../spack/lib/spack/docs/basic_usage.rst:913
 msgid ""
 "Spack has support for this type of installation as well.  In Spack, a "
 "package that can live inside the prefix of another package is called an "
@@ -1092,17 +1094,17 @@ msgid ""
 msgstr ""
 
 # 5877d085e0194f85a3ec11b6ef99638e
-#: ../spack/lib/spack/docs/basic_usage.rst:925
+#: ../spack/lib/spack/docs/basic_usage.rst:928
 msgid "``spack extensions``"
 msgstr ""
 
 # b32b6a6ebe49491fa4ee71d179c333c4
-#: ../spack/lib/spack/docs/basic_usage.rst:927
+#: ../spack/lib/spack/docs/basic_usage.rst:930
 msgid "You can find extensions for your Python installation like this:"
 msgstr ""
 
 # e32afaae398149b793bf1084a5d298e1
-#: ../spack/lib/spack/docs/basic_usage.rst:952
+#: ../spack/lib/spack/docs/basic_usage.rst:955
 msgid ""
 "The extensions are a subset of what's returned by ``spack list``, and they "
 "are packages like any other.  They are installed into their own prefixes, "
@@ -1110,19 +1112,19 @@ msgid ""
 msgstr ""
 
 # a1eaef542f444648b20e35dc2844bb0c
-#: ../spack/lib/spack/docs/basic_usage.rst:963
+#: ../spack/lib/spack/docs/basic_usage.rst:966
 msgid ""
 "However, even though this package is installed, you cannot use it directly "
 "when you run ``python``:"
 msgstr ""
 
 # da3708cc9867416884e6a74610f9d1e8
-#: ../spack/lib/spack/docs/basic_usage.rst:981
+#: ../spack/lib/spack/docs/basic_usage.rst:984
 msgid "Using Extensions"
 msgstr ""
 
 # e48991dcb9f54877baa2c5b942c36865
-#: ../spack/lib/spack/docs/basic_usage.rst:983
+#: ../spack/lib/spack/docs/basic_usage.rst:986
 msgid ""
 "There are three ways to get ``numpy`` working in Python.  The first is to "
 "use :ref:`shell-support`.  You can simply ``use`` or ``load`` the module for "
@@ -1131,29 +1133,29 @@ msgid ""
 msgstr ""
 
 # 000709f90036411f99d41f20ebf2e312
-#: ../spack/lib/spack/docs/basic_usage.rst:988
+#: ../spack/lib/spack/docs/basic_usage.rst:991
 msgid "For tcl modules:"
 msgstr ""
 
 # 062e386b1eb344d8841355f228fe05da
-#: ../spack/lib/spack/docs/basic_usage.rst:995
+#: ../spack/lib/spack/docs/basic_usage.rst:998
 msgid "or, for dotkit:"
 msgstr ""
 
 # e056a0da2736421ba5ce31d0bbfb1e79
-#: ../spack/lib/spack/docs/basic_usage.rst:1002
+#: ../spack/lib/spack/docs/basic_usage.rst:1005
 msgid ""
 "Now ``import numpy`` will succeed for as long as you keep your current "
 "session open."
 msgstr ""
 
 # 8cef8320382f4b83b525ae0f3245f3fa
-#: ../spack/lib/spack/docs/basic_usage.rst:1007
+#: ../spack/lib/spack/docs/basic_usage.rst:1010
 msgid "Activating Extensions in a View"
 msgstr ""
 
 # fcc164363edf4ce3a86279c8b50a45fa
-#: ../spack/lib/spack/docs/basic_usage.rst:1009
+#: ../spack/lib/spack/docs/basic_usage.rst:1012
 msgid ""
 "The second way to use extensions is to create a view, which merges the "
 "python installation along with the extensions into a single prefix. See :ref:"
@@ -1162,12 +1164,12 @@ msgid ""
 msgstr ""
 
 # c531871241f24ce093ebe5734f753b6a
-#: ../spack/lib/spack/docs/basic_usage.rst:1016
+#: ../spack/lib/spack/docs/basic_usage.rst:1019
 msgid "Activating Extensions Globally"
 msgstr ""
 
 # 946f51192fb0478d85dd4f22c60a5a57
-#: ../spack/lib/spack/docs/basic_usage.rst:1018
+#: ../spack/lib/spack/docs/basic_usage.rst:1021
 msgid ""
 "As an alternative to creating a merged prefix with Python and its "
 "extensions, and prior to support for views, Spack has provided a means to "
@@ -1177,17 +1179,17 @@ msgid ""
 msgstr ""
 
 # 7b70df9fa2f84f7f9aaa8be28b451e97
-#: ../spack/lib/spack/docs/basic_usage.rst:1024
+#: ../spack/lib/spack/docs/basic_usage.rst:1027
 msgid "Global activations are performed with the ``spack activate`` command:"
 msgstr ""
 
 # a825c4b254b14c4f9d4ac19e25e824ba
-#: ../spack/lib/spack/docs/basic_usage.rst:1030
+#: ../spack/lib/spack/docs/basic_usage.rst:1033
 msgid "``spack activate``"
 msgstr ""
 
 # 3ff55de2e1e24065baa1b2bdf83b3fd3
-#: ../spack/lib/spack/docs/basic_usage.rst:1039
+#: ../spack/lib/spack/docs/basic_usage.rst:1042
 msgid ""
 "Several things have happened here.  The user requested that ``py-numpy`` be "
 "activated in the ``python`` installation it was built with.  Spack knows "
@@ -1197,14 +1199,14 @@ msgid ""
 msgstr ""
 
 # 4d531a13cf7347a5929b6b4b71fb7965
-#: ../spack/lib/spack/docs/basic_usage.rst:1046
+#: ../spack/lib/spack/docs/basic_usage.rst:1049
 msgid ""
 "If we run ``spack extensions`` again, we now see the three new packages "
 "listed as activated:"
 msgstr ""
 
 # 95b215710f104a99b7e8be96569f1b0f
-#: ../spack/lib/spack/docs/basic_usage.rst:1074
+#: ../spack/lib/spack/docs/basic_usage.rst:1077
 msgid ""
 "Now, when a user runs python, ``numpy`` will be available for import "
 "*without* the user having to explicitly loaded.  ``python@2.7.8`` now acts "
@@ -1212,7 +1214,7 @@ msgid ""
 msgstr ""
 
 # 53857cefd5604cd1a10b580c7a7ef4f0
-#: ../spack/lib/spack/docs/basic_usage.rst:1079
+#: ../spack/lib/spack/docs/basic_usage.rst:1082
 msgid ""
 "Spack accomplishes this by symbolically linking the *entire* prefix of the "
 "``py-numpy`` into the prefix of the ``python`` package.  To the python "
@@ -1221,7 +1223,7 @@ msgid ""
 msgstr ""
 
 # 311bb35602cb4084ba1897c763bfd864
-#: ../spack/lib/spack/docs/basic_usage.rst:1084
+#: ../spack/lib/spack/docs/basic_usage.rst:1087
 msgid ""
 "The only limitation of global activation is that you can only have a "
 "*single* version of an extension activated at a time.  This is because "
@@ -1232,24 +1234,24 @@ msgid ""
 msgstr ""
 
 # 80e859382320481f840ace5ebebc07a7
-#: ../spack/lib/spack/docs/basic_usage.rst:1093
+#: ../spack/lib/spack/docs/basic_usage.rst:1096
 msgid "``spack activate --force``"
 msgstr ""
 
 # 395cd4b812e048c1b53877977bbfc538
-#: ../spack/lib/spack/docs/basic_usage.rst:1095
+#: ../spack/lib/spack/docs/basic_usage.rst:1098
 msgid ""
 "If, for some reason, you want to activate a package *without* its "
 "dependencies, you can use ``spack activate --force``:"
 msgstr ""
 
 # 8586e8896b094099abe74fba0b0b030f
-#: ../spack/lib/spack/docs/basic_usage.rst:1107
+#: ../spack/lib/spack/docs/basic_usage.rst:1110
 msgid "``spack deactivate``"
 msgstr ""
 
 # 493df0b25bf340c6949af51e8368193f
-#: ../spack/lib/spack/docs/basic_usage.rst:1109
+#: ../spack/lib/spack/docs/basic_usage.rst:1112
 msgid ""
 "We've seen how activating an extension can be used to set up a default "
 "version of a Python module.  Obviously, you may want to change that at some "
@@ -1258,7 +1260,7 @@ msgid ""
 msgstr ""
 
 # 84d9a5b9281148b691d2294e0fb03968
-#: ../spack/lib/spack/docs/basic_usage.rst:1114
+#: ../spack/lib/spack/docs/basic_usage.rst:1117
 msgid ""
 "``spack deactivate <extension>`` will deactivate a single extension.  If "
 "another activated extension depends on this one, Spack will warn you and "
@@ -1266,33 +1268,33 @@ msgid ""
 msgstr ""
 
 # f53bcc17a0f7460986f19b810f9899ff
-#: ../spack/lib/spack/docs/basic_usage.rst:1117
+#: ../spack/lib/spack/docs/basic_usage.rst:1120
 msgid ""
 "``spack deactivate --force <extension>`` deactivates an extension regardless "
 "of packages that depend on it."
 msgstr ""
 
 # f2c1c3b7e1744f42bfb735121a3082c3
-#: ../spack/lib/spack/docs/basic_usage.rst:1119
+#: ../spack/lib/spack/docs/basic_usage.rst:1122
 msgid ""
 "``spack deactivate --all <extension>`` deactivates an extension and all of "
 "its dependencies.  Use ``--force`` to disregard dependents."
 msgstr ""
 
 # 67e58561b2144079938095f12d3fac70
-#: ../spack/lib/spack/docs/basic_usage.rst:1121
+#: ../spack/lib/spack/docs/basic_usage.rst:1124
 msgid ""
 "``spack deactivate --all <extendee>`` deactivates *all* activated extensions "
 "of a package.  For example, to deactivate *all* python extensions, use:"
 msgstr ""
 
 # f87ecc8e96ee4e278022376a4c70f0ff
-#: ../spack/lib/spack/docs/basic_usage.rst:1131
+#: ../spack/lib/spack/docs/basic_usage.rst:1134
 msgid "Filesystem requirements"
 msgstr ""
 
 # 4f9f00367cd946689e5709711f8168b9
-#: ../spack/lib/spack/docs/basic_usage.rst:1133
+#: ../spack/lib/spack/docs/basic_usage.rst:1136
 msgid ""
 "By default, Spack needs to be run from a filesystem that supports ``flock`` "
 "locking semantics.  Nearly all local filesystems and recent versions of NFS "
@@ -1303,12 +1305,12 @@ msgid ""
 msgstr ""
 
 # 80c9379e73b145e88ce57f21c4f34eba
-#: ../spack/lib/spack/docs/basic_usage.rst:1146
+#: ../spack/lib/spack/docs/basic_usage.rst:1149
 msgid "Note the ``flock`` option on both Lustre mounts."
 msgstr ""
 
 # ecb2995540644853b8734c45a45330e3
-#: ../spack/lib/spack/docs/basic_usage.rst:1148
+#: ../spack/lib/spack/docs/basic_usage.rst:1151
 msgid ""
 "If you do not see this or a similar option for your filesystem, you have a "
 "few options. First, you can move your Spack installation to a filesystem "
@@ -1317,26 +1319,26 @@ msgid ""
 msgstr ""
 
 # 1f288580c2a84bcba29f528f469bba80
-#: ../spack/lib/spack/docs/basic_usage.rst:1153
+#: ../spack/lib/spack/docs/basic_usage.rst:1156
 msgid "If none of those work, you can disable locking in one of two ways:"
 msgstr ""
 
 # ea310367b9204f25b0429d19b67de241
-#: ../spack/lib/spack/docs/basic_usage.rst:1155
+#: ../spack/lib/spack/docs/basic_usage.rst:1158
 msgid ""
 "Run Spack with the ``-L`` or ``--disable-locks`` option to disable locks on "
 "a call-by-call basis."
 msgstr ""
 
 # 9576d7213013450d88f70182e15564e5
-#: ../spack/lib/spack/docs/basic_usage.rst:1157
+#: ../spack/lib/spack/docs/basic_usage.rst:1160
 msgid ""
 "Edit :ref:`config.yaml <config-yaml>` and set the ``locks`` option to "
 "``false`` to always disable locking."
 msgstr ""
 
 # 9c551dd19efa46c08b202c6cdad0a05a
-#: ../spack/lib/spack/docs/basic_usage.rst:1162
+#: ../spack/lib/spack/docs/basic_usage.rst:1165
 msgid ""
 "If you disable locking, concurrent instances of Spack will have no way to "
 "avoid stepping on each other.  You must ensure that there is only **one** "
@@ -1346,48 +1348,48 @@ msgid ""
 msgstr ""
 
 # ed792bf82d714f25ace56c9296f8aa16
-#: ../spack/lib/spack/docs/basic_usage.rst:1168
+#: ../spack/lib/spack/docs/basic_usage.rst:1171
 msgid ""
 "If you are unfortunate enough to run into this situation, you may be able to "
 "fix it by running ``spack reindex``."
 msgstr ""
 
 # 6a8487021cc94524b92ce22f772ab7fb
-#: ../spack/lib/spack/docs/basic_usage.rst:1171
+#: ../spack/lib/spack/docs/basic_usage.rst:1174
 msgid "This issue typically manifests with the error below:"
 msgstr ""
 
 # 0a9b732ec22b44d090be5f68342e00ae
-#: ../spack/lib/spack/docs/basic_usage.rst:1195
+#: ../spack/lib/spack/docs/basic_usage.rst:1198
 msgid "A nicer error message is TBD in future versions of Spack."
 msgstr ""
 
 # d801df96fe2249e4a7e6e1e21602bd38
-#: ../spack/lib/spack/docs/basic_usage.rst:1200
+#: ../spack/lib/spack/docs/basic_usage.rst:1203
 msgid "Getting Help"
 msgstr ""
 
 # b6e98688f31f4468bbf641d9966dd01a
-#: ../spack/lib/spack/docs/basic_usage.rst:1206
+#: ../spack/lib/spack/docs/basic_usage.rst:1209
 msgid "``spack help``"
 msgstr ""
 
 # 036444f2a8964aee99207c6e2b561ec1
-#: ../spack/lib/spack/docs/basic_usage.rst:1208
+#: ../spack/lib/spack/docs/basic_usage.rst:1211
 msgid ""
 "If you don't find what you need here, the ``help`` subcommand will print out "
 "out a list of *all* of spack's options and subcommands:"
 msgstr ""
 
 # 9a906bccb9f0474aa7a4c2501b36c0f4
-#: ../spack/lib/spack/docs/basic_usage.rst:1213
+#: ../spack/lib/spack/docs/basic_usage.rst:1216
 msgid ""
 "Adding an argument, e.g. ``spack help <subcommand>``, will print out usage "
 "information for a particular subcommand:"
 msgstr ""
 
 # 5e5305e36594437daa39c43f6189146c
-#: ../spack/lib/spack/docs/basic_usage.rst:1218
+#: ../spack/lib/spack/docs/basic_usage.rst:1221
 msgid ""
 "Alternately, you can use ``spack --help`` in place of ``spack help``, or "
 "``spack <subcommand> --help`` to get help on a particular subcommand."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,279 +17,223 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/configuration.rst:10
-# f35e7203575a4d57a91262fe3ace6748
 msgid "Configuration Files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:12
-# 96435c1349d041ae8e41caedcad0e060
 msgid "Spack has many configuration files.  Here is a quick list of them, in case you want to skip directly to specific docs:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:15
-# 572b39549b31409dafc3093f2f20b977
 msgid ":ref:`compilers.yaml <compiler-config>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:16
-# c6f33fbf087f45579a81751639b27435
 msgid ":ref:`config.yaml <config-yaml>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:17
-# 273ca8dbb3094d65a1ecf0b3a0af7ae8
 msgid ":ref:`mirrors.yaml <mirrors>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:18
-# 3a9e4f77e7b04d70a3e35529da062d15
 msgid ":ref:`modules.yaml <modules>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:19
-# ac8ab7eea13e4133bf4cc52beef24947
 msgid ":ref:`packages.yaml <build-settings>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:20
-# 8c895d154f8c4636ae8935584a49b05b
 msgid ":ref:`repos.yaml <repositories>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:24
-# f661a93b3ee74a7e9b9d52d96ffa7f66
 msgid "YAML Format"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:26
-# 404a79bdf939460bbeb5c219b5b80a80
 msgid "Spack configuration files are written in YAML.  We chose YAML because it's human readable, but also versatile in that it supports dictionaries, lists, and nested sections. For more details on the format, see `yaml.org <http://yaml.org>`_ and `libyaml <http://pyyaml.org/wiki/LibYAML>`_. Here is an example ``config.yaml`` file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:42
-# 624e7b4d8282402dae4dbc0742254d6f
 msgid "Each Spack configuration file is nested under a top-level section corresponding to its name. So, ``config.yaml`` starts with ``config:``, ``mirrors.yaml`` starts with ``mirrors:``, etc."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:50
-# 790f9b8c9a2f4a7eb916c59361209ec3
 msgid "Configuration Scopes"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:52
-# a50e6ae9de384581ab617039ff84bf78
 msgid "Spack pulls configuration data from files in several directories. There are six configuration scopes. From lowest to highest:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:55
-# f6061b78d5614768a2af13cac0fb2b10
 msgid "**defaults**: Stored in ``$(prefix)/etc/spack/defaults/``. These are the \"factory\" settings. Users should generally not modify the settings here, but should override them in other configuration scopes. The defaults here will change from version to version of Spack."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:60
-# d7b07d1c283a4cd1a0bdfa9a41d4bc5e
 msgid "**system**: Stored in ``/etc/spack/``. These are settings for this machine, or for all machines on which this file system is mounted. The site scope can be used for settings idiosyncratic to a particular machine, such as the locations of compilers or external packages. These settings are presumably controlled by someone with root access on the machine. They override the defaults scope."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:67
-# e812acdcca064a65ae452c924ff64934
 msgid "**site**: Stored in ``$(prefix)/etc/spack/``. Settings here affect only *this instance* of Spack, and they override the defaults and system scopes.  The site scope can can be used for per-project settings (one Spack instance per project) or for site-wide settings on a multi-user machine (e.g., for a common Spack instance)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:73
-# e25c819efcdf454ab1c024472742c5a1
 msgid "**user**: Stored in the home directory: ``~/.spack/``. These settings affect all instances of Spack and take higher precedence than site, system, or defaults scopes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:77
-# f2cd7b2628f247b7ae6f615aceb97ded
 msgid "**custom**: Stored in a custom directory specified by ``--config-scope``. If multiple scopes are listed on the command line, they are ordered from lowest to highest precedence."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:81
-# ca8e0ebf08264ed18a4c342a8f44c827
 msgid "**command line**: Build settings specified on the command line take precedence over all other scopes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:84
-# e146e65263844e359f2263f1dd30158b
 msgid "Each configuration directory may contain several configuration files, such as ``config.yaml``, ``compilers.yaml``, or ``mirrors.yaml``.  When configurations conflict, settings from higher-precedence scopes override lower-precedence settings."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:89
-# 0fd3e7f56fca4d63b1b3f7048c916ee8
 msgid "Commands that modify scopes (e.g., ``spack compilers``, ``spack repo``, etc.) take a ``--scope=<name>`` parameter that you can use to control which scope is modified.  By default, they modify the highest-precedence scope."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:98
-# b8ae791c677d4539b75e78cc55e06d68
 msgid "Custom scopes"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:100
-# 7cdc491655624dd1963ec0ab9c9d71dd
 msgid "In addition to the ``defaults``, ``system``, ``site``, and ``user`` scopes, you may add configuration scopes directly on the command line with the ``--config-scope`` argument, or ``-C`` for short."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:104
-# 6c0dad644f464a37b924efc158fc6fd2
 msgid "For example, the following adds two configuration scopes, named ``scopea`` and ``scopeb``, to a ``spack spec`` command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:111
-# 655a329e91fc4996bb233952fa2a5119
 msgid "Custom scopes come *after* the ``spack`` command and *before* the subcommand, and they specify a single path to a directory full of configuration files. You can add the same configuration files to that directory that you can add to any other scope (``config.yaml``, ``packages.yaml``, etc.)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:117
-# 5f498516f7134baab4bf90baeff84c9e
 msgid "If multiple scopes are provided:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:119
-# 6c55462c230140cdbf9787c25b7452e2
 msgid "Each must be preceded with the ``--config-scope`` or ``-C`` flag."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:120
-# 356670814d4a441da0b6ef1b4635692b
 msgid "They must be ordered from lowest to highest precedence."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:124
-# cea7dc75fd53440a9dd7d6daa658949e
 msgid "Example: scopes for release and development"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:126
-# 85adce72b95241c881f0d583b8cb3fd0
 msgid "Suppose that you need to support simultaneous building of release and development versions of ``mypackage``, where ``mypackage`` -> ``A`` -> ``B``. You could create The following files:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:130
-# aeac4a5afa2545d6a69f0c7d93d45771
 msgid "~/myscopes/release/packages.yaml"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:141
-# e1271a953c994b0d896a9675cd1c8e7f
 msgid "~/myscopes/develop/packages.yaml"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:152
-# c134f3aed71049809780628f211afedf
 msgid "You can switch between ``release`` and ``develop`` configurations using configuration arguments.  You would type ``spack -C ~/myscopes/release`` when you want to build the designated release versions of ``mypackage``, ``A``, and ``B``, and you would type ``spack -C ~/myscopes/develop`` when you want to build all of these packages at the ``develop`` version."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:160
-# ce9c1238d2d74bf1bcd5b138baa0b009
 msgid "Example: swapping MPI providers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:162
-# ae315e1315d9476ab34b45cd7a7a1179
 msgid "Suppose that you need to build two software packages, ``packagea`` and ``packageb``. ``packagea`` is Python 2-based and ``packageb`` is Python 3-based. ``packagea`` only builds with OpenMPI and ``packageb`` only builds with MPICH. You can create different configuration scopes for use with ``packagea`` and ``packageb``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:168
-# 903653b3cd5d41a6afeb6a13eba9d516
 msgid "~/myscopes/packgea/packages.yaml"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:178
-# 5cc7a8ea5b3f4b9e8ce5cdff34e90bb7
 msgid "~/myscopes/packageb/packages.yaml"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:193
-# 72d3f471963a4de0b6548bfd67d283d6
 msgid "Platform-specific Scopes"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:195
-# b850324c7c8e407491ac3fd9a3824779
 msgid "For each scope above, there can also be platform-specific settings. For example, on most platforms, GCC is the preferred compiler. However, on macOS (darwin), Clang often works for more packages, and is set as the default compiler. This configuration is set in ``$(prefix)/etc/spack/defaults/darwin/packages.yaml``. It will take precedence over settings in the ``defaults`` scope, but can still be overridden by settings in ``system``, ``system/darwin``, ``site``, ``site/darwin``, ``user``, ``user/darwin``, ``custom``, or ``custom/darwin``. So, the full scope precedence is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:205
-# d7862baac86e486fa2e5a0ec7c51a90d
 msgid "``defaults``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:206
-# a101e185ad384f4dbf38a9fd0f758968
 msgid "``defaults/<platform>``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:207
-# 28617645155d40f6b1fb135e6b02a0dd
 msgid "``system``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:208
-# 51b29e456d3c465ab0f8156ef160c3d8
 msgid "``system/<platform>``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:209
-# b8beeb91f0a247dda6406b5f2b64144e
 msgid "``site``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:210
-# 4b398075d2024b4cbfb7f34f5a4f292b
 msgid "``site/<platform>``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:211
-# db336a64341a4c6092ee99ba2ce58d56
 msgid "``user``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:212
-# cee42321746f403f9be73e69a4e9d2a1
 msgid "``user/<platform>``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:213
-# e2a0fe45ada945e6b39c300c894795cf
 msgid "``custom``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:214
-# f4b30f53078f4f3bbcc81944451b317b
 msgid "``custom/<platform>``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:216
-# 640cfb37593b4f9ea3dc4f44563eb6e1
 msgid "You can get the name to use for ``<platform>`` by running ``spack arch --platform``. The system config scope has a ``<platform>`` section for sites at which ``/etc`` is mounted on multiple heterogeneous machines."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:222
-# 2be07f11ab88457086efe5626187e6b2
 msgid "Scope Precedence"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:224
-# dc702ca6b6d34f3eb3350848720d6471
 msgid "When spack queries for configuration parameters, it searches in higher-precedence scopes first. So, settings in a higher-precedence file can override those with the same key in a lower-precedence one. For list-valued settings, Spack *prepends* higher-precedence settings to lower-precedence settings. Completely ignoring higher-level configuration options is supported with the ``::`` notation for keys (see :ref:`config-overrides` below)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:234
-# 175bcd7cc7134d42b29a974792716363
 msgid "Simple keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:236
-# c182b5d994f34f1598baa01da0dccc65
 msgid "Let's look at an example of overriding a single key in a Spack file. If your configurations look like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:239
 #: ../spack/lib/spack/docs/configuration.rst:311
-# bcdd074dbf9f41f3ad9f53d7bb98c674
-# 18d472d8ab2c4899b5c65cd5e5b714eb
 msgid "$(prefix)/etc/spack/defaults/config.yaml"
 msgstr ""
 
@@ -297,170 +241,134 @@ msgstr ""
 #: ../spack/lib/spack/docs/configuration.rst:287
 #: ../spack/lib/spack/docs/configuration.rst:322
 #: ../spack/lib/spack/docs/configuration.rst:354
-# 58df71296b994ce7b82230b150015696
-# b7fccfdf801949baa6ca787b3e490a46
-# b1b5e4ef303c48bc84a4e9fd439f1f7b
-# 6c4c8a46860d42f18af1092e2b1fe51f
 msgid "~/.spack/config.yaml"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:258
-# 7bd4640d1de24fb98eae8fdcd1c40a7d
 msgid "Spack will only override ``install_tree`` in the ``config`` section, and will take the site preferences for other settings. You can see the final, combined configuration with the ``spack config get <configtype>`` command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:280
-# a5d912cfa4ce4a68b35bb341f6890631
 msgid "Overriding entire sections"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:282
-# 369086cac2d249549faa4c8a504048ca
 msgid "Above, the user ``config.yaml`` only overrides specific settings in the default ``config.yaml``. Sometimes, it is useful to *completely* override lower-precedence settings. To do this, you can use *two* colons at the end of a key in a configuration file. For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:294
-# c568f16dd443467f8f8d8f8941d2b1d7
 msgid "Spack will ignore all lower-precedence configuration under the ``config::`` section:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:306
-# ba4b308305f74cc1800435c677578094
 msgid "List-valued settings"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:308
-# 04316c9a5fab42b1954fcf156ece53bf
 msgid "Let's revisit the ``config.yaml`` example one more time. The ``build_stage`` setting's value is an ordered list of directories:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:319
-# 6e9a68a0326c4c12afa22fef67509754
 msgid "Suppose the user configuration adds its *own* list of ``build_stage`` paths:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:330
-# f279a488efef45519124cc63548bfd81
 msgid "Spack will first look at the paths in the defaults ``config.yaml``, then the paths in the user's ``~/.spack/config.yaml``. The list in the higher-precedence scope is *prepended* to the defaults. ``spack config get config`` shows the result:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:350
-# 31468ebaead54aa7befbb4d2cc158c92
 msgid "As in :ref:`config-overrides`, the higher-precedence scope can *completely* override the lower-precedence scope using ``::``. So if the user config looked like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:363
-# 5b30815b50524ef0a051480e807e8bcc
 msgid "The merged configuration would look like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:382
-# 9a3981a048d14af1bafd262d3c453d5c
 msgid "Config File Variables"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:384
-# b912ac9857f64a11a395fda472b42b59
 msgid "Spack understands several variables which can be used in config file paths wherever they appear. There are three sets of these variables: Spack-specific variables, environment variables, and user path variables. Spack-specific variables and environment variables are both indicated by prefixing the variable name with ``$``. User path variables are indicated at the start of the path with ``~`` or ``~user``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:393
-# 2c0b8fc6b33741e5b0ff4e802eaa2009
 msgid "Spack-specific variables"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:395
-# e6f4bff948f94711a48381205395459a
 msgid "Spack understands several special variables. These are:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:397
-# f2a3c22d65f74fc385b53d6636a1c09d
 msgid "``$spack``: path to the prefix of this Spack installation"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:398
-# 4ba914f68b434b3a81ac54e6a377d693
 msgid "``$tempdir``: default system temporary directory (as specified in Python's `tempfile.tempdir <https://docs.python.org/2/library/tempfile.html#tempfile.tempdir>`_ variable."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:402
-# cd385a037cc9497c8360154704b0b63c
 msgid "``$user``: name of the current user"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:404
-# c5fe02972550408d95996324737f6663
 msgid "Note that, as with shell variables, you can write these as ``$varname`` or with braces to distinguish the variable from surrounding characters: ``${varname}``. Their names are also case insensitive, meaning that ``$SPACK`` works just as well as ``$spack``. These special variables are substituted first, so any environment variables with the same name will not be used."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:413
-# 8cde3b0295c04684aafcfa39b728d28d
 msgid "Environment variables"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:415
-# e9134eb6e5c34deca38779085526573c
 msgid "After Spack-specific variables are evaluated, environment variables are expanded. These are formatted like Spack-specific variables, e.g., ``${varname}``. You can use this to insert environment variables in your Spack configuration."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:422
-# 0d9efeb187d34ecc8cf9b5fd2566d847
 msgid "User home directories"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:424
-# a296ba89063348358e941a856d1d7587
 msgid "Spack performs Unix-style tilde expansion on paths in configuration files. This means that tilde (``~``) will expand to the current user's home directory, and ``~user`` will expand to a specified user's home directory. The ``~`` must appear at the beginning of the path, or Spack will not expand it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:432
-# a460bf66902545fba46273724dcaa621
 msgid "Seeing Spack's Configuration"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:434
-# 685a5d2eddce41ebbe2e7931fb7e399c
 msgid "With so many scopes overriding each other, it can sometimes be difficult to understand what Spack's final configuration looks like."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:437
-# 2fb99195cc3f43348b6e062fc170f989
 msgid "Spack provides two useful ways to view the final \"merged\" version of any configuration file: ``spack config get`` and ``spack config blame``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:444
-# 422e685c3cf3499cad779ea0ace25ee7
 msgid "``spack config get``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:446
-# 4235cfc24f98426a99e8dda3d333c5e7
 msgid "``spack config get`` shows a fully merged configuration file, taking into account all scopes. For example, to see the fully merged ``config.yaml``, you can type:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:475
-# f36aa3ea3b9547b796cf9481ed4dd3e8
 msgid "Likewise, this will show the fully merged ``packages.yaml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:481
-# ae59c7ac6a6b4e1baddde4074dc240c5
 msgid "You can use this in conjunction with the ``-C`` / ``--config-scope`` argument to see how your scope will affect Spack's configuration:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:493
-# 17f126c4f10b4dc6b666c38e9d1b5e2c
 msgid "``spack config blame``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:495
-# ac17f590e337442e806a54c50e8b474a
 msgid "``spack config blame`` functions much like ``spack config get``, but it shows exactly which configuration file each preference came from. If you do not know why Spack is behaving a certain way, this can help you track down the problem:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/configuration.rst:526
-# fa31efa590924d3aab9998de209c1615
 msgid "You can see above that the ``build_jobs`` and ``debug`` settings are built in and are not overridden by a configuration file. The ``verify_ssl`` setting comes from the ``--insceure`` option on the command line. ``dirty`` and ``install_tree`` come from the custom scopes ``./my-scope`` and ``./my-scope-2``, and all other configuration options come from the default configuration files that ship with Spack."
 msgstr ""
 

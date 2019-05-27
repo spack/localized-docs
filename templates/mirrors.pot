@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,182 +17,146 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/mirrors.rst:10
-# 5cdb39b87ba84fc9946a750eb9e42b2e
 msgid "Mirrors"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:12
-# 0cc917bfe2bb4ba5b450e8f2bdbf63fc
 msgid "Some sites may not have access to the internet for fetching packages. These sites will need a local repository of tarballs from which they can get their files.  Spack has support for this with *mirrors*.  A mirror is a URL that points to a directory, either on the local filesystem or on some server, containing tarballs for all of Spack's packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:19
-# 5c962c65ec9f40d5bc77302d5e4eb9e0
 msgid "Here's an example of a mirror's directory structure:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:43
-# e899e0c4a02349858fcc4ab31007c8ee
 msgid "The structure is very simple.  There is a top-level directory.  The second level directories are named after packages, and the third level contains tarballs for each package, named after each package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:49
-# e0c7d7c9d44142a98938d5c46dd81cf8
 msgid "Archives are **not** named exactly the way they were in the package's fetch URL.  They have the form ``<name>-<version>.<extension>``, where ``<name>`` is Spack's name for the package, ``<version>`` is the version of the tarball, and ``<extension>`` is whatever format the package's fetch URL contains."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:55
-# 7f35ff50f1de4e10a107e776d39f8c9a
 msgid "In order to make mirror creation reasonably fast, we copy the tarball in its original format to the mirror directory, but we do not standardize on a particular compression algorithm, because this would potentially require expanding and re-compressing each archive."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:64
-# b1b4296c7fa24f0a87eded7b8f619609
 msgid "``spack mirror``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:66
-# 37ad00ebca1945c8918f30ef4ee3ee28
 msgid "Mirrors are managed with the ``spack mirror`` command.  The help for ``spack mirror`` looks like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:71
-# d3e61a055391415c8c93241ac245ecb5
 msgid "The ``create`` command actually builds a mirror by fetching all of its packages from the internet and checksumming them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:74
-# 526cda4dc7064655b5ac546e988287c2
 msgid "The other three commands are for managing mirror configuration.  They control the URL(s) from which Spack downloads its packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:81
-# 74b9857fffa84023b84f30e3dffe092e
 msgid "``spack mirror create``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:83
-# 58ecd2b6f52d4cd588a9350c87b87003
 msgid "You can create a mirror using the ``spack mirror create`` command, assuming you're on a machine where you can access the internet."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:86
-# 744aa4c76cd74c2aa162191056ac3d92
 msgid "The command will iterate through all of Spack's packages and download the safe ones into a directory structure like the one above.  Here is what it looks like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:121
-# 8b6cabd03fba440f8058226814012912
 msgid "Once this is done, you can tar up the ``spack-mirror-2014-06-24`` directory and copy it over to the machine you want it hosted on."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:126
-# b8f74ea6bd8d476c8bad6d6cab2e244d
 msgid "Custom package sets"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:128
-# 8fa23f0c6fda4844b971533dc2d37d1a
 msgid "Normally, ``spack mirror create`` downloads all the archives it has checksums for.  If you want to only create a mirror for a subset of packages, you can do that by supplying a list of package specs on the command line after ``spack mirror create``.  For example, this command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:138
-# c80fd4bb721642d1858f3790bbda7483
 msgid "Will create a mirror for libelf versions greater than or equal to 0.8.12 and boost versions greater than or equal to 1.44."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:143
-# e4581a1bb3724f5c8325353a3dfbaca3
 msgid "Mirror files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:145
-# e5d5f5620e464cd999a3c7dc891a46e3
 msgid "If you have a *very* large number of packages you want to mirror, you can supply a file with specs in it, one per line:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:159
-# ec35e9ab940d42a78bb55536478d5e86
 msgid "This is useful if there is a specific suite of software managed by your site."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:166
-# d1b7f420edd7499ab3748141c2b575eb
 msgid "``spack mirror add``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:168
-# 8387fb35eff14eedbd141be5f55aed66
 msgid "Once you have a mirror, you need to let spack know about it.  This is relatively simple.  First, figure out the URL for the mirror.  If it's a directory, you can use a file URL like this one:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:176
-# 40752891d7c146e8be532d97c1673eb4
 msgid "That points to the directory on the local filesystem.  If it were on a web server, you could use a URL like this one:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:179
-# 4ab6a80525b841c397b96d5a2186872a
 msgid "https://example.com/some/web-hosted/directory/spack-mirror-2014-06-24"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:181
-# cbc4d14a61be4b128022aa25f950e522
 msgid "Spack will use the URL as the root for all of the packages it fetches. You can tell your Spack installation to use that mirror like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:188
-# c4abda6b73de4850a6193babedd56479
 msgid "Each mirror has a name so that you can refer to it again later."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:194
-# 9d17e6cf865b440ca5d65a3abb7d0d7f
 msgid "``spack mirror list``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:196
-# bb1ebc7047964b9594930918749541b2
 msgid "To see all the mirrors Spack knows about, run ``spack mirror list``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:207
-# d464924f302b49b68e34bd579121cd8e
 msgid "``spack mirror remove``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:209
-# 0b9f261589f9491a93537f3a40a91f08
 msgid "To remove a mirror by name, run:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:219
-# 66efa7e3c7994b8aa761c4c543fc63cc
 msgid "Mirror precedence"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:221
-# acf9870d27e7428a81ce19e870181bb7
 msgid "Adding a mirror really adds a line in ``~/.spack/mirrors.yaml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:229
-# 7613d88c736b4a33b1d7828344fd26df
 msgid "If you want to change the order in which mirrors are searched for packages, you can edit this file and reorder the sections.  Spack will search the topmost mirror first and the bottom-most mirror last."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:237
-# e35e851274f64d33b2c16e0c32234614
 msgid "Local Default Cache"
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:239
-# 242398876a314662814476a9d544485d
 msgid "Spack caches resources that are downloaded as part of installs. The cache is a valid spack mirror: it uses the same directory structure and naming scheme as other Spack mirrors (so it can be copied anywhere and referenced with a URL like other mirrors). The mirror is maintained locally (within the Spack installation directory) at :file:`var/spack/cache/`. It is always enabled (and is always searched first when attempting to retrieve files for an installation) but can be cleared with :ref:`clean <cmd-spack-clean>`; the cache directory can also be deleted manually without issue."
 msgstr ""
 
 #: ../spack/lib/spack/docs/mirrors.rst:248
-# 78a9ce5cfc8c450b9829a434b0c5e0d4
 msgid "Caching includes retrieved tarball archives and source control repositories, but only resources with an associated digest or commit ID (e.g. a revision number for SVN) will be cached."
 msgstr ""
 

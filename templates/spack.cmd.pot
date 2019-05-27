@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,85 +17,66 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:2
-# d73e20f34ca74d3e9cd70195858125df
 msgid "spack.cmd package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:5
-# 42334114ef68466ab986d0d6f32d1705
 msgid "Subpackages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:13
-# 150f7710bc254c0a86f2e617fac49d2f
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:16
-# 1ad89aa369f44c03b5565109b4a8ae57
 msgid "spack.cmd.activate module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:24
-# 94b5191d16044c489263a9de58b6e24a
 msgid "spack.cmd.add module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:32
-# 4fbd637e365b4afca8243c70de2e470a
 msgid "spack.cmd.arch module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:40
-# 2c1a6b24014d477b8f4e22207f5ea4a6
 msgid "spack.cmd.blame module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:48
-# 0142ba4d02b444d7b92d75d8354ec614
 msgid "spack.cmd.bootstrap module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:56
-# e52dfb0095ff4fa889a198118bd91543
 msgid "spack.cmd.build module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:64
-# a9b16d5fbbc642228e90021e8f68052e
 msgid "spack.cmd.build\\_env module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:72
-# b49e0efcec6e4988b6f546316dc9e60d
 msgid "spack.cmd.buildcache module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.check_binaries:1
-# cdd17be0480c42e1adacc00166677371
 msgid "Check specs (either a single spec from --spec, or else the full set of release specs) against remote binary mirror(s) to see if any need to be rebuilt.  This command uses the process exit code to indicate its result, specifically, if the exit code is non-zero, then at least one of the indicated specs needs to be rebuilt."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.createtarball:1
-# a751777cdcc6455c808f330be82b09fc
 msgid "create a binary package from an existing install"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.find_matching_specs:2
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.match_downloaded_specs:2
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.find_matching_specs:2
-# ab56637da2204762bb1120f14192e8da
-# d2e7f39d54ff444ba7f1a838221f7285
-# dff636fca22f4e53899306becbce8a21
 msgid "Returns a list of specs matching the not necessarily"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.find_matching_specs:2
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.match_downloaded_specs:2
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.find_matching_specs:2
-# 84b2763f8bef4576bf70dd428440ecf4
-# 4e17d679b264483485725741f0198430
-# e54f7cd88c52465a8a4bbaa825c89991
 msgid "concretized specs given from cli"
 msgstr ""
 
@@ -125,48 +106,17 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.get_command:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.get_module:0
-# 2cfe55f05b1b4095a18bbc6d75a8c5ee
-# 9c1e48b4ac8c4e7db600b2bb98420a15
-# ab1df7ba1ff540a18e212d564c6cb72e
-# 2490502676254a40a0e88b1d3fd5a674
-# b2929732ff7444f48bad74b29e85bcd4
-# ad67f4445b9b4aab83d3f1c5aea64b7d
-# 77c2c35f7ae6409196be16368d6c0610
-# f54c681fbb6d4ba0b3482d10f289452d
-# 309f5b5f7b8249e1951819ab70a018e0
-# e1caa03b212e49e986d61644a5f739ba
-# 50a63e5392b5489297802c0a10f2e75d
-# 4583011b255042e8977989b890ad4b13
-# 19cbba6d0095409cbafd67e4667e803a
-# b73ffb1406a043059eda54a94e2be002
-# 0da69d478eeb4fe38b7ac23875438134
-# 7189beae25cd4c60b49b7afa1b1bf6fd
-# 93c05e1fb2df4008af1c736f44ffbd85
-# 32bcccf4820c4e66b893703794a8450d
-# 08180cd0b18047cf871f468b9ac977f1
-# 518ccf7405f24e3c988bb9d66f5e1d13
-# fae12668290d480d8a514814df971a6d
-# db1925f2b6a341a2b2035ebfb2a08724
-# a53c19e3b57b46908d4b9e37c89f9f59
-# 5253cddf97fe42a2a6b541e559c6d2cb
-# dddc06693bf24799b174d063adcff84b
-# 2cf7d860916e4efdb0628bedf94252be
 msgid "Parameters"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.find_matching_specs:4
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.find_matching_specs:6
-# 443614fe84234aceb63fc1d02c0d2f53
-# db40d53a952a4342a4cf33d3b7f250e8
 msgid "list of specs to be matched against installed packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.find_matching_specs:5
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.match_downloaded_specs:5
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.find_matching_specs:8
-# d33d9383a37246469848252b30e1419a
-# 924d1bb5bafb4e30a9116c9896914af3
-# f637b975c99f42fbbb8416c02c82090f
 msgid "if True multiple matches are admitted"
 msgstr ""
 
@@ -186,208 +136,153 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.remove_separators:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.url_list_parsing:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.version_parsed_correctly:0
-# 8399c79f01b548e8b9839b9605b7b986
-# b28f5d34ad5f41efb6219e305e79200b
-# 7e66c040646e4dab89901d71517526bf
-# 0402dca3b23d44fe963e8b5fd338a3ab
-# 6740eb8769d9404c890a96982334718e
-# 43685c8a624b47b7a8fb9016cd18f3a3
-# 3d083dba15a34bf8b2f7740c51c670d2
-# d3d6c1c6f33a4a669a7697d719c51663
-# cbea33096fb84fd68c819773c8e3129e
-# 7c864037257b4e94ad9bbce737430c57
-# 2be344ce87ea4212b18498f8d295603d
-# 76d5622df78a4cd692f8e4247ec4d4ec
-# 5180d71e775b4699b6f18143bee467aa
-# c744757f007a44f094468ecb8fef0502
-# 4c6c30081c9b47b8893330894bbfe59a
-# 8aa8e9808544451cb9340a90d66e2231
 msgid "Returns"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.find_matching_specs:7
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.match_downloaded_specs:7
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.find_matching_specs:11
-# 0ea3fa9977d4469684df11c03ba16e4d
-# 905bd37a727a4cad909335e8a606fd71
-# 56fb87cd9d644924bda44b16f6719d68
 msgid "list of specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.get_buildcache_name:1
-# a661a72b3d194a10b7d731ffc50b03ae
 msgid "Get name (prefix) of buildcache entries for this spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.get_tarball:1
-# 2da8d79f80714fecadc9194c2e840fbb
 msgid "Download buildcache entry from a remote mirror to local folder.  This command uses the process exit code to indicate its result, specifically, a non-zero exit code indicates that the command failed to download at least one of the required buildcache components.  Normally, just the tarball and .spec.yaml files are required, but if the --require-cdashid argument was provided, then a .cdashid file is also required."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.getkeys:1
-# 3642a93c8c46459fb6438ea4e977f7e7
 msgid "get public keys available on mirrors"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.installtarball:1
-# c1ecb16586a54a4ba81895e6fd7a55e0
 msgid "install from a binary package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.listspecs:1
-# e59a6fa8525f4abf94cfca2d552cc95e
 msgid "list binary packages available from mirrors"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.match_downloaded_specs:4
-# c9f7ec3217ab424196e0ebf15490fbf1
 msgid "list of specs to be matched against buildcaches on mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.preview:1
-# 26307787d30846ed87e350e7c15b229b
 msgid "Print a status tree of the selected specs that shows which nodes are relocatable and which might not be."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.preview:4
-# 818a2001ea1541caa4b8f13f09b22066
 msgid "command line arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring of spack.cmd.buildcache.save_spec_yamls:1
-# c6f7781def7046f485b375cfa6c94de5
 msgid "Get full spec for dependencies, relative to root spec, and write them to files in the specified output directory.  Uses exit code to signal success or failure.  An exit code of zero means the command was likely successful.  If any errors or exceptions are encountered, or if expected command-line arguments are not provided, then the exit code will be non-zero."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:80
-# 5411a455c0e74b92816d5345e1da14ca
 msgid "spack.cmd.cd module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/cd.py:docstring of spack.cmd.cd.setup_parser:1
-# 076bf8d6f8434c58935bff9c545c00be
 msgid "This is for decoration -- spack cd is used through spack's shell support.  This allows spack cd to print a descriptive help message when called with -h."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:88
-# 47946522151a4acfb5b0deceecbecaf1
 msgid "spack.cmd.checksum module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:96
-# ad2849c46eb04cc9ac5334e1e581f745
 msgid "spack.cmd.clean module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/clean.py:docstring of spack.cmd.clean.AllClean:1
-# 612ca181b67a43faa6f2a5c72e808d4d
 msgid "Bases: :class:`argparse.Action`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/clean.py:docstring of spack.cmd.clean.AllClean:1
-# 46dcaa61c77e4ada8598f7b88ccd95ea
 msgid "Activates flags -s -d -m and -p simultaneously"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:104
-# 4527064a6545434c90cbe9ac520935a9
 msgid "spack.cmd.clone module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:112
-# 3eee45b9286a4bf5b3ab408996e49d5d
 msgid "spack.cmd.commands module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/commands.py:docstring of spack.cmd.commands.SpackArgparseRstWriter:1
-# 65704a2cc6e6419292ee33ebd74d1eb9
 msgid "Bases: :class:`llnl.util.argparsewriter.ArgparseRstWriter`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/commands.py:docstring of spack.cmd.commands.SpackArgparseRstWriter:1
-# aaa0f23e1826493c8f2d10e4a421181a
 msgid "RST writer tailored for spack documentation."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/commands.py:docstring of spack.cmd.commands.SubcommandWriter:1
-# 981ec5697a6e45a08613cd7e6e8c2eb0
 msgid "Bases: :class:`llnl.util.argparsewriter.ArgparseWriter`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/commands.py:docstring of spack.cmd.commands.formatter:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.formatter:1
-# 714f170052b047c682c02dc13a8781b5
-# 5926d5dd10384fae87cf44347a571bc7
 msgid "Decorator used to register formatters"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/commands.py:docstring of spack.cmd.commands.formatters:1
-# 3bdba6b06ba7437395e618c61e7cc59a
 msgid "list of command formatters"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:120
-# 9c5d186bd685461795f07f3e83a3a42c
 msgid "spack.cmd.compiler module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/compiler.py:docstring of spack.cmd.compiler.compiler_find:1
-# d82a5c89e7be44a08afe0b5955462753
 msgid "Search either $PATH or a list of paths OR MODULES for compilers and add them to Spack's configuration."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/compiler.py:docstring of spack.cmd.compiler.compiler_info:1
-# 1ecbaf23aa3f4af382cf9e692bc21693
 msgid "Print info about all compilers matching a spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:128
-# 5befb6dbabd140c6ad840f40a5a37b72
 msgid "spack.cmd.compilers module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:136
-# 82dac4388b014f57b2248ecadedf47f8
 msgid "spack.cmd.concretize module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:144
-# 7620ecaae638428686fa5bf68005a789
 msgid "spack.cmd.config module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/config.py:docstring of spack.cmd.config.config_blame:1
-# 30914391443842a1bf58ce1623556be7
 msgid "Print out line-by-line blame of merged YAML."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/config.py:docstring of spack.cmd.config.config_edit:1
-# 7aaa4502c09f4fa2abf88d21e37590fe
 msgid "Edit the configuration file for a specific scope and config section."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/config.py:docstring of spack.cmd.config.config_edit:3
-# f6fa2f6274b64bd7ace3df18978b2102
 msgid "With no arguments and an active environment, edit the spack.yaml for the active environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/config.py:docstring of spack.cmd.config.config_get:1
-# 3f389690000543c1bc3967efe20ae0c3
 msgid "Dump merged YAML configuration for a specific section."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/config.py:docstring of spack.cmd.config.config_get:3
-# f824a172b5174270858c700d5ba0b30d
 msgid "With no arguments and an active environment, print the contents of the environment's manifest file (spack.yaml)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:152
-# 7d0eb56ea4b946f49654f0e897999523
 msgid "spack.cmd.configure module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:160
-# 1d72760f1a0d4205b3de8d6789afd397
 msgid "spack.cmd.create module"
 msgstr ""
 
@@ -405,35 +300,18 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.RPackageTemplate:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.SconsPackageTemplate:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.WafPackageTemplate:1
-# ad38b02f72c14bd1b509a18456ea990c
-# 2b61562ad8534879ab404f74a73141eb
-# a3417629e7a744269bb597c0b26cdf60
-# 07093c7c519e4bb7be7055a485cd3e7f
-# a54ed3c63ef14c3a8f2745e80f14bdea
-# 875b6d5c81e241398890016d483d2054
-# 6bc6c209cc3640f8bc5329aadc4042cc
-# 321bbd68105a4b2598d893fc0b6bf8b4
-# 4ad19ef6e54f45cc8c7a2fe63fbfc8cf
-# 0e6e6a7a7862459aaddeb86b69f6ff54
-# aa409ad03e304ebeaf2924459efb7052
-# c8ead8c02ba4458fa8db514bf2d88826
-# 0eeb75e3ddf746928c5095b71036c600
-# 4b2973f07d8a4b13ba7caf0ae16101a6
 msgid "Bases: :class:`spack.cmd.create.PackageTemplate`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.AutoreconfPackageTemplate:1
-# cfab0f9f20364b1d97d0762530936df2
 msgid "Provides appropriate overrides for Autotools-based packages that *do not* come with a ``configure`` script"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.AutotoolsPackageTemplate:1
-# 86d19f593786491cbfbf67f81fa5fd38
 msgid "Provides appropriate overrides for Autotools-based packages that *do* come with a ``configure`` script"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.BazelPackageTemplate:1
-# a5346e6840cd470385f1156f2d373029
 msgid "Provides appropriate overrides for Bazel-based packages"
 msgstr ""
 
@@ -442,101 +320,78 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.ViewAction:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring of spack.cmd.info.VariantFormatter:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.LicenseError:1
-# fa1043dbd94d4ac1b48ede7d6c746aac
-# 11e2e282f6014a44acaf8044e8299b38
-# 9aa0d29441744432ac6c3e9bbbcd8431
-# 72f4a9c2bd914b11814b256082945edc
-# 617fcea1ad2e4c74829691a372e8903e
 msgid "Bases: :class:`object`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.BuildSystemGuesser:1
-# ad4b61ee219b4c3c9aac081972faf3a9
 msgid "An instance of BuildSystemGuesser provides a callable object to be used during ``spack create``. By passing this object to ``spack checksum``, we can take a peek at the fetched tarball and discern the build system it uses"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.CMakePackageTemplate:1
-# 6240ffbf148a4989aab966fb37794f02
 msgid "Provides appropriate overrides for CMake-based packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.IntelPackageTemplate:1
-# 534bcb1a275147428b20859f241f2063
 msgid "Provides appropriate overrides for licensed Intel software"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.MakefilePackageTemplate:1
-# 00046fa6e402418d808807b133ac3175
 msgid "Provides appropriate overrides for Makefile packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.MesonPackageTemplate:1
-# cd93614e462145bca098b55a7ced8082
 msgid "Provides appropriate overrides for meson-based packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.OctavePackageTemplate:1
-# 37ac4079b0e649db82edf7a67e54a19d
 msgid "Provides appropriate overrides for octave packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.PackageTemplate:1
-# 5aac35b7ef464e64b78f2cfc9385434e
 msgid "Provides the default values to be used for the package file template"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.PackageTemplate.write:1
-# 78e5a0e6655647fcb54cb2d99b7dcdee
 msgid "Writes the new package file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.PerlbuildPackageTemplate:1
-# 123f9e77819e42bb912e6b95236acf3a
 msgid "Bases: :class:`spack.cmd.create.PerlmakePackageTemplate`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.PerlbuildPackageTemplate:1
-# 4a07cd901da549fe997c09ccda44fff2
 msgid "Provides appropriate overrides for Perl extensions that come with a Build.PL instead of a Makefile.PL"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.PerlmakePackageTemplate:1
-# b7734322752548a4800da9451889f1ae
 msgid "Provides appropriate overrides for Perl extensions that come with a Makefile.PL"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.PythonPackageTemplate:1
-# c97424c9b47543c297b06832581758a3
 msgid "Provides appropriate overrides for python extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.QMakePackageTemplate:1
-# 1d145677c6fe437383e3e99373d03a70
 msgid "Provides appropriate overrides for QMake-based packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.RPackageTemplate:1
-# d43cd7b6d20c49cc92f0eaad526fb652
 msgid "Provides appropriate overrides for R extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.SconsPackageTemplate:1
-# ad6adb39117f47809e923e389cdc6a29
 msgid "Provides appropriate overrides for SCons-based packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.WafPackageTemplate:1
-# 9d34d87c205a4678bf3243578ef9391f
 msgid "Provides appropriate override for Waf-based packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_build_system:1
-# c629ed3f3f70446f9501eaf4881eb448
 msgid "Determine the build system template."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_build_system:3
-# 7b24204e489a44c7be729eb20d1f14e1
 msgid "If a template is specified, always use that. Otherwise, if a URL is provided, download the tarball and peek inside to guess what build system it uses. Otherwise, use a generic template by default."
 msgstr ""
 
@@ -545,21 +400,14 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_repository:4
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_url:5
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_versions:7
-# b66bff8340304ba9bd20f50e9b517111
-# 02b8e10490e94fd1980df56895326f22
-# 7f50bfc308d8436cac6ed1b2b0903bdb
-# b0c36b9f9d964e138c134a1df8669121
-# 7019ff8dfb52484ca17bcbdbdd4eae2f
 msgid "The arguments given to ``spack create``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_build_system:9
-# f3afd9cdb69c402d80ea431f6ccdf545
 msgid "The first_stage_function given to ``spack checksum`` which records the build system it detects"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_build_system:13
-# 9d89df6c476544f1b3d0731c40150b25
 msgid "The name of the build system template to use"
 msgstr ""
 
@@ -575,522 +423,408 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.remove_separators:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.url_list_parsing:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.version_parsed_correctly:0
-# e1809bce79ef4b5f81a80cf07c7bcb53
-# 7f88155fc12e44e69e5cb4ad22c7ee98
-# c48533a1518f4b80b9ac3e435535399a
-# 57d63a1de49443618ee601be1492c404
-# 9f952cd4dffe4eccabbb2432676c5ccf
-# 93cbd77ab2bf481bbc316b17c6c97861
-# 7513e5681ead40079f4aa85e6bba22d3
-# 4fd167b0f8b04001b8f8c04f42346716
-# 3de0c4c1169c46b388c2b316d175ca7c
-# 3750ecce5b884ffb90664c81ff3f7c7d
-# 889c88b110174b88beee793eeeef16a0
-# ab2117d19ccd4cc4bb97a41781b56665
 msgid "Return type"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_name:1
-# 02eed27209ba491e8075f4346abfc6d9
 msgid "Get the name of the package based on the supplied arguments."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_name:3
-# 2dc0d8642a4945658a34671151dd6579
 msgid "If a name was provided, always use that. Otherwise, if a URL was provided, extract the name from that. Otherwise, use a default."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_name:10
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_versions:9
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring of spack.cmd.edit.edit_package:3
-# 84273ccc49e84f94a5b617614f1e2ed4
-# 27269d4768494117850348d39426b5df
-# 2febd067dfba45d58c41f7e8adcc84fd
 msgid "The name of the package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_repository:1
-# 011f233a5ae74cbdae576d9b195524ca
 msgid "Returns a Repo object that will allow us to determine the path where the new package file should be created."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_repository:6
-# fe632a33c1a343aba1fd3cae708a6d22
 msgid "The name of the package to create"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_repository:9
-# 73f5fb33ea8f40dea8ab888ee6327249
 msgid "A Repo object capable of determining the path to the package file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_url:1
-# 25578fab597f4a50814054ce179ef78c
 msgid "Get the URL to use."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_url:3
-# a521084b34f24a4895525167b4019003
 msgid "Use a default URL if none is provided."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_url:8
-# 5bad2a5f19824ebcbc09c1cb08fa47cb
 msgid "The URL of the package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_versions:1
-# 029e9967c089461f9c75e4b5088ce63d
 msgid "Returns a list of versions and hashes for a package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_versions:3
-# 2541771c5f454a28999b6cccfd6b6dbe
 msgid "Also returns a BuildSystemGuesser object."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_versions:5
-# 4b03faa96a984251ad9a1dcd7bcbaf88
 msgid "Returns default values if no URL is provided."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_versions:12
-# 79c0387002da407899603384df1198dc
 msgid "Versions and hashes, and a     BuildSystemGuesser object"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_versions:14
-# 9861439f8e714af480f72a1e0c4e6692
 msgid "Versions and hashes, and a"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.get_versions:15
-# 6a7e605664ee45c4b9ac9ff461d1f187
 msgid "BuildSystemGuesser object"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:168
-# 25c15a4c19cc4c5aa53d5856e745a69d
 msgid "spack.cmd.deactivate module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:176
-# f543fbae6e0a47779746665f8a7cbf0c
 msgid "spack.cmd.debug module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:184
-# 046a138c8555401e9c1cca7bfd7d2eda
 msgid "spack.cmd.dependencies module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:192
-# 560a9d478ca74d6f98c18bb8d04624fa
 msgid "spack.cmd.dependents module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/dependents.py:docstring of spack.cmd.dependents.get_dependents:1
-# 99c250a65fc54040bb23df84561f10e1
 msgid "Get all dependents for a package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/dependents.py:docstring of spack.cmd.dependents.get_dependents:3
-# 7023be10164c4d9b814ba0aeedfa18a3
 msgid "name of the package whose dependents should be returned"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/dependents.py:docstring of spack.cmd.dependents.get_dependents:5
-# bfe2dd3676b74c22964b2290f4b3a8ba
 msgid "dictionary of dependents, from inverted_dependencies()"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/dependents.py:docstring of spack.cmd.dependents.get_dependents:7
-# 01086896d1214d8bb85996d20c3633c8
 msgid "return transitive dependents when True"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/dependents.py:docstring of spack.cmd.dependents.inverted_dependencies:1
-# 1447c3ab197c421f8ebbdd10b8a08b51
 msgid "Iterate through all packages and return a dictionary mapping package names to possible dependnecies."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/dependents.py:docstring of spack.cmd.dependents.inverted_dependencies:4
-# 1de4b9ab5c23428680a1982c9c286771
 msgid "Virtual packages are included as sources, so that you can query dependents of, e.g., `mpi`, but virtuals are not included as actual dependents."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:200
-# 4da3ca7b7c1d4e988ff4c4b1067c06b2
 msgid "spack.cmd.diy module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:208
-# 4fa34f7a3f784352968bd071e80961b3
 msgid "spack.cmd.docs module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:216
-# 0c851075a06e4d598bdb6dd5ff57a910
 msgid "spack.cmd.edit module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring of spack.cmd.edit.edit_package:1
-# d12bcd68029046aa98b6fa6749d3bd7e
 msgid "Opens the requested package file in your favorite $EDITOR."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring of spack.cmd.edit.edit_package:5
-# 6e5e34b6d0a34d1d92ea9b2d31fdb194
 msgid "The path to the repository containing this package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring of spack.cmd.edit.edit_package:7
-# 2e1d9da2631f4cffa1c70f5b2849fdfa
 msgid "A valid namespace registered with Spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:224
-# afbdc5315c8a45539745dbe534c40f2a
 msgid "spack.cmd.env module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env:1
-# a3bf0b0af13b415cac7c12e0fa720899
 msgid "Look for a function called environment_<name> and call it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_activate_setup_parser:1
-# 929b82a3383e4d2eaff9793c525343d6
 msgid "set the current environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_create_setup_parser:1
-# 5cd0cb571b364f53aa0579e8a5dff902
 msgid "create a new environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_deactivate_setup_parser:1
-# 854fc394974b4834a859fcd886cee808
 msgid "deactivate any active environment in the shell"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_list_setup_parser:1
-# 7c3d9f9cb2754a13af1c4701b0ef8109
 msgid "list available environments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_loads_setup_parser:1
-# b892a6ceb0d944998104f835166e9c1d
 msgid "list modules for an installed environment '(see spack module loads)'"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_remove:1
-# 314ce36b4dcb4e31a35502dfc7768325
 msgid "Remove a *named* environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_remove:3
-# 32eec46fb8584cc184bf980471ec2f87
 msgid "This removes an environment managed by Spack. Directory environments and `spack.yaml` files embedded in repositories should be removed manually."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_remove_setup_parser:1
-# 5db6c99489844767860e6dc1849a096c
 msgid "remove an existing environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_status_setup_parser:1
-# 73193680acd2422199b18548f2b9b2fb
 msgid "print whether there is an active environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.env_view_setup_parser:1
-# 1d5961f32bd44ddd81536e2c955bcd8a
 msgid "manage a view associated with the environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.subcommand_functions:1
-# dc706b097642474193e8fa6878e7da50
 msgid "Dictionary mapping subcommand names and aliases to functions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.subcommands:1
-# b1d1d6b8c4dd4679803f8ae944fd24cb
 msgid "List of subcommands of `spack env`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:232
-# ef687c4542d34aceb0ae5abeb37581a6
 msgid "spack.cmd.extensions module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:240
-# 65c5f49fd5184441b24f0a99a34cfe63
 msgid "spack.cmd.fetch module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:248
-# 244db8fd779543b2ab019ad2d09534e9
 msgid "spack.cmd.find module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/find.py:docstring of spack.cmd.find.setup_env:1
-# d885431101134523a4a3ab8162a6919a
 msgid "Create a function for decorating specs when in an environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:256
-# 0bf63d1f0e58433dac6eeac23b6faca5
 msgid "spack.cmd.flake8 module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.add_pattern_exemptions:1
-# 45a6acb9d43e4529a88585b4034fd8ce
 msgid "Add a flake8 exemption to a line."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.changed_files:1
-# 952719b43ae04e7a9c5ed1fa28956825
 msgid "Get list of changed files in the Spack repository."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.exclude_directories:1
-# 67d84ebc604942bd925aef2bdc6b429d
 msgid "List of directories to exclude from checks."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.filter_file:1
-# 390c4aa59af443d7aac2ca953a3650c4
 msgid "Filter a single file through all the patterns in pattern_exemptions."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.is_package:1
-# b364d45f06784334adc3a6ee4b70f897
 msgid "Whether flake8 should consider a file as a core file or a package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.is_package:3
-# 62e2f31d5d5449a28bf16da96d2dbf22
 msgid "We run flake8 with different exceptions for the core and for packages, since we allow `from spack import *` and poking globals into packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:7
-# 8865d0128336473383b4ec008b6862b3
 msgid "filename pattern ->"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:7
-# 9ed086c7ba0946dca66ef84f9e916dc8
 msgid "flake8 exemption code ->"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:7
-# 4607d0e7b69d47eca0ee465400b26045
 msgid "list of patterns, for which matching lines should have codes applied."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:9
-# aef18b4b332e49388067b9ecd411970e
 msgid "For each file, if the filename pattern matches, we'll add per-line exemptions if any patterns in the sub-dict match."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:0
-# b1c39c108a4447e8a080c4a1248868de
 msgid "type"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:12
-# 82f8e61116ac454fadc09d0d1c004330
 msgid "This is a dict that maps"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:264
-# becb077e10f549a1969aff09b3d94bf8
 msgid "spack.cmd.gpg module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/gpg.py:docstring of spack.cmd.gpg.gpg_create:1
-# ace70cfc6fb94f8cbbf756885cc36c18
 msgid "create a new key"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/gpg.py:docstring of spack.cmd.gpg.gpg_export:1
-# d0396357288644908df2364ffcad925b
 msgid "export a secret key"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/gpg.py:docstring of spack.cmd.gpg.gpg_init:1
-# b139cfb852e84f31930a6d8c33a0dfbd
 msgid "add the default keys to the keyring"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/gpg.py:docstring of spack.cmd.gpg.gpg_list:1
-# 9e6f00b7f7094da59f4eb12602bd7bfa
 msgid "list keys available in the keyring"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/gpg.py:docstring of spack.cmd.gpg.gpg_sign:1
-# a10df2d2c725416983bfeba29cc0ad8c
 msgid "sign a package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/gpg.py:docstring of spack.cmd.gpg.gpg_trust:1
-# 5a461af672d14bc5924eaffefb34f3d3
 msgid "add a key to the keyring"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/gpg.py:docstring of spack.cmd.gpg.gpg_untrust:1
-# b64f858773704d6f80cdc091f5935563
 msgid "remove a key from the keyring"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/gpg.py:docstring of spack.cmd.gpg.gpg_verify:1
-# ffc661fcee2244009ff21248ff36f47a
 msgid "verify a signed package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:272
-# a36f11dde2d9488294d6dc5eec17b972
 msgid "spack.cmd.graph module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:280
-# 517c1908ee574baaac744264785a7f49
 msgid "spack.cmd.help module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:288
-# b6f51762286f4d7c89221719fe1bba29
 msgid "spack.cmd.info module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring of spack.cmd.info.padder:1
-# 7831fe0d54164a37a32a137ef53ace82
 msgid "Return a function to pad elements of a list."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring of spack.cmd.info.print_text_info:1
-# f2e971080612406d9b97c6e998eff1eb
 msgid "Print out a plain text description of a package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:296
-# 43f746df76714f57b1a97054681e79f2
 msgid "spack.cmd.install module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/install.py:docstring of spack.cmd.install.default_log_file:1
-# 49936e8adaa7431f9826ca3c1525f6dc
 msgid "Computes the default filename for the log file and creates the corresponding directory if not present"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/install.py:docstring of spack.cmd.install.install_spec:1
-# 9bd544b31ce14e35abca8464159f9852
 msgid "Do the actual installation."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/install.py:docstring of spack.cmd.install.update_kwargs_from_args:1
-# cd8515ecb4f642189d80ccdeb913f2e4
 msgid "Parse cli arguments and construct a dictionary that will be passed to Package.do_install API"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:304
-# 4e202aebcf9d40d9adf2e62c04278706
 msgid "spack.cmd.license module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.apache2_mit_spdx:1
-# f055657fe43244aabff3e521483760c5
 msgid "Spack's license identifier"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.git:1
-# 52b2fed601b647a1b92218782efa0a7b
 msgid "need the git command to check new files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.lgpl_exceptions:1
-# 7b743eb016194a978037091a3ffc7d75
 msgid "licensed files that can have LGPL language in them so far, just this command -- so it can find LGPL things elsewhere"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.license_lines:1
-# b008d6bcbd4c4965b2595bde3d326ba4
 msgid "SPDX license id must appear in the first <license_lines> lines of a file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.licensed_files:1
-# 719780664c3c491ea1c331e55256fb26
 msgid "regular expressions for licensed files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.list_files:1
-# f72d619e1d0247069a309a9b3cc98515
 msgid "list files in spack that should have license headers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.verify:1
-# c96570ff23a54bedaed6b143589b23da
 msgid "verify that files in spack have the right license header"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:312
-# c9b443bcd866485aadf0fe72f8193ebe
 msgid "spack.cmd.list module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.filter_by_name:1
-# ccfe04e277364681ba7c372bab3f5b57
 msgid "Filters the sequence of packages according to user prescriptions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.filter_by_name:3
-# 6c5465bba2fe49558b6667405e9b07f9
 msgid "sequence of packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.filter_by_name:4
-# fb2391c4e7d4456e942fe721bf4837a5
 msgid "parsed command line arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.filter_by_name:6
-# f7f7787883cd42db9156ae6f41e619cb
 msgid "filtered and sorted list of packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.github_url:1
-# 3773251919944c12b44a0a46e48d57c0
 msgid "Link to a package file on github."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.html:1
-# 58c29bec69e444f18a9adf54fa16755a
 msgid "Print out information on all packages in Sphinx HTML."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.html:3
-# 06748388ed9c4b58b787d3b690c6e866
 msgid "This is intended to be inlined directly into Sphinx documentation. We write HTML instead of RST for speed; generating RST from *all* packages causes the Sphinx build to take forever. Including this as raw HTML is much faster."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.rows_for_ncols:1
-# 27c5f4a477cd45a19a81446cf870b7e3
 msgid "Print out rows in a table with ncols of elts laid out vertically."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.rst:1
-# e5a4da10f6394fd381362b2e7d5c138d
 msgid "Print out information on all packages in restructured text."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of spack.cmd.list.rst_table:1
-# 9c34fc44ef384b07ab30d756bb58f623
 msgid "Print out a RST-style table."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:320
-# f5bc39d10c27458bae15e3aad585ae47
 msgid "spack.cmd.load module"
 msgstr ""
 
@@ -1098,734 +832,581 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/unload.py:docstring of spack.cmd.unload.setup_parser:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/unuse.py:docstring of spack.cmd.unuse.setup_parser:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/use.py:docstring of spack.cmd.use.setup_parser:1
-# 0c742547740a4a8f9f502b308e94381b
-# 928a37bbbb074244b5e86c92f5cd5f11
-# e270c18d62574ef28181de1204cbb225
-# 84374bb03977464684b5171d6606adae
 msgid "Parser is only constructed so that this prints a nice help message with -h."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:328
-# 4ce0962321084484a503cb1704e18fbb
 msgid "spack.cmd.location module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:336
-# 8874c79020e44fd8956964fc5a450913
 msgid "spack.cmd.log\\_parse module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:344
-# cc447ea7adde4aef80a2cc7ca0766823
 msgid "spack.cmd.mirror module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/mirror.py:docstring of spack.cmd.mirror.mirror_add:1
-# a0977646fca54595b5781bd0fa9da45a
 msgid "Add a mirror to Spack."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/mirror.py:docstring of spack.cmd.mirror.mirror_create:1
-# a5e6f529073048aaa7dc95ac6fb4007b
 msgid "Create a directory to be used as a spack mirror, and fill it with package archives."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/mirror.py:docstring of spack.cmd.mirror.mirror_list:1
-# e44857b6d26b4700a044820c06a2d4c8
 msgid "Print out available mirrors to the console."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/mirror.py:docstring of spack.cmd.mirror.mirror_remove:1
-# ca3bba28311f443a880278ce8c679d33
 msgid "Remove a mirror by name."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:352
-# 748e5bf7920c40eb826736044463fc35
 msgid "spack.cmd.module module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:360
-# 0d5e19213034450bb91b91dff62af990
 msgid "spack.cmd.patch module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:368
-# 513605ee09c84561b6c12f09e0f4377c
 msgid "spack.cmd.pkg module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/pkg.py:docstring of spack.cmd.pkg.pkg_add:1
-# ebed8e2133ea47cabb12e0fd9a65a0c8
 msgid "Add a package to the git stage."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/pkg.py:docstring of spack.cmd.pkg.pkg_added:1
-# af82ca4eca524a04a897a93c5d44b5ea
 msgid "Show packages added since a commit."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/pkg.py:docstring of spack.cmd.pkg.pkg_diff:1
-# 69e988fdf5994518af055ec24b13e9aa
 msgid "Compare packages available in two different git revisions."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/pkg.py:docstring of spack.cmd.pkg.pkg_list:1
-# cdbcce1cc2c8430b9f285d9cf8c8c63c
 msgid "List packages associated with a particular spack git revision."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/pkg.py:docstring of spack.cmd.pkg.pkg_removed:1
-# 012992c437fa46cf9031133555b7aa2a
 msgid "Show packages removed since a commit."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:376
-# 694a0a80cbf14605b397c9a2fb9f54af
 msgid "spack.cmd.providers module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:384
-# b434f355760f4806bebb13a45b9694e5
 msgid "spack.cmd.pydoc module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:392
-# bcd45749d30e45dfab5efc5203b5f556
 msgid "spack.cmd.python module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:400
-# 6b6cf29971fb4589b918d5b8ae9058a5
 msgid "spack.cmd.reindex module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:408
-# 7668a83776604f8faac1383f2eaa21bf
 msgid "spack.cmd.release\\_jobs module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.compute_spec_deps:1
-# e4807bf5109549f8a6984f6562fd0711
 msgid "Computes all the dependencies for the spec(s) and generates a JSON object which provides both a list of unique spec names as well as a comprehensive list of all the edges in the dependency graph.  For example, given a single spec like 'readline@7.0', this function generates the following JSON object:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.compute_spec_deps:51
-# 1eae2583d536422a90c72c09db346ae1
 msgid "The object can be optionally written out to some stream.  This is useful, for example, when we need to concretize and generate the dependencies of a spec in a specific docker container."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:5
-# 6cf2664b27bb437b9e0b91d2f9eba98e
 msgid "Take a set of release specs along with a dictionary describing the"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:2
-# 291eb03e5d9542708aace4651a6815fd
 msgid "available docker containers and what compilers they have, and generate a list of \"stages\", where the jobs in any stage are dependent only on jobs in previous stages.  This allows us to maximize build parallelism within the gitlab-ci framework."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:7
-# 300f6baf76d4494a818e2248a22f9b5d
 msgid "Iterable containing all the specs to build."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:10
-# 017c93561747443f89d7265fcf137633
 msgid "Describes the docker containers available to use for concretizing specs (and also for the gitlab runners to use for building packages).  The schema can be found at \"lib/spack/spack/schema/os_container_mapping.py\""
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:15
-# 399648be16b24f42bf0e7b00cf6ef0fc
 msgid "If provided, this indicates not to use the containers for concretizing the release specs, but rather just assume the current system is in the \"containers\" dictionary.  A SpackError will be raised if the current system is not in that dictionary."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:35
-# 325cc2787026453588303916763cd1d5
 msgid "Returns: A tuple of information objects describing the specs, dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:23
-# e8df377cd382432ba44f37c300588f8f
 msgid "and stages:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:28
-# 206eaa4b0d3a4a4caae20c38adb41328
 msgid "spec_labels: A dictionary mapping the spec labels which are made of"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:26
-# ef115282b65749d6bf7f1a055b6b74e1
 msgid "(pkg-name/hash-prefix), to objects containing \"rootSpec\" and \"spec\" keys.  The root spec is the spec of which this spec is a dependency and the spec is the formatted spec string for this spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:32
-# e289556e4a5c49598ab31db950129fe2
 msgid "deps: A dictionary where the keys should also have appeared as keys in"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:31
-# 231d90b5bb1649aea9693622f1ad4cc0
 msgid "the spec_labels dictionary, and the values are the set of dependencies for that spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:35
-# 5826b58b88964c57a83a2c1ef68b6383
 msgid "stages: An ordered list of sets, each of which contains all the jobs to"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/release_jobs.py:docstring of spack.cmd.release_jobs.stage_spec_jobs:35
-# e01a0004369e4836a4ee942877d61117
 msgid "built in that stage.  The jobs are expressed in the same format as the keys in the spec_labels and deps objects."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:416
-# 7f2361876f5f4d92a37097376e713bac
 msgid "spack.cmd.remove module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:424
-# c9cfef23da604d749e5ab01e1d632160
 msgid "spack.cmd.repo module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring of spack.cmd.repo.repo_add:1
-# e434fc138a434c0caa44bf24e82098c3
 msgid "Add a package source to Spack's configuration."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring of spack.cmd.repo.repo_create:1
-# a54d9449e5404af7a0609408460c815d
 msgid "Create a new package repository."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring of spack.cmd.repo.repo_list:1
-# 50650d14859d479e8f60ffcecefa8a9e
 msgid "Show registered repositories and their namespaces."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring of spack.cmd.repo.repo_remove:1
-# 655e824b52364b2c8101130bbdbeed1e
 msgid "Remove a repository from Spack's configuration."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:432
-# 8e286c42f8c94052952ca93eb684d4e2
 msgid "spack.cmd.resource module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/resource.py:docstring of spack.cmd.resource.resource_list:1
-# 592cad58362b4cf59f972301f03d9518
 msgid "list all resources known to spack (currently just patches)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/resource.py:docstring of spack.cmd.resource.resource_show:1
-# 9fac7f7b97634dc1810521b9674080a8
 msgid "show a resource, identified by its checksum"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:440
-# 0c23fc21822b4da1a0847f769d8608e7
 msgid "spack.cmd.restage module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:448
-# f852860edbaf45edbbc0d2a49fe022d1
 msgid "spack.cmd.setup module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:456
-# 75b58fca327441d1aa264d19f9a2378e
 msgid "spack.cmd.spec module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:464
-# 9619deaa154c436cb75edb9ada38deba
 msgid "spack.cmd.stage module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:472
-# 04e53100b33c49a184ce3654c5d5f732
 msgid "spack.cmd.test module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/test.py:docstring of spack.cmd.test.do_list:1
-# cc8e97f4790545d1b9d1b8906db5795e
 msgid "Print a lists of tests than what pytest offers."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:480
-# fd72c637ac4c4e6d9479e3e9ce18dee8
 msgid "spack.cmd.uninstall module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.dependent_environments:1
-# a77d04016aa34cb5b38dc169b2f960d2
 msgid "Map each spec to environments that depend on it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.dependent_environments:3
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.installed_dependents:3
-# ad20819005aa464eb772a80a1f0889ab
-# d0974b15882f4e30a2d4aa908477351c
 msgid "list of Specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.dependent_environments:6
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.inactive_dependent_environments:7
-# c0539da8a9034c75ae18f0d54e564e65
-# e57bd455703e44969ce0960088a516eb
 msgid "mapping from spec to lists of dependent Environments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.do_uninstall:1
-# 2f6ccf339653419c89290b69f0b4e518
 msgid "Uninstalls all the specs in a list."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.do_uninstall:3
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.find_matching_specs:4
-# d7463c059c0643aea0ff04eff7dd2c65
-# a8bf0023196945a3a4c4f8dc4c4563c4
 msgid "active environment, or ``None`` if there is not one"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.do_uninstall:5
-# 43cc4bd8330140a09502edfed75062fc
 msgid "list of specs to be uninstalled"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.do_uninstall:7
-# c53c4aa343a74875a06a66429156e9b2
 msgid "force uninstallation (boolean)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.inactive_dependent_environments:1
-# 1918409c9d71407a90672485ce4e89d0
 msgid "Strip the active environment from a dependent map."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.inactive_dependent_environments:3
-# 8a253f58ae794fc5b8c33b501b88e1a9
 msgid "Take the output of ``dependent_environment()`` and remove the active environment from all mappings.  Remove any specs in the map that now have no dependent environments.  Return the result."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.inactive_dependent_environments:9
-# 158e1589cc854878860b37dade390b1e
 msgid "mapping from spec to lists of *inactive* dependent Environments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.installed_dependents:1
-# 3173e708b03f4bbfa416a3cc8edb3abf
 msgid "Map each spec to a list of its installed dependents."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.installed_dependents:5
-# 158edaad23bb469a94b2396d77b0e067
 msgid "the active environment, or None"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.installed_dependents:8
-# ea23872992134dd8a0b563d10c1a6dc9
 msgid "two mappings: one from specs to their dependent     environments in the active environment (or global scope if     there is no environment), and one from specs to their     dependents in *inactive* environments (empty if there is no     environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.installed_dependents:13
-# bb4cdcbefb484e5da2f76aceca169437
 msgid "two mappings: one from specs to their dependent"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring of spack.cmd.uninstall.installed_dependents:11
-# 16a67968efba4461b4dd95f3dfe54056
 msgid "environments in the active environment (or global scope if there is no environment), and one from specs to their dependents in *inactive* environments (empty if there is no environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:488
-# 076ae8356c0147c2971368816ea417d9
 msgid "spack.cmd.unload module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:496
-# efe2d527037d4848becbe33b05b07936
 msgid "spack.cmd.unuse module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:504
-# 0b5741288435443b8fb8a5cd1a4e430c
 msgid "spack.cmd.upload\\_s3 module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/upload_s3.py:docstring of spack.cmd.upload_s3.update_index:1
-# ad5cbd7bae3b4ed2970ea99a164baafa
 msgid "Update the index of an s3 buildcache"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/upload_s3.py:docstring of spack.cmd.upload_s3.upload_spec:1
-# b842c3bf08d14bcc9422d551d190522f
 msgid "Upload a spec to s3 bucket"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:512
-# c54d385c52d24c61b0b3640ab116b955
 msgid "spack.cmd.url module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.name_parsed_correctly:1
-# a87464cb732343689818989ef00fc8b5
 msgid "Determine if the name of a package was correctly parsed."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.name_parsed_correctly:3
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.url_list_parsing:10
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.version_parsed_correctly:3
-# f66710001db1468ca16f10e8132db35f
-# 73afc0fc3f8e440395fdc38da34fe8e3
-# cc7867d9b7e444a09f527dd2a26cded7
 msgid "The Spack package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.name_parsed_correctly:5
-# 4b7df2bebb374ff9ad8496e3c201dfe4
 msgid "The name that was extracted from the URL"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.name_parsed_correctly:8
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.version_parsed_correctly:8
-# 2e27d621f8a54a2aba5270169218901c
-# bbda82cedb354a4a8ca9792806a29dc2
 msgid "True if the name was correctly parsed, else False"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.print_name_and_version:1
-# b62f77fa18e5497c872e76aaec5489ae
 msgid "Prints a URL. Underlines the detected name with dashes and the detected version with tildes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.print_name_and_version:4
-# 324278f241d04c62947672e639558b41
 msgid "The url to parse"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.remove_separators:1
-# dce1b0e95a9f4137a3d34ca123cbee86
 msgid "Removes separator characters ('.', '_', and '-') from a version."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.remove_separators:3
-# d7811d047a104bc6a5947aae17f55f23
 msgid "A version like 1.2.3 may be displayed as 1_2_3 in the URL. Make sure 1.2.3, 1-2-3, 1_2_3, and 123 are considered equal. Unfortunately, this also means that 1.23 and 12.3 are equal."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.remove_separators:7
-# c844b41391b24321ac42b5e9447e12f0
 msgid "A version"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.remove_separators:10
-# 4960a5ad0df341feb8e15c5073395f1a
 msgid "The version with all separator characters removed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.url_list_parsing:1
-# 96e5d4ba11f74a1ea070faccb1ba7a5d
 msgid "Helper function for :func:`url_list`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.url_list_parsing:3
-# d022354513d547bea4f6c956cd1706c7
 msgid "The arguments given to ``spack url list``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.url_list_parsing:5
-# 2429f8928c774359ae4b83b1e41a1ef9
 msgid "List of URLs that have already been added"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.url_list_parsing:7
-# 229c47f49ab34ce7b6d9e52299a3cbf0
 msgid "A URL to potentially add to ``urls`` depending on ``args``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.url_list_parsing:13
-# 0df842137c3247a1bd680e8385f82ff8
 msgid "The updated set of ``urls``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.version_parsed_correctly:1
-# fec3821408de44f6891dc1084e673fd4
 msgid "Determine if the version of a package was correctly parsed."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring of spack.cmd.url.version_parsed_correctly:5
-# 7be046c0812b4e928e1cf5b480bd0e88
 msgid "The version that was extracted from the URL"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:520
-# 4d0953a7e38d460797dc8b5676cdd376
 msgid "spack.cmd.use module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:528
-# 174a692f64e74336bde154576ba95291
 msgid "spack.cmd.versions module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:536
-# 7ba98865425748198c29150ca96c4e14
 msgid "spack.cmd.view module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:1
-# 063c43275a3a49f783831c0f9c6f2b9f
 msgid "Produce a \"view\" of a Spack DAG."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:3
-# 56fae6de1ab2445ca2717ea6c6c97f9d
 msgid "A \"view\" is file hierarchy representing the union of a number of Spack-installed package file hierarchies.  The union is formed from:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:6
-# 28395bce52504ef7b6d5a85377fd298c
 msgid "specs resolved from the package names given by the user (the seeds)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:8
-# b3baa0f0d3964d3e9f8d4f460e242f7d
 msgid "all dependencies of the seeds unless user specifies `--no-dependencies`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:10
-# 59ce2c9a19ba4621b3085e99210e4a73
 msgid "less any specs with names matching the regular expressions given by `--exclude`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:13
-# e513ae844ca44e86b1e7463e8ae52aba
 msgid "The `view` can be built and tore down via a number of methods (the \"actions\"):"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:15
-# 32391edc8fb74a4282214e6007697e48
 msgid "symlink :: a file system view which is a directory hierarchy that is the union of the hierarchies of the installed packages in the DAG where installed files are referenced via symlinks."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:19
-# 68a3ca2eeb3f4f8b84b18cfcba128706
 msgid "hardlink :: like the symlink view but hardlinks are used."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:21
-# 975afed6087f414ea71d24d093459a28
 msgid "statlink :: a view producing a status report of a symlink or hardlink view."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:24
-# b4cc1c8a6994461e9d7a84a97ca1a66e
 msgid "The file system view concept is imspired by Nix, implemented by brett.viren@gmail.com ca 2016."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view:27
-# 3919c46d9ec74c39ac67e75ac7c3150a
 msgid "All operations on views are performed via proxy objects such as YamlFilesystemView."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view.disambiguate_in_view:1
-# 7a738764972f4643967415a68bab1041
 msgid "When dealing with querying actions (remove/status) we only need to disambiguate among specs in the view"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of spack.cmd.view.view:1
-# a5fc87a5128f4e75a00341775690c834
 msgid "Produce a view of a set of packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:545
-# 751d04ffa3dd458ebcbf179f9d444d4b
 msgid "Module contents"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.all_commands:1
-# 2d9e2a54a96440abb1b5df356b6060c4
 msgid "Get a sorted list of all spack commands."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.all_commands:3
-# b594513b67c84b1681d2f481a30ff7bf
 msgid "This will list the lib/spack/spack/cmd directory and find the commands there to construct the list.  It does not actually import the python files -- just gets the names."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.cmd_name:1
-# e153ae2ba8ab40eab7b2161d5dd731a5
 msgid "Convert module name (with ``_``) to command name (with ``-``)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.disambiguate_spec:1
-# 78db1d2a50b6445fb7d696ecab42b640
 msgid "Given a spec, figure out which installed package it refers to."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.disambiguate_spec:3
-# eebcb085a1874c8f9291471cd2eebf46
 msgid "a spec to disambiguate"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.disambiguate_spec:5
-# 7cb2d90644b0426484679158e9983d93
 msgid "a spack environment, if one is active, or None if no environment is active"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:1
-# febcca9858cd43839d96773a626867e6
 msgid "Display human readable specs with customizable formatting."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:3
-# b1fda41c67974671ba3b0425bd642a42
 msgid "Prints the supplied specs to the screen, formatted according to the arguments provided."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:6
-# c98c11fb2f3044ef946952055fd8bcbf
 msgid "Specs are grouped by architecture and compiler, and columnized if possible.  There are three possible \"modes\":"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:9
-# 5d4b83a1f93b4c9cabd002d40d138840
 msgid "``short`` (default): short specs with name and version, columnized"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:10
-# 0f505f0522554c95aa7331eb9071a542
 msgid "``paths``: Two columns: one for specs, one for paths"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:11
-# f9cccb4c9a8b492aaceb7956871327a7
 msgid "``deps``: Dependency-tree style, like ``spack spec``; can get long"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:13
-# 85a8c18096a841c0a7a74ef711839ac8
 msgid "Options can add more information to the default display. Options can be provided either as keyword arguments or as an argparse namespace. Keyword arguments take precedence over settings in the argparse namespace."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:18
-# 1d2f077a382044fa9bb01649438a4e5d
 msgid "the specs to display"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:20
-# bc027e41275d4f208de1cf2ea6f5a5c6
 msgid "namespace containing formatting arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:0
-# 18df074659cc4ae6b633e1f23ddcc93c
 msgid "Keyword Arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:24
-# 8d38c86373df418da6c4872b3a1f7340
 msgid "Either 'short', 'paths', or 'deps'"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:26
-# b2ee6e79b5694301bb664de80da12c38
 msgid "Display short hashes with specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:28
-# 072294f004e34663a0cf5c953a1e7cc9
 msgid "Display full hashes with specs (supersedes ``long``)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:30
-# c2b03b86a81e481480dadb8fc4dfc53f
 msgid "Print namespaces along with names"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:32
-# 8c8b25fae88f438e95ba1b3a34108284
 msgid "Show compiler flags with specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:34
-# e6269f9c3c484d7bb54ff530d94b73bc
 msgid "Show variants with specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:36
-# 4bdd60455d544a4c8c3c5c867f2b0ede
 msgid "indent each line this much"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:38
-# 14a7b64b3c844e28878ffba67a69cae8
 msgid "dictionary mappng specs to decorators"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:40
-# 48f88c373f3c4290a4c1f8a0599b67a8
 msgid "called at start of arch/compiler sections"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.display_specs:42
-# 145a6843256143bdb76af223684cbd37
 msgid "show headers even when arch/compiler aren't defined"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.elide_list:1
-# 439f338b5b934831b32cec5bb5266032
 msgid "Takes a long list and limits it to a smaller number of elements, replacing intervening elements with '...'.  For example::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.elide_list:6
-# 30a8846ae68e44c2b83862432c6d6fae
 msgid "gives::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.extant_file:1
-# a3a7ed5a271a45339f407c7ab95e1140
 msgid "Argparse type for files that exist."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.get_command:1
-# d61b94f4e22a427481e398306475e5cc
 msgid "Imports the command's function from a module and returns it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.get_command:3
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.get_module:3
-# d6ddf1464e80434a9f820846807369b7
-# 172d166b238f4bf18cfe6667b96f5cce
 msgid "name of the command for which to get a module (contains ``-``, not ``_``)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.get_module:1
-# c8689fe37e4843eea18ca9ef20ff8080
 msgid "Imports the module for a particular command name and returns it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.parse_specs:1
-# 17e0fe24da604ed0854109fa2bfcc6f0
 msgid "Convenience function for parsing arguments from specs.  Handles common exceptions and dies if there are errors."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.python_name:1
-# 24ddb10076cb4d5bb1d345a0b6648297
 msgid "Convert ``-`` to ``_`` in command name, to make a valid identifier."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.remove_options:1
-# bc2d7e4407de4670844c92c6fd0bc273
 msgid "Remove some options from a parser."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring of spack.cmd.spack_is_git_repo:1
-# 8c0d539e1d3b4f7ead164de623666154
 msgid "Ensure that this instance of Spack is a git clone."
 msgstr ""
 

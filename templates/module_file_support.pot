@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,625 +18,499 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:10
 #: ../spack/lib/spack/docs/module_file_support.rst:114
-# a3d97aa2b2374046be7dee13525da536
-# 343c4c981d18469f892e1982a7f1c2cc
 msgid "Modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:12
-# 1bd19f0c3b99418eb8e4fa02750c0266
 msgid "The use of module systems to manage user environment in a controlled way is a common practice at HPC centers that is often embraced also by individual programmers on their development machines. To support this common practice Spack integrates with `Environment Modules <http://modules.sourceforge.net/>`_ ,  `LMod <http://lmod.readthedocs.io/en/latest/>`_ and `Dotkit <https://computing.llnl.gov/?set=jobs&page=dotkit>`_ by providing post-install hooks that generate module files and commands to manipulate them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:22
-# 3b37de767a70465c82ab887e0aeeeeb7
 msgid "If your machine does not already have a module system installed, we advise you to use either Environment Modules or LMod. See :ref:`InstallEnvironmentModules` for more details."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:30
-# fcbe2fbfa0af43019740fa2d7b1d381b
 msgid "Using module files via Spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:32
-# 6bb95f47000c4e809eebc5d525651611
 msgid "If you have installed a supported module system either manually or through ``spack bootstrap``, you should be able to run either ``module avail`` or ``use -l spack`` to see what module files have been installed.  Here is sample output of those programs, showing lots of installed packages:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:57
-# 84604e3c0fa0452890d3528294c33f8b
 msgid "The names should look familiar, as they resemble the output from ``spack find``. You *can* use the modules here directly.  For example, you could type either of these commands to load the ``cmake`` module:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:69
-# 5b7e242ff4fd4465bb338272eb7a5641
 msgid "Neither of these is particularly pretty, easy to remember, or easy to type. Luckily, Spack has its own interface for using modules and dotkits."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:74
-# edf2d573444d42229c6dbf8dd73edf33
 msgid "Shell support"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:76
-# fc0c767ffdda45a3b2874299ec9b3b4d
 msgid "To enable additional Spack commands for loading and unloading module files, and to add the correct path to ``MODULEPATH``,  you need to source the appropriate setup file in the ``$SPACK_ROOT/share/spack`` directory. This will activate shell support for the commands that need it. For ``bash``, ``ksh`` or ``zsh`` users:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:85
-# 9df1c8b97dae41fa87dfd396149bccad
 msgid "For ``csh`` and ``tcsh`` instead:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:92
-# 4d96c28d24f141cbacd6b30a864c2ddc
 msgid "Note that in the latter case it is necessary to explicitly set ``SPACK_ROOT`` before sourcing the setup file (you will get a meaningful error message if you don't)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:96
-# 718172bccc58450aa3f2183b5089f0af
 msgid "When ``bash`` and ``ksh`` users update their environment with ``setup-env.sh``, it will check for spack-installed environment modules and add the ``module`` command to their environment; This only occurs if the module command is not already available. You can install ``environment-modules`` with ``spack bootstrap`` as described in :ref:`InstallEnvironmentModules`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:98
-# b41e8b1026944302bfb6f78cfc20cdef
 msgid "Finally, if you want to have Spack's shell support available on the command line at any login you can put this source line in one of the files that are sourced at startup (like ``.profile``, ``.bashrc`` or ``.cshrc``). Be aware though that the startup time may be slightly increased because of that."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:108
-# a2fce6a298724a709c23e823058cb55b
 msgid "``spack load / unload``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:110
-# e6956bb73bca48e4a8baea4ff880a562
 msgid "Once you have shell support enabled you can use the same spec syntax you're used to:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:114
-# 3050c9e3271749af84813d5cfb303d2e
 msgid "Dotkit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:116
-# 77fa75e8ae424d9ebca4f7e1d806a869
 msgid "``spack load <spec>``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:116
-# 787e5afe17624345b0cc98d390821234
 msgid "``spack use <spec>``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:117
-# 56499b754c044ada9d1cc6edbc0555b5
 msgid "``spack unload <spec>``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:117
-# 641118a24b814b9db2fecb7ff49e9db5
 msgid "``spack unuse <spec>``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:120
-# b9feb0ab65054819bd52b316a34574bc
 msgid "And you can use the same shortened names you use everywhere else in Spack."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:123
-# 926ca2864dd844a8aed2f9439a3b9d60
 msgid "For example, if you are using dotkit, this will add the ``mpich`` package built with ``gcc`` to your path:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:137
-# 6bff089be98b4149a33f30418196eb03
 msgid "Or, similarly if you are using modules, you could type:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:143
-# d3db3d2e01314a5fa54a45d0d2bd2cc2
 msgid "These commands will add appropriate directories to your ``PATH``, ``MANPATH``, ``CPATH``, and ``LD_LIBRARY_PATH``.  When you no longer want to use a package, you can type unload or unuse similarly:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:154
-# 293c5494184a4b71a7ddfb72cd62948e
 msgid "These ``use``, ``unuse``, ``load``, and ``unload`` subcommands are only available if you have enabled Spack's shell support *and* you have dotkit or modules installed on your machine."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:160
-# 52bff170d9f34246bf237b67cdcda939
 msgid "Ambiguous module names"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:162
-# 487ef8cc461b4edeafe35be8602998fc
 msgid "If a spec used with load/unload or use/unuse is ambiguous (i.e. more than one installed package matches it), then Spack will warn you:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:172
-# 31caeb2bec654c41b16029731dd01fe6
 msgid "You can either type the ``spack load`` command again with a fully qualified argument, or you can add just enough extra constraints to identify one package.  For example, above, the key differentiator is that one ``libelf`` is built with the Intel compiler, while the other used ``gcc``.  You could therefore just type:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:182
-# 2e6fd1290b8d4a3c975d304fd6664b17
 msgid "To identify just the one built with the Intel compiler."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:190
-# 1b501abe20ca4686b25b43167106ef7d
 msgid "``spack module tcl loads``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:192
-# 85545d9a74d74473bf07f3034ae70e59
 msgid "In some cases, it is desirable to load not just a module, but also all the modules it depends on.  This is not required for most modules because Spack builds binaries with RPATH support.  However, not all packages use RPATH to find their dependencies: this can be true in particular for Python extensions, which are currently *not* built with RPATH."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:199
-# f3b1fd5518c24d3db31b6feb48e55a03
 msgid "Scripts to load modules recursively may be made with the command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:205
-# 13227dab9a784a0aa1d0e365924b510e
 msgid "An equivalent alternative using `process substitution <http://tldp.org/LDP/abs/html/process-sub.html>`_ is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:214
-# d7e52775e3c04f38951c43d13c35006b
 msgid "Module Commands for Shell Scripts"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:216
-# 43ad3900e7c941299f8b091e6584c744
 msgid "Although Spack is flexible, the ``module`` command is much faster. This could become an issue when emitting a series of ``spack load`` commands inside a shell script.  By adding the ``--shell`` flag, ``spack module tcl find`` may also be used to generate code that can be cut-and-pasted into a shell script.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:256
-# 8f3b3df66b774c318adcdde1405cb4bd
 msgid "The script may be further edited by removing unnecessary modules."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:261
-# f630d2b610a14e99ac37f602f3aaf40b
 msgid "Module Prefixes"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:263
-# 14d32f03bde54f72b4d4244be37f6464
 msgid "On some systems, modules are automatically prefixed with a certain string; ``spack module tcl loads`` needs to know about that prefix when it issues ``module load`` commands.  Add the ``--prefix`` option to your ``spack module tcl loads`` commands if this is necessary."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:268
-# db8f0238365b45bf9cebd0da71085f75
 msgid "For example, consider the following on one system:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:285
-# e3c02535faa448b99ad98c54bf4f50e7
 msgid "Module file customization"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:287
-# cd5a28f830b44255b4114b3704ceb72a
 msgid "Module files are generated by post-install hooks after the successful installation of a package. The table below summarizes the essential information associated with the different file formats that can be generated by Spack:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:293
-# c47af1a2c0de475396458ae834284058
 msgid "**Hook name**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:293
-# 6d379475c1ad4f568a282d90e3f6b4fb
 msgid "**Default root directory**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:293
-# 86b10e4d614043e5b4ba51c3688583ff
 msgid "**Default template file**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:293
-# 1c98c2bea967401ba8cdca46bdcaafd7
 msgid "**Compatible tools**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:295
-# 386f4f354be449349d0e59db6069ac61
 msgid "**Dotkit**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:295
-# 5435da92c6c843ab86c49f6f5ccc31fd
 msgid "``dotkit``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:295
-# aa755421efcf4025b6efab6f5679c661
 msgid "share/spack/dotkit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:295
-# d7d8ed9bb535454e82bcce7e00be3392
 msgid "share/spack/templates/modules/modulefile.dk"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:295
-# 68ac4f2be59544d09f14e1f5b23d47ee
 msgid "DotKit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:297
-# d0debc399f4c45d4a736e9fe5b899676
 msgid "**TCL - Non-Hierarchical**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:297
-# 8079dc0299354c69b54d7521a381f325
 msgid "``tcl``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:297
-# a902408fe8834b72ae730ff50748dbb2
 msgid "share/spack/modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:297
-# b78279acade544d3b0a37c70e6ebde74
 msgid "share/spack/templates/modules/modulefile.tcl"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:297
-# bcf31a488f1d426187f8ab2e987126f4
 msgid "Env. Modules/LMod"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:299
-# bdcc6a0648074cf8aa0f5a12f6614aac
 msgid "**Lua - Hierarchical**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:299
-# 8dcfa5ff554d4c30a923307dff32a6fb
 msgid "``lmod``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:299
-# 9937c713a47941d2a138a313aa045ec4
 msgid "share/spack/lmod"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:299
-# dd0804c45bfe430281a747724f502aa9
 msgid "share/spack/templates/modules/modulefile.lua"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:299
-# 9fcbf6824a5e45fa8eeac4583ba36e15
 msgid "LMod"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:303
-# 4623576d5d654c80a07ef0c7f5af9823
 msgid "Spack ships with sensible defaults for the generation of module files, but you can customize many aspects of it to accommodate package or site specific needs. In general you can override or extend the default behavior by:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:307
-# 9c8a64673e624ea1b435d2b22d2533e3
 msgid "overriding certain callback APIs in the Python packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:308
-# 981342108d264d4f849758009a12bd44
 msgid "writing specific rules in the ``modules.yaml`` configuration file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:309
-# 82cc807eaa84441289434d3503979e7d
 msgid "writing your own templates to override or extend the defaults"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:311
-# a63d823d824746708197f7a172b8e071
 msgid "The former method let you express changes in the run-time environment that are needed to use the installed software properly, e.g. injecting variables from language interpreters into their extensions. The latter two instead permit to fine tune the filesystem layout, content and creation of module files to meet site specific conventions."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:319
-# a17c6ebab77d43f8b0840f1d28185918
 msgid "Override API calls in ``package.py``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:321
-# c32fe5dbd53d445c80c18e26c68e4611
 msgid "There are two methods that you can override in any ``package.py`` to affect the content of the module files generated by Spack. The first one:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:330
-# fc0ab84b7df345fb8df6f39d853d2f54
 msgid "can alter the content of the module file associated with the same package where it is overridden. The second method:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:339
-# 52d83857e0564072a269a6c5464b0d0d
 msgid "can instead inject run-time environment modifications in the module files of packages that depend on it. In both cases you need to fill ``run_env`` with the desired list of environment modifications."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:365
-# b2f7365303d040eb8fb8102fa662cdaf
 msgid "The ``r`` package and callback APIs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:345
-# 69c75bd855b5415abe702be67d957390
 msgid "An example in which it is crucial to override both methods is given by the ``r`` package. This package installs libraries and headers in non-standard locations and it is possible to prepend the appropriate directory to the corresponding environment variables:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:351
-# 3afbc567a24f4d9ca3c5bd6348b0fe90
 msgid "LIBRARY_PATH"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:351
 #: ../spack/lib/spack/docs/module_file_support.rst:352
-# 0d2f9e51f59e4712a68d03fc2687e13d
-# a835a024515c4dd9b9f13dd708cf0462
 msgid "``self.prefix/rlib/R/lib``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:352
-# 0ee26d5ddfd54178b914ac9706f9f885
 msgid "LD_LIBRARY_PATH"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:353
-# a6111cbba86442eaaabe0852e690fc27
 msgid "CPATH"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:353
-# 0d9e3b76491443b0a22c44266c77b565
 msgid "``self.prefix/rlib/R/include``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:356
-# 81cb1a94a6b94ee28e3f1fb0bbc8f726
 msgid "with the following snippet:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:361
-# 45ba18b6e2514cd6a6cac15f1d1fe10b
 msgid "The ``r`` package also knows which environment variable should be modified to make language extensions provided by other packages available, and modifies it appropriately in the override of the second method:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:372
-# 14b7df1d0c3e48c0802cd8b881af48c0
 msgid "Write a configuration file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:374
-# b9c4ab1d561d4b87a1d48f3a4c922dd9
 msgid "The configuration files that control module generation behavior are named ``modules.yaml``. The default configuration:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:380
-# d49c4077822745bab10de648f702c051
 msgid "activates the hooks to generate ``tcl`` and ``dotkit`` module files and inspects the installation folder of each package for the presence of a set of subdirectories (``bin``, ``man``, ``share/man``, etc.). If any is found its full path is prepended to the environment variables listed below the folder name."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:387
-# 5c96bbd6266341279be7baf291332b1c
 msgid "Activate other hooks"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:389
-# 3e3116f4332d48c2a019fbff49878cd3
 msgid "Any other module file generator shipped with Spack can be activated adding it to the list under the ``enable`` key in the module file. Currently the only generator that is not active by default is ``lmod``, which produces hierarchical lua module files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:393
-# 9928a15f43c949ec88f4af279b1eea09
 msgid "Each module system can then be configured separately. In fact, you should list configuration options that affect a particular type of module files under a top level key corresponding to the generator being customized:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:411
-# 1773824daab0401ea767393824509f7c
 msgid "In general, the configuration options that you can use in ``modules.yaml`` will either change the layout of the module files on the filesystem, or they will affect their content. For the latter point it is possible to use anonymous specs to fine tune the set of packages on which the modifications should be applied."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:420
-# e6b3d9ef08ed404986d338a5dbaf1f38
 msgid "Selection by anonymous specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:422
-# 8ceba52846754638b1d3bdccccbd28da
 msgid "In the configuration file you can use *anonymous specs* (i.e. specs that **are not required to have a root package** and are thus used just to express constraints) to apply certain modifications on a selected set of the installed software. For instance, in the snippet below:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:454
-# 024f648a7f074960bc2b2a8313847ef7
 msgid "you are instructing Spack to set the environment variable ``BAR=bar`` for every module, unless the associated spec satisfies ``^openmpi`` in which case ``BAR=baz``. In addition in any spec that satisfies ``zlib`` the value ``foo`` will be prepended to ``LD_LIBRARY_PATH`` and in any spec that satisfies ``zlib%gcc@4.8`` the variable ``FOOBAR`` will be unset."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:463
-# 3efae378550d40cb83004aba75464561
 msgid "Order does matter"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:462
-# a23892fb2fda4bceb019929814757d4a
 msgid "The modifications associated with the ``all`` keyword are always evaluated first, no matter where they appear in the configuration file. All the other spec constraints are instead evaluated top to bottom."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:468
-# 5e793f8886c044b088e515b9e573851b
 msgid "Blacklist or whitelist specific module files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:470
-# 277e6a65aa934f55826b791bc4b03375
 msgid "You can use anonymous specs also to prevent module files from being written or to force them to be written. Consider the case where you want to hide from users all the boilerplate software that you had to build in order to bootstrap a new compiler. Suppose for instance that ``gcc@4.4.7`` is the compiler provided by your system. If you write a configuration file like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:483
-# 30cd2ca93f3b4daeb1c5f4e267611725
 msgid "you will prevent the generation of module files for any package that is compiled with ``gcc@4.4.7``, with the only exception of any ``gcc`` or any ``llvm`` installation."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:492
-# 02a78679e60e45b6abd720329239e1e6
 msgid "Customize the naming scheme"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:494
-# 131312622fd148d18def3491804fc79b
 msgid "The names of environment modules generated by spack are not always easy to fully comprehend due to the long hash in the name. There are two module configuration options to help with that. The first is a global setting to adjust the hash length. It can be set anywhere from 0 to 32 and has a default length of 7. This is the representation of the hash in the module file name and does not affect the size of the package hash. Be aware that the smaller the hash length the more likely naming conflicts will occur. The following snippet shows how to set hash length in the module file names:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:509
-# ebc8c996878347989300298ebcaf9f72
 msgid "To help make module names more readable, and to help alleviate name conflicts with a short hash, one can use the ``suffixes`` option in the modules configuration file. This option will add strings to modules that match a spec. For instance, the following config options,"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:523
-# 9f37659271b84f59ba3d2f206a6aa9fc
 msgid "will add a ``python-2.7.12`` version string to any packages compiled with python matching the spec, ``python@2.7.12``. This is useful to know which version of python a set of python extensions is associated with. Likewise, the ``openblas`` string is attached to any program that has openblas in the spec, most likely via the ``+blas`` variant specification."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:547
-# 5517fff601d54ee58d9918dba33f5ff5
 msgid "TCL module files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:531
-# eadd8c1851cf48f4a7996a61888a53ed
 msgid "A modification that is specific to ``tcl`` module files is the possibility to change the naming scheme of modules."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:544
-# e1d0a6594e274b8a8005a13c1c232080
 msgid "will create module files that will conflict with ``intel/14.0.1`` and with the base directory of the same module, effectively preventing the possibility to load two or more versions of the same software at the same time. The tokens that are available for use in this directive are the same understood by the ``Spec.format`` method."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:573
-# 90e058b638c645abb190e1256a480c12
 msgid "LMod hierarchical module files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:553
-# 869d41ae5f8a4284a4863eb03ac747d2
 msgid "When ``lmod`` is activated Spack will generate a set of hierarchical lua module files that are understood by LMod. The hierarchy will always contain the two layers ``Core`` / ``Compiler`` but can be further extended to any of the virtual dependencies present in Spack. A case that could be useful in practice is for instance:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:571
-# 3aaf8f13980a4ca6ac6794fce6c98367
 msgid "that will generate a hierarchy in which the ``lapack`` and ``mpi`` layer can be switched independently. This allows a site to build the same libraries or applications against different implementations of ``mpi`` and ``lapack``, and let LMod switch safely from one to the other."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:578
-# c2d156479af147c6b040e16b87c77c9b
 msgid "Deep hierarchies and ``lmod spider``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:578
-# 5f7469b14941493b9a8ee643ff10b485
 msgid "For hierarchies that are deeper than three layers ``lmod spider`` may have some issues. See `this discussion on the LMod project <https://github.com/TACC/Lmod/issues/114>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:583
-# 0fdc899f5a334138b3bc9ef15c054554
 msgid "Filter out environment modifications"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:585
-# ff8618a057fb4356b6f69ad39adeaded
 msgid "Modifications to certain environment variables in module files are there by default, for instance because they are generated by prefix inspections. If you want to prevent modifications to some environment variables, you can do so by using the environment blacklist:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:599
-# 061713dc2766417faf47e0b8e3a49aca
 msgid "The configuration above will generate dotkit module files that will not contain modifications to either ``CPATH`` or ``LIBRARY_PATH`` and environment module files that instead will contain these modifications."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:608
-# 95b32a6e95ee4f31a28501e206fd201c
 msgid "Autoload dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:610
-# 84088d1c894e4cd79a82b4cd6e51281e
 msgid "In some cases it can be useful to have module files that automatically load their dependencies.  This may be the case for Python extensions, if not activated using ``spack activate``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:621
-# 5f6825d56a5047dbaf113ecc09cf23ee
 msgid "The configuration file above will produce module files that will load their direct dependencies if the package installed depends on ``python``. The allowed values for the ``autoload`` statement are either ``none``, ``direct`` or ``all``.  The default is ``none``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:631
-# 80f2734df56a4adfa9325172559ede89
 msgid "Building external software"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:628
-# 7e728c1f919a4e68b7a57a819c48fc69
 msgid "Setting ``autoload`` to ``direct`` for all packages can be useful when building software outside of a Spack installation that depends on artifacts in that installation.  E.g. (adjust ``lmod`` vs ``tcl`` as appropriate):"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:644
-# 2240d85038ba427c8cbb041c02771ba9
 msgid "TCL prerequisites"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:642
-# 6fb025e88956421381e37750fca301ab
 msgid "In the ``tcl`` section of the configuration file it is possible to use the ``prerequisites`` directive that accepts the same values as ``autoload``. It will produce module files that have a ``prereq`` statement instead of automatically loading other modules."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:649
-# f48431d0359346c28dcc76a02c07ba19
 msgid "Maintaining Module Files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:651
-# a824e7a03ed745c9b36b8a49c8c9d093
 msgid "Each type of module file has a command with the same name associated with it. The actions these commands permit are usually associated with the maintenance of a production environment. Here's, for instance, a sample of the features of the ``spack module tcl`` command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:662
-# 7fbf8f2024e8468eb16f3126df9548ac
 msgid "Refresh the set of modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:664
-# d03596609b0e4253b063650db22b8396
 msgid "The subcommand that regenerates module files to update their content or their layout is ``refresh``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:669
-# e791db83d93246c88bc5ec75c5da3cd0
 msgid "A set of packages can be selected using anonymous specs for the optional ``constraint`` positional argument. Optionally the entire tree can be deleted before regeneration if the change in layout is radical."
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:677
-# ebe23223fe904a5fa77d8e269c915aee
 msgid "Delete module files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:679
-# ef3ae22239064c84bd3a632ed7abeda3
 msgid "If instead what you need is just to delete a few module files, then the right subcommand is ``rm``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:688
-# c8fd4f97a4a54c289bfd2fcc7c01756f
 msgid "We care about your module files!"
 msgstr ""
 
 #: ../spack/lib/spack/docs/module_file_support.rst:686
-# 529053880779404ea0b1916446710a04
 msgid "Every modification done on modules that are already existing will ask for a confirmation by default. If the command is used in a script it is possible though to pass the ``-y`` argument, that will skip this safety measure."
 msgstr ""
 

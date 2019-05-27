@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/llnl.rst:2
-# 23476e6d3d0348bfa11a900ca68865d6
 msgid "llnl package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/llnl.rst:5
-# 396fb611a00947f6b6015977eadf6c41
 msgid "Subpackages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/llnl.rst:12
-# 8f04f6848a4d42d1a5b80e00fa1898a6
 msgid "Module contents"
 msgstr ""
 

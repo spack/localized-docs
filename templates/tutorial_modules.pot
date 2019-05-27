@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,737 +17,590 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:10
-# d083e7ff5d9c4f73895b9a4686258ce1
 msgid "Module Files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:12
-# 575494ba2ed94d43ae83f20536758d5f
 msgid "In this tutorial, we'll introduce a few concepts that are fundamental to the generation of module files with Spack, and we'll guide you through the customization of both module files content and their layout on disk. In the end you should have a clear understanding of:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:17
-# 423e9885bc56479cb6f4c619449bb840
 msgid "What are module files and how they work"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:18
-# a531085fd4c448cd875e8204a5d86dcf
 msgid "How Spack generates them"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:19
-# 70a4341e1c5a4fe8a3dc572182e42405
 msgid "Which commands are available to ease their maintenance"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:20
-# 9933dcaba986408b8477c5cbb3281768
 msgid "How it is possible to customize them in all aspects"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:26
-# e945f6a6a2a34296b201eb7a5e00e639
 msgid "Modules at a glance"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:28
-# ba847a5e705f48d9b6ee3678b885ab2b
 msgid "Let's start by summarizing what module files are and how you can use them to modify your environment. The idea is to give enough information so that people without any previous exposure to them will be able to follow the tutorial later on. We'll also give a high-level view of how module files are generated in Spack. If you are already familiar with these topics you can quickly skim through this section or move directly to :ref:`module_file_tutorial_prerequisites`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:39
-# a435ba610f2a42898a81319793a726a8
 msgid "What are module files?"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:41
-# 3bf50413aae241388e2dac4375a6eb68
 msgid "Module files are an easy way to modify your environment in a controlled manner during a shell session. In general, they contain the information needed to run an application or use a library, and they work in conjunction with a tool that interprets them. Typical module files instruct this tool to modify the environment variables when a module file is loaded:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:69
-# f97f4021486d4935a882a4780bd75516
 msgid "and to undo the modifications when the same module file is unloaded:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:78
-# 4323656efe974365b253c5fa0297bef7
 msgid "Different formats exist for module files, and different tools provide various levels of support for them. Spack can natively generate:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:81
-# a166063f151c4f88819c8fe31716f09b
 msgid "Non-hierarchical module files written in TCL"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:82
-# a41d2fe4e49b48598cb14b4a7af66d56
 msgid "Hierarchical module files written in Lua"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:84
-# 7d89d07af0ad4df0921bb5459a8921a6
 msgid "and can build `environment-modules <http://modules.sourceforge.net/>`_ and `lmod <http://lmod.readthedocs.io/en/latest>`_ as support tools. Which of the formats or tools best suits one's needs depends on each particular use-case. For the sake of illustration, we'll be working on both formats using ``lmod``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:97
-# 6e760a4113574aaba5393237a60c648b
 msgid "Environment modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:92
-# e22dd678ff5f45718f771f93903529a1
 msgid "This is the original tool that provided modules support. Its first version was coded in C in the early '90s and was later substituted by a version completely coded in TCL - the one Spack is distributing. More details on its features are given in the `homepage of the project <http://modules.sourceforge.net/>`_ or in its `github page <https://github.com/cea-hpc/modules>`_. The tool is able to interpret the non-hierarchical TCL modulefiles written by Spack."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:106
-# 81281472e0b742d893283139f2caefbc
 msgid "Lmod"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:100
-# e3bfb537d8f84979b1b7573b9efd5dfc
 msgid "Lmod is a module system written in Lua, designed to easily handle hierarchies of module files. It's a drop-in replacement of Environment Modules and works with both of the module file formats generated by Spack. Despite being fully compatible with Environment Modules there are many features that are unique to Lmod. These features are either `targeted towards safety <http://lmod.readthedocs.io/en/latest/010_user.html#safety-features>`_ or meant to `extend the module system functionality <http://lmod.readthedocs.io/en/latest/010_user.html#module-hierarchy>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:112
-# c21a5c331dd74babad5f23f559c552d0
 msgid "How do we generate module files?"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:114
-# e9a7a253d39641ca91170a7de9bd5013
 msgid "Before  we dive into the hands-on sections it's worth spending a couple of words to explain how module files are generated by Spack. The following diagram provides a high-level view of the process:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:121
-# 0438a7fc468c4187b0798e65da29f752
 msgid "The red dashed line above represents Spack's boundaries, the blue one Spack's dependencies [#f1]_. Module files are generated by combining:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:124
-# 7765da36da264313a656376523ff66a5
 msgid "the configuration details in ``config.yaml`` and ``modules.yaml``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:125
-# 8c79bc8abbab4e7cabd2b7d26b11fffa
 msgid "the information contained in Spack packages (and processed by the module subpackage)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:126
-# c8ba9b481bea4cee98718b11d25bac07
 msgid "a set of template files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:128
-# 6ee45350aba54ec292b68e20cda802bc
 msgid "with `Jinja2 <http://jinja.pocoo.org/docs/2.9/>`_, an external template engine that stamps out each particular module file. As Spack serves very diverse needs this process has many points of customization, and we'll explore most of them in the next sections."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:133
-# 5b643a7bdba04d89b1d7a88a4e927f07
 msgid "Spack vendors its dependencies! This means that Spack comes with a copy of each one of its dependencies, including ``Jinja2``, and is already configured to use them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:140
-# f8b9219d28704235ab6a42096b856386
 msgid "Setup for the tutorial"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:142
-# 52a50077b8024707a0afa759dc411864
 msgid "In order to showcase the capabilities of Spack's module file generation, we need a representative set of software to work with. This set must include different flavors of the same packages installed alongside each other and some :ref:`external packages <sec-external-packages>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:147
-# 5be4901ba26b406ebbb9deba100a08fe
 msgid "The purpose of this setup is not to make our life harder but to demonstrate how Spack can help with similar situations, as they will happen on real HPC clusters. For instance, it's often preferable for Spack to use vendor-provided MPI implementations than to build one itself."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:152
-# a9096df9a55046a5aaae2b25fefeebc2
 msgid "To keep the set of software we're dealing with manageable, we're going to uninstall everything from earlier in the tutorial."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:161
-# a4e306fd58ef4047bf71a58894527030
 msgid "Build a module tool"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:163
-# 66f427fa5ba24a0daa72cae4d1bde8e5
 msgid "The first thing that we need is the module tool. In this case we choose ``lmod`` as it can work with both hierarchical and non-hierarchical module file layouts."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:171
-# f5525c9a991f464f8dfea1fe59336ebd
 msgid "Once the module tool is installed we need to have it available in the current shell. As the installation directories are definitely not easy to remember, we'll employ the command ``spack location`` to retrieve the ``lmod`` prefix directly from Spack:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:180
-# b567633496d94e57973492a79bb56252
 msgid "Now we can re-source the setup file and Spack modules will be put in our module path."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:196
-# ac6e5b73218348cc8cfd873efce4d635
 msgid "Add a new compiler"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:198
-# 3d930477bca94cd29148894fe2d2ff10
 msgid "The second step is to build a recent compiler. On first use, Spack scans the environment and automatically locates the compiler(s) already available on the system. For this tutorial, however, we want to use ``gcc@7.2.0``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:211
-# 6e50197b687941349a3dfe74d17881d5
 msgid "Once ``gcc`` is installed we can use shell support to load it and make it readily available:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:218
-# e230ed6aeecb4daf9ad119cfa0858a89
 msgid "It may not be apparent, but the last command employed the module files generated automatically by Spack. What happens under the hood when you use the ``spack load`` command is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:222
-# ed4da0d4ccf4481bb9941e015538671e
 msgid "the spec passed as argument is translated into a module file name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:223
-# a922365bccac4f79b8a35c86c06a1486
 msgid "the current module tool is used to load that module file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:225
-# 20f316abab5d40a58ae6729c5d639b3d
 msgid "You can use this command to double check:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:233
-# bceb3113dac749f389100267bb102be3
 msgid "Note that the 7-digit hash at the end of the generated module may vary depending on architecture or package version. Now that we have ``gcc@7.2.0`` in ``PATH`` we can finally add it to the list of compilers known to Spack:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:256
-# 4651a25098334876a9be1cca518f7f3c
 msgid "Build the software that will be used in the tutorial"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:258
-# 23b101ce3a8d4b50bd07d230bdd1ab9d
 msgid "Finally, we should use Spack to install the packages used in the examples:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:273
-# 39f34765a50847b590c113d4f1bb6c3f
 msgid "Non-hierarchical module files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:275
-# de73b0295b1244ceb31407c3b2656c1d
 msgid "If you arrived to this point you should have an environment that looks similar to:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:313
-# 761d6799dc8144b1a3678afbad4798c6
 msgid "The non-hierarchical module files that have been generated so far follow :ref:`the default rules for module generation <modules-yaml>`. Taking a look at the ``gcc`` module you'll see, for example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:341
-# e8fa423ef5dc498ca578db15053d7632
 msgid "As expected, a few environment variables representing paths will be modified by the module file according to the default prefix inspection rules."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:347
-# 1b84d0d0fbb2467abb1ddf69d67e370a
 msgid "Filter unwanted modifications to the environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:349
-# 5be608a9b30749d49573f10981438abe
 msgid "Now consider the case that your site has decided that ``CPATH`` and ``LIBRARY_PATH`` modifications should not be present in module files. What you can do to abide by the rules is to create a configuration file ``~/.spack/modules.yaml`` with the following content:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:362
-# f5243e6ad8f940ddbeb5059cfa12bec3
 msgid "Next you should regenerate all the module files:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:390
-# 7895f550fd334e78848cac94ad2d9bc8
 msgid "If you take a look now at the module for ``gcc`` you'll see that the unwanted paths have disappeared:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:416
-# 67dbc1397c4b4de5922e83dd05024994
 msgid "Prevent some module files from being generated"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:418
-# db890717a48846eab4632af54731ea39
 msgid "Another common request at many sites is to avoid exposing software that is only needed as an intermediate step when building a newer stack. Let's try to prevent the generation of module files for anything that is compiled with ``gcc@5.4.0`` (the OS provided compiler)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:423
-# c254dd8c968e48d587d734568c74e509
 msgid "To do this you should add a ``blacklist`` keyword to ``~/.spack/modules.yaml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:436
-# d58263e128634c688a5a48a6d64a990a
 msgid "and regenerate the module files:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:438
-# c5e7809ea44b45d2a6cca05e1cb98f47
 msgid "This time it is convenient to pass the option ``--delete-tree`` to the command that regenerates the module files to instruct it to delete the existing tree and regenerate a new one instead of overwriting the files in the existing directory."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:487
-# 6db6fc0afd5b49e79b52c6cac01de2a8
 msgid "If you look closely you'll see though that we went too far in blacklisting modules: the module for ``gcc@7.2.0`` disappeared as it was bootstrapped with ``gcc@5.4.0``. To specify exceptions to the blacklist rules you can use ``whitelist``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:504
-# a44dc328eb924c6792faaa1d94c58be1
 msgid "``whitelist`` rules always have precedence over ``blacklist`` rules. If you regenerate the modules again:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:512
-# af7b1d8546ac4f46b39d9a662dc99ce7
 msgid "you'll see that now the module for ``gcc@7.2.0`` has reappeared:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:524
-# 54c2c6e690df4475b2c1727d6ca1bc67
 msgid "An additional possibility that you can leverage to unclutter the environment is that of preventing the generation of module files for implicitly installed packages. In this case all one needs to do is to add the following line:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:542
-# 3b5727764097497da67f1ae8a0a3ea6d
 msgid "to ``modules.yaml`` and regenerate the module file tree as above."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:546
-# aa58de4b81f346e5a7b985ec47553527
 msgid "Change module file naming"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:548
-# b258c50371934e3182d365b3d7973ed2
 msgid "The next step in making  module files more user-friendly is to improve their naming scheme. To reduce the length of the hash or remove it altogether you can use the ``hash_length`` keyword in the configuration file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:567
-# e53a5f21f70f42af93af61ec806886eb
 msgid "If you try to regenerate the module files now you will get an error:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:584
-# 3a41ae6fc357495fa8d36590b20029a9
 msgid "We try to check for errors upfront!"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:584
-# ec6206b393424ba986e4d3b5518bc252
 msgid "In Spack we check for errors upfront whenever possible, so don't worry about your module files: as a name clash was detected nothing has been changed on disk."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:587
-# 88b1b6bb53294e74a1e1066f3f791e8e
 msgid "The problem here is that without the hashes the four different flavors of ``netlib-scalapack`` map to the same module file name. We can add suffixes to differentiate them:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:612
-# 52f093f8cf7c4c8a82df211b5e2a9598
 msgid "As you can see it is possible to specify rules that apply only to a restricted set of packages using :ref:`anonymous specs <anonymous_specs>`. Regenerating module files now we obtain:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:640
-# 62cf4663e1c2435bb9b719009694c2b0
 msgid "Finally we can set a ``naming_scheme`` to prevent users from loading modules that refer to different flavors of the same library/application:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:667
-# 9feff517c08c430793dca4265e7a8378
 msgid "The final result should look like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:698
-# e0a16f206abb45b6a9eba95d279b41ae
 msgid "TCL specific directive"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:698
-# 369aa1adb40349f7b552d345c3cebf8a
 msgid "The directives ``naming_scheme`` and ``conflict`` are TCL specific and can't be used in the ``lmod`` section of the configuration file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:703
-# dab436469f8341808ea1f2a6f5d9b305
 msgid "Add custom environment modifications"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:705
-# 37f26e0db437441a8f099e10e67232fd
 msgid "At many sites it is customary to set an environment variable in a package's module file that points to the folder in which the package is installed. You can achieve this with Spack by adding an ``environment`` directive to the configuration file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:737
-# dab2a85cfe1b4a35a6d8497f8ee6c0f0
 msgid "Under the hood Spack uses the :meth:`~spack.spec.Spec.format` API to substitute tokens in either environment variable names or values. There are two caveats though:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:740
-# 6257ad404edf480591b6efb06bf6a4d9
 msgid "The set of allowed tokens in variable names is restricted to ``name``, ``version``, ``compiler``, ``compiler.name``, ``compiler.version``, ``architecture``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:743
-# 63baf2f40cca43e397ce87fc13b12551
 msgid "Any token expanded in a variable name is made uppercase, but other than that case sensitivity is preserved"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:746
-# 2f6e664b1e474fea8b87b6d1c1051004
 msgid "Regenerating the module files results in something like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:775
-# aafb3e077b2d4ae2a6f31b959649329a
 msgid "As you can see, the ``gcc`` module has the environment variable ``GCC_ROOT`` set."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:777
-# ee754c68b44f4612841fad5547c15833
 msgid "Sometimes it's also useful to apply environment modifications selectively and target only certain packages. You can, for instance set the common variables ``CC``, ``CXX``, etc. in the ``gcc`` module file and apply other custom modifications to the ``openmpi`` modules as follows:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:822
-# 1acd992fb859457aa63c4909e084b2ee
 msgid "This time we will be more selective and regenerate only the ``gcc`` and ``openmpi`` module files:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:886
-# 0c009132c5144a60bdc0556e6e5416f5
 msgid "Autoload dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:888
-# fb86754f5af14adca90a21b84387069e
 msgid "Spack can also generate module files that contain code to load the dependencies automatically. You can, for instance generate python modules that load their dependencies by adding the ``autoload`` directive and assigning it the value ``direct``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:936
-# c63d216425684ab7a066ebfd2bda37d4
 msgid "and regenerating the module files for every package that depends on ``python``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:943
-# 0192e991b40e4b178852706054230742
 msgid "Now the ``py-scipy`` module will be:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:981
-# 06b32ee5e79d4090b823b14fb0230d2d
 msgid "and will contain code to autoload all the dependencies:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:990
-# c7e4795d9ff249bf88dfa75944a09f1b
 msgid "In case messages are unwanted during the autoload procedure, it will be sufficient to omit the line setting ``verbose: True`` in the configuration file above."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:995
-# 05f870d7bf0940449d8f7124ddb35ccc
 msgid "Hierarchical module files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:997
-# c5d3da790bf8438bbba22871995c1ae5
 msgid "So far we worked with non-hierarchical module files, i.e. with module files that are all generated in the same root directory and don't attempt to dynamically modify the ``MODULEPATH``. This results in a flat module structure where all the software is visible at the same time:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1028
-# 38d954344d7444d4ad14367637129760
 msgid "This layout is quite simple to deploy, but you can see from the above snippet that nothing prevents users from loading incompatible sets of modules:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1040
-# ac2f9df14e914010b89240aff8668e13
 msgid "Even if ``conflicts`` directives are carefully placed in module files, they:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1042
-# a88abfcc3da6436b92e83c76722504be
 msgid "won't enforce a consistent environment, but will just report an error"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1043
-# e4570d9e27fb4977b1cb77e9849136fd
 msgid "need constant updates, for instance as soon as a new compiler or MPI library is installed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1045
-# 8f9ac87650ea464aa4c6a8cc9f55d39e
 msgid "`Hierarchical module files <http://lmod.readthedocs.io/en/latest/080_hierarchy.html>`_ try to overcome these shortcomings by showing at start-up only a restricted view of what is available on the system: more specifically only the software that has been installed with OS provided compilers. Among this software there will be other - usually more recent - compilers that, once loaded, will prepend new directories to ``MODULEPATH`` unlocking all the software that was compiled with them. This \"unlocking\" idea can then be extended arbitrarily to virtual dependencies, as we'll see in the following section."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1055
-# b8eacf27213e4b7686f2513b3f72d68a
 msgid "Core/Compiler/MPI"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1057
-# c07b9a1a481442ef88fc50a4e5b57181
 msgid "The most widely used hierarchy is the so called ``Core/Compiler/MPI`` where, on top of the compilers, different MPI libraries also unlock software linked to them. There are just a few steps needed to adapt the ``modules.yaml`` file we used previously:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1061
-# 393fef581b814b1b8840ec34f7f0945c
 msgid "enable the ``lmod`` file generator"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1062
-# 123f3f58fe914f4285132d7fc2dae8b9
 msgid "change the ``tcl`` tag to ``lmod``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1063
-# 467ca03c29534abfa2dd8046704145d1
 msgid "remove ``tcl`` specific directives (``naming_scheme`` and ``conflict``)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1064
-# 070ed5aa3d574d0c9b0bd581e3f87cce
 msgid "declare which compilers are considered ``core_compilers``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1065
-# 82738148b89947e7aee7019fdbe189f3
 msgid "remove the ``mpi`` related suffixes (as they will be substituted by hierarchies)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1067
-# 03da7f273cf84d06acf27960a2d8a02e
 msgid "After these modifications your configuration file should look like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1113
-# 93dea211ceff4d2e8efe3f7cad4c6c5d
 msgid "Double colon in configuration files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1111
-# a1a286afcb184b81b6684925a38e0a56
 msgid "The double colon after ``enable`` is intentional and it serves the purpose of overriding the default list of enabled generators so that only ``lmod`` will be active (see :ref:`config-overrides` for more details)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1116
-# f4223736e880457c90954f77c3ab43c3
 msgid "The directive ``core_compilers`` accepts a list of compilers. Everything built using these compilers will create a module in the ``Core`` part of the hierarchy, which is the entry point for hierarchical module files. It is common practice to put the OS provided compilers in the list and only build common utilities and other compilers with them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1122
-# 466dc5b09f4d4adcb77ff300e89d162a
 msgid "If we now regenerate the module files:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1129
-# de19db32354749c1a0745d1a002dedae
 msgid "and update ``MODULEPATH`` to point to the ``Core``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1137
-# 9b90014210f2422e9197f8661dc0188f
 msgid "asking for the available modules will return:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1149
-# 28f18880924a4d008a5a7a58a1b20acb
 msgid "Unsurprisingly, the only visible module is ``gcc``. Loading that we'll unlock the ``Compiler`` part of the hierarchy:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1173
-# 61354dc4947f490f8851ce8dcd5a242f
 msgid "The same holds true also for the ``MPI`` part, that you can enable by loading either ``mpich`` or ``openmpi``. Let's start by loading ``mpich``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1208
-# ac9e8ce9eba84e5ea4fe45b092321762
 msgid "At this point we can showcase the improved consistency that a hierarchical layout provides over a non-hierarchical one:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1221
-# be079fd3cd7c416191a127eb9893e16a
 msgid "``Lmod`` took care of swapping the MPI provider for us, and it also substituted the ``netlib-scalapack`` module to conform to the change in the MPI. In this way we can't accidentally pull-in two different MPI providers at the same time or load a module file for a package linked to ``openmpi`` when ``mpich`` is also loaded. Consistency for compilers and MPI is ensured by the tool."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1230
-# 34744a1f69f14a4ba6c61651f5c005a1
 msgid "Add LAPACK to the hierarchy"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1232
-# f8809cfe2b9b4dbf950fd8b507b23a33
 msgid "The hierarchy just shown is already a great improvement over non-hierarchical layouts, but it still has an asymmetry: ``LAPACK`` providers cover the same semantic role as ``MPI`` providers, but yet they are not part of the hierarchy."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1236
-# 2c6650e0af7840039918fb00fc7af036
 msgid "To be more practical, this means that although we have gained an improved consistency in our environment when it comes to ``MPI``, we still have the same problems as we had before for ``LAPACK`` implementations:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1257
-# 3a95b7e8870b47b090d4863688fda181
 msgid "Hierarchies that are deeper than ``Core``/``Compiler``/``MPI`` are probably still considered \"unusual\" or \"impractical\" at many sites, mainly because module files are written manually and keeping track of the combinations among multiple providers quickly becomes quite involved."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1262
-# bc93b7f15dbf4d759b86557af2bbceac
 msgid "For instance, having both ``MPI`` and ``LAPACK`` in the hierarchy means we must classify software into one of four categories:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1265
-# aea616c79be14bcdadbd17ec87d08db8
 msgid "Software that doesn't depend on ``MPI`` or ``LAPACK``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1266
-# 9b7a604013dd4baaa59173a4c111e252
 msgid "Software that depends only on ``MPI``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1267
-# 673ec53d19a545429c783492070661e9
 msgid "Software that depends only on ``LAPACK``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1268
-# 0e57720edbd840c987ef0c73c4fec3d9
 msgid "Software that depends on both"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1270
-# 744ca552828b42a3833f9a370c5f8f86
 msgid "to decide when to show it to the user. The situation becomes more involved as the number of virtual dependencies in the hierarchy increases."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1273
-# bf3b5a24965049baaadd3185b1732f68
 msgid "We can take advantage of the DAG that Spack maintains for the installed software and solve this combinatorial problem in a clean and automated way. In some sense Spack's ability to manage this combinatorial complexity makes deeper hierarchies feasible."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1278
-# 7f2d169fe41e4e08ae46dc07e9420606
 msgid "Coming back to our example, let's add ``lapack`` to the hierarchy and remove any remaining suffix:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1317
-# d7f7f2925d544fdfbd785e1b31747c97
 msgid "After module files have been regenerated as usual:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1326
-# 5b4ca72540c0486e8f2730d9f0277f46
 msgid "we can see that now we have additional components in the hierarchy:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1379
-# f501a28a195440a589f479e7ee088f90
 msgid "Both ``MPI`` and ``LAPACK`` providers will now benefit from the same safety features:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1403
-# 6888c494199b42bd9d7e31d6b04b2131
 msgid "Because we only compiled ``py-numpy`` with ``openblas`` the module is made inactive when we switch the ``LAPACK`` provider. The user environment is now consistent by design!"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1409
-# 5fda1cdb47e94b3d8a883dca7ef99283
 msgid "Working with templates"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1411
-# 48c9b8d03d954b8e8ee8bee61e3a2d16
 msgid "As briefly mentioned in the introduction, Spack uses `Jinja2 <http://jinja.pocoo.org/docs/2.9/>`_ to generate each individual module file. This means that you have all of its flexibility and power when it comes to customizing what gets generated!"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1418
-# 693bff0a3fe0486dbaf8532e2c4e405d
 msgid "Module file templates"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1420
-# 2d4edeb3fb5b4fcf87092ff87ede0a3f
 msgid "The templates that Spack uses to generate module files are stored in the ``share/spack/templates/module`` directory within the Spack prefix, and they all share the same common structure.  Usually, they start with a header that identifies the type of module being generated. In the case of hierarchical module files it's:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1430
-# 7a068c5631e1463fbc092d8406b04182
 msgid "The statements within double curly brackets ``{{ ... }}`` denote `expressions <http://jinja.pocoo.org/docs/2.9/templates/#expressions>`_ that will be evaluated and substituted at module generation time. The rest of the file is then divided into `blocks <http://jinja.pocoo.org/docs/2.9/templates/#template-inheritance>`_ that can be overridden or extended by users, if need be. `Control structures <http://jinja.pocoo.org/docs/2.9/templates/#list-of-control-structures>`_ , delimited by ``{% ... %}``, are also permitted in the template language:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1444
-# 4908c1b1a0ae4f8788d0b9a3507e866b
 msgid "The locations where Spack looks for templates are specified in ``config.yaml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1451
-# bc3d417f3a7c40e7bf169426472bc844
 msgid "and can be extended by users to employ custom templates, as we'll see next."
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1455
-# 80db00d1cdbf4d3e91b315a7dd4f71a8
 msgid "Extend the default templates"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1457
-# ee95e80893a94588a57b0d689b598665
 msgid "Let's assume one of our software is protected by group membership: allowed users belong to the same linux group, and access is granted at group level. Wouldn't it be nice if people that are not yet entitled to use it could receive a helpful message at module load time that tells them who to contact in your organization to be inserted in the group?"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1463
-# 3a7f24a9e42148f2a7cd695303c0e2cf
 msgid "To automate the generation of module files with such site-specific behavior we'll start by extending the list of locations where Spack looks for module files. Let's create the file ``~/.spack/config.yaml`` with the content:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1473
-# eadcfc8a7f1243e4bf32772e2472aff2
 msgid "This tells Spack to also search another location when looking for template files. Next, we need to create our custom template extension in the folder listed above:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1489
-# 64779cb16c6e45a0a133657bc28122e8
 msgid "Let's name this file ``group-restricted.lua``. The line:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1495
-# ae12426ee2a7468398255ee4cb68b613
 msgid "tells Jinja2 that we are reusing the standard template for hierarchical module files. The section:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1510
-# c846ebb0f79e4e1595350de9a64c378e
 msgid "overrides the ``footer`` block. Finally, we need to add a couple of lines in ``modules.yaml`` to tell Spack which specs need to use the new custom template. For the sake of illustration let's assume it's ``netlib-scalapack``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1555
-# 5f34c561f3b04db0b97fdee76628af65
 msgid "If we regenerate the module files one last time:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1562
-# 0ba9d7b933d24e158ddbbd3f73a408e9
 msgid "we'll find the following at the end of each ``netlib-scalapack`` module file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/tutorial_modules.rst:1574
-# af06a8aa634f4b9493bcd9d54a5d8853
 msgid "and every user that doesn't have access to the software will now be redirected to the right e-mail address where to ask for it!"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,164 +17,131 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/command_index.rst:3
-# 7d714857c3f74d26876c19e027110eef
 msgid "Command Reference"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:5
-# 1603c67ecad64cb990fa83b32c464a04
 msgid "This is a reference for all commands in the Spack command line interface. The same information is available through :ref:`spack-help`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:8
-# 041f529ec84c4d42a1e5719700e6f6d7
 msgid "Commands that also have sections in the main documentation have a link to \"More documentation\"."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:12
-# 265c6bed87c241bb88e16a1efe856ce5
 msgid "Category"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:12
-# e46daa61e81d43428405ec1b3987dc44
 msgid "Commands"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:14
-# b9dc64653bde4866b05b093af9ed4dd8
 msgid "Administration"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# 5a95151fc526424a9ba75fe53f1e5f4a
 msgid ":ref:`bootstrap <spack-bootstrap>`, :ref:`clone <spack-clone>`, :ref:`reindex <spack-reindex>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:17
-# fc90601e7e604c6f9a43f5bef6353459
 msgid "Query packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# f1bc1ff91713456289572a2a0b496ad4
 msgid ":ref:`dependencies <spack-dependencies>`, :ref:`dependents <spack-dependents>`, :ref:`find <spack-find>`, :ref:`graph <spack-graph>`, :ref:`info <spack-info>`, :ref:`list <spack-list>`, :ref:`location <spack-location>`, :ref:`providers <spack-providers>`,"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
 #: ../spack/lib/spack/docs/command_index.rst:226
-# 821f6bf2b05643b99d7b10e5c26b7f9d
-# 167474f3f22b4918bef0c78df000ab1d
 msgid ":ref:`resource <spack-resource>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:26
-# 724030abdcda4c029539fe9874da2c3f
 msgid "Build packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# da0f8faef8514b02b63f43892dc22077
 msgid ":ref:`build <spack-build>`, :ref:`build-env <spack-build-env>`, :ref:`clean <spack-clean>`, :ref:`configure <spack-configure>`, :ref:`diy <spack-diy>`, :ref:`fetch <spack-fetch>`, :ref:`install <spack-install>`, :ref:`log-parse <spack-log-parse>`,"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# b701397aa07d494c97b182f1fcc46bd7
 msgid ":ref:`patch <spack-patch>`, :ref:`release-jobs <spack-release-jobs>`, :ref:`restage <spack-restage>`, :ref:`setup <spack-setup>`, :ref:`spec <spack-spec>`, :ref:`stage <spack-stage>`, :ref:`uninstall <spack-uninstall>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:41
-# eb8f17d1dd47403cbeaeddeaf3a21b14
 msgid "Configuration"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# 4abc3adce6dd4c938f1d06a967d9ac5d
 msgid ":ref:`config <spack-config>`, :ref:`mirror <spack-mirror>`, :ref:`repo <spack-repo>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:44
-# a43ff24474944783aac6ef4ab7627ebe
 msgid "Developer"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# f1c81fd323484d7ba2718bad12ee26bc
 msgid ":ref:`blame <spack-blame>`, :ref:`cd <spack-cd>`, :ref:`commands <spack-commands>`, :ref:`debug <spack-debug>`, :ref:`flake8 <spack-flake8>`, :ref:`license <spack-license>`, :ref:`pkg <spack-pkg>`, :ref:`pydoc <spack-pydoc>`,"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# bbcae8df97b7409f91a0abcc3a6e29b0
 msgid ":ref:`python <spack-python>`, :ref:`test <spack-test>`, :ref:`url <spack-url>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:55
-# 3fc691f474ee4860947f5dd89589d1b0
 msgid "Environments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# 9a11607454554d989271cdf72cae0191
 msgid ":ref:`add <spack-add>`, :ref:`concretize <spack-concretize>`, :ref:`env <spack-env>`, :ref:`remove <spack-remove>`, :ref:`view <spack-view>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:60
-# 449e1d93c06d43808100a3012697d41a
 msgid "Extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# 0531b23e14df4758afb56920d9495f64
 msgid ":ref:`activate <spack-activate>`, :ref:`deactivate <spack-deactivate>`, :ref:`extensions <spack-extensions>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:63
-# 0c32130d30b447b18a45fe5276f39b5a
 msgid "More help"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# 3fefdf4990fb4475814d023a46117ef6
 msgid ":ref:`docs <spack-docs>`, :ref:`help <spack-help>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:65
-# 7a244be954634058810d79319504b0dd
 msgid "Modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# 69f25900d4a54a6788258dfb5dc20b60
 msgid ":ref:`load <spack-load>`, :ref:`module <spack-module>`, :ref:`unload <spack-unload>`, :ref:`unuse <spack-unuse>`, :ref:`use <spack-use>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:70
-# 9a5ce88d66214feb9b3aa3e284356484
 msgid "Create packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# 94ca1e1f3dff47fe967206040f5eb1b5
 msgid ":ref:`buildcache <spack-buildcache>`, :ref:`checksum <spack-checksum>`, :ref:`create <spack-create>`, :ref:`edit <spack-edit>`, :ref:`gpg <spack-gpg>`, :ref:`upload-s3 <spack-upload-s3>`, :ref:`versions <spack-versions>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:77
-# f610c98ce60f415f8f661e2c78dbd8f5
 msgid "System"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:0
-# 3398d5400225427781bbcfbb00b07ca7
 msgid ":ref:`arch <spack-arch>`, :ref:`compiler <spack-compiler>`, :ref:`compilers <spack-compilers>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:88
-# 948fe62a8b48435180994e7bc3a371b9
 msgid "spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:90
-# 2806851714f2449ca8fdc2b02192811b
 msgid "A flexible package manager that supports multiple versions, configurations, platforms, and compilers."
 msgstr ""
 
@@ -321,149 +288,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:4762
 #: ../spack/lib/spack/docs/command_index.rst:4795
 #: ../spack/lib/spack/docs/command_index.rst:4828
-# 53bb3eeb82564de5883baf985ff2cbfd
-# 06cf2ad35622452890f388d418a73fbb
-# 52dae5fac1bb4f00ae5b1508560b919a
-# ba877fc36e3147fdb8a489655e041b3d
-# 581e335551a742f6a9ebd5bc857aadfb
-# dc6f19adedec46d8b744ae02fb9f2a5e
-# dc828d5747744ec4bb0d7d43916132e0
-# bc3e54ffde6847b38d4d8868a3d99ef4
-# 50fa15a07ca04e02b9f34340dee2c23b
-# c7a55d2010b14876aa0a4755d95cdf17
-# 1a0b8b3e89774edc875a273cd3150d65
-# a2be977dd61e45428422d62a1b902929
-# 1aa4b32b1bdd40198c429a51c2be9c99
-# 5227555d3eeb446eb5f8d597a9897627
-# 8cc8f8ad1d694755bee6545b0ea63987
-# 130084f2507541ae810fd4536e0c72a5
-# 6986f7fa45b34322bd5617d4a6491a40
-# abeeea6c0769457b87ea91877791916e
-# 153177acd09541d3b4214f504444999a
-# a47cb3ccbbda47a3beb9f31a2fcc2668
-# 9bb0bdc8ca61477e9458f3a998fbeb98
-# 214c0cdf29f5472b9943380fedbd6178
-# 3288becca03541d1855ff30d46482f40
-# 5a4e485ba88940bbb587e379a2398004
-# 77827fa894d6471c9db8ace7bcfc571c
-# 772f20d42e4c4e648b59f650364ae114
-# 9d0bee0b85514fefbbf32578728455a6
-# 66dfea907b174745bbd1dec5d1fd1f12
-# 8ac2fa86733743ba8779fb662b18a27f
-# 2a1d43746db649b6a943d347c10ba25c
-# 42c532efe3844f149f095379aae72845
-# 0be15b723cec4a9cb6b8708300e6d6cb
-# 2941d9fc9ede4687bf062294d30e1ef3
-# d2052e6a161d4f379f09482ffd20f398
-# 45e727a653f842f99e6c69ea0b18ea99
-# af3eee64e36342ae964b758c6c18f31f
-# 113f9d752ac24670a2668fb835c975b9
-# 0c2fdbe8286d4a46a35c19f6b75f71c5
-# 6f719eeae0834197943912a4bc9a6a46
-# 18d365bc1c2b42e09d6afc030a70f33c
-# d1a6a998064c44a08e7a8cb5c2cc391d
-# d8f02dd0789c48fa9d444ff16ee76d8e
-# 739ee08f48e8464abbc558156ef4a966
-# b89628f084e24dc281e03d9b2bf3323a
-# 90e2002534c34f07b02e8501b0f5002c
-# fd6f46f29457444cbc203a4443a1490b
-# 577173087e23497693061ebd9e099a0d
-# 0ee5fe5ef9fd45de9f50b94c1d4bfdd2
-# bb15b0b36e3d49c68a6cd6f20aa29460
-# 0d4a82b8b6cd48ab828a3bea4c8f1b96
-# 9b38d9ad90704b41a2542e750d60ded5
-# c0ea12ae531f48b0b03f1e84f3ad534f
-# e7e8793bdfb8493a901e9d88d259b771
-# a6fd88518bb74e1e9322e3ecea89fdf4
-# 51d13e631d27432ba6b65c7179b77704
-# 9fb8b8c21b494d4480154fb25a75e030
-# d807e3d106574535876a622c7d9517af
-# d3ffb08ef04a4ea48c910d256b04f1e8
-# a994d9c57e3947088775d6ece4bda1e2
-# 2daa822129164d3581d457d641c1b85e
-# 924f03acb565411c8b4b962f8c902023
-# 170a430f32e541bd8958588c45f1dca5
-# f1cf159d58fc4a9d940ef86f06361c86
-# c95fb0202361414eb616fd31476636d4
-# 64ebf280ed5944adaef50db36d94ae59
-# 7faf5df426344c9fa0ed7b12e61d3b8b
-# 8af227d06a8b4f79b881f1bd0abe6acd
-# 37ddf1906ce24e24af4802a597fe85f7
-# af85b44a3b4741e98023db8e2ceaf17a
-# 5a9fbb4f823042d9b4817854893535fb
-# 94d4a39a36914310b0c081743fb4e27f
-# 5d5a1a881bf94a6699ef69f0bbb39397
-# c3ef1ae11d174b22a409cb95d7adee5a
-# 987d8de93c8f4ed1a4fa4b437af83997
-# ff6939f5d3d5443485d7f955824332c2
-# 5f9f6ee3632b41ab90345f285a86a852
-# 5222ba8e568b40b0bdb0a02a258a70a1
-# 804098fba4e7443c9ede3e7fa753331a
-# 2bdf12eb82b848358fa0cc9e3ec191ed
-# f0faf447a7fa432a87fd5eee5f50d9c0
-# 3770812fe1f44432b449505309eb7acf
-# 330b70ca5564403891f84d463f813747
-# 43468614467a4f02b323d6f9933b351d
-# 1d74c0f8609d44dc93871953a77192cc
-# fb14f54294d44f52824c34cce7dde004
-# 0285cc524a6d4ce89284365438fb5c22
-# 0540c357f425478e89266b6bafb21608
-# c6d88ad006ec4da5beb2db7041f564f8
-# a2e0b899502142a1a77b72021a3b8341
-# 5a0235a0224e4832bb8a8b32114b75d2
-# ad3114000bfe4e08a50feb32c8c942a5
-# 7db0ff95f9f545d69ec5a0c1eb559ffb
-# 57f8d3f44d1741abad8e9becb2e437ef
-# d5cfab4018474b56bd0c06358864b683
-# 2a7793835ee44acb918ca1170b5bf52e
-# 5951dec192fe464fa7eead0af9c5b858
-# 60f1bc164eab419684c3d535a236b993
-# 0aecaec429ea4284a0a57d8f4a4e9df5
-# e16d21512e174047a3f908f6739a83fc
-# 32ef8c12cc9c42db8168a20dd24e508c
-# 7b1899924c314b57aca1d2bf72f28c3a
-# a657fdf6712244f0b1dc752012cfb6f3
-# 399e66f67f724105b0d3bda0b43d8266
-# 7fb6799a968d4e8caecf85ea56dd9e20
-# 3d9bb7ab794c4c939dfe49702b38f32f
-# 8750d3f2817748b3aa4422d0c2621512
-# ae8bb25ee75e46439d76742118081c32
-# 9d0ed1a2c4524d2fb549ed4e58345cf0
-# 3da0dfd5175849a390f1f4015021143f
-# da6fcf18d33d44ef8d452465c31bc921
-# 6dfe7406bb854427a3d4f601585e853b
-# d6ed89c1ce1f43718c328f937ab5599d
-# 4a8898a3d3ee4d55bb1949e672666cae
-# 8028e583fd4e4778a292cf8a29d3ed75
-# c6f64c065acf4b7e823b14068d583f37
-# c3c14774728044ad8f2ec1d54da8b0aa
-# 99fe56b2289a4cffbce8c66a29d47493
-# 31301a54ca1c460d9a0fa208d985e1cc
-# 350b37640ccc4e4a8f8d4894b1a82250
-# 7ca2490204ff47bb91846cb154c67da5
-# 725bdd7e715a4e86a5d6bf18c1377767
-# 3a69a57deb394996b1662a4c6c9c9da0
-# 33057d9936da4672ae41da4c65a1e7f3
-# db1d08682ef24eca9b63443b98dbd1f1
-# ddc763a2228146c7a665fc5d4d7b1455
-# dd8d44a3a18d4159a400f8a739fe48ab
-# e3a73a229c7946ac8feb57b29172554e
-# b7244ad514b2403b9274933777f534dd
-# 6019941e2ec14c109549720c06cabc91
-# 079daba5cc6a4204aee6e935dd4e5649
-# fa52955c7d2842fa9e57c555d9eb4d53
-# 95170bdf014348e39792cc171ea50d29
-# ec42ac44175148c7b51f6087ce748b66
-# 7902e94903e94ce7bf16fcb390300e70
-# f0c90bd320504059a010b9d5c075977b
-# 2efc27ba93514287ac02572b19a2676a
-# 45c285a274f44612bf69e75ec3f6f142
-# c4701167d3484a6b9e6d60aa52a5dd54
-# 814c1bec2a064cf0b1ed525b37c62640
-# e4f7a0e237354abb82abdf21577f94b9
-# 788d859d3ae7401088c9bdbc2e7b2df2
-# 9bcf7ae37b9b4f96ab856944955a45b3
-# e92a557491e748a9b692cbcbe95f4a50
 msgid "**Optional arguments**"
 msgstr ""
 
@@ -610,149 +434,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:4765
 #: ../spack/lib/spack/docs/command_index.rst:4798
 #: ../spack/lib/spack/docs/command_index.rst:4831
-# fabbab52b3aa4858a7ae376a9c462f80
-# 05546eed942f44b3b59518cc1d67bcfc
-# a5274cbb55474b5eb756167d5e3fa453
-# 16b0f0dec97648e7985cb129b3496157
-# 4ca1846b5a0a49a7a46fc10a1bd79182
-# 91361801c4194cdf88684c70d3f21740
-# 7712dc8be44d45f7bb90fca6cb00727a
-# fd4da0e5378a41ebb38ac2b827896fac
-# ab5bfaf60adc4ce3bd9d5e97760386e3
-# bc2020f98c1e4eceb256510740596d17
-# db414ecedd9b4167b1b3d24cfb83d5e4
-# 8d70065197424e1097c69c0f35034d00
-# c728e9323f6546f8857059f309333c2a
-# 73b538efecd74ce1b0d29b048d0567f1
-# 745211ec37fe42baba127995ac11f01b
-# 35acfedec60e4a98b1e2218f20179344
-# 70075e93da704343975c3dc3945a0394
-# 7b2ddfdd0ef9432d9187c45a61a82321
-# 0120faf679b44312bb8791bd04d18e2b
-# 5781867623df42a9b272bb2c8b58a068
-# 855467ce52e74fb4993b006ad59008f1
-# ff91d8c2f87c4afa97659bfe5e853aeb
-# 40eecfe2e60d4f868f7b2c7e036bd6fd
-# 6389b58f5392430c900a6b009bc6b029
-# edc7322fffa542e996eadc0d6c2bc0c0
-# da3ba5329b5c45d798cc93fa880865ff
-# f2e06b4b3aa54c7fa474dee528c2bf65
-# 39d870ef56ab4a0db0a13bd63c77db23
-# efaef5543c804ae5b3c129b69e4a5f78
-# 8b4f6cae286146158e55a5e3b419983b
-# 64dafbaaceb6418ea259eaf12bf9927a
-# a17f8957046244b998452720d397fb30
-# c377e8bcac3b4e4197a9d7df30e0ab07
-# fcc631681ac34bf990133f6c901a98e9
-# 4c36eb82a7a24284b3f2e89e0cf24319
-# fcc6ce25d8ee4eb7a52011af680a2aa0
-# 8b6ca7b819394939be1897ea94d2827e
-# 7969fc1541e04c4982381a1d6a6f82c1
-# 27525080ea4e4d77b5a8d41143eb91f8
-# 69de8c59f70c4a94bdde7e62e09a4283
-# c2cf85aa42f64027a0926821c1c28ddc
-# 8e29d6c1b610450bba8b50907ab4de8f
-# d06b91ea66df4f218e8db24ee6d0093a
-# a7b3475e9cde4a19aea9abcee71894a7
-# b2a6fe655afe498db561fc508c6a900e
-# 5c72406354ea4b169b6a6a5114798255
-# e7ae7c6d1426449dbe940156b95a4e90
-# 2058dfeac4b44c3eba0b72dccc20542e
-# 520a8672f3b34684ab16d2aa4476319b
-# a253f54ff68d452da89b7494325d5e70
-# 0365cca4372440edb119bbb07282bb7e
-# 30276865e5994541b8ec74894f106733
-# 90b4fa35fc064a7baecf7a886d11181a
-# 8489d3f57aec49fb80a6076779c2c4d4
-# 2dbcc2a6b5bc4ff38088969bf1ea9b84
-# 7866dd49776944e3af03f8deb076d1fd
-# 4bbebf269ee2423b8111d952f7af4320
-# 4c36df63805e449e9056288c8810af45
-# ddc383091f104f8aa99e28c561ada4e0
-# f0ed2a0ad5b440cb8631b861c10a5207
-# a2c55445fd9249368f7c41ab616bc284
-# f349e374cdf64537bf66f1bf71dbe6f2
-# 66d140eccd08458ea1e663fce3a1de4e
-# e2f90c6745a34df087f15ac484b59e8f
-# d574138c42c5435bb6c81cb64b92de60
-# 6953d463dae749fca454b5936defbc65
-# dd78c84812b447f389df4582a3332b76
-# 693fa872eb294ceb827b8999fa185888
-# f05b70f7c7574dc8a247625b80162ea0
-# 0caabd597fda40ec93d97dddb2d3cda9
-# bbc52922049043508fb2b89bffe15812
-# dc9984a9410b4271bea3d5f7fc41e31a
-# 4bd74701f06e4ca18a5ccffaae12f4f1
-# be70bdbc80d745a39eb48a8daa69e78e
-# 873d30ed9c5048f88659d045c80fc243
-# 6f32d980d9fb4a2baa9d805975cd3e90
-# 1927e1e5c90f49fba4e04aae748ccaeb
-# dd52a24ab3e24f9980bba40ba756604a
-# 4e847943487f47f087e800b28e280727
-# bccfe99f722746108502dafd99f9744a
-# dc65e4971f02497eb4522056188b258b
-# 7c105d53bd3e4d0d81b021fef99cc7b3
-# 5429c93c25764cb0897cf85d96bf60ee
-# 1d29ea6c384a4b5faeb10bc4d8fcd6b2
-# 7ae9e852562d4b1ba1238c340b8f423e
-# e3306e64626f481dab8572c17822607a
-# 4f25724df2a94c5c958f704385559dc2
-# 9127b38af96a446cadaba3470c36adf9
-# 5437db19a52f4bef90d16eb39eaf758f
-# 87b2a14925914c28948e4c9b8a888d53
-# 3e08221166434fb4b5b700b8f6280057
-# 62443a4a1d064688a7b6dc86c93da9bb
-# 29d8669118ce49e1b97aabd1a5af972d
-# 1f46b0f7903448e6be87f5ae028c5f49
-# f596450b1ce740a3a7b7b35c02ddec43
-# 8913b837bf4b455c986d30f147f329a1
-# 4b2b4571ff3c43478eeaca03f0b2b793
-# 06799faff66944a68b0b9972d8cb7686
-# 23a8d05c089047c48a31b19aa8afd940
-# 0362dbeb9c974501aabb3f0ddcfde680
-# c387a668ee17403b998cc6174af09817
-# fcc79e99956f4e66bf517915e0331ebe
-# f003a253deaa4551964c16d497230ea5
-# fee7219c7a68484c93b00373b8acfe46
-# ddda9121d1f74f3b954e953f05576fac
-# c1bf2d043dcb409caa0d67885c0ced67
-# f5b816cb92c741838de7f81e740718af
-# 3e83560950264ade97e134b150baa257
-# e30fab769caf4b54b6186d2fe0ad380f
-# 85c937599abb44538c3ce481bee8fb89
-# ae22187b613b46d8a8288802a2f0398d
-# d622c03e4aee475c902276b2e14f9c59
-# 43e1f8ab7e9f4003a47932956700763d
-# 1982d76b1cd24c4785e58b3785633541
-# 053d1166b12347e1ae914a7633a15cc1
-# c62b0b5358d745f1ae31c2a9c818b986
-# 726dc7774cdc4e849ff4976b870cd818
-# 9357f5dce68b43c8976b76c877e9e57e
-# b7cdebae3a9243baadc0ba64009a3be2
-# 22da3d53755641fda5c0e5c013fe35de
-# 288c446e5ee34c7cb8b602a1045b34f3
-# fa52e979260d493388ebdd5d8625111a
-# 80afd4e8eeb84c77a32201bd1735a318
-# 6c2636ec066343cb97bb5cbdbffe115a
-# 704fcebd40a04a26b77a93d5920e8588
-# 13206fb8a8d64a5fb5ec39c355054034
-# 45759f6c64a74ba4afd72dd16fd6ce9f
-# 5e45c5e8f48d4448b18fcf965666f178
-# e6681f2ba43d44deb2645584c5950944
-# cd1453e82bed4cf0a64490ac8d65a346
-# 6cba37859cc64608bf9bae5b6aacd296
-# 15832ee5bebe40dca7ca1655ef10f74d
-# 1a814c7057ca4833bd9bb662f315ef0d
-# d01b0c65d22b42dbad0bddfe00776a1a
-# eee7d217d52c473282f6445bbd878860
-# cb2dcb5011dc40ee80169da2237da040
-# 372e75c8e3ad44a78adc6894d42ca4d4
-# 86d30b615a6d4c51897b912811cd52de
-# fd408739343e49ba8dfbc1904ce2e8e0
-# d3ef644c535640288524b3dc12411c5c
-# 5a55f51da61a4133b6f8b0dc80781411
-# 015aa24dcb6e40af9a436171808b77b4
-# 48f29ff1db4b4361b0c603f2fa8c640c
 msgid "``-h, --help``"
 msgstr ""
 
@@ -899,325 +580,145 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:4765
 #: ../spack/lib/spack/docs/command_index.rst:4798
 #: ../spack/lib/spack/docs/command_index.rst:4831
-# 28c859066e5f4aa88246d6066e7fc388
-# 5db38678c86b4fd88e3718ad79afb29b
-# b79ef6daa47044e48b5ca0c6c83af7a3
-# ae53669bfa6749dab1b76d4b28bf3fcd
-# 22340dc1951e43c9a0911d79feb8c444
-# 9cf6ff57755748deb277e0d6f5382fc3
-# 53965c5389874ca6a1c89b20d45bddf1
-# 08d1ad792a7e4ff1922893b2194aa052
-# fa818b59a3d84048a3466de674ef6a20
-# 4c4b396b5bd74a4ba940d7262b26fdae
-# c7d8c983e0fa42baa87e06dce82710e4
-# 6455f011822742a5acba613d1fa14644
-# 69548f2029e6422fb469993a4c247edb
-# 3e871d7089ea40e19a85cb158d78831d
-# 2b89b47e10ec45dca9e39868961eab96
-# 19a771c2de51402ea92ddc512dd59b30
-# 21ef8a222ff64e1d95253d41485b51b6
-# 51d0bbd29d4045b6821d38d5bdcf9e2b
-# 8c3c8d6225564481b717b9c253e8c592
-# 37b2f8924c944d72a0513a9482f90919
-# bfd61b3d2da54042896052cd7f7a13d0
-# f92643e346f24d8aacaaf5560d96fdd3
-# 716b464e11584a7f88ef4c8b548f7da6
-# 33719973b6244e4cac39523bbe1482a2
-# 6658f5761d5940e6bb23e0b484ac442c
-# 294b565c830b4a709724d9fb2a1e788b
-# 58d3fdfa2e424be48b6d601df582ae9c
-# a9447ec8a8c342e792c60026930ecb38
-# d2dcf88592754a569fdabd84d9b043e4
-# 2e5ee572b6b040cdaebb88537f78de45
-# b70d1a50a13f4f088ad78ef89f2704c2
-# 54707b57357540ee98bc7073d70eeb5f
-# f507e9f4eaac479d89ec275e9003cbf5
-# b2e745b587c44479ae8aae4050005413
-# 9b05fcb95124493b8406918cca63e8d9
-# de6eb27bc0ea4c279a3b4a7422def463
-# 99f377ba8933468c831155aab95549ba
-# 7b800e37c5b8483ca7311d63febaad1e
-# 868c2bbf32364e6eaed5a98917e64ae6
-# 8b57b7cf3631497abe82ea6a07d445b2
-# 1a4e31dfe82846738e6d920584bf5324
-# 01dfb596248b4fbd871181a5d61776ca
-# a603af59203f4fe886ed9572e3524b6f
-# 28231e451bb24256a6e57084c4478259
-# 6c8636e2f0404bdc9103776d3ab8e35f
-# 65811e8f61314954a16cf98a8229505a
-# 2f4dd8259636447091d51d819f351050
-# 52b0f8a71107495091ac745a6c5d6275
-# fa24ad77a7ec47caa08c4975e5000206
-# 7b899a4a3f5c4da089bae85e09dacdb3
-# a170d4295af54a50a4bb7ce0d171669e
-# 1d7e77f69078406a9b706ad17372b61c
-# 5b173d8086b9426fb5b11c51339e750f
-# 2b2fc97c546a4fe89720926bf089cc31
-# 5e98e511292149a18faa050595914050
-# b11d69db105640b38ecc96d06d59984e
-# 45b87da5de5d4f7d84a71e1ca85aa4a1
-# 37b7fd39b0bc4ad9a4c90c466934bb00
-# 7ead6902308d4336822c64ac0119d231
-# b3e51721b3b24c67bea231c651728044
-# 71ae0d9db85e46f4868bacdb35891638
-# b60ca4573ab34e08918ab364a0013c2c
-# ae2d36eaad3f453a8a0a3d1fe29898ae
-# be9dfb75b89c4205aacd05931964de9d
-# c5d9108ace954532b08f37acf612e3b6
-# b6d4dcfbf4cb4a6cb1693f9af5ddc14c
-# 31326af6394f47f88d9ff62d21bb685e
-# 92235174c6da452aa0e11a0b8d9be227
-# 059f512f243e455f870aaaff591cf96a
-# dd3ed6de284f42cbbd54302caa271a9a
-# 4fa6415a1d9a40c18ac1bf9a22b88050
-# 9daed0fc679b471d88e17e8f1a730dc6
-# ac7609bddcc94f9ebb32e6655549610c
-# b6b9501d395348f2a35edccd9ea8ebd1
-# 25113d07606c43f69b10c5466507088a
-# 09df72624ab3433da24dce3e30bcb110
-# c25851e134d944f79aaa21fa68bbaa17
-# 9e5f89ae6b344e73b80f224038485326
-# 5087ca99f7f04e5f9153a47a629cd5cc
-# 8a238eee28c44b08b11673f892735858
-# 55e35deec3984486b46756929a8b6d5b
-# b8b4232d2b8e4b06805ad0fd516de456
-# b5e0d6047c74403ea4fdf18cd3e51fad
-# ddc70813f1f543ed9f727acf75ec77c8
-# 9298d2df193f4f3ebfdd64389a094eb5
-# a389db51d33c4cf3916d449d37747968
-# c06ccbd33881436281f29891be324b12
-# ba6706a4254040cfac3081d9d79c5c9c
-# ef5a4f9f3d9e42cb830a8fb72d1f4496
-# ffb08ed356204b36b853cf642fa608e8
-# 739160d5a6844b209a3289dacfc4f3fd
-# cd34935f398b4f0fb169038578df6b5a
-# 6f83e12f8525476c9746a3580c6ad055
-# cd4a5ed346e54117ab8c85b8392ad041
-# 5eec1026cff54723a78fbe152663c35e
-# 61df4ab298fd4feca15c79882a8dda50
-# e4c74ef92e0f4e5c9c0ec023f30d3e04
-# 0cc989f1a2f64dc2a6ef8ae2c704c595
-# 80036407a8f54b8e90bd17c739dd44cc
-# 3da377af70f54130850d4853b9fb0b1c
-# fe595369b6674a1bba4c9d51db10e502
-# 5de9a3f9ca2f4321b3461c7b7316cf18
-# 3559550ed58f4b7b8a2cc85667224133
-# f6dd311259c04c939f3bc6bb821b08f8
-# 9cf199ef457d4e3794f08d83ac45dee6
-# 07b105bdd6174747a5d78ffdbaefa1ce
-# bed6ea7196e54b10aab5ecb075d0516e
-# c41e6a3122314d089aef7fa8ac54b8b4
-# 909f6d3d9a3e4bf8bec107a76e37d52f
-# 4a0d4a35634944d687507c8c1a1a0e00
-# dd46ecd6e2194a47b73df90d719f2ce4
-# 90f9bc715fc3470db3dc71679ae40c80
-# fa2c3128b38e4d96b7530f262761d49d
-# 7ee9614750274fa58d59135f0eb9b36f
-# 9e4bcbd6e61d47c2bad5eda2da626503
-# 74b6f0067db147789232658f766b2a22
-# 470d9082753446b48052e18e94b81eb5
-# 9c210538b786446786c0bcfa4a0e131b
-# b4b4c923a6624c44981a897e8793d93f
-# cfa14ab9e7184cf9a0f146e18b61e895
-# 949930e1182f4474a0eaee31a73821fc
-# c354374a7e1844cfb9ff7c51ad19d787
-# f722a580ffdc4183842ec70538599d5d
-# 21aaac4cb2894ead8db9c0c487118394
-# 292a99bb1c6c44da8d188a727d46a311
-# c7f13037cfbc456091f0ee7d4e2f719c
-# ed15dc8deac346bb8b4b70e2d7a8cc14
-# ac466db8df5e4881b7d4e492f25c0c73
-# c4f6c18926994c14a36a3b41f5a58795
-# 6c8472b2d4924751a1bbdaaf7074fb9a
-# 7decee7b0b87415ebd525b7771d3e964
-# 3dff2e247b7e4f849e13ba4413e022eb
-# b1369cab0954466192469c87e3f73471
-# 7a95fb7aeefc4301beac36d1183bcffe
-# 342182a3dde24bf0a699d891d76123e8
-# 9a411183b5864edcbe12202630a5c235
-# 4cdc3764716c4a2da9e9479ad67a93d4
-# 7d7da0e43c4f480b8aae499bd8ec4fc7
-# 69fc9d3b515e46339ea27356ee93fa20
-# 692ed796e3eb47f6b88999210a4fba7b
-# 020d2b4e184848f2b1acb62ce81c3d59
-# 9dd481df566d4e448e5a403550264931
-# 0d2bc63444a74369896039af4eb4b4e5
 msgid "show this help message and exit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:106
-# bd14ef6fdfd14e9f962e778a1ad9daed
 msgid "``-H, --all-help``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:106
-# 6b69daf455bd43d38128a87301f9fa56
 msgid "show help for all commands (same as spack help --all)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:109
-# 8f9b80a0d75e41dd963a042d725971ab
 msgid "``--color {always,never,auto}``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:109
-# 701a285f656c4dc8b918c5c6145374cf
 msgid "when to colorize output (default: auto)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:112
-# c4201f1ccb6b47f9af5258740ca491f0
 msgid "``-C DIR, --config-scope DIR``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:112
-# 66ef1bc783344de6856d7a72400d51fc
 msgid "add a custom configuration scope"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:115
-# 76f482f74856441198d309c0ab2edb8c
 msgid "``-d, --debug``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:115
-# f53d3531bb3143b08cb66af0db3b4584
 msgid "write out debug logs during compile"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:118
-# fb465378c4eb49469d95b48b9735a2c0
 msgid "``--timestamp``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:118
-# d62b9016ba2840cda6155997e841ab76
 msgid "Add a timestamp to tty output"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:121
-# 9dce67546732442b9019c217c3eb68ce
 msgid "``--pdb``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:121
-# ae39192bbbc44f1f9e0c9a6380d66e1c
 msgid "run spack under the pdb debugger"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:124
 #: ../spack/lib/spack/docs/command_index.rst:854
 #: ../spack/lib/spack/docs/command_index.rst:2794
-# 0c9b637a9e064a458ce0f786b49f6b7c
-# b34976939692420c9295639879b08eaa
-# d3c74cf030704ff28754bc19f6768c52
 msgid "``-e ENV, --env ENV``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:124
-# 75a49dd4c26e4c58afe0a9320d8b11df
 msgid "run with a specific environment (see spack env)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:127
-# 77c07ed7cd1c4b748a66c39f79436e13
 msgid "``-D DIR, --env-dir DIR``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:127
-# b9d7119393fa41a7be342ce0a47f3e1c
 msgid "run with an environment directory (ignore named environments)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:130
-# b9ac9f99cded4a169ab695c277f2bcae
 msgid "``-E, --no-env``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:130
-# 448d4ce2f4e34531b13dd245f64de8ad
 msgid "run without any environments activated (see spack env)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:133
-# 6486fcb0f41549cab00c39ed79f21469
 msgid "``--use-env-repo``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:133
-# e3d6245d9afb4045bdd752c897c55276
 msgid "when running in an environment, use its package repository"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:136
-# eba240e3e3864712b4b0be27b8b5f814
 msgid "``-k, --insecure``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:136
-# ff9d8231435147a6a5b8168b6f1014f8
 msgid "do not check ssl certificates when downloading"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:139
-# 218be596943344649adfe23ddf3476e3
 msgid "``-l, --enable-locks``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:139
-# 44ed46bcf47a4d75ae719fb964ca2005
 msgid "use filesystem locking (default)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:142
-# 685a5039f5404a9599b25f9ffa853b71
 msgid "``-L, --disable-locks``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:142
-# 1bc963e1596f47cda031d6396a16a829
 msgid "do not use filesystem locking (unsafe)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:145
-# 25f0d07973d44d9082a71c25ab707af3
 msgid "``-m, --mock``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:145
-# 2c888c67a27043b887e259d0d16ef709
 msgid "use mock packages instead of real ones"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:148
 #: ../spack/lib/spack/docs/command_index.rst:2828
-# 05cec6fbf9a946328936f6132a1e6a4a
-# 0f7f499e380340ac98fd79452fe8c607
 msgid "``-p, --profile``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:148
-# 1897f384e24a46ce98ee5deade8862cb
 msgid "profile execution using cProfile"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:151
-# b6d01633b329471b8d79f7782c740474
 msgid "``--sorted-profile STAT``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:151
-# 527418feafb14f788678ea3647d49232
 msgid "profile and sort by one or more of: [cumulative, module, ncalls, pcalls, file, line, name,  calls, stdname, nfl, filename, cumtime, time, tottime]"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:154
-# aaced0472f18426c9278364c415c3d18
 msgid "``--lines LINES``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:154
-# be5489e0d84845b1a6f333cf7b401b73
 msgid "lines of profile output or 'all' (default: 20)"
 msgstr ""
 
@@ -1228,52 +729,36 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:2554
 #: ../spack/lib/spack/docs/command_index.rst:4170
 #: ../spack/lib/spack/docs/command_index.rst:4688
-# 33e9738677be40ce8781d0505b4f6b73
-# 7ad691db103845c994376cfc7bd675f4
-# 663501702d8549efa93642a1ca5b136f
-# 5e8122415a5d48b3a40ad84ef5bb82ab
-# 14b5eb7ee74d4674841b04a2eca67bfa
-# 6c785627c1954ecbb8505f6371dd981b
-# af505f4ace964467a87687cd2ff2d586
 msgid "``-v, --verbose``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:157
 #: ../spack/lib/spack/docs/command_index.rst:433
 #: ../spack/lib/spack/docs/command_index.rst:1323
-# 746d3d530a124f20bde6282e0857f3a7
-# f3cf496e59a14037b0b3de56860a1e23
-# 40640ce607e74b328eb17c3c9ec281eb
 msgid "print additional output during builds"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:160
-# 07dfae9d4bfb4841a1e9fb4a4599caf7
 msgid "``--stacktrace``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:160
-# d21ee82d10c043cd9ee913fb049711dd
 msgid "add stacktraces to all printed statements"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:163
-# 5ffdb1a726d941669c1f5a42b4eac1f9
 msgid "``-V, --version``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:163
-# 938b395d73a245ed8bdd5fb77ad52724
 msgid "show version number and exit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:167
-# 1eeaad0dcc054df0aeeabc91e08649ea
 msgid "``--print-shell-vars PRINT_SHELL_VARS``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:166
-# cc948f3c3139478fa79ce5e553320a90
 msgid "print info needed by setup-env.[c]sh"
 msgstr ""
 
@@ -1296,365 +781,278 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:4414
 #: ../spack/lib/spack/docs/command_index.rst:4496
 #: ../spack/lib/spack/docs/command_index.rst:4697
-# 00e356fc0c424ea5bbf21ad25217b56c
-# 1566be2b3e934d3b920696dab93aec93
-# 0ae4bf27c5604585b006cc4dffb009e3
-# 41372ef6bd714e43aaeb6b53fd2a00b4
-# 787b86583b4e4a729ab61b6354dd2c78
-# c3db6044546a4cf4b12979359f1c405f
-# 334e346897bb4d32b6f6ac1cbd010905
-# 1a4e973fda024c51ada51b0ab6da898c
-# 2b7b48e5f57a4f47977dcdc70382918e
-# f6d8970bad404626ad88b2c2e5562154
-# 2f2022bfb7c64004ae0277cc2ad5ce5d
-# c99800615c3240859375cdf3f4ddd966
-# 151f726770594099bfca1fec8f75d53b
-# bf164ad3509740b292fd97657e0e6310
-# 1981b23871ee4ae1a196d39a6e128248
-# af26010f740e40a998229611875ffe11
-# 2e0d18f17dcd49cd8bc8f59b30519219
-# fac5a3af2df84fbab344c48836ab9031
-# 5cb1c86bfa1746b68c59d43da2747ff5
 msgid "**Subcommands**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:174
-# 9471af000bff449d9b8da05598ae2ad5
 msgid ":ref:`activate <spack-activate>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:175
-# fda605fe259945f59dc83edb56f4fa3f
 msgid ":ref:`add <spack-add>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:176
-# 9c16d7889d6e4f2bb344b953414440a8
 msgid ":ref:`arch <spack-arch>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:177
-# 79489c7d11624749808e86fd3ed71303
 msgid ":ref:`blame <spack-blame>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:178
-# ca165cb0b6bd4050a827adb87e206943
 msgid ":ref:`bootstrap <spack-bootstrap>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:179
-# f05f82af89334d05aa023590121f38d1
 msgid ":ref:`build <spack-build>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:180
-# 550f3d56d91b44039ad04db3e369e5af
 msgid ":ref:`build-env <spack-build-env>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:181
-# 775ef650c2cf4c188e3e58765a0f6d34
 msgid ":ref:`buildcache <spack-buildcache>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:182
-# 0a1fa88525504406bfc7e2780048c5de
 msgid ":ref:`cd <spack-cd>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:183
-# ffa8986acbe243bd94ebfad27a86e37a
 msgid ":ref:`checksum <spack-checksum>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:184
-# 134df99d8d2b4af7b2f756f47c83954b
 msgid ":ref:`clean <spack-clean>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:185
-# c7cf2a7214f5464999e7a832d14999bf
 msgid ":ref:`clone <spack-clone>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:186
-# b63c23e985a34714980be0419a78edc4
 msgid ":ref:`commands <spack-commands>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:187
-# 1bf2ca0f135e4057bd4d2257878f2c57
 msgid ":ref:`compiler <spack-compiler>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:188
-# da07b1b208ce457bb63514d71b860bc7
 msgid ":ref:`compilers <spack-compilers>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:189
-# d589ff5910aa4a34a9646e84d6d0e2ce
 msgid ":ref:`concretize <spack-concretize>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:190
-# e76d0f4d35a94380ac7ad32e7384bff6
 msgid ":ref:`config <spack-config>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:191
-# f5c5663d8a134b889af2f71990fa8cd8
 msgid ":ref:`configure <spack-configure>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:192
-# 5ea07ffd51864da29ee493bf7bbf14ca
 msgid ":ref:`create <spack-create>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:193
-# c61020d02bb5471e986701dde1caf9e6
 msgid ":ref:`deactivate <spack-deactivate>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:194
-# 63da78f94ee141d6915623e5460db121
 msgid ":ref:`debug <spack-debug>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:195
-# 3f66dc8e61aa4bc694629ecc7a1d96b0
 msgid ":ref:`dependencies <spack-dependencies>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:196
-# e8045b611cca430697466d946835af5f
 msgid ":ref:`dependents <spack-dependents>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:197
-# 2439fdc3fdce496ea50430b2d8f40f30
 msgid ":ref:`diy <spack-diy>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:198
-# 47cae812eea64864a51594f0205f9fc1
 msgid ":ref:`docs <spack-docs>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:199
-# 67d7d50c750d44679b00e4db5a90aff9
 msgid ":ref:`edit <spack-edit>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:200
-# 391c3a749eab46ebad4a0796075dd849
 msgid ":ref:`env <spack-env>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:201
-# f782d9a1fdba48a59cbb5d511922bcd0
 msgid ":ref:`extensions <spack-extensions>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:202
-# f9ff6c26b087471ca6d7210d12d4edaf
 msgid ":ref:`fetch <spack-fetch>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:203
-# dd132cd204e64e2489f87fcf5e269f30
 msgid ":ref:`find <spack-find>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:204
-# 56c7834be70c49f2bca70aca11ac0b8f
 msgid ":ref:`flake8 <spack-flake8>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:205
-# 801e1df95ab5429ca280246494f9afbc
 msgid ":ref:`gpg <spack-gpg>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:206
-# 15f3930527654d79addeab2a8f9c4453
 msgid ":ref:`graph <spack-graph>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:207
-# 5f1a7ab225bb42e8b893b5170f741ace
 msgid ":ref:`help <spack-help>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:208
-# ea6d7e6196da4b10a2db1de4391e2b43
 msgid ":ref:`info <spack-info>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:209
-# 01853f95031d4e3fba5d613de50084a2
 msgid ":ref:`install <spack-install>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:210
-# cdc26e574be5445eb4bb2114dae91fc1
 msgid ":ref:`license <spack-license>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:211
-# b4357660096644c2b99cd7ea212395d0
 msgid ":ref:`list <spack-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:212
-# 56344d8db74f44daa2eebce772b7ff64
 msgid ":ref:`load <spack-load>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:213
-# 0d4e4b5b52c841118d9ac4cb2bebf00c
 msgid ":ref:`location <spack-location>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:214
-# c1c2455e3e7c4ea28f8fcfedf5cc5b41
 msgid ":ref:`log-parse <spack-log-parse>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:215
-# c0166226c8db4415b8cf5110ebf9221d
 msgid ":ref:`mirror <spack-mirror>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:216
-# f5714250bffe4974b789deea315e94b8
 msgid ":ref:`module <spack-module>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:217
-# 18b765e27ba348278923b3c0a281fb9b
 msgid ":ref:`patch <spack-patch>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:218
-# af490463aec54be7a540af7cced58091
 msgid ":ref:`pkg <spack-pkg>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:219
-# 9922fc41043c4790ad80908c29d3dfed
 msgid ":ref:`providers <spack-providers>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:220
-# 59ad2f27296049808aba5bc91d6d75a5
 msgid ":ref:`pydoc <spack-pydoc>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:221
-# b6a70073316a4c018930750b6bbfc590
 msgid ":ref:`python <spack-python>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:222
-# 91ffce61dda441bb96144ce9a3b548c7
 msgid ":ref:`reindex <spack-reindex>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:223
-# 243d8971293f45f0bee94c2c20938d43
 msgid ":ref:`release-jobs <spack-release-jobs>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:224
-# 5c024e976b5344939e79c45fa22e6106
 msgid ":ref:`remove <spack-remove>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:225
-# 2743ddd091e9478ea5b0216fd97e2529
 msgid ":ref:`repo <spack-repo>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:227
-# 412421aa3043413b8fddd802786e61d6
 msgid ":ref:`restage <spack-restage>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:228
-# 1bf7e5f1e8294dedac7e890f1e9c03f1
 msgid ":ref:`setup <spack-setup>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:229
-# 2cd8a810291941b7bbaac4735bf1f97f
 msgid ":ref:`spec <spack-spec>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:230
-# 543a35c6f9c54d83899e1db56aaed611
 msgid ":ref:`stage <spack-stage>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:231
-# 625e1ba3195d4800a5f0b577d86bf84f
 msgid ":ref:`test <spack-test>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:232
-# 3cb73afdf4d4401897c8b7c377c23c6d
 msgid ":ref:`uninstall <spack-uninstall>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:233
-# 27b34a15d5704945b1febb481cc20b28
 msgid ":ref:`unload <spack-unload>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:234
-# cf9981c33b7e440799b19355f42a42d9
 msgid ":ref:`unuse <spack-unuse>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:235
-# 52b08b4ad36a49e1871c41a0581cfcd2
 msgid ":ref:`upload-s3 <spack-upload-s3>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:236
-# 42fc8da6a1ea4b988d0d1076add691e8
 msgid ":ref:`url <spack-url>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:237
-# d9f980eb45d1428fb4ce7fed1aec4503
 msgid ":ref:`use <spack-use>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:238
-# a4389699f9fd4c799aee00d3244f54f6
 msgid ":ref:`versions <spack-versions>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:239
-# 2b82c69b49a744839b691367ce3372d6
 msgid ":ref:`view <spack-view>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:247
-# b928c3395c7d4442aeef94792d019f19
 msgid "spack activate"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:249
-# 91032663d15f4d069ed49bfc343b2db7
 msgid "activate a package extension"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:256
-# 47cf1607fb32408f8eebad8fe4c933c6
 msgid ":ref:`More documentation <cmd-spack-activate>`"
 msgstr ""
 
@@ -1754,102 +1152,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:4753
 #: ../spack/lib/spack/docs/command_index.rst:4786
 #: ../spack/lib/spack/docs/command_index.rst:4819
-# 3a79745196ec48e7a338d65b0704cb83
-# 417b7d4080e444509d94083377680c0c
-# bdfa37f21b484ef9a312e06b91a3613c
-# 7d429e04f8864c9e9da67203802697d6
-# d37118c61fbe4d99a276f73bcbd4dc31
-# 93873d9789d143509d84a3dbb8c01964
-# 7ada5e5279a64366a795f27e2d69604b
-# b59e0e60d9ea4df9b80fd8d9235e1a26
-# 29e0dcb674b34ac4aa79346f4694f2f1
-# 67a19caba32848f39df516bc47d8db8f
-# 762f55f50a7f4a0185169b66fdd2c47e
-# 48c0367a6bd9454296943ac9f60c1a00
-# 0e43f5fb9c8747e4998b1fc797df2ac2
-# bac3648e25cd45ee81c66d72178c3701
-# fefe3aa4c0224fcab1e57f65d7a2b930
-# 102966f6a7104c2db7e3d74d39a7d912
-# 24e4832844804288abceab28ea2fe38a
-# 092c27c3182b4719b41d83868184b243
-# 81aa3f2d5e0d4a3ab8c30210130f89a0
-# 8ed7ec3aef364888aa7b3489220b60e3
-# 5e4fb6f40a2541b1a14da4cdca2d945c
-# 69e5114664194d638914b8e6cc3297cf
-# e729ede58f0e4420bdb2319cb534fb42
-# eac2145d22184de88702c1c2cad25c94
-# c7a4e6cdaa994b90ad0c9f154a44efa8
-# 15eb7a2636364383b6ca9d9b2d4c1dc6
-# 344d364bed044cd98bf997d16b627fbf
-# a54e74eefefb427c92eff2d821490140
-# 0a3044cda6304c2fae028905923b26ff
-# 7762476c13cb4f939c784bcd84b60dfa
-# 1835f50204e64c908814267aaa2f071d
-# 9629ac3113e64367a0d804338595e743
-# b6b9b15b476f484a92764045f50bac6f
-# 7d6117ef4eeb4b6cb9f335a5ce903e61
-# 94f1b9548f954121a72ae9a227ccc97d
-# ba024116bf1a40f0b670bdf36c102865
-# a2feb68d9f18464dab0ed65a1f655f15
-# 07b9aa47af834bed87950c8a1db78e62
-# 066d45d6651a4039aa434a1af5114b75
-# b9d3624f8bba4faa8adc1761d350f6f6
-# 140506c24c8c4aa7af948a01c16293ba
-# d746172a44244902a6b8d1e1ca303cca
-# a2f8a9008e7148339421e15b069e2570
-# 692db84f2a2f4dde8657c185da43f421
-# fb839fdd3cc24640b65ce053fd456829
-# 0662598d9d934ef087d72ef9d59dadaf
-# 5dccde3f67794dce8c67f9cecb9f8fc0
-# 9b9fe739f7824512b050e88e0b01e13b
-# 69b718e113b34cdeb1044a8b2ccb8b9d
-# 71d27643b116477daf489379cf16fc29
-# 63a55f506a7f4c25b2421cc230225650
-# c3a18f3490874e089ba3b70b01b6de50
-# a6bea99f46d4427ca05fa0e32cfee5f1
-# 5cd61d206d2745e98e47d1d030d353e8
-# 7de82742f09240ddabc37ee0555802c2
-# cada182f343247ab8467feff9a9810da
-# 335c936ae90b42e8be08b19111882296
-# cf54b66491a64695abfd871e8208621e
-# 7e70dd637b28411aa754beb7d183b720
-# 06c83dc5f9614d1588ce44f51214e9b9
-# f21d4292fab644f8ab81d3786133bcea
-# b690d413022f49ddb587566657fb5943
-# f50ab51c6caa4069a72670a13ec0632d
-# ada16dbf422d40eba4a0249c9b3570d5
-# bb8a35eecaa247ea9475972e2c6ff727
-# 62b637ba96e6407e9f77b33cfef16f3c
-# 0ee6e5d7537342ebb69a54f4dbc4f3fd
-# ed102fe1f31843639ec5890814895b00
-# 95c43b53c390440ca1085b8703cdddc8
-# 8b03d2d9c17b4886967713c5997a98ac
-# 46739868959a46bb956f4c859d7ed527
-# 6bb12ff9066f489483769d2df2132123
-# c26499cb3d11414f9eb28516b8fd950c
-# fc3e571bfec342b3ba3b77df6f27243b
-# bf77d86bf15b455cb63326d1d30e6d47
-# 9958ac69e22a46ce8fa8ec22c5b3d9b0
-# 711fd5f531314634b8901360d227b75a
-# a90ca1799caf4256ae1cf8dfb5ded085
-# f51e3b76b13045c5b6948b821644bb64
-# 9f7885f6b49b4efc987798b6565770fe
-# ca8d7a13ca0940f8a11b9bb0c6e581d9
-# 3ba0f6ca025d40f9bdc1f50ef56b9487
-# 0498f92165d84e9db567722bdb56164f
-# 6c3f1f6e0dcf4cee8562636d0fccdeab
-# 2b753924ccc34bf38939de39d9addd97
-# 59cf919f90d04997b37228fd1d3bb1e0
-# 124644a142c545b285c66d2e4f1b8422
-# fa626d68327e470dae923079f7e2a821
-# 71b3d0571a024b7fb81dad21b309a235
-# 7acf0635d0ac4c7fb2e9b60c4a16afc4
-# 92f55fd48d384545ac4851cb4ceff13e
-# fddc4fc6ce774b2783c452152efb4fae
-# 9710f141c7894fb8a3e56b1aa7978966
-# b55c21b18e95492cb02e0fe8ac5be748
-# 48365c3abae74e8cafad28cc13a2f6e2
-# 880f66f3c7ce42d18db2a6bf0c181de9
 msgid "**Positional arguments**"
 msgstr ""
 
@@ -1870,28 +1172,10 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:4760
 #: ../spack/lib/spack/docs/command_index.rst:4793
 #: ../spack/lib/spack/docs/command_index.rst:4826
-# a03000e2bd464d2fb8680fa9a2c4b06b
-# d83e5c59183442b5acd8140d9bfd997e
-# c00168d7129f402698a5333d2e2f42ba
-# 58e8026064524c4bb87e10c12136978d
-# db4638a4a4be4230900ac159889d1496
-# 730ee5ad7a3d4f06ba017d83d63f96ee
-# 4a16956f2d95480a904f521a8ed5a6ad
-# b50629f3805b47a3b2428fdf8a7b1dc5
-# c18bd37923124707bfca2dab1b794b03
-# c25d7cda64654cddb5aa34bf9ed6eb9b
-# 2849304383b640e288b440e268988a61
-# 35ada5273c0e4f188696f7ed0612791a
-# 5b5e54aeb53d49df966177da3c9e9380
-# 88a41e5de6934f6d941963124918fb91
-# 77a0b60025d14101812bf232a0586f1f
-# 33c266a6218143e6ac986a088bf7ba75
-# 82ff69a8ef144a0cb0f57b2c2ad56fb2
 msgid "spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:261
-# 13fb1af1262444c8ae7e0fb8873c7528
 msgid "spec of package extension to activate"
 msgstr ""
 
@@ -1905,49 +1189,30 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:1400
 #: ../spack/lib/spack/docs/command_index.rst:3897
 #: ../spack/lib/spack/docs/command_index.rst:4330
-# c3da00f641a4451199fa25e15744dc4c
-# a12d2123ee6b4f9797bd8735d6a30c42
-# b0e112b2eaac4ec887c3d84f4a4aa344
-# 0c41b196039c4f219f4748bcfc75d241
-# e53cffc4a16e44c8a28f2b5167445df3
-# a77bd7a59a0349c5aba30def6643a082
-# c6d615f26bcf43a8acd5f37004ff95b1
-# 2567dc0e967149a2944d9d6778d438d6
-# b0bac373ed1440faad8f420a8cbf1245
-# 7f77abf450854f9d873fab4ab929400e
 msgid "``-f, --force``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:270
-# 3837d511f13e45c5823eb4bf1dca410b
 msgid "activate without first activating dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:274
 #: ../spack/lib/spack/docs/command_index.rst:1403
 #: ../spack/lib/spack/docs/command_index.rst:1953
-# 795dcaf6a3e047f69df40518a2709161
-# 9564f87b244d4fd9874d1754ca28e0fe
-# 4c4f1929388f4567bf243b0c20b00856
 msgid "``-v VIEW, --view VIEW``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:273
 #: ../spack/lib/spack/docs/command_index.rst:1403
 #: ../spack/lib/spack/docs/command_index.rst:1952
-# 71dc1e4a7737418d9608fadab950ed54
-# 28cb0d54fc7342af84333211fb94b43e
-# cbced88138e34b79b7ed3af2d75f8fe2
 msgid "the view to operate on"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:281
-# 6ed643614ca7470e8bca6588a35064c4
 msgid "spack add"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:283
-# 7558a5bbe3b14036ab0417a91dea7686
 msgid "add a spec to an environment"
 msgstr ""
 
@@ -1959,119 +1224,90 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3885
 #: ../spack/lib/spack/docs/command_index.rst:4199
 #: ../spack/lib/spack/docs/command_index.rst:4248
-# b8e3225e469440bea0321b6fad853aec
-# 2135c16d9d9e4193adde1052ae8d185d
-# 189030afbc8a4168bc528f63ddb696ea
-# f4a1d606aa9d492dafd2ffe2900d8959
-# b125a85274d04b98aed9bbfc08f052fa
-# a7b404b3b33b486981c8c48ba8d4fa03
-# 5d7fd78797c242cf9f3c327230b2af17
-# 04ebd88844174b4a937acb644e37baf0
 msgid "specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:293
-# ddbb9addef92470b9bf1ae52a4de1cfb
 msgid "specs of packages to add"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:307
-# d99fe7e5a3414592b403d6063bd8acbe
 msgid "spack arch"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:309
-# 4b825b25955b4708bf4c70b3fad17eba
 msgid "print architecture information about this machine"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:322
-# 12b527f02f2247459279a8c587b72abb
 msgid "``-p, --platform``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:322
-# 7c9cf7d28b204baba556487cae4d4167
 msgid "print only the platform"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:325
-# bb153b13d90142fa923f36a2b12eadf4
 msgid "``-o, --operating-system``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:325
-# 3ae5320c092840b4951c931ee619ba81
 msgid "print only the operating system"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:329
-# 74eb9aedc2494c22a271bd8b8971d482
 msgid "``-t, --target``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:328
-# b494b4809889400ba099bed884719ab1
 msgid "print only the target"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:336
-# 1202dc30fb734abdac5b0595dc49cd11
 msgid "spack blame"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:338
-# 3b9a29c6ea0a457394e7bdcdd1aa9920
 msgid "show contributors to packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:349
-# e3f752d560484d2a96792686283259d7
 msgid "package_name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:348
-# 9ea3ee699b9942948a3a912510a9d59e
 msgid "name of package to show contributions for, or path to a file in the spack repo"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:357
-# 10818a5b62274d4ca632fd7bbc93cb29
 msgid "``-t, --time``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:357
-# f6a5f693033a4b7a94e5e9caf4a4592c
 msgid "sort by last modification date (default)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:360
-# f25ac77622e74bc590cf82f9fee7bb8a
 msgid "``-p, --percent``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:360
-# cc2ef7d0171e493a89645e9a96934bc5
 msgid "sort by percent of code"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:364
-# 6d398ee40ee64f1fadefefafffad64bc
 msgid "``-g, --git``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:363
-# 6115911e331d41a1beb68a506e8271e9
 msgid "show git blame output instead of summary"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:371
-# c765d02a869046cfbba343c952b44282
 msgid "spack bootstrap"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:373
-# 9197cc97343349a1b9b8980ad4ff55ea
 msgid "Bootstrap packages needed for spack to run smoothly"
 msgstr ""
 
@@ -2079,31 +1315,23 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:1548
 #: ../spack/lib/spack/docs/command_index.rst:2521
 #: ../spack/lib/spack/docs/command_index.rst:2835
-# 4df7e1a740874f89b11f3ab1de6c037f
-# 467bc982ee194595842fe5c6ad44e5a2
-# b33b6b711ef54428b7f5d861c982c7e1
-# c262b72aabc7485faafe483a1f264bad
 msgid "``-j JOBS, --jobs JOBS``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:386
-# 17abac0187e8479293e000e12b9ba51d
-msgid "explicitly set number of make jobs (default: #cpus)"
+#: ../spack/lib/spack/docs/command_index.rst:1548
+#: ../spack/lib/spack/docs/command_index.rst:2521
+msgid "explicitly set number of parallel jobs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:389
 #: ../spack/lib/spack/docs/command_index.rst:1560
 #: ../spack/lib/spack/docs/command_index.rst:2530
-# ec346239c6774c93818f623d4acf20dc
-# 0b4ddfe81f8f4cb8973694b3ab4dbfab
-# f54090a3ad7b435fae4bb56613a44c88
 msgid "``--keep-prefix``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:389
 #: ../spack/lib/spack/docs/command_index.rst:2530
-# fca10a64afc442c48ac2df3603f48a35
-# 02522d64195a41938ecf966a8872d8dc
 msgid "don't remove the install prefix if installation fails"
 msgstr ""
 
@@ -2111,17 +1339,11 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:888
 #: ../spack/lib/spack/docs/command_index.rst:1354
 #: ../spack/lib/spack/docs/command_index.rst:2533
-# 710223e53b684ff6b82454aea62bd1b8
-# fb027444349f4bd2a66aac565aac211e
-# a3de61a9367b490fab8df45049ecf83d
-# 44011f7d1e084bb29650cd43aad07e51
 msgid "``--keep-stage``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:392
 #: ../spack/lib/spack/docs/command_index.rst:2533
-# 54cc0394758041259fc47c228bbb9d8c
-# 01d799d872634fe3ba6a2098f9d38068
 msgid "don't remove the build stage if installation succeeds"
 msgstr ""
 
@@ -2133,14 +1355,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3544
 #: ../spack/lib/spack/docs/command_index.rst:4167
 #: ../spack/lib/spack/docs/command_index.rst:4256
-# 1698dd356a15468c89fa204a01c7fd29
-# fb1c3dabef534f27882adb1b7ab8692c
-# c649ab22d57542b6a6844480272cffbe
-# b5a46f6618f44522852f78c53433d509
-# 6f5ec55b787048ca872e19a38c581d2a
-# 71b0be63808744d5879bd8baebdeb164
-# 7a87a3449fab4073a544cf5457e63c20
-# f10328c81f34449a995d9c81b7c2e2c7
 msgid "``-n, --no-checksum``"
 msgstr ""
 
@@ -2152,23 +1366,12 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3543
 #: ../spack/lib/spack/docs/command_index.rst:4167
 #: ../spack/lib/spack/docs/command_index.rst:4256
-# a333243a1e6344c1a609cc08f5ee4477
-# 1bc90d51f4bb42cdabdd2d9bb143bc88
-# f6549a68a4a64c48ba0d77372d74bed0
-# 3aeaeb025b824839bedb944e2271c5dc
-# 7042e5e0efa54f1ca207c08b0e6c644e
-# ec52023259214c92b868ae184e24aac4
-# 00ae64f622d2471492fc7994dc290bb9
-# 7bbe92e8adbe4a4b903c5c09b93696cc
 msgid "do not use checksums to verify downloaded files (unsafe)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:398
 #: ../spack/lib/spack/docs/command_index.rst:2554
 #: ../spack/lib/spack/docs/command_index.rst:4170
-# 78d412a8445e411eaf2106b691a377f0
-# 7d80b25e6fcb4a47bffca2f1c0913cf3
-# e65918ebe3de45c3af26c9e32b52a4b6
 msgid "display verbose build output while installing"
 msgstr ""
 
@@ -2177,11 +1380,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:1569
 #: ../spack/lib/spack/docs/command_index.rst:2566
 #: ../spack/lib/spack/docs/command_index.rst:4173
-# 1bfe3cf61d2745aa9e160bf5e6da7052
-# 977098fa868a41339eb93bd07eeeff69
-# ec9bb1ad2056496eb11c946f8a16fc1a
-# 309239529e334aef8a2d94918255db52
-# ea8db1c6f36b4c3cbe94dce943c3d528
 msgid "``--clean``"
 msgstr ""
 
@@ -2190,11 +1388,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:1569
 #: ../spack/lib/spack/docs/command_index.rst:2566
 #: ../spack/lib/spack/docs/command_index.rst:4173
-# 4720cb7dffb246e7ac1f6da2fc345601
-# a5773d0b47d94e8387e8a293ba7a25de
-# 76d1bf7af7bd4e3e8f15734a41be890c
-# e362171a2508407e9dd858ce660e9799
-# 0b12590358c24aaf95967cce804d1489
 msgid "unset harmful variables in the build environment (default)"
 msgstr ""
 
@@ -2203,11 +1396,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:1573
 #: ../spack/lib/spack/docs/command_index.rst:2569
 #: ../spack/lib/spack/docs/command_index.rst:4177
-# 9738f7799aea4c2fb7a70ab1d1f732f6
-# 6861262debff4843a362c2e55b2966a5
-# 71c1542bf8bc44b488185d98ea97b1c5
-# d90b707d614d4d398acf08646c975b5c
-# 2a794c2312204ac7b2ac8bcda6ce3b5a
 msgid "``--dirty``"
 msgstr ""
 
@@ -2216,21 +1404,14 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:1572
 #: ../spack/lib/spack/docs/command_index.rst:2569
 #: ../spack/lib/spack/docs/command_index.rst:4176
-# 5c728ad4d8de48f88dab64fde2c343cb
-# e9de2d83d3734fed8f1ca085a147910b
-# fabfea298fe9442aba8e1a447899a6ab
-# 8192dc39b08344e3abac2784d3e4f188
-# bf9a3970ff3d46b79a195b867fa5a535
 msgid "preserve user environment in the spack build environment (danger!)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:412
-# 61b6cd3e5676485c9debbfb83e806003
 msgid "spack build"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:414
-# ab08f2c45ee842d285290e5ae488b56d
 msgid "stops at build stage when installing a package, if possible"
 msgstr ""
 
@@ -2240,126 +1421,96 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:2172
 #: ../spack/lib/spack/docs/command_index.rst:2251
 #: ../spack/lib/spack/docs/command_index.rst:2510
-# 584403fb12204397b8582580c9625ec2
-# 074e1d9710bc411f97ab471d901f67d6
-# 796a5bc0ee694c80822ada137b5ac542
-# 5242ffef5b5c4285b3012c6793ba8ec3
-# 7271b10420e146dfb87e79277d096b8c
-# 5e9982ae6d1046a9b808633ebce2cfb7
 msgid "package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:424
 #: ../spack/lib/spack/docs/command_index.rst:1314
 #: ../spack/lib/spack/docs/command_index.rst:2509
-# 6a957aa8dbe24ebcad02d615996bf88f
-# b6c1b4582aa248e19154255410811d95
-# f0374fab5b594f3abfd6e1444c9e3f0c
 msgid "spec of the package to install"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:441
-# 378349db330146b8a75228fe93d54117
 msgid "spack build-env"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:443
-# 00bd3b6a0acd4c62952f5b40a2e5a9a2
 msgid "run a command in a spec's install environment, or dump its environment to screen or file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:454
-# 3b93e61f6781488d8af8ccd81357262a
 msgid "spec [--] [cmd]..."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:453
-# 599ca8ad40114181a509c5e7a71f8832
 msgid "specs of package environment to emulate"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:468
-# a81b605e261f436ea8be6815ecb35f83
 msgid "``--dump FILE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:468
-# 7c04149c666845ad8222343de2442d83
 msgid "dump a source-able environment to FILE"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:472
-# 0cbafcb3613a47bc8ddb33c2cbf75e9a
 msgid "``--pickle FILE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:471
-# d64f7aa8e94141479fbf99385f8118b9
 msgid "dump a pickled source-able environment to FILE"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:479
-# c6f19154537e4574b66f3708c62763a8
 msgid "spack buildcache"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:481
-# 94bbd60efcdc4f35a6465fb010616f53
 msgid "create, download and install binary packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:488
-# 8f6d9dd0fa164150a0b24d0084af2c1c
 msgid ":ref:`More documentation <cmd-spack-buildcache>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:501
-# b67ca65e5b444544b273fac2324d9410
 msgid ":ref:`buildcache create <spack-buildcache-create>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:502
-# 071d49fd953e415faf0f7deaabecc254
 msgid ":ref:`buildcache install <spack-buildcache-install>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:503
-# c542546a89074d1295f94b7be00a381f
 msgid ":ref:`buildcache list <spack-buildcache-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:504
-# 5139b45c82e04ba5b8868abff34da3df
 msgid ":ref:`buildcache keys <spack-buildcache-keys>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:505
-# 95346a371b174767900423d67bf5ba35
 msgid ":ref:`buildcache preview <spack-buildcache-preview>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:506
-# 42fd9dd89730414c82cdac1ebc3aa6da
 msgid ":ref:`buildcache check <spack-buildcache-check>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:507
-# 597ddba991e840138d65de8f4ace534b
 msgid ":ref:`buildcache download <spack-buildcache-download>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:508
-# c81e98cfb7414e19990fc8b6dd651487
 msgid ":ref:`buildcache get-buildcache-name <spack-buildcache-get-buildcache-name>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:509
-# f34b0f27a6204b95a741eee1388c24ae
 msgid ":ref:`buildcache save-yaml <spack-buildcache-save-yaml>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:517
-# 230ad1adc7b245d4b149e7f4b05c20ec
 msgid "spack buildcache create"
 msgstr ""
 
@@ -2372,91 +1523,65 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3594
 #: ../spack/lib/spack/docs/command_index.rst:4130
 #: ../spack/lib/spack/docs/command_index.rst:4322
-# ac55d42a27dd46a7b1c455caaa7b7525
-# 3e51c49c1cb14b58bbccf7da018dc135
-# 8debef49e92b4bf9bad89f5c2efbb2eb
-# ddc2126aa7f64d25b535813a73c9e410
-# aceb9f8e831b40e3a826137268253d38
-# 9d2e4c1cbb5f4f2594409e99dacd1d7d
-# 8f93ca2e15dd4bea92bd8d37d5be67e4
-# 7f92014f93224a9da754a65eb87738ec
-# 795f80aea7894f11a785970e6784ae80
 msgid "packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:527
-# 4a0c8b9e145e4803975538108e3d02a0
 msgid "specs of packages to create buildcache for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:536
-# 1e67e1a37e5941518dc13f901f39e4e7
 msgid "``-r, --rel``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:536
-# 75ebe8aad53144d0857e78113bdf3281
 msgid "make all rpaths relative before creating tarballs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:539
-# 5d4e322d576240e498fba94c0e3e1277
 msgid "overwrite tarball if it exists."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:542
 #: ../spack/lib/spack/docs/command_index.rst:594
-# 03dfedc2e55044b6b11772bfd60cae7b
-# 334ec5f2014546469a9abb3909480cac
 msgid "``-u, --unsigned``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:542
-# b652cac0edf44affb6a5363e6bd26e96
 msgid "create unsigned buildcache tarballs for testing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:545
 #: ../spack/lib/spack/docs/command_index.rst:590
-# d98a65c6040042a1adfc70fc2e1c5078
-# 6c636060c01a4a64bf1d4d2acff70cf2
 msgid "``-a, --allow-root``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:545
 #: ../spack/lib/spack/docs/command_index.rst:590
-# 564b470d860643a0873df6df7ef2131a
-# 2d1acac8cae940bd94dd9475ccda3f86
 msgid "allow install root string in binary files after RPATH substitution"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:548
-# 732a5164148444a9a5145c3d9f49a66c
 msgid "``-k key, --key key``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:548
-# 7f58a95dab574b50b2c3fea66e3eb51f
 msgid "Key for signing."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:551
-# a70637677d3f451b9dd4ef21057d90c9
 msgid "``-d directory, --directory directory``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:551
-# 9564ef73f72c4ae0a317915ea6aba44e
 msgid "directory in which to save the tarballs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:554
-# 6f787f8ceaf24fc5aa6685bfb61212f4
 msgid "``--no-rebuild-index``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:554
-# 38fa9d1c2035425d92030c31a14cc4d3
 msgid "skip rebuilding index after building package(s)"
 msgstr ""
 
@@ -2465,56 +1590,42 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:741
 #: ../spack/lib/spack/docs/command_index.rst:772
 #: ../spack/lib/spack/docs/command_index.rst:4444
-# b1675b2198e647e38685205519635d95
-# 7eeabd43cb814a8db8738ab9fb6ed01f
-# d07fbcbaf46c49dea98571fb66fd1bdf
-# 1b6c2184fea14234b6dc7349b925337c
-# e551f39e699c410681a2545360c181b1
 msgid "``-y SPEC_YAML, --spec-yaml SPEC_YAML``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:557
-# 88a28b45ba04443793d600ed9594bf80
 msgid "Create buildcache entry for spec from yaml file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:565
-# 8a72f79329a14b94accb7f2b0f1497cb
 msgid "spack buildcache install"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:575
-# bd593b64e9c041dd989fc3021838ee61
 msgid "specs of packages to install buildcache for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:584
-# c6e3527df2584123997452091349a83e
 msgid "overwrite install directory if it exists."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:587
-# 210d41630458400e98d4dc4df815c746
 msgid "``-m, --multiple``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:587
-# d0f7c366b4fe466683485aaa8937b57d
 msgid "allow all matching packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:593
-# b6df504280554dd6b514e80fd5fdad6d
 msgid "install unsigned buildcache tarballs for testing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:601
-# 500c0c9d02814f469e0e1950ed5b83ef
 msgid "spack buildcache list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:611
-# 5659ed2f6cd143399f4fa4c440d743cd
 msgid "specs of packages to search for"
 msgstr ""
 
@@ -2522,10 +1633,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:1940
 #: ../spack/lib/spack/docs/command_index.rst:2031
 #: ../spack/lib/spack/docs/command_index.rst:4207
-# 657fb1e6bb044d52a1b88e26460f93b7
-# 32816616e96a45b683de24ad385c315a
-# 04fa1a43023c4264bfacf4902b2a6e1b
-# f42554e70cd24ccda6c426e0b5295262
 msgid "``-l, --long``"
 msgstr ""
 
@@ -2533,116 +1640,86 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:1940
 #: ../spack/lib/spack/docs/command_index.rst:2031
 #: ../spack/lib/spack/docs/command_index.rst:4207
-# 8bc69874fee747ab81e27d9cc4a33ab3
-# 38540849e27d4cc79f648ed9e35c0b2a
-# f6ddd40f68d14e10a86a93301b430781
-# 24e759a34ca749539bb7fd316efa0b74
 msgid "show dependency hashes as well as versions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:623
 #: ../spack/lib/spack/docs/command_index.rst:2034
 #: ../spack/lib/spack/docs/command_index.rst:4210
-# 8f1bc35bc8634e11badb202336680472
-# 45933f17c968423f998b35201aa3366f
-# 76cb965547404e0abb2b26743b9fcda0
 msgid "``-L, --very-long``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:623
 #: ../spack/lib/spack/docs/command_index.rst:2034
 #: ../spack/lib/spack/docs/command_index.rst:4210
-# 18b0701151d643ebb52bd2dae3677dd0
-# 5c46b4107f88409b8decc6507d371592
-# d2553c6175a2424499eced9976104195
 msgid "show full dependency hashes as well as versions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:626
 #: ../spack/lib/spack/docs/command_index.rst:2061
-# da0537a0bca946a9b757de5abebc18c3
-# 3d0247e634204046995b1699cf23e162
 msgid "``-v, --variants``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:626
 #: ../spack/lib/spack/docs/command_index.rst:2061
-# 791c330e50494d119e787a63c63136e6
-# a1317f4155264be4b04c120d5c10bfad
 msgid "show variants in output (can be long)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:629
-# f71e24261b04483a8b065c783c3ea49d
 msgid "force new download of specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:637
-# 7bde4c389e5847b9a1772d98e18fbccd
 msgid "spack buildcache keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:650
-# b51dfd6997874ed08f470e50d53f3c16
 msgid "``-i, --install``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:650
-# 3fb1d54337e94461bd82c812714814ce
 msgid "install Keys pulled from mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:653
-# ed2f09c6ae96415db14f17da1bda84ff
 msgid "``-t, --trust``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:653
-# cce38b92dfaf4b1da28a0a4d9a51b2eb
 msgid "trust all downloaded keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:656
-# 21c67c6e8b3c4baaab584f4361aa168a
 msgid "force new download of keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:664
-# c8c6fb693ae24ed7ab8d0471d8c4cf4e
 msgid "spack buildcache preview"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:674
-# 7ce32656705e4816bba322c08acccd31
 msgid "list of installed packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:688
-# 1362e7b9cbba47179a5921d910ac3ba5
 msgid "spack buildcache check"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:702
 #: ../spack/lib/spack/docs/command_index.rst:3843
-# 82924729608648ce98e5afa964ceef49
-# 179927acb371496ea14db127323fbefc
 msgid "``-m MIRROR_URL, --mirror-url MIRROR_URL``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:702
-# e31764f3c3004f339a9b4c50dcb8532e
 msgid "Override any configured mirrors with this mirror url"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:705
 #: ../spack/lib/spack/docs/command_index.rst:3846
-# 19975b659df14c80835a5bee616aebbb
-# 6c3f07c7926545f8b8be3a9348e1a695
 msgid "``-o OUTPUT_FILE, --output-file OUTPUT_FILE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:705
-# 0c51d438c09641a19d79ac8111e19ba0
 msgid "File where rebuild info should be written"
 msgstr ""
 
@@ -2659,24 +1736,10 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3978
 #: ../spack/lib/spack/docs/command_index.rst:4005
 #: ../spack/lib/spack/docs/command_index.rst:4032
-# 23f2ece483a44ba0b315424cf545230c
-# 042da37ce0ad4eea97861c7abcbe2d57
-# 48a64359415346f9b86add69904b1c6b
-# 80707a62b4e744d999f603819fc7e151
-# 6dae071ca0954e4ea576844162998176
-# 6e51a5d99f184301bb3e7d2ff39dcd95
-# 7c395eab266d4f4db67ef9349df11b5c
-# c8770b8dc04b4ebebc80a67fa3bb5d64
-# 7dfc811326184c1992df09560c820aed
-# 17e39b8bdfa14bd0a017f47af1536d7f
-# ceacb35394384a98884edcc670e4eceb
-# cf754cd5b3a14efeb1073b2eb1070444
-# 51949ce8695041d6817ebaa4c9747901
 msgid "``--scope {defaults,system,site,user}[/PLATFORM]``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:708
-# 8e64d2960ad44a189410369e5c5f4c98
 msgid "configuration scope containing mirrors to check"
 msgstr ""
 
@@ -2684,355 +1747,270 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:738
 #: ../spack/lib/spack/docs/command_index.rst:768
 #: ../spack/lib/spack/docs/command_index.rst:4441
-# 01ec0ba3b5474fa59f82157e8f78f885
-# a53c448410324812a743e06fc4d5ac3e
-# e2b1d960280c46098743ff422b5446b4
-# 5469bf43a7874a59af03970009633403
 msgid "``-s SPEC, --spec SPEC``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:711
-# e14b93d5a0814c4f9a248bad59bb1afb
 msgid "Check single spec instead of release specs file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:714
-# 733e4cbc2170466a8d717c76b5ad9fdd
 msgid "Check single spec from yaml file instead of release specs file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:718
-# 2d70e37f4b9a498ba997e914508f06f9
 msgid "``--rebuild-on-error``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:717
-# dc6d1ae2d0f84ad19a320847602e6350
 msgid "Default to rebuilding packages if errors are encountered during the process of checking whether rebuilding is needed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:725
-# 8b264359d8ff471e91d100f27d60cbaf
 msgid "spack buildcache download"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:738
-# f40b7e029ef749dcb88ed552df3fee30
 msgid "Download built tarball for spec from mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:741
-# 00df9647fc4547559f957f0ae4104183
 msgid "Download built tarball for spec (from yaml file) from mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:744
 #: ../spack/lib/spack/docs/command_index.rst:4260
-# 02a06dcf094c4151a1e946dfc362e557
-# e8fc2383cf0b478bb6587b1a4090b9ff
 msgid "``-p PATH, --path PATH``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:744
-# 3234e89b2c5842bca733c5f2f785c412
 msgid "Path to directory where tarball should be downloaded"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:748
-# 319df2f98f6c4b12822ceee0b9b5633c
 msgid "``-c, --require-cdashid``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:747
-# 860f430109444e3e8d2ee776636deb2b
 msgid "Require .cdashid file to be downloaded with buildcache entry"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:755
-# 0a5ec0fb20ea4eaa9f37b3a63d89cb46
 msgid "spack buildcache get-buildcache-name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:768
-# b152cf1688ea40f6a3c08dd50df073c7
 msgid "Spec string for which buildcache name is desired"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:771
-# 6f9e82b0b96644e7ad90f8cd783e51c6
 msgid "Path to spec yaml file for which buildcache name is desired"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:779
-# 66920d71526b4370a525589d2ecec079
 msgid "spack buildcache save-yaml"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:792
-# 9a3ceec346cb4b769d933dbc1e5522df
 msgid "``-r ROOT_SPEC, --root-spec ROOT_SPEC``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:792
-# 4224aa1ab7de4e1dbc86e67b784c5aee
 msgid "Root spec of dependent spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:795
-# 98108e5f872e4d8a861bd15de29a2a01
 msgid "``-s SPECS, --specs SPECS``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:795
-# d86b9affce1740cda0fb59c84d14ce62
 msgid "List of dependent specs for which saved yaml is desired"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:799
-# 486ac3b160a3468aaffb155a1660a2af
 msgid "``-y YAML_DIR, --yaml-dir YAML_DIR``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:798
-# 44a4001ac6244e99a07d089d38c8d3d1
 msgid "Path to directory where spec yamls should be saved"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:806
-# 721069ad340e4745ac337c36458da12c
 msgid "spack cd"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:808
-# b60bb457ffb44779a66cc4bc5f0db235
 msgid "cd to spack directories in the shell"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:815
-# efa941c11ca64252b86abe23a8342438
 msgid ":ref:`More documentation <cmd-spack-cd>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:820
 #: ../spack/lib/spack/docs/command_index.rst:2760
-# 939b36d8c7334e5bb6adb57a6c57f8a0
-# 7051e0c5ac6b4e07ac0048f278f22fa8
 msgid "spec of package to fetch directory for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:829
 #: ../spack/lib/spack/docs/command_index.rst:2769
-# fcf8bd7c60e541148bbc8fb5e4817272
-# a8d9805485ca47c686a55e53e04fc025
 msgid "``-m, --module-dir``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:829
 #: ../spack/lib/spack/docs/command_index.rst:2769
-# 625c3e4cfbaa4ca1805d6827305378f8
-# c4d901270be543c680edc3498fe28929
 msgid "spack python module directory"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:832
 #: ../spack/lib/spack/docs/command_index.rst:2772
-# 0dacf1833a704539bbb16452601b0ec7
-# c6dbdba8268c45b3974c8cf0f79b4cb6
 msgid "``-r, --spack-root``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:832
 #: ../spack/lib/spack/docs/command_index.rst:2772
-# 9ef23c5fcc044519a98d5f6f1f19a02d
-# 24f202a25da642b69d6b36dfc5ef22e5
 msgid "spack installation root"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:835
 #: ../spack/lib/spack/docs/command_index.rst:2775
-# a69da924a3764a3bbd2653101f547362
-# f9907ede16c247fe8592ae489a405587
 msgid "``-i, --install-dir``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:835
 #: ../spack/lib/spack/docs/command_index.rst:2775
-# cbac1d98de96416eb48ed4c49306ca34
-# e7598c16be264de2bd383ac5bbca9657
 msgid "install prefix for spec (spec need not be installed)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:838
 #: ../spack/lib/spack/docs/command_index.rst:2778
-# 8e59f2e864fa47fd9f3aa40c308f7ece
-# 50af0c26ff70452f90a4224155934d31
 msgid "``-p, --package-dir``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:838
 #: ../spack/lib/spack/docs/command_index.rst:2778
-# 0da0955651c249ddaad515ede59b21a4
-# f0e145bd71fa4b03b3b4612dfaf214a5
 msgid "directory enclosing a spec's package.py file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:841
 #: ../spack/lib/spack/docs/command_index.rst:2781
-# 86f075437d5b4acbb46b9c2d733a77a6
-# 976de68f7d004e358f840f93762753af
 msgid "``-P, --packages``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:841
 #: ../spack/lib/spack/docs/command_index.rst:2781
-# 1cf81816dcb745978a73cedb9d49954e
-# fba50b3c29d64d7280a49d503f40e5f4
 msgid "top-level packages directory for Spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:844
 #: ../spack/lib/spack/docs/command_index.rst:2784
-# 2ad7ba78b07640df971cab1f9b2dfffb
-# 1a3d466b33c94f968feef31a1d81131f
 msgid "``-s, --stage-dir``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:844
 #: ../spack/lib/spack/docs/command_index.rst:2784
-# 6c33795ed09e443687a9c6b9a5dd0c50
-# cf74179072d8491bae1a4dc33b2a8301
 msgid "stage directory for a spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:847
 #: ../spack/lib/spack/docs/command_index.rst:2787
-# adfa5e1c6062423683d2cb19c02440f3
-# 00e51a47dc9545de8ed643c794adbb48
 msgid "``-S, --stages``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:847
 #: ../spack/lib/spack/docs/command_index.rst:2787
-# cc27e4e1b4bf483cac24038ddd7834dc
-# e5b597a29d754fd588cd0abca2eb04d1
 msgid "top level stage directory"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:850
 #: ../spack/lib/spack/docs/command_index.rst:2790
-# ab9a1494d2684de68a456cf3c716b893
-# 38d0c608e2f844a284cb49ebcc4514bb
 msgid "``-b, --build-dir``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:850
 #: ../spack/lib/spack/docs/command_index.rst:2790
-# 830c643a4d024673ba9cb1a1e9f7c2d7
-# 1841fba5dff64da8b3d19b5abb2046e4
 msgid "checked out or expanded source directory for a spec (requires it to be staged first)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:853
 #: ../spack/lib/spack/docs/command_index.rst:2793
-# 725ba6b207364fd38fe227e96281dbd7
-# 6b33ce499e274baea9ae92c51eb8ddb0
 msgid "location of an environment managed by spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:861
-# 06a80d6f800d496bbfe7dbf5ab10804d
 msgid "spack checksum"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:863
-# 0fd01b630ec9401999f6803295d8c03c
 msgid "checksum available versions of a package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:870
-# 52e6af609d684acbba67f75fe83fad57
 msgid ":ref:`More documentation <cmd-spack-checksum>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:875
-# 2eb6aa310c024030840e961839a04f3e
 msgid "package to checksum versions for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:879
-# ea0e09a29325401c8dc2348667e44aa4
 msgid "versions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:878
-# b54aa44b17564482a2161054ec75d3da
 msgid "versions to generate checksums for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:887
 #: ../spack/lib/spack/docs/command_index.rst:1354
-# d2520daa220d45379bbd8836be20ea2a
-# d38350fbfda6475e89cdee0d26d118da
 msgid "don't clean up staging area when command completes"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:895
-# b301118b440f49768c3a9a93ea378caf
 msgid "spack clean"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:897
-# 87d4e7e85f5e417a9e7ff663efe09524
 msgid "remove temporary build files and/or downloaded archives"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:904
-# 5dbe0c9393a346f984e171169c70ab2f
 msgid ":ref:`More documentation <cmd-spack-clean>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:909
-# a51fb94d10e541748fbf6963ab646886
 msgid "removes the build stages and tarballs for specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:918
-# 770d5b63438941c389a24bca16a15e1a
 msgid "``-s, --stage``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:918
-# adc997f6fb504ecca5ccf5fb02068148
 msgid "remove all temporary build stages (default)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:921
-# d1e84fea06e24c6a9583ca09710f9d5a
 msgid "``-d, --downloads``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:921
-# 416c282cab0d467591eb6b3a447db667
 msgid "remove cached downloads"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:924
-# 228bfcbdd7554a228e0f315b9b3069c3
 msgid "``-m, --misc-cache``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:924
-# 27c07666beef45dbbba69f85ded52c35
 msgid "remove long-lived caches, like the virtual package index"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:927
-# 61a50cef6fe043399d3114cbae825f54
 msgid "``-p, --python-cache``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:927
-# 81f7333bbc794811a15be77d8be8083b
 msgid "remove .pyc, .pyo files and __pycache__ folders"
 msgstr ""
 
@@ -3044,146 +2022,111 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3893
 #: ../spack/lib/spack/docs/command_index.rst:4340
 #: ../spack/lib/spack/docs/command_index.rst:4805
-# 3a0eacd4c02346c8a0f58f14f35c2711
-# 1ca1f89d5f1d4f969fcdb9756d81e7bf
-# 57738eb38b0c453086c458f2d304fdcb
-# ebf3951336b341d0920a6b91007db3d8
-# 862c9d99a87c41129f72fbdb3d1f7ed3
-# 5e0872a4f9804fb8b038900db279f9cf
-# 56217cbd9b854af5819c00accca16b1e
-# a011a4a1c017479da2da169e3966adc1
 msgid "``-a, --all``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:930
-# 7e154e7b058f4223bb9b82de71ea6d91
 msgid "equivalent to -sdmp"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:938
-# 36af998cbc604e98b43ecea78e5dc79a
 msgid "spack clone"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:940
-# e1489ab8f50b43a7aaa3623c99e4ffaf
 msgid "create a new installation of spack in another prefix"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:951
-# 6245a8362d144593a3aa0a5dba8642b1
 msgid "prefix"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:950
-# 890d95417dfb4914a0f36f0a04c3e505
 msgid "name of prefix where we should install spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:960
-# f8348d90cd82403897e26caf989d54d6
 msgid "``-r REMOTE, --remote REMOTE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:959
-# fac624e042f24f6f8ee2d1a674799b7e
 msgid "name of the remote to clone from"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:967
-# bc8bf8d41a6e4a88a403433b0b2847a6
 msgid "spack commands"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:969
-# 5e105be7988e4b389e0d61953b4c5787
 msgid "list available spack commands"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:980
-# f3aa0f3e94d0473498e7aeeb695a34f6
 msgid "rst_files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:979
-# 6ff46389541341db84e960fad6d3988e
 msgid "list of rst files to search for `_cmd-spack-<cmd>` cross-refs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:988
-# 40cba8bf50954f9e9f0073602265ed0d
 msgid "``--format {rst,subcommands,names}``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:988
-# 3dea10bfc7d74d26a5241b38d129adb7
 msgid "format to be used to print the output (default: names)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:991
-# be6326b3c6fd4927a7654f5e71dec4ef
 msgid "``--header FILE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:991
-# 02f8181fc7b6488eb5c4a2c1320f6d7f
 msgid "prepend contents of FILE to the output (useful for rst format)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:995
 #: ../spack/lib/spack/docs/command_index.rst:2704
-# d2b649f091d249dca80cfe04d754813a
-# 27f6dcad3f114c538f2d469eb3ba9ede
 msgid "``--update FILE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:994
-# 019560f29f8c4123a950c75e83a17452
 msgid "write output to the specified file, if any command is newer"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1002
-# 7cfa99c3dd684fe2a774a117b54236d4
 msgid "spack compiler"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1004
-# 65209ddcdd4e4c1ab13d641cdad37f3f
 msgid "manage compilers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1022
-# f007be2203824b2988219e4e5dd3e1c6
 msgid ":ref:`compiler find <spack-compiler-find>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1023
-# 7e05eeab5412440aac6fe58798064aeb
 msgid ":ref:`compiler remove <spack-compiler-remove>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1024
-# 200df0476dde497e9d7f49c40b38476e
 msgid ":ref:`compiler list <spack-compiler-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1025
-# a161f70bfe2043b5b21724baef24e05a
 msgid ":ref:`compiler info <spack-compiler-info>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1033
-# 35af699274a14294afd6d9b7bc69c429
 msgid "spack compiler find"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1040
-# 281247d1cc744ab9ac94b4146a7fa46c
 msgid ":ref:`More documentation <cmd-spack-compiler-find>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1044
-# 2c33360039b94560b1d33b6dff1ee74e
 msgid "add_paths"
 msgstr ""
 
@@ -3193,34 +2136,23 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:2969
 #: ../spack/lib/spack/docs/command_index.rst:4004
 #: ../spack/lib/spack/docs/command_index.rst:4031
-# cc468f3d1fff4e33b8ab86181b59a713
-# 33d7377c321c4ec493d04ecc20ac6de2
-# e6b4cd3721c749e5bd1e79f1b2d7c867
-# b772deac23d5430aa75b0086f7fe3ea9
-# 8ca3dfa630a84a32a48a1ecf41a99438
-# d5ed6cc218214234ae23e734372dadc2
 msgid "configuration scope to modify"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1062
-# 06479a2cf469405ea06c5742b3a89e14
 msgid "spack compiler remove"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1071
 #: ../spack/lib/spack/docs/command_index.rst:1124
-# e981c8ec377f4ed4a9ea7ee8d9c29cb7
-# 67826436b1d34b70a6248affa0bb51e8
 msgid "compiler_spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1081
-# 56d851c043a848608d313ebcf0842140
 msgid "remove ALL compilers that match spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1092
-# f568810b473b4b7e9122747fd256a510
 msgid "spack compiler list"
 msgstr ""
 
@@ -3228,445 +2160,340 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:1134
 #: ../spack/lib/spack/docs/command_index.rst:2992
 #: ../spack/lib/spack/docs/command_index.rst:3977
-# 3c2a92c8d6404d5dae013c5ef9bc82ac
-# 228ed9c554e2485f9e5a5df88f81e2c9
-# 7a789f31929c44b599db3a79c1f3cc82
-# 49c68f04cb4945ef93d3a65f7de1ffde
 msgid "configuration scope to read from"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1113
-# 7585e4318bd140c58cf7d87838bf5be8
 msgid "spack compiler info"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1120
-# 2dd00cabebb941178e29c60ce7737145
 msgid ":ref:`More documentation <cmd-spack-compiler-info>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1142
-# 875bc985870045c6a9cbb759cb64b097
 msgid "spack compilers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1144
-# e341c06e9f0342d0b28ef4fb88f429e3
 msgid "list available compilers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1151
-# 94e4f946b7b24ac997facd65bf287a32
 msgid ":ref:`More documentation <cmd-spack-compilers>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1159
 #: ../spack/lib/spack/docs/command_index.rst:1205
-# f49c69e32ee94456b33e7669aae632fd
-# 9c5558ca381b456d842c01bfa5142363
 msgid "configuration scope to read/modify"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1167
-# f66e9f2043864e06b0f0237c0f45319e
 msgid "spack concretize"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1169
-# 36d3b4495fda4eddbd663ca8baa3a2ac
 msgid "concretize an environment and write a lockfile"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1182
-# 4c1df5d987904283814e39968d1f8546
 msgid "Re-concretize even if already concretized."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1190
-# dd0cc8d1bd1346c7882ce667c3d418f7
 msgid "spack config"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1192
-# 4a6e5aaa379c4fd4984ef10c5a2ec5a4
 msgid "get and set configuration options"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1213
-# 1e90e0e7741841158909ea1c00ad2c3c
 msgid ":ref:`config get <spack-config-get>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1214
-# 77bc0ace63444e449e452574dc8674da
 msgid ":ref:`config blame <spack-config-blame>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1215
-# 565de22b41e54b3bae580e6b8ea7029a
 msgid ":ref:`config edit <spack-config-edit>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1223
-# 21c452b6eafb438a8a3c028d84f492ab
 msgid "spack config get"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1230
-# 5eb854ca4c534ef7ab23dcec05f74a3c
 msgid ":ref:`More documentation <cmd-spack-config-get>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1236
 #: ../spack/lib/spack/docs/command_index.rst:1262
 #: ../spack/lib/spack/docs/command_index.rst:1286
-# d41bbb433fdd4701a95f0b5dc7a40654
-# 9cb7882bba8a4a75b1938b5a1437844c
-# 70108188f565491d8c5491da43ab513d
 msgid "SECTION"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1235
 #: ../spack/lib/spack/docs/command_index.rst:1261
-# 3e9114d3e5f84bd1b48847ebba2ae2a5
-# 3d09af22eeff4704bf7676e58846a4a7
 msgid "configuration section to print. options: %(choices)s"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1249
-# eca877b8743747a6977a37820629fb94
 msgid "spack config blame"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1256
-# 56329f809c7e43be8124e584ceb686cf
 msgid ":ref:`More documentation <cmd-spack-config-blame>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1275
-# 2c2fcae7597e4045abd5bdec930f6705
 msgid "spack config edit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1285
-# 94002c4e62fb4ab2a5dadd7311ab6be1
 msgid "configuration section to edit. options: %(choices)s"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1295
-# 826f6fffefa247cebe857ed83d784b34
 msgid "``--print-file``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1294
-# 12169f00ba7a4fbd9e304270dc41dad3
 msgid "print the file name that would be edited"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1302
-# 16d13688306948d0b02b255c5ae9ccc5
 msgid "spack configure"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1304
-# e264683344d944b9a88fedf0fe708530
 msgid "stage and configure a package but do not install"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1331
-# ff26d6b8d27441cab2708788e9bf2758
 msgid "spack create"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1333
-# a9f0323b2b84432c898ee9d4b1cab35b
 msgid "create a new package file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1340
-# bec915c1b8c645d8b300901302112946
 msgid ":ref:`More documentation <cmd-spack-create>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1346
 #: ../spack/lib/spack/docs/command_index.rst:2932
 #: ../spack/lib/spack/docs/command_index.rst:4523
-# 2772cc017d034e1fb784b6e71cc7d395
-# 6c1e3eea8a5a42a882ad2b87a2c907ca
-# dc8ed0d28d864b1188d80c56f64ca36b
 msgid "url"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1345
-# 055d346ed9df4e2c86b1212346f423ae
 msgid "url of package archive"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1357
-# 37fcd7ad58e04698961aba205351ff8d
 msgid "``-n NAME, --name NAME``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1357
-# fa94cfaebdaf416ebcccc918f4f3e5b3
 msgid "name of the package to create"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1360
-# 4a0c07404dab4be394dd2db22403c2f7
 msgid "``-t TEMPLATE, --template TEMPLATE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1360
-# 7585bbb0465844e3b7d66bb0b61fa9bd
 msgid "build system template to use. options: %(choices)s"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1363
 #: ../spack/lib/spack/docs/command_index.rst:1638
-# 7934753482844bed8de5167f041d8c69
-# a9ed195b40604f8d85a5f7762cdaa559
 msgid "``-r REPO, --repo REPO``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1363
-# bf026f264e0243e2b86a93e22e5a55bd
 msgid "path to a repository where the package should be created"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1366
 #: ../spack/lib/spack/docs/command_index.rst:1642
-# 26a81e9b57d9462aa6b2d4d6a9e5128e
-# 14b2b69b4dfe4f58b45649e2ac2dc099
 msgid "``-N NAMESPACE, --namespace NAMESPACE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1366
-# f72f265fb9914e43b4321fac11c0038b
 msgid "specify a namespace for the package. must be the namespace of a repository registered with Spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1369
-# 39065da8e92947cf8da576cf854020da
 msgid "overwrite any existing package file with the same name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1377
-# b9f0d2d05bcb4426951cdb441b945860
 msgid "spack deactivate"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1379
-# 37a2598bd99a48d182023a1b34dfd6ff
 msgid "deactivate a package extension"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1386
-# 761a037c9bda474490fe2d4e7cf56b09
 msgid ":ref:`More documentation <cmd-spack-deactivate>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1391
-# c12f6827f03648cfad85e89076ea809b
 msgid "spec of package extension to deactivate"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1400
-# 5b67c7dfa9e3453b8810e32df7ebb2fe
 msgid "run deactivation even if spec is NOT currently activated"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1406
-# fb8c0654606f4c07a3e06dc280d55ae3
 msgid "deactivate all extensions of an extendable package, or deactivate an extension AND its dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1414
-# c9337e17b3784cf5a64c063ff4f06ed8
 msgid "spack debug"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1416
-# cb5e7753c71b42e29fb4b16f3e20cb72
 msgid "debugging commands for troubleshooting Spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1434
-# 23b577dc1b2941d6b36e877957bef67e
 msgid ":ref:`debug create-db-tarball <spack-debug-create-db-tarball>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1442
-# 892df94214824702936b8579c31213ee
 msgid "spack debug create-db-tarball"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1460
-# 895cf03d67d846e5b6cd57714e7cdd7d
 msgid "spack dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1462
-# 50d086951256411fa10ebde3a820f5dc
 msgid "show dependencies of a package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1472
 #: ../spack/lib/spack/docs/command_index.rst:1507
-# 28c30f9dcf8342bf9d7b3960df0d6aee
-# d22c533ba60149689b066d0a6bfa6576
 msgid "spec or package name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1481
 #: ../spack/lib/spack/docs/command_index.rst:1516
 #: ../spack/lib/spack/docs/command_index.rst:2416
-# 9be580c630aa488f9092e189d62362b6
-# 3220bdac5855400bb2fda2a2de8395e7
-# 821973b8f417479d8b0d29b650098807
 msgid "``-i, --installed``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1481
-# 25de46fcfb3048f7b7cb156cccef01cc
 msgid "List installed dependencies of an installed spec, instead of possible dependencies of a package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1484
 #: ../spack/lib/spack/docs/command_index.rst:1520
-# 1e15e5cc27d44d0a92b08018ebfbcc5f
-# 40d8e85114a54b47ab1d33346e2fc3b4
 msgid "``-t, --transitive``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1484
-# 28abd121242b4e91af50e22d0e07d223
 msgid "show all transitive dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1488
-# 55cf5a4e53ab48eba25696bdb10b4fdc
 msgid "``-V, --no-expand-virtuals``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1487
-# 319807876f5b4f8d92dd95e202e0297d
 msgid "do not expand virtual dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1495
-# b65648f6cff2463989d2fcaf23dab7e6
 msgid "spack dependents"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1497
-# 0a05ad883d09438b867b4f281c53aac7
 msgid "show packages that depend on another"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1516
-# a02627ee68ec40c885374b95aa51d5a7
 msgid "List installed dependents of an installed spec, instead of possible dependents of a package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1519
-# ee57a97e3fab4a3bb0df40507b3f4432
 msgid "Show all transitive dependents."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1527
-# beca666724264436bd11cdcec750f671
 msgid "spack diy"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1529
-# 9f26d8aaf7db49f6896d74659d3513e7
 msgid "do-it-yourself: build from an existing source directory"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1539
 #: ../spack/lib/spack/docs/command_index.rst:4155
-# 92f773bacf17461db65e38b3e3fb9b25
-# 09f3b1d074244ca895313a670226f051
 msgid "specs to use for install. must contain package AND version"
 msgstr ""
 
-#: ../spack/lib/spack/docs/command_index.rst:1548
-#: ../spack/lib/spack/docs/command_index.rst:2521
-# 1b705e4d39c941688807cf9bfa862184
-# b9e091d51b0d4cd998b49589359c67a8
-msgid "explicitly set number of make jobs, default is #cpus."
-msgstr ""
-
 #: ../spack/lib/spack/docs/command_index.rst:1551
-# 9f60a99af5ee4c7db1b4c9589c9e6b2d
 msgid "``-d SOURCE_PATH, --source-path SOURCE_PATH``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1551
-# 5917a659c86e4e7fb0dbc33c27393986
 msgid "path to source directory. defaults to the current directory"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1554
 #: ../spack/lib/spack/docs/command_index.rst:4164
-# ce318d02308741599069102346c657ea
-# 66a2bc0796ec40dcb632f30bea252a7a
 msgid "``-i, --ignore-dependencies``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1554
-# 3816aba662cf4b33a872c9ca2fc869c8
 msgid "don't try to install dependencies of requested packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1560
-# 1fde4cffe3e94a60ba552f392ffb4210
 msgid "do not remove the install prefix if installation fails"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1563
-# 6fbb849c0df248cb953dc2a785bbfe21
 msgid "``--skip-patch``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1563
-# 0a4919d46b1648559841b47c6443bf92
 msgid "skip patching for the DIY build"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1566
-# 23d39a49a120440da75b155fd09d2c22
 msgid "``-q, --quiet``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1566
-# e7177be502784ea59c2de39754342ea9
 msgid "do not display verbose build output while installing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1580
-# 60bea77808ca44db9e2e5e3f9046ce0e
 msgid "spack docs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1582
-# ac509d4da7064724b64392955193c7f8
 msgid "open spack documentation in a web browser"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1600
-# c6ccbca3cf6b40aba7071f445f762284
 msgid "spack edit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1602
-# 310f3d2b6eac4002a6820cb33e71a727
 msgid "open package files in $EDITOR"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1609
-# 2fbaa5ebd9b1406b8db10dda15ae6b89
 msgid ":ref:`More documentation <cmd-spack-edit>`"
 msgstr ""
 
@@ -3674,290 +2501,227 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:2283
 #: ../spack/lib/spack/docs/command_index.rst:2928
 #: ../spack/lib/spack/docs/command_index.rst:2959
-# 0bf3e93411634a1e96263cfbe8d5578b
-# 004a5c972fb245c4b5795bcb17b38893
-# e42338cb71194ac09fe1f51e3360a1ec
-# 11542e5c3cbb40e184c443ab7c55b08b
 msgid "name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1614
-# b58bd423cd6a4a289131e964a962b11d
 msgid "name of package to edit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1623
-# 6c8366ec60c447cca9ed3fbe22120d92
 msgid "``-b, --build-system``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1623
-# a4e4d449589a462cae95a8b1d24fc558
 msgid "Edit the build system with the supplied name."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1626
-# 9380199e1ddc4ceabee354a8790aee72
 msgid "``-c, --command``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1626
-# 208c84350a1b46b98c8202fa3ab4c1ce
 msgid "edit the command with the supplied name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1629
-# a350991fe6124a0cb5c72e92125ac8f7
 msgid "``-d, --docs``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1629
-# dba70af92a1e40f3884852cc530f7119
 msgid "edit the docs with the supplied name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1632
-# 08588819ecdd472abdd870c8da29d0ae
 msgid "``-t, --test``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1632
-# d70438d242754e6c85510d9f57387cbb
 msgid "edit the test with the supplied name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1635
-# f6844bcab59b47ef955884df88b1895f
 msgid "``-m, --module``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1635
-# e04188079bae479b81ec747674989bed
 msgid "edit the main spack module with the supplied name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1638
-# 2634af3ec9b7456f9289243ee368f05c
 msgid "path to repo to edit package in"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1641
-# 4b3e1666e08c4903af7d04d22a40686d
 msgid "namespace of package to edit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1649
-# 7bb039c5a65e4026884b960f8e287be1
 msgid "spack env"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1651
-# f426131064964575bae43f49f8bc68ed
 msgid "manage virtual environments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1658
-# f6e47c508a3b45a786aac31ebdd24d36
 msgid ":ref:`More documentation <cmd-spack-env>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1671
-# cee74e9a2bdf4562aaf1aef741f669ce
 msgid ":ref:`env activate <spack-env-activate>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1672
-# 2e0978ac330c49589c2d22d34d68b02a
 msgid ":ref:`env deactivate <spack-env-deactivate>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1673
-# 9aca2930abee42cdbadb1000d03bf181
 msgid ":ref:`env create <spack-env-create>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1674
-# fe5f57c28c254e939b74ad00b920758b
 msgid ":ref:`env remove <spack-env-remove>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1675
-# dc410b5c6a0f4545a29591004be6b300
 msgid ":ref:`env list <spack-env-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1676
-# 348f479692a040789b39efe5f311c4d4
 msgid ":ref:`env status <spack-env-status>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1677
-# 79c9d77b8ea843068323de410f74fc4c
 msgid ":ref:`env loads <spack-env-loads>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1678
-# 444293c31d36430d8a5b9bfbeca29f85
 msgid ":ref:`env view <spack-env-view>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1686
-# e4dcf18f4846435b8fa577ad1cf36c41
 msgid "spack env activate"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1697
 #: ../spack/lib/spack/docs/command_index.rst:1862
-# c7ef62cd6d7c428084324c8492950f84
-# 23b42cce9cc4480a86ea70300be634c3
 msgid "env"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1696
-# 3fe6930b778e4493a99dd443910162f5
 msgid "name of environment to activate"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1705
 #: ../spack/lib/spack/docs/command_index.rst:1741
-# 22ff3c7b467e4c0abcab365f3be6b0a9
-# af348ae4ffa74b048ae67d571d68ac21
 msgid "``--sh``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1705
-# 3be15b103c784fc7b47b9a07b6eb558c
 msgid "print sh commands to activate the environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1708
 #: ../spack/lib/spack/docs/command_index.rst:1745
-# 89fa6187e47a453ba2652e4d6414e4dc
-# b8481a030cc34d8b87bf694e5d804db6
 msgid "``--csh``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1708
-# 58331b567d454bd197ee166466945c9c
 msgid "print csh commands to activate the environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1711
-# d5a49863ba6b4c03b0ea2b115c779afd
 msgid "``-v, --with-view``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1711
-# 4ed60e0b83704e948c3506cd47984a5c
 msgid "update PATH etc. with associated view"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1714
-# e3d05faa038e422d9afbc8d8274fa24f
 msgid "``-V, --without-view``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1714
-# 33378fd9ea7c4223a993ca3b8cb45ae6
 msgid "do not update PATH etc. with associated view"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1717
 #: ../spack/lib/spack/docs/command_index.rst:1774
-# 437320f3502444029e056dd9aaa15917
-# a2caeab601d242e18fb959faf03e4cdd
 msgid "``-d, --dir``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1717
-# 99938eec7f7545fd817cbd3c78131350
 msgid "force spack to treat env as a directory, not a name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1721
-# f7bd15aa33e444a88d3ba2b96c51cbbd
 msgid "``-p, --prompt``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1720
-# 3b15e634355f46c78f6165fefba6ff92
 msgid "decorate the command line prompt when activating"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1728
-# 3e1f13d0b5a54342b4834562f7c6e0aa
 msgid "spack env deactivate"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1741
-# ceb0b6e0a79c4949baa36a590baa5185
 msgid "print sh commands to deactivate the environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1744
-# aed44e07b6ce4605861754420942f7d8
 msgid "print csh commands to deactivate the environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1752
-# 766c42c15c034620a564be16a62dc598
 msgid "spack env create"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1762
 #: ../spack/lib/spack/docs/command_index.rst:1799
-# 47a50bacc803444bb96cb0228e93997a
-# 4a5d51bffe8944b6bbc4f63f0c2d77a2
 msgid "ENV"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1762
-# 06e1fb48b2a7448398ab47a9d03b08f6
 msgid "name of environment to create"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1766
-# bd933892d9a845348ed01fbf2cc5de30
 msgid "envfile"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1765
-# 7b02219224684a1ca89143bd61489a06
 msgid "optional init file; can be spack.yaml or spack.lock"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1774
-# e810af768a0f467f97fecde2761aaeb5
 msgid "create an environment in a specific directory"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1777
-# eae723dd523642d79a44422017aa9501
 msgid "``--without-view``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1777
-# 3160d29396a44d258074a84329e0e029
 msgid "do not maintain a view for this environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1781
-# e91383f83eff402aa9471b1988509491
 msgid "``--with-view WITH_VIEW``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1780
-# 9beaa7ee23ff43e0be971cc4c5b061d9
 msgid "specify that this environment should maintain a view at the specified path (by default the view is maintained in the environment directory)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1788
-# 138ec9ba849e497782d6d0acef0f103d
 msgid "spack env remove"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1798
-# 97281c8af9904982ba0dd9df6aecb3fa
 msgid "environment(s) to remove"
 msgstr ""
 
@@ -3970,15 +2734,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3420
 #: ../spack/lib/spack/docs/command_index.rst:3477
 #: ../spack/lib/spack/docs/command_index.rst:4336
-# 2add45579ad548fc980552af85baf7b4
-# 9c81a22501334299ba5b833889808bd6
-# 23d7078b81c443c39b7152a3017dc9ff
-# 15128c6ca8c14ce185ff1a13b646acb5
-# 9fd35de160d944169698384bdec40899
-# 56cb7469c3654bd2af2047ee2f0acaa1
-# b7b5226778984995acc3ed0bb3fb7a96
-# 0336c7f13d65463695b621b121912d9d
-# a67295cd2de1480abf81b301a59643a9
 msgid "``-y, --yes-to-all``"
 msgstr ""
 
@@ -3991,45 +2746,30 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3419
 #: ../spack/lib/spack/docs/command_index.rst:3476
 #: ../spack/lib/spack/docs/command_index.rst:4336
-# 7f2152b485ef435c9fab614c6d9fb14d
-# 51fd0143b5ab48ddb4d3533b78a9b494
-# 4b73cccb0b664e8cba7dbb604183361f
-# 39efaaef26ce4eb5aa33340c8884f5c7
-# 28af13b26f284eebbbb91657c1520455
-# f872cabd1bda4608b9f892342cdd7cf4
-# 8f6822862b8a49a08d212ba590ec9c46
-# 850f13df6b34410d8de966cc7d61078f
-# 09d10c7596da4fd298a20509b25593d5
 msgid "assume \"yes\" is the answer to every confirmation request"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1815
-# 9c5eaf94c23a4da7a366f2c8419bcfe0
 msgid "spack env list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1833
-# 898fdb615788470899414518971e98e4
 msgid "spack env status"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1851
-# b4a19a91f3764f148c06a735a63d6fb8
 msgid "spack env loads"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1861
-# 419329b6526e40bcbc5a3503f1ba939c
 msgid "name of env to generate loads file for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1870
-# 99213ec064f147fb99267898a3985506
 msgid "``-m {tcl,lmod}, --module-type {tcl,lmod}``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1870
-# 420760db53d34b228c62898e04fbc517
 msgid "type of module system to generate loads for"
 msgstr ""
 
@@ -4037,10 +2777,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3168
 #: ../spack/lib/spack/docs/command_index.rst:3324
 #: ../spack/lib/spack/docs/command_index.rst:3503
-# 4a68f63bbfab476b86516e5a76f47fa1
-# 65a3ee874b074ee2b570e8d69c750bfc
-# 2dba41573cbe424e9e9ccbf9bfdff7a2
-# 136a8214f9ed44029c2d9673bd7f5999
 msgid "``--input-only``"
 msgstr ""
 
@@ -4048,10 +2784,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3168
 #: ../spack/lib/spack/docs/command_index.rst:3324
 #: ../spack/lib/spack/docs/command_index.rst:3503
-# 83a5d1fbadd84d44a1b16e747982bec4
-# 1de268b9bdf04121be145270027e2b5b
-# c8095bc964c54895b95bfdafde41b550
-# 4fc015c199bf4563a53ea139747f84db
 msgid "generate input for module command (instead of a shell script)"
 msgstr ""
 
@@ -4059,10 +2791,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3171
 #: ../spack/lib/spack/docs/command_index.rst:3327
 #: ../spack/lib/spack/docs/command_index.rst:3506
-# 1b46246b7af14faa9150af08a8575722
-# 265bbf9cbb0a4709b526b35504bb295f
-# 85607190199644979c867da558373b6d
-# f8d0bec30f364164bb930c1457acc9e7
 msgid "``-p PREFIX, --prefix PREFIX``"
 msgstr ""
 
@@ -4070,10 +2798,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3171
 #: ../spack/lib/spack/docs/command_index.rst:3327
 #: ../spack/lib/spack/docs/command_index.rst:3506
-# fd619d35e56147aabb38c092b61874dd
-# 0dc6ccdf17494831a1f6572935243f9e
-# 91089f2a303a4ac987e5974528770bae
-# e28261db520f4b23a724f7d2c8c5611a
 msgid "prepend to module names when issuing module load commands"
 msgstr ""
 
@@ -4081,10 +2805,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3174
 #: ../spack/lib/spack/docs/command_index.rst:3330
 #: ../spack/lib/spack/docs/command_index.rst:3509
-# a12a089862ca4dca9f8a7556d0d69b2e
-# be669b7c45b44ab29f2d6c2cdaa68cd3
-# c8c3331efa194f69a61ef5f81d148074
-# 8b78119c4c284d278136abc28f6d4054
 msgid "``-x EXCLUDE, --exclude EXCLUDE``"
 msgstr ""
 
@@ -4092,10 +2812,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3174
 #: ../spack/lib/spack/docs/command_index.rst:3330
 #: ../spack/lib/spack/docs/command_index.rst:3509
-# 9b191496f03447bd88a311d486f6bbeb
-# 8e1d919d69f64eb281d0feb72d0ca841
-# 294ec04e62ea43999422ac4773a0318b
-# cce40032e4a84784a0e4b19c9e0da98d
 msgid "exclude package from output; may be specified multiple times"
 msgstr ""
 
@@ -4108,15 +2824,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3450
 #: ../spack/lib/spack/docs/command_index.rst:3513
 #: ../spack/lib/spack/docs/command_index.rst:4633
-# 1270fce11ee74246928d6f5867ae5464
-# 618b40dab24841f2a71d7a7e6a8b23b3
-# d5aa794a6eac44d589bd9c1017acc03e
-# 644ccedd801249fbb6b044f2a82d0f28
-# 0c56ef6d79e6401ab0a1dc73c063bf5b
-# f334b81bffc54280b625e8bf2dcb0485
-# 753a565368c846b8a75bcdc679962af8
-# 048202bd2c574c96b5cd5ad6781bf561
-# 788e300cc3964f4996bfa68543089ba2
 msgid "``-r, --dependencies``"
 msgstr ""
 
@@ -4129,155 +2836,115 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3449
 #: ../spack/lib/spack/docs/command_index.rst:3512
 #: ../spack/lib/spack/docs/command_index.rst:4632
-# 5389b445742543b4b80ca109d18ae64c
-# 9069f833fff14c569c3a6942aaf20598
-# 66e5378e8578403e8e6785c7cc2c2f3b
-# e2986308c3db49599934cc53ca723f5d
-# 8a8af2cbd9024ad19fe526fbe1b19fc1
-# bcf2cf9a942140ee9f56747eaff43cf7
-# 79a61ec7be6945a0b6b4223bd17d7b65
-# ab81504e2b45474e9946b8295363e01a
-# 0c5d2b4d259d4853ab618d51e1e643ee
 msgid "recursively traverse spec dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1890
-# d2a222a6d2694102a18a406f8cadf056
 msgid "spack env view"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1900
-# 07ef9b88586243a084e3a8a336a65cd9
 msgid "{regenerate,enable,disable}"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1900
-# 69ba3aec6ab6499480b627a91be96c7e
 msgid "action to take for the environment's view"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1904
-# d3b9908b17604a8aa8b4bb6571bcf92f
 msgid "view_path"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1903
-# 320cc1d7b20e4ef9bfea759fc85006b7
 msgid "when enabling a view, optionally set the path manually"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1917
-# 4ad57ce0c9a140beb4fa9ddd5f912fe7
 msgid "spack extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1919
-# 37707fe149bf46e9bbf9ff45d600478d
 msgid "list extensions for package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1926
-# 3da97c96223648bcb04370658ac447b2
 msgid ":ref:`More documentation <cmd-spack-extensions>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1931
-# 89031c54959e4d969124162e43504110
 msgid "spec of package to list extensions for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1943
 #: ../spack/lib/spack/docs/command_index.rst:2025
-# 906557cb1e4543008e5ed98119ef336f
-# da81787e0852492589de5f1d52e69a6a
 msgid "``-p, --paths``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1943
-# 3189a37e0fef44a8a6fde1aaffd2726d
 msgid "show paths to extension install directories"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1946
 #: ../spack/lib/spack/docs/command_index.rst:2028
-# a42043c7e62948a18d633a928f45b9f4
-# 56b132b4982e46b7b7d2d10897c3b017
 msgid "``-d, --deps``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1946
-# 59700a9bb8854f5abfcfc74ed60f4981
 msgid "show full dependency DAG of extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1949
-# 90414eb8102743298b030f4778e0b39a
 msgid "``-s TYPE, --show TYPE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1949
-# 1ac95f8060b9404e9d11e52f5970f15a
 msgid "one of packages, installed, activated, all"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1960
-# b65cbc93195f439495071985c4916088
 msgid "spack fetch"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1962
-# 2987e11e60f347139d87b591d61dcac3
 msgid "fetch archives for packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1969
-# 69894efa59df4015a2a1f7ef870296ef
 msgid ":ref:`More documentation <cmd-spack-fetch>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1974
-# e0b087a9172e4b519dba3df32c0667b1
 msgid "specs of packages to fetch"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1986
 #: ../spack/lib/spack/docs/command_index.rst:2058
-# 46b38509c5a947b6befe8bf3dd88a302
-# f65752b3fe8c4b1cac04a2b4b27bb11e
 msgid "``-m, --missing``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1986
-# ff3810aec720461dbd9832e65ba90d56
 msgid "fetch only missing (not yet installed) dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1990
 #: ../spack/lib/spack/docs/command_index.rst:2905
-# e967f1cd186148ad8c24ee3230c37192
-# a50a2229b76a4444897408fd3bb6f37f
 msgid "``-D, --dependencies``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1989
 #: ../spack/lib/spack/docs/command_index.rst:2905
-# 59922f90b9fb416789d60549cd2171c0
-# 7041f01b188f4dc3a7d216c4ef269d25
 msgid "also fetch all dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1997
-# 5d51791044a34ccbb88132644e20065d
 msgid "spack find"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:1999
-# c8858153e5b54cab8d0a9d9d39b21548
 msgid "list and search installed packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2008
-# 28b3d5d5d8f84ba2af77eac4546900b3
 msgid ":ref:`More documentation <cmd-spack-find>`"
 msgstr ""
 
@@ -4295,20 +2962,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3438
 #: ../spack/lib/spack/docs/command_index.rst:3468
 #: ../spack/lib/spack/docs/command_index.rst:3495
-# 04d370cac14245c3b3ca95172215caf3
-# 99f997e14ac74b2d9cb7508c6fb2cd71
-# afbb894acf184559850b8844e07bf6ae
-# 1ba6d1deac734d26a162eab03685b121
-# 96ab9ae0b9564f22b0977421699dcedd
-# 384e7de125974953a9c41eeda8773e7b
-# 1abfa5f99fef402896785aab35b099d6
-# 420532dfa5dd45e3a5fde359563a40f1
-# 885ea78019764cb8aafc6196140b293f
-# b46ef193a6a647e7b34adfe3ae7eaf84
-# 61a9db3e4c1f4ff5a94284756af76b87
-# a8c8b2b6938046399f69e0fac8bd06ea
-# 73ed32f6ab62445cb5d484f2e522104f
-# 63bbfaf3ce4f408e9d22fed240af9b4d
 msgid "constraint"
 msgstr ""
 
@@ -4326,1800 +2979,1412 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:3437
 #: ../spack/lib/spack/docs/command_index.rst:3467
 #: ../spack/lib/spack/docs/command_index.rst:3494
-# 2aa26d70ddbc4436a7c3b8206b6af990
-# e4c5bc369cde4ef79ee5d66db5cdab70
-# 07bc062a5dbd46fcac8ece7e8769e6e4
-# 5303b12b27e7446194e76c2b1fd33dbb
-# e65fe5102f654e98acee9f4f7e95ca6a
-# a21a195c674d4cd7acb11089ca8e9fc2
-# 617091a34eca464196c8c6d69f0ad48c
-# cbd286d84ce24fa7ade5333a003cba55
-# fd8e6081ced74ba4915f3189b802045c
-# 5f5e9775a8b34e0e8658961d94226fd4
-# 424bf803589b47aba6ac1662814678f6
-# f5637f75d0ac4d478d66652cf994e963
-# 680a84740f6546aeb65e613f016227e9
-# 318700dfbfb64fc882f73d16bb872d7f
 msgid "constraint to select a subset of installed packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2022
-# 08834343b22d4afca4bbe5a4a59b1ca8
 msgid "``-s, --short``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2022
-# cff3ae0550f04425ba61b0d6dc7a88d0
 msgid "show only specs (default)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2025
-# 08a2b48772ab43e1b06f85b10b867aeb
 msgid "show paths to package install directories"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2028
-# 2d4fd8067cc4455bae871ada391fd5b0
 msgid "show full dependency DAG of installed packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2037
 #: ../spack/lib/spack/docs/command_index.rst:2708
-# 805e6d60f9fb479fbd63f3f97f2dbdb9
-# 765e95a4e9414a7997c337473c0e3b36
 msgid "``-t TAGS, --tags TAGS``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2037
 #: ../spack/lib/spack/docs/command_index.rst:2707
-# d127db79b8b14f97a13696835ec89b6e
-# c0d51aa46ea749d6a66ce4e686ad56dd
 msgid "filter a package query by tags"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2040
-# d2253cecf55349389c0e79e2b4a92108
 msgid "``-c, --show-concretized``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2040
-# 656f2e0ac6724fdcadaa6a61e00204ff
 msgid "show concretized specs in an environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2043
-# 3b0febcc21474a359f55296ba1c71418
 msgid "``-f, --show-flags``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2043
-# 71e16b422cb14e8b9cf8315269a9832a
 msgid "show spec compiler flags"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2046
-# ab28b15b8484489cbb9d413fde0691de
 msgid "``--show-full-compiler``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2046
-# 07a48cff590e42bcac8f8e5cfb70182f
 msgid "show full compiler specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2049
-# 155eeef39f6947a1b69f300ec280385c
 msgid "``-x, --explicit``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2049
-# 482c29e7705b4563825aca4dffb57b73
 msgid "show only specs that were installed explicitly"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2052
-# 8705445ba4894d1a861d85c9268e1d13
 msgid "``-X, --implicit``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2052
-# 3010278148324b0191bd7a82da0f01e1
 msgid "show only specs that were installed as dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2055
-# f3e7a982b10e47a09cd6606fb416d4bc
 msgid "``-u, --unknown``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2055
-# 1b9fb14659404b2891595ca77a184b5c
 msgid "show only specs Spack does not have a package for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2058
-# ded0ce32c50f4d93bb86a537fbe7efc0
 msgid "show missing dependencies as well as installed specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2064
-# 85fa921a397e41e89102bbb90213397e
 msgid "``-M, --only-missing``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2064
-# b872f4f633c64082bd75ad39b0dc3788
 msgid "show only missing dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2067
-# 8f8fb8ab09c24114a250bc3d57f71028
 msgid "``-N, --namespace``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2067
 #: ../spack/lib/spack/docs/command_index.rst:4222
-# 021ae972a6fc4b91a29f4669963edde4
-# fceefed053044e3aadff5ced277c2b25
 msgid "show fully qualified package names"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2070
-# 022c2e3650694717b9a965fbadb914d2
 msgid "``--start-date START_DATE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2070
-# 5eddb745396f49dca856be24e69583f2
 msgid "earliest date of installation [YYYY-MM-DD]"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2074
-# 3db3aa7f9d384b809194881c919b9a19
 msgid "``--end-date END_DATE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2073
-# 786fa237846d4ceaa03e132f8989ff72
 msgid "latest date of installation [YYYY-MM-DD]"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2081
-# 60440fe99d52422095d7886df71d9159
 msgid "spack flake8"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2083
-# a84c7b400abf4511b6eb811486978a23
 msgid "runs source code style checks on Spack. requires flake8"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2094
-# fd89bbe8f0e74096b87a337399e6c3ab
 msgid "files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2093
-# ed956bf874c143268928c11928cf2ca1
 msgid "specific files to check"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2102
-# cf416e7f03b14fbbb1dd970e46eea6e3
 msgid "``-b BASE, --base BASE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2102
-# 67afc66a2857459d933daa93fa595516
 msgid "select base branch for collecting list of modified files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2105
-# 306c97103b364158af67d8e92cf493ad
 msgid "``-k, --keep-temp``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2105
-# 3015650848ab44f9b041140979574b8d
 msgid "do not delete temporary directory where flake8 runs. use for debugging, to see filtered files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2108
-# da1ed674099c456bbef9d5e474b05671
 msgid "check all files, not just changed files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2111
-# 658e989a697c48b4be6e9b0cc6ec5f91
 msgid "``-o, --output``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2111
-# b8d29e690d7a4afb827d99ac30083690
 msgid "send filtered files to stdout as well as temp files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2114
-# 1f99ffa8972549d7a3ead3db411b5d07
 msgid "``-r, --root-relative``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2114
-# 28fc3f691393400c8d25d78290364e32
 msgid "print root-relative paths (default: cwd-relative)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2118
-# a9b8c878446d4a0bb1cb932df4453913
 msgid "``-U, --no-untracked``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2117
-# 703306c5a45e4fcb8e6d25b66d14226e
 msgid "exclude untracked files from checks"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2125
-# e9f8f1c7f36e4803b3021457cf56de58
 msgid "spack gpg"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2127
-# 608424143ca94da9809e28d12ee51f69
 msgid "handle GPG actions for spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2134
-# 39ff0e9448304d2789d3c546a1c61893
 msgid ":ref:`More documentation <cmd-spack-gpg>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2147
-# 4c541e955bc2438fae5f888c85877845
 msgid ":ref:`gpg verify <spack-gpg-verify>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2148
-# d56236f49c6647449d5508c49e433f10
 msgid ":ref:`gpg trust <spack-gpg-trust>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2149
-# a59127accad046998c59433bf315c852
 msgid ":ref:`gpg untrust <spack-gpg-untrust>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2150
-# 8acdd743ebfc49f0909361c88e2a98a4
 msgid ":ref:`gpg sign <spack-gpg-sign>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2151
-# 02f3c98038bf43158090c42cdb392050
 msgid ":ref:`gpg create <spack-gpg-create>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2152
-# 788e1cb7aaf04bbeba14778a6d9ba5c0
 msgid ":ref:`gpg list <spack-gpg-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2153
-# bd25d090e66242d388175d0a4c4e3998
 msgid ":ref:`gpg init <spack-gpg-init>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2154
-# 7707845213614f1c892d241e37a9031e
 msgid ":ref:`gpg export <spack-gpg-export>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2162
-# 663cfa79756548d684bd86fe8d9c5419
 msgid "spack gpg verify"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2172
-# 6c64dbc4ad864c168982bbc27773bea3
 msgid "the package to verify"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2176
-# 52c54265251a426dbff870667c3d8e5b
 msgid "signature"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2175
-# e0dfbfc6ec0944449c38a65453b14ba9
 msgid "the signature file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2189
-# fe2277fa03854a5bbc5d91ae0831663a
 msgid "spack gpg trust"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2200
-# 53599431557e49f1a4d4dc82d711d6e2
 msgid "keyfile"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2199
-# 8fd6db89bd7d417b8d6e69381868fbec
 msgid "add a key to the trust store"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2213
-# afa40a002f634ee587716fc51c619562
 msgid "spack gpg untrust"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2224
 #: ../spack/lib/spack/docs/command_index.rst:2368
-# 0572cc47353947e89639657ae4d8d1cb
-# 05218635d83f4dbf837cd15aed318cfc
 msgid "keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2223
-# 16da7b2ce8284c59942e8499a7e34948
 msgid "remove keys from the trust store"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2233
 #: ../spack/lib/spack/docs/command_index.rst:2326
-# bc13e2813aa94016b98db387f4a42873
-# 4a4d65596726466195bd275d5367ab5c
 msgid "``--signing``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2232
-# 7b9badc9a27c4e56a3dd24f22ba23382
 msgid "allow untrusting signing keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2240
-# 063aa2e704574c6d93ab1dbdadceb944
 msgid "spack gpg sign"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2250
-# d9947cfe04024289b3fcd14b5ffbf940
 msgid "the package to sign"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2259
-# d20d0ed995354212900e2f9e2747a8bf
 msgid "``--output DEST``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2259
-# 85db76dc52fc428b97f147c6aea179c9
 msgid "the directory to place signatures"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2262
-# 75788be061414e449a2e5ec56f122216
 msgid "``--key KEY``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2262
-# 047547d0d1264b79b6e80723448d3f2c
 msgid "the key to use for signing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2266
-# fd36de549fde4fcc8e803f19a74a508f
 msgid "``--clearsign``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2265
-# 57eeac49055f4f43bc12da0ab1948cde
 msgid "if specified, create a clearsign signature"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2273
-# b3888de08bf544b7ba555f69e79ef985
 msgid "spack gpg create"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2283
-# fe29bb99f0594147956f0bd29e2ae5ab
 msgid "the name to use for the new key"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2287
-# febeee27ac734b8990369b860552493c
 msgid "email"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2286
-# 1d452d81420942f5b788a6d7172e74d6
 msgid "the email address to use for the new key"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2295
-# 3f5b0199d616495190ce1d283c373f84
 msgid "``--comment COMMENT``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2295
-# 9eb52d2bd3434776a4deb3b631847091
 msgid "a description for the intended use of the key"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2298
-# 38d36609176e4a23b50c47e26cdb1fb6
 msgid "``--expires EXPIRATION``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2298
-# 704dce0c6e034060832ddf90a50a8ada
 msgid "when the key should expire"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2302
-# 681c61caf20a4be99cad38036aa13dd0
 msgid "``--export DEST``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2301
-# 9dabd0a7954443c6890f1b60a9aad3f1
 msgid "export the public key to a file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2309
-# 1008c5ef87914a7a830af4b01d19efde
 msgid "spack gpg list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2322
-# 2a4149e8a2f945e5929e88d8151b3c81
 msgid "``--trusted``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2322
-# 3acd6ab07f0240569eba9cbac227a952
 msgid "list trusted keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2325
-# 2ce9b5f0303d4882bd6604a1760abfc2
 msgid "list keys which may be used for signing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2333
-# f23335923be7475fbe6f0bb0af50963a
 msgid "spack gpg init"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2347
-# 3ce4b58828704823be6b177dedde9cb1
 msgid "``--from DIR``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2346
-# 52744d66f32f4b1bb76b39c1a98f40ea
 msgid "==SUPPRESS=="
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2354
-# 76647563d1bd440ebb4f997c246b72b9
 msgid "spack gpg export"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2364
-# a00b854e7f5a4f85a9b632c18ebea874
 msgid "location"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2364
-# e95265b8d0564461b423d7985229b711
 msgid "where to export keys"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2367
-# bbd0b0e6e1cd47fb96e67fcec8bce495
 msgid "the keys to export; all secret keys if unspecified"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2381
-# a94ace3319464b90aca1fc606a77f794
 msgid "spack graph"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2383
-# 5f379be0d4db485fb629520ef5074fc7
 msgid "generate graphs of package dependency relationships"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2390
-# 16c9bca40aa74671a4128ad235435499
 msgid ":ref:`More documentation <cmd-spack-graph>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2395
-# a4d0352967e142bba2f905577ac08fd8
 msgid "specs of packages to graph"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2404
-# 365943c6734d4efe956fbaebf25ab899
 msgid "``-a, --ascii``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2404
-# 5b8cb35b4f6f48a6a016e2839f525a9c
 msgid "draw graph as ascii to stdout (default)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2407
-# abf73d27ee9048b08825bb762ce2980e
 msgid "``-d, --dot``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2407
-# b480451f4298496c9d5aca85c8538c59
 msgid "generate graph in dot format and print to stdout"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2410
-# 5b7807cd7fe94178967d4e4147d17320
 msgid "``-n, --normalize``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2410
-# 810e345e1c864554ba5be24db0f1d763
 msgid "skip concretization; only print normalized spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2413
-# daaaf59cff15458e98fda720ab044030
 msgid "``-s, --static``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2413
-# 24627381de4d451b8131eeb51484b936
 msgid "use static information from packages, not dynamic spec info"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2416
-# ee2796a800bc4079a6cca9110be86d0d
 msgid "graph all installed specs in dot format (implies --dot)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2420
-# 0c611ad18cb24504a3bcab8bc9f4827a
 msgid "``-t DEPTYPE, --deptype DEPTYPE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2419
-# 7a51da632cc342b7abf3deb447193b3d
 msgid "comma-separated list of deptypes to traverse. default=build,link,run,test"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2427
-# 99218805cbd34cb09595cc8e9d1127fc
 msgid "spack help"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2429
-# 069cc3a7071846f9b860c2fe5994a172
 msgid "get help on spack and its commands"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2436
-# b5c923ac4f694a78978d3017b078d917
 msgid ":ref:`More documentation <cmd-spack-help>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2442
-# 1e389d8e50eb4ae782c3922894b8873b
 msgid "help_command"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2441
-# ae7db96098de45d79cd8290977d79005
 msgid "command to get help on"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2450
 #: ../spack/lib/spack/docs/command_index.rst:2453
-# 2d5afda1170846ae9dc54482796fd553
-# 7132a5be0b534b3bbea5b2e8bcd6d60d
 msgid "print all available commands"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2454
-# 1253d068cae846c0b7234492f85838e5
 msgid "``--spec``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2461
-# 8056cd860aae41a3919809a82dd457e1
 msgid "spack info"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2463
-# e2a8328052dc4ea2911980911d1a28ed
 msgid "get detailed information on a particular package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2470
-# 720da45988c142ac810f2bbf6513e237
 msgid ":ref:`More documentation <cmd-spack-info>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2476
 #: ../spack/lib/spack/docs/command_index.rst:4655
-# 7926efc2f8d74f3fb8536de18930c400
-# 21bb30f4fd514019bb269cf5f42def65
 msgid "PACKAGE"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2475
-# b37f585bed0c4941b64564481bb0191d
 msgid "name of package to get info for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2489
-# 9ddd9972832a48c8a329d37a1e070a84
 msgid "spack install"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2491
-# 53c57826b71245b18bc574b16d289ebd
 msgid "build and install packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2504
-# 63fef7e236b546f1baf60d8032e4917c
 msgid ":ref:`More documentation <cmd-spack-install>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2518
-# a6b9699721f5475b8f71276ef50d9ba2
 msgid "``--only {package,dependencies}``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2518
-# 4abbfd620ce44391915ecbf88e92f31f
 msgid "select the mode of installation. the default is to install the package along with all its dependencies. alternatively one can decide to install only the package or only the dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2524
 #: ../spack/lib/spack/docs/command_index.rst:4213
-# df869d45dfea44819655bc718d8e3988
-# f2989d3de7be4a4cb2514f37324b1bb2
 msgid "``-I, --install-status``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2524
 #: ../spack/lib/spack/docs/command_index.rst:4213
-# 02ddea80a933419fbbc93d804dd7dc2d
-# 8e72ba0f78174938af1c8380081eb2c1
 msgid "show install status of packages. packages can be: installed [+], missing and needed by an installed package [-], or not installed (no annotation)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2527
-# 81025e018daf472ebbdfbaf13b879511
 msgid "``--overwrite``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2527
-# c38a60ab12014147bda288101a5e13ea
 msgid "reinstall an existing spec, even if it has dependents"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2536
-# 676e54d6a0714a4a8810619db66a974a
 msgid "``--dont-restage``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2536
-# fda0713f08764ed9bbeb94e3082c03e4
 msgid "if a partial install is detected, don't delete prior state"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2539
-# ed9e6ade42884ec59f7347daebbcb155
 msgid "``--use-cache``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2539
-# 79e51c2ad63b426cbc75753ff72a3aa6
 msgid "check for pre-built Spack packages in mirrors (default)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2542
-# 49478710be2343de97e56b86171ed0fe
 msgid "``--no-cache``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2542
-# dfebc3837ee44066867281b817553e9c
 msgid "do not check for pre-built Spack packages in mirrors"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2545
-# 867d7402cdd045789184b78598f6cd07
 msgid "``--show-log-on-error``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2545
-# 7d216b6bef3b44618b82b6bd4a6469c1
 msgid "print full build log to stderr if build fails"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2548
-# 1bbaf6d2e10648589872e9aeca92941f
 msgid "``--source``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2548
-# 3092bb04307e4199aa4f560bcc55421d
 msgid "install source files in prefix"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2557
-# 6e34ddd8b15e4bca9258660d6fd6afb1
 msgid "``--fake``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2557
-# 67fe2d1bb73f4ddf999803541b92f96e
 msgid "fake install for debug purposes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2560
-# bdf1bf20432d45ed8e7ff97dea0849d9
 msgid "``--only-concrete``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2560
-# d4ee391e77314110965f50a721e9fe04
 msgid "(with environment) only install already concretized specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2563
-# 287226390b7042b4884f151f0a4aff12
 msgid "``-f SPEC_YAML_FILE, --file SPEC_YAML_FILE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2563
-# 26b3f2e6ee1d446abdb54ed83e4fbba2
 msgid "install from file. Read specs to install from .yaml files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2572
-# 1db1f0ba097a49b5897ba603e8889d06
 msgid "``--test {root,all}``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2572
-# df6be4d6d4354149a0f07e2e29da9224
 msgid "If 'root' is chosen, run package tests during installation for top-level packages (but skip tests for dependencies). if 'all' is chosen, run package tests during installation for all packages. If neither are chosen, don't run tests for any packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2575
-# 89f5902bc2ac4210af2e763bf800aee4
 msgid "``--run-tests``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2575
-# 4b4d3a45e4ae44d38ed8df93c73c6eef
 msgid "run package tests during installation (same as --test=all)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2578
-# 343d188e6f2a433d88008988f93f8a32
 msgid "``--log-format {None,junit,cdash}``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2578
-# 1557ba480d8046b194df47a812c418f1
 msgid "format to be used for log files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2581
-# 9620438103504385ba350d20bc2668db
 msgid "``--log-file LOG_FILE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2581
-# 0cb64c6d78854f2880d37ea257b993de
 msgid "filename for the log file. if not passed a default will be used"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2584
-# 05573d793f724b51aff9fddb7d182e34
 msgid "``--cdash-upload-url CDASH_UPLOAD_URL``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2584
-# cd15df20bc4b416391c3021090792f01
 msgid "CDash URL where reports will be uploaded"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2587
-# 28727528ad224adf9eea4695f032d490
 msgid "``--cdash-build CDASH_BUILD``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2587
-# a1e5747b60574952b10ee99e4a1bf742
 msgid "The name of the build that will be reported to CDash. Defaults to spec of the package to install."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2590
-# 728702b70e014565a50870dc2f600ca8
 msgid "``--cdash-site CDASH_SITE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2590
-# 10f6eea45caf40f6aec0768d91e40fb9
 msgid "The site name that will be reported to CDash. Defaults to current system hostname."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2593
-# 867fec5028bb4dad846d9a3a7b67de90
 msgid "``--cdash-track CDASH_TRACK``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2593
-# 56404bb5c4674ed2bed0d883499d9640
 msgid "Results will be reported to this group on CDash. Defaults to Experimental."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2596
-# e106fc767fc54372a555f13f5153d387
 msgid "``--cdash-buildstamp CDASH_BUILDSTAMP``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2596
-# afe490a606d548b28faeda0bfc015ef7
 msgid "Instead of letting the CDash reporter prepare the buildstamp which, when combined with build name, site and project, uniquely identifies the build, provide this argument to identify the build yourself.  Format: %%Y%%m%%d-%%H%%M-[cdash-track]"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2607
-# bac52766b15f45b59439fd8020b418a5
 msgid "spack license"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2609
-# 5aaddb661eb44055bf3b48b9448b07eb
 msgid "list and check license headers on files in spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2627
-# fd253e79d58f4f768315ea37ff929a43
 msgid ":ref:`license list-files <spack-license-list-files>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2628
-# cdc2d915b6154fdbad00baa29e394d3a
 msgid ":ref:`license verify <spack-license-verify>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2636
-# e030e96c5d3f4f13a947410317c8124e
 msgid "spack license list-files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2654
-# 5e46340aa73044adbd7bb9c31b31affa
 msgid "spack license verify"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2668
-# 379291c2b513472bbfbc2c9f6cbe44ab
 msgid "``--root ROOT``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2667
-# 004bd85d4c6a4880b9f10302c835c463
 msgid "scan a different prefix for license issues"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2675
-# 512460d2b75c494c872657840437e4a0
 msgid "spack list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2677
-# ec2de491d81a4bc997dabec72b8e6982
 msgid "list and search available packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2684
-# 2a49ad003cfa456385a4a1968963aa33
 msgid ":ref:`More documentation <cmd-spack-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2690
-# 76146ffd7d084e318e1cb999983d290f
 msgid "filter"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2689
-# 7e6cd9c0e6bb439ba1b581c0b697cce5
 msgid "optional case-insensitive glob patterns to filter results"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2698
-# d27626b7521d440a9bbf74a52937871a
 msgid "``-d, --search-description``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2698
-# 99323b54a24347b48ed801426a88ce0a
 msgid "filtering will also search the description for a match"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2701
-# ef364b8602da4b4a83843422328ec057
 msgid "``--format {rst,name_only,html}``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2701
-# fe23257978bc48a584ee8109d339d2a5
 msgid "format to be used to print the output [default: name_only]"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2704
-# 8d3458b86c98499084883abe7ca52388
 msgid "write output to the specified file, if any package is newer"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2715
-# 1c7bdbf2f6bd4ba9b5e61e49a79d3052
 msgid "spack load"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2717
-# c7e8b33dc4724b59a40ea9659f32f016
 msgid "add package to environment using `module load`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2724
-# 97ce826f73ed43ecafe12c1a20d6fdf8
 msgid ":ref:`More documentation <cmd-spack-load>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2729
-# f2cd4b67387f4fc4a18d696e0df28918
 msgid "spec of package to load with modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2746
-# 8f4e5cdaa1874395a4be5994578186e8
 msgid "spack location"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2748
-# d3eb432df9e0482a8c59f802356e56f7
 msgid "print out locations of packages and spack directories"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2755
-# be1c28db721841bea2685fcb58eec0e2
 msgid ":ref:`More documentation <cmd-spack-location>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2801
-# 16b04a7e7c824f0090176fec1e270720
 msgid "spack log-parse"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2803
-# 4e511e45829749fe94ef751a6b569b33
 msgid "filter errors and warnings from build logs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2814
-# 76e7c2de0f0c48d48f300f8c4b476cf5
 msgid "file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2813
-# e7313c1159e848688c18f0937fd59975
 msgid "a log file containing build output, or - for stdin"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2822
-# c71bd8edc2614dbd8032578271fe2be4
 msgid "``--show SHOW``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2822
-# d0badbc965d145a3a98de7964ab1cd1b
 msgid "comma-separated list of what to show; options: errors, warnings"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2825
-# 2ed58323b9864179b5805440e51e5f39
 msgid "``-c CONTEXT, --context CONTEXT``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2825
-# eea932b423994164a906d97d94786ca1
 msgid "lines of context to show around lines of interest"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2828
-# 4d5fd5ab4ce5474e81289246100707cc
 msgid "print out a profile of time spent in regexes during parse"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2831
-# d3579de963274988bf8da1c7af770106
 msgid "``-w WIDTH, --width WIDTH``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2831
-# 4a02da15d7ef42018ebb4701ea04a854
 msgid "wrap width: auto-size to terminal by default; 0 for no wrap"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2834
-# 7e6ea5b351f6418fbdc7d433007ff645
 msgid "number of jobs to parse log file (default: 1 for short logs, ncpus for long logs)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2842
-# ee001a12eeb04b58af5a544de2be516f
 msgid "spack mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2844
-# ad3df249c954448194b1527a616db511
 msgid "manage mirrors (source and binary)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2851
-# 273ec8f03b0d4577aeac8dc84c3bd30b
 msgid ":ref:`More documentation <cmd-spack-mirror>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2867
-# a57780db88294ddc909f1dc4986195b3
 msgid ":ref:`mirror create <spack-mirror-create>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2868
-# 114e395e4bf841109885e8ba1fe25d36
 msgid ":ref:`mirror add <spack-mirror-add>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2869
-# 0de8cd24459048eba7e4ae9ac1650dc1
 msgid ":ref:`mirror remove <spack-mirror-remove>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2870
-# 2940c31262244172b2d76258065db23f
 msgid ":ref:`mirror list <spack-mirror-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2878
-# a5ba904cf10544b0a539d5449c83e071
 msgid "spack mirror create"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2885
-# 52e9a5ffd4694f2ebb5179fa0b218cca
 msgid ":ref:`More documentation <cmd-spack-mirror-create>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2890
-# de21bbccd32b49e4ac511529ebcf104f
 msgid "specs of packages to put in mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2899
-# af237485352c42fc9f0537458a1d706c
 msgid "``-d DIRECTORY, --directory DIRECTORY``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2899
-# efbed7008b7c40ee89bdf2e8ec8860ee
 msgid "directory in which to create mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2902
-# 1bb65e03e30d489ca79156f283dffc5b
 msgid "``-f FILE, --file FILE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2902
-# 771f66515148409da7c3a5d1409cf2c8
 msgid "file with specs of packages to put in mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2909
-# 027b9e84f30c40d99d99be58ee7ddd27
 msgid "``-n VERSIONS_PER_SPEC, --versions-per-spec VERSIONS_PER_SPEC``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2908
-# 964ed97d411b4ea089c0c6d99afee697
 msgid "the number of versions to fetch for each spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2916
-# 41391b7fcab24f4696ba760a87d5d3a7
 msgid "spack mirror add"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2923
-# d9c890780b4a447a9b88580bd7b7f071
 msgid ":ref:`More documentation <cmd-spack-mirror-add>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2928
-# ab16f678d2254ac6b29c944ddc44c887
 msgid "mnemonic name for mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2931
-# 714bf038bec64da499e577ba700864af
 msgid "url of mirror directory from 'spack mirror create'"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2948
-# 76d2178a66404ccd805a2f2c31d17282
 msgid "spack mirror remove"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2955
-# 5592370c73044040b8d05424a5dc94ac
 msgid ":ref:`More documentation <cmd-spack-mirror-remove>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2977
-# 2efcd277de2f434684eb04a49fef0cd5
 msgid "spack mirror list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:2984
-# 8d10c491616f4947b9f3ce3e2fffbc1b
 msgid ":ref:`More documentation <cmd-spack-mirror-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3000
-# 3faa655d142d44aea46679ee769ef2d5
 msgid "spack module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3002
-# 483cbd4ef90a4f8d9ea46158b524d315
 msgid "manipulate module files"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3020
-# 6bf8f76d53394b36ba6e129c4a87efde
 msgid ":ref:`module dotkit <spack-module-dotkit>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3021
-# b3397fb1dc374744a0f0b6b68eafa8eb
 msgid ":ref:`module lmod <spack-module-lmod>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3022
-# e62038750fcc4fe1aa05e3eaf872deab
 msgid ":ref:`module tcl <spack-module-tcl>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3030
-# c4d1a50cddd346f1a13575cdb5063bdb
 msgid "spack module dotkit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3048
-# 0e90a3f07d1a4421b758a59f319a3416
 msgid ":ref:`module dotkit refresh <spack-module-dotkit-refresh>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3049
-# b8c92966a3a248d89a8ccceff15791fd
 msgid ":ref:`module dotkit find <spack-module-dotkit-find>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3050
-# 3324aa9df312454abfc87bc812ce6037
 msgid ":ref:`module dotkit rm <spack-module-dotkit-rm>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3051
-# b6813257a66845c99e2e28eb2303572d
 msgid ":ref:`module dotkit loads <spack-module-dotkit-loads>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3059
-# a080892d75c24c8eb487a48cf55f8bdd
 msgid "spack module dotkit refresh"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3078
 #: ../spack/lib/spack/docs/command_index.rst:3234
 #: ../spack/lib/spack/docs/command_index.rst:3413
-# c5d332dc5ea44c5a95409bc53acc5669
-# 66e5264f5c374fd0a5553df3158aa232
-# 3300ce1df9a2412987443f485947295d
 msgid "``--delete-tree``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3078
 #: ../spack/lib/spack/docs/command_index.rst:3234
 #: ../spack/lib/spack/docs/command_index.rst:3413
-# e1a705fdaaa647bab89d37628cb36ea3
-# 2c24b357923649b5bd2c15f90d6443ef
-# 86b8f8e1b6a149c1afcd220230abf7ff
 msgid "delete the module file tree before refresh"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3081
 #: ../spack/lib/spack/docs/command_index.rst:3237
 #: ../spack/lib/spack/docs/command_index.rst:3416
-# 46515415db834cdf9f2a5e12b1e62995
-# 51f381d369e048cfb41e7eb9275f6594
-# d23913d67fec439db863b3fc8d3f7e5a
 msgid "``--upstream-modules``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3081
 #: ../spack/lib/spack/docs/command_index.rst:3237
 #: ../spack/lib/spack/docs/command_index.rst:3416
-# d4f5629600d2402ea2cd522cfa3d6f3c
-# d2e8e715fe1d46bfa8916c65b9ae7384
-# 172958a63bf4416dbfd2e4c51fb0ae80
 msgid "generate modules for packages installed upstream"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3092
-# a3eaf18ee19340e490d3a4291ab19587
 msgid "spack module dotkit find"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3111
 #: ../spack/lib/spack/docs/command_index.rst:3267
 #: ../spack/lib/spack/docs/command_index.rst:3446
-# 235b69e003b64e9ea252473199085461
-# 16707062e43e4eccb1e29d2c43afde9f
-# 09f2b77a1c334b83a51ca182fc0f21e7
 msgid "``--full-path``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3111
 #: ../spack/lib/spack/docs/command_index.rst:3267
 #: ../spack/lib/spack/docs/command_index.rst:3446
-# 9ef8e43ce1c346f79c6e6ab839386afb
-# 898172f0216c47149d5a4c10eb49aae5
-# 2293dfe6eef841709217468b2d0449bc
 msgid "display full path to module file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3122
-# 52af975510c844db8574a91d6c2ac9ab
 msgid "spack module dotkit rm"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3149
-# f26b021e76854b4a8c3a0f0191eb868d
 msgid "spack module dotkit loads"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3185
-# 40b06e45a15c4870af351cd9deb45bad
 msgid "spack module lmod"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3203
-# cf601a420a664533aba353656f9cf349
 msgid ":ref:`module lmod refresh <spack-module-lmod-refresh>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3204
-# 55c74b88a91c465596b7f9046419796b
 msgid ":ref:`module lmod find <spack-module-lmod-find>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3205
-# 752e6d2881de4263b90083d5da984cd8
 msgid ":ref:`module lmod rm <spack-module-lmod-rm>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3206
-# dfae26198aa449cd84644e668d67258a
 msgid ":ref:`module lmod loads <spack-module-lmod-loads>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3207
-# 5fc3780dc98f492e9d8916fb245a2573
 msgid ":ref:`module lmod setdefault <spack-module-lmod-setdefault>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3215
-# 7c1524a9e149476198afaab8c1778b6f
 msgid "spack module lmod refresh"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3248
-# 53131c0e26b74858917d713593c8ff18
 msgid "spack module lmod find"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3278
-# 06373bef7a2d40bdac40ffe3f1466efa
 msgid "spack module lmod rm"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3305
-# c0a7494d12e34387a4299e6f22b37afb
 msgid "spack module lmod loads"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3341
-# 2fcefbb554864063838f23e31126c5a5
 msgid "spack module lmod setdefault"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3365
-# e90e56d9de834d9d834aadc94ec8f8cc
 msgid "spack module tcl"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3383
-# 82a20a50d6664eff8ae6f1b6962ebf28
 msgid ":ref:`module tcl refresh <spack-module-tcl-refresh>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3384
-# 1a5214d5e9264fef874c670e62a9e74c
 msgid ":ref:`module tcl find <spack-module-tcl-find>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3385
-# 0169d54bf0d14b52aaf4e4096e9711fe
 msgid ":ref:`module tcl rm <spack-module-tcl-rm>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3386
-# 9f95853a4a934cfba1fbe25a1f17e5d3
 msgid ":ref:`module tcl loads <spack-module-tcl-loads>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3394
-# 509a93b42afe46f6bc9d5ca88fd69423
 msgid "spack module tcl refresh"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3427
-# b7c39e88345e4b10948a8a7636710aff
 msgid "spack module tcl find"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3457
-# ff6c510c89574ca782ae7603bc7d263d
 msgid "spack module tcl rm"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3484
-# 4663cd795b9b4489b2825f69f550efc8
 msgid "spack module tcl loads"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3520
-# 922720d2b6e64222a30ccf75ffd65364
 msgid "spack patch"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3522
-# 688b06ac0a394009b8dd77d6a8133e68
 msgid "patch expanded archive sources in preparation for install"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3529
-# 6ba5d479fd1743ff92351e5dd41601c4
 msgid ":ref:`More documentation <cmd-spack-patch>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3534
 #: ../spack/lib/spack/docs/command_index.rst:4247
-# 82802edac29f4384aac78669ec5cc4b7
-# 91eeccfb576e45fa8c5ca0fe8b4d0f8b
 msgid "specs of packages to stage"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3551
-# f97813ee2d084b2a9c6c15b4b9666436
 msgid "spack pkg"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3553
-# 7c61f89a14c24d24b861d072873f8dae
 msgid "query packages associated with particular git revisions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3571
-# a0ff2132a04d4fd98fd8472dc5b15a09
 msgid ":ref:`pkg add <spack-pkg-add>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3572
-# 0389a575a5da4e2181d994ac597ad5fa
 msgid ":ref:`pkg list <spack-pkg-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3573
-# 9ee04c9ea6014a88aa5fe7b2e932e07a
 msgid ":ref:`pkg diff <spack-pkg-diff>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3574
-# 49fd6d079418460a9fba4c0291913cc7
 msgid ":ref:`pkg added <spack-pkg-added>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3575
-# 37ce1e5948114e4cba36d3afe147fdf5
 msgid ":ref:`pkg removed <spack-pkg-removed>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3583
-# 4e167c2176ba4bd7a65452a4b4178178
 msgid "spack pkg add"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3593
-# f4b72e88dfb84e5fb26398b852f57d7c
 msgid "names of packages to add to git repo"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3607
-# 33fe3f0e70c349949772ec472a437946
 msgid "spack pkg list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3618
-# 228ac0f4461e49be9da7acc0cc7f6c11
 msgid "rev"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3617
-# ac45691308e34998aa6cc54ad800f4c4
 msgid "revision to list packages for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3631
-# 5be25355b7ef4374bfb14ca6fda04af7
 msgid "spack pkg diff"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3641
 #: ../spack/lib/spack/docs/command_index.rst:3668
 #: ../spack/lib/spack/docs/command_index.rst:3695
-# 81a1c955d3ea45baafba76ff408e698b
-# bacc00d3fd844535bcc638a0c3d8f8d0
-# cbc897142465498fabba1f64badc7c88
 msgid "rev1"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3641
 #: ../spack/lib/spack/docs/command_index.rst:3668
 #: ../spack/lib/spack/docs/command_index.rst:3695
-# d333b21ccc0c450f9a5f52c5e52efc40
-# 01e51f8304cc4925a5c618a2b74a55e4
-# e0f97ebffc7c4ef89a2a580bb99e077c
 msgid "revision to compare against"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3645
 #: ../spack/lib/spack/docs/command_index.rst:3672
 #: ../spack/lib/spack/docs/command_index.rst:3699
-# 078864e224f94741bf19eb259c5cb1ed
-# 09949fa4294640e3925efa38621e0f96
-# 4433e43ac68f42f8b2fec6732b66b505
 msgid "rev2"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3644
 #: ../spack/lib/spack/docs/command_index.rst:3671
 #: ../spack/lib/spack/docs/command_index.rst:3698
-# 0ca8b2545118497c8a5d03b48399d9ff
-# cd3f0236dcd34f63b282c7905898c487
-# 2fede1cca6e542c4899fa55fd6357d02
 msgid "revision to compare to rev1 (default is HEAD)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3658
-# 03597d53e1354f3fb0867ff8a0fb2b5a
 msgid "spack pkg added"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3685
-# 64aae17f695d48eca895b3c982eefa34
 msgid "spack pkg removed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3712
-# b8042df1b64a4720b9df3da942dab52d
 msgid "spack providers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3714
-# 0f9ed849aec74507aab9102d999ca111
 msgid "list packages that provide a particular virtual package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3721
-# 7515fa40dfff4462ba0d2801233e9d1f
 msgid ":ref:`More documentation <cmd-spack-providers>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3727
-# f719aa829dc04fdd94fed9d225da2307
 msgid "virtual_package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3726
-# 0620ba320f5d495b808d734cd358453f
 msgid "find packages that provide this virtual package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3740
-# cec616f5bcaf46a9860551bc9922943b
 msgid "spack pydoc"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3742
-# 9b038ba58d664a4ab24aa9072a468230
 msgid "run pydoc from within spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3753
-# 84061b0a4dfd4444b195fbe1190ed285
 msgid "entity"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3752
-# 4caaae66492a498eb36806f0a831825f
 msgid "run pydoc help on entity"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3766
-# 83b2ad265fa346f692511995504f8322
 msgid "spack python"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3768
-# fbfab55c8ce544dab49e2832c586cc92
 msgid "launch an interpreter as spack would launch a command"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3775
-# a208858cc15f42789cf066e5f05bc82d
 msgid ":ref:`More documentation <cmd-spack-python>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3781
-# 22197c7ea91d4e4ba5f674172dd9cb7a
 msgid "python_args"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3780
-# 7273049c8ca249c4ab63a4dc75399965
 msgid "file to run plus arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3790
-# 16519e702f5b46d482c4cd3dea5c511e
 msgid "``-c PYTHON_COMMAND``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3789
-# 0c193609be3d49d39185237353807c1a
 msgid "command to execute"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3797
-# 6891ffa1293940c591de85b6383a3bf8
 msgid "spack reindex"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3799
-# d06e51019f60471da94da0845b0eb53a
 msgid "rebuild Spack's package database"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3817
-# 38ca7be831654582b539e4e2c965aae9
 msgid "spack release-jobs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3819
-# 1616c5ae78104d0eb44b4ad8895ab545
 msgid "generate release build set as .gitlab-ci.yml"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3831
-# 514eb1b226cb451f9cdbfec23ac073b1
 msgid "These positional arguments are generally for internal use.  The --spec-set argument should be used to identify a yaml file describing the set of release specs to include in the .gitlab-ci.yml file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3840
-# a27ec524b3094b119ecdbd3250ca0fda
 msgid "``-s SPEC_SET, --spec-set SPEC_SET``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3840
-# e785c99f8d9646bcbe5adfdc9f61f019
 msgid "path to release spec-set yaml file"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3843
-# b8f828262f744a339bdc6878412a2daf
 msgid "url of binary mirror where builds should be pushed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3846
-# fa29f7a0d6154dcbaa2cb324e975611e
 msgid "path to output file to write"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3849
-# 1c4b0c0b92754f29b01cf2ad59908883
 msgid "``-t SHARED_RUNNER_TAG, --shared-runner-tag SHARED_RUNNER_TAG``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3849
-# 6b346316436e44718bd776b725a2f8a5
 msgid "tag to add to jobs for shared runner selection"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3852
-# 51db3494ec044aad833e41233db26cde
 msgid "``-k SIGNING_KEY, --signing-key SIGNING_KEY``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3852
-# 6aebf2b6b0c147c0b5f48c78f2018b57
 msgid "hash of gpg key to use for package signing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3855
-# 1165253720564b6a95f2397e28b685d6
 msgid "``-c CDASH_URL, --cdash-url CDASH_URL``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3855
-# 80f7b508b9e94fd5a3c2f9cf69b949e1
 msgid "Base url of CDash instance jobs should communicate with"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3858
-# 3ba820f421f74368999b05ad245ba350
 msgid "``-p, --print-summary``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3858
-# 67a7e4a8bc4645a2a02e2ca188021ab0
 msgid "Print summary of staged jobs to standard output"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3861
-# 58d255bbdcb943f991adf518963662a4
 msgid "``--resolve-deps-locally``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3861
-# 6ca4a929115643ba9ce540c2681e40b1
 msgid "Use only the current machine to concretize specs, instead of iterating over items in os-container-mapping.yaml and using docker run.  Assumes the current machine architecure is listed in the os-container-mapping.yaml config file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3865
-# aca1528bfae349848cfb0e6ef922be8e
 msgid "``--specs-deps-output SPECS_DEPS_OUTPUT``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3864
-# 93835136faa141b1b1b5bd520f86f565
 msgid "A file path to which spec deps should be written.  This argument is generally for internal use, and should not be provided by end-users under normal conditions."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3872
-# dec0f046df284011b0336d96d36f2925
 msgid "spack remove"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3874
-# 8ba6668971d549a0a86727e8f8ecac60
 msgid "remove specs from an environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3884
-# 0de599a39f674467b2b09652b5a660fa
 msgid "specs to be removed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3893
-# 3219f1d7428c4c88b7861d8cf5104159
 msgid "remove all specs from (clear) the environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3896
-# 96bd022fc8624a028b5baad304b8074a
 msgid "remove concretized spec (if any) immediately"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3904
-# 7433473ddce943ee892a88b1be368d38
 msgid "spack repo"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3906
-# ccfb7d0d4c174430b6c4920d33244051
 msgid "manage package source repositories"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3913
-# 79c5c68774cb41af9eddcd65b9938e3a
 msgid ":ref:`More documentation <cmd-spack-repo>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3926
-# 4059a1c368ca4b96b2dd27df2b97c6eb
 msgid ":ref:`repo create <spack-repo-create>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3927
-# 273b7568f85e4f1da5fd542e211fe154
 msgid ":ref:`repo list <spack-repo-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3928
-# 4454c290656b4ffc8fbdda08a9aac805
 msgid ":ref:`repo add <spack-repo-add>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3929
-# e6b708c1c92848028812f6c2aa4d391e
 msgid ":ref:`repo remove <spack-repo-remove>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3937
-# a66647cf32754b5fbccf9c4f6a93363a
 msgid "spack repo create"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3947
-# d45db0539712412d8635e9a4964a5974
 msgid "directory"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3947
-# bda3b09991b94521b6daef92df25b4fb
 msgid "directory to create the repo in"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3951
-# 70521c14671546ac8c559c0985d7cf3a
 msgid "namespace"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3950
-# a023d2fe9be54a369090c4a39af083d9
 msgid "namespace to identify packages in the repository. defaults to the directory name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3964
-# e189cea7c4244fef8dafcf342ba1c798
 msgid "spack repo list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3985
-# 55e11f046d1547bba5cbae27f24c8847
 msgid "spack repo add"
 msgstr ""
 
@@ -6128,630 +4393,500 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:4756
 #: ../spack/lib/spack/docs/command_index.rst:4789
 #: ../spack/lib/spack/docs/command_index.rst:4822
-# f2b6cfa8d2454787a4d510ebac6c725f
-# 5d6b63c9fc79453998182df3c915b87a
-# 12f240d7ace34c40abb594dbfc795196
-# 365c797e70c14c22b2814892132d482e
-# 4b9456aafa03460695804b65b70c2135
 msgid "path"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:3995
-# abf69036a58b4d1697dffa5f09f52dbf
 msgid "path to a Spack package repository directory"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4012
-# 291e79e8682646a6baaa4840a3a35ec8
 msgid "spack repo remove"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4023
-# 7c02121b2d514044bbcdc9d10e814aec
 msgid "path_or_namespace"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4022
-# 3b693b02f9ff46f89f136c266e320997
 msgid "path or namespace of a Spack package repository"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4039
-# f333d1cf76bb4a72b0213218d85ba14c
 msgid "spack resource"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4041
-# f3235e4e08954e38bb7574bc15c55643
 msgid "list downloadable resources (tarballs, repos, patches, etc.)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4048
-# b34af15db3244fba9418e640b5c3d865
 msgid ":ref:`More documentation <cmd-spack-resource>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4061
-# e2c53c5279144fadba5ab122e5a70595
 msgid ":ref:`resource list <spack-resource-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4062
-# c6a6cdcd9f6d4a1faea2aa5f5d4b2a02
 msgid ":ref:`resource show <spack-resource-show>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4070
-# 6ec6c21cce12450a8f03f0bf64bdcd33
 msgid "spack resource list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4084
-# 42331ef88b5c4666afffda6a7059b01b
 msgid "``--only-hashes``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4083
-# 91ef3d012f094e83bd64e8513f06f8b5
 msgid "only print sha256 hashes of resources"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4091
-# 21672aa94e03429c9ef84a93f57a804a
 msgid "spack resource show"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4100
-# d6864d2552254874a879934ec6c444e6
 msgid "hash"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4115
-# a1ce5c0fd920489c8a4a54e4c20562ae
 msgid "spack restage"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4117
-# ee4014f608174a93b83caa0ca12a3da2
 msgid "revert checked out package source code"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4124
-# 940925d7c24547f3b0a83e891a23b852
 msgid ":ref:`More documentation <cmd-spack-restage>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4129
-# fff8c1c9d90646f49ad6da13ebc0a30b
 msgid "specs of packages to restage"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4143
-# e41ef97e5ccc4581adfcd52f16f6779f
 msgid "spack setup"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4145
-# d0959b830c2e4b489572078c36a10b97
 msgid "create a configuration script and module, but don't build"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4164
-# c19177b8875a4f43876ed352d65549c8
 msgid "do not try to install dependencies of requested packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4184
-# 7939ac2195164bcf83a6bf30cffbf07e
 msgid "spack spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4186
-# a8aec2630fdf424b9acc24f3253ed274
 msgid "show what would be installed, given a spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4193
-# 05a69b702033406ba421b54b14a1ac75
 msgid ":ref:`More documentation <cmd-spack-spec>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4198
-# 6fa0cfc084b040c79ce435a133455fdf
 msgid "specs of packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4216
-# dd1509d4b7a54fb7becc261896d2e856
 msgid "``-y, --yaml``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4216
-# 089f37e410be46e49f77739be423f08d
 msgid "print concrete spec as YAML"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4219
-# c8eacf32a37641209c25661694d56284
 msgid "``-c {nodes,edges,paths}, --cover {nodes,edges,paths}``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4219
-# cf7046b38f5f4fcfaab7778166d81147
 msgid "how extensively to traverse the DAG (default: nodes)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4222
-# 6635c5ad71f644b889d783d4f728611d
 msgid "``-N, --namespaces``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4226
-# e1ed2c55084b426da467bdd0f8fbc41f
 msgid "``-t, --types``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4225
-# df1521c1e4ab457e9c6fbe9aab573700
 msgid "show dependency types"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4233
-# 6aa4112aa36b43e5891d1fb364a838d8
 msgid "spack stage"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4235
-# 814cfa96443a418ebe94e15fa41a9c65
 msgid "expand downloaded archive in preparation for install"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4242
-# 797554e99273401bb08353c9ca684115
 msgid ":ref:`More documentation <cmd-spack-stage>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4259
-# 69a0a8758b14459ca432d65cd3bfcbec
 msgid "path to stage package, does not add to spack tree"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4267
-# 08c7493c86ff4e4eba79c10ba1f58afb
 msgid "spack test"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4269
-# 52b6f265f0974f85915301571a66a949
 msgid "run spack's unit tests"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4276
-# 95685d13b16a449993006fc189fb0c11
 msgid ":ref:`More documentation <cmd-spack-test>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4282
-# b570aba5b0244611a3e9453c047c676d
 msgid "tests"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4281
-# 9f2eae24daae4ab7ae026a7d4f0928a7
 msgid "list of tests to run (will be passed to pytest -k)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4290
-# 0434e4e07e6546d5b8f2649086353e13
 msgid "``-H, --pytest-help``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4290
-# c062436464014b53812b366211649786
 msgid "print full pytest help message, showing advanced options"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4293
-# 4667bce8f04a4e7991a5084755ce747d
 msgid "``-l, --list``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4293
-# adcede413cad4eb1914661542f9f9f9c
 msgid "list basic test names"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4296
-# da371ffddb6c490fb47fe4c03f29afe1
 msgid "``-L, --long-list``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4296
-# 22098604522a4ac3a1ad8ed4ecff9d65
 msgid "list the entire hierarchy of tests"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4300
-# 2af5f12772e240dfa2d9660af9cb8a2e
 msgid "``--extension EXTENSION``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4299
-# 9851b70995f94593bede43c45dc9c647
 msgid "run test for a given Spack extension"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4307
-# c9683ea70d314cb19a3b4178ef285b4b
 msgid "spack uninstall"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4309
-# 0edf0f41cae54879bd1d2f498cd43701
 msgid "remove installed packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4316
-# 83d29a9ec5f24f9fb997adf295b9734f
 msgid ":ref:`More documentation <cmd-spack-uninstall>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4321
-# 44549f0989774011b206a13621f566be
 msgid "specs of packages to uninstall"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4330
-# 1cdd6007e8e74949bd86bc12fb30d46f
 msgid "remove regardless of whether other packages or environments depend on this one"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4333
-# 03b54921d3f4481b97027089010f232b
 msgid "``-R, --dependents``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4333
-# 1fd8b065befa4ccabbe10d94a649f088
 msgid "also uninstall any packages that depend on the ones given via command line"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4339
-# b2ab8dc4f9e345e48c7c7015b6d2f438
 msgid "USE CAREFULLY. Remove ALL installed packages that match each supplied spec. i.e., if you `uninstall --all libelf`, ALL versions of `libelf` are uninstalled. If no spec is supplied, all installed packages will be uninstalled. If used in an environment, all packages in the environment will be uninstalled."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4347
-# cd77b605822942a39eaf0fe70a5aff6d
 msgid "spack unload"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4349
-# 0f6ddbc179b345a0a37ce8f351db20d2
 msgid "remove package from environment using `module unload`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4359
-# 4ffc71fcfaa841b69c1f88bf930f3d76
 msgid "spec of package to unload with modules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4373
-# 11d5232e727b43d9827f66e438717904
 msgid "spack unuse"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4375
-# 47e7e548ef6149c88408982d1cada0ba
 msgid "remove package from environment using dotkit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4385
-# 341aa727eb3d4f3dbf1cb4bc40472d62
 msgid "spec of package to unuse with dotkit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4399
-# fff3f7a045f443a5adf9a2a16dc66ea4
 msgid "spack upload-s3"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4401
-# debbdcea37c741949174cffe949a7e0c
 msgid "temporary command to upload buildcaches to 's3.spack.io'"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4419
-# 00e47dd7fdee4c768d96361ed8b3ab31
 msgid ":ref:`upload-s3 spec <spack-upload-s3-spec>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4420
-# 84903354334f4144ac8f7d069dc4009a
 msgid ":ref:`upload-s3 index <spack-upload-s3-index>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4428
-# e9df8ec6c63148e8bd04f87ed5919456
 msgid "spack upload-s3 spec"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4441
-# cb1a2c0e6b5a4f57913229e83149b51f
 msgid "Spec to upload"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4444
-# 4c11b7c5464b43b3bd62d2dd845774d2
 msgid "Path to spec yaml file containing spec to upload"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4447
-# da3358e0724f45f88cf8088b048ce37e
 msgid "``-b BASE_DIR, --base-dir BASE_DIR``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4447
-# 0d0e4ab8d59342cc98bbb7dd8b77baf4
 msgid "Path to root of buildcaches"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4451
 #: ../spack/lib/spack/docs/command_index.rst:4472
-# 9e1c0932154f4c39841d838064436fd2
-# 7c5e146d082a463b8a7f0fbe98fa68c6
 msgid "``-e ENDPOINT_URL, --endpoint-url ENDPOINT_URL``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4450
 #: ../spack/lib/spack/docs/command_index.rst:4471
-# 4487eea092dc44569cbc36dd17847ce4
-# ad0992844eeb48ffabd1327df69e8012
 msgid "URL of mirror"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4458
-# 386dd03771bf4476964dee46751be81a
 msgid "spack upload-s3 index"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4479
-# c22c5d8e14b54333b6e7f300e190b47a
 msgid "spack url"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4481
-# 18124e160d8e417694dbe4b13873b401
 msgid "debugging tool for url parsing"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4488
-# 512bc472a7b14baba3cc41a0bf5416c6
 msgid ":ref:`More documentation <cmd-spack-url>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4501
-# a564d8a6e1c748bf82e19761b94bc7a6
 msgid ":ref:`url parse <spack-url-parse>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4502
-# 6d9b0c1a68dc4c23ada3650ca78e6e66
 msgid ":ref:`url list <spack-url-list>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4503
-# 4a7b4ff798b64d3da16a5778e95226a1
 msgid ":ref:`url summary <spack-url-summary>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4504
-# f82e6c7c5ebc4a20967b0726994739ad
 msgid ":ref:`url stats <spack-url-stats>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4512
-# 8d5b43d14afe4f5092cd3444bdcdf3c9
 msgid "spack url parse"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4522
-# d83b2e0b5de14786a78ca265d7c8c8df
 msgid "url to parse"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4532
-# 44a69478d5754a878c85f18b26575718
 msgid "``-s, --spider``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4531
-# af8558f65db04efdbbee9b24b47d1997
 msgid "spider the source page for versions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4539
-# 0866728b037542dc9ac09d22aa88c24a
 msgid "spack url list"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4552
-# 68fc1f3fae664f719899761087df3ef9
 msgid "``-c, --color``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4552
-# 38f3ca0ab6364e63a9494a4d46628cbb
 msgid "color the parsed version and name in the urls shown (versions will be cyan, name red)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4555
-# 50eb828b4a274e6d90503b05ce28fe41
 msgid "``-e, --extrapolation``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4555
-# 7474acc465bd45b197aea83e9ee49dc6
 msgid "color the versions used for extrapolation as well (additional versions will be green, names magenta)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4558
-# 10b2eac77cac4f4f90b3d4ae5eadfea6
 msgid "``-n, --incorrect-name``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4558
-# 3b7725a7916d44879eb0bdd15e703d9e
 msgid "only list urls for which the name was incorrectly parsed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4561
-# 264203cfa53e4aa88b7c42ce43c33943
 msgid "``-N, --correct-name``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4561
-# 053922126989438a905285d9381e433a
 msgid "only list urls for which the name was correctly parsed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4564
-# 9e7e3c587bae4ea9aa9e125cc458b112
 msgid "``-v, --incorrect-version``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4564
-# c7c0cbb06a2446e8942f5272480c40e3
 msgid "only list urls for which the version was incorrectly parsed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4568
-# 788885f72ae44a6f937c753054698043
 msgid "``-V, --correct-version``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4567
-# 05bb22ec0b26430fb033a37e773b5d9d
 msgid "only list urls for which the version was correctly parsed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4575
-# 6be6b0f894d244ea83d4bb4792a62fb6
 msgid "spack url summary"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4593
-# 338d6c4ffc774bb296ab87dcd4d23da4
 msgid "spack url stats"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4611
-# 41f37bdfa34b4c4f84014c4f533930f7
 msgid "spack use"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4613
-# 3382424e9a644e17a586d910c3cb85e4
 msgid "add package to environment using dotkit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4623
-# 9b2852e46dac47b8bd87cdaf2f90af0d
 msgid "spec of package to use with dotkit"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4640
-# 8609c7c1b04b47ecb563112f8cc83eee
 msgid "spack versions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4642
-# be7a41212d14489294d13e145be3834a
 msgid "list available versions of a package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4649
-# db0b496b16e74a97b86f8792e961a4d5
 msgid ":ref:`More documentation <cmd-spack-versions>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4654
-# f558481d8bbc455ea25947b261ca1efe
 msgid "package to list versions for"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4664
-# 66d0520912a04c77a6f6503b01ae17a2
 msgid "``-s, --safe-only``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4663
-# 26bdf16a869349a18ee7c294273efbc7
 msgid "only list safe versions of the package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4671
-# 0f9e32ada3c240ec83aa2d17acb44bd0
 msgid "spack view"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4673
-# 29d91ea1a19e41ae8e832d34e1b7df17
 msgid "project packages to a compact naming scheme on the filesystem."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4680
-# 15779999953a46b2b1eb528e1626b4ee
 msgid ":ref:`More documentation <cmd-spack-view>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4688
-# 7c7f644af961479390bcf5ccc70e1709
 msgid "If not verbose only warnings/errors will be printed."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4691
-# d7320c1c21264de5b5b499d71eaf28e8
 msgid "``-e EXCLUDE, --exclude EXCLUDE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4691
-# 54df7d4998bf45259d465b3e5bf68c57
 msgid "exclude packages with names matching the given regex pattern"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4695
-# 02cf3e870faa451c90ce3a95807f99dd
 msgid "``-d {true,false,yes,no}, --dependencies {true,false,yes,no}``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4694
-# e026c024a52d4bc6a98f0fbf93f06128
 msgid "Link/remove/list dependencies."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4702
-# f37798e9e4ca4232b665b7186bfa1519
 msgid ":ref:`view symlink <spack-view-symlink>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4703
-# 0f3ddfc88fb7468d9bc7f113728cce4b
 msgid ":ref:`view hardlink <spack-view-hardlink>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4704
-# 50d11f9ed00d4785a68b9d8685a57018
 msgid ":ref:`view remove <spack-view-remove>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4705
-# 4629e482d6794965832c7d63d9223da1
 msgid ":ref:`view statlink <spack-view-statlink>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4713
-# 2d3680bfcc53415daa05bbfeab20ff63
 msgid "spack view symlink"
 msgstr ""
 
@@ -6759,10 +4894,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:4756
 #: ../spack/lib/spack/docs/command_index.rst:4789
 #: ../spack/lib/spack/docs/command_index.rst:4822
-# f4db532dc73846c692bd53b1bf6c192f
-# 7e3f1f0eabcd4ff18df94d35d8af31cb
-# 32ba9f5b2da240cdb0c1a4317a173d5f
-# 4c05332d350e4b69a337e2e7af6453ac
 msgid "path to file system view directory"
 msgstr ""
 
@@ -6770,61 +4901,45 @@ msgstr ""
 #: ../spack/lib/spack/docs/command_index.rst:4759
 #: ../spack/lib/spack/docs/command_index.rst:4792
 #: ../spack/lib/spack/docs/command_index.rst:4825
-# 69e56cb0a232409aacdbc0634f4de684
-# 5fbbcb8eba334fe691c080d9b975e03a
-# e66720336c9343ee82c280b6612a0c4e
-# c5417164686a4d00bb192691a7d27aa2
 msgid "seed specs of the packages to view"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4735
 #: ../spack/lib/spack/docs/command_index.rst:4768
-# 3201b653f5da4ec1b6b056e6bc35b566
-# 25f7ce55ea934100afc7fb1c3064e77c
 msgid "``--projection-file PROJECTION_FILE``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4735
 #: ../spack/lib/spack/docs/command_index.rst:4768
-# 0f64f42f8e154e6f84b4ec79a654cdb9
-# 35369f46b7284eaaabd9402ffaa2d769
 msgid "Initialize view using projections from file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4737
 #: ../spack/lib/spack/docs/command_index.rst:4770
-# bf26cd3b320445c995b00e359fef0159
-# 20dabbbe79514afcbb0e128c998866f4
 msgid "``-i, --ignore-conflicts``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4746
-# 3afce4e81a564413a4381b43fe621d2e
 msgid "spack view hardlink"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4779
-# 0b4655b400814c1d9b4e9868f77ee198
 msgid "spack view remove"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4801
-# d2861c01149848c39e6bbe46283f870f
 msgid "``--no-remove-dependents``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4801
-# a29417c303574c1c8a88ab693f9077c5
 msgid "Do not remove dependents of specified specs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4804
-# 8d9823d5391142dcb800fc5a37aaa2b1
 msgid "act on all specs in view"
 msgstr ""
 
 #: ../spack/lib/spack/docs/command_index.rst:4812
-# b7029855006e49ee9405fa2317609d48
 msgid "spack view statlink"
 msgstr ""
 

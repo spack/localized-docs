@@ -383,7 +383,7 @@ Bootstrap packages needed for spack to run smoothly
   show this help message and exit
 
 ``-j JOBS, --jobs JOBS``
-  explicitly set number of make jobs (default: #cpus)
+  explicitly set number of parallel jobs
 
 ``--keep-prefix``
   don't remove the install prefix if installation fails
@@ -1545,7 +1545,7 @@ spec
   show this help message and exit
 
 ``-j JOBS, --jobs JOBS``
-  explicitly set number of make jobs, default is #cpus.
+  explicitly set number of parallel jobs
 
 ``-d SOURCE_PATH, --source-path SOURCE_PATH``
   path to source directory. defaults to the current directory
@@ -2518,7 +2518,7 @@ package
   select the mode of installation. the default is to install the package along with all its dependencies. alternatively one can decide to install only the package or only the dependencies
 
 ``-j JOBS, --jobs JOBS``
-  explicitly set number of make jobs, default is #cpus.
+  explicitly set number of parallel jobs
 
 ``-I, --install-status``
   show install status of packages. packages can be: installed [+], missing and needed by an installed package [-], or not installed (no annotation)

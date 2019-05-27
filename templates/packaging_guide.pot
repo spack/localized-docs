@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,3665 +17,2930 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:10
-# 86cde19a68f242719248db1deb378ea4
 msgid "Packaging Guide"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:12
-# 4b8ee04a33f64072bee1f8be8e8f2ae9
 msgid "This guide is intended for developers or administrators who want to package software so that Spack can install it.  It assumes that you have at least some familiarity with Python, and that you've read the :ref:`basic usage guide <basic-usage>`, especially the part about :ref:`specs <sec-specs>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:18
-# 020ab591cdb547039d885eb00a99e805
 msgid "There are two key parts of Spack:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:20
-# 98701984c29c4c5f9f141e01341fc1ec
 msgid "**Specs**: expressions for describing builds of software, and"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:21
-# a37e9e2dd34c492f822ff7f435a4e82f
 msgid "**Packages**: Python modules that describe how to build software according to a spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:24
-# 08563bd41f3b4b40bef038f3b4a87d74
 msgid "Specs allow a user to describe a *particular* build in a way that a package author can understand.  Packages allow the packager to encapsulate the build logic for different versions, compilers, options, platforms, and dependency combinations in one place. Essentially, a package translates a spec into build logic."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:30
-# e81126cba0344b1db9e412730bb6ea87
 msgid "Packages in Spack are written in pure Python, so you can do anything in Spack that you can do in Python.  Python was chosen as the implementation language for two reasons.  First, Python is becoming ubiquitous in the scientific software community. Second, it's a modern language and has many powerful features to help make package writing easy."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:39
-# b4c0d894c01443e69408f9d32e6aa5c2
 msgid "Creating & editing packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:45
-# 8e56b48219ac4bfe8d2b23f5fc8bad37
 msgid "``spack create``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:47
-# 745201b5eacf46ec8cf2644332a81747
 msgid "The ``spack create`` command creates a directory with the package name and generates a ``package.py`` file with a boilerplate package template. If given a URL pointing to a tarball or other software archive, ``spack create`` is smart enough to determine basic information about the package, including its name and build system. In most cases, ``spack create`` plus a few modifications is all you need to get a package working."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:54
-# aacf596ee50644e196e1c3cb9d37df77
 msgid "Here's an example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:60
-# 47e32654b53d4449bbd20dc84596911c
 msgid "Spack examines the tarball URL and tries to figure out the name of the package to be created. If the name contains uppercase letters, these are automatically converted to lowercase. If the name contains underscores or periods, these are automatically converted to dashes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:65
-# 3b1e9fa89cd7494189900d7563b1a6e0
 msgid "Spack also searches for *additional* versions located in the same directory of the website. Spack prompts you to tell you how many versions it found and asks you how many you would like to download and checksum:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:83
-# 42541b8bb598444980b2e9b8d646b8e6
 msgid "Spack will automatically download the number of tarballs you specify (starting with the most recent) and checksum each of them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:86
-# 92e576e812d54c84bd09d8ec5c20952f
 msgid "You do not *have* to download all of the versions up front. You can always choose to download just one tarball initially, and run :ref:`cmd-spack-checksum` later if you need more versions."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:90
-# 348348f668624579961f68dfb1a2ffac
 msgid "Let's say you download 3 tarballs:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:107
-# cdacf89a74244e5b817a58df8b3bd630
 msgid "Spack automatically creates a directory in the appropriate repository, generates a boilerplate template for your package, and opens up the new ``package.py`` in your favorite ``$EDITOR``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:152
-# 0d1f8fd78fc547138347ffddc9901335
 msgid "The tedious stuff (creating the class, checksumming archives) has been done for you. You'll notice that ``spack create`` correctly detected that ``gmp`` uses the Autotools build system. It created a new ``Gmp`` package that subclasses the ``AutotoolsPackage`` base class. This base class provides basic installation methods common to all Autotools packages:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:166
-# 3f98047479c644428c7ef1f5b118ce45
 msgid "For most Autotools packages, this is sufficient. If you need to add additional arguments to the ``./configure`` call, add them via the ``configure_args`` function."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:170
-# 0f497b3ec7044dd4a691b4e60ed36163
 msgid "In the generated package, the download ``url`` attribute is already set. All the things you still need to change are marked with ``FIXME`` labels. You can delete the commented instructions between the license and the first import statement after reading them. The rest of the tasks you need to do are as follows:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:176
-# 3aa33be73a474e9f8a67a4eec41d9b79
 msgid "Add a description."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:178
-# 2ff76ef4ed1a46ce9f7a86be1d65fe3b
 msgid "Immediately inside the package class is a *docstring* in triple-quotes (``\"\"\"``).  It is used to generate the description shown when users run ``spack info``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:182
-# bd377ae20f0942d097257060dda9554a
 msgid "Change the ``homepage`` to a useful URL."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:184
-# b0cce995d47d428ea329dccb2c915fc0
 msgid "The ``homepage`` is displayed when users run ``spack info`` so that they can learn more about your package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:187
-# a393d948b9794f74906ab2a1ca653131
 msgid "Add ``depends_on()`` calls for the package's dependencies."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:189
-# 11e7e916e44d4ab099e5ac73c33ddc0c
 msgid "``depends_on`` tells Spack that other packages need to be built and installed before this one. See :ref:`dependencies`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:192
-# 4f1eecff49b349889bc8c0b606d1937a
 msgid "Get the installation working."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:194
-# 5d27606c3bd84b33a693d1a2ed111184
 msgid "Your new package may require specific flags during ``configure``. These can be added via ``configure_args``. Specifics will differ depending on the package and its build system. :ref:`Implementing the install method <install-method>` is covered in detail later."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:200
-# e8e830901d934a09a2b30bd11f003bb0
 msgid "Passing a URL to ``spack create`` is a convenient and easy way to get a basic package template, but what if your software is licensed and cannot be downloaded from a URL? You can still create a boilerplate ``package.py`` by telling ``spack create`` what name you want to use:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:209
-# 17e7913cede7499eb77d9485cc8d3b9e
 msgid "This will create a simple ``intel`` package with an ``install()`` method that you can craft to install your package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:212
-# 984d129a67ff4a13a43fa978d6b24dba
 msgid "What if ``spack create <url>`` guessed the wrong name or build system? For example, if your package uses the Autotools build system but does not come with a ``configure`` script, Spack won't realize it uses Autotools. You can overwrite the old package with ``--force`` and specify a name with ``--name`` or a build system template to use with ``--template``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:225
-# 76746ba72403413ea138641ec8f08f93
 msgid "If you are creating a package that uses the Autotools build system but does not come with a ``configure`` script, you'll need to add an ``autoreconf`` method to your package that explains how to generate the ``configure`` script. You may also need the following dependencies:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:237
-# 810ac9fee0ee4470a328371da9ea8ce4
 msgid "A complete list of available build system templates can be found by running ``spack create --help``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:244
-# 710707d02787475394fe9566be3d5489
 msgid "``spack edit``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:246
-# 6bb70b02f29f42fbbe8240c9495987ac
 msgid "One of the easiest ways to learn how to write packages is to look at existing ones.  You can edit a package file by name with the ``spack edit`` command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:254
-# 4b9e1733133c4dabb7c21de94311b9b4
 msgid "So, if you used ``spack create`` to create a package, then saved and closed the resulting file, you can get back to it with ``spack edit``. The ``gmp`` package actually lives in ``$SPACK_ROOT/var/spack/repos/builtin/packages/gmp/package.py``, but ``spack edit`` provides a much simpler shortcut and saves you the trouble of typing the full path."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:263
-# 95d494e5047f42778a43d866a4c4ba82
 msgid "Naming & directory structure"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:265
-# e3fdaf5986154479af273f989ac8f215
 msgid "This section describes how packages need to be named, and where they live in Spack's directory structure.  In general, :ref:`cmd-spack-create` handles creating package files for you, so you can skip most of the details here."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:272
-# 6f4bface156e4393afbe993858bbaf47
 msgid "``var/spack/repos/builtin/packages``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:274
-# bc221351ec444333bf8ee29216197a51
 msgid "A Spack installation directory is structured like a standard UNIX install prefix (``bin``, ``lib``, ``include``, ``var``, ``opt``, etc.).  Most of the code for Spack lives in ``$SPACK_ROOT/lib/spack``. Packages themselves live in ``$SPACK_ROOT/var/spack/repos/builtin/packages``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:279
-# afee5da353ec43ccb8c46b5b50c11e38
 msgid "If you ``cd`` to that directory, you will see directories for each package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:286
-# 9abeff2099cb4ece9b44e5b8692bb362
 msgid "Each directory contains a file called ``package.py``, which is where all the python code for the package goes.  For example, the ``libelf`` package lives in:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:294
-# d05def0f33b04908a167acb84998e21d
 msgid "Alongside the ``package.py`` file, a package may contain extra directories or files (like patches) that it needs to build."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:299
-# d2e2345847cc4e17bc76ae72806b6142
 msgid "Package Names"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:301
-# f319a234274b462cb0e043104346ccb0
 msgid "Packages are named after the directory containing ``package.py``. So, ``libelf``'s ``package.py`` lives in a directory called ``libelf``. The ``package.py`` file defines a class called ``Libelf``, which extends Spack's ``Package`` class.  For example, here is ``$SPACK_ROOT/var/spack/repos/builtin/packages/libelf/package.py``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:322
-# c3f8882fa45b4f93a9018f7dd692402a
 msgid "The **directory name** (``libelf``) determines the package name that users should provide on the command line. e.g., if you type any of these:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:332
-# 6f5d4143e9b1457cbe8ffd3e509bf7b7
 msgid "Spack sees the package name in the spec and looks for ``libelf/package.py`` in ``var/spack/repos/builtin/packages``. Likewise, if you run ``spack install py-numpy``, Spack looks for ``py-numpy/package.py``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:337
-# 678a3cae5d5745ba95fe4003997dde9e
 msgid "Spack uses the directory name as the package name in order to give packagers more freedom in naming their packages. Package names can contain letters, numbers, and dashes. Using a Python identifier (e.g., a class name or a module name) would make it difficult to support these options.  So, you can name a package ``3proxy`` or ``foo-bar`` and Spack won't care. It just needs to see that name in the packages directory."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:347
-# 4cec28d20180428da5097394e19fdee9
 msgid "Package class names"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:349
-# 6b59a135b89746599c332f27121f21f3
 msgid "Spack loads ``package.py`` files dynamically, and it needs to find a special class name in the file for the load to succeed.  The **class name** (``Libelf`` in our example) is formed by converting words separated by ``-`` in the file name to CamelCase. If the name starts with a number, we prefix the class name with ``_``. Here are some examples:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:357
-# 88e10ce5a5f2490e9788874ab8caf192
 msgid "Module Name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:357
-# b138680f3936446eb254c6dc78104906
 msgid "Class Name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:359
-# 8d36ff9f9fa9425eb72d66b5091541f2
 msgid "``foo-bar``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:359
-# bbbef34445aa428f9be651f6dc71638b
 msgid "``FooBar``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:360
-# d9c7de6daee44ee6a5d92d539196e943
 msgid "``3proxy``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:360
-# b0bafc3fc4ec48b99495107ecc940b36
 msgid "``_3proxy``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:363
-# 7a2e77ff0be64321926101898ae61da1
 msgid "In general, you won't have to remember this naming convention because :ref:`cmd-spack-create` and :ref:`cmd-spack-edit` handle the details for you."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:368
-# 11efad928f6d4f479b0b533b89491309
 msgid "Trusted Downloads"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:370
-# 5799e825e66d403db60e5c8755427ddc
 msgid "Spack verifies that the source code it downloads is not corrupted or compromised; or at least, that it is the same version the author of the Spack package saw when the package was created.  If Spack uses a download method it can verify, we say the download method is *trusted*.  Trust is important for *all downloads*: Spack has no control over the security of the various sites from which it downloads source code, and can never assume that any particular site hasn't been compromised."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:379
-# 8a9bdaf2d4f340b7aa35e5db4d6d8b6d
 msgid "Trust is established in different ways for different download methods. For the most common download method --- a single-file tarball --- the tarball is checksummed.  Git downloads using ``commit=`` are trusted implicitly, as long as a hash is specified."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:384
-# d16d50ef10424e419039c7ff28235479
 msgid "Spack also provides untrusted download methods: tarball URLs may be supplied without a checksum, or Git downloads may specify a branch or tag instead of a hash.  If the user does not control or trust the source of an untrusted download, it is a security risk.  Unless otherwise specified by the user for special cases, Spack should by default use *only* trusted download methods."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:391
-# fce5574d5ef945ffa7f786c90c364057
 msgid "Unfortunately, Spack does not currently provide that guarantee.  It does provide the following mechanisms for safety:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:394
-# b968fcc1788541599ae2ba192e17bb73
 msgid "By default, Spack will only install a tarball package if it has a checksum and that checksum matches.  You can override this with ``spack install --no-checksum``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:398
-# 3e16822ed43e43cf81ace8b301bb19f2
 msgid "Numeric versions are almost always tarball downloads, whereas non-numeric versions not named ``develop`` frequently download untrusted branches or tags from a version control system.  As long as a package has at least one numeric version, and no non-numeric version named ``develop``, Spack will prefer it over any non-numeric versions."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:407
-# 2c95a3f8386a464f8b28d67d2a71e65b
 msgid "Checksums"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:409
-# 09b832f9f52a496aac40052da1be5096
 msgid "For tarball downloads, Spack can currently support checksums using the MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512 algorithms.  It determines the algorithm to use based on the hash length."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:415
-# 60efc49e0c8d4da8a25d102aa91587be
 msgid "Versions and fetching"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:417
-# b74b1af532454349a52858e8b98dac68
 msgid "The most straightforward way to add new versions to your package is to add a line like this in the package class:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:430
-# 8105d555b53f4e0fb19f8836aee3324d
 msgid "Versions should be listed in descending order, from newest to oldest."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:434
-# c4082ea9ab7d4187a02cb6dfb61cb232
 msgid "Date Versions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:436
-# ea53cfd5972c439f9d852055439c64bf
 msgid "If you wish to use dates as versions, it is best to use the format ``@yyyy-mm-dd``.  This will ensure they sort in the correct order."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:439
-# f0ef891d3ae24b1c9b30d6206dbeb614
 msgid "Alternately, you might use a hybrid release-version / date scheme. For example, ``@1.3_2016-08-31`` would mean the version from the ``1.3`` branch, as of August 31, 2016."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:445
-# 34d85a7441a145e8b8092d56be53d8b2
 msgid "Version URLs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:447
-# 26130f6e5747418ebd6d186008e41f9f
 msgid "By default, each version's URL is extrapolated from the ``url`` field in the package.  For example, Spack is smart enough to download version ``8.2.1`` of the ``Foo`` package above from http://example.com/foo-8.2.1.tar.gz."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:452
-# b43eb4e937f04cffadc85399d814046a
 msgid "If the URL is particularly complicated or changes based on the release, you can override the default URL generation algorithm by defining your own ``url_for_version()`` function. For example, the download URL for OpenMPI contains the major.minor version in one spot and the major.minor.patch version in another:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:458
-# ac20532425e74390a5037a2083c79307
 msgid "https://www.open-mpi.org/software/ompi/v2.1/downloads/openmpi-2.1.1.tar.bz2"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:460
-# 4a46949745bb427db2d6a84e6d26a061
 msgid "In order to handle this, you can define a ``url_for_version()`` function like so:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:466
-# 89455644e4ec4dc88f13ee2924b10638
 msgid "With the use of this ``url_for_version()``, Spack knows to download OpenMPI ``2.1.1`` from http://www.open-mpi.org/software/ompi/v2.1/downloads/openmpi-2.1.1.tar.bz2 but download OpenMPI ``1.10.7`` from http://www.open-mpi.org/software/ompi/v1.10/downloads/openmpi-1.10.7.tar.bz2."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:470
-# 72f982bf379c422b840a774a1f5a9f80
 msgid "You'll notice that OpenMPI's ``url_for_version()`` function makes use of a special ``Version`` function called ``up_to()``. When you call ``version.up_to(2)`` on a version like ``1.10.0``, it returns ``1.10``. ``version.up_to(1)`` would return ``1``. This can be very useful for packages that place all ``X.Y.*`` versions in a single directory and then places all ``X.Y.Z`` versions in a sub-directory."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:476
-# e840a2fc72b94921ad5889949bd38153
 msgid "There are a few ``Version`` properties you should be aware of. We generally prefer numeric versions to be separated by dots for uniformity, but not all tarballs are named that way. For example, ``icu4c`` separates its major and minor versions with underscores, like ``icu4c-57_1-src.tgz``. The value ``57_1`` can be obtained with the use of the ``version.underscored`` property. Note that Python properties don't need parentheses. There are other separator properties as well:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:484
-# c4f2f5ac89434915bc5ce7be8129c2b9
 msgid "Property"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:484
-# 79e940592f5c4f5cbd5bfc09000ea4e4
 msgid "Result"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:486
-# 769395adac9e46738a25ba539b48c9db
 msgid "version.dotted"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:486
-# 22e1d1fbb34e4b24be21f34addcd7be8
 msgid "1.2.3"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:487
-# 63f410c9d76e4dc788d4c10f5f9edae2
 msgid "version.dashed"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:487
-# bf27b4c369ef43da834266dc9cde658f
 msgid "1-2-3"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:488
-# 57eb88dc10c74426bf30652d3d8046fe
 msgid "version.underscored"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:488
-# 59449e951a384f41935805cc58de96ff
 msgid "1_2_3"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:489
-# 60c449d348f6430e9fecec9ea41d4e14
 msgid "version.joined"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:489
-# 538fbb23f55246918d3a08a7c51797ea
 msgid "123"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:494
-# aa54f3daf6e742c29d1286e627c489e1
 msgid "Python properties don't need parentheses. ``version.dashed`` is correct. ``version.dashed()`` is incorrect."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:497
-# a6154569977a47dabc76442e4fb40912
 msgid "In addition, these version properties can be combined with ``up_to()``. For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:509
-# 863607bf59c8421e8a0459fb1661fa95
 msgid "As you can see, order is not important. Just keep in mind that ``up_to()`` and the other version properties return ``Version`` objects, not strings."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:512
-# e59b1591f4ed4645a2ccf98f34be2124
 msgid "If a URL cannot be derived systematically, or there is a special URL for one of its versions, you can add an explicit URL for a particular version:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:521
-# 09b641f46c734606a0455a654cb8326a
 msgid "When you supply a custom URL for a version, Spack uses that URL *verbatim* and does not perform extrapolation. The order of precedence of these methods is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:525
-# f29d7c7e0f2a42c6ac2334e521b8f019
 msgid "package-level ``url``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:526
-# 55c92ac614d54d3eb5072ed48d90085a
 msgid "``url_for_version()``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:527
-# 462c36021d934649b27bd62fc932c1fc
 msgid "version-specific ``url``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:529
-# 2188a5f946fb43e4a416bd71d0c33739
 msgid "so if your package contains a ``url_for_version()``, it can be overridden by a version-specific ``url``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:532
-# 459aee8c69a04bf19d453e283e0bbb18
 msgid "If your package does not contain a package-level ``url`` or ``url_for_version()``, Spack can determine which URL to download from even if only some of the versions specify their own ``url``. Spack will use the nearest URL *before* the requested version. This is useful for packages that have an easy to extrapolate URL, but keep changing their URL format every few releases. With this method, you only need to specify the ``url`` when the URL changes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:541
-# 4383cfd1171b4182a6157a78997c0bc6
 msgid "Skipping the expand step"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:543
-# b3adad277ddd473eb50fbb02f7787697
 msgid "Spack normally expands archives (e.g. ``*.tar.gz`` and ``*.zip``) automatically after downloading them. If you want to skip this step (e.g., for self-extracting executables and other custom archive types), you can add ``expand=False`` to a ``version`` directive."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:553
-# d32700ca407f49358bfedd301d7bc818
 msgid "When ``expand`` is set to ``False``, Spack sets the current working directory to the directory containing the downloaded archive before it calls your ``install`` method.  Within ``install``, the path to the downloaded archive is available as ``self.stage.archive_file``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:558
-# bec24d36ef994eb6bfb353a2b07821a9
 msgid "Here is an example snippet for packages distributed as self-extracting archives.  The example sets permissions on the downloaded file to make it executable, then runs it with some arguments."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:571
-# 5330c3f8b8924b7f850f3d0c2ac4b674
 msgid "Download caching"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:573
-# 4d66ead1f5364665ab045f9acf46e101
 msgid "Spack maintains a cache (described :ref:`here <caching>`) which saves files retrieved during package installations to avoid re-downloading in the case that a package is installed with a different specification (but the same version) or reinstalled on account of a change in the hashing scheme."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:580
-# ceeaa099d9c941b18b1be03088d5bc10
 msgid "Version comparison"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:582
-# 9149316bf35042aabf4060e97ccf9a7d
 msgid "Most Spack versions are numeric, a tuple of integers; for example, ``apex@0.1``, ``ferret@6.96`` or ``py-netcdf@1.2.3.1``.  Spack knows how to compare and sort numeric versions."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:586
-# de4249a6fa9e4fe4a4391c84f4628779
 msgid "Some Spack versions involve slight extensions of numeric syntax; for example, ``py-sphinx-rtd-theme@0.1.10a0``.  In this case, numbers are always considered to be \"newer\" than letters.  This is for consistency with `RPM <https://bugzilla.redhat.com/show_bug.cgi?id=50977>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:591
-# cf7e724e494e47a7b8cf13034096ae1f
 msgid "Spack versions may also be arbitrary non-numeric strings; any string here will suffice; for example, ``@develop``, ``@master``, ``@local``. Versions are compared as follows. First, a version string is split into multiple fields based on delimiters such as ``.``, ``-`` etc. Then matching fields are compared using the rules below:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:597
-# f04e8db5443b49ed83fa3f43fcc38c11
 msgid "The following develop-like strings are greater (newer) than all numbers and are ordered as ``develop > master > head > trunk``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:600
-# 2a5b85f521284d6795f5671a2753f7af
 msgid "Numbers are all less than the chosen develop-like strings above, and are sorted numerically."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:603
-# a357b308ace146f2a3f4ecd9a6016c23
 msgid "All other non-numeric versions are less than numeric versions, and are sorted alphabetically."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:606
-# 7239aafd77f8496eba92143bf6712bd6
 msgid "The logic behind this sort order is two-fold:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:608
-# 794670dc819e4c15bd298d689a1f8114
 msgid "Non-numeric versions are usually used for special cases while developing or debugging a piece of software.  Keeping most of them less than numeric versions ensures that Spack chooses numeric versions by default whenever possible."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:613
-# 55fec26250174656bcbb2dd39fbb327b
 msgid "The most-recent development version of a package will usually be newer than any released numeric versions.  This allows the ``@develop`` version to satisfy dependencies like ``depends_on(abc, when=\"@x.y.z:\")``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:620
-# cb25c6f0a890451a803643c6636d7d2a
 msgid "Version selection"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:622
-# e13c81d5176244d782b402ab7544c802
 msgid "When concretizing, many versions might match a user-supplied spec. For example, the spec ``python`` matches all available versions of the package ``python``.  Similarly, ``python@3:`` matches all versions of Python3.  Given a set of versions that match a spec, Spack concretization uses the following priorities to decide which one to use:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:629
-# a73b9f9dd2e943e99cc92a708ad3df78
 msgid "If the user provided a list of versions in ``packages.yaml``, the first matching version in that list will be used."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:632
-# faa9d6655fa849cea307bc937d427d11
 msgid "If one or more versions is specified as ``preferred=True``, in either ``packages.yaml`` or ``package.py``, the largest matching version will be used.  (\"Latest\" is defined by the sort order above)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:637
-# 9a7a59ca13b84a51b6a613c705f11ab0
 msgid "If no preferences in particular are specified in the package or in ``packages.yaml``, then the largest matching non-develop version will be used.  By avoiding ``@develop``, this prevents users from accidentally installing a ``@develop`` version."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:642
-# 13e70f2168e64fb9a7ed7ecb5d2611a4
 msgid "If all else fails and ``@develop`` is the only matching version, it will be used."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:650
-# 7cc19548358a4af9aaeef268297e8f00
 msgid "``spack checksum``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:652
-# 4dd1b4ed2afb416b9fc9d596adb9b128
 msgid "If you want to add new versions to a package you've already created, this is automated with the ``spack checksum`` command.  Here's an example for ``libelf``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:674
-# 235ed7782cf5414d8d66063365c869ce
 msgid "This does the same thing that ``spack create`` does, but it allows you to go back and add new versions easily as you need them (e.g., as they're released).  It fetches the tarballs you ask for and prints out a list of ``version`` commands ready to copy/paste into your package file:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:688
-# 40ebf7f0d98c49cea349b063e4a25e55
 msgid "By default, Spack will search for new tarball downloads by scraping the parent directory of the tarball you gave it.  So, if your tarball is at ``http://example.com/downloads/foo-1.0.tar.gz``, Spack will look in ``http://example.com/downloads/`` for links to additional versions. If you need to search another path for download links, you can supply some extra attributes that control how your package finds new versions. See the documentation on :ref:`attribute_list_url` and :ref:`attribute_list_depth`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:699
-# f68466c2e7f944c792469854c1cdd351
 msgid "This command assumes that Spack can extrapolate new URLs from an existing URL in the package, and that Spack can find similar URLs on a webpage.  If that's not possible, e.g. if the package's developers don't name their tarballs consistently, you'll need to manually add ``version`` calls yourself."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:705
-# 7d5d039a329347eea8f23309bd9d273b
 msgid "For ``spack checksum`` to work, Spack needs to be able to ``import`` your package in Python.  That means it can't have any syntax errors, or the ``import`` will fail.  Use this once you've got your package in working order."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:712
-# fa6e41147c484c01a26fc3e3e405b707
 msgid "Finding new versions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:714
-# 400e317071244f7c80c4c4b66adf3578
 msgid "You've already seen the ``homepage`` and ``url`` package attributes:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:728
-# 633472af37ca46668ed298039402e63e
 msgid "These are class-level attributes used by Spack to show users information about the package, and to determine where to download its source code."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:732
-# 4ad3b1caa20b4cb6aa5d0d3312a30716
 msgid "Spack uses the tarball URL to extrapolate where to find other tarballs of the same package (e.g. in :ref:`cmd-spack-checksum`, but this does not always work.  This section covers ways you can tell Spack to find tarballs elsewhere."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:741
-# 23ea65495fd346329c95bd58bf82f546
 msgid "``list_url``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:743
-# 1123de1e41bd42b0a7149640174157b6
 msgid "When spack tries to find available versions of packages (e.g. with :ref:`cmd-spack-checksum`), it spiders the parent directory of the tarball in the ``url`` attribute.  For example, for libelf, the url is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:752
-# dc9b36e7ac354164bf16ecdc14afedfb
 msgid "Here, Spack spiders ``http://www.mr511.de/software/`` to find similar tarball links and ultimately to make a list of available versions of ``libelf``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:756
-# 4699dae84f4a4b9ebe1b7ad36e88df36
 msgid "For many packages, the tarball's parent directory may be unlistable, or it may not contain any links to source code archives.  In fact, many times additional package downloads aren't even available in the same directory as the download URL."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:761
-# 04457ac4020f4cea9989e70b48ff7e48
 msgid "For these, you can specify a separate ``list_url`` indicating the page to search for tarballs.  For example, ``libdwarf`` has the homepage as the ``list_url``, because that is where links to old versions are:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:777
-# 8baba17277cd4076a639e4fb43f199cc
 msgid "``list_depth``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:779
-# e80ca19eee8b42ecab7997d0f6865e4a
 msgid "``libdwarf`` and many other packages have a listing of available versions on a single webpage, but not all do.  For example, ``mpich`` has a tarball URL that looks like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:787
-# c59e8f8d880948339e88a83d49fc6a1d
 msgid "But its downloads are in many different subdirectories of ``http://www.mpich.org/static/downloads/``.  So, we need to add a ``list_url`` *and* a ``list_depth`` attribute:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:800
-# 66c7d71baf14483ca21ebe95cf981d15
 msgid "By default, Spack only looks at the top-level page available at ``list_url``.  ``list_depth = 1`` tells it to follow up to 1 level of links from the top-level page.  Note that here, this implies 1 level of subdirectories, as the ``mpich`` website is structured much like a filesystem.  But ``list_depth`` really refers to link depth when spidering the page."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:811
-# 9f4846cb4877401f9ee3262d5b797d0b
 msgid "Fetching from code repositories"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:813
-# b60a5d17b40c499d82f9ff46b876a92d
 msgid "For some packages, source code is provided in a Version Control System (VCS) repository rather than in a tarball.  Spack can fetch packages from VCS repositories. Currently, Spack supports fetching with `Git <git-fetch_>`_, `Mercurial (hg) <hg-fetch_>`_, `Subversion (svn) <svn-fetch_>`_, and `Go <go-fetch_>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:819
-# b0a735efe42a48cfab2eee4ffd79fc92
 msgid "To fetch a package from a source repository, Spack needs to know which VCS to use and where to download from. Much like with ``url``, package authors can specify a class-level ``git``, ``hg``, ``svn``, or ``go`` attribute containing the correct download location."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:824
-# 95e18ad5490b492ca785acae9bbfec6c
 msgid "Many packages developed with Git have both a Git repository as well as release tarballs available for download. Packages can define both a class-level tarball URL and VCS. For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:842
-# 89bac6ffb2b84599a744c55d681615ba
 msgid "If a package contains both a ``url`` and ``git`` class-level attribute, Spack decides which to use based on the arguments to the ``version()`` directive. Versions containing a specific branch, tag, or revision are assumed to be for VCS download methods, while versions containing a checksum are assumed to be for URL download methods."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:848
-# 06c6c35a706b411b85706dea7f2a9893
 msgid "Like ``url``, if a specific version downloads from a different repository than the default repo, it can be overridden with a version-specific argument."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:853
-# 2b7ef85f9c1e43bdbda6477b55b20ea2
 msgid "In order to reduce ambiguity, each package can only have a single VCS top-level attribute in addition to ``url``. In the rare case that a package uses multiple VCS, a fetch strategy can be specified for each version. For example, the ``rockstar`` package contains:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:872
-# 15be21e633914977879a25e7d4c69de5
 msgid "Git"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:874
-# dd49798f3fcf4795b48590015629aff0
 msgid "Git fetching supports the following parameters to ``version``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:876
-# f9c8aaa585e64cf0850864c827d6bc85
 msgid "``git``: URL of the git repository, if different than the class-level ``git``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:877
-# 543735269f874a7781b1c204439095f9
 msgid "``branch``: Name of a branch to fetch."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:878
-# 396f6a40233a483dbfaf0cf90f4fa713
 msgid "``tag``: Name of a tag to fetch."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:879
-# 8390ab495c0442d38af03030ca3f9506
 msgid "``commit``: SHA hash (or prefix) of a commit to fetch."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:880
-# f0468118727e4494a4764e56428cc762
 msgid "``submodules``: Also fetch submodules recursively when checking out this repository."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:882
-# ba4bbc6d9f8b4d58bbda95c47aaf8032
 msgid "Only one of ``tag``, ``branch``, or ``commit`` can be used at a time."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:899
 #: ../spack/lib/spack/docs/packaging_guide.rst:998
-# 8ec690971cac4bd2a38ce5f62904c7c2
-# 17056291e42c4eea94742a4d63871e71
 msgid "Default branch"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:885
-# 4543ffdf55784968a22a7d555e424e93
 msgid "To fetch a repository's default branch:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:895
-# 8e1d7930047b433e88cc8d813cff51df
 msgid "This download method is untrusted, and is not recommended. Aside from HTTPS, there is no way to verify that the repository has not been compromised, and the commit you get when you install the package likely won't be the same commit that was used when the package was first written. Additionally, the default branch may change. It is best to at least specify a branch name."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:910
-# f495d4bcbd9547f3b3f18d5a1f7c4114
 msgid "Branches"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:902
-# 9a0a612a74714024b3dd9d79e745cf81
 msgid "To fetch a particular branch, use the ``branch`` parameter:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:908
-# f85fd4640bc94070bd92cb54d61ed859
 msgid "This download method is untrusted, and is not recommended. Branches are moving targets, so the commit you get when you install the package likely won't be the same commit that was used when the package was first written."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:922
-# d15848c80858406b8644276662ef4858
 msgid "Tags"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:913
-# b20922f023a84e5aac699fe11439a37a
 msgid "To fetch from a particular tag, use ``tag`` instead:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:919
-# 28ba46c7c0e14087a94aed8677c36998
 msgid "This download method is untrusted, and is not recommended. Although tags are generally more stable than branches, Git allows tags to be moved. Many developers use tags to denote rolling releases, and may move the tag when a bug is patched."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:946
-# f347949ba4d0441aba3c83e6d0129a4d
 msgid "Commits"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:925
-# c9e1c7eac270469ca61db723c888f5c0
 msgid "Finally, to fetch a particular commit, use ``commit``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:931
-# 887431edf4a5471986a0e978719180a6
 msgid "This doesn't have to be a full hash; you can abbreviate it as you'd expect with git:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:938
-# 6fd81e92d11d42ac9894742ed219ce42
 msgid "This download method *is trusted*.  It is the recommended way to securely download from a Git repository."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:941
-# 7569343a8bad4a4ba6fbd69c5ae907f4
 msgid "It may be useful to provide a saner version for commits like this, e.g. you might use the date as the version, as done above. Or, if you know the commit at which a release was cut, you can use the release version. It's up to the package author to decide what makes the most sense. Although you can use the commit hash as the version number, this is not recommended, as it won't sort properly."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:956
-# c90e5a2c50a74bab9e6a1067dc71dee0
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:949
-# 962613aa6bdd4c4f9218666625b0203e
 msgid "You can supply ``submodules=True`` to cause Spack to fetch submodules recursively along with the repository at fetch time. For more information about git submodules see the manpage of git: ``man git-submodule``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:962
-# f7807ceb6b0b4a3c988cb82dc372b300
 msgid "GitHub"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:964
-# 730efe51c940434fbdd219f11ef1979d
 msgid "If a project is hosted on GitHub, *any* valid Git branch, tag, or hash may be downloaded as a tarball.  This is accomplished simply by constructing an appropriate URL.  Spack can checksum any package downloaded this way, thereby producing a trusted download.  For example, the following downloads a particular hash, and then applies a checksum."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:980
-# ffde0e20a0a34f01a4f7b190aba9c7be
 msgid "Mercurial"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:982
-# 0b341e0a24cc4b51a79eb9f19b0e78dd
 msgid "Fetching with Mercurial works much like `Git <git-fetch>`_, but you use the ``hg`` parameter."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:986
-# 1ea2fc02b86d48ef99ca2d5c6164ea53
 msgid "Add the ``hg`` attribute with no ``revision`` passed to ``version``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:996
-# 0cfdb671b5314a29bce11dfada1afd07
 msgid "This download method is untrusted, and is not recommended. As with Git's default fetching strategy, there is no way to verify the integrity of the download."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1013
-# 2b0a1a928c674bb382bb1ae16ecc173e
 msgid "Revisions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1001
-# b6c48c266ec84ddeb86c6707bf58f6b6
 msgid "To fetch a particular revision, use the ``revision`` parameter:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1007
-# ef55909c27a04168a8343c1ddf778c20
 msgid "Unlike ``git``, which has special parameters for different types of revisions, you can use ``revision`` for branches, tags, and commits when you fetch with Mercurial. Like Git, fetching specific branches or tags is an untrusted download method, and is not recommended. The recommended fetch strategy is to specify a particular commit hash as the revision."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1019
-# 087f7b8c0315426d87038761fb4d7184
 msgid "Subversion"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1021
-# 7791cc784e434dc0abfff20d489b03d2
 msgid "To fetch with subversion, use the ``svn`` and ``revision`` parameters."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1035
-# 04a9710cc55147e6850b4f5622a6a81d
 msgid "Fetching the head"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1024
-# ef68d738e5224fe0b6086a57f3bd6ba0
 msgid "Simply add an ``svn`` parameter to the package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1034
-# a47b6286d35d4323b9e4f7ca16426f71
 msgid "This download method is untrusted, and is not recommended for the same reasons as mentioned above."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1050
-# 9120ac1fb3274c23905fa086c7e53cdb
 msgid "Fetching a revision"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1038
-# dcfbf4504701400594e1f16985ad9023
 msgid "To fetch a particular revision, add a ``revision`` argument to the version directive:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1045
-# 1854440f976f48108e74664172a8864b
 msgid "This download method is untrusted, and is not recommended."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1047
-# 3954955d10d84c8a8c71f4a9931367bf
 msgid "Unfortunately, Subversion has no commit hashing scheme like Git and Mercurial do, so there is no way to guarantee that the download you get is the same as the download used when the package was created. Use at your own risk."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1052
-# aaec64315763498ba694e13a8a98dff9
 msgid "Subversion branches are handled as part of the directory structure, so you can check out a branch or tag by changing the URL. If you want to package multiple branches, simply add a ``svn`` argument to each version directive."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1061
-# 827f06b0997a4d1c99ef2d1171b59313
 msgid "Go"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1063
-# c2949d8189134cfcae8ec6db1bce3db4
 msgid "Go isn't a VCS, it is a programming language with a builtin command, `go get <https://golang.org/cmd/go/#hdr-Download_and_install_packages_and_dependencies>`_, that fetches packages and their dependencies automatically. It can clone a Git repository, or download from another source location. For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1078
-# af502c5a2e3244e9a28a05eb4a0bfe32
 msgid "Go cannot be used to fetch a particular commit or branch, it always downloads the head of the repository. This download method is untrusted, and is not recommended. Use another fetch strategy whenever possible."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1080
-# 367fdf09fe6844128c982854d429a905
 msgid "and is not recommended. Use another fetch strategy whenever possible."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1084
-# 025095118b1144b99446446bb1021dce
 msgid "Variants"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1086
-# d39dca50c2ed4703ae30ac71f30ad3b3
 msgid "Many software packages can be configured to enable optional features, which often come at the expense of additional dependencies or longer build-times. To be flexible enough and support a wide variety of use cases, Spack permits to expose to the end-user the ability to choose which features should be activated in a package at the time it is installed. The mechanism to be employed is the :py:func:`spack.directives.variant` directive."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1095
-# 2df7152336ab4325863bcee908fb53ea
 msgid "Boolean variants"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1097
-# f63a9230c99d4604a0e62b5ac6f2e618
 msgid "In their simplest form variants are boolean options specified at the package level:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1108
-# 4d270c26eff84e2c8453234802da0bd8
 msgid "with a default value and a description of their meaning / use in the package. *Variants can be tested in any context where a spec constraint is expected.* In the example above the ``shared`` variant is tied to the build of shared dynamic libraries. To pass the right option at configure time we can branch depending on its value:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1124
-# dd75732960d94e8b9295e9ea9bd79844
 msgid "As explained in :ref:`basic-variants` the constraint ``+shared`` means that the boolean variant is set to ``True``, while ``~shared`` means it is set to ``False``. Another common example is the optional activation of an extra dependency which requires to use the variant in the ``when`` argument of :py:func:`spack.directives.depends_on`:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1138
-# e1e8c6e2cb6444c6b2551ad0d464b695
 msgid "as shown in the snippet above where ``szip`` is modeled to be an optional dependency of ``hdf5``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1143
-# dd0be324d92741439a1dfbefc587de36
 msgid "Multi-valued variants"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1145
-# 60886dc123414f8c9274bf1395f0781e
 msgid "If need be, Spack can go beyond Boolean variants and permit an arbitrary number of allowed values. This might be useful when modeling options that are tightly related to each other. The values in this case are passed to the :py:func:`spack.directives.variant` directive as a tuple:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1160
-# a41ebecb56764eb5aa4ea906fbc3682e
 msgid "In the example above the argument ``multi`` is set to ``False`` to indicate that only one among all the variant values can be active at any time. This constraint is enforced by the parser and an error is emitted if a user specifies two or more values at the same time:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1176
-# a67bcc9e37684db094647f7b4d85731d
 msgid "Another useful note is that *Python's* ``None`` *is not allowed as a default value* and therefore it should not be used to denote that no feature was selected. Users should instead select another value, like ``'none'``, and handle it explicitly within the package recipe if need be:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1186
-# 479b66a3459b40bdbded7cfa28fc6ac1
 msgid "In cases where multiple values can be selected at the same time ``multi`` should be set to ``True``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1201
-# 64e18dda8ec54591aeb0a3f5c2b1789a
 msgid "Within a package recipe a multi-valued variant is tested using a ``key=value`` syntax:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1210
-# ea37820f4aac4acf8af320513869b8cb
 msgid "Complex validation logic for variant values"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1211
-# 5ac36b24b60c4924a5b4615ef196e502
 msgid "To cover complex use cases, the :py:func:`spack.directives.variant` directive could accept as the ``values`` argument a full-fledged object which has ``default`` and other arguments of the directive embedded as attributes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1215
-# 92edb7d8458f4d10be8245e96b4d99bf
 msgid "An example, already implemented in Spack's core, is :py:class:`spack.variant.DisjointSetsOfValues`. This class is used to implement a few convenience functions, like :py:func:`spack.variant.any_combination_of`:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1229
-# 9e562f946cb845938b666d3a579e4c6e
 msgid "that allows any combination of the specified values, and also allows the user to specify ``'none'`` (as a string) to choose none of them. The objects returned by these functions can be modified at will by chaining method calls to change the default value, customize the error message or other similar operations:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1252
-# d46dec38e87044d098a341761e3d13b0
 msgid "Resources (expanding extra tarballs)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1254
-# b027b44cf0cf435cb3d0ab8c9a316976
 msgid "Some packages (most notably compilers) provide optional features if additional resources are expanded within their source tree before building. In Spack it is possible to describe such a need with the ``resource`` directive :"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1267
-# 3f37241a99d54d7b8ca8d7f9d47f37a8
 msgid "Based on the keywords present among the arguments the appropriate ``FetchStrategy`` will be used for the resource. The keyword ``destination`` is relative to the source root of the package and should point to where the resource is to be expanded."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1275
-# d079aab1a424496b98b985318da864c4
 msgid "Licensed software"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1277
-# 1527d86e8dc442cab68a0be1183c82e2
 msgid "In order to install licensed software, Spack needs to know a few more details about a package. The following class attributes should be defined."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1282
-# 57196fac65764b45b5c8cc7a325d7690
 msgid "``license_required``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1284
-# 48bb08fd5deb45378781a10c61aefc1b
 msgid "Boolean. If set to ``True``, this software requires a license. If set to ``False``, all of the following attributes will be ignored. Defaults to ``False``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1290
-# 8cf90137518f413089fc0d0681703880
 msgid "``license_comment``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1292
-# 588f87352b3040eab81bc55fd6425af8
 msgid "String. Contains the symbol used by the license manager to denote a comment. Defaults to ``#``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1297
-# b9cd31dc383440318d09156f75c7b322
 msgid "``license_files``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1299
-# 92d2ea74ae6e4bcaadd4aaad6d2dd4f3
 msgid "List of strings. These are files that the software searches for when looking for a license. All file paths must be relative to the installation directory. More complex packages like Intel may require multiple licenses for individual components. Defaults to the empty list."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1306
-# b42d5a091fb4476b9a3dedf624712cef
 msgid "``license_vars``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1308
-# 1084a324d98d4a858f00e2aa162cba36
 msgid "List of strings. Environment variables that can be set to tell the software where to look for a license if it is not in the usual location. Defaults to the empty list."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1314
-# e787c8175c354b299916c78bba30ea57
 msgid "``license_url``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1316
-# 170289dd830d4fb8adf3fc1e39b203d7
 msgid "String. A URL pointing to license setup instructions for the software. Defaults to the empty string."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1319
-# 101efe30ec524f2e89c4a00882c05ded
 msgid "For example, let's take a look at the package for the PGI compilers."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1330
-# 34df884f1b814662b0982e2079011ca8
 msgid "As you can see, PGI requires a license. Its license manager, FlexNet, uses the ``#`` symbol to denote a comment. It expects the license file to be named ``license.dat`` and to be located directly in the installation prefix. If you would like the installation file to be located elsewhere, simply set ``PGROUPD_LICENSE_FILE`` or ``LM_LICENSE_FILE`` after installation. For further instructions on installation and licensing, see the URL provided."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1337
-# d64a076024294a4d907a28793aacec37
 msgid "Let's walk through a sample PGI installation to see exactly what Spack is and isn't capable of. Since PGI does not provide a download URL, it must be downloaded manually. It can either be added to a mirror or located in the current directory when ``spack install pgi`` is run. See :ref:`mirrors` for instructions on setting up a mirror."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1343
-# e2cb208b87674d698fb69a8955a4180c
 msgid "After running ``spack install pgi``, the first thing that will happen is Spack will create a global license file located at ``$SPACK_ROOT/etc/spack/licenses/pgi/license.dat``. It will then open up the file using the editor set in ``$EDITOR``, or vi if unset. It will look like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1376
-# 4d6569c2806d4216b95f48a370bad77c
 msgid "You can add your license directly to this file, or tell FlexNet to use a license stored on a separate license server. Here is an example that points to a license server called licman1:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1385
-# 1b086540c600406182538739adde287a
 msgid "If your package requires the license to install, you can reference the location of this global license using ``self.global_license_file``. After installation, symlinks for all of the files given in ``license_files`` will be created, pointing to this global license. If you install a different version or variant of the package, Spack will automatically detect and reuse the already existing global license."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1392
-# 08de8e38e34049059640930958d8e5b7
 msgid "If the software you are trying to package doesn't rely on license files, Spack will print a warning message, letting the user know that they need to set an environment variable or pointing them to installation documentation."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1401
-# cd65a76f2f8f4303a475258c088e8f07
 msgid "Patches"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1403
-# f106a07593414058b7e9a0bbbd34e830
 msgid "Depending on the host architecture, package version, known bugs, or other issues, you may need to patch your software to get it to build correctly.  Like many other package systems, spack allows you to store patches alongside your package files and apply them to source code after it's downloaded."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1411
-# d8d056f0d25a47f085e33f835077569c
 msgid "``patch``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1413
-# 39673601fa4a48d882047f6ed2050b53
 msgid "You can specify patches in your package file with the ``patch()`` directive.  ``patch`` looks like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1422
-# c2ed746167ee4e46833ad791b2de5935
 msgid "The first argument can be either a URL or a filename.  It specifies a patch file that should be applied to your source.  If the patch you supply is a filename, then the patch needs to live within the spack source tree.  For example, the patch above lives in a directory structure like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1435
-# 97020b7a819541a38aac1abbbd72ad05
 msgid "If you supply a URL instead of a filename, you need to supply a ``sha256`` checksum, like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1443
-# 18a424243268473594f3d32ca80418fe
 msgid "Spack includes the hashes of patches in its versioning information, so that the same package with different patches applied will have different hash identifiers.  To ensure that the hashing scheme is consistent, you must use a ``sha256`` checksum for the patch.  Patches will be fetched from their URLs, checked, and applied to your source code.  You can use the ``spack sha256`` command to generate a checksum for a patch file or URL."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1451
-# ec723a94a3c04a0f9ec04a2e15e2726a
 msgid "Spack can also handle compressed patches.  If you use these, Spack needs a little more help.  Specifically, it needs *two* checksums: the ``sha256`` of the patch and ``archive_sha256`` for the compressed archive.  ``archive_sha256`` helps Spack ensure that the downloaded file is not corrupted or malicious, before running it through a tool like ``tar`` or ``zip``.  The ``sha256`` of the patch is still required so that it can be included in specs.  Providing it in the package file ensures that Spack won't have to download and decompress patches it won't end up using at install time.  Both the archive and patch checksum are checked when patch archives are downloaded."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1468
-# a9bbaa57ce7a47528d2706ecd7d4d56f
 msgid "``patch`` keyword arguments are described below."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1472
-# 047a5b9d6f024eac8e3fe915b66fe299
 msgid "``sha256``, ``archive_sha256``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1474
-# 21da359d945e46579b2a485d0273ce3f
 msgid "Hashes of downloaded patch and compressed archive, respectively.  Only needed for patches fetched from URLs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1479
-# 09296e5c59ea4188965df85e4933324e
 msgid "``when``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1481
-# e27aa707f98d40d4a0844bc8c121e41c
 msgid "If supplied, this is a spec that tells spack when to apply the patch.  If the installed package spec matches this spec, the patch will be applied.  In our example above, the patch is applied when mvapich is at version ``1.9`` or higher."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1488
-# bfe972f673cc494c9fe72fd125909b2c
 msgid "``level``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1490
-# 35ae2506b7ab4b34b3690f7a2c1c9090
 msgid "This tells spack how to run the ``patch`` command.  By default, the level is 1 and spack runs ``patch -p 1``.  If level is 2, spack will run ``patch -p 2``, and so on."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1494
-# b856390aeac941838cc78305a7b1de4c
 msgid "A lot of people are confused by level, so here's a primer.  If you look in your patch file, you may see something like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1512
-# 916fad0396ae4b13b25944d5bc307d62
 msgid "Lines 1-2 show paths with synthetic ``a/`` and ``b/`` prefixes.  These are placeholders for the two ``mvapich2`` source directories that ``diff`` compared when it created the patch file.  This is git's default behavior when creating patch files, but other programs may behave differently."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1518
-# 4481728a65b04fecbe66765006c29d13
 msgid "``-p1`` strips off the first level of the prefix in both paths, allowing the patch to be applied from the root of an expanded mvapich2 archive.  If you set level to ``2``, it would strip off ``src``, and so on."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1523
-# bb7c38c2474d4ecab00e56736763f0a7
 msgid "It's generally easier to just structure your patch file so that it applies cleanly with ``-p1``, but if you're using a patch you didn't create yourself, ``level`` can be handy."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1529
-# a38fff8b98f04ba7bcc65fab2acb0c0f
 msgid "``working_dir``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1531
-# da103c128667433d81b644f82a3d9c83
 msgid "This tells spack where to run the ``patch`` command.  By default, the working directory is the source path of the stage (``.``). However, sometimes patches are made with respect to a subdirectory and this is where the working directory comes in handy. Internally, the working directory is given to ``patch`` via the ``-d`` option. Let's take the example patch from above and assume for some reason, it can only be downloaded in the following form:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1554
-# 4516a1e9fa7c46348b695694d9a06dd9
 msgid "Hence, the patch needs to applied in the ``src/mpi`` subdirectory, and the ``working_dir='src/mpi'`` option would exactly do that."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1559
-# 9edb28da6b0746018235b2a43998451a
 msgid "Patch functions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1561
-# 7d23595c89d24010ab06ba286a8cce8c
 msgid "In addition to supplying patch files, you can write a custom function to patch a package's source.  For example, the ``py-pyside`` package contains some custom code for tweaking the way the PySide build handles ``RPATH``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1572
-# c424a102a84c4142b7b4a954fbd3348f
 msgid "A ``patch`` function, if present, will be run after patch files are applied and before ``install()`` is run."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1575
-# 4479075fce414fdf9875d935307760d9
 msgid "You could put this logic in ``install()``, but putting it in a patch function gives you some benefits.  First, spack ensures that the ``patch()`` function is run once per code checkout.  That means that if you run install, hit ctrl-C, and run install again, the code in the patch function is only run once.  Also, you can tell Spack to run only the patching part of the build using the :ref:`cmd-spack-patch` command."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1586
 #: ../spack/lib/spack/docs/packaging_guide.rst:1933
-# 38c192b91d4146e2b1e55b4f689087b6
-# f4f48c4eed3f4c07a8189b09edc766a1
 msgid "Dependency patching"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1588
-# 9d1a072c0737469a9af77558c3d7880e
 msgid "So far we've covered how the ``patch`` directive can be used by a package to patch *its own* source code. Packages can *also* specify patches to be applied to their dependencies, if they require special modifications.  As with all packages in Spack, a patched dependency library can coexist with other versions of that library.  See the `section on depends_on <dependency_dependency_patching_>`_ for more details."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1599
-# 21d4dfbe414842e8ae7bdf63c709e138
 msgid "Inspecting patches"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1601
-# 883e3f7d018449469123f0b977ff690a
 msgid "If you want to better understand the patches that Spack applies to your packages, you can do that using ``spack spec``, ``spack find``, and other query commands.  Let's look at ``m4``.  If you run ``spack spec m4``, you can see the patches that would be applied to ``m4``::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1616
-# 96184ef5b70345d29feb2182f4594cda
 msgid "You can also see patches that have been applied to installed packages with ``spack find -v``::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1626
-# bf8bd1eaed96473a8816bf5cb135bc41
 msgid "In both cases above, you can see that the patches' sha256 hashes are stored on the spec as a variant.  As mentioned above, this means that you can have multiple, differently-patched versions of a package installed at once."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1631
-# 9b2b4712791b408b84125beb2fc8d96a
 msgid "You can look up a patch by its sha256 hash (or a short version of it) using the ``spack resource show`` command::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1639
-# fd65633246f24ee4b6eee4d918c917de
 msgid "``spack resource show`` looks up downloadable resources from package files by hash and prints out information about them.  Above, we see that the ``3877ab54`` patch applies to the ``m4`` package.  The output also tells us where to find the patch."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1644
-# 1a532d769dc5499db21a7adbd9ce0279
 msgid "Things get more interesting if you want to know about dependency patches. For example, when ``dealii`` is built with ``boost@1.68.0``, it has to patch boost to work correctly.  If you didn't know this, you might wonder where the extra boost patches are coming from::"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1658
-# 7238f28c5d8f4c0a93b2098792afd9ac
 msgid "Here you can see that the patch is applied to ``boost`` by ``dealii``, and that it lives in ``dealii``'s directory in Spack's ``builtin`` package repository."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1666
-# 18863b380f58477090eeb0ef307846fb
 msgid "Handling RPATHs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1668
-# ad1f0fbf84cf4d5ab4545d45dbfec3da
 msgid "Spack installs each package in a way that ensures that all of its dependencies are found when it runs.  It does this using `RPATHs <http://en.wikipedia.org/wiki/Rpath>`_.  An RPATH is a search path, stored in a binary (an executable or library), that tells the dynamic loader where to find its dependencies at runtime. You may be familiar with `LD_LIBRARY_PATH <http://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html>`_ on Linux or `DYLD_LIBRARY_PATH <https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/dyld.1.html>`_ on Mac OS X.  RPATH is similar to these paths, in that it tells the loader where to find libraries.  Unlike them, it is embedded in the binary and not set in each user's environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1681
-# 873b8d8d08eb4199a17b4869a4a49bb9
 msgid "RPATHs in Spack are handled in one of three ways:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1683
-# b7ae01602c8f4b4f9370c7507bd338c0
 msgid "For most packages, RPATHs are handled automatically using Spack's :ref:`compiler wrappers <compiler-wrappers>`.  These wrappers are set in standard variables like ``CC``, ``CXX``, ``F77``, and ``FC``, so most build systems (autotools and many gmake systems) pick them up and use them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1688
-# 632d1a50c79b489c8f3f62064704c3bd
 msgid "CMake also respects Spack's compiler wrappers, but many CMake builds have logic to overwrite RPATHs when binaries are installed. Spack provides the ``std_cmake_args`` variable, which includes parameters necessary for CMake build use the right installation RPATH.  It can be used like this when ``cmake`` is invoked:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1704
-# 30b1ea816b2048e5af373b978daa8513
 msgid "If you need to modify the build to add your own RPATHs, you can use the ``self.rpath`` property of your package, which will return a list of all the RPATHs that Spack will use when it links.  You can see this how this is used in the :ref:`PySide example <pyside-patch>` above."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1714
-# 298c8a1a702b42b0b41bd27b07331d25
 msgid "Parallel builds"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1716
-# 12a14ae5d7ac4cad8c8912bc83131c99
 msgid "By default, Spack will invoke ``make()`` with a ``-j <njobs>`` argument, so that builds run in parallel.  It figures out how many jobs to run by determining how many cores are on the host machine. Specifically, it uses the number of CPUs reported by Python's `multiprocessing.cpu_count() <http://docs.python.org/library/multiprocessing.html#multiprocessing.cpu_count>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1723
-# 58728abb3ac344d9a3da07b09a15e027
 msgid "If a package does not build properly in parallel, you can override this setting by adding ``parallel = False`` to your package.  For example, OpenSSL's build does not work in parallel, so its package looks like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1741
-# 4eea7f29ee34466dad80bab729e67068
 msgid "Similarly, you can disable parallel builds only for specific make commands, as ``libdwarf`` does:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1761
-# db3bb08764374aebbdcfd7ea40556849
 msgid "The first make will run in parallel here, but the second will not.  If you set ``parallel`` to ``False`` at the package level, then each call to ``make()`` will be sequential by default, but packagers can call ``make(parallel=True)`` to override it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1770
-# 865363d1002b4e1d95dfafeb6eda2768
 msgid "Dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1772
-# 23805ad2705e48c987d37aec795f3268
 msgid "We've covered how to build a simple package, but what if one package relies on another package to build?  How do you express that in a package file?  And how do you refer to the other package in the build script for your own package?"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1777
-# ae936f6e539b4eb5854d9c6a31311b2e
 msgid "Spack makes this relatively easy.  Let's take a look at the ``libdwarf`` package to see how it's done:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1799
-# bbeedef2cd174f59a20383a54eabadc3
 msgid "``depends_on()``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1801
-# e94361e7904c458da67252ba7d261038
 msgid "The highlighted ``depends_on('libelf')`` call tells Spack that it needs to build and install the ``libelf`` package before it builds ``libdwarf``.  This means that in your ``install()`` method, you are guaranteed that ``libelf`` has been built and installed successfully, so you can rely on it for your libdwarf build."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1809
-# 94c51293779843feb1c1f8b7d391b114
 msgid "Dependency specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1811
-# 0984faf964524424a08c4a9d7a84bb23
 msgid "``depends_on`` doesn't just take the name of another package. It can take a full spec as well. This means that you can restrict the versions or other configuration options of ``libelf`` that ``libdwarf`` will build with. For example, suppose that in the ``libdwarf`` package you write:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1820
-# 3643d47016234db29a34201cf7116e60
 msgid "Now ``libdwarf`` will require ``libelf`` at *exactly* version ``0.8``. You can also specify a requirement for a particular variant or for specific compiler flags:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1830
-# 4a6abd4fb02343bc827f693b80bc6544
 msgid "Both users *and* package authors can use the same spec syntax to refer to different package configurations. Users use the spec syntax on the command line to find installed packages or to install packages with particular constraints, and package authors can use specs to describe relationships between packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1838
-# 151f3fecb5cd41de8981d60a7bde9a41
 msgid "Version ranges"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1840
-# 8a140110551d4603a3e8cc82be065787
 msgid "Although some packages require a specific version for their dependencies, most can be built with a range of version. For example, if you are writing a package for a legacy Python module that only works with Python 2.4 through 2.6, this would look like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1849
-# 84fb8ae96f8b4e29b80596b953395941
 msgid "Version ranges in Spack are *inclusive*, so ``2.4:2.6`` means any version greater than or equal to ``2.4`` and up to and including ``2.6``. If you want to specify that a package works with any version of Python 3, this would look like:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1858
-# e309a36e30c7412dbd367b9c110af8f6
 msgid "Here we leave out the upper bound. If you want to say that a package requires Python 2, you can similarly leave out the lower bound:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1865
-# e8903eb6044c4994a7504a2a1c055e18
 msgid "Notice that we didn't use ``@:3``. Version ranges are *inclusive*, so ``@:3`` means \"up to and including 3\"."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1868
-# b61d41d616d74e0a8bd4074b581ba2be
 msgid "What if a package can only be built with Python 2.6? You might be inclined to use:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1875
-# 5b7b6c3401fb4feebc0336c8e2bb0443
 msgid "However, this would be wrong. Spack assumes that all version constraints are absolute, so it would try to install Python at exactly ``2.6``. The correct way to specify this would be:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1883
-# 5f46de12f247412c8e4769bb916d4251
 msgid "A spec can contain multiple version ranges separated by commas. For example, if you need Boost 1.59.0 or newer, but there are known issues with 1.64.0, 1.65.0, and 1.66.0, you can say:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1894
-# 8193240b827b4dba95c6546cc62d41c9
 msgid "Dependency types"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1896
-# 9f4f06297b384a6c8e440d0f95aa9e8d
 msgid "Not all dependencies are created equal, and Spack allows you to specify exactly what kind of a dependency you need. For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1905
-# c58546457e774b9baf67d0b546845f3a
 msgid "The following dependency types are available:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1907
-# 8320b6f9cd1547eeb4154e48611b8fe9
 msgid "**\"build\"**: made available during the project's build. The package will be added to ``PATH``, the compiler include paths, and ``PYTHONPATH``. Other projects which depend on this one will not have these modified (building project X doesn't need project Y's build dependencies)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1911
-# 627232a96454451c93140b55f520d188
 msgid "**\"link\"**: the project is linked to by the project. The package will be added to the current package's ``rpath``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1913
-# 7870d1da0ed34846bb09cb37721cd79a
 msgid "**\"run\"**: the project is used by the project at runtime. The package will be added to ``PATH`` and ``PYTHONPATH``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1916
-# 577817efa3a742668b7db4806ee89276
 msgid "One of the advantages of the ``build`` dependency type is that although the dependency needs to be installed in order for the package to be built, it can be uninstalled without concern afterwards. ``link`` and ``run`` disallow this because uninstalling the dependency would break the package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1921
-# 04310d0a84eb4980bf4a5d409b312b9b
 msgid "If the dependency type is not specified, Spack uses a default of ``('build', 'link')``. This is the common case for compiler languages. Non-compiled packages like Python modules commonly use ``('build', 'run')``. This means that the compiler wrappers don't need to inject the dependency's ``prefix/lib`` directory, but the package needs to be in ``PATH`` and ``PYTHONPATH`` during the build process and later when a user wants to run the package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1935
-# 3e7b855e04884feeb1ce7422a95d58fd
 msgid "Some packages maintain special patches on their dependencies, either to add new features or to fix bugs.  This typically makes a package harder to maintain, and we encourage developers to upstream (contribute back) their changes rather than maintaining patches.  However, in some cases it's not possible to upstream. Maybe the dependency's developers don't accept changes, or maybe they just haven't had time to integrate them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1942
-# 244f22807c0d4e05b819262a3f5c3032
 msgid "For times like these, Spack's ``depends_on`` directive can optionally take a patch or list of patches:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1952
-# 5ada1b53521a44af9f1695b5a1b1e16e
 msgid "Here, the ``special-tool`` package requires a special feature in ``binutils``, so it provides an extra ``patches=<filename>`` keyword argument.  This is similar to the `patch directive <patching_>`_, with one small difference.  Here, ``special-tool`` is responsible for the patch, so it should live in ``special-tool``'s directory in the package repository, not the ``binutils`` directory."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1959
-# 453c17e95a154496adf0867babdd09f1
 msgid "If you need something more sophisticated than this, you can simply nest a ``patch()`` directive inside of ``depends_on``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1974
-# 8267fd73c56c413f9d24349a7d13699f
 msgid "Note that there are two optional ``when`` conditions here -- one on the ``patch`` directive and the other on ``depends_on``.  The condition in the ``patch`` directive applies to ``binutils`` (the package being patched), while the condition in ``depends_on`` applies to ``special-tool``.  See `patch directive <patching_>`_ for details on all the arguments the ``patch`` directive can take."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1981
-# dd0b3846c1264e25abad6779a4c601c6
 msgid "Finally, if you need *multiple* patches on a dependency, you can provide a list for ``patches``, e.g.:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:1999
-# 26a6d8c1c1c84fb1bb05161e44dfbd34
 msgid "As with ``patch`` directives, patches are applied in the order they appear in the package file (or in this case, in the list)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2004
-# f12d6fb493bd454c972c03ff17799487
 msgid "You may wonder whether dependency patching will interfere with other packages that depend on ``binutils``.  It won't."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2007
-# c58dffe33d9641ecb10079e3eef33308
 msgid "As described in patching_, Patching a package adds the ``sha256`` of the patch to the package's spec, which means it will have a *different* unique hash than other versions without the patch.  The patched version coexists with unpatched versions, and Spack's support for handling_rpaths_ guarantees that each installation finds the right version. If two packages depend on ``binutils`` patched *the same* way, they can both use a single installation of ``binutils``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2019
-# 9ca6636cd8d647a5a9a293adb8bc3b14
 msgid "``setup_dependent_environment()``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2021
-# 41c25ff20d414fe9b206f0031e438465
 msgid "Spack provides a mechanism for dependencies to provide variables that can be used in their dependents' build.  Any package can declare a ``setup_dependent_environment()`` function, and this function will be called before the ``install()`` method of any dependent packages. This allows dependencies to set up environment variables and other properties to be used by dependents."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2028
-# 35895f01928b4ac88c9b46d20903fa64
 msgid "The function declaration should look like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2034
-# cad89e6ba576443e9bfa83355caf9e1d
 msgid "Here, the Qt package sets the ``QTDIR`` environment variable so that packages that depend on a particular Qt installation will find it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2037
-# e2eb54551ca04b9bb90e02a348d7308a
 msgid "The arguments to this function are:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2039
-# 570dfa353a9d4d08a539ff45d081ee4b
 msgid "**spack_env**: List of environment modifications to be applied when the dependent package is built within Spack."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2041
-# 010d4ddbf3cf45dcac747015bcbf4541
 msgid "**run_env**: List of environment modifications to be applied when the dependent package is run outside of Spack. These are added to the resulting module file."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2044
-# eec5ebec5ec342b1bd009edb0ed8cfca
 msgid "**dependent_spec**: The spec of the dependent package about to be built. This allows the extendee (self) to query the dependent's state. Note that *this* package's spec is available as ``self.spec``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2048
-# 782fb84375e64a82a157f24d29f3c24b
 msgid "A good example of using these is in the Python package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2054
-# 9105e74f3bb84326b72e76e3fe4e7f67
 msgid "The first thing that happens here is that the ``python`` command is inserted into module scope of the dependent.  This allows most python packages to have a very simple install method, like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2063
-# 71ddbce9a305489c9b654380bfaab1bf
 msgid "Python's ``setup_dependent_environment`` method also sets up some other variables, creates a directory, and sets up the ``PYTHONPATH`` so that dependent packages can find their dependencies at build time."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2071
-# 84b5bfe9eb414cd2a75e6842dcacc7b1
 msgid "Conflicts"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2073
-# c0b4cbda30ce4a1d8a547ef78641355a
 msgid "Sometimes packages have known bugs, or limitations, that would prevent them to build e.g. against other dependencies or with certain compilers. Spack makes it possible to express such constraints with the ``conflicts`` directive."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2077
-# ca88469671b04589a2fbe9a1a0bc3724
 msgid "Adding the following to a package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2083
-# 249c2ebac80d42f89a2adaada5b704c3
 msgid "we express the fact that the current package *cannot be built* with the Intel compiler when we are trying to install version \"1.2\". The ``when`` argument can be omitted, in which case the conflict will always be active. Conflicts are always evaluated after the concretization step has been performed, and if any match is found a detailed error message is shown to the user."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2093
-# 56cbfb80e05143819379a4641aa5a1e0
 msgid "Extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2095
-# a118e06e8fcc4bf8890035c3afbb397b
 msgid "Spack's support for package extensions is documented extensively in :ref:`extensions`.  This section documents how to make your own extendable packages and extensions."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2099
-# 24c7161b6922473b80a17e7ad7b43fb4
 msgid "To support extensions, a package needs to set its ``extendable`` property to ``True``, e.g.:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2109
-# d68e69dc887d4fbb83e39281cfc7df1d
 msgid "To make a package into an extension, simply add simply add an ``extends`` call in the package definition, and pass it the name of an extendable package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2120
-# 5ba8d0ba07c34f91a563da8db09a642f
 msgid "Now, the ``py-numpy`` package can be used as an argument to ``spack activate``.  When it is activated, all the files in its prefix will be symbolically linked into the prefix of the python package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2124
-# d67da78fe12e4abd8d5b96587c7471d2
 msgid "Some packages produce a Python extension, but are only compatible with Python 3, or with Python 2.  In those cases, a ``depends_on()`` declaration should be made in addition to the ``extends()`` declaration:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2135
-# 26d120c47aec47409b00e9ae15571260
 msgid "Many packages produce Python extensions for *some* variants, but not others: they should extend ``python`` only if the appropriate variant(s) are selected.  This may be accomplished with conditional ``extends()`` declarations:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2148
-# 8d6ea638fc414ba4be01c71607e1c29d
 msgid "Sometimes, certain files in one package will conflict with those in another, which means they cannot both be activated (symlinked) at the same time.  In this case, you can tell Spack to ignore those files when it does the activation:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2162
-# 7910fcf186634f6a82ad3ac224f33561
 msgid "The code above will prevent everything in the ``$prefix/bin/`` directory from being linked in at activation time."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2167
-# fa708d21150a479ea579ef8e354b7594
 msgid "You can call *either* ``depends_on`` or ``extends`` on any one package, but not both.  For example you cannot both ``depends_on('python')`` and ``extends(python)`` in the same package.  ``extends`` implies ``depends_on``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2174
-# 97ff926b60854a6696eb5ad5a68bed15
 msgid "Views"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2176
-# 08684af582b2429ebb514930c402bc84
 msgid "As covered in :ref:`filesystem-views`, the ``spack view`` command can be used to symlink a number of packages into a merged prefix. The methods of ``PackageViewMixin`` can be overridden to customize how packages are added to views. Generally this can be used to create copies of specific files rather than symlinking them when symlinking does not work. For example, ``Python`` overrides ``add_files_to_view`` in order to create a copy of the ``python`` binary since the real path of the Python executable is used to detect extensions; as a consequence python extension packages (those inheriting from ``PythonPackage``) likewise override ``add_files_to_view`` in order to rewrite shebang lines which point to the Python interpreter."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2189
-# 857ce70e29b4498eb5da91d444321a91
 msgid "Activation & deactivation"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2191
-# dc8f0cc1f15f4969b7b4b7d4965a16d9
 msgid "Adding an extension to a view is referred to as an activation. If the view is maintained in the Spack installation prefix of the extendee this is called a global activation. Activations may involve updating some centralized state that is maintained by the extendee package, so there can be additional work for adding extensions compared with non-extension packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2197
-# c426a450c6904c09824359a55585f17d
 msgid "Spack's ``Package`` class has default ``activate`` and ``deactivate`` implementations that handle symbolically linking extensions' prefixes into a specified view. Extendable packages can override these methods to add custom activate/deactivate logic of their own.  For example, the ``activate`` and ``deactivate`` methods in the Python class handle symbolic linking of extensions, but they also handle details surrounding Python's ``.pth`` files, and other aspects of Python packaging."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2205
-# 755600d57fcf4e3cbdccfb2fb126486d
 msgid "Spack's extensions mechanism is designed to be extensible, so that other packages (like Ruby, R, Perl, etc.)  can provide their own custom extension management logic, as they may not handle modules the same way that Python does."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2210
-# ea6080d3f82a415bb5195d12bc7b4626
 msgid "Let's look at Python's activate function:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2216
-# 4a4535b098eb430591b40df92ae14cd8
 msgid "This function is called on the *extendee* (Python).  It first calls ``activate`` in the superclass, which handles symlinking the extension package's prefix into the specified view.  It then does some special handling of the ``easy-install.pth`` file, part of Python's setuptools."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2222
-# db93a55418bf48d99d520f1310cd0650
 msgid "Deactivate behaves similarly to activate, but it unlinks files:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2228
-# d9f90c80b49840d4bf80a464a36818c7
 msgid "Both of these methods call some custom functions in the Python package.  See the source for Spack's Python package for details."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2233
-# d2215f35ca604523b03d7c4e205232b5
 msgid "Activation arguments"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2235
-# fc288b8d79b84505894cdfad9f34c5d3
 msgid "You may have noticed that the ``activate`` function defined above takes keyword arguments.  These are the keyword arguments from ``extends()``, and they are passed to both activate and deactivate."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2239
-# 0fc4d65918804c189afa1132f2f4b2df
 msgid "This capability allows an extension to customize its own activation by passing arguments to the extendee.  Extendees can likewise implement custom ``activate()`` and ``deactivate()`` functions to suit their needs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2244
-# 26863db935e04474a288ffa1187c4349
 msgid "The only keyword argument supported by default is the ``ignore`` argument, which can take a regex, list of regexes, or a predicate to determine which files *not* to symlink during activation."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2252
-# ba60170a2b90425da737852e7c1e3fd6
 msgid "Virtual dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2254
-# cbfe7a60c0fa4e14aaf0ab039783976d
 msgid "In some cases, more than one package can satisfy another package's dependency.  One way this can happen is if a package depends on a particular *interface*, but there are multiple *implementations* of the interface, and the package could be built with any of them.  A *very* common interface in HPC is the `Message Passing Interface (MPI) <http://www.mcs.anl.gov/research/projects/mpi/>`_, which is used in many large-scale parallel applications."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2262
-# 58142b5c08bf4923840ffe49d55858ec
 msgid "MPI has several different implementations (e.g., `MPICH <http://www.mpich.org>`_, `OpenMPI <http://www.open-mpi.org>`_, and `MVAPICH <http://mvapich.cse.ohio-state.edu>`_) and scientific applications can be built with any one of them.  Complicating matters, MPI does not have a standardized ABI, so a package built with one implementation cannot simply be relinked with another implementation. Many package managers handle interfaces like this by requiring many similar package files, e.g., ``foo``, ``foo-mvapich``, ``foo-mpich``, but Spack avoids this explosion of package files by providing support for *virtual dependencies*."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2275
-# 5215906eb08047b0b8172a95af21ac7c
 msgid "``provides``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2277
-# 337afa67d24c459db5b12ea92abac709
 msgid "In Spack, ``mpi`` is handled as a *virtual package*.  A package like ``mpileaks`` can depend on it just like any other package, by supplying a ``depends_on`` call in the package definition.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2295
-# 25d11faa989043208c1b31056daaf01a
 msgid "Here, ``callpath`` and ``adept-utils`` are concrete packages, but there is no actual package file for ``mpi``, so we say it is a *virtual* package.  The syntax of ``depends_on``, is the same for both.  If we look inside the package file of an MPI implementation, say MPICH, we'll see something like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2307
-# 1e50b492b53e480f93c1458e9af25d28
 msgid "The ``provides(\"mpi\")`` call tells Spack that the ``mpich`` package can be used to satisfy the dependency of any package that ``depends_on('mpi')``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2313
-# 2a62a3b0db4b44ca9019803aab8b0946
 msgid "Versioned Interfaces"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2315
-# 9f5cbfc7e9474d4a9d7c07ba6a6d0860
 msgid "Just as you can pass a spec to ``depends_on``, so can you pass a spec to ``provides`` to add constraints.  This allows Spack to support the notion of *versioned interfaces*.  The MPI standard has gone through many revisions, each with new functions added, and each revision of the standard has a version number.  Some packages may require a recent implementation that supports MPI-3 functions, but some MPI versions may only provide up to MPI-2.  Others may need MPI 2.1 or higher.  You can indicate this by adding a version constraint to the spec passed to ``provides``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2329
-# 3e1088f1e60a420c96421516be80e080
 msgid "Suppose that the above ``provides`` call is in the ``mpich2`` package. This says that ``mpich2`` provides MPI support *up to* version 2, but if a package ``depends_on(\"mpi@3\")``, then Spack will *not* build that package with ``mpich2``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2336
-# 75bdfa0808f846a1bd746d47a28cb548
 msgid "``provides when``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2338
-# e8b6960b16444e4097e80f83e19d3e71
 msgid "The same package may provide different versions of an interface depending on *its* version.  Above, we simplified the ``provides`` call in ``mpich`` to make the explanation easier.  In reality, this is how ``mpich`` calls ``provides``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2348
-# 54cf08dfc8694ab8b214ccba15611853
 msgid "The ``when`` argument to ``provides`` allows you to specify optional constraints on the *providing* package, or the *provider*.  The provider only provides the declared virtual spec when *it* matches the constraints in the when clause.  Here, when ``mpich`` is at version 3 or higher, it provides MPI up to version 3.  When ``mpich`` is at version 1 or higher, it provides the MPI virtual package at version 1."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2356
-# 11f47bfb08e54df09875a50d5af5dbec
 msgid "The ``when`` qualifier ensures that Spack selects a suitably high version of ``mpich`` to satisfy some other package that ``depends_on`` a particular version of MPI.  It will also prevent a user from building with too low a version of ``mpich``.  For example, suppose the package ``foo`` declares this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2368
-# 8adf77e6d22f4632aa8b0399eecafa76
 msgid "Suppose a user invokes ``spack install`` like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2374
-# 3480ad05e6754864a073e86f173804b4
 msgid "Spack will fail with a constraint violation, because the version of MPICH requested is too low for the ``mpi`` requirement in ``foo``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2381
-# a88fed77fcbb429288a19e0970e8bfc6
 msgid "Abstract & concrete specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2383
-# 0953bd1df59d4d58aa04cb2342256959
 msgid "Now that we've seen how spec constraints can be specified :ref:`on the command line <sec-specs>` and within package definitions, we can talk about how Spack puts all of this information together.  When you run this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2392
-# c0696ed40ced43cf9422f67301cc0628
 msgid "Spack parses the command line and builds a spec from the description. The spec says that ``mpileaks`` should be built with the ``callpath`` library at 1.0 and with the debug option enabled, and with ``libelf`` version 0.8.11.  Spack will also look at the ``depends_on`` calls in all of these packages, and it will build a spec from that.  The specs from the command line and the specs built from package descriptions are then combined, and the constraints are checked against each other to make sure they're satisfiable."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2401
-# dfaef5a4262e471daa828bfe016ab9f0
 msgid "What we have after this is done is called an *abstract spec*.  An abstract spec is partially specified.  In other words, it could describe more than one build of a package.  Spack does this to make things easier on the user: they should only have to specify as much of the package spec as they care about.  Here's an example partial spec DAG, based on the constraints above:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2427
-# e5c04b09f12a413782c6ba18846f85be
 msgid "This diagram shows a spec DAG output as a tree, where successive levels of indentation represent a depends-on relationship.  In the above DAG, we can see some packages annotated with their constraints, and some packages with no annotations at all.  When there are no annotations, it means the user doesn't care what configuration of that package is built, just so long as it works."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2436
-# 9d70fa15e92c4744a499e1690f6f1c80
 msgid "Concretization"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2438
-# 048947b998114560a51336bcce5e5632
 msgid "An abstract spec is useful for the user, but you can't install an abstract spec.  Spack has to take the abstract spec and \"fill in\" the remaining unspecified parts in order to install.  This process is called **concretization**.  Concretization happens in between the time the user runs ``spack install`` and the time the ``install()`` method is called.  The concretized version of the spec above might look like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2465
-# b7fd42fd28704b6d9b33dce0b4ee3299
 msgid "Here, all versions, compilers, and platforms are filled in, and there is a single version (no version ranges) for each package.  All decisions about configuration have been made, and only after this point will Spack call the ``install()`` method for your package."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2470
-# 9dfef7027ce24b0883348534feecf599
 msgid "Concretization in Spack is based on certain selection policies that tell Spack how to select, e.g., a version, when one is not specified explicitly.  Concretization policies are discussed in more detail in :ref:`configuration`.  Sites using Spack can customize them to match the preferences of their own users."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2480
-# 21ecaf1e581447a39c4515cdb6398f5c
 msgid "``spack spec``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2482
-# 8fd0b543a2e648b3809997ebf3642b8b
 msgid "For an arbitrary spec, you can see the result of concretization by running ``spack spec``.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2496
-# aeda352220b644f2bd3a357c4772f656
 msgid "This is useful when you want to know exactly what Spack will do when you ask for a particular spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2503
-# 56cbff0ed9d44bceb472ee894d01abe6
 msgid "``Concretization Policies``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2505
-# 792e76282d8e41b1bb1243c6ea9ceb1a
 msgid "A user may have certain preferences for how packages should be concretized on their system.  For example, one user may prefer packages built with OpenMPI and the Intel compiler.  Another user may prefer packages be built with MVAPICH and GCC."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2510
-# e9818bd75db14341a85267322c740a8c
 msgid "See the :ref:`concretization-preferences` section for more details."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2516
-# fc6faea773f740b29355910e329a6bc4
 msgid "Conflicting Specs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2518
-# 7d7a15de3fbe45ab93ea368db3e9c863
 msgid "Suppose a user needs to install package C, which depends on packages A and B.  Package A builds a library with a Python2 extension, and package B builds a library with a Python3 extension.  Packages A and B cannot be loaded together in the same Python runtime:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2539
-# 79f8feabd3a54705af6ca271d9624135
 msgid "Package C needs to use the libraries from packages A and B, but does not need either of the Python extensions.  In this case, package C should simply depend on the ``~python`` variant of A and B:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2549
-# cd01816669f34beb8fc770bf99cf83d6
 msgid "This may require that A or B be built twice, if the user wishes to use the Python extensions provided by them: once for ``+python`` and once for ``~python``.  Other than using a little extra disk space, that solution has no serious problems."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2558
-# 88db3f4d71fd4cc59451ebc2cb034c5c
 msgid "Implementing the installation procedure"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2560
-# f10063907d5b4cae9442d81b1f0cf36b
 msgid "The last element of a package is its **installation procedure**.  This is where the real work of installation happens, and it's the main part of the package you'll need to customize for each piece of software."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2564
-# b2c08bbf9e1c443994b3394a82cea98e
 msgid "Defining an installation procedure means overriding a set of methods or attributes that will be called at some point during the installation of the package. The package base class, usually specialized for a given build system, determines the actual set of entities available for overriding. The classes that are currently provided by Spack are:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2571
-# 2158297dec514fb4a002974dd576d36d
 msgid "**Base Class**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2571
-# 3f4c0acaf31747ab99ba00a96bc69468
 msgid "**Purpose**"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2573
-# 46a6ba18cad64772af79357ec838beab
 msgid ":py:class:`.Package`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2573
-# 9a8925ebb87444bca931e842122dd36f
 msgid "General base class not specialized for any build system"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2576
-# 4e62b57c644b4c8c83d7367a58aaab89
 msgid ":py:class:`.MakefilePackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2576
-# aac69ed9c76b49799dc6d36c42964084
 msgid "Specialized class for packages built invoking hand-written Makefiles"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2580
-# 558670a5b78e44658790544b94556252
 msgid ":py:class:`.AutotoolsPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2580
-# 25220cda237a4580ae1599e4761d5b78
 msgid "Specialized class for packages built using GNU Autotools"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2583
-# 498d0f21ff914109807650c7e04804cf
 msgid ":py:class:`.CMakePackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2583
-# 5669acacc33f4afc89fc86e2610c7dd6
 msgid "Specialized class for packages built using CMake"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2586
-# c3622196828647b3ba0d08837d47338a
 msgid ":py:class:`.CudaPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2586
-# fe508f391ece4079b2b1fa2a0012beaa
 msgid "A helper class for packages that use CUDA. It is intended to be used in combination with others"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2590
-# c0011492721848a28e41434ef84cb40c
 msgid ":py:class:`.QMakePackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2590
-# 24bebc024bca49efbeaa642a779dba1c
 msgid "Specialized class for packages build using QMake"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2593
-# 8b76ee01808a4e73902ed9fac36b692e
 msgid ":py:class:`.SConsPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2593
-# 182448f222644c58a92672c922f5cc57
 msgid "Specialized class for packages built using SCons"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2596
-# dcfd08ffd1404f3abfb5c7348a564b0f
 msgid ":py:class:`.WafPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2596
-# 1ab1121b06d04a518bf8497b9ba56e7f
 msgid "Specialized class for packages built using Waf"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2599
-# 0787078b3b1c4a3b8ad53b926505f6b7
 msgid ":py:class:`.RPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2599
-# 7a845c908c9c4d61bbf3cae50ca999f5
 msgid "Specialized class for :py:class:`.R` extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2602
-# 5e64cf1cf10849fe99825ac56dc487df
 msgid ":py:class:`.OctavePackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2602
-# fddc3ecd05b1405f9e290244746fe5c9
 msgid "Specialized class for :py:class:`.Octave` packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2605
-# dbe4a1bc56184808b291701c658e1c3a
 msgid ":py:class:`.PythonPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2605
-# 6f3259ac3b1b4847a0bea2450c5b2eca
 msgid "Specialized class for :py:class:`.Python` extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2608
-# 2c9a7d939d2841598492a6799475e666
 msgid ":py:class:`.PerlPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2608
-# 3f4e641435aa4dc594826952cdab383b
 msgid "Specialized class for :py:class:`.Perl` extensions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2611
-# 961559dd363b48889c1c722d1c44d59a
 msgid ":py:class:`.IntelPackage`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2611
-# 8fde1bb896ef418685bc515bd9d5d046
 msgid "Specialized class for licensed Intel software"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2622
-# 46dfe631e106413fbedce7e370f73779
 msgid "Choice of the appropriate base class for a package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2618
-# 540242bc9e254313a92c97fb44a2e805
 msgid "In most cases packagers don't have to worry about the selection of the right base class for a package, as ``spack create`` will make the appropriate choice on their behalf. In those rare cases where manual intervention is needed we need to stress that a package base class depends on the *build system* being used, not the language of the package. For example, a Python extension installed with CMake would ``extends('python')`` and subclass from :py:class:`.CMakePackage`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2627
-# 87ca9cd8e60146d0a093e76e8170c0a7
 msgid "Installation pipeline"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2629
-# f894bbc59ed241d6a5d5ec4b128599d7
 msgid "When a user runs ``spack install``, Spack:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2631
-# b06ff86fd0a349509635578355a06535
 msgid "Fetches an archive for the correct version of the software."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2632
-# c6e2efb5d2bf4d6389b533badcfd1b04
 msgid "Expands the archive."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2633
-# 44d1ae281d5c48a1a3cb03ded420cb30
 msgid "Sets the current working directory to the root directory of the expanded archive."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2635
-# 7a7b82c974b94b54b5a2455dab2efb42
 msgid "Then, depending on the base class of the package under consideration, it will execute a certain number of **phases** that reflect the way a package of that type is usually built. The name and order in which the phases will be executed can be obtained either reading the API docs at :py:mod:`~.spack.build_systems`, or using the ``spack info`` command:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2664
-# 22e2c17de3d644a59f9ec098031ccbe8
 msgid "Typically, phases have default implementations that fit most of the common cases:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2670
-# a19f3ffc9f4e48f9aac24ce884d47d90
 msgid "It is thus just sufficient for a packager to override a few build system specific helper methods or attributes to provide, for instance, configure arguments:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2679
-# c3bc96e882104dfa97e59ea877280a99
 msgid "Each specific build system has a list of attributes that can be overridden to fine-tune the installation of a package without overriding an entire phase. To have more information on them the place to go is the API docs of the :py:mod:`~.spack.build_systems` module."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2686
-# 7d919ce477374b809ba690e0fe74fe6d
 msgid "Overriding an entire phase"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2688
-# c9d0d83678ee4c02a84202388a75618e
 msgid "In extreme cases it may be necessary to override an entire phase. Regardless of the build system, the signature is the same. For example, the signature for the install phase is:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2702
-# 9e0149963bd0479f90a21f16929e7f83
 msgid "``self``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2699
-# 66669bfeffa34caba93a9eb7d0b78fbc
 msgid "For those not used to Python instance methods, this is the package itself.  In this case it's an instance of ``Foo``, which extends ``Package``.  For API docs on Package objects, see :py:class:`Package <spack.package.Package>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2707
-# badb573afdfd441292b9c9f6d7439c25
 msgid "``spec``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2705
-# 1c319fe3c01944f59e9c97e96b7a5145
 msgid "This is the concrete spec object created by Spack from an abstract spec supplied by the user.  It describes what should be installed.  It will be of type :py:class:`Spec <spack.spec.Spec>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2712
-# 63d807a03e3a4b3c97a034f2d45a364b
 msgid "``prefix``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2710
-# 715716c908334c95a102ab43a037bbc4
 msgid "This is the path that your install method should copy build targets into.  It acts like a string, but it's actually its own special type, :py:class:`Prefix <spack.util.prefix.Prefix>`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2714
-# b234731d01844b9f941394f767484561
 msgid "The arguments ``spec`` and ``prefix`` are passed only for convenience, as they always correspond to ``self.spec`` and ``self.spec.prefix`` respectively."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2717
-# eaeaf4fc2d634a19a565e1d9fc23d147
 msgid "As mentioned in :ref:`install-environment`, you will usually not need to refer to dependencies explicitly in your package file, as the compiler wrappers take care of most of the heavy lifting here.  There will be times, though, when you need to refer to the install locations of dependencies, or when you need to do something different depending on the version, compiler, dependencies, etc. that your package is built with.  These parameters give you access to this type of information."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2728
-# 611bda16f1a34260983214fe69c7aa89
 msgid "The build environment"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2730
-# 6bf5909298ef488397c767da532d27fe
 msgid "In general, you should not have to do much differently in your install method than you would when installing a package on the command line. In fact, you may need to do *less* than you would on the command line."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2734
-# 5bc902cfcaeb463b8db15f38f1d47eaa
 msgid "Spack tries to set environment variables and modify compiler calls so that it *appears* to the build system that you're building with a standard system install of everything.  Obviously that's not going to cover *all* build systems, but it should make it easy to port packages to Spack if they use a standard build system.  Usually with autotools or cmake, building and installing is easy.  With builds that use custom Makefiles, you may need to add logic to modify the makefiles."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2742
-# df7cc7cfa15e4f49acdaa7f643fd382c
 msgid "The remainder of the section covers the way Spack's build environment works."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2747
-# b6932f2c2dde4dbfa5c03ea60d0b4eff
 msgid "Forking ``install()``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2749
-# 1b918479d21b4db9b042e5b6a760862a
 msgid "To give packagers free reign over their install environment, Spack forks a new process each time it invokes a package's ``install()`` method. This allows packages to have a sandboxed build environment, without impacting the environments ofother jobs that the main Spack process runs. Packages are free to change the environment or to modify Spack internals, because each ``install()`` call has its own dedicated process."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2758
-# 43bfc8d026a54d36aecb260558b37854
 msgid "Environment variables"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2760
-# 5c0d63439a8948f8aa04449ba67fede9
 msgid "Spack sets a number of standard environment variables that serve two purposes:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2763
-# aedc0302adcc454facb7200351968f49
 msgid "Make build systems use Spack's compiler wrappers for their builds."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2764
-# e50129da33f04b7fb7a172facfc2f254
 msgid "Allow build systems to find dependencies more easily"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2766
-# 9274f1fcf6b745c689f7a19b726608f8
 msgid "The Compiler environment variables that Spack sets are:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2769
-# 32db95ca754a44fcbd9e2f554e165b67
 msgid "Variable"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2769
-# dc6c8c5c4c084452afc096ca5ba0711d
 msgid "Purpose"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2771
-# 0fc78f1c38e34c0fa639d32ce905f319
 msgid "``CC``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2771
-# 9adcba2953224921a73339d2ef3b4b90
 msgid "C compiler"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2772
-# e9eac238bd1a43ef971923472c01a277
 msgid "``CXX``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2772
-# 130b35dd39884fa9a2a1ff14269f200c
 msgid "C++ compiler"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2773
-# 2e1ac3a9de154b079a1e13324ff8da8f
 msgid "``F77``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2773
-# ebee70fee43945d18ce6a6a1eac7c734
 msgid "Fortran 77 compiler"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2774
-# 7e2cac8064e04695a0b45b4bee89f1e8
 msgid "``FC``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2774
-# 643348091396427f8f2242701204e9ce
 msgid "Fortran 90 and above compiler"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2777
-# e69f01ca910f4d7998a4f5f9bbce86f6
 msgid "Spack sets these variables so that they point to *compiler wrappers*. These are covered in :ref:`their own section <compiler-wrappers>` below."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2781
-# e6aedeacb53a4ad1b3ca59034a46ab67
 msgid "All of these are standard variables respected by most build systems. If your project uses ``Autotools`` or ``CMake``, then it should pick them up automatically when you run ``configure`` or ``cmake`` in the ``install()`` function.  Many traditional builds using GNU Make and BSD make also respect these variables, so they may work with these systems."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2788
-# 870bf258778a4a1f9b0be9f46fd6517e
 msgid "If your build system does *not* automatically pick these variables up from the environment, then you can simply pass them on the command line or use a patch as part of your build process to get the correct compilers into the project's build system.  There are also some file editing commands you can use -- these are described later in the `section on file manipulation <file-manipulation_>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2795
-# a342d6f9084a4ec7b099860398988daa
 msgid "In addition to the compiler variables, these variables are set before entering ``install()`` so that packages can locate dependencies easily:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2800
-# 8026129f65d445089b80c05f680110fa
 msgid "``PATH``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2800
-# e213e85ce7bc4844bb8fece6becea003
 msgid "Set to point to ``/bin`` directories of dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2801
-# 3850350d4c8646f898bb0a1cd5147c71
 msgid "``CMAKE_PREFIX_PATH``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2801
-# 7cb074188cc34da99a671e033fe8441e
 msgid "Path to dependency prefixes for CMake"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2802
-# 5c8e978fd229423db1a96d2050fc3618
 msgid "``PKG_CONFIG_PATH``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2802
-# 3a0bc35059a64560b6bd67f3690d4c99
 msgid "Path to any pkgconfig directories for dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2803
-# a12e58b192a04886b8ed9b1802f72d9a
 msgid "``PYTHONPATH``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2803
-# 1a55486becf646bf98f7bf7194d574d7
 msgid "Path to site-packages dir of any python dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2806
-# b846b0e78cec42ee9c140bde15fd999f
 msgid "``PATH`` is set up to point to dependencies ``/bin`` directories so that you can use tools installed by dependency packages at build time. For example, ``$MPICH_ROOT/bin/mpicc`` is frequently used by dependencies of ``mpich``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2811
-# 29a8f761360f418a83285b2166206f0e
 msgid "``CMAKE_PREFIX_PATH`` contains a colon-separated list of prefixes where ``cmake`` will search for dependency libraries and headers. This causes all standard CMake find commands to look in the paths of your dependencies, so you *do not* have to manually specify arguments like ``-DDEPENDENCY_DIR=/path/to/dependency`` to ``cmake``.  More on this is `in the CMake documentation <http://www.cmake.org/cmake/help/v3.0/variable/CMAKE_PREFIX_PATH.html>`_."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2818
-# bda1401991df4aa68bbf772720d219a2
 msgid "``PKG_CONFIG_PATH`` is for packages that attempt to discover dependencies using the GNU ``pkg-config`` tool.  It is similar to ``CMAKE_PREFIX_PATH`` in that it allows a build to automatically discover its dependencies."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2823
-# c0147f656de64d69b432b7b688771226
 msgid "If you want to see the environment that a package will build with, or if you want to run commands in that environment to test them out, you can use the :ref:`cmd-spack-env` command, documented below."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2830
-# 6b625e6467e94197aa6717fdee46e39d
 msgid "Failing the build"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2832
-# 26cfb5f06abd414fa60a31c408326f9e
 msgid "Sometimes you don't want a package to successfully install unless some condition is true.  You can explicitly cause the build to fail from ``install()`` by raising an ``InstallError``, for example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2845
-# bb14fce659ee4d4eb71b65b5deff0514
 msgid "Shell command functions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2847
-# 343d2d8b89a74487aff1f4daef6299a4
 msgid "Recall the install method from ``libelf``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2853
-# de5d4aaafc7545a9ba0d7aa05a9ef882
 msgid "Normally in Python, you'd have to write something like this in order to execute shell commands:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2861
-# a471ade23cb548a5aba31a8a929f382e
 msgid "We've tried to make this a bit easier by providing callable wrapper objects for some shell commands.  By default, ``configure``, ``cmake``, and ``make`` wrappers are are provided, so you can call them more naturally in your package files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2866
-# 7b747bcf498a45e885e59da8cbde5912
 msgid "If you need other commands, you can use ``which`` to get them:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2873
-# afcf0b112e6c4aa2a0db6c8bdb6a2fb9
 msgid "The ``which`` function will search the ``PATH`` for the application."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2875
-# cdfeb592ec734814a59c989cb351ad8e
 msgid "Callable wrappers also allow spack to provide some special features. For example, in Spack, ``make`` is parallel by default, and Spack figures out the number of cores on your machine and passes an appropriate value for ``-j<numjobs>`` when it calls ``make`` (see the ``parallel`` `package attribute <attribute_parallel>`).  In a package file, you can supply a keyword argument, ``parallel=False``, to the ``make`` wrapper to disable parallel make.  In the ``libelf`` package, this allows us to avoid race conditions in the library's build system."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2887
-# 9a75a4a0db914abf95ee1e56a04dd3d4
 msgid "Compiler flags"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2889
-# 0086eec940ae482ba1fc4c2d9ef490f8
 msgid "Compiler flags set by the user through the Spec object can be passed to the build in one of three ways. By default, the build environment injects these flags directly into the compiler commands using Spack's compiler wrappers. In cases where the build system requires knowledge of the compiler flags, they can be registered with the build system by alternatively passing them through environment variables or as build system arguments. The flag_handler method can be used to change this behavior."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2898
-# 8e89c800a4a746288f53a63808b04726
 msgid "Packages can override the flag_handler method with one of three built-in flag_handlers. The built-in flag_handlers are named ``inject_flags``, ``env_flags``, and ``build_system_flags``. The ``inject_flags`` method is the default. The ``env_flags`` method puts all of the flags into the environment variables that ``make`` uses as implicit variables ('CFLAGS', 'CXXFLAGS', etc.). The ``build_system_flags`` method adds the flags as arguments to the invocation of ``configure`` or ``cmake``, respectively."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2910
-# 328ee6690ac94774ab820fda90dc844e
 msgid "Passing compiler flags using build system arguments is only supported for CMake and Autotools packages. Individual packages may also differ in whether they properly respect these arguments."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2914
-# c30a36c7252344a89228213d1062b982
 msgid "Individual packages may also define their own ``flag_handler`` methods. The ``flag_handler`` method takes the package instance (``self``), the name of the flag, and a list of the values of the flag. It will be called on each of the six compiler flags supported in Spack. It should return a triple of ``(injf, envf, bsf)`` where ``injf`` is a list of flags to inject via the Spack compiler wrappers, ``envf`` is a list of flags to set in the appropriate environment variables, and ``bsf`` is a list of flags to pass to the build system as arguments."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2926
-# f78f7ddb8b534a5b97f6b97d91c7f4b4
 msgid "Passing a non-empty list of flags to ``bsf`` for a build system that does not support build system arguments will result in an error."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2930
-# b31e93d00239442c93472aa64012818b
 msgid "Here are the definitions of the three built-in flag handlers:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2945
-# edee93af8c70429fbd036561357c0b8f
 msgid "Returning ``[]`` and ``None`` are equivalent in a ``flag_handler`` method."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2948
-# 3ad34695f6a9444aa5fad94dde0bbd52
 msgid "Packages can override the default behavior either by specifying one of the built-in flag handlers,"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2955
-# 409a96ebaa5841c3b814c11d026239a8
 msgid "or by implementing the flag_handler method. Suppose for a package ``Foo`` we need to pass ``cflags``, ``cxxflags``, and ``cppflags`` through the environment, the rest of the flags through compiler wrapper injection, and we need to add ``-lbar`` to ``ldlibs``. The following flag handler method accomplishes that."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2970
-# 2e67c31822364638b24d042efcccad4c
 msgid "Because these methods can pass values through environment variables, it is important not to override these variables unnecessarily (E.g. setting ``env['CFLAGS']``) in other package methods when using non-default flag handlers. In the ``setup_environment`` and ``setup_dependent_environment`` methods, use the ``append_flags`` method of the ``EnvironmentModifications`` class to append values to a list of flags whenever the flag handler is ``env_flags``. If the package passes flags through the environment or the build system manually (in the install method, for example), we recommend using the default flag handler, or removing manual references and implementing a custom flag handler method that adds the desired flags to export as environment variables or pass to the build system. Manual flag passing is likely to interfere with the ``env_flags`` and ``build_system_flags`` methods."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:2985
-# 86fd6ca06b774e4e8fde25848cd8dc7a
 msgid "In rare circumstances such as compiling and running small unit tests, a package developer may need to know what are the appropriate compiler flags to enable features like ``OpenMP``, ``c++11``, ``c++14`` and alike. To that end the compiler classes in ``spack`` implement the following **properties**: ``openmp_flag``, ``cxx98_flag``, ``cxx11_flag``, ``cxx14_flag``, and ``cxx17_flag``, which can be accessed in a package by ``self.compiler.cxx11_flag`` and alike. Note that the implementation is such that if a given compiler version does not support this feature, an error will be produced. Therefore package developers can also use these properties to assert that a compiler supports the requested feature. This is handy when a package supports additional variants like"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3005
-# ba1d175f2a1d447388778919f9293c9e
 msgid "Blas, Lapack and ScaLapack libraries"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3007
-# 83b385ab4ce94279bd5a4a0efbba42e1
 msgid "Multiple packages provide implementations of ``Blas``, ``Lapack`` and ``ScaLapack`` routines.  The names of the resulting static and/or shared libraries differ from package to package. In order to make the ``install()`` method independent of the choice of ``Blas`` implementation, each package which provides it implements ``@property def blas_libs(self):`` to return an object of `LibraryList <http://spack.readthedocs.io/en/latest/llnl.util.html#llnl.util.filesystem.LibraryList>`_ type which simplifies usage of a set of libraries. The same applies to packages which provide ``Lapack`` and ``ScaLapack``. Package developers are requested to use this interface. Common usage cases are:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3018
-# 14c01e68d0184c37a9d43276907308b9
 msgid "Space separated list of full paths"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3027
-# 645f901eb0a24da5ad421b91eeba7c32
 msgid "Names of libraries and directories which contain them"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3037
-# 9595c87cf05a4cefa53ce1836aec5ea0
 msgid "Search and link flags"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3047
-# 11138dd643124bfc95088ff0421d74a4
 msgid "For more information, see documentation of `LibraryList <http://spack.readthedocs.io/en/latest/llnl.util.html#llnl.util.filesystem.LibraryList>`_ class."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3056
-# ac20a3900b884f4188c3fa177e46e2a3
 msgid "Prefix objects"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3058
-# 00c41e71b33344d2965bd9ae03ba7efd
 msgid "Spack passes the ``prefix`` parameter to the install method so that you can pass it to ``configure``, ``cmake``, or some other installer, e.g.:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3066
-# 8a0f7b83e57f4be5a5878a4d3b680ac7
 msgid "For the most part, prefix objects behave exactly like strings.  For packages that do not have their own install target, or for those that implement it poorly (like ``libdwarf``), you may need to manually copy things into particular directories under the prefix.  For this, you can refer to standard subdirectories without having to construct paths yourself, e.g.:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3086
-# 9b03477f72a64d90a5c6e8b1b53aae8a
 msgid "Attributes of this object are created on the fly when you request them, so any of the following will work:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3090
-# 1f410d6e32a840df8a0a79030caeb350
 msgid "Prefix Attribute"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3090
-# 716f0863d66347e38a5a4377406d78aa
 msgid "Location"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3092
-# c8efead1ef72494b8c302d8a5571f1ea
 msgid "``prefix.bin``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3092
-# 031a2cff3ede4d8499eccba3d779738b
 msgid "``$prefix/bin``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3093
-# 5a669769150147a4b8afc21048771bf0
 msgid "``prefix.lib64``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3093
-# ea813551fca346c7870026c58014fc87
 msgid "``$prefix/lib64``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3094
-# e52f888bdb8f4677920a98423169878a
 msgid "``prefix.share.man``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3094
-# 7e9e9144e67c4dc08b1ff1e41f5342ae
 msgid "``$prefix/share/man``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3095
-# db1f8ca2c6694322a7380cd4ed568eba
 msgid "``prefix.foo.bar.baz``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3095
-# 9007dd0c308b4628a72a578a5332bfc9
 msgid "``$prefix/foo/bar/baz``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3098
-# 016dc9dfd7814ba7a7edbcd9357d74ec
 msgid "Of course, this only works if your file or directory is a valid Python variable name. If your file or directory contains dashes or dots, use ``join`` instead:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3111
-# 5c5e5a5d3c3d4d55b88d0480c2073e9e
 msgid "Spec objects"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3113
-# 010bf6bc611e4fe8b82462708147e097
 msgid "When ``install`` is called, most parts of the build process are set up for you.  The correct version's tarball has been downloaded and expanded.  Environment variables like ``CC`` and ``CXX`` are set to point to the correct compiler and version.  An install prefix has already been selected and passed in as ``prefix``.  In most cases this is all you need to get ``configure``, ``cmake``, or another install working correctly."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3121
-# bdc455eac12d46efaf0ad04b2a4d15db
 msgid "There will be times when you need to know more about the build configuration.  For example, some software requires that you pass special parameters to ``configure``, like ``--with-libelf=/path/to/libelf`` or ``--with-mpich``.  You might also need to supply special compiler flags depending on the compiler.  All of this information is available in the spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3130
-# c620b77c015c4c6e96c42bdeaac01ba8
 msgid "Testing spec constraints"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3132
-# 26c320f5be944357ba279acf240bde75
 msgid "You can test whether your spec is configured a certain way by using the ``satisfies`` method.  For example, if you want to check whether the package's version is in a particular range, you can use specs to do that, e.g.:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3148
-# b4280210f05d4a4b8685caec342a7f35
 msgid "This works for compilers, too:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3157
-# 46f4d39b4c85467f849df31d5283bf28
 msgid "Or for combinations of spec constraints:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3164
-# 59c75d0107b342c59375fc380088e4f5
 msgid "You can also do similar satisfaction tests for dependencies:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3171
-# 09353596bf7245b3b052f38bbc5c7507
 msgid "This could allow you to easily work around a bug in a particular dependency version."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3174
-# f085231a0e4245bf9b57e7b494d447c0
 msgid "You can use ``satisfies()`` to test for particular dependencies, e.g. ``foo.satisfies('^openmpi@1.2')`` or ``foo.satisfies('^mpich')``, or you can use Python's built-in ``in`` operator:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3183
-# 30a405c505c64b15a9ef32b8cfa84a66
 msgid "This is useful for virtual dependencies, as you can easily see what implementation was selected for this build:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3195
-# 1cff02763c92444fb99e71d3dbb58fef
 msgid "It's also a bit more concise than satisfies.  The difference between the two functions is that ``satisfies()`` tests whether spec constraints overlap at all, while ``in`` tests whether a spec or any of its dependencies satisfy the provided spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3202
-# 86de153584c44051bc9b654b609344cd
 msgid "Accessing Dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3204
-# 7087eed9dbf34435a8edbb23be3be311
 msgid "You may need to get at some file or binary that's in the installation prefix of one of your dependencies. You can do that by sub-scripting the spec:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3212
-# 459b2e26f2424ea2aebdfdaccb98c3f6
 msgid "The value in the brackets needs to be some package name, and spec needs to depend on that package, or the operation will fail.  For example, the above code will fail if the ``spec`` doesn't depend on ``mpi``.  The value returned is itself just another ``Spec`` object, so you can do all the same things you would do with the package's own spec:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3228
-# 8aa2bb1f17404fceac0a074599660199
 msgid "Multimethods and ``@when``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3230
-# 2b4a497966ef463bb80a276e666e2582
 msgid "Spack allows you to make multiple versions of instance functions in packages, based on whether the package's spec satisfies particular criteria."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3234
-# 9bb3c3524e7849c89d34cf6277117561
 msgid "The ``@when`` annotation lets packages declare multiple versions of methods like ``install()`` that depend on the package's spec.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3256
-# 097daca7c4174e269f2e447f7251c6f2
 msgid "In the above code there are three versions of ``install()``, two of which are specialized for particular platforms.  The version that is called depends on the architecture of the package spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3260
-# d869833183e54602b5a712562fca70ff
 msgid "Note that this works for methods other than install, as well.  So, if you only have part of the install that is platform specific, you could do something more like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3286
-# 06d7eda0f8be49d58f215dd745633f7e
 msgid "You can write multiple ``@when`` specs that satisfy the package's spec, for example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3314
-# adf2e6cc28b3495abef3b558e5e281f6
 msgid "In situations like this, the first matching spec, in declaration order will be called.  As before, if no ``@when`` spec matches, the default method (the one without the ``@when`` decorator) will be called."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3320
-# f964ad6fcf8c4ae7b8934288a74a0e9e
 msgid "The default version of decorated methods must **always** come first.  Otherwise it will override all of the platform-specific versions.  There's not much we can do to get around this because of the way decorators work."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3329
-# 9269a93841e5459b9cab9ee536a1e640
 msgid "Compiler wrappers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3331
-# c4dd8a932d2243d7b20c97ed538f2cfb
 msgid "As mentioned, ``CC``, ``CXX``, ``F77``, and ``FC`` are set to point to Spack's compiler wrappers.  These are simply called ``cc``, ``c++``, ``f77``, and ``f90``, and they live in ``$SPACK_ROOT/lib/spack/env``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3335
-# d01bc08ea59446d3b39efa51bc30fa4b
 msgid "``$SPACK_ROOT/lib/spack/env`` is added first in the ``PATH`` environment variable when ``install()`` runs so that system compilers are not picked up instead."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3339
-# f8c4fa55996944beac3571edf7412565
 msgid "All of these compiler wrappers point to a single compiler wrapper script that figures out which *real* compiler it should be building with.  This comes either from spec `concretization <abstract-and-concrete>`_ or from a user explicitly asking for a particular compiler using, e.g., ``%intel`` on the command line."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3345
-# 802e220ea34447a89b99be9755b57147
 msgid "In addition to invoking the right compiler, the compiler wrappers add flags to the compile line so that dependencies can be easily found. These flags are added for each dependency, if they exist:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3349
-# b3dd01f12d494141b8957841f90b7ff4
 msgid "Compile-time library search paths * ``-L$dep_prefix/lib`` * ``-L$dep_prefix/lib64``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3353
-# d4fb0c79cfd14eb6a4dd02b036e257c7
 msgid "Runtime library search paths (RPATHs) * ``$rpath_flag$dep_prefix/lib`` * ``$rpath_flag$dep_prefix/lib64``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3357
-# ccbd1841923c41eb86e760a5acd20311
 msgid "Include search paths * ``-I$dep_prefix/include``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3360
-# 10b44064b7a84737b338fae46e4f1b83
 msgid "An example of this would be the ``libdwarf`` build, which has one dependency: ``libelf``.  Every call to ``cc`` in the ``libdwarf`` build will have ``-I$LIBELF_PREFIX/include``, ``-L$LIBELF_PREFIX/lib``, and ``$rpath_flag$LIBELF_PREFIX/lib`` inserted on the command line.  This is done transparently to the project's build system, which will just think it's using a system where ``libelf`` is readily available.  Because of this, you **do not** have to insert extra ``-I``, ``-L``, etc. on the command line."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3369
-# 5c46d114cf6149dab06bbca5a22ff685
 msgid "Another useful consequence of this is that you often do *not* have to add extra parameters on the ``configure`` line to get autotools to find dependencies.  The ``libdwarf`` install method just calls configure like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3378
-# 517e2765e480496aa79fa64e370965ba
 msgid "Because of the ``-L`` and ``-I`` arguments, configure will successfully find ``libdwarf.h`` and ``libdwarf.so``, without the packager having to provide ``--with-libdwarf=/path/to/libdwarf`` on the command line."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3385
-# 82b73c0666eb4b9db6a4da10d46ceaae
 msgid "For most compilers, ``$rpath_flag`` is ``-Wl,-rpath,``. However, NAG passes its flags to GCC instead of passing them directly to the linker. Therefore, its ``$rpath_flag`` is doubly wrapped: ``-Wl,-Wl,,-rpath,``. ``$rpath_flag`` can be overriden on a compiler specific basis in ``lib/spack/spack/compilers/$compiler.py``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3391
-# 83bf56af2a3349848eeff85ef2cdde38
 msgid "The compiler wrappers also pass the compiler flags specified by the user from the command line (``cflags``, ``cxxflags``, ``fflags``, ``cppflags``, ``ldflags``, and/or ``ldlibs``). They do not override the canonical autotools flags with the same names (but in ALL-CAPS) that may be passed into the build by particularly challenging package scripts."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3399
-# fb2d802b7e8a4e4cbec41b4f4ad2f93e
 msgid "MPI support in Spack"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3401
-# c33bdb1eac054cd38270aefaca89f03c
 msgid "It is common for high performance computing software/packages to use the Message Passing Interface ( ``MPI``).  As a result of conretization, a given package can be built using different implementations of MPI such as ``Openmpi``, ``MPICH`` or ``IntelMPI``.  That is, when your package declares that it ``depends_on('mpi')``, it can be built with any of these ``mpi`` implementations. In some scenarios, to configure a package, one has to provide it with appropriate MPI compiler wrappers such as ``mpicc``, ``mpic++``.  However different implementations of ``MPI`` may have different names for those wrappers."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3411
-# 508e4f6829264497b018fdff938000c4
 msgid "Spack provides an idiomatic way to use MPI compilers in your package.  To use MPI wrappers to compile your whole build, do this in your ``install()`` method:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3422
-# b15c93b6f9354cabbb369988eb70eb1e
 msgid "That's all.  A longer explanation of why this works is below."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3424
-# c3bc4aab1fb84e08b0f13f44c98cd3a2
 msgid "We don't try to force any particular build method on packagers.  The decision to use MPI wrappers depends on the way the package is written, on common practice, and on \"what works\".  Loosely, There are three types of MPI builds:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3429
-# c255dea345214936ba1282571e6f39f7
 msgid "Some build systems work well without the wrappers and can treat MPI as an external library, where the person doing the build has to supply includes/libs/etc.  This is fairly uncommon."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3433
-# ceaadf6cda5c41f089b1c6ae9dcdd28a
 msgid "Others really want the wrappers and assume you're using an MPI \"compiler\" – i.e., they have no mechanism to add MPI includes/libraries/etc."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3437
-# ecdb2eb2fb1c45d0810cf11b1f52b11c
 msgid "CMake's ``FindMPI`` needs the compiler wrappers, but it uses them to extract ``–I`` / ``-L`` / ``-D`` arguments, then treats MPI like a regular library."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3441
-# ca98fa854325441283a54d86ad613f13
 msgid "Note that some CMake builds fall into case 2 because they either don't know about or don't like CMake's ``FindMPI`` support – they just assume an MPI compiler. Also, some autotools builds fall into case 3 (e.g. `here is an autotools version of CMake's FindMPI <https://github.com/tgamblin/libra/blob/master/m4/lx_find_mpi.m4>`_)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3447
-# 6a25bf260ed0497d8b42bf809b1346db
 msgid "Given all of this, we leave the use of the wrappers up to the packager. Spack will support all three ways of building MPI packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3452
-# 71951ab7d8234b4a9eb41d5110ccf952
 msgid "Packaging Conventions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3454
-# d856b9004cdd4ba8a78b847091fe84fb
 msgid "As mentioned above, in the ``install()`` method, ``CC``, ``CXX``, ``F77``, and ``FC`` point to Spack's wrappers around the chosen compiler. Spack's wrappers are not the MPI compiler wrappers, though they do automatically add ``–I``, ``–L``, and ``–Wl,-rpath`` args for dependencies in a similar way.  The MPI wrappers are a bit different in that they also add ``-l`` arguments for the MPI libraries, and some add special ``-D`` arguments to trigger build options in MPI programs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3462
-# c544cf2c127c4919bfc97724d86513c4
 msgid "For case 1 above, you generally don't need to do more than patch your Makefile or add configure args as you normally would."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3465
-# a734d26641624db8baabccd1e014217e
 msgid "For case 3, you don't need to do much of anything, as Spack puts the MPI compiler wrappers in the PATH, and the build will find them and interrogate them."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3469
-# d70e28bfe994482da1b3913ada5d71fa
 msgid "For case 2, things are a bit more complicated, as you'll need to tell the build to use the MPI compiler wrappers instead of Spack's compiler wrappers.  All it takes some lines like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3480
-# dd2cf6b92dd0432e989a87bdce515315
 msgid "Or, if you pass CC, CXX, etc. directly to your build with, e.g., `--with-cc=<path>`, you'll want to substitute `spec['mpi'].mpicc` in there instead, e.g.:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3489
-# 637fd7ba25454e67a6132ad15d8e9deb
 msgid "Now, you may think that doing this will lose the includes, library paths, and RPATHs that Spack's compiler wrapper get you, but we've actually set things up so that the MPI compiler wrappers use Spack's compiler wrappers when run from within Spack. So using the MPI wrappers should really be as simple as the code above."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3497
-# 6c59404e68d348c4b1234b132311179d
 msgid "``spec['mpi']``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3499
-# f6676c9f024343feb7f3615f2ad3fcd7
 msgid "Ok, so how does all this work?"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3501
-# be5ec8957b9c485097207b61c4f23983
 msgid "If your package has a virtual dependency like ``mpi``, then referring to ``spec['mpi']`` within ``install()`` will get you the concrete ``mpi`` implementation in your dependency DAG.  That is a spec object just like the one passed to install, only the MPI implementations all set some additional properties on it to help you out.  E.g., in mvapich2, you'll find this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3511
-# 200a725a8e434678a73e6a620e7ed9e1
 msgid "That code allows the mvapich2 package to associate an ``mpicc`` property with the ``mvapich2`` node in the DAG, so that dependents can access it. ``openmpi`` and ``mpich`` do similar things.  So, no matter what MPI you're using, spec['mpi'].mpicc gets you the location of the MPI compilers. This allows us to have a fairly simple polymorphic interface for information about virtual dependencies like MPI."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3520
-# db34fe6da785498b91eea340ed78cc19
 msgid "Wrapping wrappers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3522
-# cc24d1c69f044d708049014522836655
 msgid "Spack likes to use its own compiler wrappers to make it easy to add ``RPATHs`` to builds, and to try hard to ensure that your builds use the right dependencies.  This doesn't play nicely by default with MPI, so we have to do a couple tricks."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3527
-# 460c571fd72a4d87a781fe364031e083
 msgid "If we build MPI with Spack's wrappers, mpicc and friends will be installed with hard-coded paths to Spack's wrappers, and using them from outside of Spack will fail because they only work within Spack. To fix this, we patch mpicc and friends to use the regular compilers.  Look at the filter_compilers method in mpich, openmpi, or mvapich2 for details."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3534
-# cc9562ce6c0d48978a2265cb4c612e80
 msgid "We still want to use the Spack compiler wrappers when Spack is calling mpicc. Luckily, wrappers in all mainstream MPI implementations provide environment variables that allow us to dynamically set the compiler to be used by mpicc, mpicxx, etc. Denis pasted some code from this below – Spack's build environment sets ``MPICC``, ``MPICXX``, etc. for mpich derivatives and ``OMPI_CC``, ``OMPI_CXX``, etc. for OpenMPI. This makes the MPI compiler wrappers use the Spack compiler wrappers so that your dependencies still get proper RPATHs even if you use the MPI wrappers."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3547
-# 2f888c613aad43228e0034afa00df57e
 msgid "MPI on Cray machines"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3549
-# 95d8cf00abc84b5a972d274fb24be028
 msgid "The Cray programming environment notably uses ITS OWN compiler wrappers, which function like MPI wrappers.  On Cray systems, the ``CC``, ``cc``, and ``ftn`` wrappers ARE the MPI compiler wrappers, and it's assumed that you'll use them for all of your builds.  So on Cray we don't bother with ``mpicc``, ``mpicxx``, etc, Spack MPI implementations set ``spec['mpi'].mpicc`` to point to Spack's wrappers, which wrap the Cray wrappers, which wrap the regular compilers and include MPI flags.  That may seem complicated, but for packagers, that means the same code for using MPI wrappers will work, even on even on a Cray:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3563
-# ab41cd379f83421ca3d68f1a6b2c1ca7
 msgid "This is because on Cray, ``spec['mpi'].mpicc`` is just ``spack_cc``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3569
-# f9b40ac98c804247bca4baee09807c25
 msgid "Checking an installation"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3571
-# b15c5d45616b4156a193ea225d274ee7
 msgid "By default, Spack assumes that a build has failed if nothing is written to the install prefix, and that it has succeeded if anything (a file, a directory, etc.)  is written to the install prefix after ``install()`` completes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3576
-# 959318a884764e68a2d8583ea18acf35
 msgid "Consider a simple autotools build like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3585
-# a3ae9807a8714a7b93f3225c8d7154f8
 msgid "If you are using using standard autotools or CMake, ``configure`` and ``make`` will not write anything to the install prefix.  Only ``make install`` writes the files, and only once the build is already complete."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3592
-# 7c8c1189d6f64c2d9bbd0b517ac2ab91
 msgid "``sanity_check_is_file`` and ``sanity_check_is_dir``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3594
-# c25afbffa7df41a5820ed7c96ae08483
 msgid "Unfortunately, many builds of scientific software modify the install prefix *before* ``make install``. Builds like this can falsely report that they were successfully installed if an error occurs before the install is complete but after files have been written to the ``prefix``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3600
-# f4a9b44435f14b1ba6643038e71ee1ed
 msgid "You can optionally specify *sanity checks* to deal with this problem. Add properties like this to your package:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3616
-# 31f362e0f6c3450da396185e0571fb56
 msgid "Now, after ``install()`` runs, Spack will check whether ``$prefix/include/libelf.h`` exists and is a file, and whether ``$prefix/lib`` exists and is a directory.  If the checks fail, then the build will fail and the install prefix will be removed.  If they succeed, Spack considers the build successful and keeps the prefix in place."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3625
-# a342ff3e4ad9449fb183baa8ed7e254c
 msgid "Build-time tests"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3627
-# 4cdc39a02ac649d2b7e09a56d63f68d9
 msgid "Sometimes packages finish to build \"correctly\" and issues with their run-time behavior are discovered only at a later stage, maybe after a full software stack relying on them has already been built. To avoid situations of that kind it's possible to write build-time tests that will be executed only if the option ``--run-tests`` of ``spack install`` has been activated."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3633
-# d1472396f121462289867a3131d90b08
 msgid "The proper way to write these tests is relying on two decorators that come with any base class listed in :ref:`installation_procedure`."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3644
-# 09dbe098c078458ebc695df4bf2e5237
 msgid "The first decorator ``run_after('build')`` schedules this function to be invoked after the ``build`` phase has been executed, while the second one makes the invocation  conditional on the fact that ``self.run_tests == True``. It is also possible to schedule a function to be invoked *before* a given phase using the ``run_before`` decorator."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3652
-# 362c0df2d2464a4cb6b44a9c13f0347a
 msgid "Default implementations for build-time tests"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3654
-# ab9d4acbb9624e68adba291b9a9b3cab
 msgid "Packages that are built using specific build systems may already have a default implementation for build-time tests. For instance :py:class:`~.AutotoolsPackage` based packages will try to invoke ``make test`` and ``make check`` if Spack is asked to run tests. More information on each class is available in the the :py:mod:`~.spack.build_systems` documentation."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3663
-# 296c3fcdf8c94c29ad2827a64508dc1b
 msgid "The API for adding tests is not yet considered stable and may change drastically in future releases."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3669
-# fe885d9793e94a5a99455ba02bab229d
 msgid "File manipulation functions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3671
-# d3ce8b9f395c4ae2a8905106cb71b2cd
 msgid "Many builds are not perfect. If a build lacks an install target, or if it does not use systems like CMake or autotools, which have standard ways of setting compilers and options, you may need to edit files or install some files yourself to get them working with Spack."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3676
-# 94a9d28ca27347178098213c306435fd
 msgid "You can do this with standard Python code, and Python has rich libraries with functions for file manipulation and filtering.  Spack also provides a number of convenience functions of its own to make your life even easier.  These functions are described in this section."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3681
-# cc97d61a5fb24d67b49490304cbc2c96
 msgid "All of the functions in this section can be included by simply running:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3688
-# 7ee2ad1138594dceb23d3336af128ce4
 msgid "This is already part of the boilerplate for packages created with ``spack create``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3693
-# c693601cdded4e9da8fbd41ad2b4c607
 msgid "Filtering functions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3731
-# 896e46ec4f5e47ef969778e347875864
 msgid ":py:func:`filter_file(regex, repl, *filenames, **kwargs) <spack.filter_file>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3696
-# 4e511456f87d4d079639728dd3eb790a
 msgid "Works like ``sed`` but with Python regular expression syntax.  Takes a regular expression, a replacement, and a set of files.  ``repl`` can be a raw string or a callable function.  If it is a raw string, it can contain ``\\1``, ``\\2``, etc. to refer to capture groups in the regular expression.  If it is a callable, it is passed the Python ``MatchObject`` and should return a suitable replacement string for the particular match."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3704
-# f0065f5aa3fa4ace91f2f5e7ae311c94
 msgid "Examples:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3706
-# 19f82219aa0843c7ac1e0711c3764c05
 msgid "Filtering a Makefile to force it to use Spack's compiler wrappers:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3715
-# c15737efb5e446a7ac4c9dae2aacd3e6
 msgid "Replacing ``#!/usr/bin/perl`` with ``#!/usr/bin/env perl`` in ``bib2xhtml``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3722
-# 0e3e2dcce66d4116a10c3de4af13f256
 msgid "Switching the compilers used by ``mpich``'s MPI wrapper scripts from ``cc``, etc. to the compilers used by the Spack build:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3749
-# 131a885775b14463b0570384216d06d9
 msgid ":py:func:`change_sed_delimiter(old_delim, new_delim, *filenames) <spack.change_sed_delim>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3734
-# 48afcf93b9e44514955f3eea3c38cc2c
 msgid "Some packages, like TAU, have a build system that can't install into directories with, e.g. '@' in the name, because they use hard-coded ``sed`` commands in their build."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3738
-# 6537386b9a154d08a89ca859612d6ded
 msgid "``change_sed_delimiter`` finds all ``sed`` search/replace commands and change the delimiter.  e.g., if the file contains commands that look like ``s///``, you can use this to change them to ``s@@@``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3743
-# 705a1b45c8814429a742453004e3a0f6
 msgid "Example of changing ``s///`` to ``s@@@`` in TAU:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3753
-# 94757aefa8dc4c96afeb1452872f8bbe
 msgid "File functions"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3756
-# 34f6eb6914d1463ba7d27550f0b09af1
 msgid ":py:func:`ancestor(dir, n=1) <spack.ancestor>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3756
-# 5abad477ab294f91a3f0bc087920b480
 msgid "Get the n\\ :sup:`th` ancestor of the directory ``dir``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3760
-# 957455fb62b64bd9864f16d92cb0150e
 msgid ":py:func:`can_access(path) <spack.can_access>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3759
-# b6163eaac1764dd18d401791a9f345c5
 msgid "True if we can read and write to the file at ``path``.  Same as native python ``os.access(file_name, os.R_OK|os.W_OK)``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3768
-# 4d6d77167e66492eac5606763615c18d
 msgid ":py:func:`install(src, dest) <spack.install>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3763
-# eed1f42808bf452cbc93a4a0bb349d1f
 msgid "Install a file to a particular location.  For example, install a header into the ``include`` directory under the install ``prefix``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3771
-# 28e3a2d9507a4ab0a8d03114439c89c6
 msgid ":py:func:`join_path(*paths) <spack.join_path>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3771
-# d6daa06c88ca4e60ad82a01bdfc0948e
 msgid "An alias for ``os.path.join``. This joins paths using the OS path separator."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3775
-# 0512aa3e9ebf4ce69bb0520d8f91bfcb
 msgid ":py:func:`mkdirp(*paths) <spack.mkdirp>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3774
-# d5993cb22cef4dfc93821c5dd8f3e5a5
 msgid "Create each of the directories in ``paths``, creating any parent directories if they do not exist."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3817
-# 698a6d48df36462da700232f5048c645
 msgid ":py:func:`working_dir(dirname, kwargs) <spack.working_dir>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3778
-# 5dc7ee00664c41129c3da3a3f3f549bc
 msgid "This is a Python `Context Manager <https://docs.python.org/2/library/contextlib.html>`_ that makes it easier to work with subdirectories in builds.  You use this with the Python ``with`` statement to change into a working directory, and when the with block is done, you change back to the original directory.  Think of it as a safe ``pushd`` / ``popd`` combination, where ``popd`` is guaranteed to be called at the end, even if exceptions are thrown."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3787
-# a41a675a5a6748aa89fc65e038fb6b4e
 msgid "Example usage:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3789
-# 29558c250d0d4ebfa24ec1982e1ae777
 msgid "The ``libdwarf`` build first runs ``configure`` and ``make`` in a subdirectory called ``libdwarf``.  It then implements the installation code itself.  This is natural with ``working_dir``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3800
-# 336036c3723442c3b3d67d4143623d48
 msgid "Many CMake builds require that you build \"out of source\", that is, in a subdirectory.  You can handle creating and ``cd``'ing to the subdirectory like the LLVM package does:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3816
-# 8269dd36cd2a444cba12bfcb4d1e3492
 msgid "The ``create=True`` keyword argument causes the command to create the directory if it does not exist."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3820
-# 2b750c68c6444a96a91a6db0e23d2e05
 msgid ":py:func:`touch(path) <spack.touch>`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3820
-# 6ee21428179949f58278d2c7f159e423
 msgid "Create an empty file at ``path``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3826
-# 006b415ef2c94d1bad3a89d2ff7d317e
 msgid "Style guidelines for packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3828
-# 59069509f7cc457b9ed17ddbab845b8f
 msgid "The following guidelines are provided, in the interests of making Spack packages work in a consistent manner:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3833
-# a248fa1fd05a413daaf43c0e6de3faed
 msgid "Variant Names"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3835
-# adf08fd5398d444f95e9e2807e0599dc
 msgid "Spack packages with variants similar to already-existing Spack packages should use the same name for their variants.  Standard variant names are:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3840
-# f172743ccc6a40ea92abb415b469288d
 msgid "Name"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3840
-# f806e1dd8ad54ecbbefabf82a8fe9397
 msgid "Default"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3840
-# 7575e953cd854ae0899060e12948d2f5
 msgid "Description"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3842
-# f1656904f60540eb91d136d0fdba6eb5
 msgid "shared"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3842
 #: ../spack/lib/spack/docs/packaging_guide.rst:3843
 #: ../spack/lib/spack/docs/packaging_guide.rst:3844
-# 001b6a50a4ac46a990d86f7f4f2b31e1
-# 97d1e32d97444aacbaebc9eecd77d1d3
-# e113990c87884f15a20e423cc986632a
 msgid "True"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3842
-# 876a9277979c422bbe4ac20f4846bc2d
 msgid "Build shared libraries"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3843
-# c29d41d5a4f34d82a4ae7c897b7f9b0e
 msgid "static"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3843
-# ec43a98a0aff46a98329026ddf574b39
 msgid "Build static libraries"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3844
-# 6e28833fd9c7462daa6d118adbb4a9e2
 msgid "mpi"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3844
-# 5ec6b2be993f493788fe5a2d3d28bf05
 msgid "Use MPI"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3845
-# de07916b29564d2f9a89431304fb01c4
 msgid "python"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3845
-# 73fff7f430184c639a07e3d306f85bfc
 msgid "False"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3845
-# f69e0d4f8e8245d395954ae5463369f0
 msgid "Build Python extension"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3848
-# ed302788d9c44745aef8bae611c45018
 msgid "If specified in this table, the corresponding default should be used when declaring a variant."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3853
-# e8fc344020994bb9adb8369e18f0a5a0
 msgid "Version Lists"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3855
-# 1347fdc6856f4fc591789ccf6578aade
 msgid "Spack packages should list supported versions with the newest first."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3859
-# 039e559fc187463b9ad183e52914da5a
 msgid "Packaging workflow commands"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3861
-# 514d6c3680034c4385e9c53d618038c2
 msgid "When you are building packages, you will likely not get things completely right the first time."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3864
-# 6293baee7fba412ba24529121e2e428d
 msgid "The ``spack install`` command performs a number of tasks before it finally installs each package.  It downloads an archive, expands it in a temporary directory, and only then gives control to the package's ``install()`` method.  If the build doesn't go as planned, you may want to clean up the temporary directory, or if the package isn't downloading properly, you might want to run *only* the ``fetch`` stage of the build."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3872
-# ce4a21a529094d43a0ef4194fa5933b7
 msgid "A typical package workflow might look like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3884
-# 35f2fcab9c5047bb88ffce9223b018f4
 msgid "Below are some commands that will allow you some finer-grained control over the install process."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3891
-# 9146af62eeb54ffea06a7ec8a4059ff9
 msgid "``spack fetch``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3893
-# 07fce1ece31240c59250435314c2f930
 msgid "The first step of ``spack install``.  Takes a spec and determines the correct download URL to use for the requested package version, then downloads the archive, checks it against an MD5 checksum, and stores it in a staging directory if the check was successful.  The staging directory will be located under ``$SPACK_HOME/var/spack``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3899
-# 762a323536434027990cf97d7b60d300
 msgid "When run after the archive has already been downloaded, ``spack fetch`` is idempotent and will not download the archive again."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3906
-# 90dc4b14c49b456687581d93ef567286
 msgid "``spack stage``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3908
-# 03bcf7676c784660b93b72b3a010439f
 msgid "The second step in ``spack install`` after ``spack fetch``.  Expands the downloaded archive in its temporary directory, where it will be built by ``spack install``.  Similar to ``fetch``, if the archive has already been expanded,  ``stage`` is idempotent."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3917
-# 8ea82b4af722419db6dec9af6438f890
 msgid "``spack patch``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3919
-# 2b26cae1aa47473e862472653b535f17
 msgid "After staging, Spack applies patches to downloaded packages, if any have been specified in the package file.  This command will run the install process through the fetch, stage, and patch phases.  Spack keeps track of whether patches have already been applied and skips this step if they have been.  If Spack discovers that patches didn't apply cleanly on some previous run, then it will restage the entire package before patching."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3931
-# 1656667aad43436f86b5a7cd709c3a35
 msgid "``spack restage``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3933
-# 413eeac22f1a45e598badab84541b43e
 msgid "Restores the source code to pristine state, as it was before building."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3935
-# 0099afee8dd842248bb126875cdbc225
 msgid "Does this in one of two ways:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3937
-# 014b586d058f4777a426992edc9808dd
 msgid "If the source was fetched as a tarball, deletes the entire build directory and re-expands the tarball."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3940
-# 9e796599aab64ae4bd58ac35e986d3ff
 msgid "If the source was checked out from a repository, this deletes the build directory and checks it out again."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3947
-# c691fe1e8fd34cf99478df4715e4a055
 msgid "``spack clean``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3949
-# fae6146770454f528ce47f965d24a6b8
 msgid "Cleans up all of Spack's temporary and cached files.  This can be used to recover disk space if temporary files from interrupted or failed installs accumulate in the staging area."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3953
-# 8cdca5a625e542c586196545058e2a1e
 msgid "When called with ``--stage`` or without arguments this removes all staged files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3956
-# ae64c73e8c974c4694060eaf6c33394c
 msgid "When called with ``--downloads`` this will clear all resources :ref:`cached <caching>` during installs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3959
-# aad7a915ea3b4ab68a9c0ab3af0704a4
 msgid "When called with ``--user-cache`` this will remove caches in the user home directory, including cached virtual indices."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3962
-# 434209fcaa6c4aa990ea41c973e3b15c
 msgid "To remove all of the above, the command can be called with ``--all``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3964
-# 61c739c3a6b741acbbddd132f15297e1
 msgid "When called with positional arguments, cleans up temporary files only for a particular package. If ``fetch``, ``stage``, or ``install`` are run again after this, Spack's build process will start from scratch."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3971
-# 6a41f6c4cd2243409e27fd3cb5d279ec
 msgid "Keeping the stage directory on success"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3973
-# b1a40cdffdf54cd08dc9923ddcc15ac1
 msgid "By default, ``spack install`` will delete the staging area once a package has been successfully built and installed.  Use ``--keep-stage`` to leave the build directory intact:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3981
-# 6ebbddd81fc54ce3bf3f9dc6e0a6d12d
 msgid "This allows you to inspect the build directory and potentially debug the build.  You can use ``clean`` later to get rid of the unwanted temporary files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3987
-# 71244c04787c44e98b3ab13cddd105e1
 msgid "Keeping the install prefix on failure"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3989
-# 420929608e8f4858b114a92b98c5ff76
 msgid "By default, ``spack install`` will delete any partially constructed install prefix if anything fails during ``install()``.  If you want to keep the prefix anyway (e.g. to diagnose a bug), you can use ``--keep-prefix``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3998
-# 793ef776c88d4ba98fbbd9788b18cedd
 msgid "Note that this may confuse Spack into thinking that the package has been installed properly, so you may need to use ``spack uninstall --force`` to get rid of the install prefix before you build again:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4008
-# f37d5d76b1a9406a9df342296fff984c
 msgid "Graphing dependencies"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4014
-# f7dd9353324149949208b881ed3e4332
 msgid "``spack graph``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4016
-# 35a9c70438774f019fdb283114ee8790
 msgid "Spack provides the ``spack graph`` command for graphing dependencies. The command by default generates an ASCII rendering of a spec's dependency graph.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4022
-# 2d5cdd672f0c4be6a808d8343959e7bf
 msgid "At the top is the root package in the DAG, with dependency edges emerging from it.  On a color terminal, the edges are colored by which dependency they lead to."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4028
-# 24d53a8cbddb43bebada6beb8e6fa977
 msgid "The ``deptype`` argument tells Spack what types of dependencies to graph. By default it includes link and run dependencies but not build dependencies.  Supplying ``--deptype=link`` will show only link dependencies.  The default is ``--deptype=all``, which is equivalent to ``--deptype=build,link,run,test``.  Options for ``deptype`` include:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4034
-# 111dd4b893294ab8b7b6e42398809067
 msgid "Any combination of ``build``, ``link``, ``run``, and ``test`` separated by commas."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4036
-# 68b7fb54f9d243ea808587be0653ee87
 msgid "``all`` for all types of dependencies."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4038
-# dae74f364ff14f9ea94727258a18fa1e
 msgid "You can also use ``spack graph`` to generate graphs in the widely used `Dot <http://www.graphviz.org/doc/info/lang.html>`_ format.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4043
-# db1a4c8ab4d440f5b43143680cb4c711
 msgid "This graph can be provided as input to other graphing tools, such as those in `Graphviz <http://www.graphviz.org>`_.  If you have graphviz installed, you can write straight to PDF like this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4055
-# be448b7c73524d1da8e06d6af9f6d7e8
 msgid "Interactive shell support"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4057
-# 99c218dd98a941fc808f44c35c0a5998
 msgid "Spack provides some limited shell support to make life easier for packagers.  You can enable these commands by sourcing a setup file in the ``share/spack`` directory.  For ``bash`` or ``ksh``, run:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4066
-# 4e5031d7ba994b47a1ca6279ebf1b2ee
 msgid "For ``csh`` and ``tcsh`` run:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4073
-# 724f46e3a0264b578b3e42e0364f4b6b
 msgid "``spack cd`` will then be available."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4079
-# e51004b118b04466951657245b4c5b65
 msgid "``spack cd``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4081
-# d5e5cce859a54cd8b8cb2e76f11415fe
 msgid "``spack cd`` allows you to quickly cd to pertinent directories in Spack. Suppose you've staged a package but you want to modify it before you build it:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4096
-# ef52eaa6fc614983bdcba4a3522db831
 msgid "``spack cd`` here changed the current working directory to the directory containing the expanded ``libelf`` source code.  There are a number of other places you can cd to in the spack directory hierarchy:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4102
-# 71a694a73abe48bda7b49fa14064183d
 msgid "Some of these change directory into package-specific locations (stage directory, install directory, package directory) and others change to core spack locations.  For example, ``spack cd --module-dir`` will take you to the main python source directory of your spack install."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4111
-# 2b7b1d8c46d047ca821f9614b5c01f99
 msgid "``spack env``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4113
-# a0704c7503264dde9b9ecfe77c7f2d15
 msgid "``spack env`` functions much like the standard unix ``env`` command, but it takes a spec as an argument.  You can use it to see the environment variables that will be set when a particular build runs, for example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4122
-# 560756cb40c1446b88779c6598b56566
 msgid "This will display the entire environment that will be set when the ``mpileaks@1.1%intel`` build runs."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4125
-# 31faad6119d7432face5abe1e36c3c18
 msgid "To run commands in a package's build environment, you can simply provide them after the spec argument to ``spack env``:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4133
-# 5d1a3ff7cf7d4c0eb2d0223a1b584156
 msgid "This will cd to the build directory and then run ``configure`` in the package's build environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4140
-# 578c96a3bf7740b5b8a3c56cab77a347
 msgid "``spack location``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4142
-# 93823fc7e5a9478d80308a36199328e2
 msgid "``spack location`` is the same as ``spack cd`` but it does not require shell support.  It simply prints out the path you ask for, rather than cd'ing to it.  In bash, this:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4150
-# f042c0e437d0483aa2cae76d66ea3fff
 msgid "is the same as:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4156
-# 05aae74aaace4498a1d22d3b7121035d
 msgid "``spack location`` is intended for use in scripts or makefiles that need to know where packages are installed.  e.g., in a makefile you might write:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4168
-# d459d687848a4ba1a35b082995289b06
 msgid "Build System Configuration Support"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4170
-# 447f83ea0e1f432b963894b6186297b3
 msgid "Imagine a developer creating a CMake or Autotools-based project in a local directory, which depends on libraries A-Z.  Once Spack has installed those dependencies, one would like to run ``cmake`` with appropriate command line and environment so CMake can find them.  The ``spack setup`` command does this conveniently, producing a CMake configuration that is essentially the same as how Spack *would have* configured the project.  This can be demonstrated with a usage example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4188
-# d40de155f9204dd1acd9bf15a332b1b4
 msgid "Notes:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4190
-# 5f781252364c48d58891c8afb8028b5f
 msgid "Spack must have ``myproject/package.py`` in its repository for this to work."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4192
-# de5939f0662b4d3ab8b7957dbd815b94
 msgid "``spack setup`` produces the executable script ``spconfig.py`` in the local directory, and also creates the module file for the package.  ``spconfig.py`` is normally run from the user's out-of-source build directory."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4196
-# ac67afa678764b80b51fe001dd5d21a4
 msgid "The version number given to ``spack setup`` is arbitrary, just like ``spack diy``.  ``myproject/package.py`` does not need to have any valid downloadable versions listed (typical when a project is new)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4200
-# 1fa4ba011ae74165a5b01be0bf12a36a
 msgid "spconfig.py produces a CMake configuration that *does not* use the Spack wrappers.  Any resulting binaries *will not* use RPATH, unless the user has enabled it.  This is recommended for development purposes, not production."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4204
-# b39d7fc23d5c45939df1e7faffd0936c
 msgid "``spconfig.py`` is human readable, and can serve as a developer reference of what dependencies are being used."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4206
-# 21dbe755f794464b81efe0415234d625
 msgid "``make install`` installs the package into the Spack repository, where it may be used by other Spack packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4208
-# 650c4ef15fc043ab9f75c39c92be5ff0
 msgid "CMake-generated makefiles re-run CMake in some circumstances.  Use of ``spconfig.py`` breaks this behavior, requiring the developer to manually re-run ``spconfig.py`` when a ``CMakeLists.txt`` file has changed."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4215
-# 057e4f88eb37446a94c93692b8f9e1a4
 msgid "CMakePackage"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4217
-# 822ce5cb416a4586a42a4b38bbd7f784
 msgid "In order to enable ``spack setup`` functionality, the author of ``myproject/package.py`` must subclass from ``CMakePackage`` instead of the standard ``Package`` superclass.  Because CMake is standardized, the packager does not need to tell Spack how to run ``cmake; make; make install``.  Instead the packager only needs to create (optional) methods ``configure_args()`` and ``configure_env()``, which provide the arguments (as a list) and extra environment variables (as a dict) to provide to the ``cmake`` command.  Usually, these will translate variant flags into CMake definitions.  For example:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4239
-# 4858845cf78a4c28a7d3c9a45824bbee
 msgid "If needed, a packager may also override methods defined in ``StagedPackage`` (see below)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4244
-# 9abad433767d45e69e2f66ec7feb5ee9
 msgid "StagedPackage"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4246
-# 4c4cd71e106c42719ff48047b0cb824a
 msgid "``CMakePackage`` is implemented by subclassing the ``StagedPackage`` superclass, which breaks down the standard ``Package.install()`` method into several sub-stages: ``setup``, ``configure``, ``build`` and ``install``.  Details:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4251
-# 6435f5fd578b44c88b9e7b1ca3cd1882
 msgid "Instead of implementing the standard ``install()`` method, package authors implement the methods for the sub-stages ``install_setup()``, ``install_configure()``, ``install_build()``, and ``install_install()``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4256
-# f42064b2dc8c4042bb885d0b91ecd136
 msgid "The ``spack install`` command runs the sub-stages ``configure``, ``build`` and ``install`` in order.  (The ``setup`` stage is not run by default; see below)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4259
-# 05324a46350947a080b46f7a050a0547
 msgid "The ``spack setup`` command runs the sub-stages ``setup`` and a dummy install (to create the module file)."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4261
-# a5b3af0be8254b1384b9ebd6c9eafec9
 msgid "The sub-stage install methods take no arguments (other than ``self``).  The arguments ``spec`` and ``prefix`` to the standard ``install()`` method may be accessed via ``self.spec`` and ``self.prefix``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4268
-# af741296191f4c2587ca1aa4ee5ae665
 msgid "GNU Autotools"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:4270
-# 9fdaa06010984a7a8a21f15c1d97ac75
 msgid "The ``setup`` functionality is currently only available for CMake-based packages.  Extending this functionality to GNU Autotools-based packages would be easy (and should be done by a developer who actively uses Autotools).  Packages that use non-standard build systems can gain ``setup`` functionality by subclassing ``StagedPackage`` directly."
 msgstr ""
 

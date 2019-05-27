@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 08:25-0700\n"
+"POT-Creation-Date: 2019-05-27 13:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../spack/lib/spack/docs/spack.operating_systems.rst:2
-# 2e7c13da76c14fbfbed6ee69ed8e999f
 msgid "spack.operating\\_systems package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.operating_systems.rst:5
-# ccd27ae5c2d942339976269b9172eb69
 msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.operating_systems.rst:8
-# 9cb6cd6dc3a545e89d2cc332d2c76b06
 msgid "spack.operating\\_systems.cnk module"
 msgstr ""
 
@@ -35,90 +32,70 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/cnl.py:docstring of spack.operating_systems.cnl.Cnl:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/linux_distro.py:docstring of spack.operating_systems.linux_distro.LinuxDistro:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/mac_os.py:docstring of spack.operating_systems.mac_os.MacOs:1
-# 11742f327b5944148de804de78308265
-# 79ea5f2870c54fdc9a20d427abedb3a5
-# e7555ca9786740e698fb8ae339835d74
-# e70f05c4e92844528763717a26026a56
 msgid "Bases: :class:`spack.architecture.OperatingSystem`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/cnk.py:docstring of spack.operating_systems.cnk.Cnk:1
-# ff230ebf12944265878a4979836cea23
 msgid "Compute Node Kernel (CNK) is the node level operating system for the IBM Blue Gene series of supercomputers. The compute nodes of the Blue Gene family of supercomputers run CNK, a lightweight kernel that runs on each node and supports one application running for one user on that node."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.operating_systems.rst:16
-# 1f53f5a01cf54a70852638a424be94c6
 msgid "spack.operating\\_systems.cnl module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/cnl.py:docstring of spack.operating_systems.cnl.Cnl:1
-# 5b042d22901f43a0bb698f226b6bfef2
 msgid "Compute Node Linux (CNL) is the operating system used for the Cray XC series super computers. It is a very stripped down version of GNU/Linux. Any compilers found through this operating system will be used with modules. If updated, user must make sure that version and name are updated to indicate that OS has been upgraded (or downgraded)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/cnl.py:docstring of spack.operating_systems.cnl.Cnl.find_compiler:1
-# 6bd0ddf769e04dce8ba07d8aea0375da
 msgid "Try to find the given type of compiler in the user's environment. For each set of compilers found, this returns compiler objects with the cc, cxx, f77, fc paths and the version filled in."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/cnl.py:docstring of spack.operating_systems.cnl.Cnl.find_compiler:6
-# 39bd824780f7404899432daed3cb89f1
 msgid "This will search for compilers with the names in cc_names, cxx_names, etc. and it will group them if they have common prefixes, suffixes, and versions.  e.g., gcc-mp-4.7 would be grouped with g++-mp-4.7 and gfortran-mp-4.7."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/cnl.py:docstring of spack.operating_systems.cnl.Cnl.find_compilers:1
-# 0e8466c367ea48468a2e1579d00eeaf3
 msgid "Return a list of compilers found in the supplied paths. This invokes the find() method for each Compiler class, and appends the compilers detected to a list."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.operating_systems.rst:24
-# 60dda2bc586a4f2fb63f1971dd492f70
 msgid "spack.operating\\_systems.cray\\_frontend module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/cray_frontend.py:docstring of spack.operating_systems.cray_frontend.CrayFrontend:1
-# c8e5b080bcd34098bdecbc4ce6488667
 msgid "Bases: :class:`spack.operating_systems.linux_distro.LinuxDistro`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/cray_frontend.py:docstring of spack.operating_systems.cray_frontend.CrayFrontend:1
-# fa06eb66355a4566b183b5aa302c4cc0
 msgid "Represents OS that runs on login and service nodes of the Cray platform. It acts as a regular Linux without Cray-specific modules and compiler wrappers."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/cray_frontend.py:docstring of spack.operating_systems.cray_frontend.CrayFrontend.find_compilers:1
-# 4375b4a91076437ebb0e6aab8d21ae98
 msgid "Calls the overridden method but prevents it from detecting Cray compiler wrappers to avoid possible false detections. The detected compilers come into play only if a user decides to work with the Cray's frontend OS as if it was a regular Linux environment."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.operating_systems.rst:32
-# dac3115da2a547eca04d0990bcd4ca78
 msgid "spack.operating\\_systems.linux\\_distro module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/linux_distro.py:docstring of spack.operating_systems.linux_distro.LinuxDistro:1
-# 1ea174d0bfb04457aaa466d9b88b1d23
 msgid "This class will represent the autodetected operating system for a Linux System. Since there are many different flavors of Linux, this class will attempt to encompass them all through autodetection using the python module platform and the method platform.dist()"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.operating_systems.rst:40
-# 98598da3efbe420285fe1e7415f794cc
 msgid "spack.operating\\_systems.mac\\_os module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/mac_os.py:docstring of spack.operating_systems.mac_os.MacOs:1
-# a08457140f264ba58bd992ed84f8fdaf
 msgid "This class represents the macOS operating system. This will be auto detected using the python platform.mac_ver. The macOS platform will be represented using the major version operating system name, i.e el capitan, yosemite...etc."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/operating_systems/mac_os.py:docstring of spack.operating_systems.mac_os.macos_version:1
-# ac0687733d964381810ea9112fe05f07
 msgid "temporary workaround to return a macOS version as a Version object"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.operating_systems.rst:49
-# 36f233c449a54c32a19ead47b8751cf3
 msgid "Module contents"
 msgstr ""
 
