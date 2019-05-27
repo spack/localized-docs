@@ -11,6 +11,29 @@ If you are reading this, you're likely interested in either:
 
 See below for details on both of these.
 
+Prerequisites
+-------------------------------------
+
+To use this repository you'll need to do a couple things:
+
+1. Check out the `spack` submodule:
+
+   ```console
+   $ git clone https://github.com/spack/localized-docs
+   $ cd localized-docs
+   $ git submodule init
+   $ git submodule update
+   ```
+
+2. Install dependencies.  The easiest way to do this is to run `pip3
+   install -r spack/lib/spack/docs/requirements.txt`, then `brew install
+   gettext` (or use your system package manager).
+
+   If you don't have acces to those, you can also use the `spack.yaml` at
+   the top level of this repository.  Simply `cd` to the top level of
+   this repo and run `spack install`.
+
+
 Adding to an existing translation
 -------------------------------------
 

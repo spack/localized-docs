@@ -1,2 +1,4 @@
 html
 templates/.doctrees
+spack.lock
+.spack-env

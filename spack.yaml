@@ -1,0 +1,13 @@
+spack:
+  specs:
+  - gettext
+  - py-sphinx
+  - py-sphinxcontrib-programoutput
+  - py-sphinx-rtd-theme
+  mirrors: {}
+  modules:
+    enable: []
+  repos: []
+  packages: {}
+  config: {}
+  upstreams: {}
