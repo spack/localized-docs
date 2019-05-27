@@ -16,7 +16,6 @@ from llnl.util.link_tree import LinkTree
 # modified independently for each doc tree.
 copy_files = [
     'conf.py',
-    'requirements.txt'
 ]
 
 

@@ -151,7 +151,6 @@ docs/%: $(sources)
 	$(link_docs_cmd) $(source_dir) $@
 	sed -i~ 's/#language = None/language = "$(lang)"/' $@/conf.py
 	sed -i~ 's@#locale_dirs = \[\]@locale_dirs = \["../../locale"\]@' $@/conf.py
-	sed -i~ 's@spack_root = .*@spack_root = "../../spack"@' $@/conf.py
 	ln -s ../../spack docs/$(lang)/_spack_root
 
 # remove everything not checked into git

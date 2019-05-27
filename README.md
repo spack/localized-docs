@@ -4,19 +4,15 @@ This repository contains translations of [Spack](/spack/spack)'s
 documentation.  It implements the workflow described in the
 [Sphinx docs](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html).
 
-If you are reading this, you're likely interested in either:
+The instructions here describe how you can contribute by:
 
-1. Adding to an existing translation, or
-2. Creating a translation of Spack in a new language.
-
-See below for details on both of these.
+1. Adding to an existing translation, and
+2. Creating a translation in a new language.
 
 Prerequisites
 -------------------------------------
 
-To use this repository you'll need to do a couple things:
-
-1. Check out the `spack` submodule:
+1. First, init the `spack` submodule:
 
    ```console
    $ git clone https://github.com/spack/localized-docs
@@ -25,76 +21,77 @@ To use this repository you'll need to do a couple things:
    $ git submodule update
    ```
 
-2. Install dependencies.  The easiest way to do this is to run `pip3
-   install -r spack/lib/spack/docs/requirements.txt`, then `brew install
-   gettext` (or use your system package manager).
+2. To use this repository you'll need Sphinx, some plugins for it, and
+   `gettext`.  To install these dependencies, using `pip` and `brew`, you
+   can run:
 
-   If you don't have acces to those, you can also use the `spack.yaml` at
-   the top level of this repository.  Simply `cd` to the top level of
-   this repo and run `spack install`.
+    ```console
+    $ pip3 install -r requirements.txt
+    $ brew install gettext
+    ```
 
+    Using Spack, you can just take advantage of the `spack.yaml` file at
+    the root of this repo:
+
+    ```console
+    spack install
+    spack activate .
+    ```
+
+    This will install the tools you need and put them in your `PATH`.
 
 Adding to an existing translation
 -------------------------------------
 
-Translations in this repository are stored in `.po` files in the
-top-level `translations` directory.  There is one translation per
-languages, and each file is named according to its
+Translations in this repository are stored in `.po` files under
+`translations`.  There is one translation per languages, and each file is
+named according to its
 [ISO-639 language code](https://www.gnu.org/software/gettext/manual/html_node/Language-Codes.html#Language-Codes).
 So, the Japanese translation data for Spack is stored in
 `translations/ja.po`.
 
 If you want to add to an existing translation, all you need to do is edit
-the appropriate `.po` file and add translations for the strings in it.
-`.po` files are comprised of `msgid`/`msgstr` pairs.  The `msgid`
-corresponds to an English string in the original documentation, and the
-`msgstr` is its translation.  For example, for Japanese, the translation
-of "Basic Usage" is stored like this:
+the appropriate `.po` file and add translated strings to it.  `.po` files
+are comprised of `msgid`/`msgstr` pairs.  The `msgid` corresponds to an
+English string in the original documentation, and the `msgstr` is its
+translation in the target language.  For example, for Japanese, the
+translation of "Basic Usage" is stored like this:
 
 ```
-# fde44f45d9044cd2a55b1b0261785151
 #: ../spack/lib/spack/docs/basic_usage.rst:10
 msgid "Basic Usage"
 msgstr "基本的な使い方"
 ```
 
-All you need to do to add to a translation is:
+To add a translation:
 
-1. Update `msgstr` elements in the appropriate `.po` file;
-2. Run `make` at the top level of this repository;
+1. Update `msgstr` elements in the appropriate `.po` files;
+2. Run `make`;
 3. Commit the results;
 4. Submit a pull request so that we can merge your changes.
 
-That's all!  Any new commits you add will automatically trigger a rebuild
-of Spack's documentation, and you should see your changes show up at
-[spack.readthedocs.io](https://spack.readthedocs.io/) soon after your
-changes are committed to the `master` branch here.
+That's all!  Merged pull requests will automatically trigger a rebuild of
+the translated docs, and you should see your changes at
+[spack.readthedocs.io](https://spack.readthedocs.io/).
 
-If you want to look at the documentation while you're editing it, `make`
-generates per-language builds of the docs in `html/<lang>`.  So, to see
-the Japanese documentation, you can run `make` and open
+If you want to look at the documentation while you're editing it, running
+`make` also generates per-language builds of the docs in `html/<lang>`.
+So, to see the Japanese documentation, you can run `make` and open
 `html/ja/index.html` in a local web browser.
 
 Creating a new translation
 ------------------------------
 
-All you need to do to create a new translation is to add it to the
-`languages` variable in the `Makefile`.  For example, if the only
-language is Japanese (`ja`) and you want to add German (`de`), make
-`languages` look like this:
+To create a new translation, add the language to the `languages` list in
+the `Makefile`.  For example, if the only language is Japanese (`ja`) and
+you want to add German (`de`), just add `de`:
 
 ```make
-# ----------------------------------------------------------------------
-# List of translated languages
-#
-# Add a new language here and type "make" to generate new po files to
-# translate.
-# ----------------------------------------------------------------------
 languages = ja de
 ```
 
-Then run `make`, and some new files will be created in `docs`, `locale`,
-and `translations`:
+Running `make`, will create files in `docs`, `locale`, and
+`translations`, and `html`:
 
 ```
     translations/de.po          # German translation file
@@ -104,16 +101,15 @@ and `translations`:
     html/de/                    # HTML built by Sphinx from docs/de
 ```
 
-Add all of these *except* `html`. Then commit:
+Add everything *except* `html`, then commit. `html` is ignored by default
+(see `.gitignore`), so you can just run this:
 
 ```console
-$ git add Makefile docs locale translations
+$ git add .
 $ git commit
 ```
 
-Then submit a pull request for the new language.  To start your
-translation, you will need to edit `translations/de.po`.  See above for
-how to do that.
+See instructions above for how to start translating.
 
 Workflow
 ----------------
@@ -122,25 +118,24 @@ This repository implements the
 [workflow described here](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html).
 Most users will only need to concern themselves with `translations/*.po`
 files, but we provide a short summary here so that you can understand how
-these are used.
+everything works.
 
 Translation is done as follows:
 
-1. First, we use the `gettext` tool to extract strings to be translated
-   from each `.rst` document in the Spack documentation. This results in
-   a set of `.pot` files in `templates/*.pot`.  These contain keys
-   (`msgid`s) for unique strings, as well as their location (file and
-   line number) in the documentation.
+1. First, we use (or rather Sphinx uses) the `gettext` tool to extract
+   strings to be translated from each `.rst` document in the Spack
+   documentation. This results in a set of `.pot` files in
+   `templates/*.pot`.  These contain keys (`msgid`s) for unique strings,
+   as well as their location (file and line number) in the documentation.
 
 2. We merge the `.pot` files into a single `merged.pot` file to eliminate
-   duplicate strings across files.
+   duplicate strings in multiple files.
 
 3. `merged.pot` is used to create an initial `translations/<lang>.po`
-   file.  Translations are added to the `msgstr` fields in the `.po`
-   file.
+   file.  Translations are added to `msgstr` fields in the `.po` file.
 
 4. A single `translations/<lang>.mo` file is generated from the `.po`
-   file. The `.mo` file  is in a special binary format.
+   file. The `.mo` file is in a special binary format.
 
 5. We generate symlinks in `locale/<lang>/LC_MESSAGES/*.mo` that all
    point back to the single, unified `translations/<lang>.mo` file.  The

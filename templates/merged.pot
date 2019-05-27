@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: maintainers@spack.io\n"
-"POT-Creation-Date: 2019-05-27 13:31-0700\n"
+"POT-Creation-Date: 2019-05-27 13:44-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9951,6 +9951,2143 @@ msgid ""
 "github.com/spack/spack/pull/2664."
 msgstr ""
 
+#: ../spack/lib/spack/docs/llnl.rst:2
+msgid "llnl package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.rst:5 ../spack/lib/spack/docs/llnl.util.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.rst:12 ../spack/lib/spack/docs/llnl.util.rst:64
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:33
+msgid "Module contents"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.rst:2
+msgid "llnl.util package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.rst:12
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:5
+#: ../spack/lib/spack/docs/packaging_guide.rst:956
+msgid "Submodules"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.rst:15
+msgid "llnl.util.argparsewriter module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/argparsewriter.py:docstring
+#: of llnl.util.argparsewriter.ArgparseRstWriter:1
+msgid "Bases: :class:`llnl.util.argparsewriter.ArgparseWriter`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/argparsewriter.py:docstring
+#: of llnl.util.argparsewriter.ArgparseRstWriter:1
+msgid "Write argparse output as rst sections."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/argparsewriter.py:docstring
+#: of llnl.util.argparsewriter.ArgparseWriter:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: llnl.util.filesystem.FileFilter:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring
+#: llnl.util.lang.LazyReference:1 llnl.util.lang.ObjectWrapper:1
+#: llnl.util.lang.Singleton:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: llnl.util.link_tree.LinkTree:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring
+#: llnl.util.lock.Lock:1 llnl.util.lock.LockTransaction:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/multiproc.py:docstring
+#: llnl.util.multiproc.Barrier:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: llnl.util.tty.colify.ColumnConfig:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: llnl.util.tty.color.ColorStream:1 llnl.util.tty.color.match_to_ansi:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: llnl.util.tty.log.Unbuffered:1 llnl.util.tty.log.keyboard_input:1
+#: llnl.util.tty.log.log_output:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring
+#: llnl.util.tty.SuppressOutput:1
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/argparsewriter.py:docstring
+#: of llnl.util.argparsewriter.ArgparseWriter:1
+msgid "Analyzes an argparse ArgumentParser for easy generation of help."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/argparsewriter.py:docstring
+#: of llnl.util.argparsewriter.ArgparseWriter.write:1
+msgid "Write out details about an ArgumentParser."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/argparsewriter.py:docstring
+#: of llnl.util.argparsewriter.ArgparseWriter.write:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: llnl.util.filesystem.HeaderList.add_macro:0
+#: llnl.util.filesystem.change_sed_delimiter:0
+#: llnl.util.filesystem.filter_file:0 llnl.util.filesystem.find:0
+#: llnl.util.filesystem.find_headers:0 llnl.util.filesystem.find_all_headers:0
+#: llnl.util.filesystem.find_libraries:0
+#: llnl.util.filesystem.find_system_libraries:0
+#: llnl.util.filesystem.fix_darwin_install_name:0 llnl.util.filesystem.copy:0
+#: llnl.util.filesystem.install:0 llnl.util.filesystem.copy_tree:0
+#: llnl.util.filesystem.install_tree:0 llnl.util.filesystem.mkdirp:0
+#: llnl.util.filesystem.remove_dead_links:0
+#: llnl.util.filesystem.remove_if_dead_link:0
+#: llnl.util.filesystem.remove_linked_tree:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring
+#: llnl.util.lang.dedupe:0 llnl.util.lang.load_module_from_file:0
+#: llnl.util.lang.pretty_date:0 llnl.util.lang.pretty_string_to_date:0
+#: llnl.util.lang.union_dicts:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: llnl.util.tty.color.cescape:0 llnl.util.tty.color.colorize:0
+msgid "Parameters"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/argparsewriter.py:docstring
+#: of llnl.util.argparsewriter.ArgparseWriter.write:3
+msgid "an ``argparse`` parser"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/argparsewriter.py:docstring
+#: of llnl.util.argparsewriter.ArgparseWriter.write:5
+msgid ""
+"if bool, whether to include the root parser; or ``1`` to flatten the root "
+"parser with first-level subcommands"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.rst:23
+msgid "llnl.util.filesystem module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileFilter:1
+msgid "Convenience class for calling ``filter_file`` a lot."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileList:1
+msgid "Bases: :class:`collections.abc.Sequence`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileList:1
+msgid "Sequence of absolute paths to files."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileList:3
+msgid "Provides a few convenience methods to manipulate file paths."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileList.basenames:1
+msgid "Stable de-duplication of the base-names in the list"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileList.basenames:0
+#: llnl.util.filesystem.FileList.directories:0
+#: llnl.util.filesystem.HeaderList.cpp_flags:0
+#: llnl.util.filesystem.HeaderList.headers:0
+#: llnl.util.filesystem.HeaderList.include_flags:0
+#: llnl.util.filesystem.HeaderList.macro_definitions:0
+#: llnl.util.filesystem.HeaderList.names:0
+#: llnl.util.filesystem.LibraryList.ld_flags:0
+#: llnl.util.filesystem.LibraryList.libraries:0
+#: llnl.util.filesystem.LibraryList.link_flags:0
+#: llnl.util.filesystem.LibraryList.names:0
+#: llnl.util.filesystem.LibraryList.search_flags:0 llnl.util.filesystem.find:0
+#: llnl.util.filesystem.find_headers:0 llnl.util.filesystem.find_all_headers:0
+#: llnl.util.filesystem.find_libraries:0
+#: llnl.util.filesystem.find_system_libraries:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring
+#: llnl.util.lang.dedupe:0 llnl.util.lang.load_module_from_file:0
+#: llnl.util.lang.pretty_date:0 llnl.util.lang.pretty_string_to_date:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: llnl.util.tty.color.cescape:0 llnl.util.tty.color.colorize:0
+msgid "Returns"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileList.basenames:10
+msgid "A list of base-names"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileList.basenames:0
+#: llnl.util.filesystem.FileList.directories:0
+#: llnl.util.filesystem.HeaderList.cpp_flags:0
+#: llnl.util.filesystem.HeaderList.headers:0
+#: llnl.util.filesystem.HeaderList.include_flags:0
+#: llnl.util.filesystem.HeaderList.macro_definitions:0
+#: llnl.util.filesystem.HeaderList.names:0
+#: llnl.util.filesystem.LibraryList.ld_flags:0
+#: llnl.util.filesystem.LibraryList.libraries:0
+#: llnl.util.filesystem.LibraryList.link_flags:0
+#: llnl.util.filesystem.LibraryList.names:0
+#: llnl.util.filesystem.LibraryList.search_flags:0 llnl.util.filesystem.find:0
+#: llnl.util.filesystem.find_headers:0 llnl.util.filesystem.find_libraries:0
+#: llnl.util.filesystem.find_system_libraries:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring
+#: llnl.util.lang.pretty_date:0 llnl.util.lang.pretty_string_to_date:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: llnl.util.tty.color.cescape:0 llnl.util.tty.color.colorize:0
+msgid "Return type"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileList.directories:1
+msgid "Stable de-duplication of the directories where the files reside."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.FileList.directories:10
+msgid "A list of directories"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList:1 llnl.util.filesystem.LibraryList:1
+msgid "Bases: :class:`llnl.util.filesystem.FileList`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList:1
+msgid "Sequence of absolute paths to headers."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList:3
+msgid ""
+"Provides a few convenience methods to manipulate header paths and get "
+"commonly used compiler flags or names."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.add_macro:1
+msgid "Add a macro definition"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.add_macro:3
+msgid "The macro to add"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.cpp_flags:1
+msgid "Include flags + macro definitions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.cpp_flags:10
+msgid "A joined list of include flags and macro definitions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.directories:1
+msgid "Directories to be searched for header files."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.headers:1
+msgid "Stable de-duplication of the headers."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.headers:3
+msgid "A list of header files"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.include_flags:1
+msgid "Include flags"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.include_flags:7
+msgid "A joined list of include flags"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.macro_definitions:1
+msgid "Macro definitions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.macro_definitions:9
+msgid "A joined list of macro definitions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.names:1
+msgid "Stable de-duplication of header names in the list without extensions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.HeaderList.names:7
+msgid "A list of files without extensions"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList:1
+msgid "Sequence of absolute paths to libraries"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList:3
+msgid ""
+"Provides a few convenience methods to manipulate library paths and get "
+"commonly used compiler flags or names"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.ld_flags:1
+msgid "Search flags + link flags"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.ld_flags:7
+msgid "A joined list of search flags and link flags"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.libraries:1
+msgid "Stable de-duplication of library files."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.libraries:3
+msgid "A list of library files"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.link_flags:1
+msgid "Link flags for the libraries"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.link_flags:7
+msgid "A joined list of link flags"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.names:1
+msgid "Stable de-duplication of library names in the list"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.names:7
+msgid "A list of library names"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.search_flags:1
+msgid "Search flags for the libraries"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.LibraryList.search_flags:7
+msgid "A joined list of search flags"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.ancestor:1
+msgid "Get the nth ancestor of a directory."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.can_access:1
+msgid "True if we have read/write access to the file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.change_sed_delimiter:1
+msgid "Find all sed search/replace commands and change the delimiter."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.change_sed_delimiter:3
+msgid ""
+"e.g., if the file contains seds that look like ``'s///'``, you can call "
+"``change_sed_delimiter('/', '@', file)`` to change the delimiter to ``'@'``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.change_sed_delimiter:7
+msgid ""
+"Note that this routine will fail if the delimiter is ``'`` or ``\"``. "
+"Handling those is left for future work."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.change_sed_delimiter:10
+msgid "The delimiter to search for"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.change_sed_delimiter:12
+msgid "The delimiter to replace with"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.change_sed_delimiter:14
+#: llnl.util.filesystem.filter_file:16
+msgid "One or more files to search and replace"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy_mode:1
+msgid "Set the mode of dest to that of src unless it is a link."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.filter_file:1
+msgid "Like sed, but uses python regular expressions."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.filter_file:3
+msgid ""
+"Filters every line of each file through regex and replaces the file with a "
+"filtered version.  Preserves mode of filtered files."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.filter_file:6
+msgid ""
+"As with re.sub, ``repl`` can be either a string or a callable. If it is a "
+"callable, it is passed the match object and should return a suitable "
+"replacement string.  If it is a string, it can contain ``\\1``, ``\\2``, "
+"etc. to represent back-substitution as sed would allow."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.filter_file:12
+msgid "The regular expression to search for"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.filter_file:14
+msgid "The string to replace matches with"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.filter_file:0 llnl.util.filesystem.traverse_tree:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: llnl.util.tty.colify.colify:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: llnl.util.tty.color.colorize:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring
+#: llnl.util.tty.hline:0
+msgid "Keyword Arguments"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.filter_file:18
+msgid "Treat regex as a plain string. Default it False"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.filter_file:20
+msgid "Make backup file(s) suffixed with ``~``. Default is True"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.filter_file:22
+msgid "Ignore any files that don't exist. Default is False"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:1
+msgid "Search for ``files`` starting from the ``root`` directory."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:3
+msgid "Like GNU/BSD find but written entirely in Python."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:5
+#: ../spack/lib/spack/docs/packaging_guide.rst:3704
+msgid "Examples:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:11 llnl.util.filesystem.find:19
+msgid "is equivalent to:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:23 llnl.util.filesystem.find_headers:4
+#: llnl.util.filesystem.find_libraries:3
+#: llnl.util.filesystem.find_system_libraries:12
+msgid "Accepts any glob characters accepted by fnmatch:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:26 llnl.util.filesystem.find_headers:7
+#: llnl.util.filesystem.find_libraries:6
+#: llnl.util.filesystem.find_system_libraries:15
+msgid "Pattern"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:26 llnl.util.filesystem.find_headers:7
+#: llnl.util.filesystem.find_libraries:6
+#: llnl.util.filesystem.find_system_libraries:15
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: llnl.util.tty.color:19
+msgid "Meaning"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:28 llnl.util.filesystem.find_headers:9
+#: llnl.util.filesystem.find_libraries:8
+#: llnl.util.filesystem.find_system_libraries:17
+msgid "matches everything"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:29 llnl.util.filesystem.find_headers:10
+#: llnl.util.filesystem.find_libraries:9
+#: llnl.util.filesystem.find_system_libraries:18
+msgid "?"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:29 llnl.util.filesystem.find_headers:10
+#: llnl.util.filesystem.find_libraries:9
+#: llnl.util.filesystem.find_system_libraries:18
+msgid "matches any single character"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:30 llnl.util.filesystem.find_headers:11
+#: llnl.util.filesystem.find_libraries:10
+#: llnl.util.filesystem.find_system_libraries:19
+msgid "[seq]"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:30 llnl.util.filesystem.find_headers:11
+#: llnl.util.filesystem.find_libraries:10
+#: llnl.util.filesystem.find_system_libraries:19
+msgid "matches any character in ``seq``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:31 llnl.util.filesystem.find_headers:12
+#: llnl.util.filesystem.find_libraries:11
+#: llnl.util.filesystem.find_system_libraries:20
+msgid "[!seq]"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:31 llnl.util.filesystem.find_headers:12
+#: llnl.util.filesystem.find_libraries:11
+#: llnl.util.filesystem.find_system_libraries:20
+msgid "matches any character not in ``seq``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:34 llnl.util.filesystem.find_headers:17
+#: llnl.util.filesystem.find_libraries:16
+msgid "The root directory to start searching from"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:36 llnl.util.filesystem.find_libraries:14
+#: llnl.util.filesystem.find_system_libraries:23
+msgid "Library name(s) to search for"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:38
+msgid ""
+"if False search only root folder, if True descends top-down from the root. "
+"Defaults to True."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find:42
+msgid "The files that have been found"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_headers:1
+msgid ""
+"Returns an iterable object containing a list of full paths to headers if "
+"found."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_headers:15
+msgid "Header name(s) to search for"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_headers:19
+#: llnl.util.filesystem.find_libraries:21
+msgid ""
+"if False search only root folder, if True descends top-down from the root. "
+"Defaults to False."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_headers:23
+msgid "The headers that have been found"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_all_headers:1
+msgid ""
+"Convenience function that returns the list of all headers found in the "
+"directory passed as argument."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_all_headers:4
+msgid "directory where to look recursively for header files"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_all_headers:7
+msgid "List of all headers found in ``root`` and subdirectories."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_libraries:1
+msgid "Returns an iterable of full paths to libraries found in a root dir."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_libraries:18
+#: llnl.util.filesystem.find_system_libraries:25
+msgid ""
+"if True searches for shared libraries, otherwise for static. Defaults to "
+"True."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_libraries:25
+#: llnl.util.filesystem.find_system_libraries:29
+msgid "The libraries that have been found"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_system_libraries:1
+msgid "Searches the usual system library locations for ``libraries``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_system_libraries:3
+msgid "Search order is as follows:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_system_libraries:5
+msgid "``/lib64``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_system_libraries:6
+msgid "``/lib``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_system_libraries:7
+msgid "``/usr/lib64``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_system_libraries:8
+msgid "``/usr/lib``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_system_libraries:9
+msgid "``/usr/local/lib64``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.find_system_libraries:10
+msgid "``/usr/local/lib``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.fix_darwin_install_name:1
+msgid "Fix install name of dynamic libraries on Darwin to have full path."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.fix_darwin_install_name:3
+msgid "There are two parts of this task:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.fix_darwin_install_name:5
+msgid "Use ``install_name('-id', ...)`` to change install name of a single lib"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.fix_darwin_install_name:6
+msgid ""
+"Use ``install_name('-change', ...)`` to change the cross linking between "
+"libs. The function assumes that all libraries are in one folder and "
+"currently won't follow subfolders."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.fix_darwin_install_name:10
+msgid "directory in which .dylib files are located"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.force_remove:1
+msgid ""
+"Remove files without printing errors.  Like ``rm -f``, does NOT remove "
+"directories."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy:1
+msgid "Copies the file *src* to the file or directory *dest*."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy:3
+msgid ""
+"If *dest* specifies a directory, the file will be copied into *dest* using "
+"the base filename from *src*."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy:6
+msgid "the file to copy"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy:8 llnl.util.filesystem.install:8
+msgid "the destination file or directory"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy:10 llnl.util.filesystem.copy_tree:22
+msgid "for internal use only"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.install:1
+msgid "Installs the file *src* to the file or directory *dest*."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.install:3
+msgid ""
+"Same as :py:func:`copy` with the addition of setting proper permissions on "
+"the installed file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.install:6
+msgid "the file to install"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy_tree:1
+msgid "Recursively copy an entire directory tree rooted at *src*."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy_tree:3
+msgid ""
+"If the destination directory *dest* does not already exist, it will be "
+"created as well as missing parent directories."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy_tree:6
+msgid ""
+"If *symlinks* is true, symbolic links in the source tree are represented as "
+"symbolic links in the new tree and the metadata of the original links will "
+"be copied as far as the platform allows; if false, the contents and metadata "
+"of the linked files are copied to the new tree."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy_tree:11
+msgid ""
+"If *ignore* is set, then each path relative to *src* will be passed to this "
+"function; the function returns whether that path should be skipped."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy_tree:14
+msgid "the directory to copy"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy_tree:16 llnl.util.filesystem.install_tree:8
+msgid "the destination directory"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy_tree:18 llnl.util.filesystem.install_tree:10
+msgid "whether or not to preserve symlinks"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.copy_tree:20 llnl.util.filesystem.install_tree:12
+#: llnl.util.filesystem.traverse_tree:27
+msgid "function indicating which files to ignore"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.install_tree:1
+msgid "Recursively install an entire directory tree rooted at *src*."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.install_tree:3
+msgid ""
+"Same as :py:func:`copy_tree` with the addition of setting proper permissions "
+"on the installed files and directories."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.install_tree:6
+msgid "the directory to install"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.is_exe:1
+msgid "True if path is an executable file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.mkdirp:1
+msgid "Creates a directory, as well as parent directories if needed."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.mkdirp:3
+msgid "paths to create with mkdirp"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.mkdirp:7
+msgid "Keyword Aguments:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.mkdirp:7
+msgid "mode (permission bits or None, optional): optional permissions to"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.mkdirp:8
+msgid "set on the created directory -- use OS default if not provided"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.remove_dead_links:1
+msgid "Recursively removes any dead link that is present in root."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.remove_dead_links:3
+msgid "path where to search for dead links"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.remove_if_dead_link:1
+msgid "Removes the argument if it is a dead link."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.remove_if_dead_link:3
+msgid "The potential dead link"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.remove_linked_tree:1
+msgid "Removes a directory and its contents."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.remove_linked_tree:3
+msgid ""
+"If the directory is a symlink, follows the link and removes the real "
+"directory before removing the link."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.remove_linked_tree:6
+msgid "Directory to be removed"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.set_install_permissions:1
+msgid "Set appropriate permissions on the installed file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.touch:1
+msgid "Creates an empty file at the specified path."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.touchp:1
+msgid "Like ``touch``, but creates any parent directories needed for the file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.traverse_tree:1
+msgid "Traverse two filesystem trees simultaneously."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.traverse_tree:3
+msgid ""
+"Walks the LinkTree directory in pre or post order.  Yields each file in the "
+"source directory with a matching path from the dest directory, along with "
+"whether the file is a directory. e.g., for this tree::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.traverse_tree:15
+msgid "When called on dest, this yields::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.traverse_tree:24
+msgid ""
+"Whether to do pre- or post-order traversal. Accepted values are 'pre' and "
+"'post'"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.traverse_tree:29
+msgid ""
+"Whether to descend into directories in ``src`` that do not exit in ``dest``. "
+"Default is True"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring
+#: of llnl.util.filesystem.traverse_tree:32
+msgid "Whether to descend into symlinks in ``src``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.rst:31
+msgid "llnl.util.lang module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.HashableMap:1
+msgid "Bases: :class:`collections.abc.MutableMapping`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.HashableMap:1
+msgid ""
+"This is a hashable, comparable dictionary.  Hash is performed on a tuple of "
+"the values in the dictionary."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.HashableMap.copy:1
+msgid "Type-agnostic clone method.  Preserves subclass type."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.LazyReference:1
+msgid "Lazily evaluated reference to part of a singleton."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.ObjectWrapper:1
+msgid ""
+"Base class that wraps an object. Derived classes can add new behavior while "
+"staying undercover."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.ObjectWrapper:4
+msgid ""
+"This class is modeled after the stackoverflow answer: * http://stackoverflow."
+"com/a/1445289/771663"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.RequiredAttributeError:1
+msgid "Bases: :class:`ValueError`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.Singleton:1
+msgid "Simple wrapper for lazily initialized singleton objects."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.attr_required:1
+msgid "Ensure that a class has a required attribute."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.attr_setdefault:1
+msgid "Like dict.setdefault, but for objects."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.caller_locals:1
+msgid ""
+"This will return the locals of the *parent* of the caller. This allows a "
+"function to insert variables into its caller's scope.  Yes, this is some "
+"black magic, and yes it's useful for implementing things like depends_on and "
+"provides."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.check_kwargs:1
+msgid ""
+"Helper for making functions with kwargs.  Checks whether the kwargs are "
+"empty after all of them have been popped off.  If they're not, raises an "
+"error describing which kwargs are invalid."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.check_kwargs:5
+msgid "Example::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.classproperty:1
+msgid "Bases: :class:`property`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.classproperty:1
+msgid "classproperty decorator: like property but for classmethods."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.dedupe:1
+msgid "Yields a stable de-duplication of an hashable sequence"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.dedupe:3
+msgid "hashable sequence to be de-duplicated"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.dedupe:5
+msgid "stable de-duplication of the sequence"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.get_calling_module_name:1
+msgid ""
+"Make sure that the caller is a class definition, and return the enclosing "
+"module's name."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.in_function:1
+msgid ""
+"True if the caller was called from some function with the supplied Name, "
+"False otherwise."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.index_by:1
+msgid ""
+"Create a hierarchy of dictionaries by splitting the supplied set of objects "
+"on unique values of the supplied functions. Values are used as keys.  For "
+"example, suppose you have four objects with attributes that look like this::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.index_by:16
+msgid ""
+"``index1`` now has two levels of dicts, with lists at the leaves, like this::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.index_by:23
+msgid ""
+"And ``index2`` is a single level dictionary of lists that looks like this::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.index_by:31
+msgid ""
+"If any elemnts in funcs is a string, it is treated as the name of an "
+"attribute, and acts like getattr(object, name).  So shorthand for the above "
+"two indexes would be::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.index_by:38
+msgid "You can also index by tuples by passing tuples::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.index_by:42
+msgid "Keys in the resulting dict will look like ('gcc', 'bgqos_0')."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.key_ordering:1
+msgid ""
+"Decorates a class with extra methods that implement rich comparison "
+"operations and ``__hash__``.  The decorator assumes that the class "
+"implements a function called ``_cmp_key()``.  The rich comparison operations "
+"will compare objects using this key, and the ``__hash__`` function will "
+"return the hash of this key."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.key_ordering:7
+msgid ""
+"If a class already has ``__eq__``, ``__ne__``, ``__lt__``, ``__le__``, "
+"``__gt__``, or ``__ge__`` defined, this decorator will overwrite them."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.key_ordering:0 llnl.util.lang.load_module_from_file:0
+msgid "raises"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.key_ordering:10
+msgid ":exc:`TypeError` -- If the class does not have a ``_cmp_key`` method"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.list_modules:1
+msgid ""
+"Lists all of the modules, excluding ``__init__.py``, in a particular "
+"directory.  Listed packages have no particular order."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.load_module_from_file:1
+msgid "Loads a python module from the path of the corresponding file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.load_module_from_file:3
+msgid "namespace where the python module will be loaded, e.g. ``foo.bar``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.load_module_from_file:6
+msgid "path of the python file containing the module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.load_module_from_file:9
+msgid "A valid module object"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.load_module_from_file:11
+msgid ":exc:`ImportError` -- when the module can't be loaded"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.load_module_from_file:12
+msgid ":exc:`FileNotFoundError` -- when module_path doesn't exist"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.match_predicate:1
+msgid "Utility function for making string matching predicates."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.match_predicate:3
+msgid ""
+"Each arg can be a: * regex * list or tuple of regexes * predicate that takes "
+"a string."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.match_predicate:8
+msgid ""
+"This returns a predicate that is true if: * any arg regex matches * any "
+"regex in a list or tuple of regexes matches. * any predicate in args matches."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.memoized:1
+msgid ""
+"Decorator that caches the results of a function, storing them in an "
+"attribute of that function."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_date:1
+msgid "Convert a datetime or timestamp to a pretty, relative date."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_date:3
+msgid "date to print prettily"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_date:5
+msgid ""
+"dateimte for 'now', i.e. the date the pretty date is relative to (default is "
+"datetime.now())"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_date:9
+msgid ""
+"pretty string like 'an hour ago', 'Yesterday',     '3 months ago', 'just "
+"now', etc."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_date:11
+msgid "pretty string like 'an hour ago', 'Yesterday',"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_date:12
+msgid "'3 months ago', 'just now', etc."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_date:15
+msgid "Adapted from https://stackoverflow.com/questions/1551382."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_string_to_date:1
+msgid "Parses a string representing a date and returns a datetime object."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_string_to_date:3
+msgid ""
+"string representing a date. This string might be in different format (like "
+"``YYYY``, ``YYYY-MM``, ``YYYY-MM-DD``, ``YYYY-MM-DD HH:MM``, ``YYYY-MM-DD HH:"
+"MM:SS``) or be a *pretty date* (like ``yesterday`` or ``two months ago``)"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.pretty_string_to_date:9
+msgid "datetime object corresponding to ``date_str``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.union_dicts:1
+msgid "Use update() to combine all dicts into one."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.union_dicts:3
+msgid ""
+"This builds a new dictionary, into which we ``update()`` each element of "
+"``dicts`` in order.  Items from later dictionaries will override items from "
+"earlier dictionaries."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.union_dicts:7
+msgid "list of dictionaries"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.union_dicts:10
+msgid "Return: (dict): a merged dictionary containing combined keys and"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of
+#: llnl.util.lang.union_dicts:11
+msgid "values from ``dicts``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.rst:39
+msgid "llnl.util.link\\_tree module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree:1
+msgid "LinkTree class for setting up trees of symbolic links."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree:1
+msgid "Class to create trees of symbolic links from a source directory."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree:3
+msgid ""
+"LinkTree objects are constructed with a source root.  Their methods allow "
+"you to create and delete trees of symbolic links back to the source tree in "
+"specific destination directories. Trees comprise symlinks only to files; "
+"directries are never symlinked to, to prevent the source directory from ever "
+"being modified."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.find_conflict:1
+msgid "Returns the first file in dest that conflicts with src"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:2
+msgid "Link all files in src into dest, creating directories"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:2
+msgid "if necessary."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:4
+msgid "Keyword Args:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:7
+msgid "ignore_conflicts (bool): if True, do not break when the target exists;"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:7
+msgid "return a list of files that could not be linked"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:10
+msgid "ignore (callable): callable that returns True if a file is to be"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:10
+msgid "ignored in the merge (by default ignore nothing)"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:12
+msgid "link (callable): function to create links with (defaults to os.symlink)"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:14
+msgid "relative (bool): create all symlinks relative to the target"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.merge:15
+msgid "(default False)"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.unmerge:1
+msgid "Unlink all files in dest that exist in src."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring
+#: of llnl.util.link_tree.LinkTree.unmerge:3
+msgid "Unlinks directories in dest if they are empty."
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.rst:47
+msgid "llnl.util.lock module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock:1
+msgid "This is an implementation of a filesystem lock using Python's lockf."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock:3
+msgid ""
+"In Python, ``lockf`` actually calls ``fcntl``, so this should work with any "
+"filesystem implementation that supports locking through the fcntl calls.  "
+"This includes distributed filesystems like Lustre (when flock is enabled) "
+"and recent NFS versions."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock:8
+msgid ""
+"Note that this is for managing contention over resources *between* processes "
+"and not for managing contention between threads in a process: the functions "
+"of this object are not thread-safe. A process also must not maintain "
+"multiple locks on the same file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock.acquire_read:1
+msgid "Acquires a recursive, shared lock for reading."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock.acquire_read:3 llnl.util.lock.Lock.acquire_write:3
+msgid ""
+"Read and write locks can be acquired and released in arbitrary order, but "
+"the POSIX lock is held until all local read and write locks are released."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock.acquire_read:7 llnl.util.lock.Lock.acquire_write:7
+msgid ""
+"Returns True if it is the first acquire and actually acquires the POSIX "
+"lock, False if it is a nested transaction."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock.acquire_write:1
+msgid "Acquires a recursive, exclusive lock for writing."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock.release_read:1
+msgid "Releases a read lock."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock.release_read:3 llnl.util.lock.Lock.release_write:3
+msgid ""
+"Returns True if the last recursive lock was released, False if there are "
+"still outstanding locks."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock.release_read:6 llnl.util.lock.Lock.release_write:6
+msgid ""
+"Does limited correctness checking: if a read lock is released when none are "
+"held, this will raise an assertion error."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.Lock.release_write:1
+msgid "Releases a write lock."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockTransaction:1
+msgid "Simple nested transaction context manager that uses a file lock."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockTransaction:3
+msgid ""
+"This class can trigger actions when the lock is acquired for the first time "
+"and released for the last."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockTransaction:6
+msgid ""
+"If the ``acquire_fn`` returns a value, it is used as the return value for "
+"``__enter__``, allowing it to be passed as the ``as`` argument of a ``with`` "
+"statement."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockTransaction:10
+msgid ""
+"If ``acquire_fn`` returns a context manager, *its* ``__enter__`` function "
+"will be called in ``__enter__`` after ``acquire_fn``, and its ``__exit__`` "
+"funciton will be called before ``release_fn`` in ``__exit__``, allowing you "
+"to nest a context manager to be used along with the lock."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockTransaction:15
+msgid "Timeout for lock is customizable."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.WriteTransaction:1 llnl.util.lock.ReadTransaction:1
+msgid "Bases: :class:`llnl.util.lock.LockTransaction`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.WriteTransaction:1
+msgid "LockTransaction context manager that does a write and releases it."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.ReadTransaction:1
+msgid "LockTransaction context manager that does a read and releases it."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: llnl.util.tty.color.ColorParseError:1
+msgid "Bases: :class:`Exception`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockError:1
+msgid "Raised for any errors related to locks."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockTimeoutError:1 llnl.util.lock.LockPermissionError:1
+msgid "Bases: :class:`llnl.util.lock.LockError`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockTimeoutError:1
+msgid "Raised when an attempt to acquire a lock times out."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockPermissionError:1
+msgid "Raised when there are permission issues with a lock."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockROFileError:1 llnl.util.lock.CantCreateLockError:1
+msgid "Bases: :class:`llnl.util.lock.LockPermissionError`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.LockROFileError:1
+msgid "Tried to take an exclusive lock on a read-only file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of
+#: llnl.util.lock.CantCreateLockError:1
+msgid "Attempt to create a lock in an unwritable location."
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.rst:55
+msgid "llnl.util.multiproc module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/multiproc.py:docstring
+#: of llnl.util.multiproc:1
+msgid ""
+"This implements a parallel map operation but it can accept more values than "
+"multiprocessing.Pool.apply() can.  For example, apply() will fail to pickle "
+"functions if they're passed indirectly as parameters."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/multiproc.py:docstring
+#: of llnl.util.multiproc.Barrier:1
+msgid "Simple reusable semaphore barrier."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/multiproc.py:docstring
+#: of llnl.util.multiproc.Barrier:3
+msgid "Python 2.6 doesn't have multiprocessing barriers so we implement this."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/multiproc.py:docstring
+#: of llnl.util.multiproc.Barrier:5
+msgid "See http://greenteapress.com/semaphores/downey08semaphores.pdf, p. 41."
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:2
+msgid "llnl.util.tty package"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:8
+msgid "llnl.util.tty.colify module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify:1
+msgid ""
+"Routines for printing columnar output.  See ``colify()`` for more "
+"information."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colified:1
+msgid ""
+"Invokes the ``colify()`` function but returns the result as a string instead "
+"of writing it to an output string."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify:1
+msgid ""
+"Takes a list of elements as input and finds a good columnization of them, "
+"similar to how gnu ls does. This supports both uniform-width and variable-"
+"width (tighter) columns."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify:5
+msgid ""
+"If elts is not a list of strings, each element is first conveted using "
+"``str()``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify:8
+msgid "A file object to write to. Default is ``sys.stdout``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify:10
+msgid "Optionally indent all columns by some number of spaces"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify:12
+msgid "Spaces between columns. Default is 2"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify:14
+msgid "Width of the output. Default is 80 if tty not detected"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify:16
+msgid ""
+"Force number of columns. Default is to size to terminal, or single-column if "
+"no tty"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify:19
+msgid ""
+"Whether to attempt to write to a tty. Default is to autodetect a tty. Set to "
+"False to force single-column output"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify:23
+msgid ""
+"Method to use to fit columns. Options are variable or uniform. Variable-"
+"width columns are tighter, uniform columns are all the same width and fit "
+"less data on the screen"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify_table:1
+msgid "Version of ``colify()`` for data expressed in rows, (list of lists)."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.colify_table:3
+msgid ""
+"Same as regular colify but takes a list of lists, where each sub-list must "
+"be the same length, and each is interpreted as a row in a table.  Regular "
+"colify displays a sequential list of values in columns."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.config_uniform_cols:1
+msgid "Uniform-width column fitting algorithm."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.config_uniform_cols:3
+msgid ""
+"Determines the longest element in the list, and determines how many columns "
+"of that width will fit on screen.  Returns a corresponding column config."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.config_variable_cols:1
+msgid "Variable-width column fitting algorithm."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.config_variable_cols:3
+msgid ""
+"This function determines the most columns that can fit in the screen width.  "
+"Unlike uniform fitting, where all columns take the width of the longest "
+"element in the list, each column takes the width of its own longest element. "
+"This packs elements more efficiently on screen."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring
+#: of llnl.util.tty.colify.config_variable_cols:9
+msgid "If cols is nonzero, force"
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:16
+msgid "llnl.util.tty.color module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:1
+msgid ""
+"This file implements an expression syntax, similar to ``printf``, for adding "
+"ANSI colors to text."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:4
+msgid ""
+"See ``colorize()``, ``cwrite()``, and ``cprint()`` for routines that can "
+"generate colored output."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:7
+msgid ""
+"``colorize`` will take a string and replace all color expressions with ANSI "
+"control codes.  If the ``isatty`` keyword arg is set to False, then the "
+"color expressions will be converted to null strings, and the returned string "
+"will have no color."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:12
+msgid ""
+"``cwrite`` and ``cprint`` are equivalent to ``write()`` and ``print()`` "
+"calls in python, but they colorize their output.  If the ``stream`` argument "
+"is not supplied, they write to ``sys.stdout``."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:16
+msgid "Here are some example color expressions:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:19
+msgid "Expression"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:21
+msgid "@r"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:21
+msgid "Turn on red coloring"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:22
+msgid "@R"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:22
+msgid "Turn on bright red coloring"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:23
+msgid "@*{foo}"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:23
+msgid "Bold foo, but don't change text color"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:24
+msgid "@_{bar}"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:24
+msgid "Underline bar, but don't change text color"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:25
+msgid "@*b"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:25
+msgid "Turn on bold, blue text"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:26
+msgid "@_B"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:26
+msgid "Turn on bright blue text with an underline"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:27
+msgid "@."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:27
+msgid "Revert to plain formatting"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:28
+msgid "@*g{green}"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:28 llnl.util.tty.color:29
+msgid "Print out 'green' in bold, green text, then reset to plain."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:29
+msgid "@*ggreen@."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:32
+msgid "The syntax consists of:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:35
+msgid "color-expr"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:35
+msgid "'@' [style] color-code '{' text '}' | '@.' | '@@'"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:36
+msgid "style"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:36
+msgid "'*' | '_'"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:37
+msgid "color-code"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:37
+msgid "[krgybmcwKRGYBMCW]"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:38
+msgid "text"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:38
+msgid ".*"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:41
+msgid ""
+"'@' indicates the start of a color expression.  It can be followed by an "
+"optional * or _ that indicates whether the font should be bold or "
+"underlined.  If * or _ is not provided, the text will be plain.  Then an "
+"optional color code is supplied.  This can be [krgybmcw] or [KRGYBMCW], "
+"where the letters map to  black(k), red(r), green(g), yellow(y), blue(b), "
+"magenta(m), cyan(c), and white(w).  Lowercase letters denote normal ANSI "
+"colors and capital letters denote bright ANSI colors."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:49
+msgid ""
+"Finally, the color expression can be followed by text enclosed in {}.  If "
+"braces are present, only the text in braces is colored.  If the braces are "
+"NOT present, then just the control codes to enable the color will be output. "
+"The console can be reset later to plain text with '@.'."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color:54
+msgid "To output an @, use '@@'.  To output a } inside braces, use '}}'."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.ColorParseError:1
+msgid "Raised when a color format fails to parse."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cescape:1
+msgid "Escapes special characters needed for color codes."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cescape:3
+msgid "Replaces the following symbols with their equivalent literal forms:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cescape:6
+msgid "``@``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cescape:6
+msgid "``@@``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cescape:7
+msgid "``}``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cescape:7
+msgid "``}}``"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cescape:10
+msgid "the string to escape"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cescape:13
+msgid "the string with color codes escaped"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cextra:1
+msgid "Length of extra color characters in a string"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.clen:1
+msgid "Return the length of a string, excluding ansi color sequences."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.color_when:1
+msgid "Context manager to temporarily use a particular color setting."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.colorize:1
+msgid "Replace all color expressions in a string with ANSI control codes."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.colorize:3
+msgid "The string to replace"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.colorize:6
+msgid "The filtered string"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.colorize:9
+msgid ""
+"If False, output will be plain text without control codes, for output to non-"
+"console devices."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cprint:1
+msgid "Same as cwrite, but writes a trailing newline to the stream."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.cwrite:1
+msgid ""
+"Replace all color expressions in string with ANSI control codes and write "
+"the result to the stream.  If color is False, this will write plain text "
+"with no color.  If True, then it will always write colored output.  If not "
+"supplied, then it will be set based on stream.isatty()."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.get_color_when:1
+msgid "Return whether commands should print color or not."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.match_to_ansi.escape:1
+msgid "Returns a TTY escape sequence for a color"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.set_color_when:1
+msgid "Set when color should be applied.  Options are:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.set_color_when:3
+msgid "True or 'always': always print color"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.set_color_when:4
+msgid "False or 'never': never print color"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring
+#: of llnl.util.tty.color.set_color_when:5
+msgid "None or 'auto': only print color if sys.stdout is a tty."
+msgstr ""
+
+#: ../spack/lib/spack/docs/llnl.util.tty.rst:24
+msgid "llnl.util.tty.log module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log:1
+msgid "Utility classes for logging the output of blocks of code."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.Unbuffered:1
+msgid "Wrapper for Python streams that forces them to be unbuffered."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.Unbuffered:3
+msgid "This is implemented by forcing a flush after each write."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.keyboard_input:1
+msgid "Context manager to disable line editing and echoing."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.keyboard_input:3
+msgid "Use this with ``sys.stdin`` for keyboard input, e.g.::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.keyboard_input:9
+msgid ""
+"This disables canonical input so that keypresses are available on the stream "
+"immediately. Typically standard input allows line editing, which means "
+"keypresses won't be sent until the user hits return."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.keyboard_input:13
+msgid ""
+"It also disables echoing, so that keys pressed aren't printed to the "
+"terminal.  So, the user can hit, e.g., 'v', and it's read on the other end "
+"of the pipe immediately but not printed."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.keyboard_input:17
+msgid "When the with block completes, prior TTY settings are restored."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.keyboard_input:19
+msgid ""
+"Note: this depends on termios support.  If termios isn't available, or if "
+"the stream isn't a TTY, this context manager has no effect."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.log_output:1
+msgid "Context manager that logs its output to a file."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.log_output:3
+msgid "In the simplest case, the usage looks like this::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.log_output:8
+msgid ""
+"Any output from the with block will be redirected to ``logfile.txt``. If you "
+"also want the output to be echoed to ``stdout``, use the ``echo`` parameter::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.log_output:15
+msgid ""
+"And, if you just want to echo *some* stuff from the parent, use "
+"``force_echo``::"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.log_output:24
+msgid ""
+"Under the hood, we spawn a daemon and set up a pipe between this process and "
+"the daemon.  The daemon writes our output to both the file and to stdout (if "
+"echoing).  The parent process can communicate with the daemon to tell it "
+"when and when not to echo; this is what force_echo does.  You can also "
+"enable/disable echoing by typing 'v'."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.log_output:30
+msgid ""
+"We try to use OS-level file descriptors to do the redirection, but if stdout "
+"or stderr has been set to some Python-level file object, we use Python-level "
+"redirection instead.  This allows the redirection to work within test "
+"frameworks like nose and pytest."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring
+#: of llnl.util.tty.log.log_output.force_echo:1
+msgid "Context manager to force local echo, even if echo is off."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring
+#: of llnl.util.tty.SuppressOutput:1
+msgid "Class for disabling output in a scope using 'with' keyword"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring
+#: of llnl.util.tty.get_timestamp:1
+msgid "Get a string timestamp"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring
+#: of llnl.util.tty.hline:1
+msgid "Draw a labeled horizontal line."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring
+#: of llnl.util.tty.hline:3
+msgid "Char to draw the line with.  Default '-'"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring
+#: of llnl.util.tty.hline:5
+msgid "Maximum width of the line.  Default is 64 chars."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring
+#: of llnl.util.tty.process_stacktrace:1
+msgid "Gives file and line frame 'countback' frames from the bottom"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring
+#: of llnl.util.tty.terminal_size:1
+msgid "Gets the dimensions of the console: (rows, cols)."
+msgstr ""
+
 #: ../spack/lib/spack/docs/mirrors.rst:10
 msgid "Mirrors"
 msgstr ""
@@ -11906,10 +14043,6 @@ msgid ""
 "package author to decide what makes the most sense. Although you can use the "
 "commit hash as the version number, this is not recommended, as it won't sort "
 "properly."
-msgstr ""
-
-#: ../spack/lib/spack/docs/packaging_guide.rst:956
-msgid "Submodules"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:949
@@ -14653,10 +16786,6 @@ msgid ""
 "\\1``, ``\\2``, etc. to refer to capture groups in the regular expression.  "
 "If it is a callable, it is passed the Python ``MatchObject`` and should "
 "return a suitable replacement string for the particular match."
-msgstr ""
-
-#: ../spack/lib/spack/docs/packaging_guide.rst:3704
-msgid "Examples:"
 msgstr ""
 
 #: ../spack/lib/spack/docs/packaging_guide.rst:3706
