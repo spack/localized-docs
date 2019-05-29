@@ -35,7 +35,7 @@ Prerequisites
 
     ```console
     spack install
-    spack activate .
+    spack env activate .
     ```
 
     This will install the tools you need and put them in your `PATH`.
