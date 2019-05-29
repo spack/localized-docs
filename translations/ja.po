@@ -9980,7 +9980,7 @@ msgstr ""
 # 1ae54eebb0e14bc9b39e2612f7521c9e
 #: ../spack/lib/spack/docs/features.rst:8
 msgid "Feature Overview"
-msgstr ""
+msgstr "機能概要"
 
 # e79b5624e8a8447784701eac1e0a23b6
 #: ../spack/lib/spack/docs/features.rst:10
@@ -10107,7 +10107,7 @@ msgstr ""
 #: ../spack/lib/spack/docs/getting_started.rst:10
 #: ../spack/lib/spack/docs/tutorial_packaging.rst:33
 msgid "Getting Started"
-msgstr ""
+msgstr "はじめに"
 
 # acc3a53acffa48db92870097392298cd
 #: ../spack/lib/spack/docs/getting_started.rst:14
@@ -11582,6 +11582,8 @@ msgid ""
 "`These are docs for the Spack package manager. For sphere packing, see` "
 "`pyspack <https://pyspack.readthedocs.io>`_."
 msgstr ""
+"本サイトではSpackに関連する文書を公開しています。Sphere packing(球充填)については"
+" `pyspack <https://pyspack.readthedocs.io>`_ をご参照ください。"
 
 # 849fd98022dd4839980e1b79e0d72166
 #: ../spack/lib/spack/docs/index.rst:19
@@ -11594,6 +11596,13 @@ msgid ""
 "Spack is non-destructive: installing a new version does not break existing "
 "installations, so many configurations can coexist on the same system."
 msgstr ""
+"Spackは様々なプラットフォームやシステム環境にインストールされているソフトウェアの複数のバージョン、"
+"設定などを管理するために設計されています。Spackは、スーパーコンピュータシステムを運用するセンターなどでの"
+"利用を想定して設計しています。大規模なセンターなどでは、多くのユーザやチームがシステムにインストールされている"
+"ソフトウェアを利用したり、ソフトウェアを共有したりしていますが、それらは、様々のクラスタ上で標準的な"
+"ABI(Application Binary Interface)を持たないライブラリを利用しています。Spackを利用することで、"
+"新しいバージョンのソフトウェアをインストールしても既存の環境を破壊することなく、"
+"同じシステム上に多数の構成を共存させることができます。"
 
 # 0d78e17b892a483a9db9a2fe86d35455
 #: ../spack/lib/spack/docs/index.rst:28
@@ -11604,11 +11613,18 @@ msgid ""
 "Python, and specs allow package authors to maintain a single file for many "
 "different builds of the same package."
 msgstr ""
+"Spackがシンプルであることは、最も重要な点です。Spackユーザは、シンプルな文法で"
+"利用したいソフトウェアのバージョン、設定、オプション等を指定できます。また、Spackは、"
+"パッケージングを行うユーザにとってもシンプルです。パッケージファイルは"
+"純粋なPythonで記述されていて、多種多様なビルド方法を記載する場合でも、"
+"更新するのは単一のファイルです。"
+
 
 # f835d415a49649fcb1984a143d343de0
 #: ../spack/lib/spack/docs/index.rst:34
 msgid "See the :doc:`features` for examples and highlights."
 msgstr ""
+"使用例とハイライトについては、 :doc:`features` をご参照ください。"
 
 # bd04d080f6bc4f46976bb89b1540074b
 #: ../spack/lib/spack/docs/index.rst:36
@@ -11616,6 +11632,8 @@ msgid ""
 "Get spack from the `github repository <https://github.com/spack/spack>`_ and "
 "install your first package:"
 msgstr ""
+"以下の方法でSpackを `github <https://github.com/spack/spack>`_ から入手し、"
+"最初のパッケージをインストールしてみてください。"
 
 # 431d6d7bc9524c83b5e57d70d8887202
 #: ../spack/lib/spack/docs/index.rst:46
@@ -11623,6 +11641,8 @@ msgid ""
 "If you're new to spack and want to start using it, see :doc:"
 "`getting_started`, or refer to the full manual below."
 msgstr ""
+"Spackを利用するのが初めての場合は、 :doc:`getting_started` "
+"をご参照ください。もしくは、下記のマニュアルをご参照ください。"
 
 # 136c9dc0f7c04a72a5170850e1899f6f
 #: ../spack/lib/spack/docs/index.rst:50
