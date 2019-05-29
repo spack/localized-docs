@@ -1,1 +1,17 @@
-../../spack/lib/spack/docs/llnl.rst
+llnl package
+============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    llnl.util
+
+Module contents
+---------------
+
+.. automodule:: llnl
+    :members:
+    :undoc-members:
+    :show-inheritance:

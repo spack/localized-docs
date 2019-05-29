@@ -5,3 +5,11 @@ spack:
   - py-sphinxcontrib-programoutput
   - py-sphinx-rtd-theme
   - py-python-levenshtein
+  - libffi
+  config: {}
+  mirrors: {}
+  modules:
+    enable: []
+  packages: {}
+  repos: []
+  upstreams: {}

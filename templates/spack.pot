@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-27 13:44-0700\n"
+"POT-Creation-Date: 2019-05-30 04:40+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package_prefs.py:docstring of spack.package_prefs.PackagePrefs:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/parse.py:docstring of spack.parse.Lexer:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/parse.py:docstring of spack.parse.Parser:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/parse.py:docstring of spack.parse.Token:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/patch.py:docstring of spack.patch.Patch:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/patch.py:docstring of spack.patch.PatchCache:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/provider_index.py:docstring of spack.provider_index.ProviderIndex:1
@@ -73,7 +72,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/reporter.py:docstring of spack.reporter.Reporter:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/resource.py:docstring of spack.resource.Resource:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec.py:docstring of spack.spec.Spec:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec_set.py:docstring of spack.spec_set.CombinatorialSpecSet:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/stage.py:docstring of spack.stage.DIYStage:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/stage.py:docstring of spack.stage.Stage:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/store.py:docstring of spack.store.Store:1
@@ -312,7 +310,7 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/binary_distribution.py:docstring of spack.binary_distribution.NoOverwriteException:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/error.py:docstring of spack.error.SpackError:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/main.py:docstring of spack.main.SpackCommandError:1
-msgid "Bases: :class:`Exception`"
+msgid "Bases: :class:`exceptions.Exception`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/binary_distribution.py:docstring of spack.binary_distribution.NoOverwriteException:1
@@ -671,14 +669,10 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.CacheURLFetchStrategy.fetch:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.FetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.FetchStrategy.fetch:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.GitFetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.GitFetchStrategy.fetch:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.GoFetchStrategy.fetch:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.HgFetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.HgFetchStrategy.fetch:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.SvnFetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.SvnFetchStrategy.fetch:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.URLFetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.URLFetchStrategy.fetch:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.from_kwargs:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package.py:docstring of spack.package.PackageBase.all_urls:0
@@ -747,14 +741,10 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.CacheURLFetchStrategy.fetch:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.FetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.FetchStrategy.fetch:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.GitFetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.GitFetchStrategy.fetch:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.GoFetchStrategy.fetch:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.HgFetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.HgFetchStrategy.fetch:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.SvnFetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.SvnFetchStrategy.fetch:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.URLFetchStrategy.cachable:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.URLFetchStrategy.fetch:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.from_kwargs:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package.py:docstring of spack.package.PackageBase.all_urls:0
@@ -1754,17 +1744,14 @@ msgid "Creates the installation directory for a spec."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directory_layout.py:docstring of spack.directory_layout.DirectoryLayout.hidden_file_paths:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directory_layout.py:docstring of spack.directory_layout.YamlDirectoryLayout.hidden_file_paths:1
 msgid "Return a list of hidden files used by the directory layout."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directory_layout.py:docstring of spack.directory_layout.DirectoryLayout.hidden_file_paths:3
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directory_layout.py:docstring of spack.directory_layout.YamlDirectoryLayout.hidden_file_paths:3
 msgid "Paths are relative to the root of an install directory."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directory_layout.py:docstring of spack.directory_layout.DirectoryLayout.hidden_file_paths:5
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directory_layout.py:docstring of spack.directory_layout.YamlDirectoryLayout.hidden_file_paths:5
 msgid "If the directory layout uses no hidden files to maintain state, this should return an empty container, e.g. [] or (,)."
 msgstr ""
 
@@ -2558,26 +2545,14 @@ msgid "For downloaded files, this should preserve the checksum of the original f
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.FetchStrategy.cachable:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.GitFetchStrategy.cachable:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.HgFetchStrategy.cachable:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.SvnFetchStrategy.cachable:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.URLFetchStrategy.cachable:1
 msgid "Whether fetcher is capable of caching the resource it retrieves."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.FetchStrategy.cachable:3
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.GitFetchStrategy.cachable:3
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.HgFetchStrategy.cachable:3
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.SvnFetchStrategy.cachable:3
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.URLFetchStrategy.cachable:3
 msgid "This generally is determined by whether the resource is identifiably associated with a specific package version."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.FetchStrategy.cachable:6
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.GitFetchStrategy.cachable:6
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.HgFetchStrategy.cachable:6
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.SvnFetchStrategy.cachable:6
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring of spack.fetch_strategy.URLFetchStrategy.cachable:6
 msgid "True if can cache, False otherwise."
 msgstr ""
 
@@ -4880,7 +4855,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/repo.py:docstring of spack.repo.FastPackageChecker:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/repo.py:docstring of spack.repo.TagIndex:1
-msgid "Bases: :class:`collections.abc.Mapping`"
+msgid "Bases: :class:`_abcoll.Mapping`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/repo.py:docstring of spack.repo.FastPackageChecker:1
@@ -6711,7 +6686,7 @@ msgid "A variant that can hold either True or False."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of spack.variant.DisjointSetsOfValues:1
-msgid "Bases: :class:`collections.abc.Sequence`"
+msgid "Bases: :class:`_abcoll.Sequence`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of spack.variant.DisjointSetsOfValues:1
@@ -6772,7 +6747,7 @@ msgid "Returns true if ``other.name == self.name`` and ``other.value`` is a stri
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of spack.variant.MultipleValuesInExclusiveVariantError:1
-msgid "Bases: :class:`spack.error.SpecError`, :class:`ValueError`"
+msgid "Bases: :class:`spack.error.SpecError`, :class:`exceptions.ValueError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of spack.variant.MultipleValuesInExclusiveVariantError:1
