@@ -47,7 +47,7 @@ apidoc_dir = spack/lib/spack/spack
 # Definitions of lists of important filenames per the above description
 # ----------------------------------------------------------------------
 # command to run sphinx-apidoc (add -n for dry run)
-apidoc_cmd = sphinx-apidoc -o $(source_dir) $(apidoc_dir) "*_spack_root*"
+apidoc_cmd = sphinx-apidoc --no-toc -o $(source_dir) $(apidoc_dir) "*_spack_root*"
 
 # command to symlink doc trees into place
 link_docs_cmd = spack/bin/spack python scripts/link-docs.py
@@ -64,7 +64,7 @@ sources = $(filter-out $(generated_sources),$(wildcard $(source_dir)/*.rst))
 all_sources = $(sort $(sources) $(generated_sources))
 
 # base names of rst files
-basenames = $(basename $(notdir $(sources)))
+basenames = $(basename $(notdir $(all_sources)))
 
 # template file names (there is one of these per initial .rst file)
 pot_files = $(addprefix templates/,$(addsuffix .pot,$(basenames)))
@@ -108,7 +108,7 @@ templates/%.pot: $(source_dir)/%.rst
 gettext: $(merged_pot)
 $(merged_pot): $(pot_files)
 	@echo MERGE $@
-	@msgcat -o $@ $^
+	msgcat -o $@ $^
 	@sed -i~ 's/Report-Msgid-Bugs-To: [^"]*/Report-Msgid-Bugs-To: maintainers@spack.io\\n/' $@
 
 # Make language-specific .po files from the merged pot file
@@ -118,7 +118,7 @@ translations/%.po: $(merged_pot)
 	@echo UPDATE $@
 	@mkdir -p $(dir $@)
 	@if [ ! -f $@ ] ; then msginit --no-translator -i $< -o $@ -l $*; fi
-	@msgmerge -q --previous -U $@ $<
+	@msgmerge -q --no-fuzzy-matching --previous -U $@ $<
 
 # These are all symlinks to merged po files -- we do them per-file so
 # Sphinx can use them

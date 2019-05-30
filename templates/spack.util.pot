@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-30 04:40+0900\n"
+"POT-Creation-Date: 2019-05-29 23:11-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1163,8 +1163,12 @@ msgstr ""
 msgid "spack.util.web module"
 msgstr ""
 
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of spack.util.web.HTMLParseError:1
+msgid "Bases: :class:`Exception`"
+msgstr ""
+
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of spack.util.web.LinkParser:1
-msgid "Bases: :class:`HTMLParser.HTMLParser`"
+msgid "Bases: :class:`html.parser.HTMLParser`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of spack.util.web.LinkParser:1
@@ -1180,6 +1184,10 @@ msgstr ""
 msgid "Raised when an operation can't get an internet connection."
 msgstr ""
 
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonContext:1
+msgid "Bases: :class:`multiprocessing.context.ForkContext`"
+msgstr ""
+
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonPool:1
 msgid "Bases: :class:`multiprocessing.pool.Pool`"
 msgstr ""
@@ -1189,11 +1197,15 @@ msgid "Pool that uses non-daemon processes"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonProcess:1
-msgid "Bases: :class:`multiprocessing.process.Process`"
+msgid "Bases: :class:`multiprocessing.context.Process`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonProcess:1
 msgid "Process tha allows sub-processes, so pools can have sub-pools."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of spack.util.web.NonDaemonProcess.daemon:1
+msgid "Return whether process is a daemon"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of spack.util.web.SpackWebError:1
