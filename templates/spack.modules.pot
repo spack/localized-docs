@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-29 23:11-0500\n"
+"POT-Creation-Date: 2019-05-31 01:33+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,7 +198,7 @@ msgid "if True it is fine to overwrite an already existing file. If False the op
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/common.py:docstring of spack.modules.common.DefaultTemplateNotDefined:1
-msgid "Bases: :class:`AttributeError`, :class:`spack.modules.common.ModulesError`"
+msgid "Bases: :class:`exceptions.AttributeError`, :class:`spack.modules.common.ModulesError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/common.py:docstring of spack.modules.common.DefaultTemplateNotDefined:1
@@ -226,7 +226,7 @@ msgid "Base error for modules."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/common.py:docstring of spack.modules.common.ModulesTemplateNotFoundError:1
-msgid "Bases: :class:`spack.modules.common.ModulesError`, :class:`RuntimeError`"
+msgid "Bases: :class:`spack.modules.common.ModulesError`, :class:`exceptions.RuntimeError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/common.py:docstring of spack.modules.common.ModulesTemplateNotFoundError:1
@@ -421,7 +421,7 @@ msgid "spack.modules.lmod module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.CoreCompilersNotFoundError:1
-msgid "Bases: :class:`spack.error.SpackError`, :class:`KeyError`"
+msgid "Bases: :class:`spack.error.SpackError`, :class:`exceptions.KeyError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.CoreCompilersNotFoundError:1
@@ -554,7 +554,7 @@ msgid "Writer class for lmod module files."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.NonVirtualInHierarchyError:1
-msgid "Bases: :class:`spack.error.SpackError`, :class:`TypeError`"
+msgid "Bases: :class:`spack.error.SpackError`, :class:`exceptions.TypeError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring of spack.modules.lmod.NonVirtualInHierarchyError:1
