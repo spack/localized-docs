@@ -64,27 +64,31 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/basic_usage.rst:10
 msgid "Basic Usage"
-msgstr ""
+msgstr "Utilisation élémentaire"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:12
 msgid ""
 "The ``spack`` command has many *subcommands*.  You'll only need a small "
 "subset of them for typical usage."
 msgstr ""
+"La commande ``spack`` a beaucoup de *sous-commands*. Vous n'aurez besoin "
+"que d'un petit sous-ensemble d'entre elles pour un usage classique."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:15
 msgid ""
 "Note that Spack colorizes output.  ``less -R`` should be used with Spack to "
 "maintain this colorization.  E.g.:"
 msgstr ""
+"Remarquez que Spack colorise ses sorties. ``less -R`` devra être utilisé avec "
+"Spack pour garder la colorisation. E.g. : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:22
 msgid "It is recommended that the following be put in your ``.bashrc`` file:"
-msgstr ""
+msgstr "Il est recommandé de mettre ce qui suit dans son fichier ``.bashrc`` :"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:30
 msgid "Listing available packages"
-msgstr ""
+msgstr "Obtenir la liste des paquetages disponibles"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:32
 msgid ""
@@ -92,16 +96,22 @@ msgid ""
 "available.  You can see a list of available package names at the :ref:"
 "`package-list` webpage, or using the ``spack list`` command."
 msgstr ""
+"Pour installer un logiciel avec Spack, vous avez besoin de savoir quel "
+"logiciel est disponible. Vous trouverez une liste des noms des paquetages "
+"disponibles sur cette page :ref:`package-list`, ou vous pouvez utiliser "
+"la commande ``spack list``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:40
 msgid "``spack list``"
-msgstr ""
+msgstr "``spack list``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:42
 msgid ""
 "The ``spack list`` command prints out a list of all of the packages Spack "
 "can install:"
 msgstr ""
+"La commande ``spack list`` affiche sur la sortie standard une list de tous les "
+"paquetages que Spack peut installer."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:48
 msgid ""
