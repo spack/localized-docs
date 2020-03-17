@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-31 01:33+0900\n"
+"POT-Creation-Date: 2020-03-17 09:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,7 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/link_tree.py:docstring of llnl.util.link_tree.LinkTree:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of llnl.util.lock.Lock:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of llnl.util.lock.LockTransaction:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/multiproc.py:docstring of llnl.util.multiproc.Barrier:1
 msgid "Bases: :class:`object`"
 msgstr ""
 
@@ -102,7 +103,7 @@ msgid "Convenience class for calling ``filter_file`` a lot."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring of llnl.util.filesystem.FileList:1
-msgid "Bases: :class:`_abcoll.Sequence`"
+msgid "Bases: :class:`collections.abc.Sequence`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/filesystem.py:docstring of llnl.util.filesystem.FileList:1
@@ -742,7 +743,7 @@ msgid "llnl.util.lang module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.HashableMap:1
-msgid "Bases: :class:`_abcoll.MutableMapping`"
+msgid "Bases: :class:`collections.abc.MutableMapping`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.HashableMap:1
@@ -766,7 +767,7 @@ msgid "This class is modeled after the stackoverflow answer: * http://stackoverf
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.RequiredAttributeError:1
-msgid "Bases: :class:`exceptions.ValueError`"
+msgid "Bases: :class:`ValueError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.Singleton:1
@@ -855,11 +856,11 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.key_ordering:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.load_module_from_file:0
-msgid "raises"
+msgid "Raises"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.key_ordering:10
-msgid ":exc:`TypeError` -- If the class does not have a ``_cmp_key`` method"
+msgid "If the class does not have a ``_cmp_key`` method"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.list_modules:1
@@ -883,11 +884,11 @@ msgid "A valid module object"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.load_module_from_file:11
-msgid ":exc:`ImportError` -- when the module can't be loaded"
+msgid "when the module can't be loaded"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.load_module_from_file:12
-msgid ":exc:`FileNotFoundError` -- when module_path doesn't exist"
+msgid "when module_path doesn't exist"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lang.py:docstring of llnl.util.lang.match_predicate:1
@@ -1120,7 +1121,7 @@ msgid "LockTransaction context manager that does a read and releases it."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of llnl.util.lock.LockError:1
-msgid "Bases: :class:`exceptions.Exception`"
+msgid "Bases: :class:`Exception`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/lock.py:docstring of llnl.util.lock.LockError:1

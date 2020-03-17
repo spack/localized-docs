@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-31 01:33+0900\n"
+"POT-Creation-Date: 2020-03-17 09:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,16 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify:1
 msgid "Routines for printing columnar output.  See ``colify()`` for more information."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.ColumnConfig:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.ColorStream:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.match_to_ansi:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.Unbuffered:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.keyboard_input:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/__init__.py:docstring of llnl.util.tty.SuppressOutput:1
+msgid "Bases: :class:`object`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/colify.py:docstring of llnl.util.tty.colify.colified:1
@@ -256,19 +266,11 @@ msgid "To output an @, use '@@'.  To output a } inside braces, use '}}'."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.ColorParseError:1
-msgid "Bases: :class:`exceptions.Exception`"
+msgid "Bases: :class:`Exception`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.ColorParseError:1
 msgid "Raised when a color format fails to parse."
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.ColorStream:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.match_to_ansi:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.Unbuffered:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.keyboard_input:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/log.py:docstring of llnl.util.tty.log.log_output:1
-msgid "Bases: :class:`object`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/llnl/util/tty/color.py:docstring of llnl.util.tty.color.cescape:1

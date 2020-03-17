@@ -1956,28 +1956,6 @@ msgid ""
 "Spack will allow the OS default behavior to go as expected."
 msgstr ""
 
-# 2d7bbe5fede742259395f155a0c81d9c
-#: ../spack/lib/spack/docs/build_systems.rst:11
-msgid "Build Systems"
-msgstr ""
-
-# 1339b47877a946bca21a35b3c862ed54
-#: ../spack/lib/spack/docs/build_systems.rst:13
-msgid ""
-"Spack defines a number of classes which understand how to use common `build "
-"systems  <https://en.wikipedia.org/wiki/List_of_build_automation_software>`_ "
-"(Makefiles, CMake, etc.). Spack package definitions can inherit these "
-"classes in order to streamline their builds."
-msgstr ""
-
-# 3978aac69df0414c8c089892027849a2
-#: ../spack/lib/spack/docs/build_systems.rst:18
-msgid ""
-"This guide provides information specific to each particular build system. It "
-"assumes that you've read the :ref:`packaging-guide` and expands on these "
-"ideas for each distinct build system that Spack supports:"
-msgstr ""
-
 # 65af1c7bfb334100be52e5a75bb1c1e1
 #: ../spack/lib/spack/docs/build_systems.rst:22
 msgid "Make-based"
@@ -2001,6 +1979,28 @@ msgstr ""
 # 6ab6d0d1706e4d36b345e1e8447be7cb
 #: ../spack/lib/spack/docs/build_systems.rst:54
 msgid "Other"
+msgstr ""
+
+# 2d7bbe5fede742259395f155a0c81d9c
+#: ../spack/lib/spack/docs/build_systems.rst:11
+msgid "Build Systems"
+msgstr ""
+
+# 1339b47877a946bca21a35b3c862ed54
+#: ../spack/lib/spack/docs/build_systems.rst:13
+msgid ""
+"Spack defines a number of classes which understand how to use common `build "
+"systems  <https://en.wikipedia.org/wiki/List_of_build_automation_software>`_ "
+"(Makefiles, CMake, etc.). Spack package definitions can inherit these "
+"classes in order to streamline their builds."
+msgstr ""
+
+# 3978aac69df0414c8c089892027849a2
+#: ../spack/lib/spack/docs/build_systems.rst:18
+msgid ""
+"This guide provides information specific to each particular build system. It "
+"assumes that you've read the :ref:`packaging-guide` and expands on these "
+"ideas for each distinct build system that Spack supports:"
 msgstr ""
 
 # f20363e471b341b8ba9ea70ea51a86ab
@@ -4157,8 +4157,8 @@ msgstr ""
 # 979e231d7c3d42cb9308f130f5894966
 #: ../spack/lib/spack/docs/build_systems/intelpackage.rst:748
 msgid ""
-"The ``--debug`` option can also be useful while installing client packages `"
-"(see below) <Using Intel tools in Spack to install client packages_>`_ to "
+"The ``--debug`` option can also be useful while installing client packages "
+"`(see below) <Using Intel tools in Spack to install client packages_>`_ to "
 "confirm the integration of the Intel tools in Spack, notably MKL and MPI."
 msgstr ""
 
@@ -6796,10 +6796,10 @@ msgid ""
 "*not* being exposed to the user. When a user calls ``library(foo)`` s/he "
 "*attaches* package ``foo`` and all of the packages under ``Depends``. Any "
 "function in one of these package can be called directly as ``bar()``. If "
-"there are conflicts, user can also specify ``pkgA::bar()`` and ``pkgB::bar()"
-"`` to distinguish between them. Historically, there was only ``Depends`` and "
-"``Suggests``, hence the confusing names. Today, maybe ``Depends`` would have "
-"been named ``Attaches``."
+"there are conflicts, user can also specify ``pkgA::bar()`` and ``pkgB::"
+"bar()`` to distinguish between them. Historically, there was only "
+"``Depends`` and ``Suggests``, hence the confusing names. Today, maybe "
+"``Depends`` would have been named ``Attaches``."
 msgstr ""
 
 # 5b303cf7527448bf9beb3557d5d23cf3
@@ -16274,8 +16274,8 @@ msgstr ""
 # 2504b7ef5d294f6bb32d87d6b0780a57
 #: ../spack/lib/spack/docs/getting_started.rst:983
 msgid ""
-"Spack may also encounter bootstrapping problems inside a package's ``install"
-"()`` method.  In this case, Spack will normally be running inside a "
+"Spack may also encounter bootstrapping problems inside a package's "
+"``install()`` method.  In this case, Spack will normally be running inside a "
 "*sanitized build environment*.  This includes all of the package's "
 "dependencies, but none of the environment Spack inherited from the user: if "
 "you load a module or modify ``$PATH`` before launching Spack, it will have "
@@ -16649,6 +16649,26 @@ msgid ""
 "treat a linux container on a Cray system as a base linux distro."
 msgstr ""
 
+# 136c9dc0f7c04a72a5170850e1899f6f
+#: ../spack/lib/spack/docs/index.rst:50
+msgid "Basics"
+msgstr "全般"
+
+# 757992f76cc9453382122f1dd3062f43
+#: ../spack/lib/spack/docs/index.rst:61
+msgid "Reference"
+msgstr "リファレンス"
+
+# 54f854e6b59e4c5d89d2cf858f91a8a1
+#: ../spack/lib/spack/docs/index.rst:77
+msgid "Contributing"
+msgstr "貢献"
+
+# 86f20446a35c4744b77a25d2ec46dfa6
+#: ../spack/lib/spack/docs/index.rst:87
+msgid "API Docs"
+msgstr "APIドキュメント"
+
 # b3947e721c2a40899614f88bb5ef99bd
 #: ../spack/lib/spack/docs/index.rst:13
 msgid "Spack"
@@ -16721,26 +16741,6 @@ msgid ""
 msgstr ""
 "Spackを利用するのが初めての場合は、 :doc:`getting_started` をご参照ください。"
 "もしくは、下記のマニュアルをご参照ください。"
-
-# 136c9dc0f7c04a72a5170850e1899f6f
-#: ../spack/lib/spack/docs/index.rst:50
-msgid "Basics"
-msgstr "全般"
-
-# 757992f76cc9453382122f1dd3062f43
-#: ../spack/lib/spack/docs/index.rst:61
-msgid "Reference"
-msgstr "リファレンス"
-
-# 54f854e6b59e4c5d89d2cf858f91a8a1
-#: ../spack/lib/spack/docs/index.rst:77
-msgid "Contributing"
-msgstr "貢献"
-
-# 86f20446a35c4744b77a25d2ec46dfa6
-#: ../spack/lib/spack/docs/index.rst:87
-msgid "API Docs"
-msgstr "APIドキュメント"
 
 # 38ccfc7258cd4f4898fb49d731354a59
 #: ../spack/lib/spack/docs/index.rst:96
@@ -18478,10 +18478,10 @@ msgstr ""
 msgid ""
 "You'll notice that OpenMPI's ``url_for_version()`` function makes use of a "
 "special ``Version`` function called ``up_to()``. When you call ``version."
-"up_to(2)`` on a version like ``1.10.0``, it returns ``1.10``. ``version.up_to"
-"(1)`` would return ``1``. This can be very useful for packages that place "
-"all ``X.Y.*`` versions in a single directory and then places all ``X.Y.Z`` "
-"versions in a sub-directory."
+"up_to(2)`` on a version like ``1.10.0``, it returns ``1.10``. ``version."
+"up_to(1)`` would return ``1``. This can be very useful for packages that "
+"place all ``X.Y.*`` versions in a single directory and then places all ``X.Y."
+"Z`` versions in a sub-directory."
 msgstr ""
 
 # 7d2006c7191f42f697ef870f9a119ef0
@@ -18607,13 +18607,13 @@ msgstr ""
 # d6afdc5e5af84c57bc55574648cf1209
 #: ../spack/lib/spack/docs/packaging_guide.rst:532
 msgid ""
-"If your package does not contain a package-level ``url`` or ``url_for_version"
-"()``, Spack can determine which URL to download from even if only some of "
-"the versions specify their own ``url``. Spack will use the nearest URL "
-"*before* the requested version. This is useful for packages that have an "
-"easy to extrapolate URL, but keep changing their URL format every few "
-"releases. With this method, you only need to specify the ``url`` when the "
-"URL changes."
+"If your package does not contain a package-level ``url`` or "
+"``url_for_version()``, Spack can determine which URL to download from even "
+"if only some of the versions specify their own ``url``. Spack will use the "
+"nearest URL *before* the requested version. This is useful for packages that "
+"have an easy to extrapolate URL, but keep changing their URL format every "
+"few releases. With this method, you only need to specify the ``url`` when "
+"the URL changes."
 msgstr ""
 
 # 5365397d778a4d17b1fe0a5bf01c7f6b
@@ -19970,9 +19970,9 @@ msgstr ""
 #: ../spack/lib/spack/docs/packaging_guide.rst:1761
 msgid ""
 "The first make will run in parallel here, but the second will not.  If you "
-"set ``parallel`` to ``False`` at the package level, then each call to ``make"
-"()`` will be sequential by default, but packagers can call ``make"
-"(parallel=True)`` to override it."
+"set ``parallel`` to ``False`` at the package level, then each call to "
+"``make()`` will be sequential by default, but packagers can call "
+"``make(parallel=True)`` to override it."
 msgstr ""
 
 # 17c4beefde064e51b6180c03879d12e4
@@ -20413,8 +20413,8 @@ msgstr ""
 #: ../spack/lib/spack/docs/packaging_guide.rst:2167
 msgid ""
 "You can call *either* ``depends_on`` or ``extends`` on any one package, but "
-"not both.  For example you cannot both ``depends_on('python')`` and ``extends"
-"(python)`` in the same package.  ``extends`` implies ``depends_on``."
+"not both.  For example you cannot both ``depends_on('python')`` and "
+"``extends(python)`` in the same package.  ``extends`` implies ``depends_on``."
 msgstr ""
 
 # 4c97ac0ceeac494ba4960160b38fb210
@@ -21376,8 +21376,8 @@ msgstr ""
 #: ../spack/lib/spack/docs/packaging_guide.rst:2832
 msgid ""
 "Sometimes you don't want a package to successfully install unless some "
-"condition is true.  You can explicitly cause the build to fail from ``install"
-"()`` by raising an ``InstallError``, for example:"
+"condition is true.  You can explicitly cause the build to fail from "
+"``install()`` by raising an ``InstallError``, for example:"
 msgstr ""
 
 # 0352aa37911f4b63a2f5b07fc55ab773
@@ -21472,8 +21472,8 @@ msgid ""
 "Individual packages may also define their own ``flag_handler`` methods. The "
 "``flag_handler`` method takes the package instance (``self``), the name of "
 "the flag, and a list of the values of the flag. It will be called on each of "
-"the six compiler flags supported in Spack. It should return a triple of ``"
-"(injf, envf, bsf)`` where ``injf`` is a list of flags to inject via the "
+"the six compiler flags supported in Spack. It should return a triple of "
+"``(injf, envf, bsf)`` where ``injf`` is a list of flags to inject via the "
 "Spack compiler wrappers, ``envf`` is a list of flags to set in the "
 "appropriate environment variables, and ``bsf`` is a list of flags to pass to "
 "the build system as arguments."
@@ -21518,18 +21518,18 @@ msgstr ""
 #: ../spack/lib/spack/docs/packaging_guide.rst:2970
 msgid ""
 "Because these methods can pass values through environment variables, it is "
-"important not to override these variables unnecessarily (E.g. setting ``env"
-"['CFLAGS']``) in other package methods when using non-default flag handlers. "
-"In the ``setup_environment`` and ``setup_dependent_environment`` methods, "
-"use the ``append_flags`` method of the ``EnvironmentModifications`` class to "
-"append values to a list of flags whenever the flag handler is ``env_flags``. "
-"If the package passes flags through the environment or the build system "
-"manually (in the install method, for example), we recommend using the "
-"default flag handler, or removing manual references and implementing a "
-"custom flag handler method that adds the desired flags to export as "
-"environment variables or pass to the build system. Manual flag passing is "
-"likely to interfere with the ``env_flags`` and ``build_system_flags`` "
-"methods."
+"important not to override these variables unnecessarily (E.g. setting "
+"``env['CFLAGS']``) in other package methods when using non-default flag "
+"handlers. In the ``setup_environment`` and ``setup_dependent_environment`` "
+"methods, use the ``append_flags`` method of the ``EnvironmentModifications`` "
+"class to append values to a list of flags whenever the flag handler is "
+"``env_flags``. If the package passes flags through the environment or the "
+"build system manually (in the install method, for example), we recommend "
+"using the default flag handler, or removing manual references and "
+"implementing a custom flag handler method that adds the desired flags to "
+"export as environment variables or pass to the build system. Manual flag "
+"passing is likely to interfere with the ``env_flags`` and "
+"``build_system_flags`` methods."
 msgstr ""
 
 # f2fa3fffa56c42439ace01e20137ce4d
@@ -23990,10 +23990,14 @@ msgstr ""
 #: spack.fetch_strategy.CacheURLFetchStrategy.fetch:0
 #: spack.fetch_strategy.FetchStrategy.cachable:0
 #: spack.fetch_strategy.FetchStrategy.fetch:0
+#: spack.fetch_strategy.GitFetchStrategy.cachable:0
 #: spack.fetch_strategy.GitFetchStrategy.fetch:0
 #: spack.fetch_strategy.GoFetchStrategy.fetch:0
+#: spack.fetch_strategy.HgFetchStrategy.cachable:0
 #: spack.fetch_strategy.HgFetchStrategy.fetch:0
+#: spack.fetch_strategy.SvnFetchStrategy.cachable:0
 #: spack.fetch_strategy.SvnFetchStrategy.fetch:0
+#: spack.fetch_strategy.URLFetchStrategy.cachable:0
 #: spack.fetch_strategy.URLFetchStrategy.fetch:0
 #: spack.fetch_strategy.from_kwargs:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package.py:docstring
@@ -24038,6 +24042,8 @@ msgstr ""
 #: spack.version.Version.up_to:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring
 #: spack.util.imp.imp_importer.load_source:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: spack.util.imp.importlib_importer.load_source:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/environment.py:docstring
 #: spack.util.environment.EnvironmentModifications.from_sourcing_file:0
 #: spack.util.environment.EnvironmentModifications.group_by_name:0
@@ -24100,8 +24106,7 @@ msgstr ""
 #: spack.cmd.common.arguments.add_common_arguments:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/buildcache.py:docstring
 #: spack.cmd.buildcache.find_matching_specs:0
-#: spack.cmd.buildcache.match_downloaded_specs:0
-#: spack.cmd.buildcache.preview:0
+#: spack.cmd.buildcache.match_downloaded_specs:0 spack.cmd.buildcache.preview:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
 #: spack.cmd.create.get_build_system:0 spack.cmd.create.get_name:0
 #: spack.cmd.create.get_repository:0 spack.cmd.create.get_url:0
@@ -24116,14 +24121,13 @@ msgstr ""
 #: spack.cmd.release_jobs.stage_spec_jobs:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/uninstall.py:docstring
 #: spack.cmd.uninstall.dependent_environments:0
-#: spack.cmd.uninstall.do_uninstall:0
-#: spack.cmd.uninstall.find_matching_specs:0
+#: spack.cmd.uninstall.do_uninstall:0 spack.cmd.uninstall.find_matching_specs:0
 #: spack.cmd.uninstall.inactive_dependent_environments:0
 #: spack.cmd.uninstall.installed_dependents:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/url.py:docstring
-#: spack.cmd.url.name_parsed_correctly:0
-#: spack.cmd.url.print_name_and_version:0 spack.cmd.url.remove_separators:0
-#: spack.cmd.url.url_list_parsing:0 spack.cmd.url.version_parsed_correctly:0
+#: spack.cmd.url.name_parsed_correctly:0 spack.cmd.url.print_name_and_version:0
+#: spack.cmd.url.remove_separators:0 spack.cmd.url.url_list_parsing:0
+#: spack.cmd.url.version_parsed_correctly:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/__init__.py:docstring
 #: spack.cmd.disambiguate_spec:0 spack.cmd.display_specs:0
 #: spack.cmd.get_command:0 spack.cmd.get_module:0
@@ -24140,8 +24144,7 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/binary_distribution.py:docstring
 #: spack.binary_distribution.check_specs_against_mirrors:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_environment.py:docstring
-#: spack.build_environment.fork:0
-#: spack.build_environment.get_package_context:0
+#: spack.build_environment.fork:0 spack.build_environment.get_package_context:0
 #: spack.build_environment.get_std_cmake_args:0
 #: spack.build_environment.get_std_meson_args:0
 #: spack.build_environment.load_external_modules:0
@@ -24197,9 +24200,8 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/report.py:docstring
 #: spack.report.collect_info:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec.py:docstring
-#: spack.spec.Spec.concretize:0 spack.spec.Spec.copy:0
-#: spack.spec.Spec.format:0 spack.spec.Spec.from_literal:0
-#: spack.spec.Spec.old_format:0
+#: spack.spec.Spec.concretize:0 spack.spec.Spec.copy:0 spack.spec.Spec.format:0
+#: spack.spec.Spec.from_literal:0 spack.spec.Spec.old_format:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/store.py:docstring
 #: spack.store.Store:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/url.py:docstring
@@ -24229,6 +24231,8 @@ msgstr ""
 #: spack.test.url_parse.test_url_parse_offset:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring
 #: spack.util.imp.imp_importer.load_source:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: spack.util.imp.importlib_importer.load_source:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/editor.py:docstring
 #: spack.util.editor.editor:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/environment.py:docstring
@@ -24369,6 +24373,24 @@ msgstr ""
 #: of spack.build_systems.autotools.AutotoolsPackage.set_configure_or_die:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/perl.py:docstring
 #: spack.build_systems.perl.PerlPackage.configure:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
+#: spack.modules.lmod.LmodConfiguration.core_compilers:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directives.py:docstring
+#: spack.directives.variant:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
+#: spack.fetch_strategy.from_kwargs:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/mirror.py:docstring
+#: spack.mirror.suggest_archive_basename:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
+#: spack.relocate.file_is_relocatable:0 spack.relocate.is_relocatable:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/report.py:docstring
+#: spack.report.collect_info:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/url.py:docstring
+#: spack.url.parse_name:0 spack.url.parse_name_and_version:0
+#: spack.url.parse_name_offset:0 spack.url.parse_version:0
+#: spack.url.parse_version_offset:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring
+#: spack.variant.Variant.validate_or_raise:0
 msgid "Raises"
 msgstr ""
 
@@ -24485,8 +24507,8 @@ msgstr ""
 msgid ""
 "The generator used by CMake can be specified by providing the generator "
 "attribute. Per https://cmake.org/cmake/help/git-master/manual/cmake-"
-"generators.7.html, the format is: [<secondary-generator> - ]"
-"<primary_generator>. The full list of primary and secondary generators "
+"generators.7.html, the format is: [<secondary-generator> "
+"- ]<primary_generator>. The full list of primary and secondary generators "
 "supported by CMake may be found in the documentation for the version of "
 "CMake used; however, at this time Spack supports only the primary generators "
 "\"Unix Makefiles\" and \"Ninja.\" Spack's CMake support is agnostic with "
@@ -24697,8 +24719,8 @@ msgstr ""
 #: of spack.build_systems.intel.IntelPackage.file_to_source:1
 msgid ""
 "Full path of file to source for initializing an Intel package. A client "
-"package could override as follows: `    @property` `    def file_to_source"
-"(self):` `        return self.normalize_path(\"apsvars.sh\", "
+"package could override as follows: `    @property` `    def "
+"file_to_source(self):` `        return self.normalize_path(\"apsvars.sh\", "
 "\"vtune_amplifier\")`"
 msgstr ""
 
@@ -24739,6 +24761,31 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring
 #: of spack.build_systems.intel.IntelPackage.license_comment:1
 msgid "Comment symbol used in the license.lic file"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring
+#: of spack.build_systems.intel.IntelPackage.license_files:1
+msgid "Built-in mutable sequence."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring
+#: of spack.build_systems.intel.IntelPackage.license_files:3
+msgid ""
+"If no argument is given, the constructor creates a new empty list. The "
+"argument must be an iterable if specified."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring
+#: of spack.build_systems.intel.IntelPackage.license_required:1
+msgid "bool(x) -> bool"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring
+#: of spack.build_systems.intel.IntelPackage.license_required:3
+msgid ""
+"Returns True when the argument x is true, False otherwise. The builtins True "
+"and False are the only two instances of the class bool. The class bool is a "
+"subclass of the class int, and cannot be subclassed."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring
@@ -26193,7 +26240,9 @@ msgstr ""
 #: spack.error.SpackError:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/main.py:docstring
 #: spack.main.SpackCommandError:1
-msgid "Bases: :class:`exceptions.Exception`"
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
+#: spack.util.web.HTMLParseError:1
+msgid "Bases: :class:`Exception`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/modules/__init__.py:docstring
@@ -26585,40 +26634,7 @@ msgid "Provides appropriate overrides for Bazel-based packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
-#: of spack.cmd.create.BuildSystemGuesser:1
-msgid ""
-"An instance of BuildSystemGuesser provides a callable object to be used "
-"during ``spack create``. By passing this object to ``spack checksum``, we "
-"can take a peek at the fetched tarball and discern the build system it uses"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
-#: of spack.cmd.create.CMakePackageTemplate:1
-msgid "Provides appropriate overrides for CMake-based packages"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
-#: of spack.cmd.create.IntelPackageTemplate:1
-msgid "Provides appropriate overrides for licensed Intel software"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
-#: of spack.cmd.create.MakefilePackageTemplate:1
-msgid "Provides appropriate overrides for Makefile packages"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
-#: of spack.cmd.create.MesonPackageTemplate:1
-msgid "Provides appropriate overrides for meson-based packages"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
-#: of spack.cmd.create.OctavePackageTemplate:1
-msgid "Provides appropriate overrides for octave packages"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
-#: of spack.cmd.create.PackageTemplate:1
+#: of spack.cmd.create.BuildSystemGuesser:1 spack.cmd.create.PackageTemplate:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring
 #: spack.cmd.env.ViewAction:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring
@@ -26669,7 +26685,7 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package_prefs.py:docstring
 #: spack.package_prefs.PackagePrefs:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/parse.py:docstring
-#: spack.parse.Lexer:1 spack.parse.Parser:1
+#: spack.parse.Lexer:1 spack.parse.Parser:1 spack.parse.Token:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/patch.py:docstring
 #: spack.patch.Patch:1 spack.patch.PatchCache:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/provider_index.py:docstring
@@ -26685,6 +26701,8 @@ msgstr ""
 #: spack.resource.Resource:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec.py:docstring
 #: spack.spec.Spec:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec_set.py:docstring
+#: spack.spec_set.CombinatorialSpecSet:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/stage.py:docstring
 #: spack.stage.DIYStage:1 spack.stage.Stage:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/store.py:docstring
@@ -26722,8 +26740,7 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/stage.py:docstring
 #: spack.test.stage.TestStage:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/tengine.py:docstring
-#: spack.test.tengine.TestContext:1
-#: spack.test.tengine.TestTengineEnvironment:1
+#: spack.test.tengine.TestContext:1 spack.test.tengine.TestTengineEnvironment:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/variant.py:docstring
 #: spack.test.variant.TestBoolValuedVariant:1
 #: spack.test.variant.TestMultiValuedVariant:1
@@ -26746,6 +26763,39 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/pattern.py:docstring
 #: spack.util.pattern.Bunch:1
 msgid "Bases: :class:`object`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
+#: of spack.cmd.create.BuildSystemGuesser:1
+msgid ""
+"An instance of BuildSystemGuesser provides a callable object to be used "
+"during ``spack create``. By passing this object to ``spack checksum``, we "
+"can take a peek at the fetched tarball and discern the build system it uses"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
+#: of spack.cmd.create.CMakePackageTemplate:1
+msgid "Provides appropriate overrides for CMake-based packages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
+#: of spack.cmd.create.IntelPackageTemplate:1
+msgid "Provides appropriate overrides for licensed Intel software"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
+#: of spack.cmd.create.MakefilePackageTemplate:1
+msgid "Provides appropriate overrides for Makefile packages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
+#: of spack.cmd.create.MesonPackageTemplate:1
+msgid "Provides appropriate overrides for meson-based packages"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
+#: of spack.cmd.create.OctavePackageTemplate:1
+msgid "Provides appropriate overrides for octave packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring
@@ -26860,10 +26910,14 @@ msgstr ""
 #: spack.fetch_strategy.CacheURLFetchStrategy.fetch:0
 #: spack.fetch_strategy.FetchStrategy.cachable:0
 #: spack.fetch_strategy.FetchStrategy.fetch:0
+#: spack.fetch_strategy.GitFetchStrategy.cachable:0
 #: spack.fetch_strategy.GitFetchStrategy.fetch:0
 #: spack.fetch_strategy.GoFetchStrategy.fetch:0
+#: spack.fetch_strategy.HgFetchStrategy.cachable:0
 #: spack.fetch_strategy.HgFetchStrategy.fetch:0
+#: spack.fetch_strategy.SvnFetchStrategy.cachable:0
 #: spack.fetch_strategy.SvnFetchStrategy.fetch:0
+#: spack.fetch_strategy.URLFetchStrategy.cachable:0
 #: spack.fetch_strategy.URLFetchStrategy.fetch:0
 #: spack.fetch_strategy.from_kwargs:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package.py:docstring
@@ -26899,6 +26953,8 @@ msgstr ""
 #: spack.version.Version.up_to:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring
 #: spack.util.imp.imp_importer.load_source:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: spack.util.imp.importlib_importer.load_source:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/environment.py:docstring
 #: spack.util.environment.EnvironmentModifications.from_sourcing_file:0
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/executable.py:docstring
@@ -27066,18 +27122,18 @@ msgstr ""
 msgid "spack.cmd.edit module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring
-#: of spack.cmd.edit.edit_package:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring of
+#: spack.cmd.edit.edit_package:1
 msgid "Opens the requested package file in your favorite $EDITOR."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring
-#: of spack.cmd.edit.edit_package:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring of
+#: spack.cmd.edit.edit_package:5
 msgid "The path to the repository containing this package"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring
-#: of spack.cmd.edit.edit_package:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/edit.py:docstring of
+#: spack.cmd.edit.edit_package:7
 msgid "A valid namespace registered with Spack"
 msgstr ""
 
@@ -27164,8 +27220,8 @@ msgstr ""
 msgid "spack.cmd.find module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/find.py:docstring
-#: of spack.cmd.find.setup_env:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/find.py:docstring of
+#: spack.cmd.find.setup_env:1
 msgid "Create a function for decorating specs when in an environment."
 msgstr ""
 
@@ -27206,46 +27262,30 @@ msgid ""
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring
-#: of spack.cmd.flake8.pattern_exemptions:7
+#: of spack.cmd.flake8.pattern_exemptions:8
+msgid "This is a dict that maps:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring
+#: of spack.cmd.flake8.pattern_exemptions:8
 msgid "filename pattern ->"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring
-#: of spack.cmd.flake8.pattern_exemptions:7
+#: of spack.cmd.flake8.pattern_exemptions:8
 msgid "flake8 exemption code ->"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring
-#: of spack.cmd.flake8.pattern_exemptions:7
+#: of spack.cmd.flake8.pattern_exemptions:8
 msgid "list of patterns, for which matching lines should have codes applied."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring
-#: of spack.cmd.flake8.pattern_exemptions:9
+#: of spack.cmd.flake8.pattern_exemptions:10
 msgid ""
 "For each file, if the filename pattern matches, we'll add per-line "
 "exemptions if any patterns in the sub-dict match."
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring
-#: of spack.cmd.flake8.pattern_exemptions:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/dotkit.py:docstring
-#: spack.modules.dotkit.configuration_registry:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
-#: spack.modules.lmod.configuration_registry:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/tcl.py:docstring
-#: spack.modules.tcl.configuration_registry:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
-#: spack.fetch_strategy.FetchStrategy.optional_attrs:0
-#: spack.fetch_strategy.HgFetchStrategy.hg:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package.py:docstring
-#: spack.package.PackageBase.fullname:0
-msgid "type"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring
-#: of spack.cmd.flake8.pattern_exemptions:12
-msgid "This is a dict that maps"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:264
@@ -27304,13 +27344,13 @@ msgstr ""
 msgid "spack.cmd.info module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring
-#: of spack.cmd.info.padder:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring of
+#: spack.cmd.info.padder:1
 msgid "Return a function to pad elements of a list."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring
-#: of spack.cmd.info.print_text_info:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring of
+#: spack.cmd.info.print_text_info:1
 msgid "Print out a plain text description of a package."
 msgstr ""
 
@@ -27383,56 +27423,56 @@ msgstr ""
 msgid "spack.cmd.list module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.filter_by_name:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.filter_by_name:1
 msgid "Filters the sequence of packages according to user prescriptions"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.filter_by_name:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.filter_by_name:3
 msgid "sequence of packages"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.filter_by_name:4
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.filter_by_name:4
 msgid "parsed command line arguments"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.filter_by_name:6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.filter_by_name:6
 msgid "filtered and sorted list of packages"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.github_url:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.github_url:1
 msgid "Link to a package file on github."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.html:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.html:1
 msgid "Print out information on all packages in Sphinx HTML."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.html:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.html:3
 msgid ""
 "This is intended to be inlined directly into Sphinx documentation. We write "
 "HTML instead of RST for speed; generating RST from *all* packages causes the "
 "Sphinx build to take forever. Including this as raw HTML is much faster."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.rows_for_ncols:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.rows_for_ncols:1
 msgid "Print out rows in a table with ncols of elts laid out vertically."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.rst:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.rst:1
 msgid "Print out information on all packages in restructured text."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring
-#: of spack.cmd.list.rst_table:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/list.py:docstring of
+#: spack.cmd.list.rst_table:1
 msgid "Print out a RST-style table."
 msgstr ""
 
@@ -27440,8 +27480,8 @@ msgstr ""
 msgid "spack.cmd.load module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/load.py:docstring
-#: of spack.cmd.load.setup_parser:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/load.py:docstring of
+#: spack.cmd.load.setup_parser:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/unload.py:docstring
 #: spack.cmd.unload.setup_parser:1
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/unuse.py:docstring
@@ -27654,23 +27694,23 @@ msgstr ""
 msgid "spack.cmd.repo module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring
-#: of spack.cmd.repo.repo_add:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring of
+#: spack.cmd.repo.repo_add:1
 msgid "Add a package source to Spack's configuration."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring
-#: of spack.cmd.repo.repo_create:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring of
+#: spack.cmd.repo.repo_create:1
 msgid "Create a new package repository."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring
-#: of spack.cmd.repo.repo_list:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring of
+#: spack.cmd.repo.repo_list:1
 msgid "Show registered repositories and their namespaces."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring
-#: of spack.cmd.repo.repo_remove:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/repo.py:docstring of
+#: spack.cmd.repo.repo_remove:1
 msgid "Remove a repository from Spack's configuration."
 msgstr ""
 
@@ -27708,8 +27748,8 @@ msgstr ""
 msgid "spack.cmd.test module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/test.py:docstring
-#: of spack.cmd.test.do_list:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/test.py:docstring of
+#: spack.cmd.test.do_list:1
 msgid "Print a lists of tests than what pytest offers."
 msgstr ""
 
@@ -27935,84 +27975,84 @@ msgstr ""
 msgid "spack.cmd.view module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:1
 msgid "Produce a \"view\" of a Spack DAG."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:3
 msgid ""
 "A \"view\" is file hierarchy representing the union of a number of Spack-"
 "installed package file hierarchies.  The union is formed from:"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:6
 msgid "specs resolved from the package names given by the user (the seeds)"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:8
 msgid "all dependencies of the seeds unless user specifies `--no-dependencies`"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:10
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:10
 msgid ""
 "less any specs with names matching the regular expressions given by `--"
 "exclude`"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:13
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:13
 msgid ""
 "The `view` can be built and tore down via a number of methods (the \"actions"
 "\"):"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:15
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:15
 msgid ""
 "symlink :: a file system view which is a directory hierarchy that is the "
 "union of the hierarchies of the installed packages in the DAG where "
 "installed files are referenced via symlinks."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:19
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:19
 msgid "hardlink :: like the symlink view but hardlinks are used."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:21
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:21
 msgid ""
 "statlink :: a view producing a status report of a symlink or hardlink view."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:24
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:24
 msgid ""
 "The file system view concept is imspired by Nix, implemented by brett."
 "viren@gmail.com ca 2016."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view:27
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view:27
 msgid ""
 "All operations on views are performed via proxy objects such as "
 "YamlFilesystemView."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view.disambiguate_in_view:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view.disambiguate_in_view:1
 msgid ""
 "When dealing with querying actions (remove/status) we only need to "
 "disambiguate among specs in the view"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring
-#: of spack.cmd.view.view:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/view.py:docstring of
+#: spack.cmd.view.view:1
 msgid "Produce a view of a set of packages."
 msgstr ""
 
@@ -28938,8 +28978,7 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/common.py:docstring
 #: of spack.modules.common.DefaultTemplateNotDefined:1
 msgid ""
-"Bases: :class:`exceptions.AttributeError`, :class:`spack.modules.common."
-"ModulesError`"
+"Bases: :class:`AttributeError`, :class:`spack.modules.common.ModulesError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/common.py:docstring
@@ -28972,8 +29011,7 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/common.py:docstring
 #: of spack.modules.common.ModulesTemplateNotFoundError:1
 msgid ""
-"Bases: :class:`spack.modules.common.ModulesError`, :class:`exceptions."
-"RuntimeError`"
+"Bases: :class:`spack.modules.common.ModulesError`, :class:`RuntimeError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/common.py:docstring
@@ -29178,6 +29216,19 @@ msgid "configuration}"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/dotkit.py:docstring
+#: of spack.modules.dotkit.configuration_registry:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
+#: spack.modules.lmod.configuration_registry:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/tcl.py:docstring
+#: spack.modules.tcl.configuration_registry:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
+#: spack.fetch_strategy.HgFetchStrategy.hg:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package.py:docstring
+#: spack.package.PackageBase.fullname:0
+msgid "type"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/dotkit.py:docstring
 #: of spack.modules.dotkit.configuration_registry:3
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
 #: spack.modules.lmod.configuration_registry:3
@@ -29215,7 +29266,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
 #: of spack.modules.lmod.CoreCompilersNotFoundError:1
-msgid "Bases: :class:`spack.error.SpackError`, :class:`exceptions.KeyError`"
+msgid "Bases: :class:`spack.error.SpackError`, :class:`KeyError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
@@ -29241,31 +29292,10 @@ msgid "Returns the list of \"Core\" compilers"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
-#: of spack.modules.lmod.LmodConfiguration.core_compilers:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directives.py:docstring
-#: spack.directives.variant:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
-#: spack.fetch_strategy.from_kwargs:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/mirror.py:docstring
-#: spack.mirror.suggest_archive_basename:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: spack.relocate.file_is_relocatable:0 spack.relocate.is_relocatable:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/report.py:docstring
-#: spack.report.collect_info:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/url.py:docstring
-#: spack.url.parse_name:0 spack.url.parse_name_and_version:0
-#: spack.url.parse_name_offset:0 spack.url.parse_version:0
-#: spack.url.parse_version_offset:0
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring
-#: spack.variant.Variant.validate_or_raise:0
-msgid "raises"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
 #: of spack.modules.lmod.LmodConfiguration.core_compilers:3
 msgid ""
-":exc:`CoreCompilersNotFoundError` -- if the key was not specified in the "
-"configuration file or the sequence is empty"
+"if the key was not     specified in the configuration file or the "
+"sequence     is empty"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
@@ -29418,7 +29448,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
 #: of spack.modules.lmod.NonVirtualInHierarchyError:1
-msgid "Bases: :class:`spack.error.SpackError`, :class:`exceptions.TypeError`"
+msgid "Bases: :class:`spack.error.SpackError`, :class:`TypeError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/modules/lmod.py:docstring
@@ -29583,9 +29613,9 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/architecture.py:docstring
 #: spack.architecture.OperatingSystem.find_compilers:1
 msgid ""
-"Return a list of compilers found in the supplied paths. This invokes the find"
-"() method for each Compiler class, and appends the compilers detected to a "
-"list."
+"Return a list of compilers found in the supplied paths. This invokes the "
+"find() method for each Compiler class, and appends the compilers detected to "
+"a list."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.operating_systems.rst:24
@@ -30529,8 +30559,8 @@ msgstr ""
 msgid "spack.compiler module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring
-#: of spack.compiler.Compiler:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring of
+#: spack.compiler.Compiler:1
 msgid ""
 "This class encapsulates a Spack \"compiler\", which includes C, C++, and "
 "Fortran compilers.  Subclasses should implement support for specific "
@@ -30538,23 +30568,23 @@ msgid ""
 "particular type of compiler."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring
-#: of spack.compiler.Compiler.default_version:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring of
+#: spack.compiler.Compiler.default_version:1
 msgid "Override just this to override all compiler version functions."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring
-#: of spack.compiler.Compiler.setup_custom_environment:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring of
+#: spack.compiler.Compiler.setup_custom_environment:1
 msgid "Set any environment variables necessary to use the compiler."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring
-#: of spack.compiler.Compiler.version_argument:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring of
+#: spack.compiler.Compiler.version_argument:1
 msgid "Compiler argument that produces version information"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring
-#: of spack.compiler.Compiler.version_regex:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/compiler.py:docstring of
+#: spack.compiler.Compiler.version_regex:1
 msgid "Regex used to extract version from compiler's output"
 msgstr ""
 
@@ -31117,191 +31147,191 @@ msgstr ""
 msgid "spack.database module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database:1
 msgid "Spack's installation tracking database."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database:3
 msgid "The database serves two purposes:"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database:5
 msgid ""
 "It implements a cache on top of a potentially very large Spack directory "
 "hierarchy, speeding up many operations that would otherwise require "
 "filesystem access."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database:9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database:9
 msgid ""
 "It will allow us to track external installations as well as lost packages "
 "and their dependencies."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database:12
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database:12
 msgid ""
 "Prior to the implementation of this store, a directory layout served as the "
 "authoritative database of packages in Spack.  This module provides a cache "
 "and a sanity checking mechanism for what is in the filesystem."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.CorruptDatabaseError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.CorruptDatabaseError:1
 msgid "Raised when errors are found while reading the database."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database:1
 msgid "Per-process lock objects for each install prefix."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.prefix_lock:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.prefix_lock:1
 msgid "Get a lock on a particular spec's installation directory."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.prefix_lock:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.prefix_lock:3
 msgid "NOTE: The installation directory **does not** need to exist."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.prefix_lock:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.prefix_lock:5
 msgid "Prefix lock is a byte range lock on the nth byte of a file."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.prefix_lock:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.prefix_lock:7
 msgid ""
 "The lock file is ``spack.store.db.prefix_lock`` -- the DB tells us what to "
 "call it and it lives alongside the install DB."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.prefix_lock:10
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.prefix_lock:10
 msgid ""
 "n is the sys.maxsize-bit prefix of the DAG hash.  This makes likelihood of "
 "collision is very low AND it gives us readers-writer lock semantics with "
 "just a single lockfile, so no cleanup required."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.query_one:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.query_one:1
 msgid "Query for exactly one spec that matches the query spec."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.query_one:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.query_one:3
 msgid ""
 "Raises an assertion error if more than one spec matches the query. Returns "
 "None if no installed package matches."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.read_transaction:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.read_transaction:1
 msgid "Get a read lock context manager for use in a `with` block."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.reindex:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.reindex:1
 msgid "Build database index from scratch based on a directory layout."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.reindex:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.reindex:3
 msgid "Locks the DB if it isn't locked already."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.Database.write_transaction:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.Database.write_transaction:1
 msgid "Get a write lock context manager for use in a `with` block."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.ForbiddenLockError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.ForbiddenLockError:1
 msgid "Raised when an upstream DB attempts to acquire a lock"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:1
 msgid "A record represents one installation in the DB."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:3
 msgid ""
 "The record keeps track of the spec for the installation, its install path, "
 "AND whether or not it is installed.  We need the installed flag in case a "
 "user either:"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:7
 msgid "blew away a directory, or"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:8
 msgid "used spack uninstall -f to get rid of it"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:10
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:10
 msgid ""
 "If, in either case, the package was removed but others still depend on it, "
 "we still need to track its spec, so we don't actually remove from the "
 "database until a spec has no installed dependents left."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:15
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:15
 msgid "spec tracked by the install record"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:17
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:17
 msgid "path where the spec has been installed"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:19
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:19
 msgid "whether or not the spec is currently installed"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:21
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:21
 msgid "number of specs that depend on this one"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:23
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:23
 msgid ""
 "whether or not this spec was explicitly installed, or pulled-in as a "
 "dependency of something else"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.InstallRecord:26
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.InstallRecord:26
 msgid "time of the installation"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.MissingDependenciesError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.MissingDependenciesError:1
 msgid "Raised when DB cannot find records for dependencies"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.NonConcreteSpecAddError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.NonConcreteSpecAddError:1
 msgid "Raised when attemptint to add non-concrete spec to DB."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring
-#: of spack.database.UpstreamDatabaseLockingError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/database.py:docstring of
+#: spack.database.UpstreamDatabaseLockingError:1
 msgid "Raised when an operation would need to lock an upstream database"
 msgstr ""
 
@@ -31654,8 +31684,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directives.py:docstring
 #: of spack.directives.variant:25
-msgid ""
-":exc:`DirectiveError` -- if arguments passed to the directive are invalid"
+msgid "if arguments passed to the directive are invalid"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directives.py:docstring
@@ -31740,16 +31769,19 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directory_layout.py:docstring
 #: of spack.directory_layout.DirectoryLayout.hidden_file_paths:1
+#: spack.directory_layout.YamlDirectoryLayout.hidden_file_paths:1
 msgid "Return a list of hidden files used by the directory layout."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directory_layout.py:docstring
 #: of spack.directory_layout.DirectoryLayout.hidden_file_paths:3
+#: spack.directory_layout.YamlDirectoryLayout.hidden_file_paths:3
 msgid "Paths are relative to the root of an install directory."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/directory_layout.py:docstring
 #: of spack.directory_layout.DirectoryLayout.hidden_file_paths:5
+#: spack.directory_layout.YamlDirectoryLayout.hidden_file_paths:5
 msgid ""
 "If the directory layout uses no hidden files to maintain state, this should "
 "return an empty container, e.g. [] or (,)."
@@ -32479,8 +32511,8 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/error.py:docstring of
 #: spack.error.SpackError.print_context:3
 msgid ""
-"This is usually printed when the top-level Spack error handler calls ``die()"
-"``, but it can be called separately beforehand if a lower-level error "
+"This is usually printed when the top-level Spack error handler calls "
+"``die()``, but it can be called separately beforehand if a lower-level error "
 "handler needs to print error context and continue without raising the "
 "exception to the top level."
 msgstr ""
@@ -32504,8 +32536,7 @@ msgstr ""
 #: spack.spec.NoSuchHashError:1 spack.spec.RedundantSpecError:1
 #: spack.variant.DuplicateVariantError:1
 #: spack.variant.InconsistentValidationError:1
-#: spack.variant.InvalidVariantValueError:1
-#: spack.variant.UnknownVariantError:1
+#: spack.variant.InvalidVariantValueError:1 spack.variant.UnknownVariantError:1
 msgid "Bases: :class:`spack.error.SpecError`"
 msgstr ""
 
@@ -32785,11 +32816,19 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
 #: of spack.fetch_strategy.FetchStrategy.cachable:1
+#: spack.fetch_strategy.GitFetchStrategy.cachable:1
+#: spack.fetch_strategy.HgFetchStrategy.cachable:1
+#: spack.fetch_strategy.SvnFetchStrategy.cachable:1
+#: spack.fetch_strategy.URLFetchStrategy.cachable:1
 msgid "Whether fetcher is capable of caching the resource it retrieves."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
 #: of spack.fetch_strategy.FetchStrategy.cachable:3
+#: spack.fetch_strategy.GitFetchStrategy.cachable:3
+#: spack.fetch_strategy.HgFetchStrategy.cachable:3
+#: spack.fetch_strategy.SvnFetchStrategy.cachable:3
+#: spack.fetch_strategy.URLFetchStrategy.cachable:3
 msgid ""
 "This generally is determined by whether the resource is identifiably "
 "associated with a specific package version."
@@ -32797,6 +32836,10 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
 #: of spack.fetch_strategy.FetchStrategy.cachable:6
+#: spack.fetch_strategy.GitFetchStrategy.cachable:6
+#: spack.fetch_strategy.HgFetchStrategy.cachable:6
+#: spack.fetch_strategy.SvnFetchStrategy.cachable:6
+#: spack.fetch_strategy.URLFetchStrategy.cachable:6
 msgid "True if can cache, False otherwise."
 msgstr ""
 
@@ -32815,12 +32858,9 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
 #: of spack.fetch_strategy.FetchStrategy.optional_attrs:1
-msgid "classes have multiple ``url_attrs`` at the top-level."
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
-#: of spack.fetch_strategy.FetchStrategy.optional_attrs:3
-msgid "Optional attributes can be used to distinguish fetchers when"
+msgid ""
+"Optional attributes can be used to distinguish fetchers when: classes have "
+"multiple ``url_attrs`` at the top-level."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
@@ -33178,7 +33218,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
 #: of spack.fetch_strategy.from_kwargs:12
-msgid ":exc:`FetchError` -- If no ``fetch_strategy`` matches the args."
+msgid "If no ``fetch_strategy`` matches the args."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/fetch_strategy.py:docstring
@@ -33813,7 +33853,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/mirror.py:docstring of
 #: spack.mirror.suggest_archive_basename:3
-msgid ":exc:`RuntimeError` -- if the name is not an allowed archive type."
+msgid "if the name is not an allowed archive type."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.rst:185
@@ -34100,8 +34140,7 @@ msgid "Superclass for all errors having to do with extension packages."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package.py:docstring of
-#: spack.package.ExternalPackageError:1
-#: spack.package.PackageStillNeededError:1
+#: spack.package.ExternalPackageError:1 spack.package.PackageStillNeededError:1
 msgid "Bases: :class:`spack.package.InstallError`"
 msgstr ""
 
@@ -35147,8 +35186,8 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package_prefs.py:docstring
 #: of spack.package_prefs.PackagePrefs:25
 msgid ""
-"kf = PackagePrefs('trilinos', 'providers', 'mpi') provider_spec_list.sort"
-"(key=kf)"
+"kf = PackagePrefs('trilinos', 'providers', 'mpi') provider_spec_list."
+"sort(key=kf)"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/package_prefs.py:docstring
@@ -35587,11 +35626,6 @@ msgid "{ mpi@:1.1"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/provider_index.py:docstring
-#: of spack.provider_index.ProviderIndex:11
-msgid "set([mpich]),"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/provider_index.py:docstring
 #: of spack.provider_index.ProviderIndex:12
 msgid "mpi@:2.3 : set([mpich2@1.9:]) } }"
 msgstr ""
@@ -35639,72 +35673,71 @@ msgstr ""
 msgid "spack.relocate module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.InstallRootStringException:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.InstallRootStringException:1
 msgid "Raised when the relocated binary still has the install root string."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.file_is_relocatable:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.file_is_relocatable:1
 msgid "Returns True if the file passed as argument is relocatable."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.file_is_relocatable:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.file_is_relocatable:3
 msgid "absolute path of the file to be analyzed"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.file_is_relocatable:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.file_is_relocatable:5
 msgid "True or false"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.file_is_relocatable:7
-msgid ""
-":exc:`ValueError` -- if the file does not exist or the path is not absolute"
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.file_is_relocatable:7
+msgid "if the file does not exist or the path is not absolute"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.get_existing_elf_rpaths:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.get_existing_elf_rpaths:1
 msgid ""
 "Return the RPATHS returned by patchelf --print-rpath path_name as a list of "
 "strings."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.get_patchelf:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.get_patchelf:1
 msgid ""
 "Builds and installs spack patchelf package on linux platforms using the "
 "first concretized spec. Returns the full patchelf binary path."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.get_placeholder_rpaths:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.get_placeholder_rpaths:1
 msgid ""
 "Replaces original layout root dir with a placeholder string in all rpaths."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.get_relative_rpaths:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.get_relative_rpaths:1
 msgid ""
 "Replaces orig_dir with relative path from dirname(path_name) if an rpath in "
 "orig_rpaths contains orig_path. Prefixes $ORIGIN to relative paths and "
 "returns replacement rpaths."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.is_binary:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.is_binary:1
 msgid "Returns true if a file is binary, False otherwise"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.is_binary:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.is_binary:3
 msgid "file to be tested"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.is_binary:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.is_binary:5
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring
 #: spack.variant.AbstractVariant.compatible:8
 #: spack.variant.AbstractVariant.constrain:7
@@ -35720,100 +35753,100 @@ msgstr ""
 msgid "True or False"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.is_relocatable:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.is_relocatable:1
 msgid "Returns True if an installed spec is relocatable."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.is_relocatable:6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.is_relocatable:6
 msgid ""
 "True if the binaries of an installed spec are relocatable and False "
 "otherwise."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.is_relocatable:9
-msgid ":exc:`ValueError` -- if the spec is not installed"
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.is_relocatable:9
+msgid "if the spec is not installed"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.macho_get_paths:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.macho_get_paths:1
 msgid ""
 "Examines the output of otool -l path_name for these three fields: "
 "LC_ID_DYLIB, LC_LOAD_DYLIB, LC_RPATH and parses out the rpaths, "
 "dependiencies and library id. Returns these values."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.macho_make_paths_placeholder:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.macho_make_paths_placeholder:1
 msgid ""
 "Replace old_dir with a placeholder of the same length in rpaths and deps and "
 "idpaths is needed. replacement are returned."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.macho_make_paths_relative:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.macho_make_paths_relative:1
 msgid ""
 "Replace old_dir with relative path from dirname(path_name) in rpaths and "
 "deps; idpaths are replaced with @rpath/libname as needed; replacement are "
 "returned."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.macho_replace_paths:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.macho_replace_paths:1
 msgid ""
 "Replace old_dir with new_dir in rpaths, deps and idpath and return "
 "replacements"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.make_binary_placeholder:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.make_binary_placeholder:1
 msgid "Replace old install root in RPATHs with placeholder in binary files"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.make_binary_relative:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.make_binary_relative:1
 msgid "Replace old RPATHs with paths relative to old_dir in binary files"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.make_link_placeholder:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.make_link_placeholder:1
 msgid "Replace old install path with placeholder in absolute links."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.make_link_placeholder:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.make_link_placeholder:3
 msgid "Links in ``cur_path_names`` must link to absolute paths."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.make_link_relative:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.make_link_relative:1
 msgid "Change absolute links to be relative."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.mime_type:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.mime_type:1
 msgid "Returns the mime type and subtype of a file."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.mime_type:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.mime_type:3
 msgid "file to be analyzed"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.mime_type:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.mime_type:5
 msgid "Tuple containing the MIME type and subtype"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.modify_elf_object:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.modify_elf_object:1
 msgid "Replace orig_rpath with new_rpath in RPATH of elf object path_name"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.modify_macho_object:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.modify_macho_object:1
 msgid ""
 "Modify MachO binary path_name by replacing old_dir with new_dir or the "
 "relative path to spack install root. The old install dir in LC_ID_DYLIB is "
@@ -35824,50 +35857,50 @@ msgid ""
 "rpath old new binary"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.needs_binary_relocation:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.needs_binary_relocation:1
 msgid "Check whether the given filetype is a binary that may need relocation."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.needs_text_relocation:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.needs_text_relocation:1
 msgid "Check whether the given filetype is text that may need relocation."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.relocate_binary:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.relocate_binary:1
 msgid ""
 "Change old_dir to new_dir in RPATHs of elf or mach-o files Account for the "
 "case where old_dir is now a placeholder"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.relocate_links:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.relocate_links:1
 msgid "Replace old path with new path in link sources."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.relocate_links:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.relocate_links:3
 msgid "Links in ``path_names`` must link to absolute paths or placeholders."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.relocate_text:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.relocate_text:1
 msgid "Replace old path with new path in text file path_name"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.set_placeholder:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.set_placeholder:1
 msgid "return string of @'s with same length"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.strings_contains_installroot:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.strings_contains_installroot:1
 msgid "Check if the file contain the install root string."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring
-#: of spack.relocate.substitute_rpath:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/relocate.py:docstring of
+#: spack.relocate.substitute_rpath:1
 msgid "Replace topdir with new_root_path RPATH list orig_rpath"
 msgstr ""
 
@@ -35894,7 +35927,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/repo.py:docstring of
 #: spack.repo.FastPackageChecker:1 spack.repo.TagIndex:1
-msgid "Bases: :class:`_abcoll.Mapping`"
+msgid "Bases: :class:`collections.abc.Mapping`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/repo.py:docstring of
@@ -36550,15 +36583,15 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/report.py:docstring of
 #: spack.report.collect_info:31
-msgid ":exc:`ValueError` -- when ``format_name`` is not in ``valid_formats``"
+msgid "when ``format_name`` is not in ``valid_formats``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.rst:289
 msgid "spack.reporter module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/reporter.py:docstring
-#: of spack.reporter.Reporter:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/reporter.py:docstring of
+#: spack.reporter.Reporter:1
 msgid "Base class for report writers."
 msgstr ""
 
@@ -36566,25 +36599,25 @@ msgstr ""
 msgid "spack.resource module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/resource.py:docstring
-#: of spack.resource:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/resource.py:docstring of
+#: spack.resource:1
 msgid "Describes an optional resource needed for a build."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/resource.py:docstring
-#: of spack.resource:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/resource.py:docstring of
+#: spack.resource:3
 msgid ""
 "Typically a bunch of sources that can be built in-tree within another "
 "package to enable optional features."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/resource.py:docstring
-#: of spack.resource.Resource:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/resource.py:docstring of
+#: spack.resource.Resource:1
 msgid "Represents an optional resource to be fetched by a package."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/resource.py:docstring
-#: of spack.resource.Resource:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/resource.py:docstring of
+#: spack.resource.Resource:3
 msgid "Aggregates a name, a fetcher, a destination and a placement."
 msgstr ""
 
@@ -37410,8 +37443,8 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec.py:docstring of
 #: spack.spec.parse:1
 msgid ""
-"Returns a list of specs from an input string. For creating one spec, see Spec"
-"() constructor."
+"Returns a list of specs from an input string. For creating one spec, see "
+"Spec() constructor."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec.py:docstring of
@@ -37541,13 +37574,13 @@ msgstr ""
 msgid "spack.spec\\_set module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec_set.py:docstring
-#: of spack.spec_set.CombinatorialSpecSet:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec_set.py:docstring of
+#: spack.spec_set.CombinatorialSpecSet:1
 msgid "Set of combinatorial Specs constructed from YAML file."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec_set.py:docstring
-#: of spack.spec_set.CombinatorialSpecSet.all_package_versions:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/spec_set.py:docstring of
+#: spack.spec_set.CombinatorialSpecSet.all_package_versions:1
 msgid "Get package/version combinations for all spack packages."
 msgstr ""
 
@@ -38071,9 +38104,10 @@ msgid "The version of the package"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/url.py:docstring of
-#: spack.url.parse_name:11 spack.url.parse_name_and_version:12
-#: spack.url.parse_name_offset:18
-msgid ":exc:`UndetectableNameError` -- If the URL does not match any regexes"
+#: spack.url.parse_name:11 spack.url.parse_name_and_version:11
+#: spack.url.parse_name_and_version:12 spack.url.parse_name_offset:18
+#: spack.url.parse_version:9 spack.url.parse_version_offset:16
+msgid "If the URL does not match any regexes"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/url.py:docstring of
@@ -38086,13 +38120,6 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/url.py:docstring of
 #: spack.url.parse_name_and_version:7
 msgid "The name of the package The version of the package"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/url.py:docstring of
-#: spack.url.parse_name_and_version:11 spack.url.parse_version:9
-#: spack.url.parse_version_offset:16
-msgid ""
-":exc:`UndetectableVersionError` -- If the URL does not match any regexes"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/url.py:docstring of
@@ -38453,7 +38480,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of
 #: spack.variant.DisjointSetsOfValues:1
-msgid "Bases: :class:`_abcoll.Sequence`"
+msgid "Bases: :class:`collections.abc.Sequence`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of
@@ -38535,7 +38562,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of
 #: spack.variant.MultipleValuesInExclusiveVariantError:1
-msgid "Bases: :class:`spack.error.SpecError`, :class:`exceptions.ValueError`"
+msgid "Bases: :class:`spack.error.SpecError`, :class:`ValueError`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of
@@ -38610,20 +38637,17 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of
 #: spack.variant.Variant.validate_or_raise:10
-msgid ":exc:`InconsistentValidationError` -- if ``vspec.name != self.name``"
+msgid "if ``vspec.name != self.name``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of
 #: spack.variant.Variant.validate_or_raise:11
-msgid ""
-":exc:`MultipleValuesInExclusiveVariantError` -- if ``vspec`` has multiple "
-"values but ``self.multi == False``"
+msgid "if ``vspec`` has     multiple values but ``self.multi == False``"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of
-#: spack.variant.Variant.validate_or_raise:13
-msgid ""
-":exc:`InvalidVariantValueError` -- if ``vspec.value`` contains invalid values"
+#: spack.variant.Variant.validate_or_raise:12
+msgid "if ``vspec.value`` contains     invalid values"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/variant.py:docstring of
@@ -38886,8 +38910,8 @@ msgstr ""
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/version.py:docstring of
 #: spack.version.Version.underscored:3
 msgid ""
-"Example: >>> version = Version('1.2.3b') >>> version.underscored Version"
-"('1_2_3b')"
+"Example: >>> version = Version('1.2.3b') >>> version.underscored "
+"Version('1_2_3b')"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/version.py:docstring of
@@ -38915,9 +38939,9 @@ msgstr ""
 msgid ""
 "Examples: >>> version = Version('1.23-4b') >>> version.up_to(1) Version('1') "
 ">>> version.up_to(2) Version('1.23') >>> version.up_to(3) Version('1.23-4') "
-">>> version.up_to(4) Version('1.23-4b') >>> version.up_to(-1) Version"
-"('1.23-4') >>> version.up_to(-2) Version('1.23') >>> version.up_to(-3) "
-"Version('1')"
+">>> version.up_to(4) Version('1.23-4b') >>> version.up_to(-1) "
+"Version('1.23-4') >>> version.up_to(-2) Version('1.23') >>> version."
+"up_to(-3) Version('1')"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/version.py:docstring of
@@ -39035,13 +39059,13 @@ msgid ""
 "strings."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/__init__.py:docstring
-#: of spack.spack_version_info:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/__init__.py:docstring of
+#: spack.spack_version_info:1
 msgid "major, minor, patch version for Spack, in a tuple"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/__init__.py:docstring
-#: of spack.spack_version:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/__init__.py:docstring of
+#: spack.spack_version:1
 msgid "String containing Spack version joined with .'s"
 msgstr ""
 
@@ -39430,8 +39454,7 @@ msgid ""
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring
-#: of
-#: spack.test.concretize.TestConcretize.test_architecture_deep_inheritance:1
+#: of spack.test.concretize.TestConcretize.test_architecture_deep_inheritance:1
 msgid ""
 "Make sure that indirect dependencies receive architecture information from "
 "the root even when partial architecture information is provided by an "
@@ -39480,8 +39503,7 @@ msgid "Test a package with multiple virtual deps and two of them preset."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/concretize.py:docstring
-#: of
-#: spack.test.concretize.TestConcretize.test_concretize_with_provides_when:1
+#: of spack.test.concretize.TestConcretize.test_concretize_with_provides_when:1
 msgid ""
 "Make sure insufficient versions of MPI are not in providers list when we ask "
 "for some advanced version."
@@ -41034,8 +41056,8 @@ msgstr ""
 msgid "spack.test.web module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/web.py:docstring
-#: of spack.test.web:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/test/web.py:docstring of
+#: spack.test.web:1
 msgid "Tests for web.py."
 msgstr ""
 
@@ -41061,26 +41083,36 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring
 #: of spack.util.imp.imp_importer.load_source:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: spack.util.imp.importlib_importer.load_source:1
 msgid "Import a Python module from source."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring
 #: of spack.util.imp.imp_importer.load_source:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: spack.util.imp.importlib_importer.load_source:3
 msgid "Load the source file and add it to ``sys.modules``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring
 #: of spack.util.imp.imp_importer.load_source:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: spack.util.imp.importlib_importer.load_source:5
 msgid "full name of the module to be loaded"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring
 #: of spack.util.imp.imp_importer.load_source:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: spack.util.imp.importlib_importer.load_source:7
 msgid "path to the file that should be loaded"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring
 #: of spack.util.imp.imp_importer.load_source:9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: spack.util.imp.importlib_importer.load_source:9
 msgid ""
 "some optional code to prepend to the loaded module; e.g., can be used to "
 "inject import statements"
@@ -41088,6 +41120,8 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring
 #: of spack.util.imp.imp_importer.load_source:13
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: spack.util.imp.importlib_importer.load_source:13
 msgid "the loaded module"
 msgstr ""
 
@@ -41119,6 +41153,26 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/spack.util.imp.rst:16
 msgid "spack.util.imp.importlib\\_importer module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: of spack.util.imp.importlib_importer:1
+msgid "Implementation of Spack imports that uses importlib underneath."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: of spack.util.imp.importlib_importer:3
+msgid "``importlib`` is only fully implemented in Python 3."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: of spack.util.imp.importlib_importer.PrependFileLoader:1
+msgid "Bases: :class:`_frozen_importlib_external.SourceFileLoader`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring
+#: of spack.util.imp.importlib_importer.PrependFileLoader.get_data:1
+msgid "Return the data from path as raw bytes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/__init__.py:docstring
@@ -42571,133 +42625,142 @@ msgstr ""
 msgid "spack.util.web module"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.LinkParser:1
-msgid "Bases: :class:`HTMLParser.HTMLParser`"
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.LinkParser:1
+msgid "Bases: :class:`html.parser.HTMLParser`"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.LinkParser:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.LinkParser:1
 msgid ""
 "This parser just takes an HTML page and strips out the hrefs on the links.  "
 "Good enough for a really simple spider."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.NoNetworkConnectionError:1
-#: spack.util.web.VersionFetchError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.NoNetworkConnectionError:1 spack.util.web.VersionFetchError:1
 msgid "Bases: :class:`spack.util.web.SpackWebError`"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.NoNetworkConnectionError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.NoNetworkConnectionError:1
 msgid "Raised when an operation can't get an internet connection."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.NonDaemonPool:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.NonDaemonContext:1
+msgid "Bases: :class:`multiprocessing.context.ForkContext`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.NonDaemonPool:1
 msgid "Bases: :class:`multiprocessing.pool.Pool`"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.NonDaemonPool:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.NonDaemonPool:1
 msgid "Pool that uses non-daemon processes"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.NonDaemonProcess:1
-msgid "Bases: :class:`multiprocessing.process.Process`"
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.NonDaemonProcess:1
+msgid "Bases: :class:`multiprocessing.context.Process`"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.NonDaemonProcess:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.NonDaemonProcess:1
 msgid "Process tha allows sub-processes, so pools can have sub-pools."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.SpackWebError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.NonDaemonProcess.daemon:1
+msgid "Return whether process is a daemon"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.SpackWebError:1
 msgid "Superclass for Spack web spidering errors."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.VersionFetchError:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.VersionFetchError:1
 msgid "Raised when we can't determine a URL to fetch a package."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.find_versions_of_archive:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.find_versions_of_archive:1
 msgid "Scrape web pages for new versions of a tarball."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.find_versions_of_archive:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.find_versions_of_archive:3
 msgid ""
 "URL or sequence of URLs for different versions of a package. Typically these "
 "are just the tarballs from the package file itself.  By default, this "
 "searches the parent directories of archives."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.find_versions_of_archive:8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.find_versions_of_archive:8
 msgid ""
 "URL for a listing of archives.  Spack wills scrape these pages for download "
 "links that look like the archive URL."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.find_versions_of_archive:10
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.find_versions_of_archive:10
 msgid "Max depth to follow links on list_url pages. Default 0."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.get_checksums_for_versions:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.get_checksums_for_versions:1
 msgid "Fetches and checksums archives from URLs."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.get_checksums_for_versions:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.get_checksums_for_versions:3
 msgid ""
 "This function is called by both ``spack checksum`` and ``spack create``.  "
 "The ``first_stage_function`` argument allows the caller to inspect the first "
 "downloaded archive, e.g., to determine the build system."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.get_checksums_for_versions:8
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.get_checksums_for_versions:8
 msgid "A dictionary of the form: version -> URL"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.get_checksums_for_versions:12
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.get_checksums_for_versions:12
 msgid ""
 "function that takes a Stage and a URL; this is run on the stage of the first "
 "URL downloaded"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.get_checksums_for_versions:15
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.get_checksums_for_versions:15
 msgid "whether to keep staging area when command completes"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.get_checksums_for_versions:18
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.get_checksums_for_versions:18
 msgid "A multi-line string containing versions and corresponding hashes"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.spider:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.spider:1
 msgid "Gets web pages from a root URL."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.spider:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.spider:3
 msgid ""
 "If depth is specified (e.g., depth=2), then this will also follow up to "
 "<depth> levels of links from the root."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring
-#: of spack.util.web.spider:6
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/web.py:docstring of
+#: spack.util.web.spider:6
 msgid ""
 "This will spawn processes to fetch the children, for much improved "
 "performance over a sequential fetch."

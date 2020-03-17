@@ -8,13 +8,33 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-27 13:44-0700\n"
+"POT-Creation-Date: 2020-03-17 09:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/index.rst:50
+#: ../spack/lib/spack/docs/index.rst:50
+msgid "Basics"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:61
+#: ../spack/lib/spack/docs/index.rst:61
+msgid "Reference"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:77
+#: ../spack/lib/spack/docs/index.rst:77
+msgid "Contributing"
+msgstr ""
+
+#: ../spack/lib/spack/docs/index.rst:87
+#: ../spack/lib/spack/docs/index.rst:87
+msgid "API Docs"
+msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:13
 msgid "Spack"
@@ -42,22 +62,6 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:46
 msgid "If you're new to spack and want to start using it, see :doc:`getting_started`, or refer to the full manual below."
-msgstr ""
-
-#: ../spack/lib/spack/docs/index.rst:50
-msgid "Basics"
-msgstr ""
-
-#: ../spack/lib/spack/docs/index.rst:61
-msgid "Reference"
-msgstr ""
-
-#: ../spack/lib/spack/docs/index.rst:77
-msgid "Contributing"
-msgstr ""
-
-#: ../spack/lib/spack/docs/index.rst:87
-msgid "API Docs"
 msgstr ""
 
 #: ../spack/lib/spack/docs/index.rst:96

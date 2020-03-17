@@ -8,13 +8,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-27 13:44-0700\n"
+"POT-Creation-Date: 2020-03-17 09:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../spack/lib/spack/docs/build_systems.rst:22
+#: ../spack/lib/spack/docs/build_systems.rst:22
+msgid "Make-based"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_systems.rst:28
+#: ../spack/lib/spack/docs/build_systems.rst:28
+msgid "Make-incompatible"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_systems.rst:35
+#: ../spack/lib/spack/docs/build_systems.rst:35
+msgid "Build-script generation"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_systems.rst:44
+#: ../spack/lib/spack/docs/build_systems.rst:44
+msgid "Language-specific"
+msgstr ""
+
+#: ../spack/lib/spack/docs/build_systems.rst:54
+#: ../spack/lib/spack/docs/build_systems.rst:54
+msgid "Other"
+msgstr ""
 
 #: ../spack/lib/spack/docs/build_systems.rst:11
 msgid "Build Systems"
@@ -26,26 +51,6 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/build_systems.rst:18
 msgid "This guide provides information specific to each particular build system. It assumes that you've read the :ref:`packaging-guide` and expands on these ideas for each distinct build system that Spack supports:"
-msgstr ""
-
-#: ../spack/lib/spack/docs/build_systems.rst:22
-msgid "Make-based"
-msgstr ""
-
-#: ../spack/lib/spack/docs/build_systems.rst:28
-msgid "Make-incompatible"
-msgstr ""
-
-#: ../spack/lib/spack/docs/build_systems.rst:35
-msgid "Build-script generation"
-msgstr ""
-
-#: ../spack/lib/spack/docs/build_systems.rst:44
-msgid "Language-specific"
-msgstr ""
-
-#: ../spack/lib/spack/docs/build_systems.rst:54
-msgid "Other"
 msgstr ""
 
 #: ../spack/lib/spack/docs/build_systems.rst:62

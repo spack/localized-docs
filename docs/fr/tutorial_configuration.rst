@@ -1,0 +1,1 @@
+../../spack/lib/spack/docs/tutorial_configuration.rst

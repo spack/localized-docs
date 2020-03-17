@@ -1,0 +1,1 @@
+../../spack/lib/spack/docs/config_yaml.rst
