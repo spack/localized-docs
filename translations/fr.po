@@ -88,7 +88,7 @@ msgstr "Il est recommandé de mettre ce qui suit dans son fichier ``.bashrc`` :"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:30
 msgid "Listing available packages"
-msgstr "Obtenir la liste des paquetages disponibles"
+msgstr "Obtenir la liste des paquets disponibles"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:32
 msgid ""
@@ -97,7 +97,7 @@ msgid ""
 "`package-list` webpage, or using the ``spack list`` command."
 msgstr ""
 "Pour installer un logiciel avec Spack, vous avez besoin de savoir quel "
-"logiciel est disponible. Vous trouverez une liste des noms des paquetages "
+"logiciel est disponible. Vous trouverez une liste des noms des paquets "
 "disponibles sur cette page :ref:`package-list`, ou vous pouvez utiliser "
 "la commande ``spack list``."
 
@@ -111,7 +111,7 @@ msgid ""
 "can install:"
 msgstr ""
 "La commande ``spack list`` affiche sur la sortie standard une list de tous les "
-"paquetages que Spack peut installer."
+"paquets que Spack peut installer."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:48
 msgid ""
@@ -123,24 +123,34 @@ msgid ""
 "You can also add the ``-d`` to search the description of the package in "
 "addition to the name.  Some examples:"
 msgstr ""
+"Comme il en existe des milliers, la liste ci-dessus à été tronquée, mais "
+"vous pouvez trouver une :ref:`liste complète ici <package-list>`. Les "
+"paquets sont listés par leur nom dans l'ordre alphabétique. Un motif "
+"(*pattern*) à identifier sans caractère générique, ``*`` ou ``?``, "
+"sera traité comme si il commençait et finissait par ``*``, ainsi ``util`` "
+"est équivalent à ``*util*``. Tous les motifs seront non-sensibles à la casse. "
+"Vous pouvez aussi ajouter le ``-d`` pour chercher la description d'un paquet "
+"en plus du nom. Quelques exemples : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:57
 msgid "All packages whose names contain \"sql\":"
-msgstr ""
+msgstr "Tous les paquets dont le nom contient \"sql\" : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:61
 msgid "All packages whose names or descriptions contain documentation:"
-msgstr ""
+msgstr "Tous les paquets dont le nom ou la description contient documentation : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:69
 msgid "``spack info``"
-msgstr ""
+msgstr "``spack info``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:71
 msgid ""
 "To get more information on a particular package from `spack list`, use "
 "`spack info`.  Just supply the name of a package:"
 msgstr ""
+"Pour obtenir plus d'information sur un paquet particulier à partir de "
+"`spack list`, il faut utiliser `spack info`. Ajouter juste le nom du paquet : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:76
 msgid ""
@@ -148,22 +158,30 @@ msgid ""
 "versions that Spack knows the checksum for, and it will use the checksum to "
 "verify that these versions download without errors or viruses."
 msgstr ""
+"La plupart des informations sont explicites. Les *versions sécurisées* sont "
+"des versions dont Spack connaît la *checksum*, et pour lequel il utilisera "
+"cette *checksum* pour vérifier que les versions sont téléchargées sans "
+"virus et sans erreur."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:81
 msgid ""
 ":ref:`Dependencies <sec-specs>` and :ref:`virtual dependencies <sec-virtual-"
 "dependencies>` are described in more detail later."
 msgstr ""
+":ref:`Dépendences <sec-specs>` et :ref:`dépendences virtuelles <sec-virtual-"
+"dependencies>` sont décrites plus en détail dans la suite du document."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:88
 msgid "``spack versions``"
-msgstr ""
+msgstr "``spack versions``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:90
 msgid ""
 "To see *more* available versions of a package, run ``spack versions``. For "
 "example:"
 msgstr ""
+"Pour voir *plus* de versions disponibles d'un paquet, taper la commande "
+"``spack versions``. Par exemple : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:95
 msgid ""
@@ -171,6 +189,9 @@ msgid ""
 "which Spack has a checksum on file.  It can verify that these versions are "
 "downloaded correctly."
 msgstr ""
+"Il y a deux sections dans la sortie. *Safe versions* est pour les versions "
+"dont Spack connaît la *checksum*. Il peut vérifier que ces versions sont "
+"téléchargées correctement."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:99
 msgid ""
@@ -180,14 +201,19 @@ msgid ""
 "how its releases are organized, Spack may or may not be able to find remote "
 "versions."
 msgstr ""
+"Dans plusieurs cas, Spack peut aussi indiquer les versions disponibles "
+"ailleurs sur le web --- Ce sont des *remote versions*. Spack récupère les "
+"informations un piochant directement dans les pages web du paquet. Selon le "
+"paquet et la façon dont les *releases* sont organisées, Spack peut ou non "
+"être capable de trouver d'autres versions distantes (*remote*)."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:107
 msgid "Installing and uninstalling"
-msgstr ""
+msgstr "Installation et désinstallation"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:113
 msgid "``spack install``"
-msgstr ""
+msgstr "``spack install``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:115
 msgid ""
@@ -195,6 +221,9 @@ msgid ""
 "example, To install the latest version of the ``mpileaks`` package, you "
 "might type this:"
 msgstr ""
+"``spack install`` installera n'importe quel paquet référencé par ``spack list``. "
+"Par exemple, pour installer la dernière version de ``mpileaks``, vous devez taper "
+"ceci : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:123
 msgid ""
