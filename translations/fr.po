@@ -234,21 +234,30 @@ msgid ""
 "messages from spack, a lot of build output, and a message that the packages "
 "is installed:"
 msgstr ""
+"Si ``mpileaks`` dépend d'autres packages, Spack installera les dépendances "
+"d'abord. Il va ensuite récupérer le *tarball* de ``mpileaks``, extraire les "
+"données, vérifier que cela a été téléchargé sans erreur, compiler le projet, "
+" et l'installer dans son propre répertoire : ``$SPACK_ROOT/opt``. Vous verrez "
+"un certain nombre de message de Spack, beaucoup dûes aux sorties de "
+"compilation, et un message que le package a été installé: "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:150
 msgid ""
 "The last line, with the ``[+]``, indicates where the package is installed."
 msgstr ""
+"La dernière ligne, celle avec le ``[+]``, qui indiquent où le paquet a été installé."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:155
 msgid "Building a specific version"
-msgstr ""
+msgstr "Compilation d'une version spécifique"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:157
 msgid ""
 "Spack can also build *specific versions* of a package.  To do this, just add "
 "``@`` after the package name, followed by a version:"
 msgstr ""
+"Spack peut aussi compiler des *versions spécifiques* d'un paquet. Pour se faire, "
+"ajouter ``@`` après le nom du package, suivi par la version : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:164
 msgid ""
@@ -257,6 +266,10 @@ msgid ""
 "installing a version that one user needs will not disrupt existing "
 "installations for other users."
 msgstr ""
+"N'importe quel nombre de versions d'un même paquet peut être installé en même "
+"temps sans qu'ils n'interfèrent les uns avec les autres. Cela est pratique "
+"pour des sites multi-utilisateurs, ou installer une version dont un utilisateur "
+"a besoin sans perturber les installations existantes des autres utilisateurs."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:169
 msgid ""
@@ -267,6 +280,13 @@ msgid ""
 "the same version of a package, one built with boost 1.39.0, and the other "
 "version built with version 1.43.0, can coexist."
 msgstr ""
+"En plus de différentes versions, Spack peut personnaliser le compilateur, "
+les options en temps de compilation (variants), les *flags* de compilation, "
+"et la plateforme (pour les compilations croisées i.e. *cross compilations*) "
+"d'une installation. Spack est unique en ce sens qu'il peut aussi configurer "
+"les *dépendances* avec lesquelles un paquet est compilé. Par exemple, deux "
+"configurations d'une même version d'un paquet, l'une compilée avec boost 1.39.0, "
+"et l'autre compilée avec un version 1.43.0, peuvent co-exister."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:176
 msgid ""
@@ -276,10 +296,16 @@ msgid ""
 "both valid *specs*.  We'll talk more about how you can use them to customize "
 "an installation in :ref:`sec-specs`."
 msgstr ""
+"Cela peut être fait via une seule commande utilisant la syntaxe *spec*. Spack "
+"Spack appelle le descripteur utilisé pour se référer à une configuration "
+"particulière d'un paquet, i.e. une **spec**. Dans la commandes ci-dessus, "
+"``mpileaks`` et ``mpileaks@3.0.4`` sont toutes les deux des **spec** valides. "
+"Nous parlerons plus en détails de la façon dont elles peuvent être utilisées "
+"pour personnaliser une installation dans la section :ref:`sec-specs`."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:186
 msgid "``spack uninstall``"
-msgstr ""
+msgstr "``spack uninstall``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:188
 msgid ""
@@ -287,18 +313,25 @@ msgid ""
 "the user for confirmation before completely removing the directory in which "
 "the package was installed."
 msgstr ""
+"Pour désinstaller un paquet, taper ``spack uninstall <package>``. Cela demandera "
+"à l'utilisateur une confirmation avant de supprimer complètement le répertoire "
+"dans lequel le paquet avait été installé."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:196
 msgid ""
 "If there are still installed packages that depend on the package to be "
 "uninstalled, spack will refuse to uninstall it."
 msgstr ""
+"Si il y a toujours des paquets installés qui dépendent d'un paquet qui "
+"doit être désinstallé, Spack refusera sa désinstallation."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:199
 msgid ""
 "To uninstall a package and every package that depends on it, you may give "
 "the ``--dependents`` option."
 msgstr ""
+"Pour désinstaller un paquet et tous les paquets dont il dépend, vous devez "
+"spécifier l'option ``--dependants``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:206
 msgid ""
@@ -308,7 +341,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/basic_usage.rst:209
 msgid "A command like"
-msgstr ""
+msgstr "Une commande comme"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:215
 msgid ""
@@ -319,10 +352,17 @@ msgid ""
 "the ambiguity or use the ``--all`` option to uninstall all of the matching "
 "packages."
 msgstr ""
+"peut être ambigu si de multiples configurations ``mpich`` sont installés. "
+"Par exemple, si ``mpich@3.0.2`` et ``mpich@3.1`` sont installées tous les "
+"deux, ``mpich`` pourra se référer à l'une ou l'autre. Parce que il ne peut "
+"déterminer quelle version doit être désinstaller, Spack vous demandera "
+"de donner un numéro de version pour lever l'ambiguité ou utilisez l'option "
+"``--all`` pour désinstaller tous les paquets correspondants."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:222
 msgid "You may force uninstall a package with the ``--force`` option"
-msgstr ""
+msgstr "Vous pouvez forcer la désinstallation d'un paquet avec l'option "
+"``--force``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:228
 msgid ""
@@ -330,16 +370,21 @@ msgid ""
 "remove dependent packages *before* removing their dependencies or use the "
 "``--dependents`` option."
 msgstr ""
+"mais vous pouriez risquer de casser d'autres paquets installés. En général, "
+"il est plus sûr de supprimer les paquets dépendents *avant* de supprimer "
+"leur dépendances ou utiliser l'option ``--dependents``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:237
 msgid "Non-Downloadable Tarballs"
-msgstr ""
+msgstr "*Tarballs** non téléchargeables"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:239
 msgid ""
 "The tarballs for some packages cannot be automatically downloaded by Spack.  "
 "This could be for a number of reasons:"
 msgstr ""
+"Les *tarballs* pour certains paquets ne peuvent être automatiquement "
+"téléchargér par Spack. Cela pour un certain nombre de raisons : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:242
 msgid ""
