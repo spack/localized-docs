@@ -391,51 +391,62 @@ msgid ""
 "The author requires users to manually accept a license agreement before "
 "downloading (``jdk`` and ``galahad``)."
 msgstr ""
+"L'auteur demande aux utilisateurs d'accepter manuellement un accord de licence"
+"avant de télécharger (``jdk`` et ``galahad``)."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:245
 msgid ""
 "The software is proprietary and cannot be downloaded on the open Internet."
 msgstr ""
+"Le logiciel est propriétaire et ne peut être téléchargé sur l'internet ouvert."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:248
 msgid ""
 "To install these packages, one must create a mirror and manually add the "
 "tarballs in question to it (see :ref:`mirrors`):"
 msgstr ""
+"Pour installer ces paquets, il faut créer un mirroir et lui ajouter manuellement "
+"les *tarballs* demandées (see :ref:`mirrors`) : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:251
 msgid ""
 "Create a directory for the mirror.  You can create this directory anywhere "
 "you like, it does not have to be inside ``~/.spack``:"
 msgstr ""
+"Créer un répertoire pour le mirroir. Vous pouvez créer ce répertoire "
+"où bon vous semble, il n'a pas besoin d'être à l'intérieur de ``~/.spack`` : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:258
 msgid "Register the mirror with Spack by creating ``~/.spack/mirrors.yaml``:"
-msgstr ""
+msgstr "Enregistrer le mirroir auprès de Spack en créant ``~/.spack/mirrors.yaml`` : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:265
 msgid ""
 "Put your tarballs in it.  Tarballs should be named ``<package>/<package>-"
 "<version>.tar.gz``.  For example:"
 msgstr ""
+"Mettez votre *tarball* dedans. Les *tarballs* doivent être nommées ``<package>/<package>-"
+"-<version>.tar.gz``. Par exemple : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:274
 msgid "Install as usual:"
-msgstr ""
+msgstr "Procéder à l'installation comme d'habitude : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:282
 msgid "Seeing installed packages"
-msgstr ""
+msgstr "Pour voir les paquets installés"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:284
 msgid ""
 "We know that ``spack list`` shows you the names of available packages, but "
 "how do you figure out which are already installed?"
 msgstr ""
+"Nous savons que ``spack list`` montre les noms des paquets disponibles, mais "
+"comment connaître la liste de ceux qui sont déjà installés ?"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:291
 msgid "``spack find``"
-msgstr ""
+msgstr "``spack find``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:293
 msgid ""
@@ -444,10 +455,14 @@ msgid ""
 "associated with it.  In spack, you can have many installations of the same "
 "package with different specs."
 msgstr ""
+"``spack find`` montre les *specs* des paquets installés. Une spec est comme "
+"un nom, mais elle a une version, un compilateur, une architecture et des "
+"options de compilations associées. Dans Spack, vous pouvez avoir plusieurs "
+"installations d'un même paquet avec différentes specs."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:298
 msgid "Running ``spack find`` with no arguments lists installed packages:"
-msgstr ""
+msgstr "Taper la commande ``spack find`` sans argument liste les paquets installés : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:333
 msgid ""
@@ -455,6 +470,9 @@ msgid ""
 "compiler.  Within each group, Spack tries to keep the view simple, and only "
 "shows the version of installed packages."
 msgstr ""
+"Les paquets sont divisés en groupe selon leur architecture et leur compilateur. "
+"À l'intérieur de chaque groupe, Spack essaie de garder une vue simple, et montre "
+"seulement la version des paquets installés."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:337
 msgid ""
@@ -465,6 +483,11 @@ msgid ""
 "singled out with ``--explicit`` and those which have been pulled in only as "
 "dependencies with ``--implicit``."
 msgstr ""
+"``spack find`` peut filtrer la liste des paquets par leur nom, spec, ou "
+"un certain nombre de propriétés issus de leur status d'installation. Par exemple, "
+"Les dépendances manquantes d'une spec peuvent être retrouver avec ``--missing``, "
+"les paquets singularisés avec ``--explicit`` et ceux qui ont été tirés uniquement "
+"en tant que dépendances avec ``--implicit``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:344
 msgid ""
@@ -473,6 +496,10 @@ msgid ""
 "``libdwarf@20130729`` above.  We can look at them in more detail using "
 "``spack find --deps``, and by asking only to show ``libdwarf`` packages:"
 msgstr ""
+"Dans certains cas, il peut y avoir différentes configurations pour une *même* version "
+"d'un package installé. Par exemple, ci-dessus, il y a deux installations de "
+"``libdwarf@20130729``. Nous pouvons obtenir plus de détails en utilisant "
+"``spack find --deps``, et en demandant à ne voir que le paquet ``libdwarf`` : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:360
 msgid ""
@@ -481,6 +508,11 @@ msgid ""
 "for packages with many dependencies.  If you just want to know whether two "
 "packages' dependencies differ, you can use ``spack find --long``:"
 msgstr ""
+"Maintenant nous voyons que les deux instances de ``libdwarf`` dépendent de "
+"versions *différentes* de ``libelf`` : 0.8.12 et 0.8.13: Cette vue peut devenir "
+"compliquée pour des paquets avec beaucoup de dépendances. Si vous voulez juste "
+"savoir où les dépendances des paquets diffèrent, vous pouvez utiliser "
+"``spack find --long``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:373
 msgid ""
@@ -488,18 +520,25 @@ msgid ""
 "hashes over all of the dependencies of each package.  If the hashes are the "
 "same, then the packages have the same dependency configuration."
 msgstr ""
+"Maintenant les installations de ``libdwarf`` ont des *hashes* dans leurs noms. "
+"il y a des hashes sur toutes les dépendances de chacun des paquets. Si les "
+"hashes sont les même, alors les paquets ont la même configuration de dépendance."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:377
 msgid ""
 "If you want to know the path where each package is installed, you can use "
 "``spack find --paths``:"
 msgstr ""
+"Si vous voulez connaître le chemin d'installation de chaque paquet, vous "
+"pouvez utiliser ``spack find --paths`` : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:394
 msgid ""
 "And, finally, you can restrict your search to a particular package by "
 "supplying its name:"
 msgstr ""
+"Et, enfin, vous pouvez restreindre vos recherche à un paquet en particulier en "
+"ajoutant son nom : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:405
 msgid ""
@@ -507,6 +546,7 @@ msgid ""
 "query for specific configurations and builds of each package. If you want to "
 "find only libelf versions greater than version 0.8.12, you could say:"
 msgstr ""
+""
 
 #: ../spack/lib/spack/docs/basic_usage.rst:416
 msgid ""
