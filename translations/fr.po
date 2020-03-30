@@ -546,13 +546,18 @@ msgid ""
 "query for specific configurations and builds of each package. If you want to "
 "find only libelf versions greater than version 0.8.12, you could say:"
 msgstr ""
-""
+"``spack find`` fait en fait beaucoup plus que ça. Vous pouvez utilser les "
+"*specs* pour demander une configuration ou une construction (*build*) spécifique "
+"pour chaque paquet. Si vous voulez trouver seulement les versions de libelf "
+"supérieures à 0.8.12, vous pourriez dire : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:416
 msgid ""
 "Finding just the versions of libdwarf built with a particular version of "
 "libelf would look like this:"
 msgstr ""
+"Trouver les versions de libdwarf construites avec une version spécifique "
+"de libelf ressemblerait à ça : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:426
 msgid ""
@@ -560,14 +565,17 @@ msgid ""
 "``spack find libdwarf +debug`` will show only installations of libdwarf with "
 "the 'debug' compile-time option enabled."
 msgstr ""
+"Nous pouvoins aussi chercher des paquets, qui ont un certain attribut. Par "
+"exemple, ``spack find libdwarf +debug`` ne montrera que les installations de "
+"libdwarf avec l'option de compilation '+debug' activée."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:430
 msgid "The full spec syntax is discussed in detail in :ref:`sec-specs`."
-msgstr ""
+msgstr "La spec complète est abordée en détail dans :ref:`sec-specs`."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:436
 msgid "Specs & dependencies"
-msgstr ""
+msgstr "Spécifications et dépendances"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:438
 msgid ""
@@ -579,10 +587,20 @@ msgid ""
 "compiler version, architecture, compile options, and dependency options for "
 "a build.  In this section, we'll go over the full syntax of specs."
 msgstr ""
+"Nous savons que ``spack install``, ``spack uninstall``, et d'autres commandes "
+"acceptent un nom de paquet avec une version spécifique facultative. Dans Spack, "
+"ce descripteur est appelé *spec*. Spack utilise les specs pour se rapporter à une "
+"configuration (ou des configurations) de compilation particulière d'un paquet. Les "
+"specs sont plus qu'une paire (nom de paquet, version) ; vous pouvez les utiliser "
+"pour spécifier le compilateur, la version du compilateur, l'architecture, les "
+"options de compilations, et les options de dépendances pour une construction (*build*). "
+"Dans cette section, nous allons passer en revue la syntaxe complète des specifications."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:447
 msgid "Here is an example of a much longer spec than we've seen thus far:"
 msgstr ""
+"Voici un exemple d'une spécification plus longue que ce que nous "
+"avons vu jusqu'à présent : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:453
 msgid ""
@@ -594,36 +612,50 @@ msgid ""
 "``gcc`` 4.7.2.  Most specs will not be as complicated as this one, but this "
 "is a good example of what is possible with specs."
 msgstr ""
+"Si elle est fourni à ``spack install``, cela installera la bibliothèque ``mpileaks`` "
+"dans une version comprise entre ``1.2`` et ``1.4`` (compris), construite en "
+"utilisant ``gcc`` version 4.7.5 pour une architecture Blue Gene/Q, avec les options "
+"de deboggage activées, et sans le support de bibliothèque Qt. De plus, elle dit "
+"de lier avec la bibliothèque ``callpath`` (dont elle dépend), et de construire "
+"callpath avec gcc 4.7.2. La plupart des specs ne seront pas aussi compliquées que "
+"celle ci, mais c'est un bon exemple de ce qu'il est possible de faire avec."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:462
 msgid "More formally, a spec consists of the following pieces:"
-msgstr ""
+msgstr "De façon plus formelle, une spec est constitué des éléments suivants : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:464
 msgid "Package name identifier (``mpileaks`` above)"
-msgstr ""
+msgstr "Identifiant du nom du paquet (``mpileaks`` ci-dessus)"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:465
 msgid "``@`` Optional version specifier (``@1.2:1.4``)"
-msgstr ""
+msgstr "``@`` Spécificateur de version, optionnel (``@1.2:1.4``)"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:466
 msgid ""
 "``%`` Optional compiler specifier, with an optional compiler version "
 "(``gcc`` or ``gcc@4.7.3``)"
 msgstr ""
+"``%`` Spécificateur de compilateur, optionnel, avec ou sans version de "
+"compilateur (``gcc`` or ``gcc@4.7.3``)"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:468
 msgid ""
 "``+`` or ``-`` or ``~`` Optional variant specifiers (``+debug``, ``-qt``, or "
 "``~qt``) for boolean variants"
 msgstr ""
+"``+`` ou ``-`` ou ``~`` Spécificateurs de variants, optionnel, (``+debug``, ``-qt``, ou "
+"``~qt``) for variants booléens"
+
 
 #: ../spack/lib/spack/docs/basic_usage.rst:470
 msgid ""
 "``name=<value>`` Optional variant specifiers that are not restricted to "
 "boolean variants"
 msgstr ""
+"``name=<value>`` Spécificateurs de variants, optionnel, pour des variants "
+"outre que booléen"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:472
 msgid ""
@@ -631,16 +663,22 @@ msgid ""
 "``cflags``, ``cxxflags``, ``fflags``, ``cppflags``, ``ldflags``, and "
 "``ldlibs``."
 msgstr ""
+"``name=<value>`` Spécificateur pour les flags de compilations, optionnel. Les flags "
+"valident sont ``cflags``, ``cxxflags``, ``fflags``, ``cppflags``, ``ldflags``, et "
+"``ldlibs``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:474
 msgid ""
 "``target=<value> os=<value>`` Optional architecture specifier "
 "(``target=haswell os=CNL10``)"
 msgstr ""
+"``target=<value> os=<value>`` Spécificateur pour l'architecture, optionnel "
+"(e.g. ``target=haswell os=CNL10``)"
+
 
 #: ../spack/lib/spack/docs/basic_usage.rst:476
 msgid "``^`` Dependency specs (``^callpath@1.1``)"
-msgstr ""
+msgstr "``^`` Spécifications des dépendances (``^callpath@1.1``)"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:478
 msgid ""
