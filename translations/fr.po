@@ -1028,11 +1028,15 @@ msgid ""
 "disabled boolean variants.  The ``-`` and spaces on the command line are "
 "provided for convenience and legibility."
 msgstr ""
+"Quand spack normalise des specs, il les affiche sans espace pour les variants" 
+"booléens en utilisant la syntaxe de compatibilité descendante et utilise "
+"``~`` seulement pour les variants booléens désactivés. Le ``-`` et les espaces "
+"sur la ligne de commande sont fournis pour plus de commodité et de lisibilité."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:666
 #: ../spack/lib/spack/docs/tutorial_configuration.rst:275
 msgid "Compiler Flags"
-msgstr ""
+msgstr "Flags du compilateur"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:668
 msgid ""
@@ -1044,6 +1048,13 @@ msgid ""
 "install both libdwarf and libelf with the ``-g`` flag injected into their "
 "compile line."
 msgstr ""
+"Les flags du compilateurs sont spécifiés en utilisant la même syntaxe que "
+"pour les variants non-booléens, mais remplissent un objectif différent. Quand "
+"la fonction d'un variant est mise par un package, les flags du compilateur sont "
+"utilisés par les wrappers du compilateur pour être injecté dans la ligne de "
+"compilation de la construction. De plus, les flags de compilation sont hérités "
+"des dépendances. ``spack install libdwarf cppflags=\"-g\"`` installera libdwarf "
+"et libelf avec le flag ``-g`` injecté dans leur ligne de compilation."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:676
 msgid ""
@@ -1055,6 +1066,13 @@ msgid ""
 "install libelf cppflags=\"-O3\"%intel`` will be interpreted as an attempt to "
 "set ``cppflags=\"-O3%intel\"``."
 msgstr ""
+"Remarquez que la valeur des flags de compilation doit être mise entre quotes "
+"si elle contient des espaces. N'importe lesquelle de ces formes est acceptables "
+"``cppflags=-O3``, ``cppflags=\"-O3\"``, ``cppflags='-O3'``, et ``cppflags=\"-O3 -fPIC\"``, "
+"mais ``cppflags=-O3 -fPIC`` ne l'est pas. De plus, si la valeur des flags de compilation "
+"n'est pas la dernière chose sur la ligne, il doit être suivi d'un espace. La "
+"commande ``spack install libelf cppflags=\"-O3\"%intel`` sera interprếtée comme "
+"une tentative pour mettre ``cppflags=\"-O3%intel\"``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:684
 msgid ""
@@ -1063,10 +1081,14 @@ msgid ""
 "$cxxflags $ldflags <command> $ldlibs`` for C and C++ and ``$fflags $cppflags "
 "$ldflags <command> $ldlibs`` for Fortran."
 msgstr ""
+"Les 6 flags du compilateur sont injectés dans l'ordre implicite des "
+"commandes make de l'Autotools GNU. Si tous les flags sont mis, l'ordre est "
+"alors ``$cppflags $cflags| $cxxflags $ldflags <command> $ldlibs`` pour le C "
+"et le C++, et ``$fflags $cppflags $ldflags <command> $ldlibs`` pour le Fortran."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:691
 msgid "Compiler environment variables and additional RPATHs"
-msgstr ""
+msgstr "Variables d'environnement du compilateur et RPATHs additionnels"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:693
 msgid ""
@@ -1079,6 +1101,15 @@ msgid ""
 "useful for forcing certain compilers to RPATH their own runtime libraries, "
 "so that executables will run without the need to set ``LD_LIBRARY_PATH``."
 msgstr ""
+"Dans certains cas exceptionnels, le compilateur nécessite un réglage avec des variables "
+"d'environnemnet spéciales, comme un chemin explicite de chargement de bibliothèques."
+"Cela se résoud en utilisant une section supplémentaire dans la configuration du "
+"compilateur (Les commandes de modification d'environnement supportées sont : "
+"``set``, ``unset``, ``append-path``, and ``prepend-path``). L'utilisateur peut "
+"aussi préciser des ``RPATHs`` additionnels que le compilateur ajoutera à tous les "
+"exécutables générés par ce compilateur. Cela est utile pour forcer certains "
+"compilateurs à RPATH le propre bibliothèque d'exécution, ainsi ces exécutables "
+"se lanceront sans avoir besoin de modifier ``LD_LIBRARY_PATH``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:729
 msgid ""
@@ -1089,10 +1120,17 @@ msgid ""
 "cannot `set` one variable, than `prepend-path` to another one, and than "
 "again `set` a third one."
 msgstr ""
+"La section `environment` est interprétée comme un dictionnaire ordonné, ce qui "
+"signifie deux choses. Premièrement, les modifications d'environnement sont "
+"appliquées dans l'ordre dans lesquelles elles sont indiquées dans le fichier "
+"de configuration. Deuxièmement, vous ne pouvez pas exprimer des modifications "
+"d'environnemnt qui requiert de mélanger différentes commandes, i.e, vous ne "
+"pouvez pas imposer une variable dans la rubrique `set`, puis une autre "
+"dans `prepand-path`, et une troisième à nouveau dans la rubrique `set`."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:738
 msgid "Architecture specifiers"
-msgstr ""
+msgstr "Les prescripteurs d'architecture"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:740
 msgid ""
@@ -1100,6 +1138,9 @@ msgid ""
 "or ``os`` (``target=x86-64 os=debian7``). You can also use the triplet form "
 "of platform, operating system and processor."
 msgstr ""
+"L'architecture peut être spécifiée en utilisant les mots réservés ``target`` "
+"et/ou ``os`` (``target=x86-64 os=debian7``). Vous pouvez aussi utiliser le "
+"triplet : la plateforme, système d'exploitation et processeur."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:748
 msgid ""
@@ -1108,11 +1149,16 @@ msgid ""
 "machine as well as the processor. For more information on how the "
 "architecture can be used on Cray machines, see :ref:`cray-support`"
 msgstr ""
+"Les utilisateurs des sytèmes non-Cray n'ont pas se soucier de préciser "
+"l'architecture. Spack autodétectera le type de votre système d'exploitation "
+"de votre machine, ainsi que le processeur. Pour plus dinformations "
+"sur la façon d'utiliser l'architecture sur les machines Cray, voir "
+":ref:`cray-support`"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:757
 #: ../spack/lib/spack/docs/packaging_guide.rst:2252
 msgid "Virtual dependencies"
-msgstr ""
+msgstr "Dépendances virtuelles"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:759
 msgid ""
@@ -1123,12 +1169,20 @@ msgid ""
 "could build either with another implementation, such as ``openmpi`` or "
 "``mvapich``."
 msgstr ""
+"Le graphe de dépendances pour ``mpileaks`` ci-dessus n'était pas *entièrement* "
+"précis. ``mpileaks`` utilise MPI, qui est une interface qui a différentes "
+"implémentations. Ci-dessus, il est montré que ``mpileaks`` et ``callpath`` "
+"dépendent de ``mpich``, qui est une implémentation *particulière* de MPI. "
+"Cependant, nous pouvons construire avec une autre implémentation, telle que "
+"``openmpi`` ou ``mvapich``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:766
 msgid ""
 "Spack represents interfaces like this using *virtual dependencies*. The real "
 "dependency DAG for ``mpileaks`` looks like this:"
 msgstr ""
+"Spack représente les interfaces comme cela en utilisant des *dépendances virtuelles*. "
+"Le véritable DAG de dépendance pour ``mpileaks`` ressemble à cela : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:780
 msgid ""
@@ -1136,12 +1190,18 @@ msgid ""
 "MPI package, but some packages *provide* the MPI interface, and these "
 "packages can be substituted in for ``mpi`` when ``mpileaks`` is built."
 msgstr ""
+"Remarquez que ``mpich`` a maintenant été remplacé par ``mpi``. Il n'y a pas "
+"*réellement* de package MPI, mais certains packages fournissent une interface "
+"MPI, et ces paquets peuvent être remplacés par ``mpi`` quand ``mpileaks`` "
+"est construit."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:785
 msgid ""
 "You can see what virtual packages a particular package provides by getting "
 "info on it:"
 msgstr ""
+"Vous pouvez voir que les packaqes virtuels fournit par un package en particulier "
+"en obtenant des informations sur lui : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:790
 msgid ""
@@ -1154,10 +1214,18 @@ msgid ""
 "e.g. if an application needs MPI-2 functions, it can depend on ``mpi@2:`` to "
 "indicate that it needs some implementation that provides MPI-2 functions."
 msgstr ""
+"Spac est unique car ses packages virtuels peuvent être versionnés, "
+"comme n'importe quel autre package. Une version particulière d'un package "
+"peut fournir une version particulière d'un package virtuel, et nous pouvons "
+"voir ci-dessus que ``mpich`` versions ``1`` et au dessus fournissent toutes "
+"les versions d'interface de ``mpi`` jusqu'à ``3``. Un package peut *dépendre* "
+"d'une version particulière d'un package virtuel, e.g. si une application nécessite "
+"des fonctions de MPI-2, alors elle doit dépendre de ``mpi@2:`` pour indiquer "
+"qu'elle a besoin des implémentations qui fournissent des fonctions MPI-2."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:802
 msgid "Constraining virtual packages"
-msgstr ""
+msgstr "Contraindre des packages virtuels"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:804
 msgid ""
@@ -1165,6 +1233,10 @@ msgid ""
 "specify the particular provider you want to use, or you can let Spack pick.  "
 "For example, if you just type this:"
 msgstr ""
+"Lors de l'installation d'un package qui dépend d'un package virtuel, vous "
+"pouvez opter pour la spécifiaciton d'un fournisseur particulier que vous "
+"voulez utiliser, ou vous pouvez laisser Spack choisir. Par exemple, si vous "
+"tapez juste ceci : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:812
 msgid ""
@@ -1172,6 +1244,9 @@ msgid ""
 "really want a particular version, say ``mpich``, then you could run this "
 "instead:"
 msgstr ""
+"Alors spack choisira un fournisseur pour vous selon les politiques du site. "
+"Si vous voulez vraiment une version particulière, disons ``mpich``, alors "
+"vous pourrez executer ceci à la place : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:820
 msgid ""
@@ -1179,6 +1254,9 @@ msgid ""
 "As always, you can be even more specific and require a particular ``mpich`` "
 "version:"
 msgstr ""
+"Cela force spack à utiliser des versions de ``mpich`` comme implémentation. "
+"Comme toujours, vous pouvez être encore plus spécifique et demander une version "
+"particulière de ``mpich`` : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:828
 msgid ""
