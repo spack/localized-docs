@@ -1124,7 +1124,7 @@ msgstr ""
 "signifie deux choses. Premièrement, les modifications d'environnement sont "
 "appliquées dans l'ordre dans lesquelles elles sont indiquées dans le fichier "
 "de configuration. Deuxièmement, vous ne pouvez pas exprimer des modifications "
-"d'environnemnt qui requiert de mélanger différentes commandes, i.e, vous ne "
+"d'environnement qui requiert de mélanger différentes commandes, i.e, vous ne "
 "pouvez pas imposer une variable dans la rubrique `set`, puis une autre "
 "dans `prepand-path`, et une troisième à nouveau dans la rubrique `set`."
 
@@ -1275,7 +1275,7 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/basic_usage.rst:837
 msgid "Specifying Specs by Hash"
-msgstr ""
+msgstr "Spécifier des Specs par leur somme de contrôle (`hash`)"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:839
 msgid ""
@@ -1287,6 +1287,13 @@ msgid ""
 "substitute ``/<hash>`` where ``<hash>`` is any amount from the beginning of "
 "a spec hash."
 msgstr ""
+"Les specs complexes peuvent devenir lourdes à taper sur la ligne de commande, "
+"surtout quand beaucoup des qualifications sont nécessaires pour distinguer "
+"deux installations similaires. Pour éviter cela, quand vous référencez "
+"un spec existante, Spack vous autorise à référencer des specs par leur `hash`. "
+"Nous avons déjà abordé le `hash` d'une spec calculée par Spack. À la place d'une "
+"spec dans n'importe quelle commande, substituer ``<hash>`` par ``/<hash>`` est "
+"possible en utilisant la somme de contrôle de la spec."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:847
 msgid ""
@@ -1294,16 +1301,21 @@ msgid ""
 "``mvapich2`` installations. If you want to uninstall one of them but don't "
 "know what the difference is, you can run:"
 msgstr ""
+"Par exemple, disons qu'accidentellement, vous avez installé deux ``mvapich2`` "
+"différents. Si vous voulez en désinstaller un des deux mais ne connaissez pas "
+"leur différence, vous pouvez exécuter : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:860
 msgid "You can then uninstall the latter installation using:"
-msgstr ""
+msgstr "Vous pouvez alors désinstaller la dernière installation comme suit : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:867
 msgid ""
 "Or, if you want to build with a specific installation as a dependency, you "
 "can use:"
 msgstr ""
+"Ou, si vous voulez construire avec une installation spécifique d'une dépendance, "
+"vous pouvez utiliser : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:875
 msgid ""
@@ -1311,16 +1323,21 @@ msgid ""
 "replace the reference with the spec to which it refers. Otherwise, it will "
 "prompt for a more qualified hash."
 msgstr ""
+"Si la somme de contrôle est suffisament longue pour être unique, Spack "
+"remplacera la référence de la spec avec celle à laquelle cela correspond. "
+"Autrement, il demandera une somme de contrôle plus complète."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:879
 msgid ""
 "Note that this will not work to reinstall a dependency uninstalled by "
 "``spack uninstall --force``."
 msgstr ""
+"Remarquez que cela ne fonctionnera pas pour réinstaller une dépéndance "
+"désinstallé par ``spack uninstall --force``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:886
 msgid "``spack providers``"
-msgstr ""
+msgstr "``spack providers``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:888
 msgid ""
@@ -1328,22 +1345,29 @@ msgid ""
 "providers``.  If you wanted to see what packages provide ``mpi``, you would "
 "just run:"
 msgstr ""
+"Vous pouvez voir que les packages fournissent un package virtuel particulier "
+"en utilisant ``spack providers``. Si vous voulez connaître les packages qui "
+"fournissent ``mpi``, il suffit d'exécuter la commande suivante : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:894
 msgid ""
 "And if you *only* wanted to see packages that provide MPI-2, you would add a "
 "version specifier to the spec:"
 msgstr ""
+"Et si vous voulez *seulement* voir les packages qui fournissent MPI-2, vous "
+"devez ajouter un prescripteur de version à la spec . "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:899
 msgid ""
 "Notice that the package versions that provide insufficient MPI versions are "
 "now filtered out."
 msgstr ""
+"Remarquez que les versions d'un package qui fournit des versions insuffisantes "
+"de MPI sont maintenant filtrer."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:904
 msgid "Extensions & Python support"
-msgstr ""
+msgstr "Support des extensions et de Python"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:906
 msgid ""
@@ -1353,6 +1377,12 @@ msgid ""
 "interpreted languages like `Python <https://www.python.org>`_ are typically "
 "installed in the ``$prefix/lib/python-2.7/site-packages`` directory."
 msgstr ""
+"Le module d'installation de Spack suppose que chaque package réside dans son "
+"propre préfix d'installation. Cependant, certains packages sont typiquement "
+"installés *à l'intérieur* de la hiérarchie des répertoires d'autres packages. "
+"Par exemple, les modules des langages interprêtés comme "
+"`Python <https://www.python.org>`_ sont typiquement installés dans le répertoire "
+"``$prefix/lib/python-2.7/site-packages``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:913
 msgid ""
@@ -1360,14 +1390,17 @@ msgid ""
 "package that can live inside the prefix of another package is called an "
 "*extension*.  Suppose you have Python installed like so:"
 msgstr ""
+"Spack supporte aussi ce type d'installation. Dans Spack, un package qui peut "
+"résider à l'intérieur d'un préfix d'un autre package est appelé une *extension*. "
+"Supposer que vous avez installé un Python comme suit : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:928
 msgid "``spack extensions``"
-msgstr ""
+msgstr "``spack extensions``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:930
 msgid "You can find extensions for your Python installation like this:"
-msgstr ""
+msgstr "Vous pouvez trouver des extensions pour votre installation Python ainsi : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:955
 msgid ""
@@ -1375,16 +1408,21 @@ msgid ""
 "are packages like any other.  They are installed into their own prefixes, "
 "and you can see this with ``spack find --paths``:"
 msgstr ""
+"Les extensions sont des sous-ensembles de ce qui est retourné par ``spack list``, "
+"et ce sont des packages comme les autres. Ils sont installés dans leur propre "
+"prefix que vous pouvez recupérer avec la commande ``spack find --paths`` : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:966
 msgid ""
 "However, even though this package is installed, you cannot use it directly "
 "when you run ``python``:"
 msgstr ""
+"Cependant, même si ce package est installé, vous ne pourrez pas l'utiliser "
+"directement en exécutant simplement ``python`` : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:984
 msgid "Using Extensions"
-msgstr ""
+msgstr "Utilisation des extensions"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:986
 msgid ""
@@ -1393,24 +1431,30 @@ msgid ""
 "the extension, and it will be added to the ``PYTHONPATH`` in your current "
 "shell."
 msgstr ""
+"Il y a trois façons d'avoir ``numpy`` utilisable dans Python. La première est "
+"d'utiliser :ref:`shell-support`. Vous pouvez simplement utiliser (``use``) ou "
+"importer (``load``) le module pour l'extension, et cela l'ajoutera à la variable "
+" d'environnement ``PYTHONPATH`` de votre *shell* courant."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:991
 msgid "For tcl modules:"
-msgstr ""
+msgstr "Pour les modules tcl : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:998
 msgid "or, for dotkit:"
-msgstr ""
+msgstr "ou, pour dotkit : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1005
 msgid ""
 "Now ``import numpy`` will succeed for as long as you keep your current "
 "session open."
 msgstr ""
+"Maintenant ``import numpy`` n'échouera pas tant que vour garder votre "
+"session courant ouverte."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1010
 msgid "Activating Extensions in a View"
-msgstr ""
+msgstr "Activation des extensions dans une vue"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1012
 msgid ""
@@ -1419,10 +1463,14 @@ msgid ""
 "`filesystem-views` for a more in-depth description of views and :ref:`cmd-"
 "spack-view` for usage of the ``spack view`` command."
 msgstr ""
+"La seconde façon est d'utiliser les extensions est de créer une vue, qui "
+"fusionne l'installation python de même que les extensions dans un préfix unique. "
+"Voir :ref:`filesystem-views` pour une description plus complète des vues et "
+":ref:`cmd-spack-view` pour l'utilisation de la commande ``spack view``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1019
 msgid "Activating Extensions Globally"
-msgstr ""
+msgstr "Activation globales des extensions"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1021
 msgid ""
@@ -1432,14 +1480,21 @@ msgid ""
 "This has typically been useful since extendable packages typically search "
 "their own installation path for addons by default."
 msgstr ""
+""
+"Comme alternative à la création d'un prefix fusionné pour Python et ses "
+"extensions, et anvant le support des vues, Spack fournissait un moyen "
+"d'installer l'extension dans le prefix d'installation de Spack. Cela a été "
+"typiquement utile car les packages extensibles cherchent leur propre chemin "
+"d'installations pour les ajouter au défaut."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1027
 msgid "Global activations are performed with the ``spack activate`` command:"
-msgstr ""
+msgstr "Les activations globales sont effectuées via la commande ``spack "
+"activate`` : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1033
 msgid "``spack activate``"
-msgstr ""
+msgstr "``spack activate``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1042
 msgid ""
@@ -1449,12 +1504,20 @@ msgid ""
 "activated those packages first.  Finally, once all dependencies were "
 "activated in the ``python`` installation, ``py-numpy`` was activated as well."
 msgstr ""
+"Plusieurs choses arrivent ici. L'utilisateur demande à ce que ``py-numpy`` "
+"soit activé dans l'installation du ``python`` avec lequel il a été installé. "
+"Spack sait que ``py-numpy`` dépend de ``py-nose`` et de ``py-setuptools``, "
+"donc il active d'abord ces packages. Pour terminer, une fois que toutes les "
+"dépendances ont été activées pour l'installation de ``python``, ``py-numpy`` "
+"est activé."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1049
 msgid ""
 "If we run ``spack extensions`` again, we now see the three new packages "
 "listed as activated:"
 msgstr ""
+"Si la commande ``spack extensions`` est lancée à nouveau, nous voyons maintenant "
+"que trois nouveaux packages listés ont été activés."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1077
 msgid ""
@@ -1462,6 +1525,10 @@ msgid ""
 "*without* the user having to explicitly loaded.  ``python@2.7.8`` now acts "
 "like a system Python installation with ``numpy`` installed inside of it."
 msgstr ""
+"Maintenant, quand un utilisateur lance python, ``numpy`` sera disponible "
+"à l'import *sans* que l'utilisateur n'ait explicitement à le charger. "
+"``python@2.7.8`` se comporte maintenant comme un Python système installé "
+"avec ``numpy`` à l'intérieur."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1082
 msgid ""
@@ -1470,6 +1537,9 @@ msgid ""
 "interpreter, it looks like ``numpy`` is installed in the ``site-packages`` "
 "directory."
 msgstr ""
+"Spack réalises cela en liant symboliquement le préfixe *complet* de ``py-numpy`` "
+"dans le préfixe du package ``python``. Depuis l'interpréteur Python, on a l'impression "
+"que ``numpy`` est installé dans le répertoire ``site-packages``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1087
 msgid ""
@@ -1480,20 +1550,29 @@ msgid ""
 "package can still get it by using environment modules or views, but they "
 "will have to explicitly load their preferred version."
 msgstr ""
+"La seule limitation de l'activation globale est que vous ne pouvez avoir "
+"qu'une *unique* version d'une extension activée à un moment donné. Car "
+"plusieurs versions d'une même extension peuvent entrer en conflit si elles "
+"sont symboliquement liées dans le même préfixe. Les utilisateurs qui "
+"avoir différente version d'un package peuvent tout de même le faire en "
+"utilisant des modules d'un environnement ou des vues, mais ils doivent "
+"explicitement charger leur version préférée."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1096
 msgid "``spack activate --force``"
-msgstr ""
+msgstr "`spack activate --force``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1098
 msgid ""
 "If, for some reason, you want to activate a package *without* its "
 "dependencies, you can use ``spack activate --force``:"
 msgstr ""
+"Si, pour une raison quelconque, vous voulez activer un package *sans* "
+"ses dépendances, vous pouvez utiliser spack activate --force`` : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1110
 msgid "``spack deactivate``"
-msgstr ""
+msgstr "``spack deactivate``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1112
 msgid ""
@@ -1509,28 +1588,37 @@ msgid ""
 "another activated extension depends on this one, Spack will warn you and "
 "exit with an error."
 msgstr ""
+"``spack deactivate <extension>`` désactivera seulement l'extension. Si  "
+"d'autres extensions activées dépendent de cette dernière, Spack vous avertira "
+"et finira en erreur."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1120
 msgid ""
 "``spack deactivate --force <extension>`` deactivates an extension regardless "
 "of packages that depend on it."
 msgstr ""
+"``spack deactivate --force <extension>`` désactives une extension sans vérifier "
+"les packages qui en dépendent."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1122
 msgid ""
 "``spack deactivate --all <extension>`` deactivates an extension and all of "
 "its dependencies.  Use ``--force`` to disregard dependents."
 msgstr ""
+"``spack deactivate --all <extension>`` désactives une extension et toutes ses "
+"dépendances. Utiliser ``--force`` pour ignorer les dépendances."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1124
 msgid ""
 "``spack deactivate --all <extendee>`` deactivates *all* activated extensions "
 "of a package.  For example, to deactivate *all* python extensions, use:"
 msgstr ""
+"``spack deactivate --all <extendee>`` désactive *toutes* les extensions activées "
+"d'un package. Par exemple, pour désactiver *toutes* les extensions python, utiliser : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1134
 msgid "Filesystem requirements"
-msgstr ""
+msgstr "Pré-requis du système de fichiers"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1136
 msgid ""
@@ -1541,10 +1629,17 @@ msgid ""
 "are mounted with ``mount``.  The output for a Lustre filesystem might look "
 "like this:"
 msgstr ""
+"Par défaut, Spack a besoin d'être exécuter à partir d'un système de fichiers "
+"qui supporte la sémantique de verrouillage ``flock``. Pratiquement toutes les "
+"systèmes de fichers locaux et les versions récentes de NFS le support, mais les "
+"sytème de fichiers parallèles ou les volumes NFS peuvent être configurés sans "
+"le support de ``flock`` activé. Vous pouvez savoir comment vos systèmes de fichiers "
+"sont montées via la commande ``mount``. La sortie pour un système de fichiers "
+"Lustre peut ressembler à ça : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1149
 msgid "Note the ``flock`` option on both Lustre mounts."
-msgstr ""
+msgstr "Notez l'option ``flock`` sur les deux montages Lustre."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1151
 msgid ""
@@ -1553,22 +1648,33 @@ msgid ""
 "that supports locking. Second, you could ask your system administrator to "
 "enable ``flock`` for your filesystem."
 msgstr ""
+"Si vous ne voyez pas cela ou une option similaire sur votre filesystem, vous "
+"avez quelques possibilités. Premièrement, vous pouvez déplacer votre installation "
+"de Spack vers un système de fichiers qui support le verrouillage. Deuxièmement, "
+"vous pouvez demander à votre administrateur système d'activer ``flock`` pour "
+"votre système de fichiers."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1156
 msgid "If none of those work, you can disable locking in one of two ways:"
 msgstr ""
+"Si aucune de ces méthodes ne fonctionnent, vous pouvez désactiver le "
+"verrouillage d'une de ces deux façons : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1158
 msgid ""
 "Run Spack with the ``-L`` or ``--disable-locks`` option to disable locks on "
 "a call-by-call basis."
 msgstr ""
+"Lancer Spack avec l'option ``-L`` ou ``--disable-locks`` pour désactiver les "
+"verrouillage sur les appels de base."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1160
 msgid ""
 "Edit :ref:`config.yaml <config-yaml>` and set the ``locks`` option to "
 "``false`` to always disable locking."
 msgstr ""
+"Éditer :ref:`config.yaml <config-yaml>` et mettez l'option ``locks`` à "
+"``false`` pour toujours désactiver le verrouillage."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1165
 msgid ""
@@ -1578,46 +1684,59 @@ msgid ""
 "corrupted database file, or you may not be able to see all installed "
 "packages in commands like ``spack find``."
 msgstr ""
+"Si vous désactivez le verrouillage, des instances concurrentes de Spack n'auront "
+"aucun moyen d'éviter de se marcher sur les pieds. Vous devez vous assurer qu'il "
+"n'y a qu'une *seule* instance de Spack fonctionnant à la fois. Autrement, Spack "
+"finira avec une base de données corrompue, ou vous pourriez ne pas être capable de "
+"voir tous les package installés avec des commandes comme ``spack find`."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1171
 msgid ""
 "If you are unfortunate enough to run into this situation, you may be able to "
 "fix it by running ``spack reindex``."
 msgstr ""
+"Si vous avez le malheur de tomber dans cette situation, vous pourriez pouvoir "
+"la réparer en lançant ``spack reindex``."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1174
 msgid "This issue typically manifests with the error below:"
-msgstr ""
+msgstr "Ce problème se manifeste généralement avec l'erreur suivante : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1198
 msgid "A nicer error message is TBD in future versions of Spack."
-msgstr ""
+msgstr "Un message d'erreur plus joli sera mis dans de futures versions de Spack."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1203
 msgid "Getting Help"
-msgstr ""
+msgstr "Obtenir de l'aide"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1209
 msgid "``spack help``"
-msgstr ""
+msgstr "``spack help``"
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1211
 msgid ""
 "If you don't find what you need here, the ``help`` subcommand will print out "
 "out a list of *all* of spack's options and subcommands:"
 msgstr ""
+"Si vous ne trouvez pas ce que vous cherchez ici, la sous-commande ``help`` "
+"affichere une liste de *toutes* les options Spack, ainsi que des sous-commandes : "
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1216
 msgid ""
 "Adding an argument, e.g. ``spack help <subcommand>``, will print out usage "
 "information for a particular subcommand:"
 msgstr ""
+"Ajouter un argument, e.g. ``spack help <subcommand>`` affichera des informations "
+"sur l'utilisation d'une sous-commande en particulier."
 
 #: ../spack/lib/spack/docs/basic_usage.rst:1221
 msgid ""
 "Alternately, you can use ``spack --help`` in place of ``spack help``, or "
 "``spack <subcommand> --help`` to get help on a particular subcommand."
 msgstr ""
+"Autrement, vous pouvez utiliser ``spack --help`` au lieu de ``spack help``, ou "
+"``spack <subcommand> --help`` pour obtenir de l'aide sur une sous-commande en particulier."
 
 #: ../spack/lib/spack/docs/binary_caches.rst:10
 msgid "Build Caches"
