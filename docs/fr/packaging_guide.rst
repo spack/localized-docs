@@ -1,0 +1,1 @@
+../../spack/lib/spack/docs/packaging_guide.rst

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-31 01:33+0900\n"
+"POT-Creation-Date: 2020-03-17 09:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -546,6 +546,22 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_comment:1
 msgid "Comment symbol used in the license.lic file"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_files:1
+msgid "Built-in mutable sequence."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_files:3
+msgid "If no argument is given, the constructor creates a new empty list. The argument must be an iterable if specified."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_required:1
+msgid "bool(x) -> bool"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_required:3
+msgid "Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/build_systems/intel.py:docstring of spack.build_systems.intel.IntelPackage.license_url:1

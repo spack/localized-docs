@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-31 01:33+0900\n"
+"POT-Creation-Date: 2020-03-17 09:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -316,6 +316,14 @@ msgid "Provides appropriate overrides for Bazel-based packages"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.BuildSystemGuesser:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.PackageTemplate:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.ViewAction:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring of spack.cmd.info.VariantFormatter:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.LicenseError:1
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.BuildSystemGuesser:1
 msgid "An instance of BuildSystemGuesser provides a callable object to be used during ``spack create``. By passing this object to ``spack checksum``, we can take a peek at the fetched tarball and discern the build system it uses"
 msgstr ""
 
@@ -337,13 +345,6 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.OctavePackageTemplate:1
 msgid "Provides appropriate overrides for octave packages"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.PackageTemplate:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/env.py:docstring of spack.cmd.env.ViewAction:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/info.py:docstring of spack.cmd.info.VariantFormatter:1
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/license.py:docstring of spack.cmd.license.LicenseError:1
-msgid "Bases: :class:`object`"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/create.py:docstring of spack.cmd.create.PackageTemplate:1
@@ -651,28 +652,24 @@ msgstr ""
 msgid "We run flake8 with different exceptions for the core and for packages, since we allow `from spack import *` and poking globals into packages."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:8
+msgid "This is a dict that maps:"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:8
 msgid "filename pattern ->"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:8
 msgid "flake8 exemption code ->"
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:8
 msgid "list of patterns, for which matching lines should have codes applied."
 msgstr ""
 
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:10
 msgid "For each file, if the filename pattern matches, we'll add per-line exemptions if any patterns in the sub-dict match."
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:0
-msgid "type"
-msgstr ""
-
-#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/cmd/flake8.py:docstring of spack.cmd.flake8.pattern_exemptions:12
-msgid "This is a dict that maps"
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.cmd.rst:264

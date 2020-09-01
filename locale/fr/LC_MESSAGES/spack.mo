@@ -1,0 +1,1 @@
+../../../translations/fr.mo

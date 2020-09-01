@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Spack 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-31 01:33+0900\n"
+"POT-Creation-Date: 2020-03-17 09:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,38 +37,47 @@ msgid "``imp`` is deprecated in newer versions of Python, but is the only option
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:1
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:1
 msgid "Import a Python module from source."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:3
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:3
 msgid "Load the source file and add it to ``sys.modules``."
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:0
 msgid "Parameters"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:5
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:5
 msgid "full name of the module to be loaded"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:7
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:7
 msgid "path to the file that should be loaded"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:9
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:9
 msgid "some optional code to prepend to the loaded module; e.g., can be used to inject import statements"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:0
 msgid "Returns"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:13
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:13
 msgid "the loaded module"
 msgstr ""
 
 #: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/imp_importer.py:docstring of spack.util.imp.imp_importer.load_source:0
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.load_source:0
 msgid "Return type"
 msgstr ""
 
@@ -90,6 +99,22 @@ msgstr ""
 
 #: ../spack/lib/spack/docs/spack.util.imp.rst:16
 msgid "spack.util.imp.importlib\\_importer module"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer:1
+msgid "Implementation of Spack imports that uses importlib underneath."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer:3
+msgid "``importlib`` is only fully implemented in Python 3."
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.PrependFileLoader:1
+msgid "Bases: :class:`_frozen_importlib_external.SourceFileLoader`"
+msgstr ""
+
+#: ../spack/lib/spack/docs/_spack_root/lib/spack/spack/util/imp/importlib_importer.py:docstring of spack.util.imp.importlib_importer.PrependFileLoader.get_data:1
+msgid "Return the data from path as raw bytes."
 msgstr ""
 
 #: ../spack/lib/spack/docs/spack.util.imp.rst:25

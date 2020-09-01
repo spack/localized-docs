@@ -4,7 +4,7 @@
 # Add a new language here and type "make" to generate new po files to
 # translate.
 # ----------------------------------------------------------------------
-languages = ja
+languages = ja fr
 
 # ----------------------------------------------------------------------
 # Important locations in the Spack submodule within this repo

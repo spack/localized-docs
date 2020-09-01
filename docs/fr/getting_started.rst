@@ -1,0 +1,1 @@
+../../spack/lib/spack/docs/getting_started.rst
